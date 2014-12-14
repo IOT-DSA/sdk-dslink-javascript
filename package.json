@@ -1,7 +1,12 @@
 {
   "name": "dslink",
   "version": "1.0.0",
+  "main": "index.js",
   "dependencies": {
     "websocket": "^1.0.14"
+  },
+  "devDependencies": {
+    "better-assert": "^1.0.2",
+    "mocha": "^2.0.1"
   }
 }
