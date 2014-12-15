@@ -33,19 +33,33 @@ describe('Value', function() {
     });
   });
 
-  it('isNull', function() {
+  it('isNull()', function() {
     assert((new DS.Value(null)).isNull());
     assert((new DS.Value(undefined)).isNull());
     assert(!(new DS.Value(0)).isNull());
     assert(!(new DS.Value("")).isNull());
   });
 
-  it('isTruthy', function() {
+  it('isTruthy()', function() {
     assert((new DS.Value(true)).isTruthy());
     assert((new DS.Value("true")).isTruthy());
     assert((new DS.Value(1)).isTruthy());
     assert(!(new DS.Value(false)).isTruthy());
     assert(!(new DS.Value("false")).isTruthy());
     assert(!(new DS.Value(0)).isTruthy());
+  });
+});
+
+describe('Node', function() {
+  it("keeps identity and changes path", function() {
+    var node = new DS.Node("TestA");
+    assert(node.name === "TestA");
+    assert(node.getPath() === "/");
+    var rootNode = new DS.Node("Root");
+    assert(rootNode.name === "Root");
+    assert(rootNode.getPath() === "/");
+    rootNode.addChild(node);
+    assert(node.name === "TestA");
+    assert(node.getPath() === "/TestA");
   });
 });
