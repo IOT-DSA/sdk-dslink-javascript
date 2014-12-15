@@ -51,7 +51,7 @@ describe('Value', function() {
 });
 
 describe('Node', function() {
-  it("keeps identity and changes path", function() {
+  it("should keep identity but change it's path", function() {
     var node = new DS.Node("TestA");
     assert(node.name === "TestA");
     assert(node.getPath() === "/");
