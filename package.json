@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "hashcode": "^1.0.3",
     "websocket": "1.0.14"
   },
   "scripts": {
