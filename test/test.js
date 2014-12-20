@@ -96,16 +96,16 @@ describe('Rollups', function() {
   });
 
   it('max()', function() {
-    var a = new DS.Value(1);
+    var a = new DS.Value(2);
     var b = new DS.Value(3.5);
     var c = new DS.Value(false);
     var d = new DS.Value(null);
     var e = new DS.Value("Hello world!");
 
     assert(DS.Rollup.max([a, b]).value === 3.5);
-    assert(DS.Rollup.max([a, c]).value === 1);
-    assert(DS.Rollup.max([a, d]).value === 1);
-    assert(DS.Rollup.max([a, a]).value === 1);
+    assert(DS.Rollup.max([a, c]).value === 2);
+    assert(DS.Rollup.max([a, d]).value === 2);
+    assert(DS.Rollup.max([a, a]).value === 2);
     assert(DS.Rollup.max([e, d]).value === null);
   });
 
