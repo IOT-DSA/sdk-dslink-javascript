@@ -173,3 +173,40 @@ describe('Rollups', function() {
     assert(DS.Rollup.count([a, b]).value == 2);
   });
 });
+
+describe('SingleRowTables', function() {
+  var table;
+  before(function() { 
+    table = new DS.SingleRowTable({
+      'name': DS.ValueType.STRING,
+      'age': DS.ValueType.INTEGER
+    }, {
+      'name': new DS.Value("Alex"),
+      'age': new DS.Value(15)
+    });
+  });
+
+  it('has correct column count', function() {
+    assert(table.columnCount === 2);
+  });
+
+  it('only iterates once', function() {
+    assert(table.next() === true);
+    assert(table.next() === false);
+  });
+
+  it('correctly selects columns', function() {
+    assert(table.get(0).value === "Alex");
+    assert(table.get(1).value === 15);
+  });
+
+  it('has correct column names', function() {
+    assert(table.getColumnName(0) === "name");
+    assert(table.getColumnName(1) === "age");
+  });
+
+  it('has correct column types', function() {
+    assert(table.getColumnType(0) === DS.ValueType.STRING);
+    assert(table.getColumnType(1) === DS.ValueType.INTEGER);
+  });
+});
