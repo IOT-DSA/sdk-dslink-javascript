@@ -16,3 +16,5 @@ var action = new DS.Action("One", {
 node.addAction(action);
 
 console.log(JSON.stringify(node.toMap()));
+
+console.log(JSON.stringify(node.value.toMap()));
