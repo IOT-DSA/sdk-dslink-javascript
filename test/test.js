@@ -63,6 +63,81 @@ describe('Node', function() {
     assert(node.name === "TestA");
     assert(node.getPath() === "/TestA");
   });
+  
+  it('should properly add an action to the map', function () {
+    var action = new DS.Action("One", undefined, {
+      'params': {
+        'one': DS.ValueType.STRING,
+        'two': DS.ValueType.STRING
+      },
+      'results': {
+        'three': DS.ValueType.STRING,
+        'four': DS.ValueType.STRING
+      }
+    });
+    var node = new DS.Node("Hello");
+    node.addAction(action);
+    
+    console.log(node);
+    //assert(node.actions.One.params.
+  });
+});
+
+describe('Actions', function() {
+  it("should create a proper action", function() {
+    var action = new DS.Action("One", undefined, {
+      'params': {
+        'one': DS.ValueType.STRING,
+        'two': DS.ValueType.STRING
+      },
+      'results': {
+        'three': DS.ValueType.STRING,
+        'four': DS.ValueType.STRING
+      }
+    });
+    assert(action.params.one !== undefined);
+    assert(action.results.three !== undefined);
+  });
+
+  it("should create a proper action map", function() {
+    var action = new DS.Action("One", undefined, {
+      'params': {
+        'one': DS.ValueType.STRING,
+        'two': DS.ValueType.STRING
+      },
+      'results': {
+        'three': DS.ValueType.STRING,
+        'four': DS.ValueType.STRING
+      }
+    });
+    var map = action.toMap();
+    assert(map.name === 'One');
+    assert(map.parameters[0].name === 'one');
+    assert(map.results[0].name === 'three');
+  });
+});
+
+describe('Link', function() {
+  it("Should be able to add nodes with actions to a link", function() {
+    var action = new DS.Action("One", undefined, {
+      'params': {
+        'one': DS.ValueType.STRING,
+        'two': DS.ValueType.STRING
+      },
+      'results': {
+        'three': DS.ValueType.STRING,
+        'four': DS.ValueType.STRING
+      }
+    });
+    var node = new DS.Node("Hello");
+    var link = new DS.Link("New_Link");
+    
+    node.addAction(action);
+    link.rootNode.addChild(node);
+    
+    assert(link.rootNode.children.Hello.actions.One.params.one !== undefined);
+    assert(link.rootNode.children.Hello.actions.One.results.three !== undefined);
+  });
 });
 
 describe('Rollups', function() {
