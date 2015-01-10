@@ -1,7 +1,7 @@
 var _ = require("./lib/internal.js");
 
 module.exports = _.mixin({},
-  require('./lib/protocol/protocol.js'),
+  require('./lib/responder/responder.js'),
   require('./lib/value.js'),
   require('./lib/node.js'),
   require('./lib/rollup.js'),
