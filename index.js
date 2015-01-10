@@ -1,6 +1,6 @@
 var _ = require("./lib/internal.js");
 
-module.exports = _.merge(
+module.exports = _.mixin({},
   require('./lib/protocol/protocol.js'),
   require('./lib/value.js'),
   require('./lib/node.js'),

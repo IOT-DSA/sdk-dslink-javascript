@@ -64,7 +64,7 @@ describe('Node', function() {
     assert(node.getPath() === "/TestA");
   });
   
-  it('should properly add an action to the map', function () {
+  it('should properly add an action to the node', function () {
     var action = new DS.Action("One", undefined, {
       'params': {
         'one': DS.ValueType.STRING,
@@ -78,8 +78,7 @@ describe('Node', function() {
     var node = new DS.Node("Hello");
     node.addAction(action);
     
-    console.log(node);
-    //assert(node.actions.One.params.
+    assert(node.actions.One === action);
   });
 });
 

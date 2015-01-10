@@ -1,8 +1,8 @@
-var jshint = require('gulp-jshint');
-var mocha = require('gulp-mocha');
-var istanbul = require('gulp-istanbul');
-var gulp = require('gulp');
-var runSequence = require('run-sequence')
+var jshint = require('gulp-jshint'),
+    mocha = require('gulp-mocha'),
+    istanbul = require('gulp-istanbul'),
+    gulp = require('gulp'),
+    runSequence = require('run-sequence');
 
 gulp.task('lint/lib', function() {
   return gulp.src('lib/**/*.js')
@@ -40,5 +40,5 @@ gulp.task('test', function(cb) {
     'lint',
     'mocha',
     cb
-  )
+  );
 });
