@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "dependencies": {
+    "eventemitter2": "^0.4.14",
     "goal": "^1.1.0",
     "hashcode": "^1.0.3",
     "websocket": "1.0.14"
