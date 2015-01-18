@@ -5,7 +5,7 @@
   "dependencies": {
     "eventemitter2": "^0.4.14",
     "goal": "^1.1.0",
-    "hashcode": "^1.0.3",
+    "ursa": "^0.8.1",
     "websocket": "1.0.14"
   },
   "scripts": {
