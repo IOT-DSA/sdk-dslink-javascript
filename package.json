@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "dependencies": {
+    "bignum": "^0.9.1",
     "goal": "^1.1.0",
     "ursa": "^0.8.1",
     "websocket": "1.0.14"
