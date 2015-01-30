@@ -1,286 +1,74 @@
-var assert = require('better-assert'),
-    DS = require('../index.js');
+var crypto = require('crypto'),
+    bignum = require('bignum'),
+    assert = require('better-assert'),
+    handshake = require('../lib/connection/handshake.js'),
+    DS = require('../index.js'),
+    _ = require('../lib/internal.js');
 
-describe('Value', function() {
-  describe('determineType', function() {
-    it('should identify strings', function() {
-      assert((new DS.Value("Hello")).type === DS.ValueType.STRING);
-    });
+describe('HandshakeClient', function() {
+  var m = 'jjxTpOaEQO4SlZQAGYlMHIEJvz6mDWQlxUW7uMOiSe2Dg60wu8I3pnQ0HDHYTQ35rP2i80WmEbaScTVz-oITO7Lh0470_epOtuwDWezEomdP2dheiGI4jageiJ0ratZ0VqQi63thfGOaBGpG15-TUaDNRUSyB8JQlGWJrojS5lIcVsnkq129mgBOFJCUzLWBp0fwbFBve1T3cYLrPoLQgIQPINiMnokw-iRjp-C9o8cqbh1WBBQOeSxg97AD4L-0mO6NgzhXZ_jjwaJG10e9BHQkvatwU-PFivnasH_fXbyXJqs-plWCQY462Ook2xer_94gCVT8gFubBalBjluw3Q',
+      e = 'eBMZkdZAxAe3jKrawrQTmuScc-TRjfCDqlxKM5qEQODP67Ojtn4pOM5Ux5CUx8gKhS3CCJk9rypvyj6T4GE7F2TWHCFNVaYeOXJZCetFvMx2rrNoar5we7X3wODeLF1K7XG3QRBxpe73sM5_a7x9Q6X6ZIWvvbkfCYgGiV9cm65nps4UTTmBnnh6GXcDFx9uPD5uPeMowtZh-bHzFfEYCj9dBaPfa9mQhHtqFODH8TpTOCDB8iPsJpl7loFmQQZzTRq6qr1UfPzRmfhJi_b_zdj8r5_gUEL8593StiXMIcPYlTnmUPRZtWjpFrlu3H4xEIMkPzowLqhp8KKotFGSCQ'
+      salt = '0x100',
+      nonceBytes = new Buffer([
+        0xd2,
+        0x65,
+        0x38,
+        0xaa,
+        0xbf,
+        0x9a,
+        0x97,
+        0xbc,
+        0xfd,
+        0x8b,
+        0xc0,
+        0xdd,
+        0x1a,
+        0x72,
+        0x7c,
+        0x92
+      ]),
+      encryptedNonce = 'YM2x5wEChxriLalS8tD5l2hlV6MUU-MmqbUNyDz5dUl1x8sNt7cBdh0MLc7mSb8Ohx-Q2_tW-i9fA0WQNFdWIdDZfNziUF4snFtZjez77eOSXFns4j51ZMdGXeWGRrlF5F1pGtIorFfMaofbD-QjX-VIe-TD-6QJDHVL9larXxVS2lnxY5YDhS1niHY-MXCBVUMPt9b9OOz87GTUlTu1mZJbq004mU_Du81D8j7aRNbaSIKmYWPJpoqW00yNXkADQZmVL8xVxyEApMrDF9VQMo1cNle5Tyxtvn79fF7zNE6On0JDaRg0ozP_fjV2-V_afr-OkStIWh5K_zBHfH1Xyg',
+      auth = 'MRxHkgT_dEszsB3kWe3HSu1Z8V1c1Z_uTvxP66';
 
-    it('should identify booleans', function() {
-      assert((new DS.Value(true)).type === DS.ValueType.BOOLEAN);
-    });
+  var modulus = new Buffer(m, 'base64'),
+      exponent = new Buffer(e, 'base64');
 
-    it('should identify integers', function() {
-      assert((new DS.Value(1)).type === DS.ValueType.INTEGER);
-    });
+  it('dsId', function() {
+    var hash = crypto.createHash('sha256');
+    hash.update(modulus);
 
-    it('should identify doubles', function() {
-      assert((new DS.Value(1.1)).type === DS.ValueType.NUMBER);
-    });
-
-    it('should identify null/undefined', function() {
-      assert((new DS.Value(null)).type === DS.ValueType.NULL);
-      assert((new DS.Value(undefined)).type === DS.ValueType.NULL);
-    });
-
-    it('should throw on unsupported type', function() {
-      try {
-        new DS.Value({});
-        assert(false);
-      } catch(e) {
-      }
-    });
+    assert("pTrfpbVWb3NNAhMIXr_FpmV3oObtMVxPcNu2mDksp0M" === _.replaceAll(_.Base64.urlSafe(hash.digest('base64')), '=', ''));
   });
 
-  it('isNull()', function() {
-    assert((new DS.Value(null)).isNull());
-    assert((new DS.Value(undefined)).isNull());
-    assert(!(new DS.Value(0)).isNull());
-    assert(!(new DS.Value("")).isNull());
-  });
+  it('nonce', function() {
+    var eNonce = bignum.fromBuffer(nonceBytes).powm(65537, bignum.fromBuffer(modulus));
+    eNonce = _.replaceAll(_.Base64.urlSafe(eNonce.toBuffer().toString('base64')), '=', '');
+    assert(eNonce === encryptedNonce);
 
-  it('isTruthy()', function() {
-    assert((new DS.Value(true)).isTruthy());
-    assert((new DS.Value("true")).isTruthy());
-    assert((new DS.Value(1)).isTruthy());
-    assert(!(new DS.Value(false)).isTruthy());
-    assert(!(new DS.Value("false")).isTruthy());
-    assert(!(new DS.Value(0)).isTruthy());
-    assert(!(new DS.Value("Hello world!")).isTruthy());
-  });
-});
-
-describe('Node', function() {
-  it("should keep identity but change it's path", function() {
-    var node = new DS.Node("TestA");
-    assert(node.name === "TestA");
-    assert(node.getPath() === "/");
-    var rootNode = new DS.Node("Root");
-    assert(rootNode.name === "Root");
-    assert(rootNode.getPath() === "/");
-    rootNode.addChild(node);
-    assert(node.name === "TestA");
-    assert(node.getPath() === "/TestA");
-  });
-  
-  it('should properly add an action to the node', function () {
-    var action = new DS.Action("One", undefined, {
-      'params': {
-        'one': DS.ValueType.STRING,
-        'two': DS.ValueType.STRING
+    var nonce = handshake.HandshakeClient.prototype.decryptNonce.call(null, {
+      getPrivateExponent: function() {
+        return exponent;
       },
-      'results': {
-        'three': DS.ValueType.STRING,
-        'four': DS.ValueType.STRING
+      getModulus: function() {
+        return modulus;
       }
-    });
-    var node = new DS.Node("Hello");
-    node.addAction(action);
-    
-    assert(node.actions.One === action);
-  });
-});
+    }, encryptedNonce);
 
-describe('Actions', function() {
-  it("should create a proper action", function() {
-    var action = new DS.Action("One", undefined, {
-      'params': {
-        'one': DS.ValueType.STRING,
-        'two': DS.ValueType.STRING
-      },
-      'results': {
-        'three': DS.ValueType.STRING,
-        'four': DS.ValueType.STRING
-      }
-    });
-    assert(action.params.one !== undefined);
-    assert(action.results.three !== undefined);
+    assert(nonce.toString('binary') === nonceBytes.toString('binary'));
   });
 
-  it("should create a proper action map", function() {
-    var action = new DS.Action("One", undefined, {
-      'params': {
-        'one': DS.ValueType.STRING,
-        'two': DS.ValueType.STRING
-      },
-      'results': {
-        'three': DS.ValueType.STRING,
-        'four': DS.ValueType.STRING
-      }
-    });
-    var map = action.toMap();
-    assert(map.name === 'One');
-    assert(map.parameters[0].name === 'one');
-    assert(map.results[0].name === 'three');
+  /*
+  it('auth', function() {
+    var buf = _.Buffer.merge(new Buffer(salt, 'utf8'), nonceBytes);
+    assert(buf.toString('hex') === '3078313030d26538aabf9a97bcfd8bc0dd1a727c92');
+
+    var hash = crypto.createHash('sha256');
+    hash.update(buf);
+    hash = hash.digest();
+
+    console.log(hash);
+    console.log(auth);
+    assert(hash.toString('binary') === new Buffer(auth, 'base64').toString('binary'));
   });
-});
-
-describe('Link', function() {
-  it("Should be able to add nodes with actions to a link", function() {
-    var action = new DS.Action("One", undefined, {
-      'params': {
-        'one': DS.ValueType.STRING,
-        'two': DS.ValueType.STRING
-      },
-      'results': {
-        'three': DS.ValueType.STRING,
-        'four': DS.ValueType.STRING
-      }
-    });
-    var node = new DS.Node("Hello");
-    var link = new DS.Link("New_Link");
-    
-    node.addAction(action);
-    link.rootNode.addChild(node);
-    
-    assert(link.rootNode.children.Hello.actions.One.params.one !== undefined);
-    assert(link.rootNode.children.Hello.actions.One.results.three !== undefined);
-  });
-});
-
-describe('Rollups', function() {
-  it('avg()', function() {
-    var a = new DS.Value(1);
-    var b = new DS.Value(3.5);
-    var c = new DS.Value(true);
-
-    assert(DS.Rollup.avg([a, b]).value === 2.25);
-    assert(DS.Rollup.avg([b, a]).value === 2.25);
-
-    try {
-      DS.Rollup.avg([a, c]);
-      assert(false);
-    } catch(e) {
-    }
-  });
-
-  it('min()', function() {
-    var a = new DS.Value(1);
-    var b = new DS.Value(3.5);
-    var c = new DS.Value(false);
-    var d = new DS.Value(null);
-    var e = new DS.Value("Hello world!");
-
-    assert(DS.Rollup.min([a, b]).value === 1);
-    assert(DS.Rollup.min([c, a]).value === false);
-    assert(DS.Rollup.min([a, d]).value === null);
-    assert(DS.Rollup.min([a, a]).value === 1);
-    assert(DS.Rollup.min([e, d]) === e);
-  });
-
-  it('max()', function() {
-    var a = new DS.Value(2);
-    var b = new DS.Value(3.5);
-    var c = new DS.Value(false);
-    var d = new DS.Value(null);
-    var e = new DS.Value("Hello world!");
-
-    assert(DS.Rollup.max([a, b]).value === 3.5);
-    assert(DS.Rollup.max([a, c]).value === 2);
-    assert(DS.Rollup.max([a, d]).value === 2);
-    assert(DS.Rollup.max([a, a]).value === 2);
-    assert(DS.Rollup.max([e, d]).value === null);
-  });
-
-  it('sum()', function() {
-    var a = new DS.Value(1);
-    var b = new DS.Value(3.5);
-    var c = new DS.Value(true);
-
-    assert(DS.Rollup.sum([a, b]).value === 4.5);
-    assert(DS.Rollup.sum([b, a]).value === 4.5);
-
-    try {
-      DS.Rollup.sum([a, c]);
-      assert(false);
-    } catch(e) {
-    }
-  });
-
-  it('first()', function() {
-    var a = new DS.Value(1);
-    var b = new DS.Value(3.5);
-
-    assert(DS.Rollup.first([a, b]) === a);
-    assert(DS.Rollup.first([b, a]) === b);
-  });
-
-  it('last()', function() {
-    var a = new DS.Value(1);
-    var b = new DS.Value(3.5);
-
-    assert(DS.Rollup.last([a, b]) === b);
-    assert(DS.Rollup.last([b, a]) === a);
-    assert(DS.Rollup.last([new DS.Value(1), a, b]) === b);
-  });
-
-  it('or()', function() {
-    var a = new DS.Value(0);
-    var b = new DS.Value(null);
-    var c = new DS.Value(1);
-    var d = new DS.Value("true");
-
-    assert(DS.Rollup.or([a, b]).value == false);
-    assert(DS.Rollup.or([a, c]).value == true);
-    assert(DS.Rollup.or([a, d]).value == true);
-    assert(DS.Rollup.or([c, d]).value == true);
-  });
-
-  it('and()', function() {
-    var a = new DS.Value(0);
-    var b = new DS.Value(null);
-    var c = new DS.Value(1);
-    var d = new DS.Value("true");
-
-    assert(DS.Rollup.and([a, b]).value == false);
-    assert(DS.Rollup.and([a, c]).value == false);
-    assert(DS.Rollup.and([a, d]).value == false);
-    assert(DS.Rollup.and([c, d]).value == true);
-  });
-
-  it('count()', function() {
-    var a = new DS.Value(0);
-    var b = new DS.Value(null);
-
-    assert(DS.Rollup.count([]).value == 0);
-    assert(DS.Rollup.count([a, b]).value == 2);
-  });
-});
-
-describe('SingleRowTables', function() {
-  var table;
-  before(function() { 
-    table = new DS.SingleRowTable({
-      'name': DS.ValueType.STRING,
-      'age': DS.ValueType.INTEGER
-    }, {
-      'name': new DS.Value("Alex"),
-      'age': new DS.Value(15)
-    });
-  });
-
-  it('has correct column count', function() {
-    assert(table.columnCount === 2);
-  });
-
-  it('only iterates once', function() {
-    assert(table.next() === true);
-    assert(table.next() === false);
-  });
-
-  it('correctly selects columns', function() {
-    assert(table.get(0).value === "Alex");
-    assert(table.get(1).value === 15);
-  });
-
-  it('has correct column names', function() {
-    assert(table.getColumnName(0) === "name");
-    assert(table.getColumnName(1) === "age");
-  });
-
-  it('has correct column types', function() {
-    assert(table.getColumnType(0) === DS.ValueType.STRING);
-    assert(table.getColumnType(1) === DS.ValueType.INTEGER);
-  });
+  */
 });

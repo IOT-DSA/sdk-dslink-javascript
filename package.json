@@ -5,7 +5,7 @@
   "dependencies": {
     "bignum": "^0.9.1",
     "goal": "^1.1.0",
-    "ursa": "^0.8.1",
+    "ursa": "git://github.com/mbullington/ursa.git",
     "websocket": "1.0.14"
   },
   "scripts": {
