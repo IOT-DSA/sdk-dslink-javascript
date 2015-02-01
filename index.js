@@ -1,4 +1,4 @@
-var _ = require("./lib/internal.js");
+var _ = require('./lib/internal.js');
 
 module.exports = _.mixin({},
   require('./lib/connection/websocket.js'),

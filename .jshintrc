@@ -1,0 +1,13 @@
+{
+  "camelcase": true,
+  "eqeqeq": true,
+  "freeze": true,
+  "latedef": true,
+  "maxdepth": 5,
+  "maxlen": 100,
+  "newcap": true,
+  "noempty": true,
+  "nonbsp": true,
+  "quotmark": "single",
+  "node": true
+}
