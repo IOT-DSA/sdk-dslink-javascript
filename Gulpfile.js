@@ -1,8 +1,9 @@
 var jshint = require('gulp-jshint'),
+    jscs = require('gulp-jscs'),
     mocha = require('gulp-mocha'),
     istanbul = require('gulp-istanbul'),
     gulp = require('gulp'),
-    runSequence = require('run-sequence');
+    run = require('run-sequence');
 
 gulp.task('lint/lib', function() {
   return gulp.src('lib/**/*.js')
@@ -18,9 +19,15 @@ gulp.task('lint/index', function() {
 
 gulp.task('lint', ['lint/index', 'lint/lib'], function() {});
 
+gulp.task('style', function() {
+  return gulp.src('lib/**/*.js')
+    .pipe(jscs());
+});
+
 gulp.task('mocha', function() {
-  return gulp.src('test/test.js', {read: false})
-    .pipe(mocha({ reporter: 'spec' }));
+  return gulp.src('test/test.js', {
+    read: false
+  }).pipe(mocha({ reporter: 'spec' }));
 });
 
 gulp.task('coverage', function (cb) {
@@ -30,14 +37,17 @@ gulp.task('coverage', function (cb) {
     .on('finish', function () {
       gulp.src(['test/*.js'])
         .pipe(mocha())
-        .pipe(istanbul.writeReports({reporters:['lcov', 'text-summary']})) // Creating the reports after tests runned
+        .pipe(istanbul.writeReports({
+          reporters:['lcov', 'text-summary']
+        })) // Creating the reports after tests runned
         .on('end', cb);
     });
 });
 
 gulp.task('test', function(cb) {
-  runSequence(
+  run(
     'lint',
+    'style',
     'mocha',
     cb
   );
