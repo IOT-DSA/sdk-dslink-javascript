@@ -19,11 +19,6 @@ gulp.task('lint/index', function() {
 
 gulp.task('lint', ['lint/index', 'lint/lib'], function() {});
 
-gulp.task('style', function() {
-  return gulp.src('lib/**/*.js')
-    .pipe(jscs());
-});
-
 gulp.task('mocha', function() {
   return gulp.src('test/test.js', {
     read: false
@@ -47,7 +42,6 @@ gulp.task('coverage', function (cb) {
 gulp.task('test', function(cb) {
   run(
     'lint',
-    'style',
     'mocha',
     cb
   );
