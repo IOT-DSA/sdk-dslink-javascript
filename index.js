@@ -1,4 +1,12 @@
-var _ = require('./lib/internal.js');
+var _ = require('./lib/internal/util.js');
+
+if(typeof window !== 'undefined' &&
+    (typeof Promise === 'undefined' ||
+    typeof Uint8Array === 'undefined' ||
+    typeof window.crypto === 'undefined' ||
+    typeof window.crypto.subtle === 'undefined')) {
+  throw "Unsupported browser";       
+}
 
 module.exports = _.mixin({},
   require('./lib/connection/error.js'),

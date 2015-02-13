@@ -4,9 +4,9 @@
   "main": "index.js",
   "dependencies": {
     "dhcurve": "git://github.com/mbullington/dhcurve",
-    "bignum": "^0.9.1",
     "goal": "^1.1.0",
-    "websocket": "1.0.14"
+    "websocket": "1.0.14",
+    "es6-promises": "^1.0.10"
   },
   "scripts": {
     "test": "./node_modules/gulp/bin/gulp.js test"
@@ -19,5 +19,8 @@
     "gulp-mocha": "2.0.0",
     "jshint-stylish": "1.0.0",
     "run-sequence": "^1.0.2"
+  },
+  "browser": {
+    "./lib/internal/crypto.js": "./lib/internal/crypto.browser.js"
   }
 }
