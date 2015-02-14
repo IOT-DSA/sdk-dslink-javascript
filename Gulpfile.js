@@ -1,5 +1,7 @@
-var jshint = require('gulp-jshint'),
-    jscs = require('gulp-jscs'),
+var browserify = require('browserify'),
+    source = require('vinyl-source-stream'),
+    buffer = require('vinyl-buffer'),
+    jshint = require('gulp-jshint'),
     mocha = require('gulp-mocha'),
     istanbul = require('gulp-istanbul'),
     gulp = require('gulp'),
@@ -45,4 +47,21 @@ gulp.task('test', function(cb) {
     'mocha',
     cb
   );
+});
+
+gulp.task('browser', function() {
+  var bundler = browserify({
+    entries: ['./index.js'],
+    standalone: 'DS'
+  });
+
+  var bundle = function() {
+    return bundler
+      .bundle()
+      .pipe(source('dslink.js'))
+      .pipe(buffer())
+      .pipe(gulp.dest('dist/'));
+  };
+
+  return bundle();
 });
