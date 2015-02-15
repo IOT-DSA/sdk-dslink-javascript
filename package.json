@@ -6,8 +6,8 @@
     "dhcurve": "git://github.com/mbullington/dhcurve",
     "es6-promises": "^1.0.10",
     "goal": "^1.1.0",
-    "sha.js": "^2.3.6",
-    "websocket": "1.0.14"
+    "websocket": "1.0.14",
+    "sha.js": "^2.3.6"
   },
   "scripts": {
     "test": "./node_modules/gulp/bin/gulp.js test"
