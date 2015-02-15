@@ -4,9 +4,10 @@
   "main": "index.js",
   "dependencies": {
     "dhcurve": "git://github.com/mbullington/dhcurve",
+    "es6-promises": "^1.0.10",
     "goal": "^1.1.0",
-    "websocket": "1.0.14",
-    "es6-promises": "^1.0.10"
+    "sha.js": "^2.3.6",
+    "websocket": "1.0.14"
   },
   "scripts": {
     "test": "./node_modules/gulp/bin/gulp.js test"
@@ -24,6 +25,6 @@
     "vinyl-source-stream": "^1.0.0"
   },
   "browser": {
-    "./lib/internal/crypto.js": "./lib/internal/crypto.browser.js"
+    "crypto": "./lib/internal/crypto.browser.js"
   }
 }
