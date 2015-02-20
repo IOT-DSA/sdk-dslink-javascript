@@ -7,7 +7,7 @@
     "dhcurve": "^1.0.3",
     "websocket": "1.0.14",
     "es6-promises": "^1.0.10",
-    "sha.js": "^2.3.6",
+    "sha.js": "^2.3.6"
   },
   "scripts": {
     "test": "./node_modules/gulp/bin/gulp.js test"

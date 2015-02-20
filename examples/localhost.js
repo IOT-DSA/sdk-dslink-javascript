@@ -1,5 +1,5 @@
 var DS = require('../index.js');
 
-var link = new DS.Link(new DS.WebSocketClient("test", "https://localhost:8443"));
+var link = new DS.Link(new DS.WebSocketClient("test", "http://localhost:8080"));
 
-link.rootNode.attribute('hello', new DS.Value('hello'));
+link.root.attribute('hello', new DS.Value('hello'));
