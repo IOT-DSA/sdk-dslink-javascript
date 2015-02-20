@@ -4,6 +4,7 @@ var browserify = require('browserify'),
     jshint = require('gulp-jshint'),
     mocha = require('gulp-mocha'),
     istanbul = require('gulp-istanbul'),
+    uglify = require('gulp-uglify'),
     gulp = require('gulp'),
     run = require('run-sequence');
 
@@ -60,6 +61,9 @@ gulp.task('browser', function() {
       .bundle()
       .pipe(source('dslink.js'))
       .pipe(buffer())
+      .pipe(uglify({
+        mangle: false
+      }))
       .pipe(gulp.dest('dist/'));
   };
 

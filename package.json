@@ -6,8 +6,7 @@
     "goal": "^1.0.1",
     "dhcurve": "^1.0.3",
     "websocket": "1.0.14",
-    "es6-promises": "^1.0.10",
-    "sha.js": "^2.3.6"
+    "es6-promises": "^1.0.10"
   },
   "scripts": {
     "test": "./node_modules/gulp/bin/gulp.js test"
@@ -19,8 +18,10 @@
     "gulp-istanbul": "^0.5.0",
     "gulp-jshint": "1.9.0",
     "gulp-mocha": "2.0.0",
+    "gulp-uglify": "^1.1.0",
     "jshint-stylish": "1.0.0",
     "run-sequence": "^1.0.2",
+    "sha.js": "^2.3.6",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.0.0"
   },
