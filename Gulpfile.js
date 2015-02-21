@@ -61,9 +61,7 @@ gulp.task('browser', function() {
       .bundle()
       .pipe(source('dslink.js'))
       .pipe(buffer())
-      .pipe(uglify({
-        mangle: false
-      }))
+      .pipe(uglify())
       .pipe(gulp.dest('dist/'));
   };
 
