@@ -1,13 +1,9 @@
-var browserify = require('browserify'),
+var gulp = require('gulp'),
     source = require('vinyl-source-stream'),
     buffer = require('vinyl-buffer'),
-    jshint = require('gulp-jshint'),
-    mocha = require('gulp-mocha'),
-    istanbul = require('gulp-istanbul'),
-    uglify = require('gulp-uglify'),
-    gulp = require('gulp'),
     run = require('run-sequence');
 
+var jshint;
 gulp.task('lint/lib', function() {
   return gulp.src('lib/**/*.js')
     .pipe(jshint())
@@ -20,15 +16,25 @@ gulp.task('lint/index', function() {
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
-gulp.task('lint', ['lint/index', 'lint/lib'], function() {});
+gulp.task('lint', ['lint/index', 'lint/lib'], function(cb) {
+  jshint = require('gulp-jshint');
+  run(
+    'lint/index',
+    'lint/lib',
+    cb
+  );
+});
 
 gulp.task('mocha', function() {
+  var mocha = require('gulp-mocha');
   return gulp.src('test/test.js', {
     read: false
   }).pipe(mocha({ reporter: 'spec' }));
 });
 
 gulp.task('coverage', function (cb) {
+  var istanbul = require('gulp-istanbul');
+  var mocha = require('gulp-mocha');
   gulp.src(['lib/**/*.js', 'index.js'])
     .pipe(istanbul()) // Covering files
     .pipe(istanbul.hookRequire()) // Force `require` to return covered files
@@ -51,6 +57,8 @@ gulp.task('test', function(cb) {
 });
 
 gulp.task('browser', function() {
+  var browserify = require('browserify');
+  var uglify = require('gulp-uglify');
   var bundler = browserify({
     entries: ['./index.js'],
     standalone: 'DS'
