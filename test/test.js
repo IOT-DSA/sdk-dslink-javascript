@@ -117,6 +117,7 @@ describe('Method', function() {
   });
 
   it('subscribe', function(done) {
+    responder.client.done();
     responder.client.start();
     provider.root.load({
       test: {

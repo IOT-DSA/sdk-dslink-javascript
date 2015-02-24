@@ -2,7 +2,7 @@ var _ = require('./lib/internal/util.js');
 
 if(typeof Promise === 'undefined' ||
    typeof Uint8Array === 'undefined') {
-  throw "Unsupported browser";
+  throw new Error('Unsupported browser');
 }
 
 module.exports = _.mixin({},
@@ -16,4 +16,5 @@ module.exports = _.mixin({},
   require('./lib/link/link.js'),
   require('./lib/value.js'),
   require('./lib/node.js'),
+  require('./lib/provider.js'),
   require('./lib/util.js'));
