@@ -1,10 +1,7 @@
 var _ = require('./lib/internal/util.js');
 
-if(typeof window !== 'undefined' &&
-    (typeof Promise === 'undefined' ||
-    typeof Uint8Array === 'undefined' ||
-    typeof window.crypto === 'undefined' ||
-    typeof window.crypto.subtle === 'undefined')) {
+if(typeof Promise === 'undefined' ||
+   typeof Uint8Array === 'undefined') {
   throw "Unsupported browser";
 }
 

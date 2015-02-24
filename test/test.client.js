@@ -3,6 +3,7 @@ var DS = require('../index.js'),
 
 function TestClient() {
   DS.Client.call(this);
+  this.start();
 }
 
 _.inherits(TestClient, DS.Client);
@@ -38,3 +39,13 @@ TestClient.prototype.sendMessage = function(message) {
 
   this.emit('send', map);
 };
+
+TestClient.prototype.start = function() {
+  this.__priv__.poller.poll(20);
+};
+
+TestClient.prototype.done = function() {
+  this.__priv__.poller.cancel();
+};
+
+module.exports = TestClient;

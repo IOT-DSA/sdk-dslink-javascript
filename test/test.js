@@ -1,4 +1,4 @@
-var assert = require('better-assert'),
+var assert = require('assert'),
     DS = require('../index.js'),
     TestClient = require('./test.client.js'),
     _ = require('../lib/internal/util.js');
@@ -69,5 +69,86 @@ describe('NodeProvider', function() {
     assert(provider.getNode('') === provider.root);
     assert(provider.getNode('/child') === child);
     assert(provider.getNode('// /child') === child);
+  });
+});
+
+describe('Method', function() {
+  var provider;
+  var responder;
+
+  before(function() {
+    responder = new DS.Responder(new TestClient(), provider);
+  });
+
+  beforeEach(function() {
+    provider = new DS.NodeProvider();
+    responder.provider = provider;
+  });
+
+  it('invoke', function(done) {
+    var invoked = false;
+    var action = new DS.Action(function(node, params) {
+      invoked = true;
+    });
+
+    provider.root.load({
+      test: {
+        '$invokable': 'read',
+        '?invoke': action
+      }
+    });
+
+    responder.client.once('send', function(msg) {
+      var res = msg.responses[0];
+      assert(res.rid === 1);
+      assert(res.stream === 'closed');
+      assert(invoked);
+
+      responder.client.done();
+      done();
+    });
+    responder.client.receiveMessage({
+      requests: [{
+        rid: 1,
+        method: 'invoke',
+        path: '/test'
+      }]
+    });
+  });
+
+  it('subscribe', function(done) {
+    responder.client.start();
+    provider.root.load({
+      test: {
+        '?value': new DS.Value(true)
+      }
+    });
+
+    responder.client.once('send', function(msg) {
+      var sub = msg.responses[0];
+      var res = msg.responses[1];
+
+      assert(sub.rid === 0);
+      assert(sub.stream === 'open');
+
+      var update = sub.updates[0];
+
+      assert(update.path === '/test');
+      assert(update.value === true);
+      assert(!_.isNull(update.timestamp));
+
+      assert(res.rid === 2);
+      assert(res.stream === 'closed');
+
+      responder.client.done();
+      done();
+    });
+    responder.client.receiveMessage({
+      requests: [{
+        rid: 2,
+        method: 'subscribe',
+        paths: ['/test']
+      }]
+    });
   });
 });
