@@ -3,21 +3,21 @@ var gulp = require('gulp'),
     buffer = require('vinyl-buffer'),
     run = require('run-sequence');
 
-var jshint;
 gulp.task('lint/lib', function() {
+  var jshint = require('gulp-jshint');
   return gulp.src('lib/**/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
 gulp.task('lint/index', function() {
+  var jshint = require('gulp-jshint');
   return gulp.src('index.js')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
-gulp.task('lint', ['lint/index', 'lint/lib'], function(cb) {
-  jshint = require('gulp-jshint');
+gulp.task('lint', function(cb) {
   run(
     'lint/index',
     'lint/lib',
@@ -69,7 +69,6 @@ gulp.task('browser', function() {
       .bundle()
       .pipe(source('dslink.js'))
       .pipe(buffer())
-      .pipe(uglify())
       .pipe(gulp.dest('dist/'));
   };
 

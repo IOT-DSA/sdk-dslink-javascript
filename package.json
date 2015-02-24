@@ -24,7 +24,6 @@
     "karma-browserify": "^3.0.3",
     "karma-mocha": "^0.1.10",
     "karma-spec-reporter": "0.0.16",
-    "mocha": "^2.1.0",
     "run-sequence": "^1.0.2",
     "sha.js": "^2.3.6",
     "vinyl-buffer": "^1.0.0",
