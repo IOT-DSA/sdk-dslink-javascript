@@ -83,7 +83,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
     }
   });
 
-  var responder = new DS.Responder(new DS.WebSocketClient('locker', 'http://localhost:8080'), provider);
+  var keys = DS.ECDH.importKey('t5YRKgaZyhXNNberpciIoYzz3S1isttspwc4QQhiaVk BJ403K-ND1Eau8UJA7stsYI2hdgiOKhNVDItwg7sS6MfG2iSRGqM2UodSF0mb8GbD8s2OAukQ03DFLULw72bklo');
+  var responder = new DS.Responder(new DS.WebSocketClient('locker', 'http://localhost:8080', keys), provider);
 
   provider.getNode('/locker1/opened').on('value', function(update) {
     document.querySelector('#opentext1').innerHTML = update.value === true ? 'Opened' : 'Closed';

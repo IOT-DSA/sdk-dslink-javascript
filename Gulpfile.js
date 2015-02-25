@@ -59,7 +59,6 @@ gulp.task('test', function(cb) {
 gulp.task('browser', function() {
   var browserify = require('browserify');
   var uglify = require('gulp-uglify');
-  var sourcemaps = require('gulp-sourcemaps');
 
   var bundler = browserify({
     entries: ['./index.js'],
@@ -71,9 +70,7 @@ gulp.task('browser', function() {
       .bundle()
       .pipe(source('dslink.js'))
       .pipe(buffer())
-      .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(uglify())
-      .pipe(sourcemaps.write('/'))
       .pipe(gulp.dest('dist/'));
   };
 
