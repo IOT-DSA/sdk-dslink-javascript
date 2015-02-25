@@ -56,7 +56,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
   var provider = new DS.NodeProvider();
 
   var action = new DS.Action(function(node, params) {
-    node.value = new DS.Value(true);
+    // open -> opened
+    provider.getNode(node.path() + 'ed').value = new DS.Value(true);
   });
 
   provider.root.load({
