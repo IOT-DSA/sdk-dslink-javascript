@@ -70,6 +70,13 @@ describe('NodeProvider', function() {
     assert(provider.getNode('/child') === child);
     assert(provider.getNode('// /child') === child);
   });
+
+  it('addNode()', function() {
+    var provider = new DS.NodeProvider();
+    provider.addNode('/one');
+
+    assert(!_.isNull(provider.root.children['one']));
+  });
 });
 
 describe('Method', function() {
