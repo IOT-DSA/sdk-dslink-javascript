@@ -9,7 +9,7 @@
     "es6-promises": "^1.0.10"
   },
   "scripts": {
-    "test": "./node_modules/gulp/bin/gulp.js test"
+    "test": "./node_modules/gulp/bin/gulp.js mocha"
   },
   "devDependencies": {
     "better-assert": "1.0.2",
