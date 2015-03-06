@@ -76,3 +76,9 @@ gulp.task('browser', function() {
 
   return bundle();
 });
+
+gulp.task('docs', function(done) {
+  var Dgeni = require('dgeni');
+  var dgeni = new Dgeni([require('./docs/dsa-docs')]);
+  return dgeni.generate();
+});
