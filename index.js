@@ -1,4 +1,4 @@
-var _ = require('./lib/internal/util.js');
+var _ = require('./lib/internal');
 
 if(typeof Uint8Array === 'undefined') {
   throw new Error('Unsupported browser');
@@ -12,7 +12,6 @@ module.exports = _.mixin({},
   require('./lib/connection/server/websocket.js'),
   require('./lib/connection/server/http.js'),
   require('./lib/responder/responder.js'),
-  require('./lib/link/link.js'),
   require('./lib/value.js'),
   require('./lib/node.js'),
   require('./lib/provider.js'),

@@ -1,5 +1,5 @@
 var DS = require('../index.js'),
-    _ = require('../lib/internal/util.js');
+    _ = require('../lib/internal');
 
 function TestClient() {
   DS.Client.call(this);

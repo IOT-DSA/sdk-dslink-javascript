@@ -1,7 +1,7 @@
 var assert = require('assert'),
     DS = require('../index.js'),
     TestClient = require('./test.client.js'),
-    _ = require('../lib/internal/util.js');
+    _ = require('../lib/internal');
 
 describe('Value', function() {
   describe('constructor', function() {
@@ -56,19 +56,13 @@ describe('Value', function() {
 });
 
 describe('NodeProvider', function() {
-  it('constructor', function() {
-    var root = new DS.Node();
-    var provider = new DS.NodeProvider(root);
-    assert(provider.root === root);
-  });
-
   it('getNode()', function() {
     var provider = new DS.NodeProvider();
     var child = new DS.Node('child');
-    provider.root.addChild(child);
+    provider.addChild(child);
 
-    assert(provider.getNode('/') === provider.root);
-    assert(provider.getNode('') === provider.root);
+    assert(provider.getNode('/') === provider);
+    assert(provider.getNode('') === provider);
     assert(provider.getNode('/child') === child);
     assert(provider.getNode('// /child') === child);
   });
@@ -77,7 +71,7 @@ describe('NodeProvider', function() {
     var provider = new DS.NodeProvider();
     provider.addNode('/one');
 
-    assert(!_.isNull(provider.root.children['one']));
+    assert(!_.isNull(provider.children['one']));
 
     try {
       provider.addNode('/');
@@ -88,6 +82,25 @@ describe('NodeProvider', function() {
       provider.addNode('/one');
       assert(false);
     } catch(e) {}
+  });
+
+  it('function()', function() {
+    var provider = new DS.NodeProvider();
+
+    var test = false;
+    provider.function('hello', new DS.Action(function() {
+      test = true;
+    }));
+
+    provider.load({
+      'hello': {
+        '$function': 'hello'
+      }
+    });
+
+    provider.getNode('/hello').invoke();
+    assert(test);
+    assert(provider.getNode('/hello').action === provider.function('hello'));
   });
 });
 
@@ -234,7 +247,7 @@ describe('Method', function() {
       invoked = !invoked;
     });
 
-    provider.root.load({
+    provider.load({
       test: {
         '$invokable': 'read',
         '?invoke': action
@@ -262,7 +275,7 @@ describe('Method', function() {
   it('subscribe/unsubscribe', function(done) {
     responder.client.done();
     responder.client.start();
-    provider.root.load({
+    provider.load({
       test: {
         '?value': true
       }
