@@ -1,12 +1,19 @@
 var DS = require('../index.js'),
+    Promise = Promise || require('es6-promises'),
     _ = require('../lib/internal');
 
 function TestClient() {
-  DS.Client.call(this);
-  this.start();
+  DS.Client.call(this, _.args(arguments));
 }
 
 _.inherits(TestClient, DS.Client);
+
+TestClient.prototype.connect = function(opt) {
+  return new Promise(function(resolve, reject) {
+    this.start();
+    resolve();
+  });
+};
 
 TestClient.prototype.receiveMessage = function(data) {
   if(!_.isNull(data.responses)) {
@@ -17,10 +24,13 @@ TestClient.prototype.receiveMessage = function(data) {
 
   if(!_.isNull(data.requests)) {
     _.each(data.requests, function(req) {
+      if(this.responder !== null) {
+        this.responder.handleRequest(this, req);
+      }
       this.emit('request', req);
     }, this);
   }
-}
+};
 
 TestClient.prototype.sendMessage = function(message) {
   var requests = [];
@@ -41,11 +51,11 @@ TestClient.prototype.sendMessage = function(message) {
 };
 
 TestClient.prototype.start = function() {
-  this.__priv__.poller.poll(20);
+  this._poller.poll(20);
 };
 
 TestClient.prototype.done = function() {
-  this.__priv__.poller.cancel();
+  this._poller.cancel();
 };
 
 module.exports = TestClient;

@@ -27,7 +27,7 @@ gulp.task('lint', function(cb) {
 
 gulp.task('mocha', function() {
   var mocha = require('gulp-mocha');
-  return gulp.src('test/test.js', {
+  return gulp.src('test/', {
     read: false
   }).pipe(mocha({ reporter: 'spec' }));
 });
