@@ -245,6 +245,7 @@ describe('Method', function() {
     var action = new DS.Action(function(node, params) {
       // make sure it's only called once
       invoked = !invoked;
+      return new DS.Stream().close();
     });
 
     provider.load({
