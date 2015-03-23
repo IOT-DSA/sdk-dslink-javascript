@@ -21,6 +21,19 @@ describe('Value', function() {
       assert(new DS.Value(new String('')).type === DS.ValueType.STRING);
       assert(new DS.Value(1).type === DS.ValueType.NUMBER);
       assert(new DS.Value(new Number(1)).type === DS.ValueType.NUMBER);
+      assert(new DS.Value({}).type === DS.ValueType.MAP);
+      assert(new DS.Value(new Object()).type === DS.ValueType.MAP);
+      assert(new DS.Value([]).type === DS.ValueType.LIST);
+      assert(new DS.Value(new Array()).type === DS.ValueType.LIST);
+
+      assert.throws(function() {
+        new DS.Value();
+      });
+    });
+
+    it('isValid', function() {
+      assert(!(new DS.Value(1)).isValid(DS.ValueType.LIST));
+      assert((new DS.Value(1)).isValid(DS.ValueType.NUMBER));
     });
 
     it('is immutable', function() {
