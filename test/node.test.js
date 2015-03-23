@@ -18,7 +18,7 @@ describe('Node', function() {
     assert(node.name === 'pizza');
     assert(node.attribute('hello') === 'hello world!');
     assert(node.value.value === 2);
-    assert(node.type === 'number');
+    assert(node.type === 'bool');
 
     node = new DS.Node('test', {
       '?value': new DS.Value(2)

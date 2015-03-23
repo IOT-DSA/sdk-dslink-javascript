@@ -3,7 +3,7 @@ var assert = require('assert'),
     TestClient = require('./client.test.js'),
     _ = require('../lib/internal');
 
-describe('Responder Methods', function() {
+describe('Method', function() {
   var provider;
   var responder;
 
@@ -75,7 +75,7 @@ describe('Responder Methods', function() {
 
         var update = sub.updates[0];
 
-        assert(update.path === '/test');
+        assert(update.sid === 1);
         assert(update.value === true);
         assert(!_.isNull(update.ts));
 
@@ -93,7 +93,7 @@ describe('Responder Methods', function() {
 
         var update = sub.updates[0];
 
-        assert(update.path === '/test');
+        assert(update.sid === 1);
         assert(update.value === false);
         assert(!_.isNull(update.ts));
 
@@ -101,7 +101,7 @@ describe('Responder Methods', function() {
           requests: [{
             rid: 3,
             method: 'unsubscribe',
-            paths: ['/test']
+            sids: [1]
           }]
         });
       }
@@ -111,7 +111,7 @@ describe('Responder Methods', function() {
 
         assert(res.rid === 3);
         assert(res.stream === 'closed');
-        assert(Object.keys(client.streamResponse(0).nodes).length === 0);
+        assert(Object.keys(responder.streamResponse(0).nodes).length === 0);
 
         client.removeListener('send', subscribeHandler);
         client.done();
@@ -125,7 +125,7 @@ describe('Responder Methods', function() {
       requests: [{
         rid: 2,
         method: 'subscribe',
-        paths: ['/test']
+        paths: [{path:'/test',sid:1}]
       }]
     });
   });

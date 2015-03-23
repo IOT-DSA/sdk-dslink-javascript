@@ -1,12 +1,15 @@
 var DS = require('../index.js'),
     Promise = Promise || require('es6-promises'),
+    EventEmitter = require('events').EventEmitter,
     _ = require('../lib/internal');
 
 function TestClient() {
   DS.Client.call(this, _.args(arguments));
+  EventEmitter.call(this);
+  this.setMaxListeners(0);
 }
 
-_.inherits(TestClient, DS.Client);
+_.mixin(TestClient.prototype, DS.Client.prototype, EventEmitter.prototype);
 
 TestClient.prototype.connect = function(opt) {
   return new Promise(function(resolve, reject) {
@@ -25,7 +28,7 @@ TestClient.prototype.receiveMessage = function(data) {
   if(!_.isNull(data.requests)) {
     _.each(data.requests, function(req) {
       if(this.responder !== null) {
-        this.responder.handleRequest(this, req);
+        this.responder.handleRequest(req);
       }
       this.emit('request', req);
     }, this);
