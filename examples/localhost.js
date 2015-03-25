@@ -1,10 +1,8 @@
 var DS = require('../index.js');
 
 var provider = new DS.NodeProvider();
-var responder = new DS.Responder(provider);
-var client = new DS.WebSocketClient('test', responder);
 
-client.connect('http://localhost:8080').then(function() {
+(new DS.Link('test', provider)).connect().then(function() {
   var action = new DS.Action(function(node, params) {
     node.value = new DS.Value(true);
   });

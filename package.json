@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "goal": "^1.0.1",
     "dhcurve": "^1.0.4",
-    "websocket": "1.0.14",
-    "es6-promises": "^1.0.10"
+    "es6-promises": "^1.0.10",
+    "goal": "^1.0.1",
+    "mock-fs": "^2.5.0",
+    "websocket": "1.0.14"
   },
   "scripts": {
     "test": "./node_modules/gulp/bin/gulp.js mocha"
@@ -32,6 +33,7 @@
     "vinyl-source-stream": "^1.0.0"
   },
   "browser": {
-    "crypto": "./lib/internal/crypto.browser.js"
+    "crypto": "./lib/internal/crypto.browser.js",
+    "./lib/link/link.js": "./lib/link/link.browser.js"
   }
 }
