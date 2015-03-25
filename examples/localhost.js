@@ -2,7 +2,7 @@ var DS = require('../index.js');
 
 var provider = new DS.NodeProvider();
 
-(new DS.Link('test', provider)).connect('http://localhost:8080/conn').then(function() {
+(new DS.Link('test', provider)).connect().then(function() {
   var action = new DS.Action(function(node, params) {
     node.value = new DS.Value(true);
   });
