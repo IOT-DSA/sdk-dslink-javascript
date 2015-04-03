@@ -82,3 +82,10 @@ gulp.task('docs', function(done) {
   var dgeni = new Dgeni([require('./docs/dsa-docs')]);
   return dgeni.generate();
 });
+
+gulp.task('connect', function() {
+  var connect = require('gulp-connect');
+  connect.server({
+    port: 8000
+  });
+})

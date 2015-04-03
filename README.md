@@ -14,7 +14,8 @@ To package for the browser, you'll need a recent version of node.js installed (0
 
 ```
 npm install
-gulp browser
+node ./node_modules/gulp/bin/gulp.js browser
+# if you have gulp installed locally, just do 'gulp browser'
 ```
 
 A minified, compiled version of the DSLink API can now be found at dist/dslink.js. The SDK can be used in browser under the DS namespace.
