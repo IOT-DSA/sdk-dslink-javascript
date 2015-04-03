@@ -2,18 +2,20 @@ var DS = require('../index.js');
 
 var provider = new DS.NodeProvider();
 
-var ToggleLocker = DS.Node.createNode({
+var Action = DS.Node.createNode({
   onInvoke: function(params) {
     this.value = true;
   }
 });
 
-client.connect('http://localhost:8080').then(function() {
+provider.is('action', Action);
+
+(new DS.Link('test', provider)).connect('http://localhost:8080/conn').then(function() {
   provider.load({
     locker1: {
       open: {
-        '$is': ToggleLocker,
-        '$invokable': 'read'
+        '$invokable': 'read',
+        '$is': 'action'
       },
       opened: {
         '$type': 'bool',
@@ -22,8 +24,8 @@ client.connect('http://localhost:8080').then(function() {
     },
     locker2: {
       open: {
-        '$is': ToggleLocker,
-        '$invokable': 'read'
+        '$invokable': 'read',
+        '$is': 'action'
       },
       opened: {
         '$type': 'bool',
