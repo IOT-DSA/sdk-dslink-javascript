@@ -88,8 +88,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
   });
 
   var keys = DS.ECDH.importKey('t5YRKgaZyhXNNberpciIoYzz3S1isttspwc4QQhiaVk BJ403K-ND1Eau8UJA7stsYI2hdgiOKhNVDItwg7sS6MfG2iSRGqM2UodSF0mb8GbD8s2OAukQ03DFLULw72bklo');
-  var responder = new DS.Responder(new DS.WebSocketClient('locker', 'http://localhost:8080', keys), provider);
-
   var responder = new DS.Responder(provider);
   var client = new DS.WebSocketClient('locker', responder);
 
