@@ -1,8 +1,6 @@
 var DS = require('../index.js');
 
 var provider = new DS.NodeProvider();
-var responder = new DS.Responder(provider);
-var client = new DS.WebSocketClient('test', responder);
 
 var ToggleLocker = DS.Node.createNode({
   onInvoke: function(params) {
