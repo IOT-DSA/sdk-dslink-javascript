@@ -21,15 +21,19 @@ describe('Method', function() {
     client.start();
 
     var invoked = false;
-    var action = new DS.Action(function(node, params) {
-      // make sure it's only called once
-      invoked = !invoked;
+    var Action = DS.Node.createNode({
+      onInvoke: function(node, params) {
+        // make sure it's only called once
+        invoked = !invoked;
+      }
     });
+
+    provider.is('action', Action);
 
     provider.load({
       test: {
         '$invokable': 'read',
-        '?invoke': action
+        '$is': 'action'
       }
     });
 

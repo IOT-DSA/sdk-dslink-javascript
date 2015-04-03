@@ -55,16 +55,20 @@ input {
 document.addEventListener('DOMContentLoaded', function(event) {
   var provider = new DS.NodeProvider();
 
-  var action = new DS.Action(function(node, params) {
-    // open -> opened
-    provider.getNode(node.path() + 'ed').value = new DS.Value(true);
+  var OpenLocker = DS.Node.createNode({
+    onInvoke: function(params) {
+      // open -> opened
+      provider.getNode(this.path() + 'ed').value = new DS.Value(true);
+    }
   });
 
-  provider.root.load({
+  provider.is('openLocker', OpenLocker);
+
+  provider.load({
     locker1: {
       open: {
         '$invokable': 'read',
-        '?invoke': action
+        '$is': 'openLocker'
       },
       opened: {
         '$type': 'bool',
@@ -74,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     locker2: {
       open: {
         '$invokable': 'read',
-        '?invoke': action
+        '$is': 'openLocker'
       },
       opened: {
         '$type': 'bool',
@@ -86,28 +90,36 @@ document.addEventListener('DOMContentLoaded', function(event) {
   var keys = DS.ECDH.importKey('t5YRKgaZyhXNNberpciIoYzz3S1isttspwc4QQhiaVk BJ403K-ND1Eau8UJA7stsYI2hdgiOKhNVDItwg7sS6MfG2iSRGqM2UodSF0mb8GbD8s2OAukQ03DFLULw72bklo');
   var responder = new DS.Responder(new DS.WebSocketClient('locker', 'http://localhost:8080', keys), provider);
 
-  provider.getNode('/locker1/opened').on('value', function(update) {
-    document.querySelector('#opentext1').innerHTML = update.value === true ? 'Opened' : 'Closed';
-  });
+  var responder = new DS.Responder(provider);
+  var client = new DS.WebSocketClient('locker', responder);
 
-  provider.getNode('/locker2/opened').on('value', function(update) {
-    document.querySelector('#opentext2').innerHTML = update.value === true ? 'Opened' : 'Closed';
-  });
+  client.connect({
+    hostname: 'http://localhost:8080/conn',
+    keys: keys
+  }).then(function() {
+    provider.getNode('/locker1/opened').on('value', function(update) {
+      document.querySelector('#opentext1').innerHTML = update.value === true ? 'Opened' : 'Closed';
+    });
 
-  document.querySelector('#openbtn1').addEventListener('click', function() {
-    provider.getNode('/locker1/opened').value = true;
-  });
+    provider.getNode('/locker2/opened').on('value', function(update) {
+      document.querySelector('#opentext2').innerHTML = update.value === true ? 'Opened' : 'Closed';
+    });
 
-  document.querySelector('#closebtn1').addEventListener('click', function() {
-    provider.getNode('/locker1/opened').value = false;
-  });
+    document.querySelector('#openbtn1').addEventListener('click', function() {
+      provider.getNode('/locker1/opened').value = true;
+    });
 
-  document.querySelector('#openbtn2').addEventListener('click', function() {
-    provider.getNode('/locker2/opened').value = true;
-  });
+    document.querySelector('#closebtn1').addEventListener('click', function() {
+      provider.getNode('/locker1/opened').value = false;
+    });
 
-  document.querySelector('#closebtn2').addEventListener('click', function() {
-    provider.getNode('/locker2/opened').value = false;
+    document.querySelector('#openbtn2').addEventListener('click', function() {
+      provider.getNode('/locker2/opened').value = true;
+    });
+
+    document.querySelector('#closebtn2').addEventListener('click', function() {
+      provider.getNode('/locker2/opened').value = false;
+    });
   });
 });
 

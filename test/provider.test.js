@@ -31,22 +31,24 @@ describe('NodeProvider', function() {
     } catch(e) {}
   });
 
-  it('function()', function() {
+  it('is()', function() {
     var provider = new DS.NodeProvider();
 
-    var test = false;
-    provider.function('hello', new DS.Action(function() {
-      test = true;
-    }));
-
-    provider.load({
-      'hello': {
-        '$function': 'hello'
+    var Hello = new DS.Node.createNode({
+      onInvoke: function() {
+        this.test = true;
       }
     });
 
-    provider.getNode('/hello').invoke();
-    assert(test);
-    assert(provider.getNode('/hello').action === provider.function('hello'));
+    provider.is('hello', Hello);
+
+    provider.load({
+      'hello': {
+        '$is': 'hello'
+      }
+    });
+
+    provider.getNode('/hello').onInvoke();
+    assert(provider.getNode('/hello').test);
   });
 });
