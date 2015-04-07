@@ -23,6 +23,10 @@ describe('Method', function() {
     var invoked = false;
     var Action = DS.Node.createNode({
       onInvoke: function(node, params) {
+        if(invoked === true) {
+          throw DS.Errors.INVALID_METHOD;
+        }
+
         // make sure it's only called once
         invoked = !invoked;
       }
@@ -37,15 +41,35 @@ describe('Method', function() {
       }
     });
 
-    client.once('send', function(msg) {
-      var res = msg.responses[0];
-      assert(res.rid === 1);
-      assert(res.stream === 'closed');
-      assert(invoked);
+    var count = 0;
+    function invokeHandler(msg) {
+      count++;
 
-      client.done();
-      done();
-    });
+      if(count === 1) {
+        var res = msg.responses[0];
+        assert(res.rid === 1);
+        assert(res.stream === 'closed');
+        assert(invoked);
+
+        client.receiveMessage({
+          requests: [{
+            rid: 2,
+            method: 'invoke',
+            path: '/test'
+          }]
+        });
+      }
+
+      if(count === 2) {
+        assert(!_.isNull(msg.responses[0].error));
+
+        client.removeListener('send', invokeHandler);
+        client.done();
+        done();
+      }
+    }
+
+    client.on('send', invokeHandler);
 
     client.receiveMessage({
       requests: [{
@@ -101,6 +125,20 @@ describe('Method', function() {
         assert(update.value === false);
         assert(!_.isNull(update.ts));
 
+        provider.getNode('/test').value = DS.Errors.PERMISSION_DENIED;
+      }
+
+      if(count === 3) {
+        var res = msg.responses[0];
+
+        assert(res.rid === 0);
+
+        var update = res.updates[0];
+
+        assert(update.sid === 1);
+        assert(update.msg === 'Permission Denied');
+        assert(update.status === 'error');
+
         client.receiveMessage({
           requests: [{
             rid: 3,
@@ -110,7 +148,7 @@ describe('Method', function() {
         });
       }
 
-      if(count === 3) {
+      if(count === 4) {
         var res = msg.responses[0];
 
         assert(res.rid === 3);
