@@ -14,6 +14,29 @@ describe('NodeProvider', function() {
     assert(provider.getNode('// /child') === child);
   });
 
+  it('getNodesByAttributeValue()', function() {
+    var provider = new DS.NodeProvider();
+    var child1 = new DS.Node('child')
+    child1.load({
+      '@test': 'test_value'
+    });
+    var child2 = new DS.Node('child2')
+    child2.load({
+      '@testfalse': 'test_value'
+    });
+    var child3 = new DS.Node('child3')
+    child3.load({
+      '@test': 'test_value'
+    });
+    provider.addChild(child1);
+    provider.addChild(child2);
+    provider.addChild(child3);
+    var nodes = provider.getNodesByAttributeValue('test', 'test_value');
+    assert(nodes.length === 2);
+    assert(nodes[0] === child1);
+    assert(nodes[1] === child3);
+  });
+
   it('addNode()', function() {
     var provider = new DS.NodeProvider();
     provider.addNode('/one');
