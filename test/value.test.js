@@ -32,6 +32,16 @@ describe('Value', function() {
     });
 
     it('isValid', function() {
+      var e = DS.ValueType.ENUM("true", "false");
+
+      assert((new DS.Value("true", {
+        type: e
+      })).isValid(e));
+
+      assert(!(new DS.Value("pizza", {
+        type: e
+      })).isValid(e));
+
       assert(!(new DS.Value(1)).isValid(DS.ValueType.LIST));
       assert((new DS.Value(1)).isValid(DS.ValueType.NUMBER));
     });
