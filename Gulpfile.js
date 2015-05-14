@@ -70,7 +70,7 @@ gulp.task('browser', function() {
       .bundle()
       .pipe(source('dslink.js'))
       .pipe(buffer())
-      .pipe(uglify())
+//      .pipe(uglify())
       .pipe(gulp.dest('dist/'));
   };
 
