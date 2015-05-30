@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script src="../dist/dslink.js"></script>
+    <script>
+        window.onload = function() {
+            console.log("Hello");
+            this.link = new DS.LinkProvider("http://127.0.0.1:8080/conn", "browser-js-", {
+                defaultNodes: {
+                    one: {
+                        "$name": "Test",
+                        "$type": "bool",
+                        "?value": true
+                    }
+                }
+            });
+
+            console.log("Hello #1");
+            this.link.init();
+
+            console.log("Hello #2");
+            this.link.connect();
+        }
+    </script>
+</body>
+</html>

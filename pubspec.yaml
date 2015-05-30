@@ -1,0 +1,8 @@
+name: dslink_js
+version: 1.0.0
+description: DSLink SDK for Dart
+dependencies:
+  dslink:
+    git: https://github.com/IOT-DSA/sdk-dslink-dart.git
+  calzone:
+    git: https://github.com/DirectMyFile/calzone.dart.git

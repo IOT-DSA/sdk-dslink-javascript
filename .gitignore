@@ -1,6 +1,15 @@
+# WebStorm
 .idea
 *.iml
+
+# Node.js
 node_modules
 coverage
 dist
 docs/build
+
+# Dart
+.pub
+packages
+./**/packages
+pubspec.lock
