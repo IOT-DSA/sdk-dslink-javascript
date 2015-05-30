@@ -16,14 +16,16 @@
                         "$type": "bool",
                         "?value": true
                     }
-                }
+                },
+                isResponder: false,
+                isRequester: true
             });
 
-            console.log("Hello #1");
-            this.link.init();
-
-            console.log("Hello #2");
-            this.link.connect();
+            this.link.connect().then(function() {
+              return this.link.onRequesterReady;
+            }).then(function(requester) {
+              console.log(requester);
+            });
         }
     </script>
 </body>

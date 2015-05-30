@@ -21,7 +21,7 @@ dart2js, and pub.
 ```
 pub get
 npm install
-sh build.sh
+sh build.sh browser
 ```
 
 A compiled version of the DSLink API can now be found at dist/dslink.js. A minified version can be found at dist/dslink.min.js.

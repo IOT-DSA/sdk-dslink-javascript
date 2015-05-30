@@ -15,7 +15,8 @@ import "dart:async";
   "dslink.utils.buildEnumType",
   "dslink.utils.buildActionIO",
   "dslink.pk.PrivateKey",
-  "dart.async.Completer"
+  "dart.async.Completer",
+  "dart.async.Future"
 ])
 import "dart:mirrors";
 
