@@ -2,8 +2,10 @@ name: dslink_js
 version: 1.0.0
 description: DSLink SDK for Dart
 dependencies:
+  yaml: "^2.1.2"
   dslink:
-    git: https://github.com/IOT-DSA/sdk-dslink-dart.git
+    path: ./temp/sdk-dslink-dart
+    # path: ../sdk-dslink-dart
   calzone:
-    # git: https://github.com/DirectMyFile/calzone.dart.git
-    path: ../calzone.dart
+    git: https://github.com/DirectMyFile/calzone.dart.git
+    # path: ../calzone.dart

@@ -27,3 +27,6 @@ sh build.sh browser
 A compiled version of the DSLink API can now be found at dist/dslink.js. A minified version can be found at dist/dslink.min.js.
 
 The SDK can be used in browser under the DS namespace.
+
+If you've already built either the node or browser version, you can append 'quick' to the build.sh script to not rebuild the entire SDK for development,
+and just generate the wrapper and piece it together.
