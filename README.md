@@ -19,8 +19,6 @@ To package for the browser, you'll need a recent version of node.js installed (0
 dart2js, and pub.
 
 ```
-pub get
-npm install
 sh build.sh browser
 ```
 
