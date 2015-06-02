@@ -3,7 +3,7 @@ COL_RESET=$'\e[0m'
 COL_GREEN=$'\e[1;32m'
 COL_BLUE=$'\e[1;34m'
 
-if [ $2 != "quick" ]; then
+if [ $2 != "dev" ]; then
   rm -rf temp dist
 
   mkdir temp
@@ -40,7 +40,7 @@ if [ $2 != "quick" ]; then
   dart2js --dump-info --enable-experimental-mirrors -o temp/dslink.js tool/$1_stub.dart
 else
   echo -n "$COL_GREEN"
-  echo "Quick build! Skipping the first 5 steps."
+  echo "Dev build! Skipping the first 5 steps."
   echo "This requires you to have already built the full SDK once with the correct platform."
   echo -n "$COL_RESET"
 fi
