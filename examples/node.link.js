@@ -9,11 +9,10 @@ var link = new DS.LinkProvider(process.argv.slice(2), "simple-responder-new-js-"
       "$writable": "write", // This node's value can be set by a requester.
       "?value": "Hello World" // The default message value.
     }
-  },
-  encodePrettyJson: true
+  }
 });
 
-console.log(link.defaultLogLevel);
-
 // Connect to the broker.
-link.connect();
+link.connect().then(function() {
+  console.log(link.getNode('/Message'));
+});

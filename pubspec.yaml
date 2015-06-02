@@ -5,7 +5,6 @@ dependencies:
   yaml: "^2.1.2"
   dslink:
     path: ./temp/sdk-dslink-dart
-    # path: ../sdk-dslink-dart
   calzone:
     git: https://github.com/DirectMyFile/calzone.dart.git
     # path: ../calzone.dart

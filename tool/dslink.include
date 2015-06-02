@@ -15,6 +15,3 @@ dslink.pk.PrivateKey
 dslink.client
 # browser
 dslink.browser_client
-
-# Dart SDK
-dart.async.Stream

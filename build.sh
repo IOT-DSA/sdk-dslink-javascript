@@ -1,9 +1,3 @@
-# CALZONE_PATH="./.pub/bin/calzone"
-CALZONE_PATH="../calzone.dart/bin"
-
-# CALZONE_EXT=".dart.snapshot"
-CALZONE_EXT=".dart"
-
 COL_RESET=$'\e[0m'
 
 COL_GREEN=$'\e[1;32m'
@@ -55,13 +49,13 @@ echo -n "$COL_BLUE"
 echo "6/9 Generating JS wrapper for Dart SDK"
 echo -n "$COL_RESET"
 
-dart $CALZONE_PATH/calzone$CALZONE_EXT temp/dslink.js.info.json tool/dslink.include > temp/wrapper.js
+dart tool/wrapper_gen.dart tool/$1_stub.dart > temp/wrapper.js
 
 echo -n "$COL_BLUE"
 echo "7/9 Patching JS wrapper into dart2js output"
 echo -n "$COL_RESET"
 
-dart $CALZONE_PATH/calpatcher$CALZONE_EXT -t $1 -f temp/dslink.js -w temp/wrapper.js  > temp/dslink.patched.js
+pub run calzone:calpatcher -t $1 -f temp/dslink.js -w temp/wrapper.js  > temp/dslink.patched.js
 
 echo -n "$COL_BLUE"
 echo "8/9 Generating JS SDK at dist/dslink.js"
