@@ -19,10 +19,15 @@
                 }
             });
 
+            this.link.init().then(function() {
+              console.log("Hello #1");
+            });
+
             this.link.connect().then(function() {
-              return this.link.onRequesterReady;
-            }).then(function(requester) {
-              console.log(requester);
+              console.log("Hello #2");
+              this.link.onRequesterReady.then(function(requester) {
+                console.log("Hello #3");
+              });
             });
         }
     </script>
