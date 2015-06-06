@@ -1,6 +1,7 @@
 import "package:dslink/dslink.dart";
 import "package:dslink/src/crypto/pk.dart";
 import "dart:async";
+import "dart:typed_data";
 
 @MirrorsUsed(
     targets: const [
@@ -16,7 +17,8 @@ import "dart:async";
   "dslink.utils.buildActionIO",
   "dslink.pk.PrivateKey",
   "dart.async.Completer",
-  "dart.async.Future"
+  "dart.async.Future",
+  "dart.typed_data.ByteBuffer"
 ])
 import "dart:mirrors";
 

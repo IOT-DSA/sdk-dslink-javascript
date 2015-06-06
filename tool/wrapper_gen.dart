@@ -57,4 +57,5 @@ main(List<String> args) {
   var str = compiler.compile(include);
 
   print(str);
+  print(new File("tool/js/mixin.js").readAsStringSync());
 }

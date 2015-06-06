@@ -1,4 +1,4 @@
-var DS = require('../dist/dslink.js');
+var DS = require('../dist/dslink.node.js');
 
 // Process the arguments and initializes the default nodes.
 var link = new DS.LinkProvider(process.argv.slice(2), "simple-responder-new-js-", {

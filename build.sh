@@ -62,16 +62,16 @@ echo "8/9 Generating JS SDK at dist/dslink.js"
 echo -n "$COL_RESET"
 
 if [ $1 == "browser" ]; then
-  node node_modules/browserify/bin/cmd.js temp/dslink.patched.js --standalone DS > dist/dslink.js
+  node node_modules/browserify/bin/cmd.js temp/dslink.patched.js --standalone DS > dist/dslink.$1.js
 else
-  cat temp/dslink.patched.js > dist/dslink.js
+  cat temp/dslink.patched.js > dist/dslink.$1.js
 fi
 
 echo -n "$COL_BLUE"
 echo "9/9 Minifing at dist/dslink.min.js"
 echo -n "$COL_RESET"
 
-node node_modules/uglify-js/bin/uglifyjs dist/dslink.js > dist/dslink.min.js
+node node_modules/uglify-js/bin/uglifyjs dist/dslink.$1.js > dist/dslink.$1.min.js
 
 echo -n "$COL_GREEN"
 echo "Done!"

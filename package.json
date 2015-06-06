@@ -1,8 +1,9 @@
 {
   "name": "dslink",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "DSLink IoT platform SDK for node.js and the Web",
+  "main": "dist/dslink.node.min.js",
+  "browser": "dist/dslink.browser.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
