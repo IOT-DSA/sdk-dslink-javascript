@@ -10,7 +10,7 @@ var Action = DS.Node.createNode({
 
 provider.is('action', Action);
 
-(new DS.Link('js-test', provider)).connect('http://rnd.iot-dsa.org:8081/conn').then(function() {
+(new DS.Link('js-test', provider)).connect('http://localhost:8080/conn').then(function() {
   provider.load({
     locker1: {
       open: {
