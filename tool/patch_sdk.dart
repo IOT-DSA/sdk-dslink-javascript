@@ -26,8 +26,8 @@ main(List<String> args) {
 
   pubspec["dependencies"] = {
     "node_io": {
-      "path": "/home/michael/Projects/Work/node_io.dart"
-      // "git": "https://github.com/DirectMyFile/node_io.dart.git"
+      // "path": "/home/michael/Projects/Work/node_io.dart"
+      "git": "https://github.com/DirectMyFile/node_io.dart.git"
     }
   }..addAll(pubspec["dependencies"]);
 

@@ -5,8 +5,8 @@
 # Node.js
 node_modules
 coverage
-dist
 docs/build
+tool
 
 # Dart
 .pub
@@ -19,3 +19,4 @@ lib
 examples
 temp
 pubspec.yaml
+build.sh

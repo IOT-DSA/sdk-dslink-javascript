@@ -1,5 +1,8 @@
+library dslink.stub;
+
 import "package:dslink/browser.dart";
 import "dart:async";
+import "dart:typed_data";
 
 @MirrorsUsed(
     targets: const [
@@ -16,9 +19,20 @@ import "dart:async";
   "dslink.utils.buildActionIO",
   "dslink.pk.PrivateKey",
   "dart.async.Completer",
-  "dart.async.Future"
+  "dart.async.Future",
+  "dart.typed_data.ByteBuffer",
+  "dart.typed_data.ByteData",
+  "dslink.stub.NodeStub"
 ])
 import "dart:mirrors";
+
+class NodeStub extends SimpleNode {
+  NodeStub(String path): super(path);
+
+  dynamic onInvoke(params) {
+    return params;
+  }
+}
 
 main(List<String> args) {
   var a = " ";

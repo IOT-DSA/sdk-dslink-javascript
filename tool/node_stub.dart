@@ -1,3 +1,5 @@
+library dslink.stub;
+
 import "package:dslink/dslink.dart";
 import "package:dslink/src/crypto/pk.dart";
 import "dart:async";
@@ -18,9 +20,19 @@ import "dart:typed_data";
   "dslink.pk.PrivateKey",
   "dart.async.Completer",
   "dart.async.Future",
-  "dart.typed_data.ByteBuffer"
+  "dart.typed_data.ByteBuffer",
+  "dart.typed_data.ByteData",
+  "dslink.stub.NodeStub"
 ])
 import "dart:mirrors";
+
+class NodeStub extends SimpleNode {
+  NodeStub(String path): super(path);
+
+  dynamic onInvoke(params) {
+    return params;
+  }
+}
 
 main(List<String> args) {
   var a = " ";
