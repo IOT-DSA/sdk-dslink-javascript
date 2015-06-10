@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 COL_RESET=$'\e[0m'
 
 COL_GREEN=$'\e[1;32m'
