@@ -19,21 +19,22 @@ then
   git clone https://github.com/IOT-DSA/sdk-dslink-dart temp/sdk-dslink-dart
 
   echo -n "$COL_BLUE"
-  echo "2/9 Patching Dart SDK for node_io"
-  echo -n "$COL_RESET"
-
-  dart tool/patch_sdk.dart temp/sdk-dslink-dart
-
-  echo -n "$COL_BLUE"
-  echo "3/9 Fetching Dart dependencies"
+  echo "2/9 Fetching Dart dependencies"
   echo -n "$COL_RESET"
 
   pub get
 
   echo -n "$COL_BLUE"
-  echo "4/9 Fetching node dependencies"
+  echo "3/9 Patching Dart SDK for node_io"
   echo -n "$COL_RESET"
 
+  dart tool/patch_sdk.dart temp/sdk-dslink-dart
+
+  echo -n "$COL_BLUE"
+  echo "4/9 Fetching dependencies"
+  echo -n "$COL_RESET"
+
+  pub get
   npm install
 
   echo -n "$COL_BLUE"
