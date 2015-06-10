@@ -5,11 +5,6 @@ COL_RESET=$'\e[0m'
 COL_GREEN=$'\e[1;32m'
 COL_BLUE=$'\e[1;34m'
 
-if [ ! -d "packages" ]
-then
-  pub get
-fi
-
 if [ "$2" != "dev" ]
 then
   rm -rf temp dist
