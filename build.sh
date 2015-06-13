@@ -5,7 +5,7 @@ COL_RESET=$'\e[0m'
 COL_GREEN=$'\e[1;32m'
 COL_BLUE=$'\e[1;34m'
 
-if [ $2 != "dev" ]; then
+# if [ -z "$2" ] || [ $2 != "dev" ]; then
   rm -rf temp
 
   mkdir temp
@@ -41,12 +41,12 @@ if [ $2 != "dev" ]; then
   echo -n "$COL_RESET"
 
   dart2js --dump-info --enable-experimental-mirrors -o temp/dslink.js "tool/$1_stub.dart"
-else
-  echo -n "$COL_GREEN"
-  echo "Dev build! Skipping the first 5 steps."
-  echo "This requires you to have already built the full SDK once with the correct platform."
-  echo -n "$COL_RESET"
-fi
+# else
+#  echo -n "$COL_GREEN"
+#  echo "Dev build! Skipping the first 5 steps."
+#  echo "This requires you to have already built the full SDK once with the correct platform."
+#  echo -n "$COL_RESET"
+# fi
 
 echo -n "$COL_BLUE"
 echo "6/9 Generating JS wrapper for Dart SDK"

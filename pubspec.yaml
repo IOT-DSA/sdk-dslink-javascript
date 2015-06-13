@@ -6,5 +6,5 @@ dependencies:
   dslink:
     path: ./temp/sdk-dslink-dart
   calzone:
-    # git: https://github.com/DirectMyFile/calzone.dart.git
-    path: ../calzone.dart
+    git: https://github.com/DirectMyFile/calzone.dart.git
+    # path: ../calzone.dart
