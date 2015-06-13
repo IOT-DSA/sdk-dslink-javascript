@@ -4,7 +4,7 @@ COL_GREEN=$'\e[1;32m'
 COL_BLUE=$'\e[1;34m'
 
 if [ $2 != "dev" ]; then
-  rm -rf temp dist
+  rm -rf temp
 
   mkdir temp
   mkdir dist

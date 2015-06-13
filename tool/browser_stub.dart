@@ -29,8 +29,34 @@ import "dart:mirrors";
 class NodeStub extends SimpleNode {
   NodeStub(String path): super(path);
 
-  dynamic onInvoke(params) {
+  /// This is called when this node is invoked.
+  dynamic onInvoke(Map params) {
     return params;
+  }
+
+  // called before a subscription request is returned
+  void onSubscribe() {
+    print(this.path);
+  }
+
+  /// after node is created
+  void onCreated() {
+    print(this.path);
+  }
+
+  /// before node gets removed
+  void onRemoving() {
+    print(this.path);
+  }
+
+  /// after child node is removed
+  void onChildRemoved(String name, Node node) {
+    print(name);
+  }
+
+  /// after child node is created
+  void onChildAdded(String name, Node node) {
+    print(name);
   }
 }
 

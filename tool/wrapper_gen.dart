@@ -6,6 +6,73 @@ import "dart:io";
 
 String _STREAM_PREFIX = (new File("tool/js/stream.js")).readAsStringSync();
 
+// node.js Buffer (or Browserify equivelent) to ByteData, and back.
+class BufferTransformer implements TypeTransformer {
+  final List<String> types = ["ByteData"];
+
+  BufferTransformer();
+
+  @override
+  dynamicTransformTo(StringBuffer output, List<String> globals) {
+    output.write("""
+      if(obj instanceof Buffer) {
+        function toArrayBuffer(buffer) {
+          console.log(buffer.length);
+          var ab = new ArrayBuffer(buffer.length);
+          var view = new Uint8Array(ab);
+          for (var i = 0; i < buffer.length; ++i) {
+            view[i] = buffer[i];
+          }
+          console.log(view.length);
+          return ab;
+        }
+
+        return new DataView(toArrayBuffer(obj));
+      }
+    """);
+  }
+
+  @override
+  dynamicTransformFrom(StringBuffer output, List<String> globals) {
+    output.write("""
+      if(obj instanceof DataView) {
+        function toBuffer(ab) {
+          var buffer = new Buffer(ab.byteLength);
+          var view = new Uint8Array(ab);
+          console.log(view.length);
+          for (var i = 0; i < buffer.length; ++i) {
+            buffer[i] = view[i];
+          }
+          console.log(buffer.length);
+          return buffer;
+        }
+        return toBuffer(obj.buffer);
+      }
+    """);
+  }
+
+  @override
+  transformToDart(StringBuffer output, TypeTransformer base, String name, List tree, List<String> globals) {
+    output.write("var _obj = $name; $name = new init.allClasses.ByteData(_obj.length);");
+    output.write("for(var index = 0; index < _obj.length; index++) { $name.setUint8\$2(index, _obj.readUInt8(index)); }");
+  }
+
+  @override
+  transformFromDart(StringBuffer output, TypeTransformer base, String name, List tree, List<String> globals) {
+    output.write("""
+    function toBuffer(ab) {
+      var buffer = new Buffer(ab.byteLength);
+      var view = new Uint8Array(ab);
+      for (var i = 0; i < buffer.length; ++i) {
+        buffer[i] = view[i];
+      }
+      return buffer;
+    }
+    $name = toBuffer($name.buffer);
+    """);
+  }
+}
+
 class StreamTransformer extends TypeTransformer {
   final List<String> types = ["Stream"];
 
@@ -22,7 +89,7 @@ class StreamTransformer extends TypeTransformer {
   dynamicTransformFrom(StringBuffer output, List<String> globals) {
     if(!globals.contains(_STREAM_PREFIX))
       globals.add(_STREAM_PREFIX);
-    output.write("if(typeof(obj._createSubscription\$4) !== 'undefined') { return new module.exports.Stream(obj, dynamicTo); }");
+    output.write("if(typeof(obj._createSubscription\$4) !== 'undefined') { return new module.exports.Stream(obj); }");
   }
 
   @override
@@ -36,11 +103,7 @@ class StreamTransformer extends TypeTransformer {
   transformFromDart(StringBuffer output, TypeTransformer base, String name, List tree, List<String> globals) {
     if(!globals.contains(_STREAM_PREFIX))
       globals.add(_STREAM_PREFIX);
-    output.write("$name = new module.exports.Stream($name, function(obj) {");
-    if(tree.length > 1) {
-      base.transformToDart(output, null, "obj", tree[1], globals);
-    }
-    output.write("return obj; });");
+    output.write("$name = new module.exports.Stream($name);");
   }
 }
 
@@ -49,6 +112,7 @@ main(List<String> args) {
     new CollectionsTransformer(true),
     new PromiseTransformer(true),
     new ClosureTransformer(),
+    new BufferTransformer(),
     new StreamTransformer()
   ]);
 
