@@ -1,1 +1,3 @@
-# JavaScript SDK Distributions
+# DSA JavaScript SDK
+
+A Prebuilt JavaScript SDK.
