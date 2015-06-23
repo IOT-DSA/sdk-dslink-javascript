@@ -2510,7 +2510,7 @@ $ = Isolate.$isolateProperties;
 $.functionThatReturnsNull = function() {
 };
 ;
-init.mangledNames = {get$_authError: "_authError", get$_beforeSendListener: "_beforeSendListener", get$_browser_client$_conn: "_browser_client$_conn", get$_cachedColumns: "_cachedColumns", get$_cachedLevel: "_cachedLevel", get$_changedPaths: "_changedPaths", get$_closed: "_closed", get$_columns: "_columns", get$_common$_dataReceiveCount: "_common$_dataReceiveCount", get$_common$_dataSent: "_common$_dataSent", get$_common$_onDisconnectedCompleter: "_common$_onDisconnectedCompleter", get$_common$_requesterChannel: "_common$_requesterChannel", get$_common$_responderChannel: "_common$_responderChannel", get$_conn: "_conn", get$_connDelay: "_connDelay", get$_connListener: "_connListener", get$_connected: "_connected", get$_connectedOnce: "_connectedOnce", get$_dataReceiveCount: "_dataReceiveCount", get$_dataSent: "_dataSent", get$_disconnectSent: "_disconnectSent", get$_done: "_done", get$_err: "_err", get$_httpConnection: "_httpConnection", get$_httpUpdateUri: "_httpUpdateUri", get$_initCalled: "_initCalled", get$_isReady: "_isReady", get$_json: "_json", get$_lastRequestS: "_lastRequestS", get$_lastUpdate: "_lastUpdate", get$_lastValueUpdate: "_lastValueUpdate", get$_listChangeController: "_listChangeController", get$_listController: "_listController", get$_listReqListener: "_listReqListener", get$_listener: "_listener", get$_loaded: "_loaded", get$_msgCommand: "_msgCommand", get$_needRetryL: "_needRetryL", get$_needRetryS: "_needRetryS", get$_nodeChangeListener: "_nodeChangeListener", get$_nodes: "_nodes", get$_nonce: "_nonce", get$_onConnectedCompleter: "_onConnectedCompleter", get$_onDisconnectedCompleter: "_onDisconnectedCompleter", get$_onRequestReadyCompleter: "_onRequestReadyCompleter", get$_onRequesterReadyCompleter: "_onRequesterReadyCompleter", get$_opened: "_opened", get$_pendingCheck: "_pendingCheck", get$_pendingInitializeLength: "_pendingInitializeLength", get$_pendingRemoveDef: "_pendingRemoveDef", get$_pendingSend: "_pendingSend", get$_pendingSendS: "_pendingSendS", get$_permission: "_permission", get$_permitted: "_permitted", get$_processors: "_processors", get$_profileFactories: "_profileFactories", get$_profileLoader: "_profileLoader", get$_ready: "_ready", get$_request: "_request", get$_requester$_controller: "_requester$_controller", get$_requester$_isClosed: "_requester$_isClosed", get$_requester$_stream: "_requester$_stream", get$_requesterChannel: "_requesterChannel", get$_requests: "_requests", get$_responder$_subscription: "_responder$_subscription", get$_responderChannel: "_responderChannel", get$_responses: "_responses", get$_rows: "_rows", get$_sendingL: "_sendingL", get$_sendingS: "_sendingS", get$_sendingStreamStatus: "_sendingStreamStatus", get$_sentStreamStatus: "_sentStreamStatus", get$_serverCommand: "_serverCommand", get$_subsciption: "_subsciption", get$_subscribeController: "_subscribeController", get$_toSendList: "_toSendList", get$_updates: "_updates", get$_wsConnection: "_wsConnection", get$_wsDelay: "_wsDelay", get$_wsUpdateUri: "_wsUpdateUri", get$adapter: "adapter", get$attributes: "attributes", get$binaryInCache: "binaryInCache", get$binaryOutCache: "binaryOutCache", get$brokerUrl: "brokerUrl", get$callback: "callback", get$callbacks: "callbacks", get$changed: "changed", get$changes: "changes", get$children: "children", get$clientLink: "clientLink", get$columns: "columns", get$completer: "completer", get$configs: "configs", get$conn: "conn", get$connected: "connected", get$count: "count", get$data: "data", get$dataStore: "dataStore", get$defaultNodes: "defaultNodes", get$defaultPermission: "defaultPermission", get$defaultValue: "defaultValue", get$description: "description", get$detail: "detail", get$disconnectTs: "disconnectTs", get$dsId: "dsId", get$duration: "duration", get$ecPrivateKey: "ecPrivateKey", get$ecPublicKey: "ecPublicKey", get$engines: "engines", get$future: "future", get$getData: "getData", get$getDependencies: "getDependencies", get$groupMatchs: "groupMatchs", get$groups: "groups", get$httpUpdateUri: "httpUpdateUri", get$idMatchs: "idMatchs", get$initialResponse: "initialResponse", get$isRequester: "isRequester", get$isResponder: "isResponder", get$lastSentId: "lastSentId", get$lastValues: "lastValues", get$lengthInBytes: "lengthInBytes", get$link: "link", get$listed: "listed", get$listener: "listener", get$loadNodes: "loadNodes", get$main: "main", get$max: "max", get$maxCache: "maxCache", get$min: "min", get$msg: "msg", get$name: "name", get$nextRid: "nextRid", get$nextSid: "nextSid", get$node: "node", get$nodeCache: "nodeCache", get$nodeProvider: "nodeProvider", get$nodes: "nodes", get$nonce: "nonce", get$onClose: "onClose", get$onConnect: "onConnect", get$onConnectController: "onConnectController", get$onDisconnectController: "onDisconnectController", get$onReceiveController: "onReceiveController", get$onRequestReadyCompleter: "onRequestReadyCompleter", get$parentNode: "parentNode", get$parentPath: "parentPath", get$path: "path", get$permissions: "permissions", get$phase: "phase", get$pingCount: "pingCount", get$pingTimer: "pingTimer", get$prefix: "prefix", get$privateKey: "privateKey", get$profile: "profile", get$profiles: "profiles", get$provider: "provider", get$publicKey: "publicKey", get$rawColumns: "rawColumns", get$ready: "ready", get$remotePath: "remotePath", get$removed: "removed", get$reqId: "reqId", get$request: "request", get$requester: "requester", get$responder: "responder", get$response: "response", get$retryDelay: "retryDelay", get$rid: "rid", get$rows: "rows", get$saltL: "saltL", get$saltS: "saltS", get$salts: "salts", get$session: "session", get$sid: "sid", get$socket: "socket", get$status: "status", get$streamStatus: "streamStatus", get$subsriptionids: "subsriptionids", get$subsriptions: "subsriptions", get$sum: "sum", get$toRemove: "toRemove", get$ts: "ts", get$type: "type", get$updater: "updater", get$updates: "updates", get$url: "url", get$valid: "valid", get$value: "value", get$version: "version", get$withCredentials: "withCredentials", get$wsUpdateUri: "wsUpdateUri"};
+init.mangledNames = {get$_authError: "_authError", get$_beforeSendListener: "_beforeSendListener", get$_browser_client$_conn: "_browser_client$_conn", get$_cachedColumns: "_cachedColumns", get$_cachedLevel: "_cachedLevel", get$_changedPaths: "_changedPaths", get$_closed: "_closed", get$_columns: "_columns", get$_common$_dataReceiveCount: "_common$_dataReceiveCount", get$_common$_dataSent: "_common$_dataSent", get$_common$_onDisconnectedCompleter: "_common$_onDisconnectedCompleter", get$_common$_requesterChannel: "_common$_requesterChannel", get$_common$_responderChannel: "_common$_responderChannel", get$_conn: "_conn", get$_connDelay: "_connDelay", get$_connListener: "_connListener", get$_connected: "_connected", get$_connectedOnce: "_connectedOnce", get$_dataReceiveCount: "_dataReceiveCount", get$_dataSent: "_dataSent", get$_disconnectSent: "_disconnectSent", get$_done: "_done", get$_err: "_err", get$_httpConnection: "_httpConnection", get$_httpUpdateUri: "_httpUpdateUri", get$_initCalled: "_initCalled", get$_isReady: "_isReady", get$_json: "_json", get$_lastRequestS: "_lastRequestS", get$_lastUpdate: "_lastUpdate", get$_lastValueUpdate: "_lastValueUpdate", get$_listChangeController: "_listChangeController", get$_listController: "_listController", get$_listReqListener: "_listReqListener", get$_listener: "_listener", get$_loaded: "_loaded", get$_msgCommand: "_msgCommand", get$_needRetryL: "_needRetryL", get$_needRetryS: "_needRetryS", get$_nodeChangeListener: "_nodeChangeListener", get$_nodes: "_nodes", get$_nonce: "_nonce", get$_onConnectedCompleter: "_onConnectedCompleter", get$_onDisconnectedCompleter: "_onDisconnectedCompleter", get$_onRequestReadyCompleter: "_onRequestReadyCompleter", get$_onRequesterReadyCompleter: "_onRequesterReadyCompleter", get$_opened: "_opened", get$_pendingCheck: "_pendingCheck", get$_pendingInitializeLength: "_pendingInitializeLength", get$_pendingRemoveDef: "_pendingRemoveDef", get$_pendingSend: "_pendingSend", get$_pendingSendS: "_pendingSendS", get$_permission: "_permission", get$_permitted: "_permitted", get$_processors: "_processors", get$_profileFactories: "_profileFactories", get$_profileLoader: "_profileLoader", get$_ready: "_ready", get$_request: "_request", get$_requester$_controller: "_requester$_controller", get$_requester$_isClosed: "_requester$_isClosed", get$_requester$_stream: "_requester$_stream", get$_requesterChannel: "_requesterChannel", get$_requests: "_requests", get$_responder$_subscription: "_responder$_subscription", get$_responderChannel: "_responderChannel", get$_responses: "_responses", get$_rows: "_rows", get$_sendingL: "_sendingL", get$_sendingS: "_sendingS", get$_sendingStreamStatus: "_sendingStreamStatus", get$_sentStreamStatus: "_sentStreamStatus", get$_serverCommand: "_serverCommand", get$_subsciption: "_subsciption", get$_subscribeController: "_subscribeController", get$_toSendList: "_toSendList", get$_updates: "_updates", get$_wsConnection: "_wsConnection", get$_wsDelay: "_wsDelay", get$_wsUpdateUri: "_wsUpdateUri", get$adapter: "adapter", get$attributes: "attributes", get$binaryInCache: "binaryInCache", get$binaryOutCache: "binaryOutCache", get$brokerUrl: "brokerUrl", get$callback: "callback", get$callbacks: "callbacks", get$changed: "changed", get$changes: "changes", get$children: "children", get$clientLink: "clientLink", get$columns: "columns", get$completer: "completer", get$configs: "configs", get$conn: "conn", get$connected: "connected", get$count: "count", get$data: "data", get$dataStore: "dataStore", get$defaultNodes: "defaultNodes", get$defaultPermission: "defaultPermission", get$defaultValue: "defaultValue", get$description: "description", get$detail: "detail", get$disconnectTs: "disconnectTs", get$dsId: "dsId", get$duration: "duration", get$ecPrivateKey: "ecPrivateKey", get$ecPublicKey: "ecPublicKey", get$engines: "engines", get$error: "error", get$future: "future", get$getData: "getData", get$getDependencies: "getDependencies", get$groupMatchs: "groupMatchs", get$groups: "groups", get$httpUpdateUri: "httpUpdateUri", get$idMatchs: "idMatchs", get$initialResponse: "initialResponse", get$isRequester: "isRequester", get$isResponder: "isResponder", get$lastSentId: "lastSentId", get$lastValues: "lastValues", get$lengthInBytes: "lengthInBytes", get$link: "link", get$listed: "listed", get$listener: "listener", get$loadNodes: "loadNodes", get$main: "main", get$max: "max", get$maxCache: "maxCache", get$min: "min", get$msg: "msg", get$name: "name", get$nextRid: "nextRid", get$nextSid: "nextSid", get$node: "node", get$nodeCache: "nodeCache", get$nodeProvider: "nodeProvider", get$nodes: "nodes", get$nonce: "nonce", get$onClose: "onClose", get$onConnect: "onConnect", get$onConnectController: "onConnectController", get$onDisconnectController: "onDisconnectController", get$onReceiveController: "onReceiveController", get$onRequestReadyCompleter: "onRequestReadyCompleter", get$parentNode: "parentNode", get$parentPath: "parentPath", get$path: "path", get$permissions: "permissions", get$phase: "phase", get$pingCount: "pingCount", get$pingTimer: "pingTimer", get$prefix: "prefix", get$privateKey: "privateKey", get$profile: "profile", get$profiles: "profiles", get$provider: "provider", get$publicKey: "publicKey", get$rawColumns: "rawColumns", get$ready: "ready", get$remotePath: "remotePath", get$removed: "removed", get$reqId: "reqId", get$request: "request", get$requester: "requester", get$responder: "responder", get$response: "response", get$retryDelay: "retryDelay", get$rid: "rid", get$rows: "rows", get$saltL: "saltL", get$saltS: "saltS", get$salts: "salts", get$session: "session", get$sid: "sid", get$socket: "socket", get$status: "status", get$streamStatus: "streamStatus", get$subsriptionids: "subsriptionids", get$subsriptions: "subsriptions", get$sum: "sum", get$toRemove: "toRemove", get$ts: "ts", get$type: "type", get$updater: "updater", get$updates: "updates", get$url: "url", get$valid: "valid", get$value: "value", get$version: "version", get$withCredentials: "withCredentials", get$wsUpdateUri: "wsUpdateUri"};
 init.mangledGlobalNames = {BrowserECDHLink_saltNameMap: "saltNameMap", BrowserUserLink_saltNameMap: "saltNameMap", Configs__globalConfigs: "_globalConfigs", Configs_defaultConfig: "defaultConfig", Configs_global: "global", DSError_DISCONNECTED: "DISCONNECTED", DSError_INVALID_METHOD: "INVALID_METHOD", DSError_INVALID_PATH: "INVALID_PATH", DSError_INVALID_PATHS: "INVALID_PATHS", DSError_INVALID_VALUE: "INVALID_VALUE", DSError_PERMISSION_DENIED: "PERMISSION_DENIED", DefaultDefNodes__defaultDefs: "_defaultDefs", DefaultDefNodes_nameMap: "nameMap", DefaultDefNodes_pathMap: "pathMap", ErrorPhase_request: "request", ErrorPhase_response: "response", Future__nullFuture: "_nullFuture", Interval_EIGHT_MILLISECONDS: "EIGHT_MILLISECONDS", Interval_FIFTY_MILLISECONDS: "FIFTY_MILLISECONDS", Interval_FIVE_SECONDS: "FIVE_SECONDS", Interval_FOUR_MILLISECONDS: "FOUR_MILLISECONDS", Interval_FOUR_SECONDS: "FOUR_SECONDS", Interval_HALF_SECOND: "HALF_SECOND", Interval_ONE_HUNDRED_MILLISECONDS: "ONE_HUNDRED_MILLISECONDS", Interval_ONE_MILLISECOND: "ONE_MILLISECOND", Interval_ONE_MINUTE: "ONE_MINUTE", Interval_ONE_SECOND: "ONE_SECOND", Interval_QUARTER_SECOND: "QUARTER_SECOND", Interval_SIXTEEN_MILLISECONDS: "SIXTEEN_MILLISECONDS", Interval_THIRTY_MILLISECONDS: "THIRTY_MILLISECONDS", Interval_THREE_HUNDRED_MILLISECONDS: "THREE_HUNDRED_MILLISECONDS", Interval_THREE_SECONDS: "THREE_SECONDS", Interval_TWO_HUNDRED_MILLISECONDS: "TWO_HUNDRED_MILLISECONDS", Interval_TWO_MILLISECONDS: "TWO_MILLISECONDS", Interval_TWO_SECONDS: "TWO_SECONDS", ListController__ignoreProfileProps: "_ignoreProfileProps", LocalDataStorage_INSTANCE: "INSTANCE", Path_invalidChar: "invalidChar", Permission_CONFIG: "CONFIG", Permission_NEVER: "NEVER", Permission_NONE: "NONE", Permission_READ: "READ", Permission_WRITE: "WRITE", Permission_nameParser: "nameParser", Permission_names: "names", StreamStatus_closed: "closed", StreamStatus_initialize: "initialize", StreamStatus_open: "open", ValueUpdate_TIME_ZONE: "TIME_ZONE", fixedBlankData: "fixedBlankData", unspecified: "unspecified"};
 function setupProgram(programData) {
   "use strict";
@@ -6253,17 +6253,19 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       return this._kind === 2;
     },
     get$positionalArguments: function() {
-      var t1, t2, argumentCount, list, index;
+      var t1, argumentCount, list, index;
       if (this._kind === 1)
         return C.List_empty;
       t1 = this._arguments;
-      t2 = J.getInterceptor$asx(t1);
-      argumentCount = t2.get$length(t1) - 0;
+      argumentCount = t1.length - 0;
       if (argumentCount === 0)
         return C.List_empty;
       list = [];
-      for (index = 0; index < argumentCount; ++index)
-        list.push(t2.$index(t1, index));
+      for (index = 0; index < argumentCount; ++index) {
+        if (index >= t1.length)
+          return H.ioore(t1, index);
+        list.push(t1[index]);
+      }
       list.immutable$list = true;
       list.fixed$length = true;
       return list;
@@ -6271,7 +6273,6 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     get$namedArguments: function() {
       if (this._kind !== 0)
         return P.LinkedHashMap_LinkedHashMap$_empty(P.Symbol0, null);
-      J.get$length$asx(this._arguments);
       return P.LinkedHashMap_LinkedHashMap$_empty(P.Symbol0, null);
     },
     __js_helper$_getCachedInvocation$1: function(object) {
@@ -6588,7 +6589,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       return this;
     }
   },
-  "+Closure": [0, 317],
+  "+Closure": [0, 318],
   TearOffClosure: {
     "^": "Closure;"
   },
@@ -6636,7 +6637,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         }
       }}
   },
-  "+BoundClosure": [318],
+  "+BoundClosure": [319],
   Creates: {
     "^": "Object;types"
   },
@@ -11457,7 +11458,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     wnafPreCompInfo.set$twiceP(twiceP);
     p.set$preCompInfo(wnafPreCompInfo);
     return q;
-  }, "call$3", "_WNafMultiplier$closure", 6, 0, 209],
+  }, "call$3", "_WNafMultiplier$closure", 6, 0, 210],
   _windowNaf: function(width, k) {
     var t1, wnaf, pow2wB, pow2wBI, t2, i, $length, remainder, t3, wnafShort;
     t1 = J.$add$ns(J.bitLength$0$i(k), 1);
@@ -12626,7 +12627,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       return new H.JsClosureMirror(reflectee, 4);
     else
       return new H.JsInstanceMirror(reflectee, 4);
-  }, "call$1", "reflect$closure", 2, 0, 210],
+  }, "call$1", "reflect$closure", 2, 0, 211],
   reflectClassByMangledName: function(mangledName) {
     var result, unmangledName, t1;
     result = $.get$mangledGlobalNames()._jsMangledNames[mangledName];
@@ -13097,8 +13098,6 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     },
     invoke$3: function(memberName, positionalArguments, namedArguments) {
       var mirror, t1, t2;
-      if (namedArguments != null && J.get$isEmpty$asx(namedArguments) !== true)
-        throw H.wrapException(P.UnsupportedError$("Named arguments are not implemented."));
       mirror = this.get$__members()._map.$index(0, memberName);
       t1 = mirror instanceof H.JsMethodMirror;
       if (t1 && !("$reflectable" in mirror._jsFunction))
@@ -13328,7 +13327,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t4 = i + t2;
         defaultArguments.$indexSet(0, info.parameterName$1(t4), init.metadata[info.defaultValue$1(0, t4)]);
       }
-      J.forEach$1$ax(namedArguments, new H.JsInstanceMirror__invokeMethodWithNamedArguments_closure(defaultArguments));
+      namedArguments.forEach$1(0, new H.JsInstanceMirror__invokeMethodWithNamedArguments_closure(defaultArguments));
       C.JSArray_methods.addAll$1(positionalArguments, defaultArguments.get$values(defaultArguments));
       return H.reflect(jsFunction.apply(t1, positionalArguments));
     },
@@ -13354,9 +13353,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         case 2:
           return H.S($name) + "=";
         case 0:
-          if (J.get$isNotEmpty$asx(namedArguments))
+          if (!J.$eq(namedArguments.get$length(namedArguments), 0))
             return H.S($name) + "*";
-          nbArgs = J.get$length$asx(positionalArguments);
+          nbArgs = positionalArguments.length;
           return H.S($name) + ":" + nbArgs;
       }
       throw H.wrapException(H.RuntimeError$("Could not compute reflective name for " + H.S($name)));
@@ -13374,7 +13373,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     _invoke$4: function($name, type, positionalArguments, namedArguments) {
       var reflectiveName, cacheEntry, t1, getterCacheEntry;
       reflectiveName = this._computeReflectiveName$4($name, type, positionalArguments, namedArguments);
-      if (J.get$isNotEmpty$asx(namedArguments))
+      if (!J.$eq(namedArguments.get$length(namedArguments), 0))
         return this._invokeMethodWithNamedArguments$3(reflectiveName, positionalArguments, namedArguments);
       cacheEntry = this._getCachedInvocation$5($name, type, reflectiveName, positionalArguments, namedArguments);
       if (!cacheEntry.get$isNoSuchMethod())
@@ -13806,8 +13805,6 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     },
     invoke$3: function(memberName, positionalArguments, namedArguments) {
       var mirror, t1;
-      if (namedArguments != null && J.get$isEmpty$asx(namedArguments) !== true)
-        throw H.wrapException(P.UnsupportedError$("Named arguments are not implemented."));
       mirror = this.get$__methods()._map.$index(0, memberName);
       t1 = mirror == null;
       if (t1 && this._staticFieldExists$1(memberName))
@@ -14000,20 +13997,21 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       return t1;
     },
     _invoke$2: function(positionalArguments, namedArguments) {
-      var t1, positionalLength, t2, i;
-      if (namedArguments != null && J.get$isEmpty$asx(namedArguments) !== true)
+      var positionalLength, t1, i;
+      if (namedArguments != null && !J.$eq(namedArguments.get$length(namedArguments), 0))
         throw H.wrapException(P.UnsupportedError$("Named arguments are not implemented."));
       if (!this.isStatic && !this.isConstructor)
         throw H.wrapException(H.RuntimeError$("Cannot invoke instance method without receiver."));
-      t1 = J.getInterceptor$asx(positionalArguments);
-      positionalLength = t1.get$length(positionalArguments);
-      t2 = this._requiredParameterCount;
-      if (typeof t2 !== "number")
-        return H.iae(t2);
-      if (positionalLength < t2 || positionalLength > t2 + this._optionalParameterCount || this._jsFunction == null)
+      positionalLength = positionalArguments.length;
+      t1 = this._requiredParameterCount;
+      if (typeof t1 !== "number")
+        return H.iae(t1);
+      if (positionalLength < t1 || positionalLength > t1 + this._optionalParameterCount || this._jsFunction == null)
         throw H.wrapException(P.NoSuchMethodError$(this.get$owner(), this.simpleName, positionalArguments, namedArguments, null));
-      if (positionalLength < t2 + this._optionalParameterCount) {
-        positionalArguments = t1.toList$0(positionalArguments);
+      if (positionalLength < t1 + this._optionalParameterCount) {
+        t1 = positionalArguments.slice();
+        t1.$builtinTypeInfo = [H.getTypeArgumentByIndex(positionalArguments, 0)];
+        positionalArguments = t1;
         i = positionalLength;
         while (true) {
           t1 = J.get$length$asx(this.get$parameters()._collection$_source);
@@ -14021,7 +14019,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             return H.iae(t1);
           if (!(i < t1))
             break;
-          C.JSArray_methods.add$1(positionalArguments, J.get$defaultValue$x(J.elementAt$1$ax(this.get$parameters()._collection$_source, i)).get$reflectee());
+          positionalArguments.push(J.get$defaultValue$x(J.elementAt$1$ax(this.get$parameters()._collection$_source, i)).get$reflectee());
           ++i;
         }
       }
@@ -14613,7 +14611,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           $._lastCallback = entry;
       }
     }
-  }, "call$5", "_rootHandleUncaughtError$closure", 10, 0, 214],
+  }, "call$5", "_rootHandleUncaughtError$closure", 10, 0, 215],
   _rootRun: [function($self, $parent, zone, f) {
     var old, t1;
     if (J.$eq($.Zone__current, zone))
@@ -14625,7 +14623,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     } finally {
       $.Zone__current = old;
     }
-  }, "call$4", "_rootRun$closure", 8, 0, 215],
+  }, "call$4", "_rootRun$closure", 8, 0, 216],
   _rootRunUnary: [function($self, $parent, zone, f, arg) {
     var old, t1;
     if (J.$eq($.Zone__current, zone))
@@ -14637,7 +14635,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     } finally {
       $.Zone__current = old;
     }
-  }, "call$5", "_rootRunUnary$closure", 10, 0, 216],
+  }, "call$5", "_rootRunUnary$closure", 10, 0, 217],
   _rootRunBinary: [function($self, $parent, zone, f, arg1, arg2) {
     var old, t1;
     if (J.$eq($.Zone__current, zone))
@@ -14649,34 +14647,34 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     } finally {
       $.Zone__current = old;
     }
-  }, "call$6", "_rootRunBinary$closure", 12, 0, 217],
+  }, "call$6", "_rootRunBinary$closure", 12, 0, 218],
   _rootRegisterCallback: [function($self, $parent, zone, f) {
     return f;
-  }, "call$4", "_rootRegisterCallback$closure", 8, 0, 218],
+  }, "call$4", "_rootRegisterCallback$closure", 8, 0, 219],
   _rootRegisterUnaryCallback: [function($self, $parent, zone, f) {
     return f;
-  }, "call$4", "_rootRegisterUnaryCallback$closure", 8, 0, 219],
+  }, "call$4", "_rootRegisterUnaryCallback$closure", 8, 0, 220],
   _rootRegisterBinaryCallback: [function($self, $parent, zone, f) {
     return f;
-  }, "call$4", "_rootRegisterBinaryCallback$closure", 8, 0, 220],
+  }, "call$4", "_rootRegisterBinaryCallback$closure", 8, 0, 221],
   _rootErrorCallback: [function($self, $parent, zone, error, stackTrace) {
     return;
-  }, "call$5", "_rootErrorCallback$closure", 10, 0, 221],
+  }, "call$5", "_rootErrorCallback$closure", 10, 0, 222],
   _rootScheduleMicrotask: [function($self, $parent, zone, f) {
     var t1 = C.C__RootZone !== zone;
     if (t1)
       f = zone.bindCallback$2$runGuarded(f, !(!t1 || C.C__RootZone.get$errorZone() === zone.get$errorZone()));
     P._scheduleAsyncCallback(f);
-  }, "call$4", "_rootScheduleMicrotask$closure", 8, 0, 222],
+  }, "call$4", "_rootScheduleMicrotask$closure", 8, 0, 223],
   _rootCreateTimer: [function($self, $parent, zone, duration, callback) {
     return P.Timer__createTimer(duration, C.C__RootZone !== zone ? zone.bindCallback$1(callback) : callback);
-  }, "call$5", "_rootCreateTimer$closure", 10, 0, 223],
+  }, "call$5", "_rootCreateTimer$closure", 10, 0, 224],
   _rootCreatePeriodicTimer: [function($self, $parent, zone, duration, callback) {
     return P.Timer__createPeriodicTimer(duration, C.C__RootZone !== zone ? zone.bindUnaryCallback$1(callback) : callback);
-  }, "call$5", "_rootCreatePeriodicTimer$closure", 10, 0, 224],
+  }, "call$5", "_rootCreatePeriodicTimer$closure", 10, 0, 225],
   _rootPrint: [function($self, $parent, zone, line) {
     H.printString(H.S(line));
-  }, "call$4", "_rootPrint$closure", 8, 0, 225],
+  }, "call$4", "_rootPrint$closure", 8, 0, 226],
   _printToZone: [function(line) {
     J.print$1$x($.Zone__current, line);
   }, "call$1", "_printToZone$closure", 2, 0, 60],
@@ -14718,7 +14716,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     t1._fork = zone.get$_fork();
     t1._handleUncaughtError = specification.get$handleUncaughtError() != null ? new P._ZoneFunction(t1, specification.get$handleUncaughtError()) : zone.get$_handleUncaughtError();
     return t1;
-  }, "call$5", "_rootFork$closure", 10, 0, 226],
+  }, "call$5", "_rootFork$closure", 10, 0, 227],
   runZoned: function(body, onError, zoneSpecification, zoneValues) {
     var zone;
     zoneSpecification = new P._ZoneSpecification(null, null, null, null, null, null, null, null, null, null, null, null, null);
@@ -15152,7 +15150,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   Future: {
     "^": "Object;",
     "<>": [1],
-    static: {"^": "Future__nullFuture<-319", Future_Future: [function(computation, $T) {
+    static: {"^": "Future__nullFuture<-320", Future_Future: [function(computation, $T) {
         var result = new P._Future(0, $.Zone__current, null);
         result.$builtinTypeInfo = [$T];
         P.Timer_Timer(C.Duration_0, new P.Future_Future_closure(computation, result));
@@ -15266,9 +15264,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return result;
       }, function(futures) {
         return P.Future_wait(futures, null, false);
-      }, null, "call$3$cleanUp$eagerError", "call$1", "Future_wait$closure", 2, 5, 211, 10, 5, 11, [], 12, [], 13, [], "wait"], Future_forEach: [function(input, f) {
+      }, null, "call$3$cleanUp$eagerError", "call$1", "Future_wait$closure", 2, 5, 212, 10, 5, 11, [], 12, [], 13, [], "wait"], Future_forEach: [function(input, f) {
         return P.Future_doWhile(new P.Future_forEach_closure(f, J.get$iterator$ax(input)));
-      }, "call$2", "Future_forEach$closure", 4, 0, 212, 14, [], 15, [], "forEach"], Future_doWhile: [function(f) {
+      }, "call$2", "Future_forEach$closure", 4, 0, 213, 14, [], 15, [], "forEach"], Future_doWhile: [function(f) {
         var t1, doneSignal, nextIteration;
         t1 = {};
         doneSignal = new P._Future(0, $.Zone__current, null);
@@ -15278,7 +15276,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t1._captured_nextIteration_0 = nextIteration;
         nextIteration.call$1(true);
         return doneSignal;
-      }, "call$1", "Future_doWhile$closure", 2, 0, 213, 15, [], "doWhile"]}
+      }, "call$1", "Future_doWhile$closure", 2, 0, 214, 15, [], "doWhile"]}
   },
   "+Future": [0],
   Future_Future_closure: {
@@ -15456,7 +15454,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   },
   "+Completer": [0],
   _Completer: {
-    "^": "Object;future<-320",
+    "^": "Object;future<-321",
     completeError$2: [function(error, stackTrace) {
       var replacement;
       error = error != null ? error : new P.NullThrownError();
@@ -15477,7 +15475,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 1, 0, 30, "isCompleted"]
   },
   _AsyncCompleter: {
-    "^": "_Completer;future-320",
+    "^": "_Completer;future-321",
     complete$1: [function(_, value) {
       var t1 = this.future;
       if (!t1.get$_mayComplete())
@@ -15491,7 +15489,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }
   },
   _SyncCompleter: {
-    "^": "_Completer;future-320",
+    "^": "_Completer;future-321",
     complete$1: [function(_, value) {
       var t1 = this.future;
       if (!t1.get$_mayComplete())
@@ -18187,10 +18185,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   },
   _defaultEquals: [function(a, b) {
     return J.$eq(a, b);
-  }, "call$2", "_defaultEquals$closure", 4, 0, 227],
+  }, "call$2", "_defaultEquals$closure", 4, 0, 228],
   _defaultHashCode: [function(a) {
     return J.get$hashCode$(a);
-  }, "call$1", "_defaultHashCode$closure", 2, 0, 207],
+  }, "call$1", "_defaultHashCode$closure", 2, 0, 208],
   HashMap_HashMap: function(equals, hashCode, isValidKey, $K, $V) {
     var t1 = new P._HashMap(0, null, null, null, null);
     t1.$builtinTypeInfo = [$K, $V];
@@ -20254,7 +20252,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   },
   _defaultToEncodable: [function(object) {
     return object.toJson$0();
-  }, "call$1", "_defaultToEncodable$closure", 2, 0, 228],
+  }, "call$1", "_defaultToEncodable$closure", 2, 0, 229],
   _convertJsonToDart_walk: {
     "^": "Closure:8;_captured_reviver_0",
     call$1: function(e) {
@@ -21168,10 +21166,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   },
   identical: [function(a, b) {
     return a == null ? b == null : a === b;
-  }, "call$2", "identical$closure", 4, 0, 229],
+  }, "call$2", "identical$closure", 4, 0, 230],
   identityHashCode: [function(object) {
     return H.objectHashCode(object);
-  }, "call$1", "identityHashCode$closure", 2, 0, 230],
+  }, "call$1", "identityHashCode$closure", 2, 0, 231],
   List_List$filled: function($length, fill, $E) {
     var result, t1, i;
     result = J.JSArray_JSArray$fixed($length, $E);
@@ -21575,19 +21573,21 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   NoSuchMethodError: {
     "^": "Error;_receiver,_core$_memberName,_core$_arguments,_namedArguments,_existingArgumentNames",
     toString$0: function(_) {
-      var t1, t2, t3, t4;
+      var t1, t2, t3, t4, t5;
       t1 = {};
       t1._captured_sb_0 = new P.StringBuffer("");
       t1._captured_i_1 = 0;
-      for (t2 = this._core$_arguments, t3 = J.getInterceptor$asx(t2), t4 = 0; t4 < t3.get$length(t2); t4 = ++t1._captured_i_1) {
-        t4 = t1._captured_i_1;
-        if (t4 > 0)
+      for (t2 = this._core$_arguments, t3 = 0; t4 = t2.length, t3 < t4; t3 = ++t1._captured_i_1) {
+        if (t3 > 0)
           t1._captured_sb_0._contents += ", ";
-        t1._captured_sb_0._contents += H.S(P.Error_safeToString(t3.$index(t2, t4)));
+        t5 = t1._captured_sb_0;
+        if (t3 < 0)
+          return H.ioore(t2, t3);
+        t5._contents += H.S(P.Error_safeToString(t2[t3]));
       }
       t2 = this._namedArguments;
       if (t2 != null)
-        J.forEach$1$ax(t2, new P.NoSuchMethodError_toString_closure(t1));
+        t2.forEach$1(0, new P.NoSuchMethodError_toString_closure(t1));
       t2 = "NoSuchMethodError : method not found: '" + H.S(this._core$_memberName) + "'\nReceiver: " + H.S(P.Error_safeToString(this._receiver)) + "\nArguments: [";
       t1 = t1._captured_sb_0._contents;
       return t2 + (t1.charCodeAt(0) == 0 ? t1 : t1) + "]";
@@ -24909,7 +24909,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     "^": "Object;",
     static: {ByteBuffer$: [function() {
         return new P.ByteBuffer();
-      }, null, null, 0, 0, 231, "new ByteBuffer"]}
+      }, null, null, 0, 0, 232, "new ByteBuffer"]}
   },
   "+ByteBuffer": [0],
   Endianness: {
@@ -24919,11 +24919,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     "^": "Object;",
     static: {ByteData_ByteData: [function($length) {
         return new DataView(new ArrayBuffer(H._checkLength($length)));
-      }, null, null, 2, 0, 232, 27, [], "new ByteData"], ByteData_ByteData$view: [function(buffer, offsetInBytes, $length) {
+      }, null, null, 2, 0, 233, 27, [], "new ByteData"], ByteData_ByteData$view: [function(buffer, offsetInBytes, $length) {
         return J.asByteData$2$x(buffer, offsetInBytes, $length);
-      }, null, null, 2, 4, 233, 26, 5, 28, [], 29, [], 27, [], "new ByteData$view"]}
+      }, null, null, 2, 4, 234, 26, 5, 28, [], 29, [], 27, [], "new ByteData$view"]}
   },
-  "+ByteData": [0, 321],
+  "+ByteData": [0, 322],
   Int8List: {
     "^": "Object;",
     $isList: 1,
@@ -25145,7 +25145,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     return new Float32Array(arg);
   },
   NativeByteBuffer: {
-    "^": "Interceptor;lengthInBytes:byteLength=-322",
+    "^": "Interceptor;lengthInBytes:byteLength=-323",
     get$runtimeType: [function(receiver) {
       return C.Type_wAg;
     }, null, null, 1, 0, 66, "runtimeType"],
@@ -26291,7 +26291,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
 ["dslink.browser", "package:dslink/browser.dart", , B, {
   "^": "",
   LinkProvider: {
-    "^": "Object;link@-323,defaultNodes@-324,profiles@-324,loadNodes@-325,provider@-326,dataStore@-327,privateKey@-328,brokerUrl@-329,prefix@-329,isRequester@-325,isResponder@-325,_initCalled@-325",
+    "^": "Object;link@-324,defaultNodes@-325,profiles@-325,loadNodes@-326,provider@-327,dataStore@-328,privateKey@-329,brokerUrl@-330,prefix@-330,isRequester@-326,isResponder@-326,_initCalled@-326",
     init$0: [function() {
       var $goto = 0, completer = new P.Completer_Completer(), handler = 1, currentError, $self = this, t1, t2, temp1, temp2;
       function init$0(errorCode, result) {
@@ -26511,7 +26511,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if (dataStore == null)
           t1.dataStore = $.get$LocalDataStorage_INSTANCE();
         return t1;
-      }, null, null, 4, 15, 234, 5, 5, 5, 5, 10, 33, 33, 34, [], 35, [], 36, [], 37, [], 38, [], 39, [], 40, [], 41, [], 42, [], "new LinkProvider"]}
+      }, null, null, 4, 15, 235, 5, 5, 5, 5, 10, 33, 33, 34, [], 35, [], 36, [], 37, [], 38, [], 39, [], 40, [], 41, [], 42, [], "new LinkProvider"]}
   },
   "+LinkProvider": [0],
   LinkProvider_onValueChange_closure0: {
@@ -26583,7 +26583,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     "^": "Object;",
     static: {BrowserUtils$: [function() {
         return new B.BrowserUtils();
-      }, null, null, 0, 0, 235, "new BrowserUtils"], BrowserUtils_fetchBrokerUrlFromPath: [function(path, otherwise) {
+      }, null, null, 0, 0, 236, "new BrowserUtils"], BrowserUtils_fetchBrokerUrlFromPath: [function(path, otherwise) {
         var $goto = 0, completer = new P.Completer_Completer(), $returnValue, handler = 2, currentError, next = [], t1, exception, exception1, temp1;
         function BrowserUtils_fetchBrokerUrlFromPath(errorCode, result) {
           if (errorCode === 1) {
@@ -26637,14 +26637,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             }
         }
         return H.asyncHelper(null, BrowserUtils_fetchBrokerUrlFromPath, completer, null);
-      }, "call$2", "BrowserUtils_fetchBrokerUrlFromPath$closure", 4, 0, 236, 43, [], 44, [], "fetchBrokerUrlFromPath"], BrowserUtils_createBinaryUrl: [function(input, type) {
+      }, "call$2", "BrowserUtils_fetchBrokerUrlFromPath$closure", 4, 0, 237, 43, [], 44, [], "fetchBrokerUrlFromPath"], BrowserUtils_createBinaryUrl: [function(input, type) {
         var t1, data;
         t1 = J.getInterceptor$x(input);
         data = J.asUint8List$2$x(t1.get$buffer(input), t1.get$offsetInBytes(input), t1.get$lengthInBytes(input));
         return "data:" + H.S(type) + ";base64," + M._CryptoUtils_bytesToBase64(data, false, false);
       }, function(input) {
         return B.BrowserUtils_createBinaryUrl(input, "application/octet-stream");
-      }, null, "call$2$type", "call$1", "BrowserUtils_createBinaryUrl$closure", 2, 3, 237, 45, 14, [], 46, [], "createBinaryUrl"]}
+      }, null, "call$2$type", "call$1", "BrowserUtils_createBinaryUrl$closure", 2, 3, 238, 45, 14, [], 46, [], "createBinaryUrl"]}
   },
   "+BrowserUtils": [0]
 }],
@@ -26708,12 +26708,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     return H.asyncHelper(null, getPrivateKey, completer, null);
   }, function() {
     return Y.getPrivateKey(null);
-  }, null, "call$1$storage", "call$0", "getPrivateKey$closure", 0, 3, 239, 5, 52, [], "getPrivateKey"],
+  }, null, "call$1$storage", "call$0", "getPrivateKey$closure", 0, 3, 240, 5, 52, [], "getPrivateKey"],
   DataStorage: {
     "^": "Object;",
     static: {DataStorage$: [function() {
         return new Y.DataStorage();
-      }, null, null, 0, 0, 238, "new DataStorage"]}
+      }, null, null, 0, 0, 239, "new DataStorage"]}
   },
   "+DataStorage": [0],
   LocalDataStorage: {
@@ -26820,13 +26820,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }
       return H.asyncHelper(null, remove$1, completer, null);
     }, "call$1", "get$remove", 2, 0, 102, 66, [], "remove", 67],
-    static: {"^": "LocalDataStorage_INSTANCE<-330", LocalDataStorage$: [function() {
+    static: {"^": "LocalDataStorage_INSTANCE<-331", LocalDataStorage$: [function() {
         return new Y.LocalDataStorage();
       }, null, null, 0, 0, 5, "new LocalDataStorage"]}
   },
-  "+LocalDataStorage": [327],
+  "+LocalDataStorage": [328],
   BrowserECDHLink: {
-    "^": "Object;_onRequesterReadyCompleter@-331,_onConnectedCompleter@-332,dsId<-329,requester<-333,responder<-334,privateKey<-328,_nonce@-335,_wsConnection@-336,_httpConnection@-337,salts<-338,_wsUpdateUri@-329,_httpUpdateUri@-329,_browser_client$_conn@-329,_connDelay@-322,_wsDelay@-322,_closed@-325",
+    "^": "Object;_onRequesterReadyCompleter@-332,_onConnectedCompleter@-333,dsId<-330,requester<-334,responder<-335,privateKey<-329,_nonce@-336,_wsConnection@-337,_httpConnection@-338,salts<-339,_wsUpdateUri@-330,_httpUpdateUri@-330,_browser_client$_conn@-330,_connDelay@-323,_wsDelay@-323,_closed@-326",
     get$onConnected: [function() {
       return this._onConnectedCompleter.get$future();
     }, null, null, 1, 0, 26, "onConnected"],
@@ -26988,7 +26988,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     salts$0: function() {
       return this.salts.call$0();
     },
-    static: {"^": "BrowserECDHLink_saltNameMap<-339", BrowserECDHLink$: [function(_conn, dsIdPrefix, privateKey, isRequester, isResponder, nodeProvider) {
+    static: {"^": "BrowserECDHLink_saltNameMap<-340", BrowserECDHLink$: [function(_conn, dsIdPrefix, privateKey, isRequester, isResponder, nodeProvider) {
         var t1, t2, t3, t4, t5;
         t1 = L.Requester;
         t2 = new P._Future(0, $.Zone__current, null);
@@ -27005,9 +27005,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t4 = H.S(dsIdPrefix) + privateKey.get$publicKey().get$qHash64();
         t5 = isRequester === true ? L.Requester$(null) : null;
         return new Y.BrowserECDHLink(t2, t1, t4, t5, isResponder === true && nodeProvider != null ? T.Responder$(nodeProvider) : null, privateKey, null, null, null, t3, null, null, _conn, 1, 1, false);
-      }, null, null, 6, 7, 240, 5, 33, 33, 53, [], 54, [], 55, [], 56, [], 41, [], 42, [], "new BrowserECDHLink"]}
+      }, null, null, 6, 7, 241, 5, 33, 33, 53, [], 54, [], 55, [], 56, [], 41, [], 42, [], "new BrowserECDHLink"]}
   },
-  "+BrowserECDHLink": [0, 340],
+  "+BrowserECDHLink": [0, 341],
   BrowserECDHLink_connect_closure: {
     "^": "Closure:17;_browser_client$_captured_this_0,_captured_serverConfig_1",
     call$2: [function($name, idx) {
@@ -27080,7 +27080,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 2, 0, 29, 75, [], "call"]
   },
   HttpBrowserConnection: {
-    "^": "Object;_responderChannel@-341,_requesterChannel@-341,_onRequestReadyCompleter@-342,_onDisconnectedCompleter@-343,_connectedOnce@-325,url>-329,clientLink<-340,withCredentials>-325,saltL@-329,saltS@-329,_pendingCheck@-325,_pendingSendS@-325,_sendingL@-325,_sendingS@-325,_needRetryL@-325,_lastRequestS@-329,_needRetryS@-325,_done@-325,retryDelay@-322,_authError@-325",
+    "^": "Object;_responderChannel@-342,_requesterChannel@-342,_onRequestReadyCompleter@-343,_onDisconnectedCompleter@-344,_connectedOnce@-326,url>-330,clientLink<-341,withCredentials>-326,saltL@-330,saltS@-330,_pendingCheck@-326,_pendingSendS@-326,_sendingL@-326,_sendingS@-326,_needRetryL@-326,_lastRequestS@-330,_needRetryS@-326,_done@-326,retryDelay@-323,_authError@-326",
     get$responderChannel: [function() {
       return this._responderChannel;
     }, null, null, 1, 0, 108, "responderChannel"],
@@ -27407,9 +27407,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t1 = new Y.HttpBrowserConnection(null, null, t2, t3, false, url, clientLink, withCredentials, saltL, saltS, false, false, false, false, false, null, false, false, 1, false);
         t1.HttpBrowserConnection$5(url, clientLink, saltL, saltS, withCredentials);
         return t1;
-      }, null, null, 8, 2, 241, 10, 57, [], 58, [], 59, [], 60, [], 61, [], "new HttpBrowserConnection"]}
+      }, null, null, 8, 2, 242, 10, 57, [], 58, [], 59, [], 60, [], 61, [], "new HttpBrowserConnection"]}
   },
-  "+HttpBrowserConnection": [0, 344],
+  "+HttpBrowserConnection": [0, 345],
   HttpBrowserConnection_retryS_closure: {
     "^": "Closure:71;_browser_client$_captured_this_0",
     call$1: [function(request) {
@@ -27417,7 +27417,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 2, 0, 71, 78, [], "call"]
   },
   BrowserUserLink: {
-    "^": "Object;_onRequesterReadyCompleter@-331,session@-329,requester<-333,responder<-334,nonce>-335,privateKey@-328,_wsConnection@-336,_httpConnection@-337,wsUpdateUri@-329,httpUpdateUri@-329,_wsDelay@-322",
+    "^": "Object;_onRequesterReadyCompleter@-332,session@-330,requester<-334,responder<-335,nonce>-336,privateKey@-329,_wsConnection@-337,_httpConnection@-338,wsUpdateUri@-330,httpUpdateUri@-330,_wsDelay@-323",
     get$onRequesterReady: [function() {
       return this._onRequesterReadyCompleter.get$future();
     }, null, null, 1, 0, 99, "onRequesterReady"],
@@ -27458,7 +27458,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       if (J.startsWith$1$s(this.wsUpdateUri, "http"))
         this.wsUpdateUri = "ws" + J.substring$1$s(this.wsUpdateUri, 4);
     },
-    static: {"^": "BrowserUserLink_saltNameMap<-339", BrowserUserLink$: [function(httpUpdateUri, isRequester, isResponder, nodeProvider, wsUpdateUri) {
+    static: {"^": "BrowserUserLink_saltNameMap<-340", BrowserUserLink$: [function(httpUpdateUri, isRequester, isResponder, nodeProvider, wsUpdateUri) {
         var t1, t2, t3;
         t1 = L.Requester;
         t2 = new P._Future(0, $.Zone__current, null);
@@ -27471,9 +27471,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t1 = new Y.BrowserUserLink(t2, t1, t3, isResponder === true && nodeProvider != null ? T.Responder$(nodeProvider) : null, C.C_DummyECDH, null, null, null, wsUpdateUri, httpUpdateUri, 1);
         t1.BrowserUserLink$5$httpUpdateUri$isRequester$isResponder$nodeProvider$wsUpdateUri(httpUpdateUri, isRequester, isResponder, nodeProvider, wsUpdateUri);
         return t1;
-      }, null, null, 0, 11, 242, 5, 33, 33, 5, 5, 56, [], 41, [], 42, [], 62, [], 63, [], "new BrowserUserLink"]}
+      }, null, null, 0, 11, 243, 5, 33, 33, 5, 5, 56, [], 41, [], 42, [], 62, [], 63, [], "new BrowserUserLink"]}
   },
-  "+BrowserUserLink": [0, 340],
+  "+BrowserUserLink": [0, 341],
   BrowserUserLink_initWebsocket_closure: {
     "^": "Closure:8;_browser_client$_captured_this_0",
     call$1: [function(channel) {
@@ -27540,9 +27540,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new Y.DummyECDH();
       }, null, null, 0, 0, 5, "new DummyECDH"]}
   },
-  "+DummyECDH": [0, 335],
+  "+DummyECDH": [0, 336],
   WebSocketConnection: {
-    "^": "Object;_responderChannel@-341,_requesterChannel@-341,_onRequestReadyCompleter@-342,_onDisconnectedCompleter@-343,clientLink<-340,socket<-345,onConnect@-317,pingTimer@-346,pingCount@-322,_dataSent@-325,_dataReceiveCount@-322,_msgCommand@-324,_opened@-325,binaryInCache@-347,binaryOutCache@-348,_authError@-325",
+    "^": "Object;_responderChannel@-342,_requesterChannel@-342,_onRequestReadyCompleter@-343,_onDisconnectedCompleter@-344,clientLink<-341,socket<-346,onConnect@-318,pingTimer@-347,pingCount@-323,_dataSent@-326,_dataReceiveCount@-323,_msgCommand@-325,_opened@-326,binaryInCache@-348,binaryOutCache@-349,_authError@-326",
     get$responderChannel: [function() {
       return this._responderChannel;
     }, null, null, 1, 0, 108, "responderChannel"],
@@ -27775,16 +27775,16 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t1 = new Y.WebSocketConnection(null, null, t2, t3, clientLink, socket, onConnect, null, 0, false, 0, null, false, new Q.BinaryInCache(P.LinkedHashMap_LinkedHashMap(null, null, null, P.String, Q.BinaryData)), new Q.BinaryOutCache(0, P.LinkedHashMap_LinkedHashMap(null, null, null, P.$int, Q.BinaryData)), false);
         t1.WebSocketConnection$3$onConnect(socket, clientLink, onConnect);
         return t1;
-      }, null, null, 4, 3, 243, 5, 64, [], 58, [], 65, [], "new WebSocketConnection"]}
+      }, null, null, 4, 3, 244, 5, 64, [], 58, [], 65, [], "new WebSocketConnection"]}
   },
-  "+WebSocketConnection": [0, 344]
+  "+WebSocketConnection": [0, 345]
 }],
 ["dslink.common", "package:dslink/common.dart", , O, {
-  "^": "unspecified<-367,fixedBlankData<-368",
+  "^": "unspecified<-368,fixedBlankData<-369",
   foldList: [function(a, b) {
     J.addAll$1$ax(a, b);
     return a;
-  }, "call$2", "foldList$closure", 4, 0, 244, 83, [], 84, [], "foldList"],
+  }, "call$2", "foldList$closure", 4, 0, 245, 83, [], 84, [], "foldList"],
   Connection: {
     "^": "Object;",
     onDisconnected$0: function() {
@@ -27792,23 +27792,23 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     },
     static: {Connection$: [function() {
         return new O.Connection();
-      }, null, null, 0, 0, 245, "new Connection"]}
+      }, null, null, 0, 0, 246, "new Connection"]}
   },
   "+Connection": [0],
   ServerConnection: {
     "^": "Connection;",
     static: {ServerConnection$: [function() {
         return new O.ServerConnection();
-      }, null, null, 0, 0, 246, "new ServerConnection"]}
+      }, null, null, 0, 0, 247, "new ServerConnection"]}
   },
-  "+ServerConnection": [349],
+  "+ServerConnection": [350],
   ClientConnection: {
     "^": "Connection;",
     static: {ClientConnection$: [function() {
         return new O.ClientConnection();
-      }, null, null, 0, 0, 247, "new ClientConnection"]}
+      }, null, null, 0, 0, 248, "new ClientConnection"]}
   },
-  "+ClientConnection": [349],
+  "+ClientConnection": [350],
   ConnectionChannel: {
     "^": "Object;",
     connected$0: function() {
@@ -27826,46 +27826,46 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     "^": "Object;",
     static: {Link$: [function() {
         return new O.Link();
-      }, null, null, 0, 0, 248, "new Link"]}
+      }, null, null, 0, 0, 249, "new Link"]}
   },
   "+Link": [0],
   ServerLink: {
     "^": "Link;",
     static: {ServerLink$: [function() {
         return new O.ServerLink();
-      }, null, null, 0, 0, 249, "new ServerLink"]}
+      }, null, null, 0, 0, 250, "new ServerLink"]}
   },
-  "+ServerLink": [350],
+  "+ServerLink": [351],
   ClientLink: {
     "^": "Link;",
     static: {ClientLink$: [function() {
         return new O.ClientLink();
-      }, null, null, 0, 0, 250, "new ClientLink"]}
+      }, null, null, 0, 0, 251, "new ClientLink"]}
   },
-  "+ClientLink": [350],
+  "+ClientLink": [351],
   ServerLinkManager: {
     "^": "Object;",
     static: {ServerLinkManager$: [function() {
         return new O.ServerLinkManager();
-      }, null, null, 0, 0, 251, "new ServerLinkManager"]}
+      }, null, null, 0, 0, 252, "new ServerLinkManager"]}
   },
   "+ServerLinkManager": [0],
   StreamStatus: {
     "^": "Object;",
-    static: {"^": "StreamStatus_initialize<-329,StreamStatus_open<-329,StreamStatus_closed<-329", StreamStatus$: [function() {
+    static: {"^": "StreamStatus_initialize<-330,StreamStatus_open<-330,StreamStatus_closed<-330", StreamStatus$: [function() {
         return new O.StreamStatus();
-      }, null, null, 0, 0, 252, "new StreamStatus"]}
+      }, null, null, 0, 0, 253, "new StreamStatus"]}
   },
   "+StreamStatus": [0],
   ErrorPhase: {
     "^": "Object;",
-    static: {"^": "ErrorPhase_request<-329,ErrorPhase_response<-329", ErrorPhase$: [function() {
+    static: {"^": "ErrorPhase_request<-330,ErrorPhase_response<-330", ErrorPhase$: [function() {
         return new O.ErrorPhase();
-      }, null, null, 0, 0, 253, "new ErrorPhase"]}
+      }, null, null, 0, 0, 254, "new ErrorPhase"]}
   },
   "+ErrorPhase": [0],
   DSError: {
-    "^": "Object;type*-329,detail*-329,msg@-329,path*-329,phase@-329",
+    "^": "Object;type*-330,detail*-330,msg@-330,path*-330,phase@-330",
     getMessage$0: [function() {
       var t1 = this.msg;
       if (t1 != null)
@@ -27894,9 +27894,32 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         rslt.$indexSet(0, "detail", t1);
       return rslt;
     }, "call$0", "get$serialize", 0, 0, 118, "serialize"],
-    static: {"^": "DSError_PERMISSION_DENIED<-351,DSError_INVALID_METHOD<-351,DSError_INVALID_PATH<-351,DSError_INVALID_PATHS<-351,DSError_INVALID_VALUE<-351,DSError_DISCONNECTED<-351", DSError$: [function(type, detail, msg, path, phase) {
+    DSError$fromMap$1: function(m) {
+      var t1, t2;
+      t1 = J.getInterceptor$asx(m);
+      t2 = t1.$index(m, "type");
+      if (typeof t2 === "string")
+        this.type = t1.$index(m, "type");
+      t2 = t1.$index(m, "msg");
+      if (typeof t2 === "string")
+        this.msg = t1.$index(m, "msg");
+      t2 = t1.$index(m, "path");
+      if (typeof t2 === "string")
+        this.path = t1.$index(m, "path");
+      t2 = t1.$index(m, "phase");
+      if (typeof t2 === "string")
+        this.phase = t1.$index(m, "phase");
+      t2 = t1.$index(m, "detail");
+      if (typeof t2 === "string")
+        this.detail = t1.$index(m, "detail");
+    },
+    static: {"^": "DSError_PERMISSION_DENIED<-352,DSError_INVALID_METHOD<-352,DSError_INVALID_PATH<-352,DSError_INVALID_PATHS<-352,DSError_INVALID_VALUE<-352,DSError_DISCONNECTED<-352", DSError$: [function(type, detail, msg, path, phase) {
         return new O.DSError(type, detail, msg, path, phase);
-      }, null, null, 2, 9, 254, 5, 5, 5, 77, 46, [], 85, [], 86, [], 43, [], 87, [], "new DSError"]}
+      }, null, null, 2, 9, 255, 5, 5, 5, 77, 46, [], 85, [], 86, [], 43, [], 87, [], "new DSError"], DSError$fromMap: [function(m) {
+        var t1 = new O.DSError(null, null, null, null, null);
+        t1.DSError$fromMap$1(m);
+        return t1;
+      }, null, null, 2, 0, 201, 49, [], "new DSError$fromMap"]}
   },
   "+DSError": [0],
   Unspecified: {
@@ -27907,7 +27930,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   },
   "+Unspecified": [0],
   PassiveChannel: {
-    "^": "Object;onReceiveController<-352,_processors@-353,conn<-349,getData@-317,_isReady@-325,connected@-325,onDisconnectController<-342,onConnectController<-342",
+    "^": "Object;onReceiveController<-353,_processors@-354,conn<-350,getData@-318,_isReady@-326,connected@-326,onDisconnectController<-343,onConnectController<-343",
     get$onReceive: [function() {
       return J.get$stream$x(this.onReceiveController);
     }, null, null, 1, 0, 119, "onReceive"],
@@ -27956,11 +27979,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t4 = new P._AsyncCompleter(t4);
         t4.$builtinTypeInfo = [t2];
         return new O.PassiveChannel(t1, [], conn, null, false, connected, t3, t4);
-      }, null, null, 2, 2, 255, 10, 88, [], 89, [], "new PassiveChannel"]}
+      }, null, null, 2, 2, 256, 10, 88, [], 89, [], "new PassiveChannel"]}
   },
-  "+PassiveChannel": [0, 354],
+  "+PassiveChannel": [0, 355],
   ConnectionHandler: {
-    "^": "Object;_conn@-354,_connListener@-355,_beforeSendListener@-355,_toSendList@-356,_processors@-353,_pendingSend@-325",
+    "^": "Object;_conn@-355,_connListener@-356,_beforeSendListener@-356,_toSendList@-357,_processors@-354,_pendingSend@-326",
     get$connection: [function(_) {
       return this._conn;
     }, null, null, 1, 0, 108, "connection"],
@@ -28023,7 +28046,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, "call$0", "get$doSend", 0, 0, 125, "doSend"],
     static: {ConnectionHandler$: [function() {
         return new O.ConnectionHandler(null, null, null, [], [], false);
-      }, null, null, 0, 0, 256, "new ConnectionHandler"]}
+      }, null, null, 0, 0, 257, "new ConnectionHandler"]}
   },
   "+ConnectionHandler": [0],
   ConnectionHandler_connection_closure: {
@@ -28033,7 +28056,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 2, 0, 8, 88, [], "call"]
   },
   Node0: {
-    "^": "Object;profile@-357,attributes*-358,configs@-358,children*-359",
+    "^": "Object;profile@-358,attributes*-359,configs@-359,children*-360",
     getAttribute$1: [function(_, $name) {
       var t1;
       if (J.containsKey$1$x(this.attributes, $name) === true)
@@ -28116,7 +28139,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 4, 0, 131, 115, [], 116, [], "call"]
   },
   Path: {
-    "^": "Object;path*-329,parentPath@-329,name*-329,valid@-325",
+    "^": "Object;path*-330,parentPath@-330,name*-330,valid@-326",
     _parse$0: [function() {
       var t1, t2, pos;
       if (J.$eq(this.path, "") || J.contains$1$asx(this.path, $.get$Path_invalidChar()) === true || J.contains$1$asx(this.path, "//") === true)
@@ -28187,7 +28210,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, function(base) {
       return this.mergeBasePath$2(base, false);
     }, "mergeBasePath$1", "call$2", "call$1", "get$mergeBasePath", 2, 2, 132, 10, 117, [], 118, [], "mergeBasePath"],
-    static: {"^": "Path_invalidChar<-360", Path_getValidPath: [function(path, basePath) {
+    static: {"^": "Path_invalidChar<-361", Path_getValidPath: [function(path, basePath) {
         var p;
         if (typeof path === "string") {
           p = new O.Path(path, null, null, true);
@@ -28200,7 +28223,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return;
       }, function(path) {
         return O.Path_getValidPath(path, null);
-      }, null, "call$2", "call$1", "Path_getValidPath$closure", 2, 2, 257, 5, 43, [], 90, [], "getValidPath"], Path_getValidNodePath: [function(path, basePath) {
+      }, null, "call$2", "call$1", "Path_getValidPath$closure", 2, 2, 258, 5, 43, [], 90, [], "getValidPath"], Path_getValidNodePath: [function(path, basePath) {
         var p;
         if (typeof path === "string") {
           p = new O.Path(path, null, null, true);
@@ -28213,7 +28236,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return;
       }, function(path) {
         return O.Path_getValidNodePath(path, null);
-      }, null, "call$2", "call$1", "Path_getValidNodePath$closure", 2, 2, 257, 5, 43, [], 90, [], "getValidNodePath"], Path_getValidAttributePath: [function(path, basePath) {
+      }, null, "call$2", "call$1", "Path_getValidNodePath$closure", 2, 2, 258, 5, 43, [], 90, [], "getValidNodePath"], Path_getValidAttributePath: [function(path, basePath) {
         var p;
         if (typeof path === "string") {
           p = new O.Path(path, null, null, true);
@@ -28226,7 +28249,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return;
       }, function(path) {
         return O.Path_getValidAttributePath(path, null);
-      }, null, "call$2", "call$1", "Path_getValidAttributePath$closure", 2, 2, 257, 5, 43, [], 90, [], "getValidAttributePath"], Path_getValidConfigPath: [function(path, basePath) {
+      }, null, "call$2", "call$1", "Path_getValidAttributePath$closure", 2, 2, 258, 5, 43, [], 90, [], "getValidAttributePath"], Path_getValidConfigPath: [function(path, basePath) {
         var p;
         if (typeof path === "string") {
           p = new O.Path(path, null, null, true);
@@ -28239,7 +28262,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return;
       }, function(path) {
         return O.Path_getValidConfigPath(path, null);
-      }, null, "call$2", "call$1", "Path_getValidConfigPath$closure", 2, 2, 257, 5, 43, [], 90, [], "getValidConfigPath"], Path$: [function(path) {
+      }, null, "call$2", "call$1", "Path_getValidConfigPath$closure", 2, 2, 258, 5, 43, [], 90, [], "getValidConfigPath"], Path$: [function(path) {
         var t1 = new O.Path(path, null, null, true);
         t1._parse$0();
         return t1;
@@ -28248,19 +28271,19 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   "+Path": [0],
   Permission: {
     "^": "Object;",
-    static: {"^": "Permission_NONE<-322,Permission_READ<-322,Permission_WRITE<-322,Permission_CONFIG<-322,Permission_NEVER<-322,Permission_names<-338,Permission_nameParser<-339", Permission$: [function() {
+    static: {"^": "Permission_NONE<-323,Permission_READ<-323,Permission_WRITE<-323,Permission_CONFIG<-323,Permission_NEVER<-323,Permission_names<-339,Permission_nameParser<-340", Permission$: [function() {
         return new O.Permission();
-      }, null, null, 0, 0, 258, "new Permission"], Permission_parse: [function(obj, defaultVal) {
+      }, null, null, 0, 0, 259, "new Permission"], Permission_parse: [function(obj, defaultVal) {
         if (typeof obj === "string" && C.Map_50eJC.containsKey$1(0, obj))
           return C.Map_50eJC.$index(0, obj);
         return defaultVal;
       }, function(obj) {
         return O.Permission_parse(obj, 4);
-      }, null, "call$2", "call$1", "Permission_parse$closure", 2, 2, 259, 91, 92, [], 93, [], "parse"]}
+      }, null, "call$2", "call$1", "Permission_parse$closure", 2, 2, 260, 91, 92, [], 93, [], "parse"]}
   },
   "+Permission": [0],
   PermissionList: {
-    "^": "Object;idMatchs@-339,groupMatchs@-339,defaultPermission@-322",
+    "^": "Object;idMatchs@-340,groupMatchs@-340,defaultPermission@-323",
     updatePermissions$1: [function(data) {
       var t1, obj, t2, t3;
       J.clear$0$ax(this.idMatchs);
@@ -28289,18 +28312,18 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, "call$1", "get$getPermission", 2, 0, 134, 120, [], "getPermission"],
     static: {PermissionList$: [function() {
         return new O.PermissionList(P.LinkedHashMap_LinkedHashMap$_empty(null, null), P.LinkedHashMap_LinkedHashMap$_empty(null, null), 0);
-      }, null, null, 0, 0, 260, "new PermissionList"]}
+      }, null, null, 0, 0, 261, "new PermissionList"]}
   },
   "+PermissionList": [0],
   StreamConnectionAdapter: {
     "^": "Object;",
     static: {StreamConnectionAdapter$: [function() {
         return new O.StreamConnectionAdapter();
-      }, null, null, 0, 0, 261, "new StreamConnectionAdapter"]}
+      }, null, null, 0, 0, 262, "new StreamConnectionAdapter"]}
   },
   "+StreamConnectionAdapter": [0],
   StreamConnection: {
-    "^": "Object;adapter<-361,clientLink@-340,_common$_responderChannel@-341,_common$_requesterChannel@-341,onRequestReadyCompleter@-342,_common$_onDisconnectedCompleter@-343,pingTimer@-346,pingCount@-322,_common$_dataSent@-325,_common$_dataReceiveCount@-322,_serverCommand@-324",
+    "^": "Object;adapter<-362,clientLink@-341,_common$_responderChannel@-342,_common$_requesterChannel@-342,onRequestReadyCompleter@-343,_common$_onDisconnectedCompleter@-344,pingTimer@-347,pingCount@-323,_common$_dataSent@-326,_common$_dataReceiveCount@-323,_serverCommand@-325",
     get$responderChannel: [function() {
       return this._common$_responderChannel;
     }, null, null, 1, 0, 108, "responderChannel"],
@@ -28504,9 +28527,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t1 = new O.StreamConnection(adapter, clientLink, null, null, t2, t3, null, 0, false, 0, null);
         t1.StreamConnection$3$clientLink$enableTimeout(adapter, clientLink, enableTimeout);
         return t1;
-      }, null, null, 2, 5, 262, 5, 10, 94, [], 58, [], 95, [], "new StreamConnection"]}
+      }, null, null, 2, 5, 263, 5, 10, 94, [], 58, [], 95, [], "new StreamConnection"]}
   },
-  "+StreamConnection": [0, 362, 344],
+  "+StreamConnection": [0, 363, 345],
   StreamConnection_close_closure: {
     "^": "Closure:8;_common$_captured_this_0",
     call$1: [function(_) {
@@ -28514,7 +28537,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 2, 0, 8, 18, [], "call"]
   },
   TableColumn: {
-    "^": "Object;type*-329,name*-329,defaultValue*-0",
+    "^": "Object;type*-330,name*-330,defaultValue*-0",
     getData$0: [function() {
       var rslt, t1;
       rslt = P.LinkedHashMap_LinkedHashMap$_literal(["type", this.type, "name", this.name], null, null);
@@ -28525,7 +28548,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, "call$0", "get$getData", 0, 0, 118, "getData"],
     static: {TableColumn$: [function($name, type, defaultValue) {
         return new O.TableColumn(type, $name, defaultValue);
-      }, null, null, 4, 2, 263, 5, 71, [], 46, [], 96, [], "new TableColumn"], TableColumn_serializeColumns: [function(list) {
+      }, null, null, 4, 2, 264, 5, 71, [], 46, [], 96, [], "new TableColumn"], TableColumn_serializeColumns: [function(list) {
         var rslts, t1, m, t2, rslt;
         rslts = [];
         for (t1 = J.get$iterator$ax(list); t1.moveNext$0();) {
@@ -28542,7 +28565,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           }
         }
         return rslts;
-      }, "call$1", "TableColumn_serializeColumns$closure", 2, 0, 264, 97, [], "serializeColumns"], TableColumn_parseColumns: [function(list) {
+      }, "call$1", "TableColumn_serializeColumns$closure", 2, 0, 265, 97, [], "serializeColumns"], TableColumn_parseColumns: [function(list) {
         var rslt, t1, m, t2, t3, type;
         rslt = [];
         rslt.$builtinTypeInfo = [O.TableColumn];
@@ -28564,18 +28587,18 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             return;
         }
         return rslt;
-      }, "call$1", "TableColumn_parseColumns$closure", 2, 0, 265, 97, [], "parseColumns"]}
+      }, "call$1", "TableColumn_parseColumns$closure", 2, 0, 266, 97, [], "parseColumns"]}
   },
   "+TableColumn": [0],
   Table: {
-    "^": "Object;columns@-363,rows*-364",
+    "^": "Object;columns@-364,rows*-365",
     static: {Table$: [function(columns, rows) {
         return new O.Table(columns, rows);
-      }, null, null, 4, 0, 266, 98, [], 99, [], "new Table"]}
+      }, null, null, 4, 0, 267, 98, [], 99, [], "new Table"]}
   },
   "+Table": [0],
   ValueUpdate: {
-    "^": "Object;value*-365,ts@-329,status*-329,count@-322,sum@-366,min*-366,max*-366",
+    "^": "Object;value*-366,ts@-330,status*-330,count@-323,sum@-367,min*-367,max*-367",
     ValueUpdate$merge$2: function(oldUpdate, newUpdate) {
       var t1, t2, t3;
       t1 = J.getInterceptor$x(newUpdate);
@@ -28634,17 +28657,17 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           this.min = this.value;
       }
     },
-    static: {"^": "ValueUpdate_TIME_ZONE<-329", ValueUpdate_getTs: [function() {
+    static: {"^": "ValueUpdate_TIME_ZONE<-330", ValueUpdate_getTs: [function() {
         return new P.DateTime(Date.now(), false).toIso8601String$0() + H.S($.get$ValueUpdate_TIME_ZONE());
       }, "call$0", "ValueUpdate_getTs$closure", 0, 0, 3, "getTs"], ValueUpdate$: [function(value, count, max, meta, min, $status, sum, ts) {
         var t1 = new O.ValueUpdate(value, ts, $status, count, sum, min, max);
         t1.ValueUpdate$8$count$max$meta$min$status$sum$ts(value, count, max, meta, min, $status, sum, ts);
         return t1;
-      }, null, null, 2, 15, 267, 5, 5, 5, 47, 100, 100, 100, 6, [], 101, [], 102, [], 103, [], 104, [], 105, [], 106, [], 107, [], "new ValueUpdate"], ValueUpdate$merge: [function(oldUpdate, newUpdate) {
+      }, null, null, 2, 15, 268, 5, 5, 5, 47, 100, 100, 100, 6, [], 101, [], 102, [], 103, [], 104, [], 105, [], 106, [], 107, [], "new ValueUpdate"], ValueUpdate$merge: [function(oldUpdate, newUpdate) {
         var t1 = new O.ValueUpdate(null, null, null, null, 0, null, null);
         t1.ValueUpdate$merge$2(oldUpdate, newUpdate);
         return t1;
-      }, null, null, 4, 0, 268, 108, [], 109, [], "new ValueUpdate$merge"]}
+      }, null, null, 4, 0, 269, 108, [], 109, [], "new ValueUpdate$merge"]}
   },
   "+ValueUpdate": [0],
   closure2: {
@@ -28768,7 +28791,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     "^": "Object;ecPublicKey@,qBase64<,qHash64<"
   },
   PrivateKey: {
-    "^": "Object;publicKey@-369,ecPrivateKey@-370,ecPublicKey@-371",
+    "^": "Object;publicKey@-370,ecPrivateKey@-371,ecPublicKey@-372",
     saveToString$0: [function() {
       return Q.Base64_encode(K.bigintToUint8List(this.ecPrivateKey.get$d()), 0, 0) + " " + this.publicKey.get$qBase64();
     }, "call$0", "get$saveToString", 0, 0, 3, "saveToString"],
@@ -28828,7 +28851,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         var t1 = new K.PrivateKey(null, ecPrivateKey, ecPublicKey);
         t1.PrivateKey$2(ecPrivateKey, ecPublicKey);
         return t1;
-      }, null, null, 2, 2, 269, 5, 121, [], 122, [], "new PrivateKey"], PrivateKey_generate: [function() {
+      }, null, null, 2, 2, 270, 5, 121, [], 122, [], "new PrivateKey"], PrivateKey_generate: [function() {
         var $goto = 0, completer = new P.Completer_Completer(), $returnValue, handler = 2, currentError, gen, t1, rsapars, params, pair;
         function PrivateKey_generate(errorCode, result) {
           if (errorCode === 1) {
@@ -28860,7 +28883,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             }
         }
         return H.asyncHelper(null, PrivateKey_generate, completer, null);
-      }, "call$0", "PrivateKey_generate$closure", 0, 0, 270, "generate"], PrivateKey_PrivateKey$generateSync: [function() {
+      }, "call$0", "PrivateKey_generate$closure", 0, 0, 271, "generate"], PrivateKey_PrivateKey$generateSync: [function() {
         var gen, t1, rsapars, params, pair;
         gen = new S.ECKeyGenerator(null, null);
         t1 = $.get$_secp256r1();
@@ -28871,7 +28894,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         gen.init$1(params);
         pair = gen.generateKeyPair$0();
         return K.PrivateKey$(pair.privateKey, pair.publicKey);
-      }, null, null, 0, 0, 271, "new PrivateKey$generateSync"], PrivateKey_PrivateKey$loadFromString: [function(str) {
+      }, null, null, 0, 0, 272, "new PrivateKey$generateSync"], PrivateKey_PrivateKey$loadFromString: [function(str) {
         var t1, ss, d, t2;
         t1 = J.getInterceptor$asx(str);
         if (t1.contains$1(str, " ") === true) {
@@ -28886,7 +28909,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           return K.PrivateKey$(new Q.ECPrivateKey(d, t1), new Q.ECPublicKey(t2.decodePoint$1(Q.Base64_decode(ss[1])), $.get$_secp256r1()));
         } else
           return K.PrivateKey$(new Q.ECPrivateKey(Z.BigInteger_BigInteger$fromBytes(1, Q.Base64_decode(str)), $.get$_secp256r1()), null);
-      }, null, null, 2, 0, 272, 115, [], "new PrivateKey$loadFromString"]}
+      }, null, null, 2, 0, 273, 115, [], "new PrivateKey$loadFromString"]}
   },
   "+PrivateKey": [0],
   DSRandom: {
@@ -28917,9 +28940,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   "^": "",
   DefaultDefNodes: {
     "^": "Object;",
-    static: {"^": "DefaultDefNodes__defaultDefs<-324,DefaultDefNodes_nameMap<-359,DefaultDefNodes_pathMap<-359", DefaultDefNodes$: [function() {
+    static: {"^": "DefaultDefNodes__defaultDefs<-325,DefaultDefNodes_nameMap<-360,DefaultDefNodes_pathMap<-360", DefaultDefNodes$: [function() {
         return new L.DefaultDefNodes();
-      }, null, null, 0, 0, 273, "new DefaultDefNodes"]}
+      }, null, null, 0, 0, 274, "new DefaultDefNodes"]}
   },
   "+DefaultDefNodes": [0],
   closure1: {
@@ -28965,7 +28988,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 4, 0, 17, 135, [], 113, [], "call"]
   },
   RemoteNodeCache: {
-    "^": "Object;_nodes@-372",
+    "^": "Object;_nodes@-373",
     getRemoteNode$1: [function(path) {
       var t1, t2;
       if (J.containsKey$1$x(this._nodes, path) !== true) {
@@ -29009,7 +29032,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   },
   "+RemoteNodeCache": [0],
   RemoteNode: {
-    "^": "Node0;remotePath<-329,listed@-325,name*-329,_listController@-373,_subscribeController@-374,profile-357,attributes-358,configs-358,children-359",
+    "^": "Node0;remotePath<-330,listed@-326,name*-330,_listController@-374,_subscribeController@-375,profile-358,attributes-359,configs-359,children-360",
     _getRawName$0: [function() {
       var t1, t2;
       t1 = this.remotePath;
@@ -29109,7 +29132,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return t1;
       }, null, null, 2, 0, 12, 123, [], "new RemoteNode"]}
   },
-  "+RemoteNode": [357],
+  "+RemoteNode": [358],
   RemoteNode_updateRemoteChildData_closure: {
     "^": "Closure:62;_requester$_box_0,_requester$_captured_this_1,_captured_cache_2",
     call$2: [function(key, value) {
@@ -29129,16 +29152,16 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 4, 0, 62, 66, [], 6, [], "call"]
   },
   RemoteDefNode: {
-    "^": "RemoteNode;remotePath-329,listed-325,name-329,_listController-373,_subscribeController-374,profile-357,attributes-358,configs-358,children-359",
+    "^": "RemoteNode;remotePath-330,listed-326,name-330,_listController-374,_subscribeController-375,profile-358,attributes-359,configs-359,children-360",
     static: {RemoteDefNode$: [function(path) {
         var t1 = new L.RemoteDefNode(path, false, null, null, null, null, P.LinkedHashMap_LinkedHashMap$_empty(null, null), P.LinkedHashMap_LinkedHashMap$_literal(["$is", "node"], null, null), P.LinkedHashMap_LinkedHashMap$_empty(null, null));
         t1._getRawName$0();
         return t1;
       }, null, null, 2, 0, 12, 43, [], "new RemoteDefNode"]}
   },
-  "+RemoteDefNode": [375],
+  "+RemoteDefNode": [376],
   Request: {
-    "^": "Object;requester<-333,rid<-322,data>-324,updater<-376,_requester$_isClosed@-325,streamStatus@-329",
+    "^": "Object;requester<-334,rid<-323,data>-325,updater<-377,_requester$_isClosed@-326,streamStatus@-330",
     get$isClosed: [function() {
       return this._requester$_isClosed;
     }, null, null, 1, 0, 30, "isClosed"],
@@ -29146,7 +29169,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       this.requester.addToSendList$1(this.data);
     }, "call$0", "get$resend", 0, 0, 7, "resend"],
     _update$1: [function(m) {
-      var t1, t2, updates, columns;
+      var t1, t2, updates, columns, error;
       t1 = J.getInterceptor$asx(m);
       t2 = t1.$index(m, "stream");
       if (typeof t2 === "string")
@@ -29155,7 +29178,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       columns = !!J.getInterceptor(t1.$index(m, "columns")).$isList ? t1.$index(m, "columns") : null;
       if (J.$eq(this.streamStatus, "closed"))
         J.remove$1$ax(this.requester.get$_requests(), this.rid);
-      this.updater.onUpdate$4(this.streamStatus, updates, columns, null);
+      if (t1.containsKey$1(m, "error") === true && !!J.getInterceptor(t1.$index(m, "error")).$isMap) {
+        error = new O.DSError(null, null, null, null, null);
+        error.DSError$fromMap$1(t1.$index(m, "error"));
+      } else
+        error = null;
+      this.updater.onUpdate$4(this.streamStatus, updates, columns, error);
     }, "call$1", "get$_update", 2, 0, 124, 49, [], "_update"],
     _requester$_close$1: [function(error) {
       if (!J.$eq(this.streamStatus, "closed")) {
@@ -29170,11 +29198,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, "call$0", "get$close", 0, 0, 7, "close"],
     static: {Request$: [function(requester, rid, updater, data) {
         return new L.Request(requester, rid, data, updater, false, "initialize");
-      }, null, null, 8, 0, 274, 124, [], 125, [], 126, [], 119, [], "new Request"]}
+      }, null, null, 8, 0, 275, 124, [], 125, [], 126, [], 119, [], "new Request"]}
   },
   "+Request": [0],
   RequesterInvokeUpdate: {
-    "^": "RequesterUpdate;rawColumns@-356,columns@-363,updates@-356,_rows*-364,streamStatus-329",
+    "^": "RequesterUpdate;rawColumns@-357,columns@-364,updates@-357,error*-352,_rows*-365,streamStatus-330",
     get$rows: [function(_) {
       var t1, obj, t2, row, i, t3, column, t4;
       if (this._rows == null) {
@@ -29188,7 +29216,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
               for (i = t2.get$length(obj); t2 = J.getInterceptor$in(i), t2.$lt(i, J.get$length$asx(this.columns)); i = t2.$add(i, 1))
                 C.JSArray_methods.add$1(row, J.get$defaultValue$x(J.$index$asx(this.columns, i)));
             } else
-              row = J.$gt$n(t2.get$length(obj), J.get$length$asx(this.columns)) ? t2.sublist$2(obj, 0, J.get$length$asx(this.columns)) : obj;
+              row = J.$gt$in(t2.get$length(obj), J.get$length$asx(this.columns)) ? t2.sublist$2(obj, 0, J.get$length$asx(this.columns)) : obj;
           else if (!!t2.$isMap) {
             row = [];
             for (t3 = J.get$iterator$ax(this.columns); t3.moveNext$0();) {
@@ -29206,13 +29234,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }
       return this._rows;
     }, null, null, 1, 0, 148, "rows"],
-    static: {RequesterInvokeUpdate$: [function(updates, rawColumns, columns, streamStatus) {
-        return new L.RequesterInvokeUpdate(rawColumns, columns, updates, null, streamStatus);
-      }, null, null, 8, 0, 275, 127, [], 128, [], 98, [], 129, [], "new RequesterInvokeUpdate"]}
+    static: {RequesterInvokeUpdate$: [function(updates, rawColumns, columns, streamStatus, error) {
+        return new L.RequesterInvokeUpdate(rawColumns, columns, updates, error, null, streamStatus);
+      }, null, null, 8, 2, 276, 5, 127, [], 128, [], 98, [], 129, [], 7, [], "new RequesterInvokeUpdate"]}
   },
-  "+RequesterInvokeUpdate": [377],
+  "+RequesterInvokeUpdate": [378],
   InvokeController: {
-    "^": "Object;node<-375,requester<-333,_requester$_controller@-378,_requester$_stream@-379,_request@-380,_cachedColumns@-363",
+    "^": "Object;node<-376,requester<-334,_requester$_controller@-379,_requester$_stream@-380,_request@-381,_cachedColumns@-364",
     _onUnsubscribe$1: [function(obj) {
       var t1 = this._request;
       if (t1 != null && !J.$eq(t1.get$streamStatus(), "closed"))
@@ -29229,8 +29257,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t1 = [];
         this._cachedColumns = t1;
       }
-      if (updates != null)
-        J.add$1$ax(this._requester$_controller, new L.RequesterInvokeUpdate(columns, t1, updates, null, streamStatus));
+      if (error != null) {
+        J.add$1$ax(this._requester$_controller, new L.RequesterInvokeUpdate(null, null, null, error, null, "closed"));
+        streamStatus = "closed";
+      } else if (updates != null)
+        J.add$1$ax(this._requester$_controller, new L.RequesterInvokeUpdate(columns, t1, updates, null, null, streamStatus));
       if (J.$eq(streamStatus, "closed"))
         J.close$0$x(this._requester$_controller);
     }, function(streamStatus, updates, columns) {
@@ -29247,7 +29278,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if (!!J.getInterceptor(columns).$isList)
           return O.TableColumn_parseColumns(columns);
         return;
-      }, "call$1", "InvokeController_getNodeColumns$closure", 2, 0, 276, 113, [], "getNodeColumns"], InvokeController$: [function(node, requester, params, maxPermission) {
+      }, "call$1", "InvokeController_getNodeColumns$closure", 2, 0, 277, 113, [], "getNodeColumns"], InvokeController$: [function(node, requester, params, maxPermission) {
         var t1, t2, reqMap;
         t1 = new L.InvokeController(node, requester, null, null, null, null);
         t2 = P.StreamController_StreamController(null, null, null, null, false, L.RequesterInvokeUpdate);
@@ -29263,18 +29294,18 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t1._cachedColumns = L.InvokeController_getNodeColumns(node);
         t1._request = requester._sendRequest$2(reqMap, t1);
         return t1;
-      }, null, null, 6, 2, 277, 130, 113, [], 124, [], 131, [], 132, [], "new InvokeController"]}
+      }, null, null, 6, 2, 278, 130, 113, [], 124, [], 131, [], 132, [], "new InvokeController"]}
   },
-  "+InvokeController": [0, 376],
+  "+InvokeController": [0, 377],
   RequesterListUpdate: {
-    "^": "RequesterUpdate;changes@-338,node@-375,streamStatus-329",
+    "^": "RequesterUpdate;changes@-339,node@-376,streamStatus-330",
     static: {RequesterListUpdate$: [function(node, changes, streamStatus) {
         return new L.RequesterListUpdate(changes, node, streamStatus);
-      }, null, null, 6, 0, 278, 113, [], 133, [], 129, [], "new RequesterListUpdate"]}
+      }, null, null, 6, 0, 279, 113, [], 133, [], 129, [], "new RequesterListUpdate"]}
   },
-  "+RequesterListUpdate": [377],
+  "+RequesterListUpdate": [378],
   ListDefListener: {
-    "^": "Object;node<-375,requester<-333,listener@-355,ready@-325",
+    "^": "Object;node<-376,requester<-334,listener@-356,ready@-326",
     cancel$0: [function() {
       this.listener.cancel$0();
     }, "call$0", "get$cancel", 0, 0, 7, "cancel"],
@@ -29285,7 +29316,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         var t1 = new L.ListDefListener(node, requester, null, false);
         t1.ListDefListener$3(node, requester, callback);
         return t1;
-      }, null, null, 6, 0, 279, 113, [], 124, [], 114, [], "new ListDefListener"]}
+      }, null, null, 6, 0, 280, 113, [], 124, [], 114, [], "new ListDefListener"]}
   },
   "+ListDefListener": [0],
   ListDefListener_closure: {
@@ -29296,7 +29327,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 2, 0, 151, 51, [], "call"]
   },
   ListController: {
-    "^": "Object;node<-375,requester<-333,_requester$_controller@-381,request*-380,disconnectTs@-329,changes@-382,_profileLoader@-383,_ready@-325,_pendingRemoveDef@-325",
+    "^": "Object;node<-376,requester<-334,_requester$_controller@-382,request*-381,disconnectTs@-330,changes@-383,_profileLoader@-384,_ready@-326,_pendingRemoveDef@-326",
     get$stream: [function(_) {
       return J.get$stream$x(this._requester$_controller);
     }, null, null, 1, 0, 152, "stream"],
@@ -29480,13 +29511,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       J.close$0$x(this._requester$_controller);
       this.node.set$_listController(null);
     }, "call$0", "get$_destroy", 0, 0, 7, "_destroy"],
-    static: {"^": "ListController__ignoreProfileProps<-338", ListController$: [function(node, requester) {
+    static: {"^": "ListController__ignoreProfileProps<-339", ListController$: [function(node, requester) {
         var t1 = new L.ListController(node, requester, null, null, null, P.LinkedHashSet_LinkedHashSet(null, null, null, P.String), null, true, false);
         t1._requester$_controller = Q.BroadcastStreamController$(t1.get$onStartListen(), t1.get$_onAllCancel(), t1.get$_requester$_onListen(), L.RequesterListUpdate);
         return t1;
-      }, null, null, 4, 0, 280, 113, [], 124, [], "new ListController"]}
+      }, null, null, 4, 0, 281, 113, [], 124, [], "new ListController"]}
   },
-  "+ListController": [0, 376],
+  "+ListController": [0, 377],
   ListController__onProfileUpdate_closure: {
     "^": "Closure:8;",
     call$1: [function(str) {
@@ -29508,7 +29539,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 0, 0, 5, "call"]
   },
   RemoveController: {
-    "^": "Object;completer<-384,requester<-333,path>-329,_request@-380",
+    "^": "Object;completer<-385,requester<-334,path>-330,_request@-381",
     get$future: [function() {
       return this.completer.get$future();
     }, null, null, 1, 0, 154, "future"],
@@ -29531,11 +29562,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t1 = new L.RemoveController(t2, requester, path, null);
         t1._request = requester._sendRequest$2(P.LinkedHashMap_LinkedHashMap$_literal(["method", "remove", "path", path], null, null), t1);
         return t1;
-      }, null, null, 4, 0, 281, 124, [], 43, [], "new RemoveController"]}
+      }, null, null, 4, 0, 282, 124, [], 43, [], "new RemoveController"]}
   },
-  "+RemoveController": [0, 376],
+  "+RemoveController": [0, 377],
   SetController: {
-    "^": "Object;completer<-384,requester<-333,path>-329,value>-0,_request@-380",
+    "^": "Object;completer<-385,requester<-334,path>-330,value>-0,_request@-381",
     get$future: [function() {
       return this.completer.get$future();
     }, null, null, 1, 0, 154, "future"],
@@ -29564,11 +29595,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         }
         t1._request = requester._sendRequest$2(reqMap, t1);
         return t1;
-      }, null, null, 6, 2, 282, 130, 124, [], 43, [], 6, [], 132, [], "new SetController"]}
+      }, null, null, 6, 2, 283, 130, 124, [], 43, [], 6, [], 132, [], "new SetController"]}
   },
-  "+SetController": [0, 376],
+  "+SetController": [0, 377],
   ReqSubscribeListener: {
-    "^": "Object;callback@-317,requester@-333,path*-329",
+    "^": "Object;callback@-318,requester@-334,path*-330",
     cancel$0: [function() {
       var t1 = this.callback;
       if (t1 != null) {
@@ -29602,11 +29633,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     },
     static: {ReqSubscribeListener$: [function(requester, path, callback) {
         return new L.ReqSubscribeListener(callback, requester, path);
-      }, null, null, 6, 0, 283, 124, [], 43, [], 114, [], "new ReqSubscribeListener"]}
+      }, null, null, 6, 0, 284, 124, [], 43, [], 114, [], "new ReqSubscribeListener"]}
   },
-  "+ReqSubscribeListener": [0, 355],
+  "+ReqSubscribeListener": [0, 356],
   SubscribeController: {
-    "^": "Object;request*-385",
+    "^": "Object;request*-386",
     onDisconnect$0: [function(_) {
     }, "call$0", "get$onDisconnect", 0, 0, 7, "onDisconnect"],
     onReconnect$0: [function() {
@@ -29617,9 +29648,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new L.SubscribeController(null);
       }, null, null, 0, 0, 5, "new SubscribeController"]}
   },
-  "+SubscribeController": [0, 376],
+  "+SubscribeController": [0, 377],
   SubscribeRequest: {
-    "^": "Request;subsriptions<-386,subsriptionids<-387,_changedPaths@-388,toRemove@-356,requester-333,rid-322,data-324,updater-376,_requester$_isClosed-325,streamStatus-329",
+    "^": "Request;subsriptions<-387,subsriptionids<-388,_changedPaths@-389,toRemove@-357,requester-334,rid-323,data-325,updater-377,_requester$_isClosed-326,streamStatus-330",
     resend$0: [function() {
       this.requester.addProcessor$1(this.get$_sendSubscriptionReuests());
     }, "call$0", "get$resend", 0, 0, 7, "resend", 67],
@@ -29740,9 +29771,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t2 = new L.SubscribeRequest(P.LinkedHashMap_LinkedHashMap(null, null, null, P.String, L.ReqSubscribeController), P.LinkedHashMap_LinkedHashMap(null, null, null, P.$int, L.ReqSubscribeController), P.HashSet_HashSet(null, null, null, P.String), [], requester, rid, null, t1, false, "initialize");
         t1.request = t2;
         return t2;
-      }, null, null, 4, 0, 284, 124, [], 125, [], "new SubscribeRequest"]}
+      }, null, null, 4, 0, 285, 124, [], 125, [], "new SubscribeRequest"]}
   },
-  "+SubscribeRequest": [380],
+  "+SubscribeRequest": [381],
   SubscribeRequest__close_closure: {
     "^": "Closure:162;_requester$_captured_this_0",
     call$2: [function(path, controller) {
@@ -29750,7 +29781,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 4, 0, 162, 43, [], 145, [], "call"]
   },
   ReqSubscribeController: {
-    "^": "Object;node<-375,requester<-333,callbacks@-389,maxCache@-322,sid@-322,_lastUpdate@-390",
+    "^": "Object;node<-376,requester<-334,callbacks@-390,maxCache@-323,sid@-323,_lastUpdate@-391",
     listen$2: [function(callback, cacheLevel) {
       var t1, t2;
       if (J.$lt$in(cacheLevel, 1))
@@ -29819,7 +29850,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         requester.set$nextSid(J.$add$ns(t2, 1));
         t1.sid = t2;
         return t1;
-      }, null, null, 4, 0, 280, 113, [], 124, [], "new ReqSubscribeController"]}
+      }, null, null, 4, 0, 281, 113, [], 124, [], "new ReqSubscribeController"]}
   },
   "+ReqSubscribeController": [0],
   ReqSubscribeController_updateCacheLevel_closure: {
@@ -29834,18 +29865,18 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     "^": "Object;",
     static: {RequestUpdater$: [function() {
         return new L.RequestUpdater();
-      }, null, null, 0, 0, 285, "new RequestUpdater"]}
+      }, null, null, 0, 0, 286, "new RequestUpdater"]}
   },
   "+RequestUpdater": [0],
   RequesterUpdate: {
-    "^": "Object;streamStatus<-329",
+    "^": "Object;streamStatus<-330",
     static: {RequesterUpdate$: [function(streamStatus) {
         return new L.RequesterUpdate(streamStatus);
       }, null, null, 2, 0, 12, 129, [], "new RequesterUpdate"]}
   },
   "+RequesterUpdate": [0],
   Requester: {
-    "^": "ConnectionHandler;_requests@-391,nodeCache<-392,_subsciption@-385,nextRid@-322,nextSid@-322,lastSentId@-322,_connected@-325,_conn-354,_connListener-355,_beforeSendListener-355,_toSendList-356,_processors-353,_pendingSend-325",
+    "^": "ConnectionHandler;_requests@-392,nodeCache<-393,_subsciption@-386,nextRid@-323,nextSid@-323,lastSentId@-323,_connected@-326,_conn-355,_connListener-356,_beforeSendListener-356,_toSendList-357,_processors-354,_pendingSend-326",
     onData$1: [function(list) {
       var t1, resp, t2, t3;
       for (t1 = J.get$iterator$ax(list); t1.moveNext$0();) {
@@ -29969,9 +30000,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t2 = new L.Requester(t1, t2, null, 1, 1, 0, false, null, null, null, [], [], false);
         t2.Requester$1(cache);
         return t2;
-      }, null, null, 0, 2, 286, 5, 134, [], "new Requester"]}
+      }, null, null, 0, 2, 287, 5, 134, [], "new Requester"]}
   },
-  "+Requester": [393],
+  "+Requester": [394],
   Requester_onDisconnected_closure: {
     "^": "Closure:17;_requester$_captured_this_0,_captured_newRequests_1",
     call$2: [function(n, req) {
@@ -29994,7 +30025,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
 ["dslink.responder", "package:dslink/responder.dart", , T, {
   "^": "",
   ConfigSetting: {
-    "^": "Object;name>-329,type>-329,defaultValue>-0",
+    "^": "Object;name>-330,type>-330,defaultValue>-0",
     setConfig$3: [function(value, node, responder) {
       var t1 = this.name;
       if (!J.$eq(J.$index$asx(node.get$configs(), t1), value)) {
@@ -30013,7 +30044,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, "call$2", "get$removeConfig", 4, 0, 174, 113, [], 120, [], "removeConfig"],
     static: {ConfigSetting$: [function($name, type, defaultValue) {
         return new T.ConfigSetting($name, type, defaultValue);
-      }, null, null, 4, 3, 287, 5, 71, [], 46, [], 96, [], "new ConfigSetting"], ConfigSetting$fromMap: [function($name, m) {
+      }, null, null, 4, 3, 288, 5, 71, [], 46, [], 96, [], "new ConfigSetting"], ConfigSetting$fromMap: [function($name, m) {
         var t1, t2;
         t1 = J.getInterceptor$x(m);
         t2 = t1.containsKey$1(m, "type") === true ? t1.$index(m, "type") : "string";
@@ -30022,20 +30053,20 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   },
   "+ConfigSetting": [0],
   Configs: {
-    "^": "Object;configs@-394",
+    "^": "Object;configs@-395",
     load$1: [function(_, inputs) {
       J.forEach$1$ax(inputs, new T.Configs_load_closure(this));
     }, "call$1", "get$load", 2, 0, 124, 151, [], "load"],
-    static: {"^": "Configs__globalConfigs<-324,Configs_global<-395,Configs_defaultConfig<-396", Configs$: [function() {
+    static: {"^": "Configs__globalConfigs<-325,Configs_global<-396,Configs_defaultConfig<-397", Configs$: [function() {
         return new T.Configs(P.LinkedHashMap_LinkedHashMap$_empty(null, null));
-      }, null, null, 0, 0, 288, "new Configs"], Configs_getConfig: [function($name, profile) {
+      }, null, null, 0, 0, 289, "new Configs"], Configs_getConfig: [function($name, profile) {
         var t1 = $.get$Configs_global();
         if (J.containsKey$1$x(t1.configs, $name) === true)
           return J.$index$asx(t1.configs, $name);
         if (profile instanceof T.DefinitionNode && J.containsKey$1$x(profile.configs, $name) === true)
           return J.$index$asx(profile.get$configs(), $name);
         return $.get$Configs_defaultConfig();
-      }, "call$2", "Configs_getConfig$closure", 4, 0, 289, 71, [], 148, [], "getConfig"]}
+      }, "call$2", "Configs_getConfig$closure", 4, 0, 290, 71, [], 148, [], "getConfig"]}
   },
   "+Configs": [0],
   Configs_load_closure: {
@@ -30046,7 +30077,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 4, 0, 17, 71, [], 49, [], "call"]
   },
   DefinitionNode: {
-    "^": "LocalNodeImpl;parentNode-397,_loaded-325,_listChangeController-398,_listReqListener-355,path-329,callbacks-389,_lastValueUpdate-390,profile-357,attributes-358,configs-358,children-359",
+    "^": "LocalNodeImpl;parentNode-398,_loaded-326,_listChangeController-399,_listReqListener-356,path-330,callbacks-390,_lastValueUpdate-391,profile-358,attributes-359,configs-359,children-360",
     static: {DefinitionNode$: [function(path) {
         var t1, t2;
         t1 = P.LinkedHashMap_LinkedHashMap(null, null, null, P.Function, P.$int);
@@ -30055,9 +30086,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new T.DefinitionNode(null, false, null, null, path, t1, null, null, P.LinkedHashMap_LinkedHashMap$_empty(null, null), t2, P.LinkedHashMap_LinkedHashMap$_empty(null, null));
       }, null, null, 2, 0, 12, 43, [], "new DefinitionNode"]}
   },
-  "+DefinitionNode": [399],
+  "+DefinitionNode": [400],
   RootNode: {
-    "^": "LocalNodeImpl;_loaded:RootNode__loaded@-325,parentNode-397,_loaded-325,_listChangeController-398,_listReqListener-355,path-329,callbacks-389,_lastValueUpdate-390,profile-357,attributes-358,configs-358,children-359",
+    "^": "LocalNodeImpl;_loaded:RootNode__loaded@-326,parentNode-398,_loaded-326,_listChangeController-399,_listReqListener-356,path-330,callbacks-390,_lastValueUpdate-391,profile-358,attributes-359,configs-359,children-360",
     load$2: [function(_, m, provider) {
       if (this.RootNode__loaded === true)
         throw H.wrapException("root node can not be initialized twice");
@@ -30067,7 +30098,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new T.RootNode(false, null, false, null, null, path, P.LinkedHashMap_LinkedHashMap(null, null, null, P.Function, P.$int), null, null, P.LinkedHashMap_LinkedHashMap$_empty(null, null), P.LinkedHashMap_LinkedHashMap$_literal(["$is", "node"], null, null), P.LinkedHashMap_LinkedHashMap$_empty(null, null));
       }, null, null, 2, 0, 12, 43, [], "new RootNode"]}
   },
-  "+RootNode": [399],
+  "+RootNode": [400],
   RootNode_load_closure: {
     "^": "Closure:62;_responder$_captured_this_0,_captured_provider_1",
     call$2: [function(key, value) {
@@ -30091,11 +30122,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     "^": "NodeProvider;",
     static: {NodeProviderImpl$: [function() {
         return new T.NodeProviderImpl();
-      }, null, null, 0, 0, 290, "new NodeProviderImpl"]}
+      }, null, null, 0, 0, 291, "new NodeProviderImpl"]}
   },
-  "+NodeProviderImpl": [326],
+  "+NodeProviderImpl": [327],
   LocalNodeImpl: {
-    "^": "LocalNode;parentNode*-397,_loaded@-325,_listChangeController-398,_listReqListener-355,path-329,callbacks-389,_lastValueUpdate-390,profile-357,attributes-358,configs-358,children-359",
+    "^": "LocalNode;parentNode*-398,_loaded@-326,_listChangeController-399,_listReqListener-356,path-330,callbacks-390,_lastValueUpdate-391,profile-358,attributes-359,configs-359,children-360",
     serialize$1: [function(withChildren) {
       var rslt = P.LinkedHashMap_LinkedHashMap$_empty(null, null);
       J.forEach$1$ax(this.configs, new T.LocalNodeImpl_serialize_closure(rslt));
@@ -30161,7 +30192,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new T.LocalNodeImpl(null, false, null, null, path, P.LinkedHashMap_LinkedHashMap(null, null, null, P.Function, P.$int), null, null, P.LinkedHashMap_LinkedHashMap$_empty(null, null), P.LinkedHashMap_LinkedHashMap$_literal(["$is", "node"], null, null), P.LinkedHashMap_LinkedHashMap$_empty(null, null));
       }, null, null, 2, 0, 12, 43, [], "new LocalNodeImpl"]}
   },
-  "+LocalNodeImpl": [397],
+  "+LocalNodeImpl": [398],
   LocalNodeImpl_serialize_closure: {
     "^": "Closure:17;_responder$_captured_rslt_0",
     call$2: [function(key, val) {
@@ -30204,7 +30235,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     "^": "Object;",
     static: {IPermissionManager$: [function() {
         return new T.IPermissionManager();
-      }, null, null, 0, 0, 291, "new IPermissionManager"]}
+      }, null, null, 0, 0, 292, "new IPermissionManager"]}
   },
   "+IPermissionManager": [0],
   DummyPermissionManager: {
@@ -30214,11 +30245,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, "call$2", "get$getPermission", 4, 0, 180, 43, [], 153, [], "getPermission"],
     static: {DummyPermissionManager$: [function() {
         return new T.DummyPermissionManager();
-      }, null, null, 0, 0, 292, "new DummyPermissionManager"]}
+      }, null, null, 0, 0, 293, "new DummyPermissionManager"]}
   },
-  "+DummyPermissionManager": [0, 400],
+  "+DummyPermissionManager": [0, 401],
   LocalNode: {
-    "^": "Node0;_listChangeController@-398,_listReqListener@-355,path>-329,callbacks@-389,_lastValueUpdate@-390,profile-357,attributes-358,configs-358,children-359",
+    "^": "Node0;_listChangeController@-399,_listReqListener@-356,path>-330,callbacks@-390,_lastValueUpdate@-391,profile-358,attributes-359,configs-359,children-360",
     get$listChangeController: [function() {
       var t1 = this._listChangeController;
       if (t1 == null) {
@@ -30288,12 +30319,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     getSetPermission$0: [function() {
       return O.Permission_parse(this.getConfig$1("$writable"), 4);
     }, "call$0", "get$getSetPermission", 0, 0, 2, "getSetPermission"],
-    invoke$4: [function(params, responder, response, maxPermission) {
+    invoke$5: [function(params, responder, response, parentNode, maxPermission) {
       J.close$0$x(response);
       return response;
-    }, function(params, responder, response) {
-      return this.invoke$4(params, responder, response, 3);
-    }, "invoke$3", "call$4", "call$3", "get$invoke", 6, 2, 186, 130, 131, [], 120, [], 77, [], 132, [], "invoke"],
+    }, function(params, responder, response, parentNode) {
+      return this.invoke$5(params, responder, response, parentNode, 3);
+    }, "invoke$4", "call$5", "call$4", "get$invoke", 8, 2, 186, 130, 131, [], 120, [], 77, [], 155, [], 132, [], "invoke"],
     setAttribute$4: [function(_, $name, value, responder, response) {
       J.close$0$x(response);
       return response;
@@ -30332,7 +30363,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new T.LocalNode(null, null, path, P.LinkedHashMap_LinkedHashMap(null, null, null, P.Function, P.$int), null, null, P.LinkedHashMap_LinkedHashMap$_empty(null, null), P.LinkedHashMap_LinkedHashMap$_literal(["$is", "node"], null, null), P.LinkedHashMap_LinkedHashMap$_empty(null, null));
       }, null, null, 2, 0, 12, 43, [], "new LocalNode"]}
   },
-  "+LocalNode": [357],
+  "+LocalNode": [358],
   LocalNode_updateValue_closure: {
     "^": "Closure:17;_responder$_captured_this_0",
     call$2: [function(callback, cachelevel) {
@@ -30355,11 +30386,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, "get$~", 0, 0, 100, "~"],
     static: {NodeProvider$: [function() {
         return new T.NodeProvider();
-      }, null, null, 0, 0, 293, "new NodeProvider"]}
+      }, null, null, 0, 0, 294, "new NodeProvider"]}
   },
   "+NodeProvider": [0],
   Responder: {
-    "^": "ConnectionHandler;reqId@-329,groups@-338,_responses<-401,_responder$_subscription@-402,nodeProvider<-326,_conn-354,_connListener-355,_beforeSendListener-355,_toSendList-356,_processors-353,_pendingSend-325",
+    "^": "ConnectionHandler;reqId@-330,groups@-339,_responses<-402,_responder$_subscription@-403,nodeProvider<-327,_conn-355,_connListener-356,_beforeSendListener-356,_toSendList-357,_processors-354,_pendingSend-326",
     addResponse$1: [function(response) {
       if (!J.$eq(response.get$_sentStreamStatus(), "closed"))
         J.$indexSet$ax(this._responses, response.get$rid(), response);
@@ -30374,7 +30405,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }
     }, "call$1", "get$onData", 2, 0, 133, 97, [], "onData"],
     _onReceiveRequest$1: [function(m) {
-      var t1, t2, t3, t4, rid, path, node, permission, maxPermit;
+      var t1, t2, t3, t4, rid, path, node;
       t1 = J.getInterceptor$asx(m);
       t2 = t1.$index(m, "method");
       if (typeof t2 === "string") {
@@ -30428,28 +30459,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             this._responder$_unsubscribe$1(m);
             return;
           case "invoke":
-            path = O.Path_getValidNodePath(t1.$index(m, "path"), null);
-            if (path != null)
-              t4 = J.$eq(path.name, "/") || J.startsWith$1$s(path.parentPath, "/");
-            else
-              t4 = false;
-            if (t4) {
-              rid = t1.$index(m, "rid");
-              t4 = this.nodeProvider;
-              node = t4.getNode$1(path.path);
-              permission = t4.get$permissions().getPermission$2(J.get$path$x(node), this);
-              maxPermit = O.Permission_parse(t1.$index(m, "permit"), 4);
-              if (J.$lt$in(maxPermit, permission))
-                permission = maxPermit;
-              if (J.$le$in(node.getInvokePermission$0(), permission)) {
-                t1 = t1.$index(m, "params");
-                t4 = new T.InvokeResponse(node, 0, null, null, "initialize", null, null, this, rid, "initialize");
-                t3.$indexSet(t2, rid, t4);
-                node.invoke$3(t1, this, t4);
-              } else
-                this._closeResponse$2$error(t1.$index(m, "rid"), $.get$DSError_PERMISSION_DENIED());
-            } else
-              this._closeResponse$2$error(t1.$index(m, "rid"), $.get$DSError_INVALID_PATH());
+            this._responder$_invoke$1(m);
             return;
           case "set":
             this._responder$_set$1(m);
@@ -30582,7 +30592,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         this._closeResponse$2$error(t1.$index(m, "rid"), $.get$DSError_INVALID_PATHS());
     }, "call$1", "get$_responder$_unsubscribe", 2, 0, 124, 49, [], "_responder$_unsubscribe"],
     _responder$_invoke$1: [function(m) {
-      var t1, path, t2, rid, node, permission, maxPermit;
+      var t1, path, t2, rid, parentNode, node, permission, maxPermit;
       t1 = J.getInterceptor$asx(m);
       path = O.Path_getValidNodePath(t1.$index(m, "path"), null);
       if (path != null)
@@ -30592,13 +30602,18 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       if (t2) {
         rid = t1.$index(m, "rid");
         t2 = this.nodeProvider;
-        node = t2.getNode$1(path.path);
-        permission = t2.get$permissions().getPermission$2(J.get$path$x(node), this);
+        parentNode = t2.getNode$1(path.parentPath);
+        node = parentNode.getChild$1(path.name);
+        if (node == null) {
+          this._closeResponse$2$error(t1.$index(m, "rid"), $.get$DSError_PERMISSION_DENIED());
+          return;
+        }
+        permission = t2.get$permissions().getPermission$2(path.path, this);
         maxPermit = O.Permission_parse(t1.$index(m, "permit"), 4);
         if (J.$lt$in(maxPermit, permission))
           permission = maxPermit;
         if (J.$le$in(node.getInvokePermission$0(), permission))
-          node.invoke$3(t1.$index(m, "params"), this, this.addResponse$1(new T.InvokeResponse(node, 0, null, null, "initialize", null, null, this, rid, "initialize")));
+          node.invoke$4(t1.$index(m, "params"), this, this.addResponse$1(new T.InvokeResponse(node, 0, null, null, "initialize", null, null, this, rid, "initialize")), parentNode);
         else
           this._closeResponse$2$error(t1.$index(m, "rid"), $.get$DSError_PERMISSION_DENIED());
       } else
@@ -30713,17 +30728,17 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         var t1 = new T.Responder(null, [], P.LinkedHashMap_LinkedHashMap(null, null, null, P.$int, T.Response), null, nodeProvider, null, null, null, [], [], false);
         t1.Responder$1(nodeProvider);
         return t1;
-      }, null, null, 2, 0, 294, 56, [], "new Responder"]}
+      }, null, null, 2, 0, 295, 56, [], "new Responder"]}
   },
-  "+Responder": [393],
+  "+Responder": [394],
   Responder_onDisconnected_closure: {
     "^": "Closure:17;",
     call$2: [function(id, resp) {
       resp._responder$_close$0();
-    }, null, null, 4, 0, 17, 155, [], 153, [], "call"]
+    }, null, null, 4, 0, 17, 156, [], 153, [], "call"]
   },
   Response: {
-    "^": "Object;responder<-334,rid<-322,_sentStreamStatus@-329",
+    "^": "Object;responder<-335,rid<-323,_sentStreamStatus@-330",
     close$1: [function(_, err) {
       this._sentStreamStatus = "closed";
       this.responder._closeResponse$3$error$response(this.rid, err, this);
@@ -30734,11 +30749,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, "call$0", "get$_responder$_close", 0, 0, 7, "_responder$_close"],
     static: {Response$: [function(responder, rid) {
         return new T.Response(responder, rid, "initialize");
-      }, null, null, 4, 0, 295, 120, [], 125, [], "new Response"]}
+      }, null, null, 4, 0, 296, 120, [], 125, [], "new Response"]}
   },
   "+Response": [0],
   InvokeResponse: {
-    "^": "Response;node<-397,_pendingInitializeLength@-322,_columns@-356,_updates@-356,_sendingStreamStatus@-329,_err@-351,onClose*-403,responder-334,rid-322,_sentStreamStatus-329",
+    "^": "Response;node<-398,_pendingInitializeLength@-323,_columns@-357,_updates@-357,_sendingStreamStatus@-330,_err@-352,onClose*-404,responder-335,rid-323,_sentStreamStatus-330",
     updateStream$3$columns$streamStatus: [function(updates, columns, streamStatus) {
       var t1;
       if (columns != null)
@@ -30756,7 +30771,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       return this.updateStream$3$columns$streamStatus(updates, null, "open");
     }, "updateStream$1", function(updates, streamStatus) {
       return this.updateStream$3$columns$streamStatus(updates, null, streamStatus);
-    }, "updateStream$2$streamStatus", "call$3$columns$streamStatus", "call$1", "call$2$streamStatus", "get$updateStream", 2, 5, 190, 5, 156, 127, [], 98, [], 129, [], "updateStream"],
+    }, "updateStream$2$streamStatus", "call$3$columns$streamStatus", "call$1", "call$2$streamStatus", "get$updateStream", 2, 5, 190, 5, 157, 127, [], 98, [], 129, [], "updateStream"],
     processor$0: [function() {
       var t1 = this._err;
       if (t1 != null) {
@@ -30779,7 +30794,8 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           this.onClose$1(0, this);
     }, "call$0", "get$processor", 0, 0, 7, "processor"],
     close$1: [function(_, err) {
-      this._err = err;
+      if (err != null)
+        this._err = err;
       this._sendingStreamStatus = "closed";
       this.responder.addProcessor$1(this.get$processor());
     }, function($receiver) {
@@ -30794,11 +30810,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     },
     static: {InvokeResponse$: [function(responder, rid, node) {
         return new T.InvokeResponse(node, 0, null, null, "initialize", null, null, responder, rid, "initialize");
-      }, null, null, 6, 0, 296, 120, [], 125, [], 113, [], "new InvokeResponse"]}
+      }, null, null, 6, 0, 297, 120, [], 125, [], 113, [], "new InvokeResponse"]}
   },
-  "+InvokeResponse": [404],
+  "+InvokeResponse": [405],
   ListResponse: {
-    "^": "Response;node<-397,_nodeChangeListener@-355,_permission@-322,changes@-382,initialResponse@-325,_disconnectSent@-325,responder-334,rid-322,_sentStreamStatus-329",
+    "^": "Response;node<-398,_nodeChangeListener@-356,_permission@-323,changes@-383,initialResponse@-326,_disconnectSent@-326,responder-335,rid-323,_sentStreamStatus-330",
     changed$1: [function(key) {
       var t1, t2;
       if (J.$eq(this._permission, 0))
@@ -30875,9 +30891,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         else
           node.get$disconnected();
         return t1;
-      }, null, null, 6, 0, 296, 120, [], 125, [], 113, [], "new ListResponse"]}
+      }, null, null, 6, 0, 297, 120, [], 125, [], 113, [], "new ListResponse"]}
   },
-  "+ListResponse": [404],
+  "+ListResponse": [405],
   ListResponse_processor_closure: {
     "^": "Closure:17;_responder$_box_0,_responder$_captured_this_1,_captured_updateConfigs_2",
     call$2: [function($name, value) {
@@ -30905,7 +30921,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 4, 0, 191, 71, [], 6, [], "call"]
   },
   RespSubscribeListener: {
-    "^": "Object;callback@-317,node@-397",
+    "^": "Object;callback@-318,node@-398",
     cancel$0: [function() {
       var t1 = this.callback;
       if (t1 != null) {
@@ -30918,11 +30934,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     },
     static: {RespSubscribeListener$: [function(node, callback) {
         return new T.RespSubscribeListener(callback, node);
-      }, null, null, 4, 0, 297, 113, [], 114, [], "new RespSubscribeListener"]}
+      }, null, null, 4, 0, 298, 113, [], 114, [], "new RespSubscribeListener"]}
   },
   "+RespSubscribeListener": [0],
   SubscribeResponse: {
-    "^": "Response;subsriptions<-405,subsriptionids<-406,changed<-407,responder-334,rid-322,_sentStreamStatus-329",
+    "^": "Response;subsriptions<-406,subsriptionids<-407,changed<-408,responder-335,rid-323,_sentStreamStatus-330",
     add$4: [function(_, path, node, sid, cacheLevel) {
       var t1, t2, controller, t3;
       t1 = this.subsriptions;
@@ -30983,9 +30999,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     },
     static: {SubscribeResponse$: [function(responder, rid) {
         return new T.SubscribeResponse(P.LinkedHashMap_LinkedHashMap(null, null, null, P.String, T.RespSubscribeController), P.LinkedHashMap_LinkedHashMap(null, null, null, P.$int, T.RespSubscribeController), P.LinkedHashSet_LinkedHashSet(null, null, null, T.RespSubscribeController), responder, rid, "initialize");
-      }, null, null, 4, 0, 295, 120, [], 125, [], "new SubscribeResponse"]}
+      }, null, null, 4, 0, 296, 120, [], 125, [], "new SubscribeResponse"]}
   },
-  "+SubscribeResponse": [404],
+  "+SubscribeResponse": [405],
   SubscribeResponse__close_closure: {
     "^": "Closure:17;",
     call$2: [function(path, controller) {
@@ -30993,7 +31009,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 4, 0, 17, 43, [], 145, [], "call"]
   },
   RespSubscribeController: {
-    "^": "Object;node<-397,response>-402,_listener@-408,sid@-322,_permitted@-325,lastValues@-409,_cachedLevel@-322",
+    "^": "Object;node<-398,response>-403,_listener@-409,sid@-323,_permitted@-326,lastValues@-410,_cachedLevel@-323",
     set$permitted: [function(val) {
       if (J.$eq(val, this._permitted))
         return;
@@ -31092,18 +31108,18 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if (node.get$valueReady() && node.get$lastValueUpdate() != null)
           t1.addValue$1(node.get$lastValueUpdate());
         return t1;
-      }, null, null, 10, 0, 298, 77, [], 113, [], 149, [], 150, [], 48, [], "new RespSubscribeController"]}
+      }, null, null, 10, 0, 299, 77, [], 113, [], 149, [], 150, [], 48, [], "new RespSubscribeController"]}
   },
   "+RespSubscribeController": [0],
   SimpleTableResult: {
-    "^": "Object;columns@-356,rows*-356",
+    "^": "Object;columns@-357,rows*-357",
     static: {SimpleTableResult$: [function(rows, columns) {
         return new T.SimpleTableResult(columns, rows);
-      }, null, null, 0, 4, 299, 5, 5, 99, [], 98, [], "new SimpleTableResult"]}
+      }, null, null, 0, 4, 300, 5, 5, 99, [], 98, [], "new SimpleTableResult"]}
   },
   "+SimpleTableResult": [0],
   AsyncTableResult: {
-    "^": "Object;response*-410,columns@-356,rows*-356,status*-329",
+    "^": "Object;response*-411,columns@-357,rows*-357,status*-330",
     update$2: [function(rows, stat) {
       var t1 = this.rows;
       if (t1 == null)
@@ -31115,7 +31131,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       this.write$0();
     }, function(rows) {
       return this.update$2(rows, null);
-    }, "update$1", "call$2", "call$1", "get$update", 2, 2, 195, 5, 99, [], 157, [], "update"],
+    }, "update$1", "call$2", "call$1", "get$update", 2, 2, 195, 5, 99, [], 158, [], "update"],
     write$1: [function(resp) {
       var t1;
       if (resp != null)
@@ -31144,25 +31160,25 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, "call$0", "get$close", 0, 0, 7, "close"],
     static: {AsyncTableResult$: [function(columns) {
         return new T.AsyncTableResult(null, columns, null, "initialize");
-      }, null, null, 0, 2, 300, 5, 98, [], "new AsyncTableResult"]}
+      }, null, null, 0, 2, 301, 5, 98, [], "new AsyncTableResult"]}
   },
   "+AsyncTableResult": [0],
   SerializableNodeProvider: {
     "^": "Object;",
     static: {SerializableNodeProvider$: [function() {
         return new T.SerializableNodeProvider();
-      }, null, null, 0, 0, 301, "new SerializableNodeProvider"]}
+      }, null, null, 0, 0, 302, "new SerializableNodeProvider"]}
   },
   "+SerializableNodeProvider": [0],
   MutableNodeProvider: {
     "^": "Object;",
     static: {MutableNodeProvider$: [function() {
         return new T.MutableNodeProvider();
-      }, null, null, 0, 0, 302, "new MutableNodeProvider"]}
+      }, null, null, 0, 0, 303, "new MutableNodeProvider"]}
   },
   "+MutableNodeProvider": [0],
   SimpleNodeProvider: {
-    "^": "NodeProviderImpl;nodes>-411,_profileFactories@-412,permissions@-400",
+    "^": "NodeProviderImpl;nodes>-412,_profileFactories@-413,permissions@-401",
     getNode$1: [function(path) {
       var t1, t2, node;
       t1 = this.nodes;
@@ -31235,9 +31251,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         var t1 = new T.SimpleNodeProvider(P.LinkedHashMap_LinkedHashMap(null, null, null, P.String, T.LocalNode), P.LinkedHashMap_LinkedHashMap(null, null, null, P.String, {func: "", ret: T.SimpleNode, args: [P.String]}), new T.DummyPermissionManager());
         t1.init$2(m, profiles);
         return t1;
-      }, null, null, 0, 4, 303, 5, 5, 49, [], 37, [], "new SimpleNodeProvider"]}
+      }, null, null, 0, 4, 304, 5, 5, 49, [], 37, [], "new SimpleNodeProvider"]}
   },
-  "+SimpleNodeProvider": [413, 414, 415],
+  "+SimpleNodeProvider": [414, 415, 416],
   SimpleNodeProvider__registerProfiles_closure: {
     "^": "Closure:17;_responder$_captured_this_0",
     call$2: [function(key, val) {
@@ -31252,7 +31268,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 4, 0, 17, 66, [], 111, [], "call"]
   },
   SimpleNode: {
-    "^": "LocalNodeImpl;removed@-325,parentNode-397,_loaded-325,_listChangeController-398,_listReqListener-355,path-329,callbacks-389,_lastValueUpdate-390,profile-357,attributes-358,configs-358,children-359",
+    "^": "LocalNodeImpl;removed@-326,parentNode-398,_loaded-326,_listChangeController-399,_listReqListener-356,path-330,callbacks-390,_lastValueUpdate-391,profile-358,attributes-359,configs-359,children-360",
     load$2: [function(_, m, provider) {
       var t1, t2;
       t1 = {};
@@ -31283,7 +31299,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       J.forEach$1$ax(this.children, new T.SimpleNode_save_closure1(rslt));
       return rslt;
     }, "call$0", "get$save", 0, 0, 118, "save"],
-    invoke$4: [function(params, responder, response, maxPermission) {
+    invoke$5: [function(params, responder, response, parentNode, maxPermission) {
       var rslt, e, stack, error, exception, t1, rtype, r, stream, list, onError, t2, result, test;
       rslt = null;
       try {
@@ -31353,12 +31369,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       } else
         J.close$0$x(response);
       return response;
-    }, function(params, responder, response) {
-      return this.invoke$4(params, responder, response, 3);
-    }, "invoke$3", "call$4", "call$3", "get$invoke", 6, 2, 186, 130, 131, [], 120, [], 77, [], 132, [], "invoke"],
+    }, function(params, responder, response, parentNode) {
+      return this.invoke$5(params, responder, response, parentNode, 3);
+    }, "invoke$4", "call$5", "call$4", "get$invoke", 8, 2, 200, 130, 131, [], 120, [], 77, [], 155, [], 132, [], "invoke"],
     onInvoke$1: [function(params) {
       return;
-    }, "call$1", "get$onInvoke", 2, 0, 200, 131, [], "onInvoke"],
+    }, "call$1", "get$onInvoke", 2, 0, 201, 131, [], "onInvoke"],
     onSubscribe$0: [function() {
     }, "call$0", "get$onSubscribe", 0, 0, 7, "onSubscribe"],
     onCreated$0: [function() {
@@ -31377,7 +31393,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, "subscribe$1", "call$2", "call$1", "get$subscribe", 2, 2, 183, 47, 114, [], 48, [], "subscribe", 67],
     onLoadChild$3: [function($name, data, provider) {
       return;
-    }, "call$3", "get$onLoadChild", 6, 0, 201, 71, [], 119, [], 38, [], "onLoadChild"],
+    }, "call$3", "get$onLoadChild", 6, 0, 202, 71, [], 119, [], 38, [], "onLoadChild"],
     createChild$2: [function($name, m) {
       var child = new T.SimpleNode(false, null, false, null, null, H.S(this.path) + "/" + H.S($name), P.LinkedHashMap_LinkedHashMap(null, null, null, P.Function, P.$int), null, null, P.LinkedHashMap_LinkedHashMap$_empty(null, null), P.LinkedHashMap_LinkedHashMap$_literal(["$is", "node"], null, null), P.LinkedHashMap_LinkedHashMap$_empty(null, null));
       if (m != null)
@@ -31387,7 +31403,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       return child;
     }, function($name) {
       return this.createChild$2($name, null);
-    }, "createChild$1", "call$2", "call$1", "get$createChild", 2, 2, 202, 5, 71, [], 49, [], "createChild"],
+    }, "createChild$1", "call$2", "call$1", "get$createChild", 2, 2, 203, 5, 71, [], 49, [], "createChild"],
     addChild$2: [function($name, node) {
       this.super$Node$addChild$2($name, node);
       J.add$1$ax(this.get$listChangeController(), $name);
@@ -31427,7 +31443,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new T.SimpleNode(false, null, false, null, null, path, P.LinkedHashMap_LinkedHashMap(null, null, null, P.Function, P.$int), null, null, P.LinkedHashMap_LinkedHashMap$_empty(null, null), P.LinkedHashMap_LinkedHashMap$_literal(["$is", "node"], null, null), P.LinkedHashMap_LinkedHashMap$_empty(null, null));
       }, null, null, 2, 0, 12, 43, [], "new SimpleNode"]}
   },
-  "+SimpleNode": [399],
+  "+SimpleNode": [400],
   SimpleNode_load_closure: {
     "^": "Closure:62;_responder$_box_0,_responder$_captured_this_1,_captured_provider_2",
     call$2: [function(key, value) {
@@ -31459,11 +31475,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, null, null, 4, 0, 17, 115, [], 111, [], "call"]
   },
   SimpleNode_save_closure1: {
-    "^": "Closure:203;_captured_rslt_2",
+    "^": "Closure:204;_captured_rslt_2",
     call$2: [function(str, node) {
       if (node instanceof T.SimpleNode)
         this._captured_rslt_2.$indexSet(0, str, node.save$0());
-    }, null, null, 4, 0, 203, 115, [], 113, [], "call"]
+    }, null, null, 4, 0, 204, 115, [], 113, [], "call"]
   },
   SimpleNode_invoke_closure: {
     "^": "Closure:8;_captured_r_0",
@@ -31494,7 +31510,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         H.unwrapException(exception);
       }
       J.close$1$x(this._captured_response_2, error);
-    }, null, null, 4, 0, 17, 81, [], 158, [], "call"]
+    }, null, null, 4, 0, 17, 81, [], 159, [], "call"]
   },
   SimpleNode_invoke_closure2: {
     "^": "Closure:8;_captured_list_3",
@@ -31527,7 +31543,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         H.unwrapException(exception);
       }
       J.close$1$x(this._captured_response_6, error);
-    }, null, null, 4, 0, 17, 81, [], 158, [], "call"]
+    }, null, null, 4, 0, 17, 81, [], 159, [], "call"]
   },
   SimpleNode_invoke_closure5: {
     "^": "Closure:8;_captured_r_7",
@@ -31550,7 +31566,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         H.unwrapException(exception);
       }
       J.close$1$x(this._captured_response_8, error);
-    }, null, null, 4, 0, 17, 81, [], 158, [], "call"]
+    }, null, null, 4, 0, 17, 81, [], 159, [], "call"]
   },
   OnInvokeClosed: {
     "^": "Object;",
@@ -31560,7 +31576,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   "+OnInvokeClosed": "",
   _NodeFactory: {
     "^": "Object;",
-    $typedefType: 421,
+    $typedefType: 422,
     $$isTypedef: true
   },
   "+_NodeFactory": ""
@@ -31568,12 +31584,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
 ["dslink.stub", "../tool/browser_stub.dart", , L, {
   "^": "",
   main: [function(args) {
-  }, "call$1", "main$closure", 2, 0, 304],
+  }, "call$1", "main$closure", 2, 0, 305],
   NodeStub: {
-    "^": "SimpleNode;removed-325,parentNode-397,_loaded-325,_listChangeController-398,_listReqListener-355,path-329,callbacks-389,_lastValueUpdate-390,profile-357,attributes-358,configs-358,children-359",
+    "^": "SimpleNode;removed-326,parentNode-398,_loaded-326,_listChangeController-399,_listReqListener-356,path-330,callbacks-390,_lastValueUpdate-391,profile-358,attributes-359,configs-359,children-360",
     onInvoke$1: [function(params) {
       return params;
-    }, "call$1", "get$onInvoke", 2, 0, 200, 131, [], "onInvoke"],
+    }, "call$1", "get$onInvoke", 2, 0, 201, 131, [], "onInvoke"],
     onSubscribe$0: [function() {
       P.print(this.path);
     }, "call$0", "get$onSubscribe", 0, 0, 7, "onSubscribe"],
@@ -31593,7 +31609,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new L.NodeStub(false, null, false, null, null, path, P.LinkedHashMap_LinkedHashMap(null, null, null, P.Function, P.$int), null, null, P.LinkedHashMap_LinkedHashMap$_empty(null, null), P.LinkedHashMap_LinkedHashMap$_literal(["$is", "node"], null, null), P.LinkedHashMap_LinkedHashMap$_empty(null, null));
       }, null, null, 2, 0, 12, 43, [], "new NodeStub"]}
   },
-  "+NodeStub": [416]
+  "+NodeStub": [417]
 },
 1],
 ["dslink.utils", "package:dslink/utils.dart", , Q, {
@@ -32035,10 +32051,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   }, "call$1", "updateLogLevel$closure", 2, 0, 60, 71, [], "updateLogLevel"],
   buildEnumType: [function(values) {
     return "enum[" + H.S(J.join$1$ax(values, ",")) + "]";
-  }, "call$1", "buildEnumType$closure", 2, 0, 315, 166, [], "buildEnumType"],
+  }, "call$1", "buildEnumType$closure", 2, 0, 316, 167, [], "buildEnumType"],
   buildActionIO: [function(types) {
     return J.map$1$ax(J.get$keys$x(types), new Q.buildActionIO_closure(types)).toList$0(0);
-  }, "call$1", "buildActionIO$closure", 2, 0, 316, 167, [], "buildActionIO"],
+  }, "call$1", "buildActionIO$closure", 2, 0, 317, 168, [], "buildActionIO"],
   closure0: {
     "^": "Closure:5;",
     call$0: function() {
@@ -32064,7 +32080,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }
   },
   DSLinkJSON: {
-    "^": "Object;_json@-324,name*-329,version*-329,description@-329,main@-329,engines@-417,configs@-418,getDependencies@-338",
+    "^": "Object;_json@-325,name*-330,version*-330,description@-330,main@-330,engines@-418,configs@-419,getDependencies@-339",
     verify$0: [function() {
       if (this.name == null)
         throw H.wrapException(P.Exception_Exception("DSLink Name is required."));
@@ -32114,7 +32130,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         j.configs = t1.$index(map, "configs");
         j.getDependencies = t1.$index(map, "getDependencies");
         return j;
-      }, null, null, 2, 0, 305, 159, [], "new DSLinkJSON$from"]}
+      }, null, null, 2, 0, 306, 160, [], "new DSLinkJSON$from"]}
   },
   "+DSLinkJSON": [0],
   BinaryData: {
@@ -32209,7 +32225,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }
   },
   BinaryOutCache_export_closure: {
-    "^": "Closure:204;_utils$_box_0",
+    "^": "Closure:205;_utils$_box_0",
     call$2: function(id, data) {
       var t1, t2, t3;
       t1 = this._utils$_box_0;
@@ -32222,7 +32238,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }
   },
   BinaryOutCache_export_closure0: {
-    "^": "Closure:204;_utils$_box_0,_captured_output_1,_captured_bytedata_2,_captured_idToRemove_3",
+    "^": "Closure:205;_utils$_box_0,_captured_output_1,_captured_bytedata_2,_captured_idToRemove_3",
     call$2: function(id, data) {
       var t1, t2, t3, t4;
       t1 = this._captured_bytedata_2;
@@ -32418,7 +32434,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     $asLinkedListEntry: $.functionThatReturnsNull
   },
   DsTimer__dsLoop_closure: {
-    "^": "Closure:205;",
+    "^": "Closure:206;",
     call$1: function(f) {
       f.call$0();
     }
@@ -32435,30 +32451,30 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }
   },
   Interval: {
-    "^": "Object;duration>-419",
+    "^": "Object;duration>-420",
     get$inMilliseconds: [function() {
       return this.duration.get$inMilliseconds();
     }, null, null, 1, 0, 2, "inMilliseconds"],
-    static: {"^": "Interval_ONE_MILLISECOND<-420,Interval_TWO_MILLISECONDS<-420,Interval_FOUR_MILLISECONDS<-420,Interval_EIGHT_MILLISECONDS<-420,Interval_SIXTEEN_MILLISECONDS<-420,Interval_THIRTY_MILLISECONDS<-420,Interval_FIFTY_MILLISECONDS<-420,Interval_ONE_HUNDRED_MILLISECONDS<-420,Interval_TWO_HUNDRED_MILLISECONDS<-420,Interval_THREE_HUNDRED_MILLISECONDS<-420,Interval_QUARTER_SECOND<-420,Interval_HALF_SECOND<-420,Interval_ONE_SECOND<-420,Interval_TWO_SECONDS<-420,Interval_THREE_SECONDS<-420,Interval_FOUR_SECONDS<-420,Interval_FIVE_SECONDS<-420,Interval_ONE_MINUTE<-420", Interval$: [function(duration) {
+    static: {"^": "Interval_ONE_MILLISECOND<-421,Interval_TWO_MILLISECONDS<-421,Interval_FOUR_MILLISECONDS<-421,Interval_EIGHT_MILLISECONDS<-421,Interval_SIXTEEN_MILLISECONDS<-421,Interval_THIRTY_MILLISECONDS<-421,Interval_FIFTY_MILLISECONDS<-421,Interval_ONE_HUNDRED_MILLISECONDS<-421,Interval_TWO_HUNDRED_MILLISECONDS<-421,Interval_THREE_HUNDRED_MILLISECONDS<-421,Interval_QUARTER_SECOND<-421,Interval_HALF_SECOND<-421,Interval_ONE_SECOND<-421,Interval_TWO_SECONDS<-421,Interval_THREE_SECONDS<-421,Interval_FOUR_SECONDS<-421,Interval_FIVE_SECONDS<-421,Interval_ONE_MINUTE<-421", Interval$: [function(duration) {
         return new Q.Interval(duration);
-      }, null, null, 2, 0, 306, 9, [], "new Interval"], Interval$forMilliseconds: [function(ms) {
+      }, null, null, 2, 0, 307, 9, [], "new Interval"], Interval$forMilliseconds: [function(ms) {
         return new Q.Interval(P.Duration$(0, 0, 0, ms, 0, 0));
-      }, null, null, 2, 0, 18, 160, [], "new Interval$forMilliseconds"], Interval$forSeconds: [function(seconds) {
+      }, null, null, 2, 0, 18, 161, [], "new Interval$forMilliseconds"], Interval$forSeconds: [function(seconds) {
         return new Q.Interval(P.Duration$(0, 0, 0, 0, 0, seconds));
-      }, null, null, 2, 0, 18, 161, [], "new Interval$forSeconds"], Interval$forMinutes: [function(minutes) {
+      }, null, null, 2, 0, 18, 162, [], "new Interval$forSeconds"], Interval$forMinutes: [function(minutes) {
         return new Q.Interval(P.Duration$(0, 0, 0, 0, minutes, 0));
-      }, null, null, 2, 0, 18, 162, [], "new Interval$forMinutes"], Interval$forHours: [function(hours) {
+      }, null, null, 2, 0, 18, 163, [], "new Interval$forMinutes"], Interval$forHours: [function(hours) {
         return new Q.Interval(P.Duration$(0, hours, 0, 0, 0, 0));
-      }, null, null, 2, 0, 18, 163, [], "new Interval$forHours"]}
+      }, null, null, 2, 0, 18, 164, [], "new Interval$forHours"]}
   },
   "+Interval": [0],
   Scheduler: {
     "^": "Object;",
     static: {Scheduler$: [function() {
         return new Q.Scheduler();
-      }, null, null, 0, 0, 307, "new Scheduler"], Scheduler_currentTimer: [function() {
+      }, null, null, 0, 0, 308, "new Scheduler"], Scheduler_currentTimer: [function() {
         return J.$index$asx($.Zone__current, "dslink.scheduler.timer");
-      }, null, null, 1, 0, 308, "currentTimer"], Scheduler_cancelCurrentTimer: [function() {
+      }, null, null, 1, 0, 309, "currentTimer"], Scheduler_cancelCurrentTimer: [function() {
         J.$index$asx($.Zone__current, "dslink.scheduler.timer").cancel$0();
       }, "call$0", "Scheduler_cancelCurrentTimer$closure", 0, 0, 7, "cancelCurrentTimer"], Scheduler_every: [function(interval, action) {
         var t1, duration;
@@ -32472,7 +32488,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         else
           throw H.wrapException(P.Exception_Exception("Invalid Interval: " + H.S(interval)));
         return P.Timer_Timer$periodic(duration, new Q.Scheduler_every_closure(action));
-      }, "call$2", "Scheduler_every$closure", 4, 0, 309, 164, [], 23, [], "every"], Scheduler_repeat: [function(times, action) {
+      }, "call$2", "Scheduler_every$closure", 4, 0, 310, 165, [], 23, [], "every"], Scheduler_repeat: [function(times, action) {
         var $goto = 0, completer = new P.Completer_Completer(), $returnValue, handler = 2, currentError, i;
         function Scheduler_repeat(errorCode, result) {
           if (errorCode === 1) {
@@ -32519,7 +32535,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             }
         }
         return H.asyncHelper(null, Scheduler_repeat, completer, null);
-      }, "call$2", "Scheduler_repeat$closure", 4, 0, 310, 165, [], 23, [], "repeat"], Scheduler_tick: [function(times, interval, action) {
+      }, "call$2", "Scheduler_repeat$closure", 4, 0, 311, 166, [], 23, [], "repeat"], Scheduler_tick: [function(times, interval, action) {
         var $goto = 0, completer = new P.Completer_Completer(), $returnValue, handler = 2, currentError, i;
         function Scheduler_tick(errorCode, result) {
           if (errorCode === 1) {
@@ -32570,19 +32586,19 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             }
         }
         return H.asyncHelper(null, Scheduler_tick, completer, null);
-      }, "call$3", "Scheduler_tick$closure", 6, 0, 311, 165, [], 164, [], 23, [], "tick"], Scheduler_runLater: [function(action) {
+      }, "call$3", "Scheduler_tick$closure", 6, 0, 312, 166, [], 165, [], 23, [], "tick"], Scheduler_runLater: [function(action) {
         P.Timer_Timer(C.Duration_0, action);
-      }, "call$1", "Scheduler_runLater$closure", 2, 0, 312, 23, [], "runLater"], Scheduler_later: [function(action) {
+      }, "call$1", "Scheduler_runLater$closure", 2, 0, 313, 23, [], "runLater"], Scheduler_later: [function(action) {
         return P.Future_Future(action, null);
-      }, "call$1", "Scheduler_later$closure", 2, 0, 213, 23, [], "later"], Scheduler_after: [function(duration, action) {
+      }, "call$1", "Scheduler_later$closure", 2, 0, 214, 23, [], "later"], Scheduler_after: [function(duration, action) {
         return P.Future_Future$delayed(duration, action, null);
-      }, "call$2", "Scheduler_after$closure", 4, 0, 313, 9, [], 23, [], "after"], Scheduler_runAfter: [function(duration, action) {
+      }, "call$2", "Scheduler_after$closure", 4, 0, 314, 9, [], 23, [], "after"], Scheduler_runAfter: [function(duration, action) {
         return P.Timer_Timer(duration, action);
-      }, "call$2", "Scheduler_runAfter$closure", 4, 0, 314, 9, [], 23, [], "runAfter"]}
+      }, "call$2", "Scheduler_runAfter$closure", 4, 0, 315, 9, [], 23, [], "runAfter"]}
   },
   "+Scheduler": [0],
   Scheduler_every_closure: {
-    "^": "Closure:206;_captured_action_0",
+    "^": "Closure:207;_captured_action_0",
     call$1: [function(timer) {
       var $goto = 0, completer = new P.Completer_Completer(), handler = 1, currentError, $self = this;
       function call$1(errorCode, result) {
@@ -32606,13 +32622,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           }
       }
       return H.asyncHelper(null, call$1, completer, null);
-    }, null, null, 2, 0, 206, 168, [], "call"]
+    }, null, null, 2, 0, 207, 169, [], "call"]
   },
   buildActionIO_closure: {
     "^": "Closure:8;_captured_types_0",
     call$1: [function(it) {
       return P.LinkedHashMap_LinkedHashMap$_literal(["name", it, "type", J.$index$asx(this._captured_types_0, it)], null, null);
-    }, null, null, 2, 0, 8, 169, [], "call"]
+    }, null, null, 2, 0, 8, 170, [], "call"]
   }
 }],
 ["html_common", "dart:html_common", , P, {
@@ -32635,7 +32651,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     return t1;
   },
   convertNativeToDart_AcceptStructuredClone_findSlot: {
-    "^": "Closure:207;_captured_values_0,_captured_copies_1",
+    "^": "Closure:208;_captured_values_0,_captured_copies_1",
     call$1: function(value) {
       var t1, $length, i, t2;
       t1 = this._captured_values_0;
@@ -32660,7 +32676,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }
   },
   convertNativeToDart_AcceptStructuredClone_writeSlot: {
-    "^": "Closure:208;_captured_copies_3",
+    "^": "Closure:209;_captured_copies_3",
     call$2: function(i, x) {
       var t1 = this._captured_copies_3;
       if (i >= t1.length)
@@ -34259,6 +34275,7 @@ C.C__Override,
 "withChildren",
 "resp",
 "cachelevel",
+"parentNode",
 "id",
 "open",
 "stat",
@@ -34461,7 +34478,7 @@ init.types = [P.Object,
 {func: "", ret: T.RespSubscribeListener, args: [{func: "", args: [,]}], opt: [P.$int]},
 {func: "", ret: O.ValueUpdate},
 {func: "", void: true, args: [P.Object], named: {force: P.bool}},
-{func: "", ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse], opt: [P.$int]},
+{func: "", ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, O.Node0], opt: [P.$int]},
 {func: "", ret: T.Response, args: [T.Response]},
 {func: "", void: true, args: [P.$int], named: {error: O.DSError, response: T.Response}},
 {func: "", void: true, args: [T.Response, P.List], named: {columns: [P.List, O.TableColumn], streamStatus: P.String}},
@@ -34475,6 +34492,7 @@ init.types = [P.Object,
 {func: "", ret: T.SimpleNode},
 {func: "", void: true, opt: [P.Map, P.Map]},
 {func: "", void: true, args: [P.Map], opt: [T.NodeProviderImpl]},
+{func: "", ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode], opt: [P.$int]},
 {func: "", args: [P.Map]},
 {func: "", ret: T.SimpleNode, args: [P.String, P.Map, T.SimpleNodeProvider]},
 {func: "", ret: T.SimpleNode, args: [P.String], opt: [P.Map]},
@@ -34550,7 +34568,7 @@ init.types = [P.Object,
 {func: "", ret: K.PrivateKey, args: [P.String]},
 {func: "", ret: L.DefaultDefNodes},
 {func: "", args: [L.Requester, P.$int, L.RequestUpdater, P.Map]},
-{func: "", args: [P.List, P.List, [P.List, O.TableColumn], P.String]},
+{func: "", args: [P.List, P.List, [P.List, O.TableColumn], P.String], opt: [O.DSError]},
 {func: "", ret: [P.List, O.TableColumn], args: [L.RemoteNode]},
 {func: "", args: [L.RemoteNode, L.Requester, P.Map], opt: [P.$int]},
 {func: "", args: [L.RemoteNode, [P.List, P.String], P.String]},
@@ -34997,7 +35015,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
       }
     if(typeof(obj._createSubscription$4) !== 'undefined') { return new module.exports.Stream(obj); }return obj;}module.exports.BrowserUtils = function BrowserUtils() {var __obj__ = (function(){return (([function() {
   return new B.BrowserUtils();
-}, null, null, 0, 0, 235, "new BrowserUtils"]
+}, null, null, 0, 0, 236, "new BrowserUtils"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.BrowserUtils, 'class', {
       get: function() {
         function BrowserUtils() {
@@ -35015,7 +35033,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   if (dataStore == null)
     t1.dataStore = $.get$LocalDataStorage_INSTANCE();
   return t1;
-}, null, null, 4, 15, 234, 5, 5, 5, 5, 10, 33, 33, 34, [], 35, [], 36, [], 37, [], 38, [], 39, [], 40, [], 41, [], 42, [], "new LinkProvider"]
+}, null, null, 4, 15, 235, 5, 5, 5, 5, 10, 33, 33, 34, [], 35, [], 36, [], 37, [], 38, [], 39, [], 40, [], 41, [], 42, [], "new LinkProvider"]
 [0])).call(this,$nn,$nnn,dataStore,defaultNodes,isRequester,isResponder,loadNodes,profiles,provider);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "link", {enumerable: true,get: function() { var returned = this.__obj__.link;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'BrowserECDHLink' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.link = v;}});Object.defineProperty(this, "defaultNodes", {enumerable: true,get: function() { var returned = this.__obj__.defaultNodes;          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
@@ -35090,7 +35108,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
             }
         returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;},set: function(v) {objEach(v, function(a, i) {this[i] = dynamicTo(a);}, v);var elms = Object.keys(v).reduce(function(arr, key) { arr.push(key); arr.push(v[key]); return arr; }, []);v = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);this.__obj__.profiles = v;}});Object.defineProperty(this, "loadNodes", {enumerable: true,get: function() { var returned = this.__obj__.loadNodes;return returned;},set: function(v) {this.__obj__.loadNodes = v;}});Object.defineProperty(this, "provider", {enumerable: true,get: function() { var returned = this.__obj__.provider;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'NodeProvider' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.provider = v;}});Object.defineProperty(this, "dataStore", {enumerable: true,get: function() { var returned = this.__obj__.dataStore;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'DataStorage' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.dataStore = v;}});Object.defineProperty(this, "privateKey", {enumerable: true,get: function() { var returned = this.__obj__.privateKey;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'PrivateKey' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.privateKey = v;}});Object.defineProperty(this, "brokerUrl", {enumerable: true,get: function() { var returned = this.__obj__.brokerUrl;return returned;},set: function(v) {this.__obj__.brokerUrl = v;}});Object.defineProperty(this, "prefix", {enumerable: true,get: function() { var returned = this.__obj__.prefix;return returned;},set: function(v) {this.__obj__.prefix = v;}});Object.defineProperty(this, "isRequester", {enumerable: true,get: function() { var returned = this.__obj__.isRequester;return returned;},set: function(v) {this.__obj__.isRequester = v;}});Object.defineProperty(this, "isResponder", {enumerable: true,get: function() { var returned = this.__obj__.isResponder;return returned;},set: function(v) {this.__obj__.isResponder = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$requester).call(this.__obj__);}).apply(this, arguments);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.get$requester = function() { return v; };}});Object.defineProperty(this, "onRequesterReady", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onRequesterReady).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'Requester' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {if(!then.__isWrapped__) { then = then.__obj__; }completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onRequesterReady = function() { return v; };}});}.bind(returned))();return returned;})});module.exports.LinkProvider.prototype.init = function(){var returned = (this.__obj__.init$0).call(this.__obj__);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {val = dynamicFrom(val);then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.LinkProvider.prototype.resetSavedNodes = function(){var returned = (this.__obj__.resetSavedNodes$0).call(this.__obj__);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {val = dynamicFrom(val);then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.LinkProvider.prototype.onValueChange = function($nn,_optObj_){_optObj_ = _optObj_ || {};var cacheLevel = typeof(_optObj_.cacheLevel) === 'undefined' ? 1 : _optObj_.cacheLevel;if(cacheLevel !== null) {}var returned = (this.__obj__.onValueChange$2$cacheLevel).call(this.__obj__,$nn,cacheLevel);returned = new module.exports.Stream(returned);return returned;};module.exports.LinkProvider.prototype.save = function(){var returned = (this.__obj__.save$0).call(this.__obj__);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {val = dynamicFrom(val);then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.LinkProvider.prototype.syncValue = function($nn){return (this.__obj__.syncValue$1).call(this.__obj__,$nn);};module.exports.LinkProvider.prototype.connect = function(){var returned = (this.__obj__.connect$0).call(this.__obj__);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {val = dynamicFrom(val);then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.LinkProvider.prototype.close = function(){return (this.__obj__.close$0).call(this.__obj__);};module.exports.LinkProvider.prototype.getNode = function($nn){var returned = (this.__obj__.getNode$1).call(this.__obj__,$nn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LinkProvider.prototype.addNode = function($nn,$nnn){objEach($nnn, function(a, i) {this[i] = dynamicTo(a);}, $nnn);var elms = Object.keys($nnn).reduce(function(arr, key) { arr.push(key); arr.push($nnn[key]); return arr; }, []);$nnn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);var returned = (this.__obj__.addNode$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LinkProvider.prototype.removeNode = function($nn){return (this.__obj__.removeNode$1).call(this.__obj__,$nn);};module.exports.LinkProvider.prototype.updateValue = function($nn,dynamic){dynamic = dynamicTo(dynamic);return (this.__obj__.updateValue$2).call(this.__obj__,$nn,dynamic);};module.exports.LinkProvider.prototype.val = function($nn,dynamic){dynamic = typeof(dynamic) === 'undefined' ? null : dynamic;if(dynamic !== null) {dynamic = dynamicTo(dynamic);}var returned = (this.__obj__.val$2).call(this.__obj__,$nn,dynamic);returned = dynamicFrom(returned);return returned;};module.exports.LinkProvider.prototype.get = function($nn){var returned = (this.__obj__.$index).call(this.__obj__,$nn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LinkProvider.prototype.bitwiseNegate = function(){var returned = (this.__obj__.$not).call(this.__obj__);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefaultDefNodes = function DefaultDefNodes() {var __obj__ = (function(){return (([function() {
   return new L.DefaultDefNodes();
-}, null, null, 0, 0, 273, "new DefaultDefNodes"]
+}, null, null, 0, 0, 274, "new DefaultDefNodes"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.DefaultDefNodes, 'class', {
       get: function() {
         function DefaultDefNodes() {
@@ -35137,7 +35155,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   t1 = new L.RemoveController(t2, requester, path, null);
   t1._request = requester._sendRequest$2(P.LinkedHashMap_LinkedHashMap$_literal(["method", "remove", "path", path], null, null), t1);
   return t1;
-}, null, null, 4, 0, 281, 124, [], 43, [], "new RemoveController"]
+}, null, null, 4, 0, 282, 124, [], 43, [], "new RemoveController"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "completer", {enumerable: true,get: function() { var returned = this.__obj__.completer;return returned;},set: function(v) {this.__obj__.completer = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});Object.defineProperty(this, "path", {enumerable: true,get: function() { var returned = this.__obj__.path;return returned;},set: function(v) {this.__obj__.path = v;}});Object.defineProperty(this, "future", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$future).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'RequesterUpdate' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {if(!then.__isWrapped__) { then = then.__obj__; }completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$future = function() { return v; };}});};    Object.defineProperty(module.exports.RemoveController, 'class', {
       get: function() {
         function RemoveController() {
@@ -35166,7 +35184,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   }
   t1._request = requester._sendRequest$2(reqMap, t1);
   return t1;
-}, null, null, 6, 2, 282, 130, 124, [], 43, [], 6, [], 132, [], "new SetController"]
+}, null, null, 6, 2, 283, 130, 124, [], 43, [], 6, [], 132, [], "new SetController"]
 [0])).call(this,$nn,$nnn,$nnnn,$nnnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "completer", {enumerable: true,get: function() { var returned = this.__obj__.completer;return returned;},set: function(v) {this.__obj__.completer = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});Object.defineProperty(this, "path", {enumerable: true,get: function() { var returned = this.__obj__.path;return returned;},set: function(v) {this.__obj__.path = v;}});Object.defineProperty(this, "value", {enumerable: true,get: function() { var returned = this.__obj__.value;return returned;},set: function(v) {this.__obj__.value = v;}});Object.defineProperty(this, "future", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$future).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'RequesterUpdate' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {if(!then.__isWrapped__) { then = then.__obj__; }completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$future = function() { return v; };}});};    Object.defineProperty(module.exports.SetController, 'class', {
       get: function() {
         function SetController() {
@@ -35195,7 +35213,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   t1._cachedColumns = L.InvokeController_getNodeColumns(node);
   t1._request = requester._sendRequest$2(reqMap, t1);
   return t1;
-}, null, null, 6, 2, 277, 130, 113, [], 124, [], 131, [], 132, [], "new InvokeController"]
+}, null, null, 6, 2, 278, 130, 113, [], 124, [], 131, [], 132, [], "new InvokeController"]
 [0])).call(this,$nn,$nnn,$nnnn,$nnnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RemoteNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});};    Object.defineProperty(module.exports.InvokeController, 'class', {
       get: function() {
         function InvokeController() {
@@ -35208,10 +35226,10 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
         return InvokeController;
       }
     });
-    Object.defineProperty(module.exports.InvokeController, "_", {enumerable: false,value:(function InvokeController(__obj__) {var returned = Object.create(module.exports.InvokeController.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RemoteNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});}.bind(returned))();return returned;})});module.exports.InvokeController.getNodeColumns = function($nn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }var returned = (init.allClasses.InvokeController.InvokeController_getNodeColumns).call(this,$nn);returned = [].concat(returned);returned.forEach(function(a, i) {}, returned);return returned;};module.exports.InvokeController.prototype.onUpdate = function($nn,$nnn,$nnnn,$nnnnn){$nnn = [].concat($nnn);$nnn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nnn);$nnnn = [].concat($nnnn);$nnnn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nnnn);$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }}return (this.__obj__.onUpdate$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);};module.exports.InvokeController.prototype.onDisconnect = function(){return (this.__obj__.onDisconnect$0).call(this.__obj__);};module.exports.InvokeController.prototype.onReconnect = function(){return (this.__obj__.onReconnect$0).call(this.__obj__);};module.exports.RequesterInvokeUpdate = function RequesterInvokeUpdate() {var __obj__ = (function($nn,$nnn,$nnnn,$nnnnn){$nn = [].concat($nn);$nn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nn);$nnn = [].concat($nnn);$nnn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nnn);$nnnn = [].concat($nnnn);$nnnn.forEach(function(a, i) {this[i] = a;}, $nnnn);return (([function(updates, rawColumns, columns, streamStatus) {
-  return new L.RequesterInvokeUpdate(rawColumns, columns, updates, null, streamStatus);
-}, null, null, 8, 0, 275, 127, [], 128, [], 98, [], 129, [], "new RequesterInvokeUpdate"]
-[0])).call(this,$nn,$nnn,$nnnn,$nnnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "rawColumns", {enumerable: true,get: function() { var returned = this.__obj__.rawColumns;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.rawColumns = v;}});Object.defineProperty(this, "columns", {enumerable: true,get: function() { var returned = this.__obj__.columns;returned = [].concat(returned);returned.forEach(function(a, i) {}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = a;}, v);this.__obj__.columns = v;}});Object.defineProperty(this, "updates", {enumerable: true,get: function() { var returned = this.__obj__.updates;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.updates = v;}});Object.defineProperty(this, "rows", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$rows).call(this.__obj__);}).apply(this, arguments);returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {this[i] = dynamicFrom(a);}, this[i]);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, this[i]);this[i] = a;}, v);this.__obj__.get$rows = function() { return v; };}});Object.defineProperty(this, "streamStatus", {enumerable: true,get: function() { var returned = this.__obj__.streamStatus;return returned;},set: function(v) {this.__obj__.streamStatus = v;}});};    Object.defineProperty(module.exports.RequesterInvokeUpdate, 'class', {
+    Object.defineProperty(module.exports.InvokeController, "_", {enumerable: false,value:(function InvokeController(__obj__) {var returned = Object.create(module.exports.InvokeController.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RemoteNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});}.bind(returned))();return returned;})});module.exports.InvokeController.getNodeColumns = function($nn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }var returned = (init.allClasses.InvokeController.InvokeController_getNodeColumns).call(this,$nn);returned = [].concat(returned);returned.forEach(function(a, i) {}, returned);return returned;};module.exports.InvokeController.prototype.onUpdate = function($nn,$nnn,$nnnn,$nnnnn){$nnn = [].concat($nnn);$nnn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nnn);$nnnn = [].concat($nnnn);$nnnn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nnnn);$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }}return (this.__obj__.onUpdate$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);};module.exports.InvokeController.prototype.onDisconnect = function(){return (this.__obj__.onDisconnect$0).call(this.__obj__);};module.exports.InvokeController.prototype.onReconnect = function(){return (this.__obj__.onReconnect$0).call(this.__obj__);};module.exports.RequesterInvokeUpdate = function RequesterInvokeUpdate() {var __obj__ = (function($nn,$nnn,$nnnn,$nnnnn,$nnnnnn){$nn = [].concat($nn);$nn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nn);$nnn = [].concat($nnn);$nnn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nnn);$nnnn = [].concat($nnnn);$nnnn.forEach(function(a, i) {this[i] = a;}, $nnnn);$nnnnnn = typeof($nnnnnn) === 'undefined' ? null : $nnnnnn;if($nnnnnn !== null) {if(!$nnnnnn.__isWrapped__) { $nnnnnn = $nnnnnn.__obj__; }}return (([function(updates, rawColumns, columns, streamStatus, error) {
+  return new L.RequesterInvokeUpdate(rawColumns, columns, updates, error, null, streamStatus);
+}, null, null, 8, 2, 276, 5, 127, [], 128, [], 98, [], 129, [], 7, [], "new RequesterInvokeUpdate"]
+[0])).call(this,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "rawColumns", {enumerable: true,get: function() { var returned = this.__obj__.rawColumns;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.rawColumns = v;}});Object.defineProperty(this, "columns", {enumerable: true,get: function() { var returned = this.__obj__.columns;returned = [].concat(returned);returned.forEach(function(a, i) {}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = a;}, v);this.__obj__.columns = v;}});Object.defineProperty(this, "updates", {enumerable: true,get: function() { var returned = this.__obj__.updates;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.updates = v;}});Object.defineProperty(this, "error", {enumerable: true,get: function() { var returned = this.__obj__.error;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'DSError' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.error = v;}});Object.defineProperty(this, "rows", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$rows).call(this.__obj__);}).apply(this, arguments);returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {this[i] = dynamicFrom(a);}, this[i]);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, this[i]);this[i] = a;}, v);this.__obj__.get$rows = function() { return v; };}});Object.defineProperty(this, "streamStatus", {enumerable: true,get: function() { var returned = this.__obj__.streamStatus;return returned;},set: function(v) {this.__obj__.streamStatus = v;}});};    Object.defineProperty(module.exports.RequesterInvokeUpdate, 'class', {
       get: function() {
         function RequesterInvokeUpdate() {
           module.exports.RequesterInvokeUpdate.apply(this, arguments);
@@ -35223,14 +35241,14 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
         return RequesterInvokeUpdate;
       }
     });
-    Object.defineProperty(module.exports.RequesterInvokeUpdate, "_", {enumerable: false,value:(function RequesterInvokeUpdate(__obj__) {var returned = Object.create(module.exports.RequesterInvokeUpdate.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "rawColumns", {enumerable: true,get: function() { var returned = this.__obj__.rawColumns;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.rawColumns = v;}});Object.defineProperty(this, "columns", {enumerable: true,get: function() { var returned = this.__obj__.columns;returned = [].concat(returned);returned.forEach(function(a, i) {}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = a;}, v);this.__obj__.columns = v;}});Object.defineProperty(this, "updates", {enumerable: true,get: function() { var returned = this.__obj__.updates;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.updates = v;}});Object.defineProperty(this, "rows", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$rows).call(this.__obj__);}).apply(this, arguments);returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {this[i] = dynamicFrom(a);}, this[i]);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, this[i]);this[i] = a;}, v);this.__obj__.get$rows = function() { return v; };}});Object.defineProperty(this, "streamStatus", {enumerable: true,get: function() { var returned = this.__obj__.streamStatus;return returned;},set: function(v) {this.__obj__.streamStatus = v;}});}.bind(returned))();return returned;})});module.exports.ReqSubscribeController = function ReqSubscribeController() {var __obj__ = (function($nn,$nnn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (([function(node, requester) {
+    Object.defineProperty(module.exports.RequesterInvokeUpdate, "_", {enumerable: false,value:(function RequesterInvokeUpdate(__obj__) {var returned = Object.create(module.exports.RequesterInvokeUpdate.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "rawColumns", {enumerable: true,get: function() { var returned = this.__obj__.rawColumns;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.rawColumns = v;}});Object.defineProperty(this, "columns", {enumerable: true,get: function() { var returned = this.__obj__.columns;returned = [].concat(returned);returned.forEach(function(a, i) {}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = a;}, v);this.__obj__.columns = v;}});Object.defineProperty(this, "updates", {enumerable: true,get: function() { var returned = this.__obj__.updates;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.updates = v;}});Object.defineProperty(this, "error", {enumerable: true,get: function() { var returned = this.__obj__.error;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'DSError' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.error = v;}});Object.defineProperty(this, "rows", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$rows).call(this.__obj__);}).apply(this, arguments);returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {this[i] = dynamicFrom(a);}, this[i]);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, this[i]);this[i] = a;}, v);this.__obj__.get$rows = function() { return v; };}});Object.defineProperty(this, "streamStatus", {enumerable: true,get: function() { var returned = this.__obj__.streamStatus;return returned;},set: function(v) {this.__obj__.streamStatus = v;}});}.bind(returned))();return returned;})});module.exports.ReqSubscribeController = function ReqSubscribeController() {var __obj__ = (function($nn,$nnn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (([function(node, requester) {
   var t1, t2;
   t1 = new L.ReqSubscribeController(node, requester, P.LinkedHashMap_LinkedHashMap(null, null, null, P.Function, P.$int), 0, null, null);
   t2 = requester.get$nextSid();
   requester.set$nextSid(J.$add$ns(t2, 1));
   t1.sid = t2;
   return t1;
-}, null, null, 4, 0, 280, 113, [], 124, [], "new ReqSubscribeController"]
+}, null, null, 4, 0, 281, 113, [], 124, [], "new ReqSubscribeController"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RemoteNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});Object.defineProperty(this, "callbacks", {enumerable: true,get: function() { var returned = this.__obj__.callbacks;          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
@@ -35273,7 +35291,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   t2 = new L.SubscribeRequest(P.LinkedHashMap_LinkedHashMap(null, null, null, P.String, L.ReqSubscribeController), P.LinkedHashMap_LinkedHashMap(null, null, null, P.$int, L.ReqSubscribeController), P.HashSet_HashSet(null, null, null, P.String), [], requester, rid, null, t1, false, "initialize");
   t1.request = t2;
   return t2;
-}, null, null, 4, 0, 284, 124, [], 125, [], "new SubscribeRequest"]
+}, null, null, 4, 0, 285, 124, [], 125, [], "new SubscribeRequest"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "subsriptions", {enumerable: true,get: function() { var returned = this.__obj__.subsriptions;          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
@@ -35375,7 +35393,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.SubscribeController, "_", {enumerable: false,value:(function SubscribeController(__obj__) {var returned = Object.create(module.exports.SubscribeController.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "request", {enumerable: true,get: function() { var returned = this.__obj__.request;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'SubscribeRequest' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.request = v;}});}.bind(returned))();return returned;})});module.exports.SubscribeController.prototype.onDisconnect = function(){return (this.__obj__.onDisconnect$0).call(this.__obj__);};module.exports.SubscribeController.prototype.onReconnect = function(){return (this.__obj__.onReconnect$0).call(this.__obj__);};module.exports.SubscribeController.prototype.onUpdate = function($nn,$nnn,$nnnn,$nnnnn){$nnn = [].concat($nnn);$nnn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nnn);$nnnn = [].concat($nnnn);$nnnn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nnnn);if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }return (this.__obj__.onUpdate$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);};module.exports.ReqSubscribeListener = function ReqSubscribeListener() {var __obj__ = (function($nn,$nnn,$nnnn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }return (([function(requester, path, callback) {
   return new L.ReqSubscribeListener(callback, requester, path);
-}, null, null, 6, 0, 283, 124, [], 43, [], 114, [], "new ReqSubscribeListener"]
+}, null, null, 6, 0, 284, 124, [], 43, [], 114, [], "new ReqSubscribeListener"]
 [0])).call(this,$nn,$nnn,$nnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "callback", {enumerable: true,get: function() { var returned = this.__obj__.callback;return returned;},set: function(v) {this.__obj__.callback = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});Object.defineProperty(this, "path", {enumerable: true,get: function() { var returned = this.__obj__.path;return returned;},set: function(v) {this.__obj__.path = v;}});Object.defineProperty(this, "isPaused", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$isPaused).call(this.__obj__);}).apply(this, arguments);return returned;},set: function(v) {this.__obj__.get$isPaused = function() { return v; };}});};    Object.defineProperty(module.exports.ReqSubscribeListener, 'class', {
       get: function() {
         function ReqSubscribeListener() {
@@ -35392,7 +35410,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   var t1 = new L.ListController(node, requester, null, null, null, P.LinkedHashSet_LinkedHashSet(null, null, null, P.String), null, true, false);
   t1._requester$_controller = Q.BroadcastStreamController$(t1.get$onStartListen(), t1.get$_onAllCancel(), t1.get$_requester$_onListen(), L.RequesterListUpdate);
   return t1;
-}, null, null, 4, 0, 280, 113, [], 124, [], "new ListController"]
+}, null, null, 4, 0, 281, 113, [], 124, [], "new ListController"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RemoteNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});Object.defineProperty(this, "request", {enumerable: true,get: function() { var returned = this.__obj__.request;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Request' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.request = v;}});Object.defineProperty(this, "disconnectTs", {enumerable: true,get: function() { var returned = this.__obj__.disconnectTs;return returned;},set: function(v) {this.__obj__.disconnectTs = v;}});Object.defineProperty(this, "changes", {enumerable: true,get: function() { var returned = this.__obj__.changes;return returned;},set: function(v) {this.__obj__.changes = v;}});Object.defineProperty(this, "stream", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$stream).call(this.__obj__);}).apply(this, arguments);returned = new module.exports.Stream(returned);return returned;},set: function(v) {this.__obj__.get$stream = function() { return v; };}});Object.defineProperty(this, "initialized", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$initialized).call(this.__obj__);}).apply(this, arguments);return returned;},set: function(v) {this.__obj__.get$initialized = function() { return v; };}});};    Object.defineProperty(module.exports.ListController, 'class', {
       get: function() {
         function ListController() {
@@ -35409,7 +35427,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   var t1 = new L.ListDefListener(node, requester, null, false);
   t1.ListDefListener$3(node, requester, callback);
   return t1;
-}, null, null, 6, 0, 279, 113, [], 124, [], 114, [], "new ListDefListener"]
+}, null, null, 6, 0, 280, 113, [], 124, [], 114, [], "new ListDefListener"]
 [0])).call(this,$nn,$nnn,$nnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RemoteNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});Object.defineProperty(this, "listener", {enumerable: true,get: function() { var returned = this.__obj__.listener;return returned;},set: function(v) {this.__obj__.listener = v;}});Object.defineProperty(this, "ready", {enumerable: true,get: function() { var returned = this.__obj__.ready;return returned;},set: function(v) {this.__obj__.ready = v;}});};    Object.defineProperty(module.exports.ListDefListener, 'class', {
       get: function() {
         function ListDefListener() {
@@ -35424,7 +35442,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.ListDefListener, "_", {enumerable: false,value:(function ListDefListener(__obj__) {var returned = Object.create(module.exports.ListDefListener.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RemoteNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});Object.defineProperty(this, "listener", {enumerable: true,get: function() { var returned = this.__obj__.listener;return returned;},set: function(v) {this.__obj__.listener = v;}});Object.defineProperty(this, "ready", {enumerable: true,get: function() { var returned = this.__obj__.ready;return returned;},set: function(v) {this.__obj__.ready = v;}});}.bind(returned))();return returned;})});module.exports.ListDefListener.prototype.cancel = function(){return (this.__obj__.cancel$0).call(this.__obj__);};module.exports.RequesterListUpdate = function RequesterListUpdate() {var __obj__ = (function($nn,$nnn,$nnnn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }$nnn = [].concat($nnn);$nnn.forEach(function(a, i) {this[i] = a;}, $nnn);return (([function(node, changes, streamStatus) {
   return new L.RequesterListUpdate(changes, node, streamStatus);
-}, null, null, 6, 0, 278, 113, [], 133, [], 129, [], "new RequesterListUpdate"]
+}, null, null, 6, 0, 279, 113, [], 133, [], 129, [], "new RequesterListUpdate"]
 [0])).call(this,$nn,$nnn,$nnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "changes", {enumerable: true,get: function() { var returned = this.__obj__.changes;returned = [].concat(returned);returned.forEach(function(a, i) {}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = a;}, v);this.__obj__.changes = v;}});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RemoteNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "streamStatus", {enumerable: true,get: function() { var returned = this.__obj__.streamStatus;return returned;},set: function(v) {this.__obj__.streamStatus = v;}});};    Object.defineProperty(module.exports.RequesterListUpdate, 'class', {
       get: function() {
         function RequesterListUpdate() {
@@ -35524,7 +35542,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.RemoteNodeCache, "_", {enumerable: false,value:(function RemoteNodeCache(__obj__) {var returned = Object.create(module.exports.RemoteNodeCache.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.RemoteNodeCache.prototype.getRemoteNode = function($nn){var returned = (this.__obj__.getRemoteNode$1).call(this.__obj__,$nn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RemoteNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RemoteNodeCache.prototype.getDefNode = function($nn,$nnn){var returned = (this.__obj__.getDefNode$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Node' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RemoteNodeCache.prototype.updateRemoteChildNode = function($nn,$nnn,$nnnn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }objEach($nnnn, function(a, i) {this[i] = dynamicTo(a);}, $nnnn);var elms = Object.keys($nnnn).reduce(function(arr, key) { arr.push(key); arr.push($nnnn[key]); return arr; }, []);$nnnn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);var returned = (this.__obj__.updateRemoteChildNode$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RemoteNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.Request = function Request() {var __obj__ = (function($nn,$nnn,$nnnn,$nnnnn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }objEach($nnnnn, function(a, i) {this[i] = dynamicTo(a);}, $nnnnn);var elms = Object.keys($nnnnn).reduce(function(arr, key) { arr.push(key); arr.push($nnnnn[key]); return arr; }, []);$nnnnn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return (([function(requester, rid, updater, data) {
   return new L.Request(requester, rid, data, updater, false, "initialize");
-}, null, null, 8, 0, 274, 124, [], 125, [], 126, [], 119, [], "new Request"]
+}, null, null, 8, 0, 275, 124, [], 125, [], 126, [], 119, [], "new Request"]
 [0])).call(this,$nn,$nnn,$nnnn,$nnnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});Object.defineProperty(this, "rid", {enumerable: true,get: function() { var returned = this.__obj__.rid;return returned;},set: function(v) {this.__obj__.rid = v;}});Object.defineProperty(this, "data", {enumerable: true,get: function() { var returned = this.__obj__.data;          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
@@ -35568,7 +35586,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   t2 = new L.Requester(t1, t2, null, 1, 1, 0, false, null, null, null, [], [], false);
   t2.Requester$1(cache);
   return t2;
-}, null, null, 0, 2, 286, 5, 134, [], "new Requester"]
+}, null, null, 0, 2, 287, 5, 134, [], "new Requester"]
 [0])).call(this,$nn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "nodeCache", {enumerable: true,get: function() { var returned = this.__obj__.nodeCache;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RemoteNodeCache' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.nodeCache = v;}});Object.defineProperty(this, "nextRid", {enumerable: true,get: function() { var returned = this.__obj__.nextRid;return returned;},set: function(v) {this.__obj__.nextRid = v;}});Object.defineProperty(this, "nextSid", {enumerable: true,get: function() { var returned = this.__obj__.nextSid;return returned;},set: function(v) {this.__obj__.nextSid = v;}});Object.defineProperty(this, "lastSentId", {enumerable: true,get: function() { var returned = this.__obj__.lastSentId;return returned;},set: function(v) {this.__obj__.lastSentId = v;}});};    Object.defineProperty(module.exports.Requester, 'class', {
       get: function() {
         function Requester() {
@@ -35610,7 +35628,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.RequesterUpdate, "_", {enumerable: false,value:(function RequesterUpdate(__obj__) {var returned = Object.create(module.exports.RequesterUpdate.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "streamStatus", {enumerable: true,get: function() { var returned = this.__obj__.streamStatus;return returned;},set: function(v) {this.__obj__.streamStatus = v;}});}.bind(returned))();return returned;})});module.exports.RequestUpdater = function RequestUpdater() {var __obj__ = (function(){return (([function() {
   return new L.RequestUpdater();
-}, null, null, 0, 0, 285, "new RequestUpdater"]
+}, null, null, 0, 0, 286, "new RequestUpdater"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.RequestUpdater, 'class', {
       get: function() {
         function RequestUpdater() {
@@ -35625,7 +35643,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.RequestUpdater, "_", {enumerable: false,value:(function RequestUpdater(__obj__) {var returned = Object.create(module.exports.RequestUpdater.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.PermissionList = function PermissionList() {var __obj__ = (function(){return (([function() {
   return new O.PermissionList(P.LinkedHashMap_LinkedHashMap$_empty(null, null), P.LinkedHashMap_LinkedHashMap$_empty(null, null), 0);
-}, null, null, 0, 0, 260, "new PermissionList"]
+}, null, null, 0, 0, 261, "new PermissionList"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "idMatchs", {enumerable: true,get: function() { var returned = this.__obj__.idMatchs;          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
@@ -35688,7 +35706,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
             }
         returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;},set: function(v) {objEach(v, function(a, i) {this[i] = dynamicTo(a);}, v);var elms = Object.keys(v).reduce(function(arr, key) { arr.push(key); arr.push(v[key]); return arr; }, []);v = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);this.__obj__.groupMatchs = v;}});Object.defineProperty(this, "defaultPermission", {enumerable: true,get: function() { var returned = this.__obj__.defaultPermission;return returned;},set: function(v) {this.__obj__.defaultPermission = v;}});}.bind(returned))();return returned;})});module.exports.PermissionList.prototype.updatePermissions = function($nn){$nn = [].concat($nn);$nn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nn);return (this.__obj__.updatePermissions$1).call(this.__obj__,$nn);};module.exports.PermissionList.prototype.getPermission = function($nn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }return (this.__obj__.getPermission$1).call(this.__obj__,$nn);};module.exports.Permission = function Permission() {var __obj__ = (function(){return (([function() {
   return new O.Permission();
-}, null, null, 0, 0, 258, "new Permission"]
+}, null, null, 0, 0, 259, "new Permission"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.Permission, 'class', {
       get: function() {
         function Permission() {
@@ -35716,7 +35734,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   t1 = new O.StreamConnection(adapter, clientLink, null, null, t2, t3, null, 0, false, 0, null);
   t1.StreamConnection$3$clientLink$enableTimeout(adapter, clientLink, enableTimeout);
   return t1;
-}, null, null, 2, 5, 262, 5, 10, 94, [], 58, [], 95, [], "new StreamConnection"]
+}, null, null, 2, 5, 263, 5, 10, 94, [], 58, [], 95, [], "new StreamConnection"]
 [0])).call(this,$nn,clientLink,enableTimeout);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "adapter", {enumerable: true,get: function() { var returned = this.__obj__.adapter;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'StreamConnectionAdapter' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.adapter = v;}});Object.defineProperty(this, "clientLink", {enumerable: true,get: function() { var returned = this.__obj__.clientLink;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ClientLink' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.clientLink = v;}});Object.defineProperty(this, "onRequestReadyCompleter", {enumerable: true,get: function() { var returned = this.__obj__.onRequestReadyCompleter;return returned;},set: function(v) {this.__obj__.onRequestReadyCompleter = v;}});Object.defineProperty(this, "pingTimer", {enumerable: true,get: function() { var returned = this.__obj__.pingTimer;return returned;},set: function(v) {this.__obj__.pingTimer = v;}});Object.defineProperty(this, "pingCount", {enumerable: true,get: function() { var returned = this.__obj__.pingCount;return returned;},set: function(v) {this.__obj__.pingCount = v;}});Object.defineProperty(this, "responderChannel", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$responderChannel).call(this.__obj__);}).apply(this, arguments);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConnectionChannel' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.get$responderChannel = function() { return v; };}});Object.defineProperty(this, "requesterChannel", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$requesterChannel).call(this.__obj__);}).apply(this, arguments);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConnectionChannel' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.get$requesterChannel = function() { return v; };}});Object.defineProperty(this, "onRequesterReady", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onRequesterReady).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'ConnectionChannel' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {if(!then.__isWrapped__) { then = then.__obj__; }completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onRequesterReady = function() { return v; };}});Object.defineProperty(this, "onDisconnected", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onDisconnected).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onDisconnected = function() { return v; };}});};    Object.defineProperty(module.exports.StreamConnection, 'class', {
       get: function() {
         function StreamConnection() {
@@ -35743,7 +35761,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.StreamConnection, "_", {enumerable: false,value:(function StreamConnection(__obj__) {var returned = Object.create(module.exports.StreamConnection.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "adapter", {enumerable: true,get: function() { var returned = this.__obj__.adapter;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'StreamConnectionAdapter' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.adapter = v;}});Object.defineProperty(this, "clientLink", {enumerable: true,get: function() { var returned = this.__obj__.clientLink;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ClientLink' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.clientLink = v;}});Object.defineProperty(this, "onRequestReadyCompleter", {enumerable: true,get: function() { var returned = this.__obj__.onRequestReadyCompleter;return returned;},set: function(v) {this.__obj__.onRequestReadyCompleter = v;}});Object.defineProperty(this, "pingTimer", {enumerable: true,get: function() { var returned = this.__obj__.pingTimer;return returned;},set: function(v) {this.__obj__.pingTimer = v;}});Object.defineProperty(this, "pingCount", {enumerable: true,get: function() { var returned = this.__obj__.pingCount;return returned;},set: function(v) {this.__obj__.pingCount = v;}});Object.defineProperty(this, "responderChannel", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$responderChannel).call(this.__obj__);}).apply(this, arguments);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConnectionChannel' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.get$responderChannel = function() { return v; };}});Object.defineProperty(this, "requesterChannel", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$requesterChannel).call(this.__obj__);}).apply(this, arguments);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConnectionChannel' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.get$requesterChannel = function() { return v; };}});Object.defineProperty(this, "onRequesterReady", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onRequesterReady).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'ConnectionChannel' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {if(!then.__isWrapped__) { then = then.__obj__; }completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onRequesterReady = function() { return v; };}});Object.defineProperty(this, "onDisconnected", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onDisconnected).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onDisconnected = function() { return v; };}});}.bind(returned))();return returned;})});module.exports.StreamConnection.prototype.onPingTimer = function($nn){return (this.__obj__.onPingTimer$1).call(this.__obj__,$nn);};module.exports.StreamConnection.prototype.requireSend = function(){return (this.__obj__.requireSend$0).call(this.__obj__);};module.exports.StreamConnection.prototype.addServerCommand = function($nn,$nnn){return (this.__obj__.addServerCommand$2).call(this.__obj__,$nn,$nnn);};module.exports.StreamConnection.prototype.onData = function(dynamic){dynamic = dynamicTo(dynamic);return (this.__obj__.onData$1).call(this.__obj__,dynamic);};module.exports.StreamConnection.prototype.addData = function($nn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return (this.__obj__.addData$1).call(this.__obj__,$nn);};module.exports.StreamConnection.prototype.close = function(){return (this.__obj__.close$0).call(this.__obj__);};module.exports.StreamConnectionAdapter = function StreamConnectionAdapter() {var __obj__ = (function(){return (([function() {
   return new O.StreamConnectionAdapter();
-}, null, null, 0, 0, 261, "new StreamConnectionAdapter"]
+}, null, null, 0, 0, 262, "new StreamConnectionAdapter"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.StreamConnectionAdapter, 'class', {
       get: function() {
         function StreamConnectionAdapter() {
@@ -35758,7 +35776,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.StreamConnectionAdapter, "_", {enumerable: false,value:(function StreamConnectionAdapter(__obj__) {var returned = Object.create(module.exports.StreamConnectionAdapter.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.ConnectionHandler = function ConnectionHandler() {var __obj__ = (function(){return (([function() {
   return new O.ConnectionHandler(null, null, null, [], [], false);
-}, null, null, 0, 0, 256, "new ConnectionHandler"]
+}, null, null, 0, 0, 257, "new ConnectionHandler"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "connection", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$connection).call(this.__obj__);}).apply(this, arguments);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConnectionChannel' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.get$connection = function() { return v; };}});};    Object.defineProperty(module.exports.ConnectionHandler, 'class', {
       get: function() {
         function ConnectionHandler() {
@@ -35797,7 +35815,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   t4 = new P._AsyncCompleter(t4);
   t4.$builtinTypeInfo = [t2];
   return new O.PassiveChannel(t1, [], conn, null, false, connected, t3, t4);
-}, null, null, 2, 2, 255, 10, 88, [], 89, [], "new PassiveChannel"]
+}, null, null, 2, 2, 256, 10, 88, [], 89, [], "new PassiveChannel"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "onReceiveController", {enumerable: true,get: function() { var returned = this.__obj__.onReceiveController;return returned;},set: function(v) {this.__obj__.onReceiveController = v;}});Object.defineProperty(this, "conn", {enumerable: true,get: function() { var returned = this.__obj__.conn;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Connection' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.conn = v;}});Object.defineProperty(this, "getData", {enumerable: true,get: function() { var returned = this.__obj__.getData;return returned;},set: function(v) {this.__obj__.getData = v;}});Object.defineProperty(this, "connected", {enumerable: true,get: function() { var returned = this.__obj__.connected;return returned;},set: function(v) {this.__obj__.connected = v;}});Object.defineProperty(this, "onDisconnectController", {enumerable: true,get: function() { var returned = this.__obj__.onDisconnectController;return returned;},set: function(v) {this.__obj__.onDisconnectController = v;}});Object.defineProperty(this, "onConnectController", {enumerable: true,get: function() { var returned = this.__obj__.onConnectController;return returned;},set: function(v) {this.__obj__.onConnectController = v;}});Object.defineProperty(this, "onReceive", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onReceive).call(this.__obj__);}).apply(this, arguments);returned = new module.exports.Stream(returned);return returned;},set: function(v) {this.__obj__.get$onReceive = function() { return v; };}});Object.defineProperty(this, "isReady", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$isReady).call(this.__obj__);}).apply(this, arguments);return returned;},set: function(v) {this.__obj__.get$isReady = function() { return v; };}});Object.defineProperty(this, "onDisconnected", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onDisconnected).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'ConnectionChannel' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {if(!then.__isWrapped__) { then = then.__obj__; }completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onDisconnected = function() { return v; };}});Object.defineProperty(this, "onConnected", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onConnected).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'ConnectionChannel' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {if(!then.__isWrapped__) { then = then.__obj__; }completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onConnected = function() { return v; };}});};    Object.defineProperty(module.exports.PassiveChannel, 'class', {
       get: function() {
         function PassiveChannel() {
@@ -35814,7 +35832,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   var t1 = new O.ValueUpdate(value, ts, $status, count, sum, min, max);
   t1.ValueUpdate$8$count$max$meta$min$status$sum$ts(value, count, max, meta, min, $status, sum, ts);
   return t1;
-}, null, null, 2, 15, 267, 5, 5, 5, 47, 100, 100, 100, 6, [], 101, [], 102, [], 103, [], 104, [], 105, [], 106, [], 107, [], "new ValueUpdate"]
+}, null, null, 2, 15, 268, 5, 5, 5, 47, 100, 100, 100, 6, [], 101, [], 102, [], 103, [], 104, [], 105, [], 106, [], 107, [], "new ValueUpdate"]
 [0])).call(this,dynamic,count,max,meta,min,status,sum,ts);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "value", {enumerable: true,get: function() { var returned = this.__obj__.value;returned = dynamicFrom(returned);return returned;},set: function(v) {v = dynamicTo(v);this.__obj__.value = v;}});Object.defineProperty(this, "ts", {enumerable: true,get: function() { var returned = this.__obj__.ts;return returned;},set: function(v) {this.__obj__.ts = v;}});Object.defineProperty(this, "status", {enumerable: true,get: function() { var returned = this.__obj__.status;return returned;},set: function(v) {this.__obj__.status = v;}});Object.defineProperty(this, "count", {enumerable: true,get: function() { var returned = this.__obj__.count;return returned;},set: function(v) {this.__obj__.count = v;}});Object.defineProperty(this, "sum", {enumerable: true,get: function() { var returned = this.__obj__.sum;return returned;},set: function(v) {this.__obj__.sum = v;}});Object.defineProperty(this, "min", {enumerable: true,get: function() { var returned = this.__obj__.min;return returned;},set: function(v) {this.__obj__.min = v;}});Object.defineProperty(this, "max", {enumerable: true,get: function() { var returned = this.__obj__.max;return returned;},set: function(v) {this.__obj__.max = v;}});};    Object.defineProperty(module.exports.ValueUpdate, 'class', {
       get: function() {
         function ValueUpdate() {
@@ -35831,10 +35849,10 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   var t1 = new O.ValueUpdate(null, null, null, null, 0, null, null);
   t1.ValueUpdate$merge$2(oldUpdate, newUpdate);
   return t1;
-}, null, null, 4, 0, 268, 108, [], 109, [], "new ValueUpdate$merge"]
+}, null, null, 4, 0, 269, 108, [], 109, [], "new ValueUpdate$merge"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);return module.exports.ValueUpdate._(__obj__);};module.exports.Table = function Table() {var __obj__ = (function($nn,$nnn){$nn = [].concat($nn);$nn.forEach(function(a, i) {this[i] = a;}, $nn);$nnn = [].concat($nnn);$nnn.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, this[i]);this[i] = a;}, $nnn);return (([function(columns, rows) {
   return new O.Table(columns, rows);
-}, null, null, 4, 0, 266, 98, [], 99, [], "new Table"]
+}, null, null, 4, 0, 267, 98, [], 99, [], "new Table"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "columns", {enumerable: true,get: function() { var returned = this.__obj__.columns;returned = [].concat(returned);returned.forEach(function(a, i) {}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = a;}, v);this.__obj__.columns = v;}});Object.defineProperty(this, "rows", {enumerable: true,get: function() { var returned = this.__obj__.rows;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {this[i] = dynamicFrom(a);}, this[i]);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, this[i]);this[i] = a;}, v);this.__obj__.rows = v;}});};    Object.defineProperty(module.exports.Table, 'class', {
       get: function() {
         function Table() {
@@ -35849,7 +35867,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.Table, "_", {enumerable: false,value:(function Table(__obj__) {var returned = Object.create(module.exports.Table.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "columns", {enumerable: true,get: function() { var returned = this.__obj__.columns;returned = [].concat(returned);returned.forEach(function(a, i) {}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = a;}, v);this.__obj__.columns = v;}});Object.defineProperty(this, "rows", {enumerable: true,get: function() { var returned = this.__obj__.rows;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {this[i] = dynamicFrom(a);}, this[i]);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = [].concat(this[i]);this[i].forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, this[i]);this[i] = a;}, v);this.__obj__.rows = v;}});}.bind(returned))();return returned;})});module.exports.TableColumn = function TableColumn() {var __obj__ = (function($nn,$nnn,$nnnn){$nnnn = typeof($nnnn) === 'undefined' ? null : $nnnn;if($nnnn !== null) {}return (([function($name, type, defaultValue) {
   return new O.TableColumn(type, $name, defaultValue);
-}, null, null, 4, 2, 263, 5, 71, [], 46, [], 96, [], "new TableColumn"]
+}, null, null, 4, 2, 264, 5, 71, [], 46, [], 96, [], "new TableColumn"]
 [0])).call(this,$nn,$nnn,$nnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "type", {enumerable: true,get: function() { var returned = this.__obj__.type;return returned;},set: function(v) {this.__obj__.type = v;}});Object.defineProperty(this, "name", {enumerable: true,get: function() { var returned = this.__obj__.name;return returned;},set: function(v) {this.__obj__.name = v;}});Object.defineProperty(this, "defaultValue", {enumerable: true,get: function() { var returned = this.__obj__.defaultValue;return returned;},set: function(v) {this.__obj__.defaultValue = v;}});};    Object.defineProperty(module.exports.TableColumn, 'class', {
       get: function() {
         function TableColumn() {
@@ -36007,7 +36025,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.Unspecified, "_", {enumerable: false,value:(function Unspecified(__obj__) {var returned = Object.create(module.exports.Unspecified.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.DSError = function DSError() {var __obj__ = (function($nn,_optObj_){_optObj_ = _optObj_ || {};var detail = typeof(_optObj_.detail) === 'undefined' ? null : _optObj_.detail;if(detail !== null) {}var msg = typeof(_optObj_.msg) === 'undefined' ? null : _optObj_.msg;if(msg !== null) {}var path = typeof(_optObj_.path) === 'undefined' ? null : _optObj_.path;if(path !== null) {}var phase = typeof(_optObj_.phase) === 'undefined' ? null : _optObj_.phase;if(phase !== null) {}return (([function(type, detail, msg, path, phase) {
   return new O.DSError(type, detail, msg, path, phase);
-}, null, null, 2, 9, 254, 5, 5, 5, 77, 46, [], 85, [], 86, [], 43, [], 87, [], "new DSError"]
+}, null, null, 2, 9, 255, 5, 5, 5, 77, 46, [], 85, [], 86, [], 43, [], 87, [], "new DSError"]
 [0])).call(this,$nn,detail,msg,path,phase);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "type", {enumerable: true,get: function() { var returned = this.__obj__.type;return returned;},set: function(v) {this.__obj__.type = v;}});Object.defineProperty(this, "detail", {enumerable: true,get: function() { var returned = this.__obj__.detail;return returned;},set: function(v) {this.__obj__.detail = v;}});Object.defineProperty(this, "msg", {enumerable: true,get: function() { var returned = this.__obj__.msg;return returned;},set: function(v) {this.__obj__.msg = v;}});Object.defineProperty(this, "path", {enumerable: true,get: function() { var returned = this.__obj__.path;return returned;},set: function(v) {this.__obj__.path = v;}});Object.defineProperty(this, "phase", {enumerable: true,get: function() { var returned = this.__obj__.phase;return returned;},set: function(v) {this.__obj__.phase = v;}});};    Object.defineProperty(module.exports.DSError, 'class', {
       get: function() {
         function DSError() {
@@ -36020,7 +36038,12 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
         return DSError;
       }
     });
-    Object.defineProperty(module.exports.DSError, "_", {enumerable: false,value:(function DSError(__obj__) {var returned = Object.create(module.exports.DSError.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "type", {enumerable: true,get: function() { var returned = this.__obj__.type;return returned;},set: function(v) {this.__obj__.type = v;}});Object.defineProperty(this, "detail", {enumerable: true,get: function() { var returned = this.__obj__.detail;return returned;},set: function(v) {this.__obj__.detail = v;}});Object.defineProperty(this, "msg", {enumerable: true,get: function() { var returned = this.__obj__.msg;return returned;},set: function(v) {this.__obj__.msg = v;}});Object.defineProperty(this, "path", {enumerable: true,get: function() { var returned = this.__obj__.path;return returned;},set: function(v) {this.__obj__.path = v;}});Object.defineProperty(this, "phase", {enumerable: true,get: function() { var returned = this.__obj__.phase;return returned;},set: function(v) {this.__obj__.phase = v;}});}.bind(returned))();return returned;})});module.exports.DSError.prototype.getMessage = function(){return (this.__obj__.getMessage$0).call(this.__obj__);};module.exports.DSError.prototype.serialize = function(){var returned = (this.__obj__.serialize$0).call(this.__obj__);          if(returned.constructor.name === '_JsonMap') {
+    Object.defineProperty(module.exports.DSError, "_", {enumerable: false,value:(function DSError(__obj__) {var returned = Object.create(module.exports.DSError.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "type", {enumerable: true,get: function() { var returned = this.__obj__.type;return returned;},set: function(v) {this.__obj__.type = v;}});Object.defineProperty(this, "detail", {enumerable: true,get: function() { var returned = this.__obj__.detail;return returned;},set: function(v) {this.__obj__.detail = v;}});Object.defineProperty(this, "msg", {enumerable: true,get: function() { var returned = this.__obj__.msg;return returned;},set: function(v) {this.__obj__.msg = v;}});Object.defineProperty(this, "path", {enumerable: true,get: function() { var returned = this.__obj__.path;return returned;},set: function(v) {this.__obj__.path = v;}});Object.defineProperty(this, "phase", {enumerable: true,get: function() { var returned = this.__obj__.phase;return returned;},set: function(v) {this.__obj__.phase = v;}});}.bind(returned))();return returned;})});module.exports.DSError.fromMap = function() {var __obj__ = (function($nn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return (([function(m) {
+  var t1 = new O.DSError(null, null, null, null, null);
+  t1.DSError$fromMap$1(m);
+  return t1;
+}, null, null, 2, 0, 201, 49, [], "new DSError$fromMap"]
+[0])).call(this,$nn);}).apply(this, arguments);return module.exports.DSError._(__obj__);};module.exports.DSError.prototype.getMessage = function(){return (this.__obj__.getMessage$0).call(this.__obj__);};module.exports.DSError.prototype.serialize = function(){var returned = (this.__obj__.serialize$0).call(this.__obj__);          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
           } else {
@@ -36034,7 +36057,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
             }
         returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};Object.defineProperty(module.exports.DSError, "PERMISSION_DENIED", {enumerable: true,get: function() { var returned = this.__obj__.PERMISSION_DENIED;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'DSError' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.PERMISSION_DENIED = v;}});Object.defineProperty(module.exports.DSError, "INVALID_METHOD", {enumerable: true,get: function() { var returned = this.__obj__.INVALID_METHOD;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'DSError' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.INVALID_METHOD = v;}});Object.defineProperty(module.exports.DSError, "INVALID_PATH", {enumerable: true,get: function() { var returned = this.__obj__.INVALID_PATH;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'DSError' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.INVALID_PATH = v;}});Object.defineProperty(module.exports.DSError, "INVALID_PATHS", {enumerable: true,get: function() { var returned = this.__obj__.INVALID_PATHS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'DSError' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.INVALID_PATHS = v;}});Object.defineProperty(module.exports.DSError, "INVALID_VALUE", {enumerable: true,get: function() { var returned = this.__obj__.INVALID_VALUE;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'DSError' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.INVALID_VALUE = v;}});Object.defineProperty(module.exports.DSError, "DISCONNECTED", {enumerable: true,get: function() { var returned = this.__obj__.DISCONNECTED;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'DSError' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.DISCONNECTED = v;}});module.exports.ErrorPhase = function ErrorPhase() {var __obj__ = (function(){return (([function() {
   return new O.ErrorPhase();
-}, null, null, 0, 0, 253, "new ErrorPhase"]
+}, null, null, 0, 0, 254, "new ErrorPhase"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.ErrorPhase, 'class', {
       get: function() {
         function ErrorPhase() {
@@ -36049,7 +36072,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.ErrorPhase, "_", {enumerable: false,value:(function ErrorPhase(__obj__) {var returned = Object.create(module.exports.ErrorPhase.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.StreamStatus = function StreamStatus() {var __obj__ = (function(){return (([function() {
   return new O.StreamStatus();
-}, null, null, 0, 0, 252, "new StreamStatus"]
+}, null, null, 0, 0, 253, "new StreamStatus"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.StreamStatus, 'class', {
       get: function() {
         function StreamStatus() {
@@ -36064,7 +36087,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.StreamStatus, "_", {enumerable: false,value:(function StreamStatus(__obj__) {var returned = Object.create(module.exports.StreamStatus.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.ServerLinkManager = function ServerLinkManager() {var __obj__ = (function(){return (([function() {
   return new O.ServerLinkManager();
-}, null, null, 0, 0, 251, "new ServerLinkManager"]
+}, null, null, 0, 0, 252, "new ServerLinkManager"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.ServerLinkManager, 'class', {
       get: function() {
         function ServerLinkManager() {
@@ -36079,7 +36102,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.ServerLinkManager, "_", {enumerable: false,value:(function ServerLinkManager(__obj__) {var returned = Object.create(module.exports.ServerLinkManager.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.ClientLink = function ClientLink() {var __obj__ = (function(){return (([function() {
   return new O.ClientLink();
-}, null, null, 0, 0, 250, "new ClientLink"]
+}, null, null, 0, 0, 251, "new ClientLink"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.ClientLink, 'class', {
       get: function() {
         function ClientLink() {
@@ -36094,7 +36117,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.ClientLink, "_", {enumerable: false,value:(function ClientLink(__obj__) {var returned = Object.create(module.exports.ClientLink.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.ServerLink = function ServerLink() {var __obj__ = (function(){return (([function() {
   return new O.ServerLink();
-}, null, null, 0, 0, 249, "new ServerLink"]
+}, null, null, 0, 0, 250, "new ServerLink"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.ServerLink, 'class', {
       get: function() {
         function ServerLink() {
@@ -36109,7 +36132,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.ServerLink, "_", {enumerable: false,value:(function ServerLink(__obj__) {var returned = Object.create(module.exports.ServerLink.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.Link = function Link() {var __obj__ = (function(){return (([function() {
   return new O.Link();
-}, null, null, 0, 0, 248, "new Link"]
+}, null, null, 0, 0, 249, "new Link"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.Link, 'class', {
       get: function() {
         function Link() {
@@ -36139,7 +36162,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.ConnectionChannel, "_", {enumerable: false,value:(function ConnectionChannel(__obj__) {var returned = Object.create(module.exports.ConnectionChannel.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.ConnectionChannel.prototype.connected = function(){return (this.__obj__.connected$0).call(this.__obj__);};module.exports.ConnectionChannel.prototype.onDisconnected = function(){var returned = (this.__obj__.onDisconnected$0).call(this.__obj__);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'ConnectionChannel' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.ClientConnection = function ClientConnection() {var __obj__ = (function(){return (([function() {
   return new O.ClientConnection();
-}, null, null, 0, 0, 247, "new ClientConnection"]
+}, null, null, 0, 0, 248, "new ClientConnection"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.ClientConnection, 'class', {
       get: function() {
         function ClientConnection() {
@@ -36154,7 +36177,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.ClientConnection, "_", {enumerable: false,value:(function ClientConnection(__obj__) {var returned = Object.create(module.exports.ClientConnection.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.ClientConnection.prototype.onDisconnected = function(){var returned = (this.__obj__.onDisconnected$0).call(this.__obj__);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.ServerConnection = function ServerConnection() {var __obj__ = (function(){return (([function() {
   return new O.ServerConnection();
-}, null, null, 0, 0, 246, "new ServerConnection"]
+}, null, null, 0, 0, 247, "new ServerConnection"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.ServerConnection, 'class', {
       get: function() {
         function ServerConnection() {
@@ -36169,7 +36192,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.ServerConnection, "_", {enumerable: false,value:(function ServerConnection(__obj__) {var returned = Object.create(module.exports.ServerConnection.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.ServerConnection.prototype.onDisconnected = function(){var returned = (this.__obj__.onDisconnected$0).call(this.__obj__);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.Connection = function Connection() {var __obj__ = (function(){return (([function() {
   return new O.Connection();
-}, null, null, 0, 0, 245, "new Connection"]
+}, null, null, 0, 0, 246, "new Connection"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.Connection, 'class', {
       get: function() {
         function Connection() {
@@ -36184,7 +36207,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.Connection, "_", {enumerable: false,value:(function Connection(__obj__) {var returned = Object.create(module.exports.Connection.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.Connection.prototype.onDisconnected = function(){var returned = (this.__obj__.onDisconnected$0).call(this.__obj__);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.foldList = function($nn,$nnn){$nn = [].concat($nn);$nn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nn);$nnn = [].concat($nnn);$nnn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nnn);var returned = (this.foldList).call(this,$nn,$nnn);returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;};module.exports.DummyPermissionManager = function DummyPermissionManager() {var __obj__ = (function(){return (([function() {
   return new T.DummyPermissionManager();
-}, null, null, 0, 0, 292, "new DummyPermissionManager"]
+}, null, null, 0, 0, 293, "new DummyPermissionManager"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.DummyPermissionManager, 'class', {
       get: function() {
         function DummyPermissionManager() {
@@ -36199,7 +36222,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.DummyPermissionManager, "_", {enumerable: false,value:(function DummyPermissionManager(__obj__) {var returned = Object.create(module.exports.DummyPermissionManager.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.DummyPermissionManager.prototype.getPermission = function($nn,$nnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (this.__obj__.getPermission$2).call(this.__obj__,$nn,$nnn);};module.exports.IPermissionManager = function IPermissionManager() {var __obj__ = (function(){return (([function() {
   return new T.IPermissionManager();
-}, null, null, 0, 0, 291, "new IPermissionManager"]
+}, null, null, 0, 0, 292, "new IPermissionManager"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.IPermissionManager, 'class', {
       get: function() {
         function IPermissionManager() {
@@ -36280,7 +36303,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'NodeProviderImpl' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }}return (this.load).call(this,$nn,$nnn);}.bind(this);}if(proto.save) { this.__obj__.save$0 = function(){var returned = (this.save).call(this);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.invoke) { this.__obj__.invoke$4 = function($nn,$nnn,$nnnn,$nnnnn){          if($nn.constructor.name === '_JsonMap') {
+        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'NodeProviderImpl' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }}return (this.load).call(this,$nn,$nnn);}.bind(this);}if(proto.save) { this.__obj__.save$0 = function(){var returned = (this.save).call(this);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.invoke) { this.__obj__.invoke$5 = function($nn,$nnn,$nnnn,$nnnnn,$nnnnnn){          if($nn.constructor.name === '_JsonMap') {
             $nn = $nn._original;
             Object.keys($nn).forEach(function(key) { $nn[key] = dynamicFrom($nn[key]); });
           } else {
@@ -36292,7 +36315,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'InvokeResponse' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.invoke).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.onInvoke) { this.__obj__.onInvoke$1 = function($nn){          if($nn.constructor.name === '_JsonMap') {
+        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'InvokeResponse' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'LocalNode' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }$nnnnnn = typeof($nnnnnn) === 'undefined' ? null : $nnnnnn;if($nnnnnn !== null) {}var returned = (this.invoke).call(this,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.onInvoke) { this.__obj__.onInvoke$1 = function($nn){          if($nn.constructor.name === '_JsonMap') {
             $nn = $nn._original;
             Object.keys($nn).forEach(function(key) { $nn[key] = dynamicFrom($nn[key]); });
           } else {
@@ -36395,7 +36418,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.SimpleNode.prototype.invoke = function($nn,$nnn,$nnnn,$nnnnn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.__obj__.invoke$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNode.prototype.onInvoke = function($nn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);var returned = (this.__obj__.onInvoke$1).call(this.__obj__,$nn);returned = dynamicFrom(returned);return returned;};module.exports.SimpleNode.prototype.onSubscribe = function(){return (this.__obj__.onSubscribe$0).call(this.__obj__);};module.exports.SimpleNode.prototype.onCreated = function(){return (this.__obj__.onCreated$0).call(this.__obj__);};module.exports.SimpleNode.prototype.onRemoving = function(){return (this.__obj__.onRemoving$0).call(this.__obj__);};module.exports.SimpleNode.prototype.onChildRemoved = function($nn,$nnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (this.__obj__.onChildRemoved$2).call(this.__obj__,$nn,$nnn);};module.exports.SimpleNode.prototype.onChildAdded = function($nn,$nnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (this.__obj__.onChildAdded$2).call(this.__obj__,$nn,$nnn);};module.exports.SimpleNode.prototype.subscribe = function($nn,$nnn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.__obj__.subscribe$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RespSubscribeListener' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNode.prototype.onLoadChild = function($nn,$nnn,$nnnn){objEach($nnn, function(a, i) {this[i] = dynamicTo(a);}, $nnn);var elms = Object.keys($nnn).reduce(function(arr, key) { arr.push(key); arr.push($nnn[key]); return arr; }, []);$nnn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.onLoadChild$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'SimpleNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNode.prototype.createChild = function($nn,$nnn){$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {objEach($nnn, function(a, i) {this[i] = dynamicTo(a);}, $nnn);var elms = Object.keys($nnn).reduce(function(arr, key) { arr.push(key); arr.push($nnn[key]); return arr; }, []);$nnn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);}var returned = (this.__obj__.createChild$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'SimpleNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNode.prototype.addChild = function($nn,$nnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (this.__obj__.addChild$2).call(this.__obj__,$nn,$nnn);};module.exports.SimpleNode.prototype.removeChild = function(dynamic){dynamic = dynamicTo(dynamic);return (this.__obj__.removeChild$1).call(this.__obj__,dynamic);};module.exports.SimpleNode.prototype.set = function($nn,dynamic){dynamic = dynamicTo(dynamic);var returned = (this.__obj__.$indexSet).call(this.__obj__,$nn,dynamic);returned = dynamicFrom(returned);return returned;};module.exports.SimpleNode.prototype.getAttribute = function($nn){return (this.__obj__.getAttribute$1).call(this.__obj__,$nn);};module.exports.SimpleNode.prototype.getConfig = function($nn){return (this.__obj__.getConfig$1).call(this.__obj__,$nn);};module.exports.SimpleNode.prototype.getChild = function($nn){var returned = (this.__obj__.getChild$1).call(this.__obj__,$nn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Node' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNode.prototype.get = function($nn){return (this.__obj__.$get$1).call(this.__obj__,$nn);};module.exports.SimpleNode.prototype.forEachChild = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.forEachChild$1).call(this.__obj__,$nn);};module.exports.SimpleNode.prototype.getSimpleMap = function(){var returned = (this.__obj__.getSimpleMap$0).call(this.__obj__);          if(returned.constructor.name === '_JsonMap') {
+        returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.SimpleNode.prototype.invoke = function($nn,$nnn,$nnnn,$nnnnn,$nnnnnn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }$nnnnnn = typeof($nnnnnn) === 'undefined' ? null : $nnnnnn;if($nnnnnn !== null) {}var returned = (this.__obj__.invoke$5).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNode.prototype.onInvoke = function($nn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);var returned = (this.__obj__.onInvoke$1).call(this.__obj__,$nn);returned = dynamicFrom(returned);return returned;};module.exports.SimpleNode.prototype.onSubscribe = function(){return (this.__obj__.onSubscribe$0).call(this.__obj__);};module.exports.SimpleNode.prototype.onCreated = function(){return (this.__obj__.onCreated$0).call(this.__obj__);};module.exports.SimpleNode.prototype.onRemoving = function(){return (this.__obj__.onRemoving$0).call(this.__obj__);};module.exports.SimpleNode.prototype.onChildRemoved = function($nn,$nnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (this.__obj__.onChildRemoved$2).call(this.__obj__,$nn,$nnn);};module.exports.SimpleNode.prototype.onChildAdded = function($nn,$nnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (this.__obj__.onChildAdded$2).call(this.__obj__,$nn,$nnn);};module.exports.SimpleNode.prototype.subscribe = function($nn,$nnn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.__obj__.subscribe$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RespSubscribeListener' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNode.prototype.onLoadChild = function($nn,$nnn,$nnnn){objEach($nnn, function(a, i) {this[i] = dynamicTo(a);}, $nnn);var elms = Object.keys($nnn).reduce(function(arr, key) { arr.push(key); arr.push($nnn[key]); return arr; }, []);$nnn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.onLoadChild$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'SimpleNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNode.prototype.createChild = function($nn,$nnn){$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {objEach($nnn, function(a, i) {this[i] = dynamicTo(a);}, $nnn);var elms = Object.keys($nnn).reduce(function(arr, key) { arr.push(key); arr.push($nnn[key]); return arr; }, []);$nnn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);}var returned = (this.__obj__.createChild$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'SimpleNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNode.prototype.addChild = function($nn,$nnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (this.__obj__.addChild$2).call(this.__obj__,$nn,$nnn);};module.exports.SimpleNode.prototype.removeChild = function(dynamic){dynamic = dynamicTo(dynamic);return (this.__obj__.removeChild$1).call(this.__obj__,dynamic);};module.exports.SimpleNode.prototype.set = function($nn,dynamic){dynamic = dynamicTo(dynamic);var returned = (this.__obj__.$indexSet).call(this.__obj__,$nn,dynamic);returned = dynamicFrom(returned);return returned;};module.exports.SimpleNode.prototype.getAttribute = function($nn){return (this.__obj__.getAttribute$1).call(this.__obj__,$nn);};module.exports.SimpleNode.prototype.getConfig = function($nn){return (this.__obj__.getConfig$1).call(this.__obj__,$nn);};module.exports.SimpleNode.prototype.getChild = function($nn){var returned = (this.__obj__.getChild$1).call(this.__obj__,$nn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Node' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNode.prototype.get = function($nn){return (this.__obj__.$get$1).call(this.__obj__,$nn);};module.exports.SimpleNode.prototype.forEachChild = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.forEachChild$1).call(this.__obj__,$nn);};module.exports.SimpleNode.prototype.getSimpleMap = function(){var returned = (this.__obj__.getSimpleMap$0).call(this.__obj__);          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
           } else {
@@ -36423,7 +36446,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   var t1 = new T.SimpleNodeProvider(P.LinkedHashMap_LinkedHashMap(null, null, null, P.String, T.LocalNode), P.LinkedHashMap_LinkedHashMap(null, null, null, P.String, {func: "", ret: T.SimpleNode, args: [P.String]}), new T.DummyPermissionManager());
   t1.init$2(m, profiles);
   return t1;
-}, null, null, 0, 4, 303, 5, 5, 49, [], 37, [], "new SimpleNodeProvider"]
+}, null, null, 0, 4, 304, 5, 5, 49, [], 37, [], "new SimpleNodeProvider"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "nodes", {enumerable: true,get: function() { var returned = this.__obj__.nodes;          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
@@ -36510,7 +36533,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
             }
         returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.SimpleNodeProvider.prototype.updateValue = function($nn,$nnn){return (this.__obj__.updateValue$2).call(this.__obj__,$nn,$nnn);};module.exports.SimpleNodeProvider.prototype.addNode = function($nn,$nnn){objEach($nnn, function(a, i) {this[i] = dynamicTo(a);}, $nnn);var elms = Object.keys($nnn).reduce(function(arr, key) { arr.push(key); arr.push($nnn[key]); return arr; }, []);$nnn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);var returned = (this.__obj__.addNode$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNodeProvider.prototype.removeNode = function($nn){return (this.__obj__.removeNode$1).call(this.__obj__,$nn);};module.exports.SimpleNodeProvider.prototype.get = function($nn){var returned = (this.__obj__.$index).call(this.__obj__,$nn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.SimpleNodeProvider.prototype.bitwiseNegate = function(){var returned = (this.__obj__.$not).call(this.__obj__);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.MutableNodeProvider = function MutableNodeProvider() {var __obj__ = (function(){return (([function() {
   return new T.MutableNodeProvider();
-}, null, null, 0, 0, 302, "new MutableNodeProvider"]
+}, null, null, 0, 0, 303, "new MutableNodeProvider"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.MutableNodeProvider, 'class', {
       get: function() {
         function MutableNodeProvider() {
@@ -36525,7 +36548,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.MutableNodeProvider, "_", {enumerable: false,value:(function MutableNodeProvider(__obj__) {var returned = Object.create(module.exports.MutableNodeProvider.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.SerializableNodeProvider = function SerializableNodeProvider() {var __obj__ = (function(){return (([function() {
   return new T.SerializableNodeProvider();
-}, null, null, 0, 0, 301, "new SerializableNodeProvider"]
+}, null, null, 0, 0, 302, "new SerializableNodeProvider"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.SerializableNodeProvider, 'class', {
       get: function() {
         function SerializableNodeProvider() {
@@ -36540,7 +36563,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.SerializableNodeProvider, "_", {enumerable: false,value:(function SerializableNodeProvider(__obj__) {var returned = Object.create(module.exports.SerializableNodeProvider.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.AsyncTableResult = function AsyncTableResult() {var __obj__ = (function($nn){$nn = typeof($nn) === 'undefined' ? null : $nn;if($nn !== null) {$nn = [].concat($nn);$nn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nn);}return (([function(columns) {
   return new T.AsyncTableResult(null, columns, null, "initialize");
-}, null, null, 0, 2, 300, 5, 98, [], "new AsyncTableResult"]
+}, null, null, 0, 2, 301, 5, 98, [], "new AsyncTableResult"]
 [0])).call(this,$nn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "response", {enumerable: true,get: function() { var returned = this.__obj__.response;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.response = v;}});Object.defineProperty(this, "columns", {enumerable: true,get: function() { var returned = this.__obj__.columns;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.columns = v;}});Object.defineProperty(this, "rows", {enumerable: true,get: function() { var returned = this.__obj__.rows;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.rows = v;}});Object.defineProperty(this, "status", {enumerable: true,get: function() { var returned = this.__obj__.status;return returned;},set: function(v) {this.__obj__.status = v;}});};    Object.defineProperty(module.exports.AsyncTableResult, 'class', {
       get: function() {
         function AsyncTableResult() {
@@ -36555,7 +36578,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.AsyncTableResult, "_", {enumerable: false,value:(function AsyncTableResult(__obj__) {var returned = Object.create(module.exports.AsyncTableResult.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "response", {enumerable: true,get: function() { var returned = this.__obj__.response;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.response = v;}});Object.defineProperty(this, "columns", {enumerable: true,get: function() { var returned = this.__obj__.columns;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.columns = v;}});Object.defineProperty(this, "rows", {enumerable: true,get: function() { var returned = this.__obj__.rows;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.rows = v;}});Object.defineProperty(this, "status", {enumerable: true,get: function() { var returned = this.__obj__.status;return returned;},set: function(v) {this.__obj__.status = v;}});}.bind(returned))();return returned;})});module.exports.AsyncTableResult.prototype.update = function($nn,$nnn){$nn = [].concat($nn);$nn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nn);$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}return (this.__obj__.update$2).call(this.__obj__,$nn,$nnn);};module.exports.AsyncTableResult.prototype.write = function($nn){$nn = typeof($nn) === 'undefined' ? null : $nn;if($nn !== null) {if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }}return (this.__obj__.write$1).call(this.__obj__,$nn);};module.exports.AsyncTableResult.prototype.close = function(){return (this.__obj__.close$0).call(this.__obj__);};module.exports.SimpleTableResult = function SimpleTableResult() {var __obj__ = (function($nn,$nnn){$nn = typeof($nn) === 'undefined' ? null : $nn;if($nn !== null) {$nn = [].concat($nn);$nn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nn);}$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {$nnn = [].concat($nnn);$nnn.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, $nnn);}return (([function(rows, columns) {
   return new T.SimpleTableResult(columns, rows);
-}, null, null, 0, 4, 299, 5, 5, 99, [], 98, [], "new SimpleTableResult"]
+}, null, null, 0, 4, 300, 5, 5, 99, [], 98, [], "new SimpleTableResult"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "columns", {enumerable: true,get: function() { var returned = this.__obj__.columns;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.columns = v;}});Object.defineProperty(this, "rows", {enumerable: true,get: function() { var returned = this.__obj__.rows;returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {a = dynamicTo(a);this[i] = a;}, v);this.__obj__.rows = v;}});};    Object.defineProperty(module.exports.SimpleTableResult, 'class', {
       get: function() {
         function SimpleTableResult() {
@@ -36636,7 +36659,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'NodeProviderImpl' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.load).call(this,$nn,$nnn);}.bind(this);}if(proto.getAttribute) { this.__obj__.getAttribute$1 = function($nn){return (this.getAttribute).call(this,$nn);}.bind(this);}if(proto.getConfig) { this.__obj__.getConfig$1 = function($nn){return (this.getConfig).call(this,$nn);}.bind(this);}if(proto.addChild) { this.__obj__.addChild$2 = function($nn,$nnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Node' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.addChild).call(this,$nn,$nnn);}.bind(this);}if(proto.removeChild) { this.__obj__.removeChild$1 = function(dynamic){dynamic = dynamicFrom(dynamic);return (this.removeChild).call(this,dynamic);}.bind(this);}if(proto.getChild) { this.__obj__.getChild$1 = function($nn){var returned = (this.getChild).call(this,$nn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.get) { this.__obj__.$get$1 = function($nn){return (this.get).call(this,$nn);}.bind(this);}if(proto.forEachChild) { this.__obj__.forEachChild$1 = function($nn){return (this.forEachChild).call(this,$nn);}.bind(this);}if(proto.getSimpleMap) { this.__obj__.getSimpleMap$0 = function(){var returned = (this.getSimpleMap).call(this);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.onStartListListen) { this.__obj__.onStartListListen$0 = function(){return (this.onStartListListen).call(this);}.bind(this);}if(proto.onAllListCancel) { this.__obj__.onAllListCancel$0 = function(){return (this.onAllListCancel).call(this);}.bind(this);}if(proto.subscribe) { this.__obj__.subscribe$2 = function($nn,$nnn){$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.subscribe).call(this,$nn,$nnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.unsubscribe) { this.__obj__.unsubscribe$1 = function($nn){return (this.unsubscribe).call(this,$nn);}.bind(this);}if(proto.updateValue) { this.__obj__.updateValue$2$force = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.updateValue).call(this,$nn,force);}.bind(this);}if(proto.getInvokePermission) { this.__obj__.getInvokePermission$0 = function(){return (this.getInvokePermission).call(this);}.bind(this);}if(proto.getSetPermission) { this.__obj__.getSetPermission$0 = function(){return (this.getSetPermission).call(this);}.bind(this);}if(proto.invoke) { this.__obj__.invoke$4 = function($nn,$nnn,$nnnn,$nnnnn){          if($nn.constructor.name === '_JsonMap') {
+        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'NodeProviderImpl' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.load).call(this,$nn,$nnn);}.bind(this);}if(proto.getAttribute) { this.__obj__.getAttribute$1 = function($nn){return (this.getAttribute).call(this,$nn);}.bind(this);}if(proto.getConfig) { this.__obj__.getConfig$1 = function($nn){return (this.getConfig).call(this,$nn);}.bind(this);}if(proto.addChild) { this.__obj__.addChild$2 = function($nn,$nnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Node' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.addChild).call(this,$nn,$nnn);}.bind(this);}if(proto.removeChild) { this.__obj__.removeChild$1 = function(dynamic){dynamic = dynamicFrom(dynamic);return (this.removeChild).call(this,dynamic);}.bind(this);}if(proto.getChild) { this.__obj__.getChild$1 = function($nn){var returned = (this.getChild).call(this,$nn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.get) { this.__obj__.$get$1 = function($nn){return (this.get).call(this,$nn);}.bind(this);}if(proto.forEachChild) { this.__obj__.forEachChild$1 = function($nn){return (this.forEachChild).call(this,$nn);}.bind(this);}if(proto.getSimpleMap) { this.__obj__.getSimpleMap$0 = function(){var returned = (this.getSimpleMap).call(this);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.onStartListListen) { this.__obj__.onStartListListen$0 = function(){return (this.onStartListListen).call(this);}.bind(this);}if(proto.onAllListCancel) { this.__obj__.onAllListCancel$0 = function(){return (this.onAllListCancel).call(this);}.bind(this);}if(proto.subscribe) { this.__obj__.subscribe$2 = function($nn,$nnn){$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.subscribe).call(this,$nn,$nnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.unsubscribe) { this.__obj__.unsubscribe$1 = function($nn){return (this.unsubscribe).call(this,$nn);}.bind(this);}if(proto.updateValue) { this.__obj__.updateValue$2$force = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.updateValue).call(this,$nn,force);}.bind(this);}if(proto.getInvokePermission) { this.__obj__.getInvokePermission$0 = function(){return (this.getInvokePermission).call(this);}.bind(this);}if(proto.getSetPermission) { this.__obj__.getSetPermission$0 = function(){return (this.getSetPermission).call(this);}.bind(this);}if(proto.invoke) { this.__obj__.invoke$5 = function($nn,$nnn,$nnnn,$nnnnn,$nnnnnn){          if($nn.constructor.name === '_JsonMap') {
             $nn = $nn._original;
             Object.keys($nn).forEach(function(key) { $nn[key] = dynamicFrom($nn[key]); });
           } else {
@@ -36648,7 +36671,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'InvokeResponse' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.invoke).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setAttribute) { this.__obj__.setAttribute$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setAttribute).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeAttribute) { this.__obj__.removeAttribute$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeAttribute).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setConfig) { this.__obj__.setConfig$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setConfig).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeConfig) { this.__obj__.removeConfig$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeConfig).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setValue) { this.__obj__.setValue$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.setValue).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.set) { this.__obj__.$indexSet = function($nn,$nnn){var returned = (this.set).call(this,$nn,$nnn);returned = dynamicTo(returned);return returned;}.bind(this);}if(proto.serialize) { this.__obj__.serialize$1 = function($nn){var returned = (this.serialize).call(this,$nn);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.updateList) { this.__obj__.updateList$1 = function($nn){return (this.updateList).call(this,$nn);}.bind(this);}        }
+        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'InvokeResponse' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Node' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }$nnnnnn = typeof($nnnnnn) === 'undefined' ? null : $nnnnnn;if($nnnnnn !== null) {}var returned = (this.invoke).call(this,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setAttribute) { this.__obj__.setAttribute$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setAttribute).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeAttribute) { this.__obj__.removeAttribute$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeAttribute).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setConfig) { this.__obj__.setConfig$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setConfig).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeConfig) { this.__obj__.removeConfig$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeConfig).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setValue) { this.__obj__.setValue$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.setValue).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.set) { this.__obj__.$indexSet = function($nn,$nnn){var returned = (this.set).call(this,$nn,$nnn);returned = dynamicTo(returned);return returned;}.bind(this);}if(proto.serialize) { this.__obj__.serialize$1 = function($nn){var returned = (this.serialize).call(this,$nn);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.updateList) { this.__obj__.updateList$1 = function($nn){return (this.updateList).call(this,$nn);}.bind(this);}        }
 
         RootNode.prototype = Object.create(module.exports.RootNode.prototype);
 
@@ -36715,7 +36738,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.RootNode.prototype.onStartListListen = function(){return (this.__obj__.onStartListListen$0).call(this.__obj__);};module.exports.RootNode.prototype.onAllListCancel = function(){return (this.__obj__.onAllListCancel$0).call(this.__obj__);};module.exports.RootNode.prototype.subscribe = function($nn,$nnn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.__obj__.subscribe$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RespSubscribeListener' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.unsubscribe = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.unsubscribe$1).call(this.__obj__,$nn);};module.exports.RootNode.prototype.updateValue = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.__obj__.updateValue$2$force).call(this.__obj__,$nn,force);};module.exports.RootNode.prototype.getInvokePermission = function(){return (this.__obj__.getInvokePermission$0).call(this.__obj__);};module.exports.RootNode.prototype.getSetPermission = function(){return (this.__obj__.getSetPermission$0).call(this.__obj__);};module.exports.RootNode.prototype.invoke = function($nn,$nnn,$nnnn,$nnnnn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.__obj__.invoke$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.setAttribute = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setAttribute$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.removeAttribute = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeAttribute$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.setConfig = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setConfig$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.removeConfig = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeConfig$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.setValue = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.__obj__.setValue$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.set = function($nn,$nnn){var returned = (this.__obj__.$indexSet).call(this.__obj__,$nn,$nnn);returned = dynamicFrom(returned);return returned;};module.exports.RootNode.prototype.serialize = function($nn){var returned = (this.__obj__.serialize$1).call(this.__obj__,$nn);          if(returned.constructor.name === '_JsonMap') {
+        returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.RootNode.prototype.onStartListListen = function(){return (this.__obj__.onStartListListen$0).call(this.__obj__);};module.exports.RootNode.prototype.onAllListCancel = function(){return (this.__obj__.onAllListCancel$0).call(this.__obj__);};module.exports.RootNode.prototype.subscribe = function($nn,$nnn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.__obj__.subscribe$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RespSubscribeListener' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.unsubscribe = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.unsubscribe$1).call(this.__obj__,$nn);};module.exports.RootNode.prototype.updateValue = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.__obj__.updateValue$2$force).call(this.__obj__,$nn,force);};module.exports.RootNode.prototype.getInvokePermission = function(){return (this.__obj__.getInvokePermission$0).call(this.__obj__);};module.exports.RootNode.prototype.getSetPermission = function(){return (this.__obj__.getSetPermission$0).call(this.__obj__);};module.exports.RootNode.prototype.invoke = function($nn,$nnn,$nnnn,$nnnnn,$nnnnnn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }$nnnnnn = typeof($nnnnnn) === 'undefined' ? null : $nnnnnn;if($nnnnnn !== null) {}var returned = (this.__obj__.invoke$5).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.setAttribute = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setAttribute$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.removeAttribute = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeAttribute$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.setConfig = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setConfig$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.removeConfig = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeConfig$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.setValue = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.__obj__.setValue$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.RootNode.prototype.set = function($nn,$nnn){var returned = (this.__obj__.$indexSet).call(this.__obj__,$nn,$nnn);returned = dynamicFrom(returned);return returned;};module.exports.RootNode.prototype.serialize = function($nn){var returned = (this.__obj__.serialize$1).call(this.__obj__,$nn);          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
           } else {
@@ -36787,7 +36810,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
         function DefinitionNode() {
           module.exports.DefinitionNode.apply(this, arguments);
           var proto = Object.getPrototypeOf(this);
-    if(proto.getAttribute) { this.__obj__.getAttribute$1 = function($nn){return (this.getAttribute).call(this,$nn);}.bind(this);}if(proto.getConfig) { this.__obj__.getConfig$1 = function($nn){return (this.getConfig).call(this,$nn);}.bind(this);}if(proto.addChild) { this.__obj__.addChild$2 = function($nn,$nnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Node' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.addChild).call(this,$nn,$nnn);}.bind(this);}if(proto.removeChild) { this.__obj__.removeChild$1 = function(dynamic){dynamic = dynamicFrom(dynamic);return (this.removeChild).call(this,dynamic);}.bind(this);}if(proto.getChild) { this.__obj__.getChild$1 = function($nn){var returned = (this.getChild).call(this,$nn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.get) { this.__obj__.$get$1 = function($nn){return (this.get).call(this,$nn);}.bind(this);}if(proto.forEachChild) { this.__obj__.forEachChild$1 = function($nn){return (this.forEachChild).call(this,$nn);}.bind(this);}if(proto.getSimpleMap) { this.__obj__.getSimpleMap$0 = function(){var returned = (this.getSimpleMap).call(this);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.onStartListListen) { this.__obj__.onStartListListen$0 = function(){return (this.onStartListListen).call(this);}.bind(this);}if(proto.onAllListCancel) { this.__obj__.onAllListCancel$0 = function(){return (this.onAllListCancel).call(this);}.bind(this);}if(proto.subscribe) { this.__obj__.subscribe$2 = function($nn,$nnn){$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.subscribe).call(this,$nn,$nnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.unsubscribe) { this.__obj__.unsubscribe$1 = function($nn){return (this.unsubscribe).call(this,$nn);}.bind(this);}if(proto.updateValue) { this.__obj__.updateValue$2$force = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.updateValue).call(this,$nn,force);}.bind(this);}if(proto.getInvokePermission) { this.__obj__.getInvokePermission$0 = function(){return (this.getInvokePermission).call(this);}.bind(this);}if(proto.getSetPermission) { this.__obj__.getSetPermission$0 = function(){return (this.getSetPermission).call(this);}.bind(this);}if(proto.invoke) { this.__obj__.invoke$4 = function($nn,$nnn,$nnnn,$nnnnn){          if($nn.constructor.name === '_JsonMap') {
+    if(proto.getAttribute) { this.__obj__.getAttribute$1 = function($nn){return (this.getAttribute).call(this,$nn);}.bind(this);}if(proto.getConfig) { this.__obj__.getConfig$1 = function($nn){return (this.getConfig).call(this,$nn);}.bind(this);}if(proto.addChild) { this.__obj__.addChild$2 = function($nn,$nnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Node' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.addChild).call(this,$nn,$nnn);}.bind(this);}if(proto.removeChild) { this.__obj__.removeChild$1 = function(dynamic){dynamic = dynamicFrom(dynamic);return (this.removeChild).call(this,dynamic);}.bind(this);}if(proto.getChild) { this.__obj__.getChild$1 = function($nn){var returned = (this.getChild).call(this,$nn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.get) { this.__obj__.$get$1 = function($nn){return (this.get).call(this,$nn);}.bind(this);}if(proto.forEachChild) { this.__obj__.forEachChild$1 = function($nn){return (this.forEachChild).call(this,$nn);}.bind(this);}if(proto.getSimpleMap) { this.__obj__.getSimpleMap$0 = function(){var returned = (this.getSimpleMap).call(this);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.onStartListListen) { this.__obj__.onStartListListen$0 = function(){return (this.onStartListListen).call(this);}.bind(this);}if(proto.onAllListCancel) { this.__obj__.onAllListCancel$0 = function(){return (this.onAllListCancel).call(this);}.bind(this);}if(proto.subscribe) { this.__obj__.subscribe$2 = function($nn,$nnn){$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.subscribe).call(this,$nn,$nnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.unsubscribe) { this.__obj__.unsubscribe$1 = function($nn){return (this.unsubscribe).call(this,$nn);}.bind(this);}if(proto.updateValue) { this.__obj__.updateValue$2$force = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.updateValue).call(this,$nn,force);}.bind(this);}if(proto.getInvokePermission) { this.__obj__.getInvokePermission$0 = function(){return (this.getInvokePermission).call(this);}.bind(this);}if(proto.getSetPermission) { this.__obj__.getSetPermission$0 = function(){return (this.getSetPermission).call(this);}.bind(this);}if(proto.invoke) { this.__obj__.invoke$5 = function($nn,$nnn,$nnnn,$nnnnn,$nnnnnn){          if($nn.constructor.name === '_JsonMap') {
             $nn = $nn._original;
             Object.keys($nn).forEach(function(key) { $nn[key] = dynamicFrom($nn[key]); });
           } else {
@@ -36799,7 +36822,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'InvokeResponse' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.invoke).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setAttribute) { this.__obj__.setAttribute$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setAttribute).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeAttribute) { this.__obj__.removeAttribute$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeAttribute).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setConfig) { this.__obj__.setConfig$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setConfig).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeConfig) { this.__obj__.removeConfig$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeConfig).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setValue) { this.__obj__.setValue$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.setValue).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.set) { this.__obj__.$indexSet = function($nn,$nnn){var returned = (this.set).call(this,$nn,$nnn);returned = dynamicTo(returned);return returned;}.bind(this);}if(proto.serialize) { this.__obj__.serialize$1 = function($nn){var returned = (this.serialize).call(this,$nn);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.load) { this.__obj__.load$2 = function($nn,$nnn){          if($nn.constructor.name === '_JsonMap') {
+        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'InvokeResponse' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Node' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }$nnnnnn = typeof($nnnnnn) === 'undefined' ? null : $nnnnnn;if($nnnnnn !== null) {}var returned = (this.invoke).call(this,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setAttribute) { this.__obj__.setAttribute$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setAttribute).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeAttribute) { this.__obj__.removeAttribute$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeAttribute).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setConfig) { this.__obj__.setConfig$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setConfig).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeConfig) { this.__obj__.removeConfig$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeConfig).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setValue) { this.__obj__.setValue$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.setValue).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.set) { this.__obj__.$indexSet = function($nn,$nnn){var returned = (this.set).call(this,$nn,$nnn);returned = dynamicTo(returned);return returned;}.bind(this);}if(proto.serialize) { this.__obj__.serialize$1 = function($nn){var returned = (this.serialize).call(this,$nn);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.load) { this.__obj__.load$2 = function($nn,$nnn){          if($nn.constructor.name === '_JsonMap') {
             $nn = $nn._original;
             Object.keys($nn).forEach(function(key) { $nn[key] = dynamicFrom($nn[key]); });
           } else {
@@ -36878,7 +36901,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.DefinitionNode.prototype.onStartListListen = function(){return (this.__obj__.onStartListListen$0).call(this.__obj__);};module.exports.DefinitionNode.prototype.onAllListCancel = function(){return (this.__obj__.onAllListCancel$0).call(this.__obj__);};module.exports.DefinitionNode.prototype.subscribe = function($nn,$nnn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.__obj__.subscribe$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RespSubscribeListener' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.unsubscribe = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.unsubscribe$1).call(this.__obj__,$nn);};module.exports.DefinitionNode.prototype.updateValue = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.__obj__.updateValue$2$force).call(this.__obj__,$nn,force);};module.exports.DefinitionNode.prototype.getInvokePermission = function(){return (this.__obj__.getInvokePermission$0).call(this.__obj__);};module.exports.DefinitionNode.prototype.getSetPermission = function(){return (this.__obj__.getSetPermission$0).call(this.__obj__);};module.exports.DefinitionNode.prototype.invoke = function($nn,$nnn,$nnnn,$nnnnn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.__obj__.invoke$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.setAttribute = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setAttribute$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.removeAttribute = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeAttribute$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.setConfig = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setConfig$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.removeConfig = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeConfig$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.setValue = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.__obj__.setValue$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.set = function($nn,$nnn){var returned = (this.__obj__.$indexSet).call(this.__obj__,$nn,$nnn);returned = dynamicFrom(returned);return returned;};module.exports.DefinitionNode.prototype.serialize = function($nn){var returned = (this.__obj__.serialize$1).call(this.__obj__,$nn);          if(returned.constructor.name === '_JsonMap') {
+        returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.DefinitionNode.prototype.onStartListListen = function(){return (this.__obj__.onStartListListen$0).call(this.__obj__);};module.exports.DefinitionNode.prototype.onAllListCancel = function(){return (this.__obj__.onAllListCancel$0).call(this.__obj__);};module.exports.DefinitionNode.prototype.subscribe = function($nn,$nnn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.__obj__.subscribe$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RespSubscribeListener' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.unsubscribe = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.unsubscribe$1).call(this.__obj__,$nn);};module.exports.DefinitionNode.prototype.updateValue = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.__obj__.updateValue$2$force).call(this.__obj__,$nn,force);};module.exports.DefinitionNode.prototype.getInvokePermission = function(){return (this.__obj__.getInvokePermission$0).call(this.__obj__);};module.exports.DefinitionNode.prototype.getSetPermission = function(){return (this.__obj__.getSetPermission$0).call(this.__obj__);};module.exports.DefinitionNode.prototype.invoke = function($nn,$nnn,$nnnn,$nnnnn,$nnnnnn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }$nnnnnn = typeof($nnnnnn) === 'undefined' ? null : $nnnnnn;if($nnnnnn !== null) {}var returned = (this.__obj__.invoke$5).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.setAttribute = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setAttribute$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.removeAttribute = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeAttribute$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.setConfig = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setConfig$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.removeConfig = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeConfig$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.setValue = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.__obj__.setValue$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.DefinitionNode.prototype.set = function($nn,$nnn){var returned = (this.__obj__.$indexSet).call(this.__obj__,$nn,$nnn);returned = dynamicFrom(returned);return returned;};module.exports.DefinitionNode.prototype.serialize = function($nn){var returned = (this.__obj__.serialize$1).call(this.__obj__,$nn);          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
           } else {
@@ -36892,7 +36915,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
             }
         returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.DefinitionNode.prototype.load = function($nn,$nnn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (this.__obj__.load$2).call(this.__obj__,$nn,$nnn);};module.exports.DefinitionNode.prototype.updateList = function($nn){return (this.__obj__.updateList$1).call(this.__obj__,$nn);};module.exports.Configs = function Configs() {var __obj__ = (function(){return (([function() {
   return new T.Configs(P.LinkedHashMap_LinkedHashMap$_empty(null, null));
-}, null, null, 0, 0, 288, "new Configs"]
+}, null, null, 0, 0, 289, "new Configs"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "configs", {enumerable: true,get: function() { var returned = this.__obj__.configs;          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
@@ -36943,7 +36966,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
             }
         returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;},set: function(v) {objEach(v, function(a, i) {this[i] = dynamicTo(a);}, v);var elms = Object.keys(v).reduce(function(arr, key) { arr.push(key); arr.push(v[key]); return arr; }, []);v = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);this.__obj__.configs = v;}});}.bind(returned))();return returned;})});Object.defineProperty(module.exports.Configs, "global", {enumerable: true,get: function() { var returned = this.__obj__.global;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Configs' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.global = v;}});Object.defineProperty(module.exports.Configs, "defaultConfig", {enumerable: true,get: function() { var returned = this.__obj__.defaultConfig;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConfigSetting' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.defaultConfig = v;}});module.exports.Configs.getConfig = function($nn,$nnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }var returned = (init.allClasses.Configs.Configs_getConfig).call(this,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConfigSetting' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.Configs.prototype.load = function($nn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return (this.__obj__.load$1).call(this.__obj__,$nn);};module.exports.ConfigSetting = function ConfigSetting() {var __obj__ = (function($nn,$nnn,_optObj_){_optObj_ = _optObj_ || {};var defaultValue = typeof(_optObj_.defaultValue) === 'undefined' ? null : _optObj_.defaultValue;if(defaultValue !== null) {}return (([function($name, type, defaultValue) {
   return new T.ConfigSetting($name, type, defaultValue);
-}, null, null, 4, 3, 287, 5, 71, [], 46, [], 96, [], "new ConfigSetting"]
+}, null, null, 4, 3, 288, 5, 71, [], 46, [], 96, [], "new ConfigSetting"]
 [0])).call(this,$nn,$nnn,defaultValue);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "name", {enumerable: true,get: function() { var returned = this.__obj__.name;return returned;},set: function(v) {this.__obj__.name = v;}});Object.defineProperty(this, "type", {enumerable: true,get: function() { var returned = this.__obj__.type;return returned;},set: function(v) {this.__obj__.type = v;}});Object.defineProperty(this, "defaultValue", {enumerable: true,get: function() { var returned = this.__obj__.defaultValue;return returned;},set: function(v) {this.__obj__.defaultValue = v;}});};    Object.defineProperty(module.exports.ConfigSetting, 'class', {
       get: function() {
         function ConfigSetting() {
@@ -37030,7 +37053,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'NodeProviderImpl' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.load).call(this,$nn,$nnn);}.bind(this);}if(proto.updateList) { this.__obj__.updateList$1 = function($nn){return (this.updateList).call(this,$nn);}.bind(this);}if(proto.setAttribute) { this.__obj__.setAttribute$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setAttribute).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeAttribute) { this.__obj__.removeAttribute$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeAttribute).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setConfig) { this.__obj__.setConfig$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setConfig).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeConfig) { this.__obj__.removeConfig$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeConfig).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setValue) { this.__obj__.setValue$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.setValue).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.getAttribute) { this.__obj__.getAttribute$1 = function($nn){return (this.getAttribute).call(this,$nn);}.bind(this);}if(proto.getConfig) { this.__obj__.getConfig$1 = function($nn){return (this.getConfig).call(this,$nn);}.bind(this);}if(proto.addChild) { this.__obj__.addChild$2 = function($nn,$nnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Node' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.addChild).call(this,$nn,$nnn);}.bind(this);}if(proto.removeChild) { this.__obj__.removeChild$1 = function(dynamic){dynamic = dynamicFrom(dynamic);return (this.removeChild).call(this,dynamic);}.bind(this);}if(proto.getChild) { this.__obj__.getChild$1 = function($nn){var returned = (this.getChild).call(this,$nn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.get) { this.__obj__.$get$1 = function($nn){return (this.get).call(this,$nn);}.bind(this);}if(proto.forEachChild) { this.__obj__.forEachChild$1 = function($nn){return (this.forEachChild).call(this,$nn);}.bind(this);}if(proto.getSimpleMap) { this.__obj__.getSimpleMap$0 = function(){var returned = (this.getSimpleMap).call(this);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.onStartListListen) { this.__obj__.onStartListListen$0 = function(){return (this.onStartListListen).call(this);}.bind(this);}if(proto.onAllListCancel) { this.__obj__.onAllListCancel$0 = function(){return (this.onAllListCancel).call(this);}.bind(this);}if(proto.subscribe) { this.__obj__.subscribe$2 = function($nn,$nnn){$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.subscribe).call(this,$nn,$nnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.unsubscribe) { this.__obj__.unsubscribe$1 = function($nn){return (this.unsubscribe).call(this,$nn);}.bind(this);}if(proto.updateValue) { this.__obj__.updateValue$2$force = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.updateValue).call(this,$nn,force);}.bind(this);}if(proto.getInvokePermission) { this.__obj__.getInvokePermission$0 = function(){return (this.getInvokePermission).call(this);}.bind(this);}if(proto.getSetPermission) { this.__obj__.getSetPermission$0 = function(){return (this.getSetPermission).call(this);}.bind(this);}if(proto.invoke) { this.__obj__.invoke$4 = function($nn,$nnn,$nnnn,$nnnnn){          if($nn.constructor.name === '_JsonMap') {
+        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'NodeProviderImpl' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.load).call(this,$nn,$nnn);}.bind(this);}if(proto.updateList) { this.__obj__.updateList$1 = function($nn){return (this.updateList).call(this,$nn);}.bind(this);}if(proto.setAttribute) { this.__obj__.setAttribute$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setAttribute).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeAttribute) { this.__obj__.removeAttribute$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeAttribute).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setConfig) { this.__obj__.setConfig$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setConfig).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeConfig) { this.__obj__.removeConfig$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeConfig).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setValue) { this.__obj__.setValue$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.setValue).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.getAttribute) { this.__obj__.getAttribute$1 = function($nn){return (this.getAttribute).call(this,$nn);}.bind(this);}if(proto.getConfig) { this.__obj__.getConfig$1 = function($nn){return (this.getConfig).call(this,$nn);}.bind(this);}if(proto.addChild) { this.__obj__.addChild$2 = function($nn,$nnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Node' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.addChild).call(this,$nn,$nnn);}.bind(this);}if(proto.removeChild) { this.__obj__.removeChild$1 = function(dynamic){dynamic = dynamicFrom(dynamic);return (this.removeChild).call(this,dynamic);}.bind(this);}if(proto.getChild) { this.__obj__.getChild$1 = function($nn){var returned = (this.getChild).call(this,$nn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.get) { this.__obj__.$get$1 = function($nn){return (this.get).call(this,$nn);}.bind(this);}if(proto.forEachChild) { this.__obj__.forEachChild$1 = function($nn){return (this.forEachChild).call(this,$nn);}.bind(this);}if(proto.getSimpleMap) { this.__obj__.getSimpleMap$0 = function(){var returned = (this.getSimpleMap).call(this);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}if(proto.onStartListListen) { this.__obj__.onStartListListen$0 = function(){return (this.onStartListListen).call(this);}.bind(this);}if(proto.onAllListCancel) { this.__obj__.onAllListCancel$0 = function(){return (this.onAllListCancel).call(this);}.bind(this);}if(proto.subscribe) { this.__obj__.subscribe$2 = function($nn,$nnn){$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.subscribe).call(this,$nn,$nnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.unsubscribe) { this.__obj__.unsubscribe$1 = function($nn){return (this.unsubscribe).call(this,$nn);}.bind(this);}if(proto.updateValue) { this.__obj__.updateValue$2$force = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.updateValue).call(this,$nn,force);}.bind(this);}if(proto.getInvokePermission) { this.__obj__.getInvokePermission$0 = function(){return (this.getInvokePermission).call(this);}.bind(this);}if(proto.getSetPermission) { this.__obj__.getSetPermission$0 = function(){return (this.getSetPermission).call(this);}.bind(this);}if(proto.invoke) { this.__obj__.invoke$5 = function($nn,$nnn,$nnnn,$nnnnn,$nnnnnn){          if($nn.constructor.name === '_JsonMap') {
             $nn = $nn._original;
             Object.keys($nn).forEach(function(key) { $nn[key] = dynamicFrom($nn[key]); });
           } else {
@@ -37042,7 +37065,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'InvokeResponse' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.invoke).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.set) { this.__obj__.$indexSet = function($nn,$nnn){var returned = (this.set).call(this,$nn,$nnn);returned = dynamicTo(returned);return returned;}.bind(this);}        }
+        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'InvokeResponse' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Node' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }$nnnnnn = typeof($nnnnnn) === 'undefined' ? null : $nnnnnn;if($nnnnnn !== null) {}var returned = (this.invoke).call(this,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.set) { this.__obj__.$indexSet = function($nn,$nnn){var returned = (this.set).call(this,$nn,$nnn);returned = dynamicTo(returned);return returned;}.bind(this);}        }
 
         LocalNodeImpl.prototype = Object.create(module.exports.LocalNodeImpl.prototype);
 
@@ -37121,9 +37144,9 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.LocalNodeImpl.prototype.onStartListListen = function(){return (this.__obj__.onStartListListen$0).call(this.__obj__);};module.exports.LocalNodeImpl.prototype.onAllListCancel = function(){return (this.__obj__.onAllListCancel$0).call(this.__obj__);};module.exports.LocalNodeImpl.prototype.subscribe = function($nn,$nnn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.__obj__.subscribe$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RespSubscribeListener' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNodeImpl.prototype.unsubscribe = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.unsubscribe$1).call(this.__obj__,$nn);};module.exports.LocalNodeImpl.prototype.updateValue = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.__obj__.updateValue$2$force).call(this.__obj__,$nn,force);};module.exports.LocalNodeImpl.prototype.getInvokePermission = function(){return (this.__obj__.getInvokePermission$0).call(this.__obj__);};module.exports.LocalNodeImpl.prototype.getSetPermission = function(){return (this.__obj__.getSetPermission$0).call(this.__obj__);};module.exports.LocalNodeImpl.prototype.invoke = function($nn,$nnn,$nnnn,$nnnnn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.__obj__.invoke$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNodeImpl.prototype.set = function($nn,$nnn){var returned = (this.__obj__.$indexSet).call(this.__obj__,$nn,$nnn);returned = dynamicFrom(returned);return returned;};module.exports.NodeProviderImpl = function NodeProviderImpl() {var __obj__ = (function(){return (([function() {
+        returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.LocalNodeImpl.prototype.onStartListListen = function(){return (this.__obj__.onStartListListen$0).call(this.__obj__);};module.exports.LocalNodeImpl.prototype.onAllListCancel = function(){return (this.__obj__.onAllListCancel$0).call(this.__obj__);};module.exports.LocalNodeImpl.prototype.subscribe = function($nn,$nnn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.__obj__.subscribe$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RespSubscribeListener' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNodeImpl.prototype.unsubscribe = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.unsubscribe$1).call(this.__obj__,$nn);};module.exports.LocalNodeImpl.prototype.updateValue = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.__obj__.updateValue$2$force).call(this.__obj__,$nn,force);};module.exports.LocalNodeImpl.prototype.getInvokePermission = function(){return (this.__obj__.getInvokePermission$0).call(this.__obj__);};module.exports.LocalNodeImpl.prototype.getSetPermission = function(){return (this.__obj__.getSetPermission$0).call(this.__obj__);};module.exports.LocalNodeImpl.prototype.invoke = function($nn,$nnn,$nnnn,$nnnnn,$nnnnnn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }$nnnnnn = typeof($nnnnnn) === 'undefined' ? null : $nnnnnn;if($nnnnnn !== null) {}var returned = (this.__obj__.invoke$5).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNodeImpl.prototype.set = function($nn,$nnn){var returned = (this.__obj__.$indexSet).call(this.__obj__,$nn,$nnn);returned = dynamicFrom(returned);return returned;};module.exports.NodeProviderImpl = function NodeProviderImpl() {var __obj__ = (function(){return (([function() {
   return new T.NodeProviderImpl();
-}, null, null, 0, 0, 290, "new NodeProviderImpl"]
+}, null, null, 0, 0, 291, "new NodeProviderImpl"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.NodeProviderImpl, 'class', {
       get: function() {
         function NodeProviderImpl() {
@@ -37138,7 +37161,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.NodeProviderImpl, "_", {enumerable: false,value:(function NodeProviderImpl(__obj__) {var returned = Object.create(module.exports.NodeProviderImpl.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.NodeProviderImpl.prototype.get = function($nn){var returned = (this.__obj__.$index).call(this.__obj__,$nn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.NodeProviderImpl.prototype.bitwiseNegate = function(){var returned = (this.__obj__.$not).call(this.__obj__);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.InvokeResponse = function InvokeResponse() {var __obj__ = (function($nn,$nnn,$nnnn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }return (([function(responder, rid, node) {
   return new T.InvokeResponse(node, 0, null, null, "initialize", null, null, responder, rid, "initialize");
-}, null, null, 6, 0, 296, 120, [], 125, [], 113, [], "new InvokeResponse"]
+}, null, null, 6, 0, 297, 120, [], 125, [], 113, [], "new InvokeResponse"]
 [0])).call(this,$nn,$nnn,$nnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "onClose", {enumerable: true,get: function() { var returned = this.__obj__.onClose;return returned;},set: function(v) {this.__obj__.onClose = v;}});Object.defineProperty(this, "responder", {enumerable: true,get: function() { var returned = this.__obj__.responder;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Responder' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.responder = v;}});Object.defineProperty(this, "rid", {enumerable: true,get: function() { var returned = this.__obj__.rid;return returned;},set: function(v) {this.__obj__.rid = v;}});};    Object.defineProperty(module.exports.InvokeResponse, 'class', {
       get: function() {
         function InvokeResponse() {
@@ -37160,7 +37183,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   else
     node.get$disconnected();
   return t1;
-}, null, null, 6, 0, 296, 120, [], 125, [], 113, [], "new ListResponse"]
+}, null, null, 6, 0, 297, 120, [], 125, [], 113, [], "new ListResponse"]
 [0])).call(this,$nn,$nnn,$nnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "changes", {enumerable: true,get: function() { var returned = this.__obj__.changes;return returned;},set: function(v) {this.__obj__.changes = v;}});Object.defineProperty(this, "initialResponse", {enumerable: true,get: function() { var returned = this.__obj__.initialResponse;return returned;},set: function(v) {this.__obj__.initialResponse = v;}});Object.defineProperty(this, "responder", {enumerable: true,get: function() { var returned = this.__obj__.responder;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Responder' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.responder = v;}});Object.defineProperty(this, "rid", {enumerable: true,get: function() { var returned = this.__obj__.rid;return returned;},set: function(v) {this.__obj__.rid = v;}});};    Object.defineProperty(module.exports.ListResponse, 'class', {
       get: function() {
         function ListResponse() {
@@ -37180,7 +37203,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   if (node.get$valueReady() && node.get$lastValueUpdate() != null)
     t1.addValue$1(node.get$lastValueUpdate());
   return t1;
-}, null, null, 10, 0, 298, 77, [], 113, [], 149, [], 150, [], 48, [], "new RespSubscribeController"]
+}, null, null, 10, 0, 299, 77, [], 113, [], 149, [], 150, [], 48, [], "new RespSubscribeController"]
 [0])).call(this,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "response", {enumerable: true,get: function() { var returned = this.__obj__.response;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'SubscribeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.response = v;}});Object.defineProperty(this, "sid", {enumerable: true,get: function() { var returned = this.__obj__.sid;return returned;},set: function(v) {this.__obj__.sid = v;}});Object.defineProperty(this, "lastValues", {enumerable: true,get: function() { var returned = this.__obj__.lastValues;return returned;},set: function(v) {this.__obj__.lastValues = v;}});Object.defineProperty(this, "permitted", {enumerable: true,set: function(v) {(function($nn){return (this.__obj__.set$permitted).call(this.__obj__,$nn);}).call(this, v);}});Object.defineProperty(this, "cacheLevel", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$cacheLevel).call(this.__obj__);}).apply(this, arguments);return returned;},set: function(v) {this.__obj__.get$cacheLevel = function() { return v; };}});};    Object.defineProperty(module.exports.RespSubscribeController, 'class', {
       get: function() {
         function RespSubscribeController() {
@@ -37195,7 +37218,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.RespSubscribeController, "_", {enumerable: false,value:(function RespSubscribeController(__obj__) {var returned = Object.create(module.exports.RespSubscribeController.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});Object.defineProperty(this, "response", {enumerable: true,get: function() { var returned = this.__obj__.response;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'SubscribeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.response = v;}});Object.defineProperty(this, "sid", {enumerable: true,get: function() { var returned = this.__obj__.sid;return returned;},set: function(v) {this.__obj__.sid = v;}});Object.defineProperty(this, "lastValues", {enumerable: true,get: function() { var returned = this.__obj__.lastValues;return returned;},set: function(v) {this.__obj__.lastValues = v;}});Object.defineProperty(this, "permitted", {enumerable: true,set: function(v) {(function($nn){return (this.__obj__.set$permitted).call(this.__obj__,$nn);}).call(this, v);}});Object.defineProperty(this, "cacheLevel", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$cacheLevel).call(this.__obj__);}).apply(this, arguments);return returned;},set: function(v) {this.__obj__.get$cacheLevel = function() { return v; };}});}.bind(returned))();return returned;})});module.exports.RespSubscribeController.prototype.addValue = function($nn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }return (this.__obj__.addValue$1).call(this.__obj__,$nn);};module.exports.RespSubscribeController.prototype.mergeValues = function(){return (this.__obj__.mergeValues$0).call(this.__obj__);};module.exports.RespSubscribeController.prototype.process = function(){var returned = (this.__obj__.process$0).call(this.__obj__);returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;};module.exports.RespSubscribeController.prototype.destroy = function(){return (this.__obj__.destroy$0).call(this.__obj__);};module.exports.SubscribeResponse = function SubscribeResponse() {var __obj__ = (function($nn,$nnn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }return (([function(responder, rid) {
   return new T.SubscribeResponse(P.LinkedHashMap_LinkedHashMap(null, null, null, P.String, T.RespSubscribeController), P.LinkedHashMap_LinkedHashMap(null, null, null, P.$int, T.RespSubscribeController), P.LinkedHashSet_LinkedHashSet(null, null, null, T.RespSubscribeController), responder, rid, "initialize");
-}, null, null, 4, 0, 295, 120, [], 125, [], "new SubscribeResponse"]
+}, null, null, 4, 0, 296, 120, [], 125, [], "new SubscribeResponse"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "subsriptions", {enumerable: true,get: function() { var returned = this.__obj__.subsriptions;          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
@@ -37258,7 +37281,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
             }
         returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;},set: function(v) {objEach(v, function(a, i) {this[i] = dynamicTo(a);}, v);var elms = Object.keys(v).reduce(function(arr, key) { arr.push(key); arr.push(v[key]); return arr; }, []);v = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);this.__obj__.subsriptionids = v;}});Object.defineProperty(this, "changed", {enumerable: true,get: function() { var returned = this.__obj__.changed;return returned;},set: function(v) {this.__obj__.changed = v;}});Object.defineProperty(this, "responder", {enumerable: true,get: function() { var returned = this.__obj__.responder;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Responder' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.responder = v;}});Object.defineProperty(this, "rid", {enumerable: true,get: function() { var returned = this.__obj__.rid;return returned;},set: function(v) {this.__obj__.rid = v;}});}.bind(returned))();return returned;})});module.exports.SubscribeResponse.prototype.add = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (this.__obj__.add$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);};module.exports.SubscribeResponse.prototype.remove = function($nn){return (this.__obj__.remove$1).call(this.__obj__,$nn);};module.exports.SubscribeResponse.prototype.subscriptionChanged = function($nn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }return (this.__obj__.subscriptionChanged$1).call(this.__obj__,$nn);};module.exports.SubscribeResponse.prototype.processor = function(){return (this.__obj__.processor$0).call(this.__obj__);};module.exports.SubscribeResponse.prototype.close = function($nn){$nn = typeof($nn) === 'undefined' ? null : $nn;if($nn !== null) {if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }}return (this.__obj__.close$1).call(this.__obj__,$nn);};module.exports.RespSubscribeListener = function RespSubscribeListener() {var __obj__ = (function($nn,$nnn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }return (([function(node, callback) {
   return new T.RespSubscribeListener(callback, node);
-}, null, null, 4, 0, 297, 113, [], 114, [], "new RespSubscribeListener"]
+}, null, null, 4, 0, 298, 113, [], 114, [], "new RespSubscribeListener"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "callback", {enumerable: true,get: function() { var returned = this.__obj__.callback;return returned;},set: function(v) {this.__obj__.callback = v;}});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});};    Object.defineProperty(module.exports.RespSubscribeListener, 'class', {
       get: function() {
         function RespSubscribeListener() {
@@ -37273,7 +37296,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.RespSubscribeListener, "_", {enumerable: false,value:(function RespSubscribeListener(__obj__) {var returned = Object.create(module.exports.RespSubscribeListener.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "callback", {enumerable: true,get: function() { var returned = this.__obj__.callback;return returned;},set: function(v) {this.__obj__.callback = v;}});Object.defineProperty(this, "node", {enumerable: true,get: function() { var returned = this.__obj__.node;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalNode' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.node = v;}});}.bind(returned))();return returned;})});module.exports.RespSubscribeListener.prototype.cancel = function(){return (this.__obj__.cancel$0).call(this.__obj__);};module.exports.NodeProvider = function NodeProvider() {var __obj__ = (function(){return (([function() {
   return new T.NodeProvider();
-}, null, null, 0, 0, 293, "new NodeProvider"]
+}, null, null, 0, 0, 294, "new NodeProvider"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.NodeProvider, 'class', {
       get: function() {
         function NodeProvider() {
@@ -37342,7 +37365,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
         function LocalNode() {
           module.exports.LocalNode.apply(this, arguments);
           var proto = Object.getPrototypeOf(this);
-    if(proto.onStartListListen) { this.__obj__.onStartListListen$0 = function(){return (this.onStartListListen).call(this);}.bind(this);}if(proto.onAllListCancel) { this.__obj__.onAllListCancel$0 = function(){return (this.onAllListCancel).call(this);}.bind(this);}if(proto.subscribe) { this.__obj__.subscribe$2 = function($nn,$nnn){$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.subscribe).call(this,$nn,$nnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.unsubscribe) { this.__obj__.unsubscribe$1 = function($nn){return (this.unsubscribe).call(this,$nn);}.bind(this);}if(proto.updateValue) { this.__obj__.updateValue$2$force = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.updateValue).call(this,$nn,force);}.bind(this);}if(proto.getInvokePermission) { this.__obj__.getInvokePermission$0 = function(){return (this.getInvokePermission).call(this);}.bind(this);}if(proto.getSetPermission) { this.__obj__.getSetPermission$0 = function(){return (this.getSetPermission).call(this);}.bind(this);}if(proto.invoke) { this.__obj__.invoke$4 = function($nn,$nnn,$nnnn,$nnnnn){          if($nn.constructor.name === '_JsonMap') {
+    if(proto.onStartListListen) { this.__obj__.onStartListListen$0 = function(){return (this.onStartListListen).call(this);}.bind(this);}if(proto.onAllListCancel) { this.__obj__.onAllListCancel$0 = function(){return (this.onAllListCancel).call(this);}.bind(this);}if(proto.subscribe) { this.__obj__.subscribe$2 = function($nn,$nnn){$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.subscribe).call(this,$nn,$nnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.unsubscribe) { this.__obj__.unsubscribe$1 = function($nn){return (this.unsubscribe).call(this,$nn);}.bind(this);}if(proto.updateValue) { this.__obj__.updateValue$2$force = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? null : _optObj_.force;if(force !== null) {}return (this.updateValue).call(this,$nn,force);}.bind(this);}if(proto.getInvokePermission) { this.__obj__.getInvokePermission$0 = function(){return (this.getInvokePermission).call(this);}.bind(this);}if(proto.getSetPermission) { this.__obj__.getSetPermission$0 = function(){return (this.getSetPermission).call(this);}.bind(this);}if(proto.invoke) { this.__obj__.invoke$5 = function($nn,$nnn,$nnnn,$nnnnn,$nnnnnn){          if($nn.constructor.name === '_JsonMap') {
             $nn = $nn._original;
             Object.keys($nn).forEach(function(key) { $nn[key] = dynamicFrom($nn[key]); });
           } else {
@@ -37354,7 +37377,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'InvokeResponse' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.invoke).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setAttribute) { this.__obj__.setAttribute$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setAttribute).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeAttribute) { this.__obj__.removeAttribute$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeAttribute).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setConfig) { this.__obj__.setConfig$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setConfig).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeConfig) { this.__obj__.removeConfig$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeConfig).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setValue) { this.__obj__.setValue$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.setValue).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.get) { this.__obj__.$index = function($nn){var returned = (this.get).call(this,$nn);returned = dynamicTo(returned);return returned;}.bind(this);}if(proto.set) { this.__obj__.$indexSet = function($nn,$nnn){var returned = (this.set).call(this,$nn,$nnn);returned = dynamicTo(returned);return returned;}.bind(this);}if(proto.getAttribute) { this.__obj__.getAttribute$1 = function($nn){return (this.getAttribute).call(this,$nn);}.bind(this);}if(proto.getConfig) { this.__obj__.getConfig$1 = function($nn){return (this.getConfig).call(this,$nn);}.bind(this);}if(proto.addChild) { this.__obj__.addChild$2 = function($nn,$nnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Node' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.addChild).call(this,$nn,$nnn);}.bind(this);}if(proto.removeChild) { this.__obj__.removeChild$1 = function(dynamic){dynamic = dynamicFrom(dynamic);return (this.removeChild).call(this,dynamic);}.bind(this);}if(proto.getChild) { this.__obj__.getChild$1 = function($nn){var returned = (this.getChild).call(this,$nn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.forEachChild) { this.__obj__.forEachChild$1 = function($nn){return (this.forEachChild).call(this,$nn);}.bind(this);}if(proto.getSimpleMap) { this.__obj__.getSimpleMap$0 = function(){var returned = (this.getSimpleMap).call(this);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}        }
+        $nn = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { $nn[key] = values[index]; });}if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'InvokeResponse' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Node' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }$nnnnnn = typeof($nnnnnn) === 'undefined' ? null : $nnnnnn;if($nnnnnn !== null) {}var returned = (this.invoke).call(this,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setAttribute) { this.__obj__.setAttribute$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setAttribute).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeAttribute) { this.__obj__.removeAttribute$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeAttribute).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setConfig) { this.__obj__.setConfig$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Responder' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }if(!$nnnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnnn.constructor.name;$nnnnn = module.exports[_type]._($nnnnn); }var returned = (this.setConfig).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.removeConfig) { this.__obj__.removeConfig$3 = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }var returned = (this.removeConfig).call(this,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.setValue) { this.__obj__.setValue$4 = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Responder' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }if(!$nnnn.__isWrapped__) {var _type = typeof(module.exports[$nnnn.constructor.name]) === 'undefined' ? 'Response' : $nnnn.constructor.name;$nnnn = module.exports[_type]._($nnnn); }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.setValue).call(this,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.get) { this.__obj__.$index = function($nn){var returned = (this.get).call(this,$nn);returned = dynamicTo(returned);return returned;}.bind(this);}if(proto.set) { this.__obj__.$indexSet = function($nn,$nnn){var returned = (this.set).call(this,$nn,$nnn);returned = dynamicTo(returned);return returned;}.bind(this);}if(proto.getAttribute) { this.__obj__.getAttribute$1 = function($nn){return (this.getAttribute).call(this,$nn);}.bind(this);}if(proto.getConfig) { this.__obj__.getConfig$1 = function($nn){return (this.getConfig).call(this,$nn);}.bind(this);}if(proto.addChild) { this.__obj__.addChild$2 = function($nn,$nnn){if(!$nnn.__isWrapped__) {var _type = typeof(module.exports[$nnn.constructor.name]) === 'undefined' ? 'Node' : $nnn.constructor.name;$nnn = module.exports[_type]._($nnn); }return (this.addChild).call(this,$nn,$nnn);}.bind(this);}if(proto.removeChild) { this.__obj__.removeChild$1 = function(dynamic){dynamic = dynamicFrom(dynamic);return (this.removeChild).call(this,dynamic);}.bind(this);}if(proto.getChild) { this.__obj__.getChild$1 = function($nn){var returned = (this.getChild).call(this,$nn);if(!returned.__isWrapped__) { returned = returned.__obj__; }return returned;}.bind(this);}if(proto.forEachChild) { this.__obj__.forEachChild$1 = function($nn){return (this.forEachChild).call(this,$nn);}.bind(this);}if(proto.getSimpleMap) { this.__obj__.getSimpleMap$0 = function(){var returned = (this.getSimpleMap).call(this);objEach(returned, function(a, i) {this[i] = dynamicTo(a);}, returned);var elms = Object.keys(returned).reduce(function(arr, key) { arr.push(key); arr.push(returned[key]); return arr; }, []);returned = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);return returned;}.bind(this);}        }
 
         LocalNode.prototype = Object.create(module.exports.LocalNode.prototype);
 
@@ -37409,7 +37432,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
                 values.push(cell.hashMapCellValue);
               });
             }
-        returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;},set: function(v) {objEach(v, function(a, i) {this[i] = dynamicTo(a);}, v);var elms = Object.keys(v).reduce(function(arr, key) { arr.push(key); arr.push(v[key]); return arr; }, []);v = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);this.__obj__.children = v;}});}.bind(returned))();return returned;})});module.exports.LocalNode.prototype.onStartListListen = function(){return (this.__obj__.onStartListListen$0).call(this.__obj__);};module.exports.LocalNode.prototype.onAllListCancel = function(){return (this.__obj__.onAllListCancel$0).call(this.__obj__);};module.exports.LocalNode.prototype.subscribe = function($nn,$nnn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.__obj__.subscribe$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RespSubscribeListener' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.unsubscribe = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.unsubscribe$1).call(this.__obj__,$nn);};module.exports.LocalNode.prototype.updateValue = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? false : _optObj_.force;if(force !== null) {}return (this.__obj__.updateValue$2$force).call(this.__obj__,$nn,force);};module.exports.LocalNode.prototype.getInvokePermission = function(){return (this.__obj__.getInvokePermission$0).call(this.__obj__);};module.exports.LocalNode.prototype.getSetPermission = function(){return (this.__obj__.getSetPermission$0).call(this.__obj__);};module.exports.LocalNode.prototype.invoke = function($nn,$nnn,$nnnn,$nnnnn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.__obj__.invoke$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.setAttribute = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setAttribute$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.removeAttribute = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeAttribute$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.setConfig = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setConfig$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.removeConfig = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeConfig$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.setValue = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.__obj__.setValue$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.get = function($nn){var returned = (this.__obj__.$index).call(this.__obj__,$nn);returned = dynamicFrom(returned);return returned;};module.exports.LocalNode.prototype.set = function($nn,$nnn){var returned = (this.__obj__.$indexSet).call(this.__obj__,$nn,$nnn);returned = dynamicFrom(returned);return returned;};module.exports.LocalNode.prototype.getAttribute = function($nn){return (this.__obj__.getAttribute$1).call(this.__obj__,$nn);};module.exports.LocalNode.prototype.getConfig = function($nn){return (this.__obj__.getConfig$1).call(this.__obj__,$nn);};module.exports.LocalNode.prototype.addChild = function($nn,$nnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (this.__obj__.addChild$2).call(this.__obj__,$nn,$nnn);};module.exports.LocalNode.prototype.removeChild = function(dynamic){dynamic = dynamicTo(dynamic);return (this.__obj__.removeChild$1).call(this.__obj__,dynamic);};module.exports.LocalNode.prototype.getChild = function($nn){var returned = (this.__obj__.getChild$1).call(this.__obj__,$nn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Node' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.forEachChild = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.forEachChild$1).call(this.__obj__,$nn);};module.exports.LocalNode.prototype.getSimpleMap = function(){var returned = (this.__obj__.getSimpleMap$0).call(this.__obj__);          if(returned.constructor.name === '_JsonMap') {
+        returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;},set: function(v) {objEach(v, function(a, i) {this[i] = dynamicTo(a);}, v);var elms = Object.keys(v).reduce(function(arr, key) { arr.push(key); arr.push(v[key]); return arr; }, []);v = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);this.__obj__.children = v;}});}.bind(returned))();return returned;})});module.exports.LocalNode.prototype.onStartListListen = function(){return (this.__obj__.onStartListListen$0).call(this.__obj__);};module.exports.LocalNode.prototype.onAllListCancel = function(){return (this.__obj__.onAllListCancel$0).call(this.__obj__);};module.exports.LocalNode.prototype.subscribe = function($nn,$nnn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}var returned = (this.__obj__.subscribe$2).call(this.__obj__,$nn,$nnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'RespSubscribeListener' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.unsubscribe = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.unsubscribe$1).call(this.__obj__,$nn);};module.exports.LocalNode.prototype.updateValue = function($nn,_optObj_){_optObj_ = _optObj_ || {};var force = typeof(_optObj_.force) === 'undefined' ? false : _optObj_.force;if(force !== null) {}return (this.__obj__.updateValue$2$force).call(this.__obj__,$nn,force);};module.exports.LocalNode.prototype.getInvokePermission = function(){return (this.__obj__.getInvokePermission$0).call(this.__obj__);};module.exports.LocalNode.prototype.getSetPermission = function(){return (this.__obj__.getSetPermission$0).call(this.__obj__);};module.exports.LocalNode.prototype.invoke = function($nn,$nnn,$nnnn,$nnnnn,$nnnnnn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }$nnnnnn = typeof($nnnnnn) === 'undefined' ? null : $nnnnnn;if($nnnnnn !== null) {}var returned = (this.__obj__.invoke$5).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'InvokeResponse' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.setAttribute = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setAttribute$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.removeAttribute = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeAttribute$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.setConfig = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }if(!$nnnnn.__isWrapped__) { $nnnnn = $nnnnn.__obj__; }var returned = (this.__obj__.setConfig$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.removeConfig = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }var returned = (this.__obj__.removeConfig$3).call(this.__obj__,$nn,$nnn,$nnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.setValue = function($nn,$nnn,$nnnn,$nnnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }if(!$nnnn.__isWrapped__) { $nnnn = $nnnn.__obj__; }$nnnnn = typeof($nnnnn) === 'undefined' ? null : $nnnnn;if($nnnnn !== null) {}var returned = (this.__obj__.setValue$4).call(this.__obj__,$nn,$nnn,$nnnn,$nnnnn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Response' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.get = function($nn){var returned = (this.__obj__.$index).call(this.__obj__,$nn);returned = dynamicFrom(returned);return returned;};module.exports.LocalNode.prototype.set = function($nn,$nnn){var returned = (this.__obj__.$indexSet).call(this.__obj__,$nn,$nnn);returned = dynamicFrom(returned);return returned;};module.exports.LocalNode.prototype.getAttribute = function($nn){return (this.__obj__.getAttribute$1).call(this.__obj__,$nn);};module.exports.LocalNode.prototype.getConfig = function($nn){return (this.__obj__.getConfig$1).call(this.__obj__,$nn);};module.exports.LocalNode.prototype.addChild = function($nn,$nnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }return (this.__obj__.addChild$2).call(this.__obj__,$nn,$nnn);};module.exports.LocalNode.prototype.removeChild = function(dynamic){dynamic = dynamicTo(dynamic);return (this.__obj__.removeChild$1).call(this.__obj__,dynamic);};module.exports.LocalNode.prototype.getChild = function($nn){var returned = (this.__obj__.getChild$1).call(this.__obj__,$nn);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Node' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;};module.exports.LocalNode.prototype.forEachChild = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (this.__obj__.forEachChild$1).call(this.__obj__,$nn);};module.exports.LocalNode.prototype.getSimpleMap = function(){var returned = (this.__obj__.getSimpleMap$0).call(this.__obj__);          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
           } else {
@@ -37423,7 +37446,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
             }
         returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.Response = function Response() {var __obj__ = (function($nn,$nnn){if(!$nn.__isWrapped__) { $nn = $nn.__obj__; }return (([function(responder, rid) {
   return new T.Response(responder, rid, "initialize");
-}, null, null, 4, 0, 295, 120, [], 125, [], "new Response"]
+}, null, null, 4, 0, 296, 120, [], 125, [], "new Response"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "responder", {enumerable: true,get: function() { var returned = this.__obj__.responder;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Responder' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.responder = v;}});Object.defineProperty(this, "rid", {enumerable: true,get: function() { var returned = this.__obj__.rid;return returned;},set: function(v) {this.__obj__.rid = v;}});};    Object.defineProperty(module.exports.Response, 'class', {
       get: function() {
         function Response() {
@@ -37440,7 +37463,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   var t1 = new T.Responder(null, [], P.LinkedHashMap_LinkedHashMap(null, null, null, P.$int, T.Response), null, nodeProvider, null, null, null, [], [], false);
   t1.Responder$1(nodeProvider);
   return t1;
-}, null, null, 2, 0, 294, 56, [], "new Responder"]
+}, null, null, 2, 0, 295, 56, [], "new Responder"]
 [0])).call(this,$nn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "reqId", {enumerable: true,get: function() { var returned = this.__obj__.reqId;return returned;},set: function(v) {this.__obj__.reqId = v;}});Object.defineProperty(this, "groups", {enumerable: true,get: function() { var returned = this.__obj__.groups;returned = [].concat(returned);returned.forEach(function(a, i) {}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = a;}, v);this.__obj__.groups = v;}});Object.defineProperty(this, "nodeProvider", {enumerable: true,get: function() { var returned = this.__obj__.nodeProvider;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'NodeProvider' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.nodeProvider = v;}});Object.defineProperty(this, "connection", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$connection).call(this.__obj__);}).apply(this, arguments);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConnectionChannel' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.get$connection = function() { return v; };}});};    Object.defineProperty(module.exports.Responder, 'class', {
       get: function() {
         function Responder() {
@@ -37541,7 +37564,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   j.configs = t1.$index(map, "configs");
   j.getDependencies = t1.$index(map, "getDependencies");
   return j;
-}, null, null, 2, 0, 305, 159, [], "new DSLinkJSON$from"]
+}, null, null, 2, 0, 306, 160, [], "new DSLinkJSON$from"]
 [0])).call(this,$nn);}).apply(this, arguments);return module.exports.DSLinkJSON._(__obj__);};module.exports.DSLinkJSON.prototype.verify = function(){return (this.__obj__.verify$0).call(this.__obj__);};module.exports.DSLinkJSON.prototype.save = function(){var returned = (this.__obj__.save$0).call(this.__obj__);          if(returned.constructor.name === '_JsonMap') {
             returned = returned._original;
             Object.keys(returned).forEach(function(key) { returned[key] = dynamicFrom(returned[key]); });
@@ -37556,7 +37579,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
             }
         returned = {};values.forEach(function(key, i) { values[i] = dynamicFrom(key); });keys.forEach(function(key, index) { returned[key] = values[index]; });}return returned;};module.exports.buildActionIO = function($nn){objEach($nn, function(a, i) {this[i] = dynamicTo(a);}, $nn);var elms = Object.keys($nn).reduce(function(arr, key) { arr.push(key); arr.push($nn[key]); return arr; }, []);$nn = new P.LinkedHashMap_LinkedHashMap$_literal(elms,P.String,null);var returned = (this.buildActionIO).call(this,$nn);returned = [].concat(returned);returned.forEach(function(a, i) {this[i] = dynamicFrom(a);}, returned);return returned;};module.exports.buildEnumType = function($nn){return (this.buildEnumType).call(this,$nn);};module.exports.Scheduler = function Scheduler() {var __obj__ = (function(){return (([function() {
   return new Q.Scheduler();
-}, null, null, 0, 0, 307, "new Scheduler"]
+}, null, null, 0, 0, 308, "new Scheduler"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.Scheduler, 'class', {
       get: function() {
         function Scheduler() {
@@ -37571,7 +37594,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.Scheduler, "_", {enumerable: false,value:(function Scheduler(__obj__) {var returned = Object.create(module.exports.Scheduler.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});module.exports.Scheduler.currentTimer = function(){return (init.allClasses.Scheduler.Scheduler_currentTimer).call(this);};module.exports.Scheduler.cancelCurrentTimer = function(){return (init.allClasses.Scheduler.Scheduler_cancelCurrentTimer).call(this);};module.exports.Scheduler.every = function(dynamic,$nn){dynamic = dynamicTo(dynamic);$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (init.allClasses.Scheduler.Scheduler_every).call(this,dynamic,$nn);};module.exports.Scheduler.repeat = function($nn,$nnn){$nnn = {call$0: function() {var returned = $nnn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};var returned = (init.allClasses.Scheduler.Scheduler_repeat).call(this,$nn,$nnn);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {val = dynamicFrom(val);then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.Scheduler.tick = function($nn,$nnn,$nnnn){if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }$nnnn = {call$0: function() {var returned = $nnnn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};var returned = (init.allClasses.Scheduler.Scheduler_tick).call(this,$nn,$nnn,$nnnn);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {val = dynamicFrom(val);then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.Scheduler.runLater = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (init.allClasses.Scheduler.Scheduler_runLater).call(this,$nn);};module.exports.Scheduler.later = function($nn){$nn = {call$0: function() {var returned = $nn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};var returned = (init.allClasses.Scheduler.Scheduler_later).call(this,$nn);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {val = dynamicFrom(val);then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.Scheduler.after = function($nn,$nnn){$nnn = {call$0: function() {var returned = $nnn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};var returned = (init.allClasses.Scheduler.Scheduler_after).call(this,$nn,$nnn);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {val = dynamicFrom(val);then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.Scheduler.runAfter = function($nn,$nnn){$nnn = {call$0: function() {var returned = $nnn.apply(this, arguments);returned = dynamicFrom(returned);return returned;}};return (init.allClasses.Scheduler.Scheduler_runAfter).call(this,$nn,$nnn);};module.exports.Interval = function Interval() {var __obj__ = (function($nn){return (([function(duration) {
   return new Q.Interval(duration);
-}, null, null, 2, 0, 306, 9, [], "new Interval"]
+}, null, null, 2, 0, 307, 9, [], "new Interval"]
 [0])).call(this,$nn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "duration", {enumerable: true,get: function() { var returned = this.__obj__.duration;return returned;},set: function(v) {this.__obj__.duration = v;}});Object.defineProperty(this, "inMilliseconds", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$inMilliseconds).call(this.__obj__);}).apply(this, arguments);return returned;},set: function(v) {this.__obj__.get$inMilliseconds = function() { return v; };}});};    Object.defineProperty(module.exports.Interval, 'class', {
       get: function() {
         function Interval() {
@@ -37586,21 +37609,21 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.Interval, "_", {enumerable: false,value:(function Interval(__obj__) {var returned = Object.create(module.exports.Interval.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "duration", {enumerable: true,get: function() { var returned = this.__obj__.duration;return returned;},set: function(v) {this.__obj__.duration = v;}});Object.defineProperty(this, "inMilliseconds", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$inMilliseconds).call(this.__obj__);}).apply(this, arguments);return returned;},set: function(v) {this.__obj__.get$inMilliseconds = function() { return v; };}});}.bind(returned))();return returned;})});Object.defineProperty(module.exports.Interval, "ONE_MILLISECOND", {enumerable: true,get: function() { var returned = this.__obj__.ONE_MILLISECOND;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.ONE_MILLISECOND = v;}});Object.defineProperty(module.exports.Interval, "TWO_MILLISECONDS", {enumerable: true,get: function() { var returned = this.__obj__.TWO_MILLISECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.TWO_MILLISECONDS = v;}});Object.defineProperty(module.exports.Interval, "FOUR_MILLISECONDS", {enumerable: true,get: function() { var returned = this.__obj__.FOUR_MILLISECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.FOUR_MILLISECONDS = v;}});Object.defineProperty(module.exports.Interval, "EIGHT_MILLISECONDS", {enumerable: true,get: function() { var returned = this.__obj__.EIGHT_MILLISECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.EIGHT_MILLISECONDS = v;}});Object.defineProperty(module.exports.Interval, "SIXTEEN_MILLISECONDS", {enumerable: true,get: function() { var returned = this.__obj__.SIXTEEN_MILLISECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.SIXTEEN_MILLISECONDS = v;}});Object.defineProperty(module.exports.Interval, "THIRTY_MILLISECONDS", {enumerable: true,get: function() { var returned = this.__obj__.THIRTY_MILLISECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.THIRTY_MILLISECONDS = v;}});Object.defineProperty(module.exports.Interval, "FIFTY_MILLISECONDS", {enumerable: true,get: function() { var returned = this.__obj__.FIFTY_MILLISECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.FIFTY_MILLISECONDS = v;}});Object.defineProperty(module.exports.Interval, "ONE_HUNDRED_MILLISECONDS", {enumerable: true,get: function() { var returned = this.__obj__.ONE_HUNDRED_MILLISECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.ONE_HUNDRED_MILLISECONDS = v;}});Object.defineProperty(module.exports.Interval, "TWO_HUNDRED_MILLISECONDS", {enumerable: true,get: function() { var returned = this.__obj__.TWO_HUNDRED_MILLISECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.TWO_HUNDRED_MILLISECONDS = v;}});Object.defineProperty(module.exports.Interval, "THREE_HUNDRED_MILLISECONDS", {enumerable: true,get: function() { var returned = this.__obj__.THREE_HUNDRED_MILLISECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.THREE_HUNDRED_MILLISECONDS = v;}});Object.defineProperty(module.exports.Interval, "QUARTER_SECOND", {enumerable: true,get: function() { var returned = this.__obj__.QUARTER_SECOND;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.QUARTER_SECOND = v;}});Object.defineProperty(module.exports.Interval, "HALF_SECOND", {enumerable: true,get: function() { var returned = this.__obj__.HALF_SECOND;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.HALF_SECOND = v;}});Object.defineProperty(module.exports.Interval, "ONE_SECOND", {enumerable: true,get: function() { var returned = this.__obj__.ONE_SECOND;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.ONE_SECOND = v;}});Object.defineProperty(module.exports.Interval, "TWO_SECONDS", {enumerable: true,get: function() { var returned = this.__obj__.TWO_SECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.TWO_SECONDS = v;}});Object.defineProperty(module.exports.Interval, "THREE_SECONDS", {enumerable: true,get: function() { var returned = this.__obj__.THREE_SECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.THREE_SECONDS = v;}});Object.defineProperty(module.exports.Interval, "FOUR_SECONDS", {enumerable: true,get: function() { var returned = this.__obj__.FOUR_SECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.FOUR_SECONDS = v;}});Object.defineProperty(module.exports.Interval, "FIVE_SECONDS", {enumerable: true,get: function() { var returned = this.__obj__.FIVE_SECONDS;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.FIVE_SECONDS = v;}});Object.defineProperty(module.exports.Interval, "ONE_MINUTE", {enumerable: true,get: function() { var returned = this.__obj__.ONE_MINUTE;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Interval' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.ONE_MINUTE = v;}});module.exports.Interval.forMilliseconds = function() {var __obj__ = (function($nn){return (([function(ms) {
   return new Q.Interval(P.Duration$(0, 0, 0, ms, 0, 0));
-}, null, null, 2, 0, 18, 160, [], "new Interval$forMilliseconds"]
+}, null, null, 2, 0, 18, 161, [], "new Interval$forMilliseconds"]
 [0])).call(this,$nn);}).apply(this, arguments);return module.exports.Interval._(__obj__);};module.exports.Interval.forSeconds = function() {var __obj__ = (function($nn){return (([function(seconds) {
   return new Q.Interval(P.Duration$(0, 0, 0, 0, 0, seconds));
-}, null, null, 2, 0, 18, 161, [], "new Interval$forSeconds"]
+}, null, null, 2, 0, 18, 162, [], "new Interval$forSeconds"]
 [0])).call(this,$nn);}).apply(this, arguments);return module.exports.Interval._(__obj__);};module.exports.Interval.forMinutes = function() {var __obj__ = (function($nn){return (([function(minutes) {
   return new Q.Interval(P.Duration$(0, 0, 0, 0, minutes, 0));
-}, null, null, 2, 0, 18, 162, [], "new Interval$forMinutes"]
+}, null, null, 2, 0, 18, 163, [], "new Interval$forMinutes"]
 [0])).call(this,$nn);}).apply(this, arguments);return module.exports.Interval._(__obj__);};module.exports.Interval.forHours = function() {var __obj__ = (function($nn){return (([function(hours) {
   return new Q.Interval(P.Duration$(0, hours, 0, 0, 0, 0));
-}, null, null, 2, 0, 18, 163, [], "new Interval$forHours"]
+}, null, null, 2, 0, 18, 164, [], "new Interval$forHours"]
 [0])).call(this,$nn);}).apply(this, arguments);return module.exports.Interval._(__obj__);};module.exports.updateLogLevel = function($nn){return (this.updateLogLevel).call(this,$nn);};module.exports.PrivateKey = function PrivateKey() {var __obj__ = (function($nn,$nnn){$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}return (([function(ecPrivateKey, ecPublicKey) {
   var t1 = new K.PrivateKey(null, ecPrivateKey, ecPublicKey);
   t1.PrivateKey$2(ecPrivateKey, ecPublicKey);
   return t1;
-}, null, null, 2, 2, 269, 5, 121, [], 122, [], "new PrivateKey"]
+}, null, null, 2, 2, 270, 5, 121, [], 122, [], "new PrivateKey"]
 [0])).call(this,$nn,$nnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "publicKey", {enumerable: true,get: function() { var returned = this.__obj__.publicKey;return returned;},set: function(v) {this.__obj__.publicKey = v;}});Object.defineProperty(this, "ecPrivateKey", {enumerable: true,get: function() { var returned = this.__obj__.ecPrivateKey;return returned;},set: function(v) {this.__obj__.ecPrivateKey = v;}});Object.defineProperty(this, "ecPublicKey", {enumerable: true,get: function() { var returned = this.__obj__.ecPublicKey;return returned;},set: function(v) {this.__obj__.ecPublicKey = v;}});};    Object.defineProperty(module.exports.PrivateKey, 'class', {
       get: function() {
         function PrivateKey() {
@@ -37624,7 +37647,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   gen.init$1(params);
   pair = gen.generateKeyPair$0();
   return K.PrivateKey$(pair.privateKey, pair.publicKey);
-}, null, null, 0, 0, 271, "new PrivateKey$generateSync"]
+}, null, null, 0, 0, 272, "new PrivateKey$generateSync"]
 [0])).call(this);}).apply(this, arguments);return module.exports.PrivateKey._(__obj__);};module.exports.PrivateKey.loadFromString = function() {var __obj__ = (function($nn){return (([function(str) {
   var t1, ss, d, t2;
   t1 = J.getInterceptor$asx(str);
@@ -37640,7 +37663,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     return K.PrivateKey$(new Q.ECPrivateKey(d, t1), new Q.ECPublicKey(t2.decodePoint$1(Q.Base64_decode(ss[1])), $.get$_secp256r1()));
   } else
     return K.PrivateKey$(new Q.ECPrivateKey(Z.BigInteger_BigInteger$fromBytes(1, Q.Base64_decode(str)), $.get$_secp256r1()), null);
-}, null, null, 2, 0, 272, 115, [], "new PrivateKey$loadFromString"]
+}, null, null, 2, 0, 273, 115, [], "new PrivateKey$loadFromString"]
 [0])).call(this,$nn);}).apply(this, arguments);return module.exports.PrivateKey._(__obj__);};module.exports.PrivateKey.prototype.saveToString = function(){return (this.__obj__.saveToString$0).call(this.__obj__);};module.exports.PrivateKey.prototype.decodeECDH = function($nn){var returned = (this.__obj__.decodeECDH$1).call(this.__obj__,$nn);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.WebSocketConnection = function WebSocketConnection() {var __obj__ = (function($nn,$nnn,_optObj_){_optObj_ = _optObj_ || {};if(!$nnn.__isWrapped__) { $nnn = $nnn.__obj__; }var onConnect = typeof(_optObj_.onConnect) === 'undefined' ? null : _optObj_.onConnect;if(onConnect !== null) {}return (([function(socket, clientLink, onConnect) {
   var t1, t2, t3;
   t1 = O.ConnectionChannel;
@@ -37656,7 +37679,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   t1 = new Y.WebSocketConnection(null, null, t2, t3, clientLink, socket, onConnect, null, 0, false, 0, null, false, new Q.BinaryInCache(P.LinkedHashMap_LinkedHashMap(null, null, null, P.String, Q.BinaryData)), new Q.BinaryOutCache(0, P.LinkedHashMap_LinkedHashMap(null, null, null, P.$int, Q.BinaryData)), false);
   t1.WebSocketConnection$3$onConnect(socket, clientLink, onConnect);
   return t1;
-}, null, null, 4, 3, 243, 5, 64, [], 58, [], 65, [], "new WebSocketConnection"]
+}, null, null, 4, 3, 244, 5, 64, [], 58, [], 65, [], "new WebSocketConnection"]
 [0])).call(this,$nn,$nnn,onConnect);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "clientLink", {enumerable: true,get: function() { var returned = this.__obj__.clientLink;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ClientLink' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.clientLink = v;}});Object.defineProperty(this, "socket", {enumerable: true,get: function() { var returned = this.__obj__.socket;return returned;},set: function(v) {this.__obj__.socket = v;}});Object.defineProperty(this, "onConnect", {enumerable: true,get: function() { var returned = this.__obj__.onConnect;return returned;},set: function(v) {this.__obj__.onConnect = v;}});Object.defineProperty(this, "pingTimer", {enumerable: true,get: function() { var returned = this.__obj__.pingTimer;return returned;},set: function(v) {this.__obj__.pingTimer = v;}});Object.defineProperty(this, "pingCount", {enumerable: true,get: function() { var returned = this.__obj__.pingCount;return returned;},set: function(v) {this.__obj__.pingCount = v;}});Object.defineProperty(this, "binaryInCache", {enumerable: true,get: function() { var returned = this.__obj__.binaryInCache;return returned;},set: function(v) {this.__obj__.binaryInCache = v;}});Object.defineProperty(this, "binaryOutCache", {enumerable: true,get: function() { var returned = this.__obj__.binaryOutCache;return returned;},set: function(v) {this.__obj__.binaryOutCache = v;}});Object.defineProperty(this, "responderChannel", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$responderChannel).call(this.__obj__);}).apply(this, arguments);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConnectionChannel' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.get$responderChannel = function() { return v; };}});Object.defineProperty(this, "requesterChannel", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$requesterChannel).call(this.__obj__);}).apply(this, arguments);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConnectionChannel' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.get$requesterChannel = function() { return v; };}});Object.defineProperty(this, "onRequesterReady", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onRequesterReady).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'ConnectionChannel' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {if(!then.__isWrapped__) { then = then.__obj__; }completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onRequesterReady = function() { return v; };}});Object.defineProperty(this, "onDisconnected", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onDisconnected).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onDisconnected = function() { return v; };}});};    Object.defineProperty(module.exports.WebSocketConnection, 'class', {
       get: function() {
         function WebSocketConnection() {
@@ -37684,7 +37707,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   t1 = new Y.HttpBrowserConnection(null, null, t2, t3, false, url, clientLink, withCredentials, saltL, saltS, false, false, false, false, false, null, false, false, 1, false);
   t1.HttpBrowserConnection$5(url, clientLink, saltL, saltS, withCredentials);
   return t1;
-}, null, null, 8, 2, 241, 10, 57, [], 58, [], 59, [], 60, [], 61, [], "new HttpBrowserConnection"]
+}, null, null, 8, 2, 242, 10, 57, [], 58, [], 59, [], 60, [], 61, [], "new HttpBrowserConnection"]
 [0])).call(this,$nn,$nnn,$nnnn,$nnnnn,$nnnnnn);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "url", {enumerable: true,get: function() { var returned = this.__obj__.url;return returned;},set: function(v) {this.__obj__.url = v;}});Object.defineProperty(this, "clientLink", {enumerable: true,get: function() { var returned = this.__obj__.clientLink;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ClientLink' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.clientLink = v;}});Object.defineProperty(this, "withCredentials", {enumerable: true,get: function() { var returned = this.__obj__.withCredentials;return returned;},set: function(v) {this.__obj__.withCredentials = v;}});Object.defineProperty(this, "saltL", {enumerable: true,get: function() { var returned = this.__obj__.saltL;return returned;},set: function(v) {this.__obj__.saltL = v;}});Object.defineProperty(this, "saltS", {enumerable: true,get: function() { var returned = this.__obj__.saltS;return returned;},set: function(v) {this.__obj__.saltS = v;}});Object.defineProperty(this, "retryDelay", {enumerable: true,get: function() { var returned = this.__obj__.retryDelay;return returned;},set: function(v) {this.__obj__.retryDelay = v;}});Object.defineProperty(this, "responderChannel", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$responderChannel).call(this.__obj__);}).apply(this, arguments);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConnectionChannel' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.get$responderChannel = function() { return v; };}});Object.defineProperty(this, "requesterChannel", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$requesterChannel).call(this.__obj__);}).apply(this, arguments);if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'ConnectionChannel' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.get$requesterChannel = function() { return v; };}});Object.defineProperty(this, "onRequesterReady", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onRequesterReady).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'ConnectionChannel' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {if(!then.__isWrapped__) { then = then.__obj__; }completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onRequesterReady = function() { return v; };}});Object.defineProperty(this, "onDisconnected", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onDisconnected).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onDisconnected = function() { return v; };}});};    Object.defineProperty(module.exports.HttpBrowserConnection, 'class', {
       get: function() {
         function HttpBrowserConnection() {
@@ -37714,7 +37737,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   t4 = H.S(dsIdPrefix) + privateKey.get$publicKey().get$qHash64();
   t5 = isRequester === true ? L.Requester$(null) : null;
   return new Y.BrowserECDHLink(t2, t1, t4, t5, isResponder === true && nodeProvider != null ? T.Responder$(nodeProvider) : null, privateKey, null, null, null, t3, null, null, _conn, 1, 1, false);
-}, null, null, 6, 7, 240, 5, 33, 33, 53, [], 54, [], 55, [], 56, [], 41, [], 42, [], "new BrowserECDHLink"]
+}, null, null, 6, 7, 241, 5, 33, 33, 53, [], 54, [], 55, [], 56, [], 41, [], 42, [], "new BrowserECDHLink"]
 [0])).call(this,$nn,$nnn,$nnnn,isRequester,isResponder,nodeProvider);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "dsId", {enumerable: true,get: function() { var returned = this.__obj__.dsId;return returned;},set: function(v) {this.__obj__.dsId = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});Object.defineProperty(this, "responder", {enumerable: true,get: function() { var returned = this.__obj__.responder;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Responder' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.responder = v;}});Object.defineProperty(this, "privateKey", {enumerable: true,get: function() { var returned = this.__obj__.privateKey;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'PrivateKey' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.privateKey = v;}});Object.defineProperty(this, "salts", {enumerable: true,get: function() { var returned = this.__obj__.salts;returned = [].concat(returned);returned.forEach(function(a, i) {}, returned);return returned;},set: function(v) {v = [].concat(v);v.forEach(function(a, i) {this[i] = a;}, v);this.__obj__.salts = v;}});Object.defineProperty(this, "onConnected", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onConnected).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {val = dynamicFrom(val);then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onConnected = function() { return v; };}});Object.defineProperty(this, "onRequesterReady", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onRequesterReady).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'Requester' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {if(!then.__isWrapped__) { then = then.__obj__; }completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onRequesterReady = function() { return v; };}});Object.defineProperty(this, "nonce", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$nonce).call(this.__obj__);}).apply(this, arguments);return returned;},set: function(v) {this.__obj__.get$nonce = function() { return v; };}});};    Object.defineProperty(module.exports.BrowserECDHLink, 'class', {
       get: function() {
         function BrowserECDHLink() {
@@ -37755,7 +37778,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
   t1 = new Y.BrowserUserLink(t2, t1, t3, isResponder === true && nodeProvider != null ? T.Responder$(nodeProvider) : null, C.C_DummyECDH, null, null, null, wsUpdateUri, httpUpdateUri, 1);
   t1.BrowserUserLink$5$httpUpdateUri$isRequester$isResponder$nodeProvider$wsUpdateUri(httpUpdateUri, isRequester, isResponder, nodeProvider, wsUpdateUri);
   return t1;
-}, null, null, 0, 11, 242, 5, 33, 33, 5, 5, 56, [], 41, [], 42, [], 62, [], 63, [], "new BrowserUserLink"]
+}, null, null, 0, 11, 243, 5, 33, 33, 5, 5, 56, [], 41, [], 42, [], 62, [], 63, [], "new BrowserUserLink"]
 [0])).call(thishttpUpdateUri,isRequester,isResponder,nodeProvider,wsUpdateUri);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});Object.defineProperty(this, "session", {enumerable: true,get: function() { var returned = this.__obj__.session;return returned;},set: function(v) {this.__obj__.session = v;}});Object.defineProperty(this, "requester", {enumerable: true,get: function() { var returned = this.__obj__.requester;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Requester' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.requester = v;}});Object.defineProperty(this, "responder", {enumerable: true,get: function() { var returned = this.__obj__.responder;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'Responder' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.responder = v;}});Object.defineProperty(this, "nonce", {enumerable: true,get: function() { var returned = this.__obj__.nonce;return returned;},set: function(v) {this.__obj__.nonce = v;}});Object.defineProperty(this, "privateKey", {enumerable: true,get: function() { var returned = this.__obj__.privateKey;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'PrivateKey' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.privateKey = v;}});Object.defineProperty(this, "wsUpdateUri", {enumerable: true,get: function() { var returned = this.__obj__.wsUpdateUri;return returned;},set: function(v) {this.__obj__.wsUpdateUri = v;}});Object.defineProperty(this, "httpUpdateUri", {enumerable: true,get: function() { var returned = this.__obj__.httpUpdateUri;return returned;},set: function(v) {this.__obj__.httpUpdateUri = v;}});Object.defineProperty(this, "onRequesterReady", {enumerable: true,get: function() { var returned = (function(){return (this.__obj__.get$onRequesterReady).call(this.__obj__);}).apply(this, arguments);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {if(!val.__isWrapped__) {var _type = typeof(module.exports[val.constructor.name]) === 'undefined' ? 'Requester' : val.constructor.name;val = module.exports[_type]._(val); }then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;},set: function(v) {var completer = new P._SyncCompleter(new P._Future(0, $.Zone__current, null));v.then(function(then) {if(!then.__isWrapped__) { then = then.__obj__; }completer.complete$1(null, then);}).catch(function(err) {completer.completeError$1(err);});v = completer.future;this.__obj__.get$onRequesterReady = function() { return v; };}});};    Object.defineProperty(module.exports.BrowserUserLink, 'class', {
       get: function() {
         function BrowserUserLink() {
@@ -37785,7 +37808,7 @@ var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(ty
     });
     Object.defineProperty(module.exports.LocalDataStorage, "_", {enumerable: false,value:(function LocalDataStorage(__obj__) {var returned = Object.create(module.exports.LocalDataStorage.prototype);(function() {Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});}.bind(returned))();return returned;})});Object.defineProperty(module.exports.LocalDataStorage, "INSTANCE", {enumerable: true,get: function() { var returned = this.__obj__.INSTANCE;if(!returned.__isWrapped__) {var _type = typeof(module.exports[returned.constructor.name]) === 'undefined' ? 'LocalDataStorage' : returned.constructor.name;returned = module.exports[_type]._(returned); }return returned;},set: function(v) {if(!v.__isWrapped__) { v = v.__obj__; }this.__obj__.INSTANCE = v;}});module.exports.LocalDataStorage.prototype.get = function($nn){var returned = (this.__obj__.$get$1).call(this.__obj__,$nn);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.LocalDataStorage.prototype.has = function($nn){var returned = (this.__obj__.has$1).call(this.__obj__,$nn);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.LocalDataStorage.prototype.store = function($nn,$nnn){var returned = (this.__obj__.store$2).call(this.__obj__,$nn,$nnn);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {val = dynamicFrom(val);then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.LocalDataStorage.prototype.remove = function($nn){var returned = (this.__obj__.remove$1).call(this.__obj__,$nn);var promise = new $Promise(function(then, error) {returned.then$2$onError({call$1:function(val) {then(val); }}, {call$1: function(err) {error(err);}});});returned = promise;return returned;};module.exports.DataStorage = function DataStorage() {var __obj__ = (function(){return (([function() {
   return new Y.DataStorage();
-}, null, null, 0, 0, 238, "new DataStorage"]
+}, null, null, 0, 0, 239, "new DataStorage"]
 [0])).call(this);}).apply(this, arguments);Object.defineProperty(this, "__isWrapped__", {enumerable: false,value: true});Object.defineProperty(this, "__obj__", {enumerable: false,value: __obj__});};    Object.defineProperty(module.exports.DataStorage, 'class', {
       get: function() {
         function DataStorage() {
