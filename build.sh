@@ -21,6 +21,7 @@ COL_BLUE=$'\e[1;34m'
   echo "2/9 Fetching Dart dependencies"
   echo -n "$COL_RESET"
 
+  pub upgrade
   pub get
 
   echo -n "$COL_BLUE"
