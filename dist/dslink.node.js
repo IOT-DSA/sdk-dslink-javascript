@@ -34749,7 +34749,7 @@ module.exports.Stream = Stream;
       cb(obj[key], key, obj);
     }
   }
-var $Promise = Promise || require('es6-promises');function dynamicTo(obj) {if(typeof(obj) === 'undefined' || obj === null) { return obj; }if(obj.__isWrapped__) { return obj.__obj__; }      if(Array.isArray(obj)) {
+var $Promise = typeof(Promise) !== 'undefined' ? Promise : require('es6-promises');function dynamicTo(obj) {if(typeof(obj) === 'undefined' || obj === null) { return obj; }if(obj.__isWrapped__) { return obj.__obj__; }      if(Array.isArray(obj)) {
         return obj.map(function(e) {
           return dynamicTo(e);
         });
