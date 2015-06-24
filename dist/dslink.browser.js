@@ -31591,7 +31591,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         P.print(this.path);
       }, "call$0", "get$onSubscribe", 0, 0, 7, "onSubscribe"],
       onCreated$0: [function() {
-        P.print(this.path);
+        P.print(P.LinkedHashMap__makeLiteral(["path", this.path]));
       }, "call$0", "get$onCreated", 0, 0, 7, "onCreated"],
       onRemoving$0: [function() {
         P.print(this.path);

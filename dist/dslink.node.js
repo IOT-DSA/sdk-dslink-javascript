@@ -12482,6 +12482,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     },
     JsClosureMirror: {
       "^": "JsInstanceMirror;reflectee,_getterCache",
+      apply$2: function(positionalArguments, namedArguments) {
+        return H.reflect(H.Primitives_applyFunctionWithPositionalArguments(this.reflectee, positionalArguments));
+      },
+      apply$1: function(positionalArguments) {
+        return this.apply$2(positionalArguments, null);
+      },
       toString$0: function(_) {
         return "ClosureMirror on '" + H.S(P.Error_safeToString(this.reflectee)) + "'";
       }
@@ -23900,7 +23906,18 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, null, null, 2, 0, null, 74, [], "call"]
     },
     JsFunction: {
-      "^": "JsObject;_js$_jsObject"
+      "^": "JsObject;_js$_jsObject",
+      apply$2$thisArg: function(args, thisArg) {
+        var t1, t2;
+        t1 = P._convertToJS(thisArg);
+        t2 = new H.MappedListIterable(args, P._convertToJS$closure());
+        t2.$builtinTypeInfo = [null, null];
+        t2 = P.List_List$from(t2, true, null);
+        return P._convertToDart(this._js$_jsObject.apply(t1, t2));
+      },
+      apply$1: function(args) {
+        return this.apply$2$thisArg(args, null);
+      }
     },
     JsArray: {
       "^": "JsObject_ListMixin;_js$_jsObject",
@@ -30358,7 +30375,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         P.print(this.path);
       }, "call$0", "get$onSubscribe", 0, 0, 7, "onSubscribe"],
       onCreated$0: [function() {
-        P.print(this.path);
+        P.print(P.LinkedHashMap__makeLiteral(["path", this.path]));
       }, "call$0", "get$onCreated", 0, 0, 7, "onCreated"],
       onRemoving$0: [function() {
         P.print(this.path);
@@ -31870,16 +31887,30 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       return map;
     },
     Process_runSync: function(executable, $arguments, environment, includeParentEnvironment, runInShell, stderrEncoding, stdoutEncoding, workingDirectory) {
-      var env, obj, t1, stdout, stderr;
+      var t1, env, spawnArgs, obj, stdout, stderr;
+      if ($._spawnSync == null) {
+        t1 = (H.S(J.$index$asx($.get$_process(), "version")) + " node.js").split(" ");
+        if (0 >= t1.length)
+          return H.ioore(t1, 0);
+        t1 = J.split$1$s(t1[0], ".");
+        if (1 >= t1.length)
+          return H.ioore(t1, 1);
+        t1 = J.$lt$in(H.Primitives_parseInt(t1[1], null, null), 12);
+      } else
+        t1 = false;
+      if (t1)
+        $._spawnSync = $.get$context().callMethod$2("require", ["spawn-sync"]);
       env = P.LinkedHashMap__makeEmpty();
       if (includeParentEnvironment)
         env.addAll$1(0, Z.Platform_environment());
       if (runInShell) {
         C.JSArray_methods.checkGrowable$1($arguments, "insert");
         $arguments.splice(0, 0, executable);
-        obj = $.get$_child().callMethod$2("spawnSync", ["/bin/sh", $arguments, P.JsObject_JsObject$jsify(P.LinkedHashMap__makeLiteral(["cwd", workingDirectory, "env", env, "input", C.JSArray_methods.join$1($arguments, " ")]))]);
+        spawnArgs = ["/bin/sh", P.JsObject_JsObject$jsify(P.LinkedHashMap__makeLiteral(["cwd", workingDirectory, "env", env, "input", C.JSArray_methods.join$1($arguments, " ")]))];
       } else
-        obj = $.get$_child().callMethod$2("spawnSync", [executable, $arguments, P.JsObject_JsObject$jsify(P.LinkedHashMap__makeLiteral(["cwd", workingDirectory, "env", env]))]);
+        spawnArgs = [executable, $arguments, P.JsObject_JsObject$jsify(P.LinkedHashMap__makeLiteral(["cwd", workingDirectory, "env", env]))];
+      t1 = $._spawnSync;
+      obj = t1 == null ? $.get$_child().callMethod$2("spawnSync", spawnArgs) : t1.apply$1(spawnArgs);
       t1 = J.getInterceptor$asx(obj);
       stdout = stdoutEncoding.decode$1(K.bufToList(t1.$index(obj, "stdout")));
       stderr = stderrEncoding.decode$1(K.bufToList(t1.$index(obj, "stderr")));
@@ -33514,6 +33545,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   $.recordStackTraceAtLevel = C.Level_OFF_2000;
   $._rootLevel = C.Level_INFO_800;
   $.LogRecord__nextNumber = 0;
+  $._spawnSync = null;
   $ = null;
   init.isHunkLoaded = function(hunkHash) {
     return !!$dart_deferred_initializers$[hunkHash];
