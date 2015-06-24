@@ -41,7 +41,9 @@ class NodeStub extends SimpleNode {
 
   /// after node is created
   void onCreated() {
-    print(this.path);
+    print({
+      "path": this.path
+    });
   }
 
   /// before node gets removed

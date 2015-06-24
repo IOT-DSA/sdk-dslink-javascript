@@ -12,6 +12,7 @@
   "dependencies": {
     "es6-map": "^0.1.1",
     "es6-promises": "^1.0.10",
+    "spawn-sync": "^1.0.11",
     "ws": "^0.7.2"
   },
   "devDependencies": {
