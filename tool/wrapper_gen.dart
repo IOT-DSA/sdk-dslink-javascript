@@ -13,7 +13,7 @@ class BufferTransformer implements TypeTransformer {
   BufferTransformer();
 
   @override
-  dynamicTransformTo(StringBuffer output, List<String> globals) {
+  transformToDart(Compiler compiler, StringBuffer output) {
     output.write("""
       if(obj instanceof Buffer) {
         function toArrayBuffer(buffer) {
@@ -33,7 +33,7 @@ class BufferTransformer implements TypeTransformer {
   }
 
   @override
-  dynamicTransformFrom(StringBuffer output, List<String> globals) {
+  transformFromDart(Compiler compiler, StringBuffer output) {
     output.write("""
       if(obj instanceof DataView) {
         function toBuffer(ab) {
@@ -50,27 +50,6 @@ class BufferTransformer implements TypeTransformer {
       }
     """);
   }
-
-  @override
-  transformToDart(StringBuffer output, TypeTransformer base, String name, List tree, List<String> globals) {
-    output.write("var _obj = $name; $name = new init.allClasses.ByteData(_obj.length);");
-    output.write("for(var index = 0; index < _obj.length; index++) { $name.setUint8\$2(index, _obj.readUInt8(index)); }");
-  }
-
-  @override
-  transformFromDart(StringBuffer output, TypeTransformer base, String name, List tree, List<String> globals) {
-    output.write("""
-    function toBuffer(ab) {
-      var buffer = new Buffer(ab.byteLength);
-      var view = new Uint8Array(ab);
-      for (var i = 0; i < buffer.length; ++i) {
-        buffer[i] = view[i];
-      }
-      return buffer;
-    }
-    $name = toBuffer($name.buffer);
-    """);
-  }
 }
 
 class StreamTransformer extends TypeTransformer {
@@ -79,42 +58,28 @@ class StreamTransformer extends TypeTransformer {
   StreamTransformer();
 
   @override
-  dynamicTransformTo(StringBuffer output, List<String> globals) {
-    if(!globals.contains(_STREAM_PREFIX))
-      globals.add(_STREAM_PREFIX);
+  transformToDart(Compiler compiler, StringBuffer output) {
+    if(!compiler.globals.contains(_STREAM_PREFIX))
+      compiler.globals.add(_STREAM_PREFIX);
     // TODO
   }
 
   @override
-  dynamicTransformFrom(StringBuffer output, List<String> globals) {
-    if(!globals.contains(_STREAM_PREFIX))
-      globals.add(_STREAM_PREFIX);
+  transformFromDart(Compiler compiler, StringBuffer output) {
+    if(!compiler.globals.contains(_STREAM_PREFIX))
+      compiler.globals.add(_STREAM_PREFIX);
     output.write("if(typeof(obj._createSubscription\$4) !== 'undefined') { return new module.exports.Stream(obj); }");
-  }
-
-  @override
-  transformToDart(StringBuffer output, TypeTransformer base, String name, List tree, List<String> globals) {
-    if(!globals.contains(_STREAM_PREFIX))
-      globals.add(_STREAM_PREFIX);
-    // TODO
-  }
-
-  @override
-  transformFromDart(StringBuffer output, TypeTransformer base, String name, List tree, List<String> globals) {
-    if(!globals.contains(_STREAM_PREFIX))
-      globals.add(_STREAM_PREFIX);
-    output.write("$name = new module.exports.Stream($name);");
   }
 }
 
 main(List<String> args) {
-  var compiler = new Compiler.fromPath(args[0], "temp/dslink.js.info.json", typeTransformers: [
+  var compiler = new Compiler(args[0], "temp/dslink.js.info.json", "temp/dslink.scraper.json", typeTransformers: [
     new CollectionsTransformer(true),
     new PromiseTransformer(true),
     new ClosureTransformer(),
     new BufferTransformer(),
     new StreamTransformer()
-  ]);
+  ], isMinified: true);
 
   var include = new File("tool/dslink.include").readAsLinesSync().where((line) => line.trim().length > 0 && !line.trim().startsWith("#"));
 

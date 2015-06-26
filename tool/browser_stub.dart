@@ -2,6 +2,7 @@ library dslink.stub;
 
 import "package:dslink/browser.dart";
 import "dart:async";
+import "dart:collection";
 import "dart:typed_data";
 
 @MirrorsUsed(
@@ -20,7 +21,7 @@ import "dart:typed_data";
   "dslink.pk.PrivateKey",
   "dart.async.Completer",
   "dart.async.Future",
-  "dart.typed_data.ByteBuffer",
+  "dart.collection.LinkedHashMap",
   "dart.typed_data.ByteData",
   "dslink.stub.NodeStub"
 ])
