@@ -53,7 +53,7 @@ echo -n "$COL_BLUE"
 echo "6/11 Precompiling JS wrapper for Dart SDK"
 echo -n "$COL_RESET"
 
-pub run calzone:calpatcher -m -t "$1" -f temp/dslink.js -w tool/js/scraper.js -i temp/dslink.js.info.json > temp/dslink.scraper.js
+pub run calzone:calpatcher -m -t node -f temp/dslink.js -w tool/js/scraper.js -i temp/dslink.js.info.json > temp/dslink.scraper.js
 node temp/dslink.scraper.js > temp/dslink.scraper.json
 
 echo -n "$COL_BLUE"
