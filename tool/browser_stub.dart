@@ -2,6 +2,7 @@ library dslink.stub;
 
 import "package:dslink/browser.dart";
 import "dart:async";
+import "dart:convert";
 import "dart:collection";
 import "dart:typed_data";
 
@@ -21,6 +22,7 @@ import "dart:typed_data";
   "dslink.pk.PrivateKey",
   "dart.async.Completer",
   "dart.async.Future",
+  "dart.convert.JSON",
   "dart.collection.LinkedHashMap",
   "dart.typed_data.ByteData",
   "dslink.stub.NodeStub"
@@ -49,12 +51,12 @@ class NodeStub extends SimpleNode {
 
   /// before node gets removed
   void onRemoving() {
-    print(this.path);
+    print(JSON.decode('{"a":"hello"}').values);
   }
 
   /// after child node is removed
   void onChildRemoved(String name, Node node) {
-    print(name);
+    print(JSON.decode('{"a":"hello"}').keys);
   }
 
   /// after child node is created
