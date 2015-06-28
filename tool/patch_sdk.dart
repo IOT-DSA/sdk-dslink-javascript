@@ -14,6 +14,8 @@ main(List<String> args) {
     if(entity is File) {
       String text = entity.readAsStringSync();
       text = text.replaceAll("dart:io", "package:node_io/io.dart");
+      text = text.replaceAll("package:dslink/src/crypto/dart/pk.dart", "package:dslink/src/crypto/node/pk.dart");
+      text = text.replaceAll(" DartCryptoProvider", " NodeCryptoProvider");
       entity.writeAsStringSync(text);
     }
   }

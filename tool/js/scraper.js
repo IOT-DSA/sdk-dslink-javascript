@@ -33,7 +33,7 @@ init.libraries.forEach(function(elm) {
     if(index === length - 1) {
       var alphadex = 25;
       while(--alphadex >= 0) {
-        if(eval(alphabet[alphadex]) === elm)
+        if(eval("typeof(" + alphabet[alphadex] + ")") === "object" && eval(alphabet[alphadex]) === elm)
           library.obj = alphabet[alphadex];
       }
     }

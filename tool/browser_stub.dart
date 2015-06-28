@@ -1,6 +1,9 @@
 library dslink.stub;
 
 import "package:dslink/browser.dart";
+import "package:dslink/src/crypto/node/pk.dart";
+import "package:dslink/src/crypto/pk.dart";
+
 import "dart:async";
 import "dart:convert";
 import "dart:collection";
@@ -19,7 +22,8 @@ import "dart:typed_data";
   "dslink.utils.updateLogLevel",
   "dslink.utils.buildEnumType",
   "dslink.utils.buildActionIO",
-  "dslink.pk.PrivateKey",
+  "dslink.pk",
+  "dslink.pk.node.NodeCryptoProvider",
   "dart.async.Completer",
   "dart.async.Future",
   "dart.convert.JSON",
