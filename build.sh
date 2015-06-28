@@ -41,7 +41,7 @@ if [ -z "$2" ] || [ $2 != "dev" ]; then
   echo "5/11 Building Dart SDK with dart2js"
   echo -n "$COL_RESET"
 
-  dart2js --dump-info --enable-experimental-mirrors -m -o temp/dslink.js "tool/$1_stub.dart"
+  dart2js --dump-info --trust-type-annotations --trust-primitives --enable-experimental-mirrors -m -o temp/dslink.js "tool/$1_stub.dart"
 else
   echo -n "$COL_GREEN"
   echo "Dev build! Skipping the first 5 steps."
