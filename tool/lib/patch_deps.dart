@@ -1,10 +1,8 @@
-import "dart:io";
-import "dart:convert";
+part of dslink_js.build;
 
-import "package:yaml/yaml.dart";
-
-main(List<String> args) {
-  Directory dir = new Directory(args[0] + "/lib");
+// hopefully this hack can be replaced in the future by configurable imports
+_patchDependencies([String sdkDirectory = "temp/sdk-dslink-dart"]) {
+  Directory dir = new Directory("$sdkDirectory/lib");
 
   _recurseEntity(entity) {
     if(entity is Directory) {
@@ -14,7 +12,7 @@ main(List<String> args) {
     if(entity is File) {
       String text = entity.readAsStringSync();
       text = text.replaceAll("dart:io", "package:node_io/io.dart");
-      text = text.replaceAll("package:dslink/src/crypto/dart/pk.dart", "package:dslink/src/crypto/node/pk.dart");
+      text = text.replaceAll("import 'dart/pk.dart' show DartCryptoProvider;", "import 'node/pk.dart' show NodeCryptoProvider;");
       text = text.replaceAll(" DartCryptoProvider", " NodeCryptoProvider");
       entity.writeAsStringSync(text);
     }
@@ -22,7 +20,7 @@ main(List<String> args) {
 
   dir.listSync().forEach((entity) => _recurseEntity(entity));
 
-  var pubspecFile = new File(args[0] + "/pubspec.yaml");
+  var pubspecFile = new File("$sdkDirectory/pubspec.yaml");
 
   var pubspec = {}..addAll(loadYaml(pubspecFile.readAsStringSync()));
 

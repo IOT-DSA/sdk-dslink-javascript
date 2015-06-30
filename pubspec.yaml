@@ -8,3 +8,6 @@ dependencies:
   calzone:
     git: https://github.com/DirectMyFile/calzone.dart.git
     # path: ../calzone.dart
+  ansicolor: '>=0.0.9 <0.1.0'
+  grinder:
+    git: https://github.com/google/grinder.dart.git

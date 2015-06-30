@@ -1,8 +1,4 @@
-import "package:calzone/compiler.dart";
-import "package:calzone/transformers.dart";
-import "package:calzone/util.dart";
-
-import "dart:io";
+part of dslink_js.build;
 
 // node.js Buffer (or Browserify equivelent) to ByteData, and back.
 class BufferTransformer implements TypeTransformer {
@@ -97,19 +93,23 @@ class StreamTransformer extends TypeTransformer {
   }
 }
 
-main(List<String> args) {
-  var compiler = new Compiler(args[0], "temp/dslink.js.info.json", "temp/dslink.scraper.json", typeTransformers: [
+String _generateWrapper(String dartFile, String compiledFile, {bool isMinified: false}) {
+  StringBuffer output = new StringBuffer();
+
+  var compiler = new Compiler(dartFile, "temp/$compiledFile.js.info.json", "temp/$compiledFile.scraper.json", typeTransformers: [
     new CollectionsTransformer(true),
     new PromiseTransformer(true),
     new ClosureTransformer(),
     new BufferTransformer(),
     new StreamTransformer()
-  ], isMinified: true);
+  ], isMinified: isMinified);
 
   var include = new File("tool/dslink.include").readAsLinesSync().where((line) => line.trim().length > 0 && !line.trim().startsWith("#"));
 
   var str = compiler.compile(include);
 
-  print(str);
-  print(new File("tool/js/mixin.js").readAsStringSync());
+  output.write(str);
+  output.write(new File("tool/js/mixin.js").readAsStringSync());
+
+  return output.toString();
 }
