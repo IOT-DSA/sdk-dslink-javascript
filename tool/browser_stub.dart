@@ -67,6 +67,18 @@ class NodeStub extends SimpleNode {
   void onChildAdded(String name, Node node) {
     print(name);
   }
+
+  void onSetValue(Object val) {
+    print(val);
+  }
+
+  void onSetConfig(String name, String value) {
+    print(name);
+  }
+
+  void onSetAttribute(String name, String value) {
+    print(name);
+  }
 }
 
 main(List<String> args) {
