@@ -52,7 +52,7 @@ class NodeStub extends SimpleNode {
 
   /// before node gets removed
   void onRemoving() {
-    print(this.path);
+    print(unspecified);
   }
 
   /// after child node is removed

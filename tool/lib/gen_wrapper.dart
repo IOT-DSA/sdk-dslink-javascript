@@ -11,13 +11,11 @@ class BufferTransformer implements TypeTransformer {
     output.write("""
       if(obj instanceof Buffer) {
         function toArrayBuffer(buffer) {
-          console.log(buffer.length);
           var ab = new ArrayBuffer(buffer.length);
           var view = new Uint8Array(ab);
           for (var i = 0; i < buffer.length; ++i) {
             view[i] = buffer[i];
           }
-          console.log(view.length);
           return ab;
         }
 
@@ -33,11 +31,9 @@ class BufferTransformer implements TypeTransformer {
         function toBuffer(ab) {
           var buffer = new Buffer(ab.byteLength);
           var view = new Uint8Array(ab);
-          console.log(view.length);
           for (var i = 0; i < buffer.length; ++i) {
             buffer[i] = view[i];
           }
-          console.log(buffer.length);
           return buffer;
         }
         return toBuffer(obj.buffer);

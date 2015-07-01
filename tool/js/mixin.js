@@ -15,13 +15,13 @@ function mixin(dest) {
 }
 
 module.exports.createNode = function(opt) {
-  var extend = module.exports.SimpleNode.class;
+  var extend = exports.SimpleNode.class;
 
   function Node(path) {
     extend.call(this, path);
   }
 
-  Node.prototype = Object.create(extend);
+  Node.prototype = Object.create(extend.prototype);
 
   mixin(Node.prototype, opt);
   return Node;
