@@ -133,6 +133,14 @@ patchWrapper() async {
   }
 }
 
+@Task("Adding npm debug helper")
+debugHelper() {
+  var debug = new Directory("debug");
+  debug.createSync();
+
+  copy(new File("tool/js/index.js"), debug);
+}
+
 @DefaultTask()
 @Task("Build for the browser")
 browser() {
@@ -159,7 +167,8 @@ node() {
       "scrapeSDK",
       "genWrapper",
       "mangleWrapper",
-      "patchWrapper"]);
+      "patchWrapper",
+      "debugHelper"]);
 }
 
 @Task("Dev build for the browser")
@@ -177,5 +186,6 @@ nodeDev() async {
   await runGrinderTasks(["scrapeSDK",
       "genWrapper",
       "mangleWrapper",
-      "patchWrapper"]);
+      "patchWrapper",
+      "debugHelper"]);
 }
