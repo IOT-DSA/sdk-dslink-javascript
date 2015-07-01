@@ -1,4 +1,4 @@
-library dslink.stub;
+library dslink_js;
 
 import "package:dslink/browser.dart";
 import "package:dslink/src/crypto/node/pk.dart";
@@ -29,7 +29,7 @@ import "dart:typed_data";
   "dart.convert.JSON",
   "dart.collection.LinkedHashMap",
   "dart.typed_data.ByteData",
-  "dslink.stub.NodeStub"
+  "dslink_js.NodeStub"
 ])
 import "dart:mirrors";
 
