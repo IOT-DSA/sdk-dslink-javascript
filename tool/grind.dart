@@ -56,14 +56,14 @@ buildSDK() {
           "trust-primitives",
           "enable-experimental-mirrors"],
       "temp/dslink.js",
-      "lib/${target}_stub.dart");
+      "tool/${target}_stub.dart");
 
   dart2js(["dump-info",
           "trust-type-annotations",
           "trust-primitives",
           "enable-experimental-mirrors",],
       "temp/dslink.min.js",
-      "lib/${target}_stub.dart",
+      "tool/${target}_stub.dart",
       isMinified: true);
 }
 
@@ -85,8 +85,8 @@ scrapeSDK() async {
 
 @Task("Generating JS wrapper for Dart SDK")
 genWrapper() {
-  var wrapper = _generateWrapper("lib/${target}_stub.dart", "dslink");
-  var minified = _generateWrapper("lib/${target}_stub.dart", "dslink.min", isMinified: true);
+  var wrapper = _generateWrapper("tool/${target}_stub.dart", "dslink");
+  var minified = _generateWrapper("tool/${target}_stub.dart", "dslink.min", isMinified: true);
 
   var file = new File("temp/wrapper.js");
   var minifiedFile = new File("temp/wrapper.min.js");

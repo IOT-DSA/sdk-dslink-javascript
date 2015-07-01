@@ -1,6 +1,8 @@
-library dslink_js;
+library dslink.stub;
 
 import "package:dslink/dslink.dart";
+import "package:dslink/src/crypto/node/pk.dart";
+import "package:dslink/src/crypto/pk.dart";
 
 import "dart:async";
 import "dart:collection";
@@ -24,7 +26,7 @@ import "dart:typed_data";
   "dart.async.Future",
   "dart.collection.LinkedHashMap",
   "dart.typed_data.ByteData",
-  "dslink_js.NodeStub"
+  "dslink.stub.NodeStub"
 ])
 import "dart:mirrors";
 
