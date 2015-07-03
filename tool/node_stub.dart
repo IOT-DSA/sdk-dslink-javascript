@@ -10,6 +10,7 @@ import "dart:typed_data";
 
 @MirrorsUsed(
     targets: const [
+  "dslink.pk",
   "dslink.common",
   "dslink.requester",
   "dslink.responder",
@@ -20,8 +21,6 @@ import "dart:typed_data";
   "dslink.utils.updateLogLevel",
   "dslink.utils.buildEnumType",
   "dslink.utils.buildActionIO",
-  "dslink.pk",
-  "dslink.pk.node.NodeCryptoProvider",
   "dart.async.Completer",
   "dart.async.Future",
   "dart.collection.LinkedHashMap",
@@ -31,7 +30,11 @@ import "dart:typed_data";
 import "dart:mirrors";
 
 class NodeStub extends SimpleNode {
-  NodeStub(String path): super(path);
+  static String hello = "";
+
+  NodeStub(String path): super(path) {
+    NodeStub.hello += path;
+  }
 
   /// This is called when this node is invoked.
   dynamic onInvoke(Map params) {
@@ -57,7 +60,7 @@ class NodeStub extends SimpleNode {
 
   /// after child node is removed
   void onChildRemoved(String name, Node node) {
-    print(name);
+    print(DSRandom.instance);
   }
 
   /// after child node is created
@@ -84,4 +87,5 @@ main(List<String> args) {
 
   reflectClass(a).getField(a);
   reflectClass(a).invoke(a, []);
+  currentMirrorSystem().getSymbol(a);
 }

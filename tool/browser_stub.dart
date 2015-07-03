@@ -87,4 +87,5 @@ main(List<String> args) {
 
   reflectClass(a).getField(a);
   reflectClass(a).invoke(a, []);
+  currentMirrorSystem().getSymbol(a);
 }
