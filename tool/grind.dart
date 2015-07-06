@@ -179,3 +179,23 @@ nodeDev() async {
       "mangleWrapper",
       "patchWrapper"]);
 }
+
+@Task("Rebuild for the browser")
+browserRebuild() {
+  target = PatcherTarget.BROWSER;
+  runGrinderTasks(["buildSDK",
+      "scrapeSDK",
+      "genWrapper",
+      "mangleWrapper",
+      "patchWrapper"]);
+}
+
+@Task("Rebuild for node.js")
+nodeRebuild() async {
+  target = PatcherTarget.NODE;
+  runGrinderTasks(["buildSDK",
+      "scrapeSDK",
+      "genWrapper",
+      "mangleWrapper",
+      "patchWrapper"]);
+}

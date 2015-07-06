@@ -27,7 +27,7 @@ _patchDependencies([String sdkDirectory = "temp/sdk-dslink-dart"]) {
   pubspec["dependencies"] = {
     "node_io": {
       // "path": "/home/michael/Projects/Work/node_io.dart"
-      "git": "https://github.com/DirectMyFile/node_io.dart.git"
+      "git": "https://github.com/dglogik/node_io.dart.git"
     }
   }..addAll(pubspec["dependencies"]);
 

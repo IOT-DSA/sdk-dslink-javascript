@@ -6,7 +6,7 @@ dependencies:
   dslink:
     path: ./temp/sdk-dslink-dart
   calzone:
-    git: https://github.com/DirectMyFile/calzone.dart.git
+    git: https://github.com/dglogik/calzone.dart.git
     # path: ../calzone.dart
   ansicolor: '>=0.0.9 <0.1.0'
   grinder:
