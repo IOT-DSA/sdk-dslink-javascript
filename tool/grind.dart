@@ -52,14 +52,12 @@ fetchDeps() {
 @Task("Building Dart SDK with dart2js")
 buildSDK() {
   dart2js(["dump-info",
-          "trust-type-annotations",
           "trust-primitives",
           "enable-experimental-mirrors"],
       "temp/dslink.js",
       "tool/${target}_stub.dart");
 
   dart2js(["dump-info",
-          "trust-type-annotations",
           "trust-primitives",
           "enable-experimental-mirrors",],
       "temp/dslink.min.js",

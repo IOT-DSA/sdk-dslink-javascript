@@ -93,11 +93,11 @@ String _generateWrapper(String dartFile, String compiledFile, {bool isMinified: 
   StringBuffer output = new StringBuffer();
 
   var compiler = new Compiler(dartFile, "temp/$compiledFile.js.info.json", "temp/$compiledFile.scraper.json", typeTransformers: [
-    new CollectionsTransformer(true),
     new PromiseTransformer(true),
     new ClosureTransformer(),
     new BufferTransformer(),
-    new StreamTransformer()
+    new StreamTransformer(),
+    new CollectionsTransformer(true)
   ], isMinified: isMinified);
 
   var include = new File("tool/dslink.include").readAsLinesSync().where((line) => line.trim().length > 0 && !line.trim().startsWith("#"));
