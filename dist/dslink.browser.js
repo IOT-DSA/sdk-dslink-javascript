@@ -25344,14 +25344,14 @@ var stat = Isolate.$isolateProperties;function dynamicTo(obj) {if(typeof(obj) ==
         return completer.future;
       }
           if(typeof obj === 'function') {
-        var argCount = (new RegExp(/function[^]*(([^]*))/))
+        var argCount = (new RegExp(/function[^]*\(([^]*)\)/))
           .exec(obj.toString())[1]
           .split(',')
           .filter(function(arg) {
             return arg.length > 0;
           })
           .length;
-        var returned = {};
+            var returned = {};
         returned['call$' + argCount] = function() {
           var args = new Array(arguments.length);
           for(var i = 0; i < args.length; ++i) {
