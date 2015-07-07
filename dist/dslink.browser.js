@@ -507,7 +507,7 @@
     if (!init.globalFunctions)
       init.globalFunctions = map();
     if (!init.interceptedNames)
-      init.interceptedNames = {$add: 1, $and: 1, $eq: 1, $gt: 1, $index: 1, $indexSet: 1, $lt: 1, $mod: 1, $mul: 1, $not: 1, $shl: 1, $shr: 1, $sub: 1, _addEventListener$3: 1, _checkIndex$2: 1, _checkSublistArguments$3: 1, _clear$0: 1, _clearChildren$0: 1, _invalidIndex$2: 1, _removeEventListener$3: 1, _replaceChild$2: 1, _setRangeFast$4: 1, _shlPositive$1: 1, _shrOtherPositive$1: 1, _shrReceiverPositive$1: 1, _tdivFast$1: 1, add$1: 1, add$4: 1, addAll$1: 1, addEventListener$3: 1, allMatches$1: 1, allMatches$2: 1, asByteData$2: 1, asUint8List$0: 1, asUint8List$2: 1, checkGrowable$1: 1, checkMutable$1: 1, clear$0: 1, close$0: 1, close$1: 1, close$2: 1, codeUnitAt$1: 1, complete$0: 1, complete$1: 1, contains$1: 1, contains$2: 1, containsKey$1: 1, defaultValue$1: 1, elementAt$1: 1, endsWith$1: 1, forEach$1: 1, get$_get_data: 1, get$_rows: 1, get$absolute: 1, get$attributes: 1, get$bottom: 1, get$buffer: 1, get$children: 1, get$connection: 1, get$data: 1, get$defaultValue: 1, get$detail: 1, get$duration: 1, get$error: 1, get$first: 1, get$hashCode: 1, get$height: 1, get$host: 1, get$isEmpty: 1, get$isFinite: 1, get$isNaN: 1, get$isNotEmpty: 1, get$iterator: 1, get$keys: 1, get$last: 1, get$left: 1, get$length: 1, get$lengthInBytes: 1, get$list: 1, get$loaded: 1, get$max: 1, get$message: 1, get$min: 1, get$name: 1, get$nodes: 1, get$nonce: 1, get$onClose: 1, get$onDisconnect: 1, get$onError: 1, get$parent: 1, get$parentNode: 1, get$path: 1, get$port: 1, get$request: 1, get$response: 1, get$responseText: 1, get$right: 1, get$rows: 1, get$runtimeType: 1, get$status: 1, get$stream: 1, get$top: 1, get$type: 1, get$value: 1, get$values: 1, get$version: 1, get$width: 1, getAttribute$1: 1, getFloat32$1: 1, getFloat32$2: 1, getFloat64$1: 1, getFloat64$2: 1, getInt16$1: 1, getInt16$2: 1, getInt32$1: 1, getInt32$2: 1, getInt64$1: 1, getInt64$2: 1, getInt8$1: 1, getRange$2: 1, getUint16$1: 1, getUint16$2: 1, getUint32$1: 1, getUint32$2: 1, getUint64$1: 1, getUint64$2: 1, getUint8$1: 1, indexOf$1: 1, indexOf$2: 1, join$1: 1, lastIndexOf$1: 1, lastIndexOf$2: 1, list$1: 1, load$1: 1, map$1: 1, matchAsPrefix$2: 1, noSuchMethod$1: 1, onDisconnect$0: 1, onError$1: 1, open$3$async: 1, open$5$async$password$user: 1, pause$0: 1, pause$1: 1, print$1: 1, putIfAbsent$2: 1, remainder$1: 1, remove$0: 1, remove$1: 1, removeEventListener$3: 1, removeRange$2: 1, replaceAll$2: 1, replaceRange$3: 1, replaceWith$1: 1, send$1: 1, send$2: 1, set$_get_data: 1, set$_rows: 1, set$absolute: 1, set$attributes: 1, set$bottom: 1, set$buffer: 1, set$children: 1, set$connection: 1, set$data: 1, set$defaultValue: 1, set$detail: 1, set$duration: 1, set$error: 1, set$height: 1, set$left: 1, set$length: 1, set$lengthInBytes: 1, set$list: 1, set$loaded: 1, set$max: 1, set$message: 1, set$min: 1, set$name: 1, set$nodes: 1, set$nonce: 1, set$onClose: 1, set$parent: 1, set$parentNode: 1, set$path: 1, set$request: 1, set$response: 1, set$responseText: 1, set$right: 1, set$rows: 1, set$status: 1, set$stream: 1, set$text: 1, set$top: 1, set$type: 1, set$value: 1, set$values: 1, set$version: 1, set$width: 1, setAll$2: 1, setAttribute$4: 1, setFloat32$2: 1, setFloat32$3: 1, setFloat64$2: 1, setFloat64$3: 1, setInt16$2: 1, setInt16$3: 1, setInt32$2: 1, setInt32$3: 1, setInt64$2: 1, setInt64$3: 1, setInt8$2: 1, setRange$3: 1, setRange$4: 1, setUint16$2: 1, setUint16$3: 1, setUint32$2: 1, setUint32$3: 1, setUint64$2: 1, setUint64$3: 1, setUint8$2: 1, split$1: 1, startsWith$1: 1, startsWith$2: 1, sublist$1: 1, sublist$2: 1, substring$1: 1, substring$2: 1, take$1: 1, timeout$1: 1, timeout$2$onTimeout: 1, toInt$0: 1, toList$0: 1, toList$1$growable: 1, toRadixString$1: 1, toString$0: 1, trim$0: 1, where$1: 1};
+      init.interceptedNames = {$add: 1, $and: 1, $eq: 1, $gt: 1, $index: 1, $indexSet: 1, $lt: 1, $mod: 1, $mul: 1, $not: 1, $shl: 1, $shr: 1, $sub: 1, _addEventListener$3: 1, _checkIndex$2: 1, _checkSublistArguments$3: 1, _clear$0: 1, _clearChildren$0: 1, _invalidIndex$2: 1, _removeEventListener$3: 1, _replaceChild$2: 1, _setRangeFast$4: 1, _shlPositive$1: 1, _shrOtherPositive$1: 1, _shrReceiverPositive$1: 1, _tdivFast$1: 1, add$1: 1, add$4: 1, addAll$1: 1, addEventListener$3: 1, allMatches$1: 1, allMatches$2: 1, asByteData$2: 1, asUint8List$0: 1, asUint8List$2: 1, checkGrowable$1: 1, checkMutable$1: 1, clear$0: 1, close$0: 1, close$1: 1, close$2: 1, codeUnitAt$1: 1, complete$0: 1, complete$1: 1, contains$1: 1, contains$2: 1, containsKey$1: 1, defaultValue$1: 1, elementAt$1: 1, endsWith$1: 1, forEach$1: 1, get$_get_data: 1, get$_rows: 1, get$absolute: 1, get$attributes: 1, get$bottom: 1, get$buffer: 1, get$children: 1, get$connection: 1, get$data: 1, get$defaultValue: 1, get$detail: 1, get$duration: 1, get$error: 1, get$first: 1, get$hashCode: 1, get$height: 1, get$host: 1, get$isEmpty: 1, get$isFinite: 1, get$isNaN: 1, get$isNotEmpty: 1, get$iterator: 1, get$keys: 1, get$last: 1, get$left: 1, get$length: 1, get$lengthInBytes: 1, get$list: 1, get$loaded: 1, get$max: 1, get$message: 1, get$min: 1, get$name: 1, get$nodes: 1, get$nonce: 1, get$onClose: 1, get$onDisconnect: 1, get$onError: 1, get$parent: 1, get$parentNode: 1, get$path: 1, get$port: 1, get$request: 1, get$response: 1, get$responseText: 1, get$right: 1, get$rows: 1, get$runtimeType: 1, get$single: 1, get$status: 1, get$stream: 1, get$top: 1, get$type: 1, get$value: 1, get$values: 1, get$version: 1, get$width: 1, getAttribute$1: 1, getFloat32$1: 1, getFloat32$2: 1, getFloat64$1: 1, getFloat64$2: 1, getInt16$1: 1, getInt16$2: 1, getInt32$1: 1, getInt32$2: 1, getInt64$1: 1, getInt64$2: 1, getInt8$1: 1, getRange$2: 1, getUint16$1: 1, getUint16$2: 1, getUint32$1: 1, getUint32$2: 1, getUint64$1: 1, getUint64$2: 1, getUint8$1: 1, indexOf$1: 1, indexOf$2: 1, join$1: 1, lastIndexOf$1: 1, lastIndexOf$2: 1, list$1: 1, load$1: 1, map$1: 1, matchAsPrefix$2: 1, noSuchMethod$1: 1, onDisconnect$0: 1, onError$1: 1, open$3$async: 1, open$5$async$password$user: 1, pause$0: 1, pause$1: 1, print$1: 1, putIfAbsent$2: 1, remainder$1: 1, remove$0: 1, remove$1: 1, removeEventListener$3: 1, removeRange$2: 1, replaceAll$2: 1, replaceRange$3: 1, replaceWith$1: 1, send$1: 1, send$2: 1, set$_get_data: 1, set$_rows: 1, set$absolute: 1, set$attributes: 1, set$bottom: 1, set$buffer: 1, set$children: 1, set$connection: 1, set$data: 1, set$defaultValue: 1, set$detail: 1, set$duration: 1, set$error: 1, set$height: 1, set$left: 1, set$length: 1, set$lengthInBytes: 1, set$list: 1, set$loaded: 1, set$max: 1, set$message: 1, set$min: 1, set$name: 1, set$nodes: 1, set$nonce: 1, set$onClose: 1, set$parent: 1, set$parentNode: 1, set$path: 1, set$request: 1, set$response: 1, set$responseText: 1, set$right: 1, set$rows: 1, set$status: 1, set$stream: 1, set$text: 1, set$top: 1, set$type: 1, set$value: 1, set$values: 1, set$version: 1, set$width: 1, setAll$2: 1, setAttribute$4: 1, setFloat32$2: 1, setFloat32$3: 1, setFloat64$2: 1, setFloat64$3: 1, setInt16$2: 1, setInt16$3: 1, setInt32$2: 1, setInt32$3: 1, setInt64$2: 1, setInt64$3: 1, setInt8$2: 1, setRange$3: 1, setRange$4: 1, setUint16$2: 1, setUint16$3: 1, setUint32$2: 1, setUint32$3: 1, setUint64$2: 1, setUint64$3: 1, setUint8$2: 1, split$1: 1, startsWith$1: 1, startsWith$2: 1, sublist$1: 1, sublist$2: 1, substring$1: 1, substring$2: 1, take$1: 1, timeout$1: 1, timeout$2$onTimeout: 1, toInt$0: 1, toList$0: 1, toList$1$growable: 1, toRadixString$1: 1, toString$0: 1, trim$0: 1, where$1: 1};
     var libraries = init.libraries;
     var mangledNames = init.mangledNames;
     var mangledGlobalNames = init.mangledGlobalNames;
@@ -747,6 +747,14 @@
         if (t1 > 0)
           return receiver[t1 - 1];
         throw H.wrapException(H.IterableElementError_noElement());
+      },
+      get$single: function(receiver) {
+        var t1 = receiver.length;
+        if (t1 === 1)
+          return receiver[0];
+        if (t1 === 0)
+          throw H.wrapException(H.IterableElementError_noElement());
+        throw H.wrapException(H.IterableElementError_tooMany());
       },
       setRange$4: function(receiver, start, end, iterable, skipCount) {
         var $length, i;
@@ -3541,10 +3549,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }
     },
     JSInvocationMirror: {
-      "^": "Object;_memberName,_internalName,_kind,_arguments,_namedArgumentNames,_namedIndices",
+      "^": "Object;__js_helper$_memberName,_internalName,__js_helper$_kind,__js_helper$_arguments,_namedArgumentNames,_namedIndices",
       get$memberName: function() {
         var $name, t1, unmangledName;
-        $name = this._memberName;
+        $name = this.__js_helper$_memberName;
         if (!!J.getInterceptor($name).$isSymbol0)
           return $name;
         t1 = $.get$mangledNames();
@@ -3554,14 +3562,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         else if (t1.$index(0, this._internalName) == null)
           P.print("Warning: '" + H.S($name) + "' is used reflectively but not in MirrorsUsed. This will break minified code.");
         t1 = new H.Symbol($name);
-        this._memberName = t1;
+        this.__js_helper$_memberName = t1;
         return t1;
       },
       get$positionalArguments: function() {
         var t1, argumentCount, list, index;
-        if (this._kind === 1)
+        if (this.__js_helper$_kind === 1)
           return C.List_empty;
-        t1 = this._arguments;
+        t1 = this.__js_helper$_arguments;
         argumentCount = t1.length - this._namedArgumentNames.length;
         if (argumentCount === 0)
           return C.List_empty;
@@ -3574,11 +3582,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       },
       get$namedArguments: function() {
         var t1, namedArgumentCount, t2, namedArgumentsStartIndex, map, i;
-        if (this._kind !== 0)
+        if (this.__js_helper$_kind !== 0)
           return P.LinkedHashMap_LinkedHashMap$_empty(P.Symbol0, null);
         t1 = this._namedArgumentNames;
         namedArgumentCount = t1.length;
-        t2 = this._arguments;
+        t2 = this.__js_helper$_arguments;
         namedArgumentsStartIndex = t2.length - namedArgumentCount;
         if (namedArgumentCount === 0)
           return P.LinkedHashMap_LinkedHashMap$_empty(P.Symbol0, null);
@@ -3745,14 +3753,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }
     },
     TypeErrorDecoder: {
-      "^": "Object;_pattern,_arguments,_argumentsExpr,_expr,_method,__js_helper$_receiver",
+      "^": "Object;_pattern,__js_helper$_arguments,_argumentsExpr,_expr,_method,__js_helper$_receiver",
       matchTypeError$1: function(message) {
         var match, result, t1;
         match = new RegExp(this._pattern).exec(message);
         if (match == null)
           return;
         result = Object.create(null);
-        t1 = this._arguments;
+        t1 = this.__js_helper$_arguments;
         if (t1 !== -1)
           result.arguments = match[t1 + 1];
         t1 = this._argumentsExpr;
@@ -4703,6 +4711,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     IterableElementError_noElement: function() {
       return new P.StateError("No element");
     },
+    IterableElementError_tooMany: function() {
+      return new P.StateError("Too many elements");
+    },
     IterableElementError_tooFew: function() {
       return new P.StateError("Too few elements");
     },
@@ -4729,6 +4740,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if (this.get$length(this) === 0)
           throw H.wrapException(H.IterableElementError_noElement());
         return this.elementAt$1(0, this.get$length(this) - 1);
+      },
+      get$single: function(_) {
+        if (this.get$length(this) === 0)
+          throw H.wrapException(H.IterableElementError_noElement());
+        if (this.get$length(this) > 1)
+          throw H.wrapException(H.IterableElementError_tooMany());
+        return this.elementAt$1(0, 0);
       },
       join$1: function(_, separator) {
         var $length, first, buffer, i, t1;
@@ -4923,6 +4941,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       get$last: function(_) {
         return this._f$1(J.get$last$ax(this._iterable));
       },
+      get$single: function(_) {
+        return this._f$1(J.get$single$ax(this._iterable));
+      },
       _f$1: function(arg0) {
         return this._f.call$1(arg0);
       },
@@ -4967,12 +4988,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }
     },
     MappedListIterable: {
-      "^": "ListIterable;_source,_f",
+      "^": "ListIterable;__internal$_source,_f",
       get$length: function(_) {
-        return J.get$length$asx(this._source);
+        return J.get$length$asx(this.__internal$_source);
       },
       elementAt$1: function(_, index) {
-        return this._f$1(J.elementAt$1$ax(this._source, index));
+        return this._f$1(J.elementAt$1$ax(this.__internal$_source, index));
       },
       _f$1: function(arg0) {
         return this._f.call$1(arg0);
@@ -5087,7 +5108,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       toString$0: function(_) {
         return "Symbol(\"" + H.S(this._name) + "\")";
       },
-      $isSymbol0: 1
+      $isSymbol0: 1,
+      static: {Symbol_validatePublicSymbol: function($name) {
+          if (J.getInterceptor$asx($name).get$isEmpty($name) || $.get$Symbol_publicSymbolPattern()._nativeRegExp.test(H.checkString($name)))
+            return $name;
+          if (C.JSString_methods.startsWith$1($name, "_"))
+            throw H.wrapException(P.ArgumentError$("\"" + $name + "\" is a private identifier"));
+          throw H.wrapException(P.ArgumentError$("\"" + $name + "\" is not a valid (qualified) symbol name"));
+        }}
     }
   }], ["dart._js_mirrors", "dart:_js_mirrors",, H, {
     "^": "",
@@ -5480,10 +5508,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return;
       },
       get$typeVariables: function() {
-        return C.List_empty2;
+        return C.List_empty1;
       },
       get$typeArguments: function() {
-        return C.List_empty1;
+        return C.List_empty2;
       },
       get$isOriginalDeclaration: function() {
         return true;
@@ -5718,7 +5746,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         throw H.wrapException(new P.UnimplementedError(null));
       },
       get$typeArguments: function() {
-        return C.List_empty1;
+        return C.List_empty2;
       },
       $isClassMirror: 1,
       $isMirror: 1,
@@ -6233,7 +6261,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if (t1 || !mirror.isStatic)
           throw H.wrapException(H.NoSuchStaticMethodError$method(null, memberName, positionalArguments, namedArguments));
         if (!("$reflectable" in mirror._jsFunction))
-          H.throwInvalidReflectionError(memberName.get$_name());
+          H.throwInvalidReflectionError(memberName._name);
         return H.reflect(mirror._invoke$2(positionalArguments, namedArguments));
       },
       invoke$2: function(memberName, positionalArguments) {
@@ -6265,7 +6293,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return t1;
       },
       get$typeArguments: function() {
-        return C.List_empty1;
+        return C.List_empty2;
       },
       $isClassMirror: 1,
       $isMirror: 1,
@@ -6423,8 +6451,8 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           t1 = positionalArguments.slice();
           t1.$builtinTypeInfo = [H.getTypeArgumentByIndex(positionalArguments, 0)];
           positionalArguments = t1;
-          for (i = positionalLength; i < J.get$length$asx(this.get$parameters()._collection$_source); ++i) {
-            t1 = J.elementAt$1$ax(this.get$parameters()._collection$_source, i)._defaultValue;
+          for (i = positionalLength; i < J.get$length$asx(this.get$parameters()._source); ++i) {
+            t1 = J.elementAt$1$ax(this.get$parameters()._source, i)._defaultValue;
             positionalArguments.push((t1 != null ? H.reflect(init.metadata[t1]) : null).reflectee);
           }
         }
@@ -6661,13 +6689,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, null, null, 2, 0, null, 24, [], "call"]
     },
     NoSuchStaticMethodError: {
-      "^": "Error;_cls,__js_mirrors$_name,_positionalArguments,__js_mirrors$_namedArguments,__js_mirrors$_kind",
+      "^": "Error;_cls,__js_mirrors$_name,_positionalArguments,__js_mirrors$_namedArguments,_kind",
       toString$0: function(_) {
-        switch (this.__js_mirrors$_kind) {
+        switch (this._kind) {
           case 0:
-            return "NoSuchMethodError: No constructor named '" + H.S(this.__js_mirrors$_name.get$_name()) + "' in class '" + H.S(this._cls.get$qualifiedName().get$_name()) + "'.";
+            return "NoSuchMethodError: No constructor named '" + H.S(this.__js_mirrors$_name._name) + "' in class '" + H.S(this._cls.get$qualifiedName().get$_name()) + "'.";
           case 1:
-            return "NoSuchMethodError: No top-level method named '" + H.S(this.__js_mirrors$_name.get$_name()) + "'.";
+            return "NoSuchMethodError: No top-level method named '" + H.S(this.__js_mirrors$_name._name) + "'.";
           default:
             return "NoSuchMethodError";
         }
@@ -6920,6 +6948,15 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         cancelFuture.whenComplete$1(new P._cancelAndError_closure(future, error, stackTrace));
       else
         future._completeError$2(error, stackTrace);
+    },
+    _cancelAndErrorWithReplacement: function(subscription, future, error, stackTrace) {
+      var replacement = $.Zone__current.errorCallback$2(error, stackTrace);
+      if (replacement != null) {
+        error = replacement.error;
+        error = error != null ? error : new P.NullThrownError();
+        stackTrace = replacement.stackTrace;
+      }
+      P._cancelAndError(subscription, future, error, stackTrace);
     },
     _cancelAndErrorClosure: function(subscription, future) {
       return new P._cancelAndErrorClosure_closure(subscription, future);
@@ -8375,6 +8412,17 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         this.listen$4$cancelOnError$onDone$onError(new P.Stream_last_closure(t1, this), true, new P.Stream_last_closure0(t1, future), future.get$_completeError());
         return future;
       },
+      get$single: function(_) {
+        var t1, future;
+        t1 = {};
+        future = new P._Future(0, $.Zone__current, null);
+        future.$builtinTypeInfo = [H.getRuntimeTypeArgument(this, "Stream", 0)];
+        t1._captured_result_0 = null;
+        t1._captured_foundResult_1 = false;
+        t1._captured_subscription_2 = null;
+        t1._captured_subscription_2 = this.listen$4$cancelOnError$onDone$onError(new P.Stream_single_closure(t1, this, future), true, new P.Stream_single_closure0(t1, future), future.get$_completeError());
+        return future;
+      },
       timeout$2$onTimeout: function(_, timeLimit, onTimeout) {
         var t1, t2, t3, controller;
         t1 = {};
@@ -8497,6 +8545,52 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           e = t1;
           s = H.getTraceFromException(exception);
           P._completeWithErrorCallback(this._captured_future_2, e, s);
+        }
+      }, null, null, 0, 0, null, "call"]
+    },
+    Stream_single_closure: {
+      "^": "Closure;_async$_box_0,_async$_captured_this_1,_captured_future_2",
+      call$1: [function(value) {
+        var e, s, t1, t2, exception;
+        t1 = this._async$_box_0;
+        if (t1._captured_foundResult_1) {
+          try {
+            t2 = H.IterableElementError_tooMany();
+            throw H.wrapException(t2);
+          } catch (exception) {
+            t2 = H.unwrapException(exception);
+            e = t2;
+            s = H.getTraceFromException(exception);
+            P._cancelAndErrorWithReplacement(t1._captured_subscription_2, this._captured_future_2, e, s);
+          }
+          return;
+        }
+        t1._captured_foundResult_1 = true;
+        t1._captured_result_0 = value;
+      }, null, null, 2, 0, null, 27, [], "call"],
+      $signature: function() {
+        return H.computeSignature(function(T) {
+          return {func: 1, args: [T]};
+        }, this._async$_captured_this_1, "Stream");
+      }
+    },
+    Stream_single_closure0: {
+      "^": "Closure:5;_async$_box_0,_captured_future_3",
+      call$0: [function() {
+        var e, s, t1, exception;
+        t1 = this._async$_box_0;
+        if (t1._captured_foundResult_1) {
+          this._captured_future_3._complete$1(t1._captured_result_0);
+          return;
+        }
+        try {
+          t1 = H.IterableElementError_noElement();
+          throw H.wrapException(t1);
+        } catch (exception) {
+          t1 = H.unwrapException(exception);
+          e = t1;
+          s = H.getTraceFromException(exception);
+          P._completeWithErrorCallback(this._captured_future_3, e, s);
         }
       }, null, null, 0, 0, null, "call"]
     },
@@ -11011,12 +11105,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }
     },
     UnmodifiableListView: {
-      "^": "UnmodifiableListBase;_collection$_source",
+      "^": "UnmodifiableListBase;_source",
       get$length: function(_) {
-        return J.get$length$asx(this._collection$_source);
+        return J.get$length$asx(this._source);
       },
       $index: function(_, index) {
-        return J.elementAt$1$ax(this._collection$_source, index);
+        return J.elementAt$1$ax(this._source, index);
       }
     },
     HashMap_HashMap$from_closure: {
@@ -11148,6 +11242,16 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           throw H.wrapException(new P.StateError("No such element"));
         return t1;
       },
+      get$single: function(_) {
+        var t1, t2;
+        t1 = this._collection$_previous;
+        if (t1 === this)
+          throw H.wrapException(new P.StateError("No such element"));
+        t2 = this._collection$_next;
+        if (t1 == null ? t2 != null : t1 !== t2)
+          throw H.wrapException(new P.StateError("Too many elements"));
+        return t2;
+      },
       forEach$1: function(_, action) {
         var modificationCount, current;
         modificationCount = this._modificationCount;
@@ -11263,6 +11367,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if (this.get$length(receiver) === 0)
           throw H.wrapException(H.IterableElementError_noElement());
         return this.$index(receiver, this.get$length(receiver) - 1);
+      },
+      get$single: function(receiver) {
+        if (this.get$length(receiver) === 0)
+          throw H.wrapException(H.IterableElementError_noElement());
+        if (this.get$length(receiver) > 1)
+          throw H.wrapException(H.IterableElementError_tooMany());
+        return this.$index(receiver, 0);
       },
       contains$1: function(receiver, element) {
         var $length, i;
@@ -11454,10 +11565,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       $asMap: null
     },
     Maps_mapToString_closure: {
-      "^": "Closure:31;_box_0,_captured_result_1",
+      "^": "Closure:31;_collection$_box_0,_captured_result_1",
       call$2: function(k, v) {
         var t1, t2;
-        t1 = this._box_0;
+        t1 = this._collection$_box_0;
         if (!t1._captured_first_0)
           this._captured_result_1._contents += ", ";
         t1._captured_first_0 = false;
@@ -11497,6 +11608,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           throw H.wrapException(H.IterableElementError_noElement());
         t1 = this._table;
         return t1[(t2 - 1 & t1.length - 1) >>> 0];
+      },
+      get$single: function(_) {
+        if (this._head === this._tail)
+          throw H.wrapException(H.IterableElementError_noElement());
+        if (this.get$length(this) > 1)
+          throw H.wrapException(H.IterableElementError_tooMany());
+        return this._table[this._head];
       },
       toList$1$growable: function(_, growable) {
         var list;
@@ -11713,6 +11831,15 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         var t1 = new H.EfficientLengthMappedIterable(this, f);
         t1.$builtinTypeInfo = [H.getTypeArgumentByIndex(this, 0), null];
         return t1;
+      },
+      get$single: function(_) {
+        var it;
+        if (this.get$length(this) > 1)
+          throw H.wrapException(H.IterableElementError_tooMany());
+        it = this.get$iterator(this);
+        if (!it.moveNext$0())
+          throw H.wrapException(H.IterableElementError_noElement());
+        return it.get$current();
       },
       toString$0: function(_) {
         return P.IterableBase_iterableToFullString(this, "{", "}");
@@ -12724,11 +12851,11 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       return P.String__stringFromIterable(charCodes, start, end);
     },
     NoSuchMethodError_toString_closure: {
-      "^": "Closure:15;_core$_box_0,_captured_sb_1",
+      "^": "Closure:15;_box_0,_captured_sb_1",
       call$2: function(key, value) {
         var t1, t2, t3;
         t1 = this._captured_sb_1;
-        t2 = this._core$_box_0;
+        t2 = this._box_0;
         t1._contents += t2._captured_comma_0;
         t3 = t1._contents += H.S(key._name);
         t1._contents = t3 + ": ";
@@ -13001,13 +13128,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         }}
     },
     NoSuchMethodError: {
-      "^": "Error;_receiver,_core$_memberName,_core$_arguments,_namedArguments,_existingArgumentNames",
+      "^": "Error;_receiver,_memberName,_arguments,_namedArguments,_existingArgumentNames",
       toString$0: function(_) {
         var t1, sb, t2, t3, _i, argument, memberName, receiverText, actualParameters;
         t1 = {};
         sb = new P.StringBuffer("");
         t1._captured_comma_0 = "";
-        for (t2 = this._core$_arguments, t3 = t2.length, _i = 0; _i < t2.length; t2.length === t3 || (0, H.throwConcurrentModificationError)(t2), ++_i) {
+        for (t2 = this._arguments, t3 = t2.length, _i = 0; _i < t2.length; t2.length === t3 || (0, H.throwConcurrentModificationError)(t2), ++_i) {
           argument = t2[_i];
           sb._contents += t1._captured_comma_0;
           sb._contents += H.S(P.Error_safeToString(argument));
@@ -13016,7 +13143,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t2 = this._namedArguments;
         if (t2 != null)
           t2.forEach$1(0, new P.NoSuchMethodError_toString_closure(t1, sb));
-        memberName = this._core$_memberName._name;
+        memberName = this._memberName._name;
         receiverText = P.Error_safeToString(this._receiver);
         actualParameters = H.S(sb);
         return "NoSuchMethodError: method not found: '" + H.S(memberName) + "'\nReceiver: " + H.S(receiverText) + "\nArguments: [" + actualParameters + "]";
@@ -13255,6 +13382,16 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         do
           result = it.get$current();
         while (it.moveNext$0());
+        return result;
+      },
+      get$single: function(_) {
+        var it, result;
+        it = this.get$iterator(this);
+        if (!it.moveNext$0())
+          throw H.wrapException(H.IterableElementError_noElement());
+        result = it.get$current();
+        if (it.moveNext$0())
+          throw H.wrapException(H.IterableElementError_tooMany());
         return result;
       },
       elementAt$1: function(_, index) {
@@ -14084,10 +14221,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         }}
     },
     Uri_parse_parseAuth: {
-      "^": "Closure:6;_core$_box_0,_captured_uri_1,_captured_EOI_2",
+      "^": "Closure:6;_box_0,_captured_uri_1,_captured_EOI_2",
       call$0: function() {
         var t1, hostStart, t2, $char, lastColon, lastAt, t3, char0, endBracket, hostEnd, i, portNumber, digit;
-        t1 = this._core$_box_0;
+        t1 = this._box_0;
         hostStart = t1._captured_index_5;
         t2 = t1._captured_end_0;
         if (hostStart == null ? t2 == null : hostStart === t2) {
@@ -14152,9 +14289,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }
     },
     Uri__makeQuery_closure: {
-      "^": "Closure:31;_core$_box_0,_core$_captured_result_1",
+      "^": "Closure:31;_box_0,_core$_captured_result_1",
       call$2: function(key, value) {
-        var t1 = this._core$_box_0;
+        var t1 = this._box_0;
         if (!t1._captured_first_0)
           this._core$_captured_result_1._contents += "&";
         t1._captured_first_0 = false;
@@ -14536,11 +14673,22 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       clear$0: function(_) {
         J._clearChildren$0$x(this._html$_element);
       },
+      get$first: function(_) {
+        var result = this._html$_element.firstElementChild;
+        if (result == null)
+          throw H.wrapException(new P.StateError("No elements"));
+        return result;
+      },
       get$last: function(_) {
         var result = this._html$_element.lastElementChild;
         if (result == null)
           throw H.wrapException(new P.StateError("No elements"));
         return result;
+      },
+      get$single: function(_) {
+        if (this._childElements.length > 1)
+          throw H.wrapException(new P.StateError("More than one element"));
+        return this.get$first(this);
       },
       $asListBase: function() {
         return [W.Element];
@@ -14667,6 +14815,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if (len > 0)
           return receiver[len - 1];
         throw H.wrapException(new P.StateError("No elements"));
+      },
+      get$single: function(receiver) {
+        var len = receiver.length;
+        if (len === 1)
+          return receiver[0];
+        if (len === 0)
+          throw H.wrapException(new P.StateError("No elements"));
+        throw H.wrapException(new P.StateError("More than one element"));
       },
       elementAt$1: function(receiver, index) {
         return receiver[index];
@@ -14898,6 +15054,16 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           throw H.wrapException(new P.StateError("No elements"));
         return result;
       },
+      get$single: function(_) {
+        var t1, l;
+        t1 = this._this;
+        l = t1.childNodes.length;
+        if (l === 0)
+          throw H.wrapException(new P.StateError("No elements"));
+        if (l > 1)
+          throw H.wrapException(new P.StateError("More than one element"));
+        return t1.firstChild;
+      },
       add$1: function(_, value) {
         this._this.appendChild(value);
       },
@@ -15022,6 +15188,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if (len > 0)
           return receiver[len - 1];
         throw H.wrapException(new P.StateError("No elements"));
+      },
+      get$single: function(receiver) {
+        var len = receiver.length;
+        if (len === 1)
+          return receiver[0];
+        if (len === 0)
+          throw H.wrapException(new P.StateError("No elements"));
+        throw H.wrapException(new P.StateError("More than one element"));
       },
       elementAt$1: function(receiver, index) {
         return receiver[index];
@@ -15387,6 +15561,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if (len > 0)
           return receiver[len - 1];
         throw H.wrapException(new P.StateError("No elements"));
+      },
+      get$single: function(receiver) {
+        var len = receiver.length;
+        if (len === 1)
+          return receiver[0];
+        if (len === 0)
+          throw H.wrapException(new P.StateError("No elements"));
+        throw H.wrapException(new P.StateError("More than one element"));
       },
       elementAt$1: function(receiver, index) {
         return receiver[index];
@@ -22393,14 +22575,16 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       return $._logger;
     },
     updateLogLevel: [function($name) {
-      var t1, levels, _i, l;
-      t1 = J.trim$0$s($name);
+      var levels, _i, l, t1;
+      $name = J.trim$0$s($name).toUpperCase();
+      if ($name === "debug")
+        $name = "ALL";
       levels = P.LinkedHashMap__makeEmpty();
       for (_i = 0; _i < 10; ++_i) {
         l = C.List_O1R[_i];
         levels.$indexSet(0, l.name, l);
       }
-      l = levels.$index(0, t1.toUpperCase());
+      l = levels.$index(0, $name);
       if (l != null) {
         t1 = Q.logger();
         t1.toString;
@@ -22729,6 +22913,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       },
       listen$1: function(onData) {
         return this.listen$4$cancelOnError$onDone$onError(onData, null, null, null);
+      },
+      get$single: function(_) {
+        var t1 = this._stream;
+        return t1.get$single(t1);
       },
       timeout$2$onTimeout: function(_, timeLimit, onTimeout) {
         return this._stream.timeout$2$onTimeout(0, timeLimit, onTimeout);
@@ -23490,6 +23678,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   J.get$responseText$x = function(receiver) {
     return J.getInterceptor$x(receiver).get$responseText(receiver);
   };
+  J.get$single$ax = function(receiver) {
+    return J.getInterceptor$ax(receiver).get$single(receiver);
+  };
   J.get$value$x = function(receiver) {
     return J.getInterceptor$x(receiver).get$value(receiver);
   };
@@ -23747,8 +23938,8 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   C.List_O1R = Isolate.makeConstantList([C.Level_ALL_0, C.Level_FINEST_300, C.Level_FINER_400, C.Level_FINE_500, C.Level_CONFIG_700, C.Level_INFO_800, C.Level_WARNING_900, C.Level_SEVERE_1000, C.Level_SHOUT_1200, C.Level_OFF_2000]);
   C.List_empty = Isolate.makeConstantList([]);
   C.List_empty0 = H.setRuntimeTypeInfo(Isolate.makeConstantList([]), [P.$int]);
-  C.List_empty1 = H.setRuntimeTypeInfo(Isolate.makeConstantList([]), [P.TypeMirror]);
-  C.List_empty2 = H.setRuntimeTypeInfo(Isolate.makeConstantList([]), [P.TypeVariableMirror]);
+  C.List_empty1 = H.setRuntimeTypeInfo(Isolate.makeConstantList([]), [P.TypeVariableMirror]);
+  C.List_empty2 = H.setRuntimeTypeInfo(Isolate.makeConstantList([]), [P.TypeMirror]);
   C.List_gRj = Isolate.makeConstantList([0, 0, 32722, 12287, 65534, 34815, 65534, 18431]);
   C.List_nxB = Isolate.makeConstantList([0, 0, 24576, 1023, 65534, 34815, 65534, 18431]);
   C.List_qNA = Isolate.makeConstantList([0, 0, 32754, 11263, 65534, 34815, 65534, 18431]);
@@ -23938,7 +24129,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return e.message;
       }
     }());
-  }, "undefinedLiteralPropertyPattern", "JsMirrorSystem__dynamicType", "get$JsMirrorSystem__dynamicType", function() {
+  }, "undefinedLiteralPropertyPattern", "Symbol_publicSymbolPattern", "get$Symbol_publicSymbolPattern", function() {
+    return P.RegExp_RegExp("^(?:(?:[\\-+*/%&|^]|\\[\\]=?|==|~/?|<[<=]?|>[>=]?|unary-)$|(?!(?:assert|break|c(?:a(?:se|tch)|lass|on(?:st|tinue))|d(?:efault|o)|e(?:lse|num|xtends)|f(?:alse|inal(?:ly)?|or)|i[fns]|n(?:ew|ull)|ret(?:hrow|urn)|s(?:uper|witch)|t(?:h(?:is|row)|r(?:ue|y))|v(?:ar|oid)|w(?:hile|ith))\\b(?!\\$))[a-zA-Z$][\\w$]*(?:=?$|[.](?!$)))+?$", true, false);
+  }, "publicSymbolPattern", "JsMirrorSystem__dynamicType", "get$JsMirrorSystem__dynamicType", function() {
     return H.JsTypeMirror$(C.Symbol_dynamic);
   }, "_dynamicType", "JsMirrorSystem__voidType", "get$JsMirrorSystem__voidType", function() {
     return H.JsTypeMirror$(C.Symbol_void);
@@ -24296,6 +24489,7 @@ var stat = Isolate.$isolateProperties;function dynamicTo(obj) {if(typeof(obj) ==
           return dynamicTo(e);
         });
       }
+
       if(obj.constructor.name === 'Object') {
         var keys = Object.keys(obj);
         var values = [];
