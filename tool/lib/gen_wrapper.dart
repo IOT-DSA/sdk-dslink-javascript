@@ -2,8 +2,6 @@ part of dslink_js.build;
 
 // node.js Buffer (or Browserify equivelent) to ByteData, and back.
 class BufferTransformer implements TypeTransformer {
-  final List<String> types = ["ByteData"];
-
   BufferTransformer();
 
   @override
@@ -43,8 +41,6 @@ class BufferTransformer implements TypeTransformer {
 }
 
 class StreamTransformer extends TypeTransformer {
-  final List<String> types = ["Stream"];
-
   StreamTransformer();
 
   @override
