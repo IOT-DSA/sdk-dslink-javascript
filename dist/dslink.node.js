@@ -24761,6 +24761,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       t1 = N.Logger_Logger("DSA");
       $._logger = t1;
       t1.get$onRecord().listen$1(new Q.logger_closure());
+      $._logger.set$level(C.Level_INFO_800);
       return $._logger;
     },
     updateLogLevel: [function($name) {
@@ -27728,6 +27729,26 @@ var stat = Isolate.$isolateProperties;function dynamicTo(obj) {if(typeof(obj) ==
         map.$builtinTypeInfo = [P.String, null];
         return map;
       }
+
+      // effectively a ES6 Map
+      if(obj.forEach
+          && obj.get
+          && obj.has
+          && obj.set
+          && obj.keys
+          && obj.values) {
+        var keys = [];
+        var values = [];
+
+        obj.forEach(function(value, key) {
+          keys.push(dynamicTo(key));
+          values.push(dynamicTo(value));
+        });
+
+        var map = new P.LinkedHashMap_LinkedHashMap$fromIterables(keys, values);
+        map.$builtinTypeInfo = [null, null];
+        return map;
+      }
     return obj;}function dynamicFrom(obj) {if(typeof(obj) === 'undefined' || obj === null) { return obj; }      if(typeof(module.exports[init.mangledGlobalNames[obj.constructor.name]]) !== 'undefined' && module.exports[init.mangledGlobalNames[obj.constructor.name]][clCl]) {
         return module.exports[init.mangledGlobalNames[obj.constructor.name]][clCl](obj);
       }
@@ -27848,7 +27869,7 @@ var stat = Isolate.$isolateProperties;function dynamicTo(obj) {if(typeof(obj) ==
 
         return ConnectionHandler;
     }());
-    mdex.ConnectionHandler[clCl] = function(__obj__) {var returned = Object.create(mdex.ConnectionHandler.prototype);returned[clOb] = __obj__;return returned;};mdex.PassiveChannel = function PassiveChannel() {var __obj__ = (function($nn,$nnn){$nn = dynamicTo($nn);$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}return (O.PassiveChannel$).call(null,$nn,$nnn);}).apply(this, arguments);this[clOb] = __obj__;};mdex.PassiveChannel.prototype = {get onReceiveController() { var returned = this[clOb].onReceiveController;returned = dynamicFrom(returned);return returned;},set onReceiveController(v) {v = dynamicTo(v);this[clOb].onReceiveController = v;},get conn() { var returned = this[clOb].conn;returned = dynamicFrom(returned);return returned;},set conn(v) {v = dynamicTo(v);this[clOb].conn = v;},get getData() { var returned = this[clOb].getData;return returned;},set getData(v) {v = dynamicTo(v);this[clOb].getData = v;},sendWhenReady: function($nn){      $nn = {
+    mdex.ConnectionHandler[clCl] = function(__obj__) {var returned = Object.create(mdex.ConnectionHandler.prototype);returned[clOb] = __obj__;return returned;};mdex.PassiveChannel = function PassiveChannel() {var __obj__ = (function($nn,$nnn){$nn = dynamicTo($nn);$nnn = typeof($nnn) === 'undefined' ? null : $nnn;if($nnn !== null) {}return (O.PassiveChannel$).call(null,$nn,$nnn);}).apply(this, arguments);this[clOb] = __obj__;};mdex.PassiveChannel.prototype = {get onReceiveController() { var returned = this[clOb].onReceiveController;returned = dynamicFrom(returned);return returned;},set onReceiveController(v) {v = dynamicTo(v);this[clOb].onReceiveController = v;},get conn() { var returned = this[clOb].conn;returned = dynamicFrom(returned);return returned;},set conn(v) {v = dynamicTo(v);this[clOb].conn = v;},get getData() { var returned = this[clOb].getData;returned = dynamicFrom(returned);return returned;},set getData(v) {v = dynamicTo(v);this[clOb].getData = v;},sendWhenReady: function($nn){      $nn = {
         call$0: function() {
           var args = new Array(arguments.length);
           for(var i = 0; i < args.length; ++i) {
@@ -28170,7 +28191,7 @@ var stat = Isolate.$isolateProperties;function dynamicTo(obj) {if(typeof(obj) ==
 
         return SubscribeController;
     }());
-    mdex.SubscribeController[clCl] = function(__obj__) {var returned = Object.create(mdex.SubscribeController.prototype);returned[clOb] = __obj__;return returned;};mdex.ReqSubscribeListener = function ReqSubscribeListener() {var __obj__ = (function($nn,$nnn,$nnnn){$nn = dynamicTo($nn);$nnnn = dynamicTo($nnnn);return (L.ReqSubscribeListener$).call(null,$nn,$nnn,$nnnn);}).apply(this, arguments);this[clOb] = __obj__;};mdex.ReqSubscribeListener.prototype = {get callback() { var returned = this[clOb].callback;return returned;},set callback(v) {v = dynamicTo(v);this[clOb].callback = v;},get requester() { var returned = this[clOb].requester;returned = dynamicFrom(returned);return returned;},set requester(v) {v = dynamicTo(v);this[clOb].requester = v;},get path() { var returned = this[clOb].path;return returned;},set path(v) {this[clOb].path = v;},cancel: function(){var returned = (this[clOb].cancel$0).call(this[clOb]);returned = dynamicFrom(returned);return returned;},asFuture: function(dynamic){dynamic = typeof(dynamic) === 'undefined' ? null : dynamic;if(dynamic !== null) {dynamic = dynamicTo(dynamic);}var returned = (this[clOb].asFuture$1).call(this[clOb],dynamic);returned = dynamicFrom(returned);return returned;},onData: function($nn){      $nn = {
+    mdex.SubscribeController[clCl] = function(__obj__) {var returned = Object.create(mdex.SubscribeController.prototype);returned[clOb] = __obj__;return returned;};mdex.ReqSubscribeListener = function ReqSubscribeListener() {var __obj__ = (function($nn,$nnn,$nnnn){$nn = dynamicTo($nn);$nnnn = dynamicTo($nnnn);return (L.ReqSubscribeListener$).call(null,$nn,$nnn,$nnnn);}).apply(this, arguments);this[clOb] = __obj__;};mdex.ReqSubscribeListener.prototype = {get callback() { var returned = this[clOb].callback;returned = dynamicFrom(returned);return returned;},set callback(v) {v = dynamicTo(v);this[clOb].callback = v;},get requester() { var returned = this[clOb].requester;returned = dynamicFrom(returned);return returned;},set requester(v) {v = dynamicTo(v);this[clOb].requester = v;},get path() { var returned = this[clOb].path;return returned;},set path(v) {this[clOb].path = v;},cancel: function(){var returned = (this[clOb].cancel$0).call(this[clOb]);returned = dynamicFrom(returned);return returned;},asFuture: function(dynamic){dynamic = typeof(dynamic) === 'undefined' ? null : dynamic;if(dynamic !== null) {dynamic = dynamicTo(dynamic);}var returned = (this[clOb].asFuture$1).call(this[clOb],dynamic);returned = dynamicFrom(returned);return returned;},onData: function($nn){      $nn = {
         call$0: function() {
           var args = new Array(arguments.length);
           for(var i = 0; i < args.length; ++i) {
@@ -28727,7 +28748,7 @@ var stat = Isolate.$isolateProperties;function dynamicTo(obj) {if(typeof(obj) ==
 
         return SubscribeResponse;
     }());
-    mdex.SubscribeResponse[clCl] = function(__obj__) {var returned = Object.create(mdex.SubscribeResponse.prototype);returned[clOb] = __obj__;return returned;};mdex.RespSubscribeListener = function RespSubscribeListener() {var __obj__ = (function($nn,$nnn){$nn = dynamicTo($nn);$nnn = dynamicTo($nnn);return (T.RespSubscribeListener$).call(null,$nn,$nnn);}).apply(this, arguments);this[clOb] = __obj__;};mdex.RespSubscribeListener.prototype = {get callback() { var returned = this[clOb].callback;return returned;},set callback(v) {v = dynamicTo(v);this[clOb].callback = v;},get node() { var returned = this[clOb].node;returned = dynamicFrom(returned);return returned;},set node(v) {v = dynamicTo(v);this[clOb].node = v;},cancel: function(){var returned = (this[clOb].cancel$0).call(this[clOb]);returned = dynamicFrom(returned);return returned;}};mdex.RespSubscribeListener.prototype[clIw] = true;    mdex.RespSubscribeListener.class = obfr(function() {
+    mdex.SubscribeResponse[clCl] = function(__obj__) {var returned = Object.create(mdex.SubscribeResponse.prototype);returned[clOb] = __obj__;return returned;};mdex.RespSubscribeListener = function RespSubscribeListener() {var __obj__ = (function($nn,$nnn){$nn = dynamicTo($nn);$nnn = dynamicTo($nnn);return (T.RespSubscribeListener$).call(null,$nn,$nnn);}).apply(this, arguments);this[clOb] = __obj__;};mdex.RespSubscribeListener.prototype = {get callback() { var returned = this[clOb].callback;returned = dynamicFrom(returned);return returned;},set callback(v) {v = dynamicTo(v);this[clOb].callback = v;},get node() { var returned = this[clOb].node;returned = dynamicFrom(returned);return returned;},set node(v) {v = dynamicTo(v);this[clOb].node = v;},cancel: function(){var returned = (this[clOb].cancel$0).call(this[clOb]);returned = dynamicFrom(returned);return returned;}};mdex.RespSubscribeListener.prototype[clIw] = true;    mdex.RespSubscribeListener.class = obfr(function() {
         function RespSubscribeListener() {
           mdex.RespSubscribeListener.apply(this, arguments);
           var proto = Object.keys(Object.getPrototypeOf(this));
