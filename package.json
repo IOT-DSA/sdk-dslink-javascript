@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "dhcurve": "^1.1.1",
+    "dhcurve": "^1.1.2",
     "es6-promises": "^1.0.10",
     "goal": "^1.0.1",
     "websocket": "1.0.14",
