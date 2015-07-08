@@ -93,7 +93,7 @@ fetchDeps() {
 }
 
 @DefaultTask()
-@Depends(const [clean, cloneSdk, patchDeps, fetchDeps])
+@Depends(clean, cloneSdk, patchDeps, fetchDeps)
 @Task("Build for node.js")
 node() async {
   var builder = new DSLinkBuilder(target: PatcherTarget.NODE);
@@ -103,7 +103,7 @@ node() async {
   await minified.build();
 }
 
-@Depends(const [clean, cloneSdk, patchDeps, fetchDeps])
+@Depends(clean, cloneSdk, patchDeps, fetchDeps)
 @Task("Build for the browser")
 browser() async {
   var builder = new DSLinkBuilder(target: PatcherTarget.BROWSER);
