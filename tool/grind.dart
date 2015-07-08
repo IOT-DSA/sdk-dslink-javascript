@@ -3,6 +3,7 @@ library dslink_js.build;
 import "package:calzone/transformers.dart";
 import "package:calzone/patcher.dart";
 import "package:calzone/compiler.dart";
+import "package:calzone/builder.dart";
 import "package:calzone/util.dart";
 
 import "package:grinder/grinder.dart";
@@ -13,9 +14,52 @@ import "dart:io";
 import "dart:async";
 import "dart:convert";
 
-part "lib/gen_wrapper.dart";
+part "lib/transformers.dart";
 part "lib/patch_deps.dart";
 part "lib/util.dart";
+
+class DSLinkBuilder extends Builder {
+  final PatcherTarget target;
+
+  DSLinkBuilder({PatcherTarget target: PatcherTarget.NODE, BuilderStage stage: BuilderStage.ALL, bool isMinified: false}):
+    this.target = target,
+    super("tool/${target}_stub.dart", "tool/dslink.include",
+      stage: stage,
+      target: target,
+      typeTransformers: [
+        new PromiseTransformer(true),
+        new ClosureTransformer(),
+        new BufferTransformer(),
+        new StreamTransformer(),
+        new CollectionsTransformer(true)
+      ],
+      directory: isMinified ? "temp/min" : "temp/full",
+      isMinified: isMinified);
+
+
+  Future<String> onWrapperGenerated(String wrapper) async =>
+    await npmBinAsync("uglify-js", "uglifyjs -m", input: wrapper);
+
+  Future<String> build() async {
+    var output = await super.build();
+
+    var filename = "dist/dslink.${target}.${isMinified ? "min.js" : ".js"}";
+    var file = new File(filename);
+    file.createSync();
+
+    if(isMinified)
+      file.writeAsStringSync(await npmBinAsync("uglify-js", "uglifyjs", input: output));
+    else
+      file.writeAsStringSync(output);
+
+    if(target == PatcherTarget.BROWSER) {
+      var browserify = npmBin("browserify", "browserify $filename");
+      file.writeAsStringSync(browserify);
+    }
+
+    return null;
+  }
+}
 
 PatcherTarget target;
 
@@ -29,12 +73,11 @@ clean() {
   delete(temp);
   delete(dist);
 
-  temp.createSync();
   dist.createSync();
 }
 
 @Task("Cloning Dart SDK")
-cloneSDK() {
+cloneSdk() {
   exec("git clone https://github.com/IOT-DSA/sdk-dslink-dart temp/sdk-dslink-dart");
 }
 
@@ -49,151 +92,45 @@ fetchDeps() {
   exec("npm install");
 }
 
-@Task("Building Dart SDK with dart2js")
-buildSDK() {
-  dart2js(["dump-info",
-          "trust-primitives",
-          "enable-experimental-mirrors"],
-      "temp/dslink.js",
-      "tool/${target}_stub.dart");
-
-  dart2js(["dump-info",
-          "trust-primitives",
-          "enable-experimental-mirrors",],
-      "temp/dslink.min.js",
-      "tool/${target}_stub.dart",
-      isMinified: true);
-}
-
-@Task("Scraping Dart SDK for wrapper")
-scrapeSDK() async {
-  var scraper = new Scraper("temp/dslink.js", "temp/dslink.js.info.json");
-  var minified = new Scraper("temp/dslink.min.js", "temp/dslink.min.js.info.json",
-      isMinified: true);
-
-  var file = new File("temp/dslink.scraper.json");
-  var minifiedFile = new File("temp/dslink.min.scraper.json");
-
-  file.createSync();
-  minifiedFile.createSync();
-
-  file.writeAsStringSync(await scraper.scrape());
-  minifiedFile.writeAsStringSync(await minified.scrape());
-}
-
-@Task("Generating JS wrapper for Dart SDK")
-genWrapper() {
-  var wrapper = _generateWrapper("tool/${target}_stub.dart", "dslink");
-  var minified = _generateWrapper("tool/${target}_stub.dart", "dslink.min", isMinified: true);
-
-  var file = new File("temp/wrapper.js");
-  var minifiedFile = new File("temp/wrapper.min.js");
-
-  file.createSync();
-  minifiedFile.createSync();
-
-  file.writeAsStringSync(wrapper);
-  minifiedFile.writeAsStringSync(minified);
-}
-
-@Task("Mangle JS wrapper")
-mangleWrapper() {
-  var output = npmBin("uglify-js", "uglifyjs temp/wrapper.min.js -m");
-  var file = new File("temp/wrapper.min.min.js");
-
-  file.createSync();
-  file.writeAsStringSync(output);
-}
-
-@Task("Patching JS wrapper")
-patchWrapper() async {
-  var patcher = new Patcher("temp/dslink.js", "temp/dslink.js.info.json",
-      "temp/wrapper.js", target: target);
-  var minified = new Patcher("temp/dslink.min.js", "temp/dslink.min.js.info.json",
-      "temp/wrapper.min.min.js", target: target, isMinified: true);
-
-  var file = new File("dist/dslink.$target.js");
-  var minifiedFile = new File("dist/dslink.$target.min.js");
-
-  file.createSync();
-  minifiedFile.createSync();
-
-  file.writeAsStringSync(patcher.patch());
-
-  minifiedFile.writeAsStringSync(await npmBinAsync("uglify-js", "uglifyjs", input: minified.patch()));
-
-  if(target == PatcherTarget.BROWSER) {
-    var browserify = npmBin("browserify", "browserify dist/dslink.browser.js");
-    var minBrowserify = npmBin("browserify", "browserify dist/dslink.browser.min.js");
-
-    file.writeAsStringSync(browserify);
-    minifiedFile.writeAsStringSync(minBrowserify);
-  }
-}
-
 @DefaultTask()
-@Task("Build for the browser")
-browser() {
-  target = PatcherTarget.BROWSER;
-  runGrinderTasks(["clean",
-      "cloneSDK",
-      "patchDeps",
-      "fetchDeps",
-      "buildSDK",
-      "scrapeSDK",
-      "genWrapper",
-      "mangleWrapper",
-      "patchWrapper"]);
-}
-
+@Depends(const [clean, cloneSdk, patchDeps, fetchDeps])
 @Task("Build for node.js")
-node() {
-  target = PatcherTarget.NODE;
-  runGrinderTasks(["clean",
-      "cloneSDK",
-      "patchDeps",
-      "fetchDeps",
-      "buildSDK",
-      "scrapeSDK",
-      "genWrapper",
-      "mangleWrapper",
-      "patchWrapper"]);
+node() async {
+  var builder = new DSLinkBuilder(target: PatcherTarget.NODE);
+  var minified = new DSLinkBuilder(target: PatcherTarget.NODE, isMinified: true);
+
+  await builder.build();
+  await minified.build();
 }
 
-@Task("Dev build for the browser")
-browserDev() {
-  target = PatcherTarget.BROWSER;
-  runGrinderTasks(["scrapeSDK",
-      "genWrapper",
-      "mangleWrapper",
-      "patchWrapper"]);
+@Depends(const [clean, cloneSdk, patchDeps, fetchDeps])
+@Task("Build for the browser")
+browser() async {
+  var builder = new DSLinkBuilder(target: PatcherTarget.BROWSER);
+  var minified = new DSLinkBuilder(target: PatcherTarget.BROWSER, isMinified: true);
+
+  await builder.build();
+  await minified.build();
 }
 
 @Task("Dev build for node.js")
 nodeDev() async {
-  target = PatcherTarget.NODE;
-  await runGrinderTasks(["scrapeSDK",
-      "genWrapper",
-      "mangleWrapper",
-      "patchWrapper"]);
+  var builder = new DSLinkBuilder(target: PatcherTarget.NODE, stage: BuilderStage.WRAP);
+  var minified = new DSLinkBuilder(target: PatcherTarget.NODE,
+      isMinified: true,
+      stage: BuilderStage.WRAP);
+
+  await builder.build();
+  await minified.build();
 }
 
-@Task("Rebuild for the browser")
-browserRebuild() {
-  target = PatcherTarget.BROWSER;
-  runGrinderTasks(["buildSDK",
-      "scrapeSDK",
-      "genWrapper",
-      "mangleWrapper",
-      "patchWrapper"]);
-}
+@Task("Dev build for the browser")
+browserDev() async {
+  var builder = new DSLinkBuilder(target: PatcherTarget.BROWSER, stage: BuilderStage.WRAP);
+  var minified = new DSLinkBuilder(target: PatcherTarget.BROWSER,
+      isMinified: true,
+      stage: BuilderStage.WRAP);
 
-@Task("Rebuild for node.js")
-nodeRebuild() async {
-  target = PatcherTarget.NODE;
-  runGrinderTasks(["buildSDK",
-      "scrapeSDK",
-      "genWrapper",
-      "mangleWrapper",
-      "patchWrapper"]);
+  await builder.build();
+  await minified.build();
 }

@@ -9,24 +9,26 @@ import "dart:collection";
 import "dart:typed_data";
 
 @MirrorsUsed(
-    targets: const [
-  "dslink.pk",
-  "dslink.common",
-  "dslink.requester",
-  "dslink.responder",
-  "dslink.client",
-  "dslink.utils.Scheduler",
-  "dslink.utils.Interval",
-  "dslink.utils.DSLinkJSON",
-  "dslink.utils.updateLogLevel",
-  "dslink.utils.buildEnumType",
-  "dslink.utils.buildActionIO",
-  "dart.async.Completer",
-  "dart.async.Future",
-  "dart.collection.LinkedHashMap",
-  "dart.typed_data.ByteData",
-  "dslink.stub.NodeStub"
-])
+  targets: const [
+    "dslink.pk",
+    "dslink.common",
+    "dslink.requester",
+    "dslink.responder",
+    "dslink.client",
+    "dslink.utils.Scheduler",
+    "dslink.utils.Interval",
+    "dslink.utils.DSLinkJSON",
+    "dslink.utils.updateLogLevel",
+    "dslink.utils.buildEnumType",
+    "dslink.utils.buildActionIO",
+    "dart.async.Completer",
+    "dart.async.Future",
+    "dart.collection.LinkedHashMap",
+    "dart.typed_data.ByteData",
+    "dslink.stub.NodeStub"
+  ],
+  override: '*'
+)
 import "dart:mirrors";
 
 class NodeStub extends SimpleNode {
