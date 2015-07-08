@@ -43,7 +43,7 @@ class DSLinkBuilder extends Builder {
   Future<String> build() async {
     var output = await super.build();
 
-    var filename = "dist/dslink.${target}.${isMinified ? "min.js" : ".js"}";
+    var filename = "dist/dslink.${target}.${isMinified ? "min.js" : "js"}";
     var file = new File(filename);
     file.createSync();
 
