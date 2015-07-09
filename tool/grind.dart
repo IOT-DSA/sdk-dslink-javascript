@@ -47,7 +47,7 @@ class DSLinkBuilder extends Builder {
   }
 
   Future<String> build() async {
-    var output = await super.build();
+    var output = await super.build() + "\n";
     output += new File("tool/js/mixin.js").readAsStringSync();
 
     if(stage == BuilderStage.COMPILE)
