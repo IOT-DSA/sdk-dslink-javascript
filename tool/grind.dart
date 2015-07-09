@@ -37,11 +37,19 @@ class DSLinkBuilder extends Builder {
       isMinified: isMinified);
 
 
-  Future<String> onWrapperGenerated(String wrapper) async =>
-    await npmBinAsync("uglify-js", "uglifyjs -m", input: wrapper);
+  Future<String> onWrapperGenerated(String wrapper) async {
+    var file = new File("$directory/wrapper.js");
+
+    file.createSync();
+    file.writeAsStringSync(wrapper);
+
+    return await npmBinAsync("uglify-js", "uglifyjs --screw-ie8 -c sequences,properties,dead_code,unsafe,join_vars,cascade -m", input: wrapper);
+  }
 
   Future<String> build() async {
     var output = await super.build();
+    if(stage == BuilderStage.COMPILE)
+      return null;
 
     var filename = "dist/dslink.${target}.${isMinified ? "min.js" : "js"}";
     var file = new File(filename);

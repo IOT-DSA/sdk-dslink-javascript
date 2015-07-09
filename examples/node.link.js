@@ -1,5 +1,5 @@
 var time = Date.now();
-var DS = require('../dist/dslink.node.min.js');
+var DS = require('../dist/dslink.node.js');
 console.log("startup: " + (Date.now() - time));
 
 var a = DS.buildEnumType(['a', 'b', 'c']);
