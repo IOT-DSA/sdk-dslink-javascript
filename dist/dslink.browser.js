@@ -25289,6 +25289,35 @@ e=e||{},t=dynamicTo(t);var n=void 0===e.columns?null:e.columns;null!==n&&(n=dyna
 })();
 
 
+function mixin(dest) {
+  var count = 1;
+  var length = arguments.length;
+
+  for(; count < length; count++) {
+    var arg = arguments[count];
+
+    for(var prop in arg) {
+      if(arg.hasOwnProperty(prop)) {
+        dest[prop] = arg[prop];
+      }
+    }
+  }
+  return dest;
+}
+
+module.exports.createNode = function(opt) {
+  var extend = exports.SimpleNode.class;
+
+  function Node(path) {
+    extend.call(this, path);
+  }
+
+  Node.prototype = Object.create(extend.prototype);
+
+  mixin(Node.prototype, opt);
+  return Node;
+};
+
 }).call(this,require("buffer").Buffer)
 },{"buffer":2,"es6-promises":9,"events":6}],2:[function(require,module,exports){
 /*!
