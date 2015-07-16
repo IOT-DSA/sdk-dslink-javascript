@@ -11,6 +11,7 @@ docs/build
 # Dart
 .pub
 packages
+.packages
 ./**/packages
 pubspec.lock
 

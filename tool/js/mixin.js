@@ -26,3 +26,18 @@ module.exports.createNode = function(opt) {
   mixin(Node.prototype, opt);
   return Node;
 };
+
+var SimpleActionNode_super = module.exports.SimpleNode.class;
+
+function SimpleActionNode(path, cb) {
+  SimpleActionNode_super.call(this, path);
+  this.cb = cb;
+}
+
+SimpleActionNode.prototype = Object.create(SimpleActionNode_super.prototype);
+
+SimpleActionNode.prototype.onInvoke = function(params) {
+  return this.cb(this, params);
+};
+
+module.exports.SimpleActionNode = SimpleActionNode;
