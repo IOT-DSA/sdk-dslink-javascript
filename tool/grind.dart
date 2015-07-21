@@ -63,7 +63,7 @@ class DSLinkBuilder extends Builder {
       file.writeAsStringSync(output);
 
     if(target == PatcherTarget.BROWSER) {
-      var browserify = npmBin("browserify", "browserify $filename");
+      var browserify = npmBin("browserify", "browserify $filename --standalone DS");
       file.writeAsStringSync(browserify);
     }
 
