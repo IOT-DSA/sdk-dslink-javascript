@@ -57,15 +57,15 @@ class DSLinkBuilder extends Builder {
     var file = new File(filename);
     file.createSync();
 
-    if(isMinified)
-      file.writeAsStringSync(await npmBinAsync("uglify-js", "uglifyjs", input: output));
-    else
-      file.writeAsStringSync(output);
-
+    file.writeAsStringSync(output);
+    
     if(target == PatcherTarget.BROWSER) {
-      var browserify = npmBin("browserify", "browserify $filename --standalone DS");
+      var browserify = npmBin("browserify", "browserify $filename -r crypto -r dhcurve --standalone DS");
       file.writeAsStringSync(browserify);
     }
+    
+    if(isMinified)
+      file.writeAsStringSync(await npmBinAsync("uglify-js", "uglifyjs $filename"));
 
     return null;
   }
