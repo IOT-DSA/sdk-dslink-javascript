@@ -17,8 +17,8 @@ function mixin(dest) {
 module.exports.createNode = function(opt) {
   var extend = exports.SimpleNode.class;
 
-  function Node(path) {
-    extend.call(this, path);
+  function Node(path, provider) {
+    extend.call(this, path, provider);
   }
 
   Node.prototype = Object.create(extend.prototype);
@@ -27,14 +27,14 @@ module.exports.createNode = function(opt) {
   return Node;
 };
 
-var SimpleActionNode_super = module.exports.SimpleNode.class;
+var SimpleNode_super = module.exports.SimpleNode.class;
 
-function SimpleActionNode(path, cb) {
-  SimpleActionNode_super.call(this, path);
+function SimpleActionNode(path, provider, cb) {
+  SimpleNode_super.call(this, path, provider);
   this.cb = cb;
 }
 
-SimpleActionNode.prototype = Object.create(SimpleActionNode_super.prototype);
+SimpleActionNode.prototype = Object.create(SimpleNode_super.prototype);
 
 SimpleActionNode.prototype.onInvoke = function(params) {
   return this.cb(this, params);
