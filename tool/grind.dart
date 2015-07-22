@@ -57,6 +57,8 @@ class DSLinkBuilder extends Builder {
     var file = new File(filename);
     file.createSync();
 
+    if(target == PatcherTarget.BROWSER)
+      output = 'this.require = require;require("dhcurve");require("crypto");' + output;
     file.writeAsStringSync(output);
     
     if(target == PatcherTarget.BROWSER) {

@@ -41,6 +41,3 @@ SimpleActionNode.prototype.onInvoke = function(params) {
 };
 
 module.exports.SimpleActionNode = SimpleActionNode;
-
-require('crypto');
-require('dhcurve');
