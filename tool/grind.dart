@@ -60,7 +60,7 @@ class DSLinkBuilder extends Builder {
     file.writeAsStringSync(output);
     
     if(target == PatcherTarget.BROWSER) {
-      var browserify = npmBin("browserify", "browserify $filename -r crypto -r dhcurve --standalone DS");
+      var browserify = npmBin("browserify", "browserify -r crypto -r dhcurve $filename --standalone DS");
       file.writeAsStringSync(browserify);
     }
     
