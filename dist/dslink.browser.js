@@ -25490,13 +25490,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   C.Symbol_call = new H.Symbol("call");
   C.Symbol_dynamic = new H.Symbol("dynamic");
   C.Symbol_void = new H.Symbol("void");
-  C.Type_CNi = H.createRuntimeType("Completer");
-  C.TypeVariable_LB7 = new H.TypeVariable(C.Type_CNi, "T", 3);
   C.Type_mTw = H.createRuntimeType("LinkedHashMap");
-  C.TypeVariable_V4S = new H.TypeVariable(C.Type_mTw, "V", 3);
-  C.TypeVariable_aWV = new H.TypeVariable(C.Type_mTw, "K", 3);
+  C.TypeVariable_ViB = new H.TypeVariable(C.Type_mTw, "K", 3);
+  C.TypeVariable_cZu = new H.TypeVariable(C.Type_mTw, "V", 3);
   C.Type_JO4 = H.createRuntimeType("Future");
-  C.TypeVariable_gvT = new H.TypeVariable(C.Type_JO4, "T", 3);
+  C.TypeVariable_gbI = new H.TypeVariable(C.Type_JO4, "T", 3);
+  C.Type_CNi = H.createRuntimeType("Completer");
+  C.TypeVariable_sVS = new H.TypeVariable(C.Type_CNi, "T", 3);
   C.Type_2bx0 = H.createRuntimeType("Uint32List");
   C.Type_2bx = H.createRuntimeType("Uint16List");
   C.Type_3bx = H.createRuntimeType("Function");
@@ -25802,7 +25802,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   }]);
   Isolate = Isolate.$finishIsolateConstructor(Isolate);
   $ = new Isolate();
-  init.metadata = [null, "value", "name", "path", "m", "error", "response", "responder", "callback", "node", "byteOffset", "key", C.Endianness_false, "endian", "stackTrace", "requester", "self", "parent", C.C__Override, "zone", "val", "meta", "columns", 3, "maxPermission", "str", "v", "e", "f", true, "params", "_", "action", "updates", "data", "streamStatus", "rid", "cacheLevel", "x", "k", "duration", "salt", "arg", "input", "controller", "update", "provider", 1, false, "sid", "computation", "conn", "basePath", "list", "status", "n", 0, "type", "stack", "parentNode", "isRequester", "other", "invocation", "profiles", "nodeProvider", "each", "rows", "isResponder", 0 / 0, "cachelevel", "publicKeyRemote", "element", "o", "resp", "force", "onError", "values", "old", "bytes", "hash", "dsId", "subscription", "arg2", "defaultValue", "obj", "arg1", "object", C.TypeVariable_aWV, "channel", "cache", "defName", C.TypeVariable_V4S, "level", "updater", "req", "reconnect", "saltId", "length", "err", "prefix", "interval", "times", "byteString", "privateKey", "timeLimit", "wsUpdateUri", "httpUpdateUri", "socket", "clientLink", "onConnect", "onTimeout", "ignored", "arg3", "s", "arg4", "idx", "event", "authError", "connection", "t", "keyValuePairs", "msg", "detail", "phase", "a", "connected", "nameOrPath", "equals", 4, "hashCode", "defaultVal", "isValidKey", "iterable", "keys", "futures", "eagerError", "entry", "ts", "cleanUp", "count", "it", "min", "max", "oldUpdate", "newUpdate", "getData", C.TypeVariable_LB7, "processor", "xhr", "captureThis", "arguments", "base", "parameter", "index", "buffer", "offsetInBytes", "closure", "result", "isolate", "remotePath", "numberOfArguments", "brokerUrl", "line", "defaultNodes", "rawColumns", "specification", "zoneValues", "dataStore", "loadNodes", "changes", "reflectee", "i", "listUpdate", "futureValue", "handleData", "handleDone", "handleError", "resumeSignal", "theError", "otherwise", "application/octet-stream", "sub", "request", "theStackTrace", "profile", "reqId", "_permitted", "nodeprovider", "inputs", "keepGoing", "withChildren", "sender", "test", "vals", "id", C.C_Unspecified, "open", "stat", "addToTree", C.TypeVariable_gvT, "map", "ms", "seconds", "minutes", "hours", "storage", "_conn", "types", "dsIdPrefix", "record", "timer", "sum"];
+  init.metadata = [null, "value", "name", "path", "m", "error", "response", "responder", "callback", "node", "byteOffset", "key", C.Endianness_false, "endian", "stackTrace", "requester", "self", "parent", C.C__Override, "zone", "val", "meta", "columns", 3, "maxPermission", "str", "v", "e", "f", true, "params", "_", "action", "updates", "data", "streamStatus", "rid", "cacheLevel", "x", "k", "duration", "salt", "arg", "input", "controller", "update", "provider", 1, false, "sid", "computation", "conn", "basePath", "list", "status", "n", 0, "type", "stack", "parentNode", "isRequester", "other", "invocation", "profiles", "nodeProvider", "each", "rows", "isResponder", 0 / 0, "cachelevel", "publicKeyRemote", "element", "o", "resp", "force", "onError", "values", "old", "bytes", "hash", "dsId", "subscription", "arg2", "defaultValue", "obj", "arg1", "object", C.TypeVariable_ViB, "channel", "cache", "defName", C.TypeVariable_cZu, "level", "updater", "req", "reconnect", "saltId", "length", "err", "prefix", "interval", "times", "byteString", "privateKey", "timeLimit", "wsUpdateUri", "httpUpdateUri", "socket", "clientLink", "onConnect", "onTimeout", "ignored", "arg3", "s", "arg4", "idx", "event", "authError", "connection", "t", "keyValuePairs", "msg", "detail", "phase", "a", "connected", "nameOrPath", "equals", 4, "hashCode", "defaultVal", "isValidKey", "iterable", "keys", "futures", "eagerError", "entry", "ts", "cleanUp", "count", "it", "min", "max", "oldUpdate", "newUpdate", "getData", C.TypeVariable_sVS, "processor", "xhr", "captureThis", "arguments", "base", "parameter", "index", "buffer", "offsetInBytes", "closure", "result", "isolate", "remotePath", "numberOfArguments", "brokerUrl", "line", "defaultNodes", "rawColumns", "specification", "zoneValues", "dataStore", "loadNodes", "changes", "reflectee", "i", "listUpdate", "futureValue", "handleData", "handleDone", "handleError", "resumeSignal", "theError", "otherwise", "application/octet-stream", "sub", "request", "theStackTrace", "profile", "reqId", "_permitted", "nodeprovider", "inputs", "keepGoing", "withChildren", "sender", "test", "vals", "id", C.C_Unspecified, "open", "stat", "addToTree", C.TypeVariable_gbI, "map", "ms", "seconds", "minutes", "hours", "storage", "_conn", "types", "dsIdPrefix", "record", "timer", "sum"];
   init.types = [{func: 1}, {func: 1, void: true}, {func: 1, args: [,]}, P.Object, {func: 1, args: [,,]}, P.String, P.bool, P.$int, {func: 1, ret: P.bool}, [P.Map, P.String, P.Object], Q.Interval, {func: 1, void: true, args: [P.Map]}, P.StreamSubscription, P.Map, {func: 1, args: [P.String]}, {func: 1, ret: P.String}, {func: 1, void: true, args: [P.String]}, [P.Map, P.String, O.Node0], P.List, O.Node0, L.Requester, {func: 1, ret: P.Future}, O.DSError, {func: 1, ret: P.$int}, {func: 1, args: [P.String,,]}, O.ValueUpdate, {func: 1, args: [P.String, P.Object]}, {func: 1, ret: P.Map}, {func: 1, void: true, args: [{func: 1, void: true}]}, L.RequestUpdater, [P.Map, P.Function, P.$int], T.Responder, [P.List, P.String], {func: 1, void: true, args: [P.String, O.Node0]}, {func: 1, void: true, args: [P.$int, P.$int], opt: [P.Endianness]}, {func: 1, ret: P.$int, args: [P.$int], opt: [P.Endianness]}, [Q.BroadcastStreamController, P.String], {func: 1, args: [P.$int]}, L.RemoteNode, {func: 1, ret: T.Response, args: [P.String, P.Object, T.Responder, T.Response]}, P.Function, {func: 1, void: true, args: [P.String, P.List, P.List, P.Map, O.DSError]}, T.LocalNode, L.Request, [P.Map, P.String, P.$int], {func: 1, ret: P.bool, args: [P.String, P.String]}, [P.List, O.TableColumn], {func: 1, ret: O.ConnectionChannel}, {func: 1, ret: T.LocalNode, args: [P.String]}, {func: 1, args: [, P.StackTrace]}, K.PrivateKey, T.SimpleNodeProvider, {func: 1, ret: O.Path, args: [P.Object], opt: [P.String]}, {func: 1, args: [P.Map]}, {func: 1, ret: T.Response, args: [P.String, T.Responder, T.Response]}, {func: 1, ret: P.String, args: [P.String]}, T.NodeProvider, [P.List, P.Function], {func: 1, void: true, opt: [O.DSError]}, O.ConnectionChannel, {func: 1, ret: P.bool, args: [P.String]}, T.SimpleNode, {func: 1, ret: T.Response, args: [P.Object, T.Responder, T.Response], opt: [P.$int]}, {func: 1, void: true, args: [P.List]}, {func: 1, args: [P.bool]}, {func: 1, ret: P.Object, args: [P.String]}, T.Response, {func: 1, ret: P.List}, {func: 1, ret: P.$int, args: [P.$int]}, K.ECDH, {func: 1, ret: [P.Future, O.ConnectionChannel]}, O.ClientLink, [P.Completer, O.ConnectionChannel], {func: 1, void: true, args: [, P.StackTrace]}, {func: 1, void: true, args: [P.Object], opt: [P.StackTrace]}, P.num, {func: 1, ret: [P.Future, L.Requester]}, {func: 1, void: true, args: [P.$int, P.$int]}, {func: 1, ret: P.String, args: [P.$int]}, {func: 1, args: [P.String, P.Map]}, {func: 1, opt: [P.bool]}, {func: 1, void: true, args: [{func: 1, args: [,]}]}, {func: 1, ret: [P.Future, L.RequesterUpdate]}, {func: 1, args: [P.String, L.ReqSubscribeController]}, {func: 1, args: [P.$int, L.ReqSubscribeController]}, {func: 1, void: true, args: [O.ValueUpdate]}, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode], opt: [P.$int]}, {func: 1, ret: [P.Future, P.String], args: [P.String]}, {func: 1, ret: K.ECDH}, {func: 1, args: [P.Object]}, {func: 1, ret: T.RespSubscribeListener, args: [{func: 1, args: [,]}], opt: [P.$int]}, {func: 1, args: [, T.LocalNode]}, {func: 1, void: true, args: [P.$int]}, {func: 1, ret: T.SimpleNode, args: [P.String]}, {func: 1, ret: P.String, args: [,]}, {func: 1, args: [, O.Node0]}, {func: 1, void: true, args: [P.String, P.String]}, {func: 1, args: [P.$int, Q.BinaryData]}, {func: 1, ret: P.Future, args: [,]}, {func: 1, ret: P.$int, args: [,]}, {func: 1, ret: P.Future, args: [{func: 1}]}, {func: 1, ret: P.Object, args: [,]}, {func: 1, void: true, args: [{func: 1, void: true, args: [P.String, P.Object]}]}, {func: 1, ret: K.DSRandom}, {func: 1, args: [L.RemoteNode, L.Requester]}, {func: 1, args: [T.Responder, P.$int]}, {func: 1, args: [T.Responder, P.$int, T.LocalNode]}, {func: 1, args: [P.String, O.Node0]}, {func: 1, void: true, opt: [,]}, {func: 1, void: true, args: [,], opt: [P.StackTrace]}, {func: 1, args: [P.String], opt: [P.$int]}, Y.DataStorage, {func: 1, ret: P.bool, args: [,]}, {func: 1, args: [,], opt: [,]}, [P.Completer, L.Requester], {func: 1, void: true, args: [P.$int, P.num], opt: [P.Endianness]}, {func: 1, args: [P.Invocation]}, {func: 1, ret: T.LocalNode}, Y.WebSocketConnection, {func: 1, args: [{func: 1}]}, T.SimpleHiddenNode, {func: 1, void: true, args: [P.String, P.Object]}, {func: 1, ret: [P.Future, K.PrivateKey]}, O.PassiveChannel, {func: 1, ret: K.PrivateKey}, O.Connection, O.Link, {func: 1, args: [{func: 1, args: [,,]},,,]}, {func: 1, ret: K.PrivateKey, args: [P.String]}, {func: 1, ret: {func: 1}, args: [{func: 1}]}, {func: 1, ret: {func: 1, args: [,]}, args: [{func: 1, args: [,]}]}, {func: 1, ret: {func: 1, args: [,,]}, args: [{func: 1, args: [,,]}]}, {func: 1, ret: P.AsyncError, args: [P.Object, P.StackTrace]}, {func: 1, ret: [P.List, P.String], args: [[P.List, P.$int]]}, P.RegExp, {func: 1, ret: K.PublicKey, args: [P.Uint8List]}, [P.List, P.List], {func: 1, args: [O.ValueUpdate]}, K.CryptoProvider, L.ListController, L.ReqSubscribeController, {func: 1, ret: P.Timer, args: [P.Duration, {func: 1, void: true}]}, {func: 1, ret: P.Timer, args: [P.Duration, {func: 1, void: true, args: [P.Timer]}]}, L.RequesterUpdate, {func: 1, void: true, args: [P.bool]}, [P.LinkedHashSet, P.String], [P.Completer, L.RequesterUpdate], L.SubscribeRequest, [P.Map, P.$int, L.ReqSubscribeController], {func: 1, args: [P.Symbol0,,]}, {func: 1, void: true, args: [L.RequesterListUpdate]}, O.ConnectionHandler, {func: 1, ret: P.Type}, T.LocalNodeImpl, {func: 1, void: true, args: [,,]}, T.IPermissionManager, T.SubscribeResponse, {func: 1, void: true, args: [T.InvokeResponse], typedef: T.OnInvokeClosed}, {func: 1, args: [L.RequesterListUpdate]}, {func: 1, ret: P.num, args: [P.$int], opt: [P.Endianness]}, {func: 1, args: [{func: 1, args: [,]},,]}, {func: 1, ret: P.Zone, named: {specification: P.ZoneSpecification, zoneValues: P.Map}}, {func: 1, ret: [P.Stream, L.RequesterListUpdate]}, {func: 1, ret: [P.Future, P.bool]}, {func: 1, ret: P.Map, args: [P.bool]}, {func: 1, void: true, args: [P.Timer]}, {func: 1, void: true, args: [W.Event]}, {func: 1, ret: {func: 1}, args: [P.Zone, {func: 1}]}, {func: 1, ret: P.$int, args: [P.String, T.Responder]}, {func: 1, ret: [Q.BroadcastStreamController, P.String]}, {func: 1, ret: [P.Stream, P.String]}, {func: 1, void: true, args: [W.MessageEvent]}, {func: 1, void: true, args: [{func: 1, args: [O.ValueUpdate]}]}, {func: 1, ret: O.ValueUpdate}, {func: 1, void: true, args: [P.Object], named: {force: P.bool}}, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, O.Node0], opt: [P.$int]}, {func: 1, void: true, args: [[P.List, P.String]]}, {func: 1, ret: T.Response, args: [T.Response]}, {func: 1, void: true, args: [P.$int], named: {error: O.DSError, response: T.Response}}, {func: 1, void: true, args: [T.Response, P.List], named: {columns: [P.List, O.TableColumn], meta: P.Map, streamStatus: P.String}}, {func: 1, void: true, args: [P.List], named: {columns: P.List, meta: P.Map, streamStatus: P.String}}, {func: 1, void: true, opt: [P.Object]}, {func: 1, void: true, args: [P.String, T.LocalNode, P.$int, P.$int]}, {func: 1, ret: {func: 1, args: [,]}, args: [P.Zone, {func: 1, args: [,]}]}, {func: 1, void: true, args: [T.RespSubscribeController]}, {func: 1, void: true, args: [P.List], opt: [P.String, P.Map]}, {func: 1, void: true, opt: [T.InvokeResponse]}, {func: 1, ret: T.LocalNode, args: [P.String], opt: [P.bool]}, {func: 1, ret: [P.Stream, P.List]}, {func: 1, void: true, opt: [P.Map, P.Map]}, {func: 1, void: true, args: [P.String, T.SimpleNode]}, {func: 1, ret: T.SimpleNode, args: [P.String, P.Map]}, {func: 1, ret: T.Responder, args: [P.String]}, {func: 1, void: true, args: [{func: 1, ret: P.List}]}, {func: 1, ret: T.SimpleNode}, {func: 1, ret: P.bool, args: [P.Object]}, {func: 1, ret: T.SimpleNode, args: [P.String, P.Map, T.SimpleNodeProvider]}, {func: 1, ret: T.SimpleNode, args: [P.String], opt: [P.Map]}, {func: 1, void: true, args: [,], named: {name: P.String}}, {func: 1, ret: P.$int, args: [, P.$int]}, {func: 1, void: true, args: [P.Object]}, {func: 1, args: [O.ConnectionChannel]}, {func: 1, void: true, args: [O.ConnectionChannel]}, {func: 1, args: [P.Function]}, {func: 1, ret: {func: 1, args: [,,]}, args: [P.Zone, {func: 1, args: [,,]}]}, {func: 1, ret: P.AsyncError, args: [P.Zone, P.Object, P.StackTrace]}, {func: 1, args: [P.$int,,]}, {func: 1, ret: P.InstanceMirror, args: [P.Object]}, {func: 1, ret: [P.Future, P.List], args: [[P.Iterable, P.Future]], named: {cleanUp: {func: 1, void: true, args: [,]}, eagerError: P.bool}}, {func: 1, ret: P.Future, args: [P.Iterable, {func: 1, args: [,]}]}, {func: 1, ret: P.$int, args: [,,]}, {func: 1, void: true, args: [P.Zone, P.ZoneDelegate, P.Zone,, P.StackTrace]}, {func: 1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1}]}, {func: 1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,]},,]}, {func: 1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,,]},,,]}, {func: 1, ret: {func: 1}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1}]}, {func: 1, ret: {func: 1, args: [,]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,]}]}, {func: 1, ret: {func: 1, args: [,,]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,,]}]}, {func: 1, ret: P.AsyncError, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Object, P.StackTrace]}, {func: 1, void: true, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1}]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, void: true}]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, void: true, args: [P.Timer]}]}, {func: 1, void: true, args: [P.Zone, P.ZoneDelegate, P.Zone, P.String]}, {func: 1, ret: P.Zone, args: [P.Zone, P.ZoneDelegate, P.Zone, P.ZoneSpecification, P.Map]}, {func: 1, ret: P.bool, args: [,,]}, {func: 1, void: true, args: [P.String], opt: [,]}, {func: 1, ret: P.bool, args: [P.Object, P.Object]}, {func: 1, ret: P.$int, args: [P.Object]}, {func: 1, ret: P.ByteData, args: [P.$int]}, {func: 1, ret: P.ByteData, args: [P.ByteBuffer], opt: [P.$int, P.$int]}, {func: 1, args: [P.String, P.String], named: {dataStore: Y.DataStorage, defaultNodes: P.Map, isRequester: P.bool, isResponder: P.bool, loadNodes: P.bool, profiles: P.Map, provider: T.NodeProvider}}, {func: 1, ret: B.BrowserUtils}, {func: 1, ret: [P.Future, P.String], args: [P.String, P.String]}, {func: 1, ret: P.String, args: [P.ByteData], named: {type: P.String}}, {func: 1, ret: Y.DataStorage}, {func: 1, ret: [P.Future, K.PrivateKey], named: {storage: Y.DataStorage}}, {func: 1, args: [P.String, P.String, K.PrivateKey], named: {isRequester: P.bool, isResponder: P.bool, nodeProvider: T.NodeProvider}}, {func: 1, named: {httpUpdateUri: P.String, isRequester: P.bool, isResponder: P.bool, nodeProvider: T.NodeProvider, wsUpdateUri: P.String}}, {func: 1, args: [W.WebSocket, O.ClientLink], named: {onConnect: P.Function}}, {func: 1, ret: O.Connection}, {func: 1, ret: O.Link}, {func: 1, ret: O.ServerLink}, {func: 1, ret: O.ClientLink}, {func: 1, ret: O.ServerLinkManager}, {func: 1, ret: O.StreamStatus}, {func: 1, ret: O.ErrorPhase}, {func: 1, args: [P.String], named: {detail: P.String, msg: P.String, path: P.String, phase: P.String}}, {func: 1, args: [O.Connection], opt: [P.bool]}, {func: 1, ret: O.ConnectionHandler}, {func: 1, ret: P.$int, args: [P.$int, P.$int]}, {func: 1, ret: O.Permission}, {func: 1, ret: P.$int, args: [P.Object], opt: [P.$int]}, {func: 1, ret: O.PermissionList}, {func: 1, args: [P.String, P.String], opt: [P.Object]}, {func: 1, ret: P.List, args: [P.List]}, {func: 1, ret: [P.List, O.TableColumn], args: [P.List]}, {func: 1, args: [[P.List, O.TableColumn], [P.List, P.List]], named: {meta: P.Map}}, {func: 1, args: [[P.List, O.TableColumn]]}, {func: 1, args: [,], named: {count: P.$int, max: P.num, meta: P.Map, min: P.num, status: P.String, sum: P.num, ts: P.String}}, {func: 1, args: [O.ValueUpdate, O.ValueUpdate]}, {func: 1, args: [K.CryptoProvider]}, {func: 1, ret: K.CryptoProvider}, {func: 1, ret: [P.Future, K.ECDH], args: [K.PublicKey, K.ECDH]}, {func: 1, ret: O.Node0, args: [P.String]}, {func: 1, ret: M.NodeCryptoProvider}, {func: 1, ret: L.DefaultDefNodes}, {func: 1, args: [L.Requester, P.$int, L.RequestUpdater, P.Map]}, {func: 1, args: [P.List, P.List, [P.List, O.TableColumn], P.String], named: {error: O.DSError, meta: P.Map}}, {func: 1, ret: [P.List, O.TableColumn], args: [L.RemoteNode]}, {func: 1, args: [L.RemoteNode, L.Requester, P.Map], opt: [P.$int]}, {func: 1, args: [L.RemoteNode, [P.List, P.String], P.String]}, {func: 1, args: [L.RemoteNode, L.Requester, {func: 1, void: true, args: [,]}]}, {func: 1, void: true, args: [{func: 1, void: true, args: [P.String, O.Node0]}]}, {func: 1, args: [L.Requester, P.String]}, {func: 1, args: [L.Requester, P.String, P.Object], opt: [P.$int]}, {func: 1, args: [L.Requester, P.String, P.Function]}, {func: 1, args: [L.Requester, P.$int]}, {func: 1, void: true, args: [T.InvokeResponse]}, {func: 1, opt: [L.RemoteNodeCache]}, {func: 1, args: [P.String, P.String], named: {defaultValue: P.Object}}, {func: 1, ret: T.Configs}, {func: 1, ret: T.ConfigSetting, args: [P.String, O.Node0]}, {func: 1, args: [P.String, T.NodeProvider]}, {func: 1, ret: T.NodeProviderImpl}, {func: 1, ret: T.IPermissionManager}, {func: 1, ret: T.DummyPermissionManager}, {func: 1, ret: T.NodeProvider}, {func: 1, args: [T.NodeProvider], opt: [P.String]}, {func: 1, args: [W.HttpRequest]}, {func: 1, void: true, args: [P.Zone, {func: 1}]}, {func: 1, args: [T.LocalNode, P.Function]}, {func: 1, args: [T.SubscribeResponse, T.LocalNode, P.$int, P.bool, P.$int]}, {func: 1, opt: [P.List, P.List]}, {func: 1, opt: [P.List]}, {func: 1, ret: T.SerializableNodeProvider}, {func: 1, ret: T.MutableNodeProvider}, {func: 1, opt: [P.Map, P.Map]}, {func: 1, args: [P.String], opt: [T.SimpleNodeProvider]}, {func: 1, args: [P.String, T.SimpleNodeProvider]}, {func: 1, args: [[P.List, P.String]]}, {func: 1, ret: Q.DSLinkJSON, args: [[P.Map, P.String,,]]}, {func: 1, args: [P.Duration]}, {func: 1, ret: Q.Scheduler}, {func: 1, ret: P.Timer}, {func: 1, ret: P.Timer, args: [, {func: 1}]}, {func: 1, ret: P.Future, args: [P.$int, {func: 1}]}, {func: 1, ret: P.Future, args: [P.$int, Q.Interval, {func: 1}]}, {func: 1, void: true, args: [{func: 1}]}, {func: 1, ret: P.Future, args: [P.Duration, {func: 1}]}, {func: 1, ret: P.Timer, args: [P.Duration, {func: 1}]}, {func: 1, ret: P.String, args: [[P.Iterable, P.String]]}, {func: 1, ret: [P.List, [P.Map, P.String,,]], args: [[P.Map, P.String, P.String]]}, {func: 1, ret: P.Timer, args: [P.Zone, P.Duration, {func: 1, void: true}]}, H.TearOffClosure, P._Future, [P.HashMap, 87, 91], P.JsonCodec, P.TypedData, Y.BrowserECDHLink, {func: 1, ret: O.Path}, {func: 1, ret: O.Path, args: [P.String]}, {func: 1, void: true, args: [P.String], opt: [P.bool]}, {func: 1, ret: P.Timer, args: [P.Zone, P.Duration, {func: 1, void: true, args: [P.Timer]}]}, {func: 1, ret: P.$int, args: [T.Responder]}, {func: 1, void: true, args: [P.Zone, P.String]}, Y.LocalDataStorage, {func: 1, ret: P.Zone, args: [P.Zone, P.ZoneSpecification, P.Map]}, P.Completer, {func: 1, args: [, P.String]}, {func: 1, ret: [P.Future, K.ECDH], args: [M.PublicKeyImpl, K.ECDH]}, {func: 1, ret: [P.Future, K.ECDH], args: [M.PublicKeyImpl]}, {func: 1, ret: T.LocalNode, args: [P.String, P.Map]}, {func: 1, void: true, args: [P.String,,]}, {func: 1, args: [P.String], opt: [,]}, {func: 1, ret: L.Requester}, {func: 1, ret: [P.Future, K.ECDH], args: [P.String]}, {func: 1, ret: P.Future, args: [P.Function], named: {test: {func: 1, ret: P.bool, args: [,]}}}, {func: 1, ret: L.RemoteNode, args: [P.String]}, [P.Completer, P.bool], W.WebSocket, P.Timer, Q.BinaryInCache, Q.BinaryOutCache, {func: 1, ret: O.Node0, args: [P.String, P.String]}, {func: 1, ret: L.RemoteNode, args: [L.RemoteNode, P.String, P.Map]}, {func: 1, ret: [P.Stream, L.RequesterListUpdate], args: [L.Requester]}, [P.StreamController, P.List], {func: 1, ret: L.RequestUpdater}, {func: 1, ret: L.ListController, args: [L.Requester]}, {func: 1, void: true, args: [L.Requester, {func: 1, args: [,]}, P.$int]}, {func: 1, void: true, args: [L.Requester, {func: 1, args: [,]}]}, {func: 1, ret: [P.Stream, L.RequesterInvokeUpdate], args: [P.Map, L.Requester], opt: [P.$int]}, {func: 1, void: true, args: [P.Map, L.RemoteNodeCache]}, {func: 1, args: [{func: 1, void: true}]}, {func: 1, ret: [P.List, P.List]}, {func: 1, void: true, args: [,]}, {func: 1, ret: P.Future, args: [P.Duration], named: {onTimeout: {func: 1}}}, null, {func: 1, ret: P.TypeMirror, args: [P.$int]}, O.Unspecified, {func: 1, ret: [P.Future, P.bool], args: [P.String]}, K.DSRandom, M.NodeCryptoProvider, [P.Map, P.String, L.RemoteNode], {func: 1, ret: P.Future, args: [P.String, P.String]}, {func: 1, args: [P.Symbol0, P.Mirror]}, {func: 1, args: [P.Zone,, P.StackTrace]}, {func: 1, ret: P.Future, opt: [,]}, {func: 1, void: true, args: [{func: 1, void: true, args: [,]}]}, [P.StreamController, L.RequesterInvokeUpdate], [P.Stream, L.RequesterInvokeUpdate], {func: 1, void: true, args: [P.Function]}, [Q.BroadcastStreamController, L.RequesterListUpdate], {func: 1, void: true, opt: [P.Future]}, L.ListDefListener, {func: 1, void: true, args: [L.ReqSubscribeController, P.$int]}, {func: 1, void: true, args: [L.ReqSubscribeController]}, [P.Map, P.String, L.ReqSubscribeController], {func: 1, args: [P.Zone, {func: 1}]}, [P.HashSet, P.String], {func: 1, args: [P.Zone, {func: 1, args: [,]},,]}, {func: 1, void: true, args: [{func: 1, args: [,]}, P.$int]}, [P.Map, P.$int, L.Request], L.RemoteNodeCache, {func: 1, args: [P.Zone, {func: 1, args: [,,]},,,]}, [P.Map, P.String, T.ConfigSetting], T.Configs, T.ConfigSetting, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode], typedef: T.InvokeCallback}, {func: 1, ret: L.Request, args: [P.Map, L.RequestUpdater]}, {func: 1, ret: L.ReqSubscribeListener, args: [P.String, {func: 1, args: [,]}], opt: [P.$int]}, {func: 1, void: true, args: [P.String, {func: 1, args: [,]}]}, {func: 1, ret: [P.Stream, L.RequesterListUpdate], args: [P.String]}, [P.Map, P.$int, T.Response], {func: 1, ret: [P.Stream, L.RequesterInvokeUpdate], args: [P.String, P.Map], opt: [P.$int]}, {func: 1, ret: [P.Future, L.RequesterUpdate], args: [P.String, P.Object], opt: [P.$int]}, {func: 1, ret: [P.Future, L.RequesterUpdate], args: [P.String]}, [P.Map, P.String, T.RespSubscribeController], [P.Map, P.$int, T.RespSubscribeController], [P.LinkedHashSet, T.RespSubscribeController], T.RespSubscribeListener, [P.ListQueue, O.ValueUpdate], T.InvokeResponse, [P.Map, P.String, T.LocalNode], {func: 1, void: true, args: [L.Request]}, {func: 1, ret: O.DSError, args: [P.Object, T.LocalNodeImpl, T.Responder]}, [P.Map, P.String, {func: 1, ret: T.SimpleNode, args: [P.String], typedef: T._NodeFactory}], {func: 1, ret: O.DSError, args: [T.LocalNodeImpl, T.Responder]}, T.NodeProviderImpl, T.MutableNodeProvider, T.SerializableNodeProvider, [P.Map, P.String,,], [P.Map, P.String, [P.Map, P.String,,]], P.Duration, {func: 1, void: true, args: [{func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode], typedef: T.InvokeCallback}]}, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode]}, {func: 1, ret: [P.Stream, O.ValueUpdate], args: [P.String], named: {cacheLevel: P.$int}}];
   function convertToFastObject(properties) {
     function MyClass() {
@@ -26015,7 +26015,7 @@ SimpleActionNode.prototype.onInvoke = function(params) {
 module.exports.SimpleActionNode = SimpleActionNode;
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":2,"es6-promises":9,"events":6}],2:[function(require,module,exports){
+},{"buffer":2,"es6-promises":15,"events":6}],2:[function(require,module,exports){
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -28151,6 +28151,285 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 },{"process/browser.js":7}],9:[function(require,module,exports){
+(function (Buffer){
+/*
+ * Only supports NIST-recomended curves,
+ * following the limitations of the Web Crypto API.
+ */
+var NamedCurve = {
+  'P256': 'prime256v1'
+};
+
+function Point(curve, x, y) {
+  this.curve = curve;
+  this.x = x;
+  this.y = y;
+}
+
+Point.fromEncoded = function(curve, encoded, compressed) {
+  compressed = compressed || false;
+  if(encoded.readUInt8(0) === 0x04) {
+    var length = (encoded.length - 1) / 2;
+
+    var x = new Buffer(length);
+    var y = new Buffer(length);
+
+    encoded.copy(x, 0, 1, 1 + length);
+    encoded.copy(y, 0, 1 + length);
+
+    return new Point(curve, x, y);
+  } else {
+    // TODO compressed
+  }
+};
+
+Point.prototype.equals = function(point) {
+  return this.x.toString('hex') === point.x.toString('hex') &&
+         this.y.toString('hex') === point.y.toString('hex') &&
+         this.curve === point.curve;
+};
+
+Point.prototype.getEncoded = function(compressed) {
+  compressed = compressed || false;
+  if(compressed) {
+    // TODO
+  } else {
+    var buf = new Buffer(1 + this.x.length + this.y.length);
+
+    buf.writeUInt8(0x04, 0);
+    this.x.copy(buf, 1);
+    this.y.copy(buf, 1 + this.x.length);
+
+    return buf;
+  }
+};
+
+module.exports = {
+  NamedCurve: NamedCurve,
+  Point: Point
+};
+
+}).call(this,require("buffer").Buffer)
+},{"buffer":2}],10:[function(require,module,exports){
+var c = require('./lib/collections.js');
+
+module.exports = Object.freeze(c.mixin({}, c, require('./lib/helpers.js')));
+
+},{"./lib/collections.js":11,"./lib/helpers.js":12}],11:[function(require,module,exports){
+/* jslint node: true */
+"use strict";
+
+var _ = require('./helpers.js');
+
+function args(arr) {
+  return Array.prototype.slice.call(arr);
+}
+
+function each(obj, callback, thisArg) {
+  if(typeof thisArg !== "undefined")
+    callback = callback.bind(thisArg);
+  
+  var type = _.typeOf(obj),
+      count = 0,
+      keys = Object.keys(obj),
+      length = keys.length;
+
+  for(; count < length; count++) {
+    var key = keys[count];
+    callback(obj[key], type === 'object' ? key : count, obj);
+  }
+}
+
+function isEmpty(obj) {
+  for(var prop in obj) {
+    if(obj.hasOwnProperty(prop))
+      return false;
+  }
+  return true;
+}
+
+function mixin(dest) {
+  var args = module.exports.args(arguments).splice(1),
+      count = 0,
+      length = args.length;
+  for(; count < length; count++) {
+    var arg = args[count];
+    for(var prop in arg) {
+      if(arg.hasOwnProperty(prop)) {
+        dest[prop] = arg[prop];
+      }
+    }
+  }
+  return dest;
+}
+
+function map(obj, callback, thisArg) {
+  if(typeof thisArg !== "undefined")
+    callback = callback.bind(thisArg);
+    
+  var type = _.typeOf(obj),
+      count = 0,
+      keys = Object.keys(obj),
+      length = keys.length,
+      returned = type === 'object' ? {} : [];
+
+  for(; count < length; count++) {
+    var key = keys[count];
+    if(type === 'object') {
+      returned[key] = callback(obj[key], key, obj);
+    } else {
+      returned.push(callback(obj[key], count, obj));
+    }
+  }
+
+  return returned;
+}
+
+function removeWhere(arr, callback) {
+  var returned = arr.slice();
+  each(arr, function(value, count, obj) {
+    if(callback(value, count, obj))
+      returned = returned.splice(0, arr.indexOf(value)).concat(returned.splice(arr.indexOf(value) + 1));
+  });
+  return returned;
+}
+
+module.exports = {
+  args: args,
+  each: each,
+  isEmpty: isEmpty,
+  mixin: mixin,
+  map: map,
+  removeWhere: removeWhere
+};
+
+},{"./helpers.js":12}],12:[function(require,module,exports){
+/* jslint node: true */
+"use strict";
+
+var hash = require('hashcode').hashCode(),
+    _ = require('./collections.js');
+
+function findChild(obj, pathArray) {
+  pathArray.forEach(function(path) {
+    if(!obj.hasOwnProperty(path))
+      throw 'findChild: Object does not have property!\n' + obj;
+    obj = obj[path];
+  });
+  return obj;
+}
+
+// implementation of node's util.inherits,
+// works in the browser as well
+function inherits(constructor, superConstructor) {
+  constructor.prototype = Object.create(superConstructor.prototype, {
+    constructor: {
+      value: constructor
+    }
+  });
+  return constructor;
+}
+
+function replaceAll(string, query, replacement) {
+  replacement = replacement || "";
+  return string.split(query).join(replacement);
+}
+
+function toNumber(value) {
+  var type = typeOf(value);
+  if(type === 'undefined' || type === 'null')
+    return 0;
+  if(type === 'number')
+    return value;
+  if(type === 'boolean')
+    return value ? 1 : 0;
+  if(type === 'string')
+    return hash.value(value);
+
+  var valueOf = value.valueOf();
+  if(['undefined', 'null', 'number', 'boolean', 'string'].indexOf(typeOf(type)) !== -1)
+    return toNumber(valueOf);
+
+  return 0;
+}
+
+// ES6 iterator ready solution.
+function typeOf(value) {
+  var returned = Object.prototype.toString.call(value);
+  return returned.substring(1, returned.length - 1).split(' ')[1].toLowerCase();
+}
+
+module.exports = {
+  findChild: findChild,
+  inherits: inherits,
+  replaceAll: replaceAll,
+  toNumber: toNumber,
+  typeOf: typeOf
+};
+
+},{"./collections.js":11,"hashcode":13}],13:[function(require,module,exports){
+/*
+ * Hashcode.js 1.0.2
+ * https://github.com/stuartbannerman/hashcode
+ *
+ * Copyright 2013 Stuart Bannerman (me@stuartbannerman.com)    
+ * Released under the MIT license
+ *
+ * Date: 07-04-2013
+ *
+ * packaged as npm module by
+ * A. Siebert, ask@touchableheroes.com
+ *
+ * usage:
+ * ------------------------------------
+ * var encode = require( 'hashcode' ).hashCode;
+ * var hash = encode().value( "my string value" ); 
+ */
+exports.hashCode = function () {
+
+    // Hashes a string
+    var hash = function (string) {
+        var string = string.toString(), hash = 0, i;
+        for (i = 0; i < string.length; i++) {
+            hash = (((hash << 5) - hash) + string.charCodeAt(i)) & 0xFFFFFFFF;
+        }
+
+        return hash;
+    };
+    // Deep hashes an object
+    var object = function (obj) {
+        var result = 0;
+        for (var property in obj) {
+            if (obj.hasOwnProperty(property)) {
+                result += hash(property + value(obj[property]));
+            }
+        }
+
+        return result;
+    };
+    // Does a type check on the passed in value and calls the appropriate hash method
+    var value = function (value) {
+        var types =
+        {
+            'string': hash,
+            'number': hash,
+            'boolean': hash,
+            'object': object
+            // functions are excluded because they are not representative of the state of an object
+            // types 'undefined' or 'null' will have a hash of 0
+        };
+        var type = typeof value;
+
+        return value != null && types[type] ? types[type](value) + hash(type) : 0;
+    };
+
+    return {
+        value: value
+    };
+};
+},{}],14:[function(require,module,exports){
+"use strict";var sjcl={cipher:{},hash:{},keyexchange:{},mode:{},misc:{},codec:{},exception:{corrupt:function(a){this.toString=function(){return"CORRUPT: "+this.message};this.message=a},invalid:function(a){this.toString=function(){return"INVALID: "+this.message};this.message=a},bug:function(a){this.toString=function(){return"BUG: "+this.message};this.message=a},notReady:function(a){this.toString=function(){return"NOT READY: "+this.message};this.message=a}}};if(typeof module!=="undefined"&&module.exports){module.exports=sjcl}if(typeof define==="function"){define([],function(){return sjcl})}sjcl.cipher.aes=function(h){if(!this._tables[0][0][0]){this._precompute()}var d,c,e,g,l,f=this._tables[0][4],k=this._tables[1],a=h.length,b=1;if(a!==4&&a!==6&&a!==8){throw new sjcl.exception.invalid("invalid aes key size")}this._key=[g=h.slice(0),l=[]];for(d=a;d<4*a+28;d++){e=g[d-1];if(d%a===0||(a===8&&d%a===4)){e=f[e>>>24]<<24^f[e>>16&255]<<16^f[e>>8&255]<<8^f[e&255];if(d%a===0){e=e<<8^e>>>24^b<<24;b=b<<1^(b>>7)*283}}g[d]=g[d-a]^e}for(c=0;d;c++,d--){e=g[c&3?d:d-4];if(d<=4||c<4){l[c]=e}else{l[c]=k[0][f[e>>>24]]^k[1][f[e>>16&255]]^k[2][f[e>>8&255]]^k[3][f[e&255]]}}};sjcl.cipher.aes.prototype={encrypt:function(a){return this._crypt(a,0)},decrypt:function(a){return this._crypt(a,1)},_tables:[[[],[],[],[],[]],[[],[],[],[],[]]],_precompute:function(){var j=this._tables[0],q=this._tables[1],h=j[4],n=q[4],g,l,f,k=[],c=[],b,p,m,o,e,a;for(g=0;g<0x100;g++){c[(k[g]=g<<1^(g>>7)*283)^g]=g}for(l=f=0;!h[l];l^=b||1,f=c[f]||1){o=f^f<<1^f<<2^f<<3^f<<4;o=o>>8^o&255^99;h[l]=o;n[o]=l;m=k[p=k[b=k[l]]];a=m*0x1010101^p*0x10001^b*0x101^l*0x1010100;e=k[o]*0x101^o*0x1010100;for(g=0;g<4;g++){j[g][l]=e=e<<24^e>>>8;q[g][o]=a=a<<24^a>>>8}}for(g=0;g<5;g++){j[g]=j[g].slice(0);q[g]=q[g].slice(0)}},_crypt:function(k,n){if(k.length!==4){throw new sjcl.exception.invalid("invalid aes block size")}var y=this._key[n],v=k[0]^y[0],u=k[n?3:1]^y[1],t=k[2]^y[2],s=k[n?1:3]^y[3],w,e,m,x=y.length/4-2,p,o=4,q=[0,0,0,0],r=this._tables[n],j=r[0],h=r[1],g=r[2],f=r[3],l=r[4];for(p=0;p<x;p++){w=j[v>>>24]^h[u>>16&255]^g[t>>8&255]^f[s&255]^y[o];e=j[u>>>24]^h[t>>16&255]^g[s>>8&255]^f[v&255]^y[o+1];m=j[t>>>24]^h[s>>16&255]^g[v>>8&255]^f[u&255]^y[o+2];s=j[s>>>24]^h[v>>16&255]^g[u>>8&255]^f[t&255]^y[o+3];o+=4;v=w;u=e;t=m}for(p=0;p<4;p++){q[n?3&-p:p]=l[v>>>24]<<24^l[u>>16&255]<<16^l[t>>8&255]<<8^l[s&255]^y[o++];w=v;v=u;u=t;t=s;s=w}return q}};sjcl.bitArray={bitSlice:function(b,c,d){b=sjcl.bitArray._shiftRight(b.slice(c/32),32-(c&31)).slice(1);return(d===undefined)?b:sjcl.bitArray.clamp(b,d-c)},extract:function(c,d,f){var b,e=Math.floor((-d-f)&31);if((d+f-1^d)&-32){b=(c[d/32|0]<<(32-e))^(c[d/32+1|0]>>>e)}else{b=c[d/32|0]>>>e}return b&((1<<f)-1)},concat:function(c,a){if(c.length===0||a.length===0){return c.concat(a)}var d=c[c.length-1],b=sjcl.bitArray.getPartial(d);if(b===32){return c.concat(a)}else{return sjcl.bitArray._shiftRight(a,b,d|0,c.slice(0,c.length-1))}},bitLength:function(d){var c=d.length,b;if(c===0){return 0}b=d[c-1];return(c-1)*32+sjcl.bitArray.getPartial(b)},clamp:function(d,b){if(d.length*32<b){return d}d=d.slice(0,Math.ceil(b/32));var c=d.length;b=b&31;if(c>0&&b){d[c-1]=sjcl.bitArray.partial(b,d[c-1]&2147483648>>(b-1),1)}return d},partial:function(b,a,c){if(b===32){return a}return(c?a|0:a<<(32-b))+b*0x10000000000},getPartial:function(a){return Math.round(a/0x10000000000)||32},equal:function(e,d){if(sjcl.bitArray.bitLength(e)!==sjcl.bitArray.bitLength(d)){return false}var c=0,f;for(f=0;f<e.length;f++){c|=e[f]^d[f]}return(c===0)},_shiftRight:function(d,c,h,f){var g,b=0,e;if(f===undefined){f=[]}for(;c>=32;c-=32){f.push(h);h=0}if(c===0){return f.concat(d)}for(g=0;g<d.length;g++){f.push(h|d[g]>>>c);h=d[g]<<(32-c)}b=d.length?d[d.length-1]:0;e=sjcl.bitArray.getPartial(b);f.push(sjcl.bitArray.partial(c+e&31,(c+e>32)?h:f.pop(),1));return f},_xor4:function(a,b){return[a[0]^b[0],a[1]^b[1],a[2]^b[2],a[3]^b[3]]},byteswapM:function(c){var e,d,b=0xff00;for(e=0;e<c.length;++e){d=c[e];c[e]=(d>>>24)|((d>>>8)&b)|((d&b)<<8)|(d<<24)}return c}};sjcl.codec.utf8String={fromBits:function(a){var b="",e=sjcl.bitArray.bitLength(a),d,c;for(d=0;d<e/8;d++){if((d&3)===0){c=a[d/4]}b+=String.fromCharCode(c>>>24);c<<=8}return decodeURIComponent(escape(b))},toBits:function(d){d=unescape(encodeURIComponent(d));var a=[],c,b=0;for(c=0;c<d.length;c++){b=b<<8|d.charCodeAt(c);if((c&3)===3){a.push(b);b=0}}if(c&3){a.push(sjcl.bitArray.partial(8*(c&3),b))}return a}};sjcl.codec.bytes={fromBits:function(a){var b=[],e=sjcl.bitArray.bitLength(a),d,c;for(d=0;d<e/8;d++){if((d&3)===0){c=a[d/4]}b.push(c>>>24);c<<=8}return b},toBits:function(a){var b=[],d,c=0;for(d=0;d<a.length;d++){c=c<<8|a[d];if((d&3)===3){b.push(c);c=0}}if(d&3){b.push(sjcl.bitArray.partial(8*(d&3),c))}return b}};sjcl.hash.sha256=function(a){if(!this._key[0]){this._precompute()}if(a){this._h=a._h.slice(0);this._buffer=a._buffer.slice(0);this._length=a._length}else{this.reset()}};sjcl.hash.sha256.hash=function(a){return(new sjcl.hash.sha256()).update(a).finalize()};sjcl.hash.sha256.prototype={blockSize:512,reset:function(){this._h=this._init.slice(0);this._buffer=[];this._length=0;return this},update:function(f){if(typeof f==="string"){f=sjcl.codec.utf8String.toBits(f)}var e,a=this._buffer=sjcl.bitArray.concat(this._buffer,f),d=this._length,c=this._length=d+sjcl.bitArray.bitLength(f);for(e=512+d&-512;e<=c;e+=512){this._block(a.splice(0,16))}return this},finalize:function(){var c,a=this._buffer,d=this._h;a=sjcl.bitArray.concat(a,[sjcl.bitArray.partial(1,1)]);for(c=a.length+2;c&15;c++){a.push(0)}a.push(Math.floor(this._length/0x100000000));a.push(this._length|0);while(a.length){this._block(a.splice(0,16))}this.reset();return d},_init:[],_key:[],_precompute:function(){var d=0,c=2,b;function a(e){return(e-Math.floor(e))*0x100000000|0}outer:for(;d<64;c++){for(b=2;b*b<=c;b++){if(c%b===0){continue outer}}if(d<8){this._init[d]=a(Math.pow(c,1/2))}this._key[d]=a(Math.pow(c,1/3));d++}},_block:function(q){var e,f,t,s,u=q.slice(0),j=this._h,c=this._key,r=j[0],p=j[1],o=j[2],n=j[3],m=j[4],l=j[5],g=j[6],d=j[7];for(e=0;e<64;e++){if(e<16){f=u[e]}else{t=u[(e+1)&15];s=u[(e+14)&15];f=u[e&15]=((t>>>7^t>>>18^t>>>3^t<<25^t<<14)+(s>>>17^s>>>19^s>>>10^s<<15^s<<13)+u[e&15]+u[(e+9)&15])|0}f=(f+d+(m>>>6^m>>>11^m>>>25^m<<26^m<<21^m<<7)+(g^m&(l^g))+c[e]);d=g;g=l;l=m;m=n+f|0;n=o;o=p;p=r;r=(f+((p&o)^(n&(p^o)))+(p>>>2^p>>>13^p>>>22^p<<30^p<<19^p<<10))|0}j[0]=j[0]+r|0;j[1]=j[1]+p|0;j[2]=j[2]+o|0;j[3]=j[3]+n|0;j[4]=j[4]+m|0;j[5]=j[5]+l|0;j[6]=j[6]+g|0;j[7]=j[7]+d|0}};sjcl.prng=function(a){this._pools=[new sjcl.hash.sha256()];this._poolEntropy=[0];this._reseedCount=0;this._robins={};this._eventId=0;this._collectorIds={};this._collectorIdNext=0;this._strength=0;this._poolStrength=0;this._nextReseed=0;this._key=[0,0,0,0,0,0,0,0];this._counter=[0,0,0,0];this._cipher=undefined;this._defaultParanoia=a;this._collectorsStarted=false;this._callbacks={progress:{},seeded:{}};this._callbackI=0;this._NOT_READY=0;this._READY=1;this._REQUIRES_RESEED=2;this._MAX_WORDS_PER_BURST=0x10000;this._PARANOIA_LEVELS=[0,48,64,96,128,192,0x100,384,512,768,1024];this._MILLISECONDS_PER_RESEED=30000;this._BITS_PER_RESEED=80};sjcl.prng.prototype={randomWords:function(a,f){var b=[],d,c=this.isReady(f),e;if(c===this._NOT_READY){throw new sjcl.exception.notReady("generator isn't seeded")}else{if(c&this._REQUIRES_RESEED){this._reseedFromPools(!(c&this._READY))}}if(this._strength<6){console.log("Entropy sources are not strong, possible cryptographic weakness. Please use a browser with proper getRandomValues support.")}for(d=0;d<a;d+=4){if((d+1)%this._MAX_WORDS_PER_BURST===0){this._gate()}e=this._gen4words();b.push(e[0],e[1],e[2],e[3])}this._gate();return b.slice(0,a)},setDefaultParanoia:function(b,a){if(b===0&&a!=="Setting paranoia=0 will ruin your security; use it only for testing"){throw"Setting paranoia=0 will ruin your security; use it only for testing"}this._defaultParanoia=b},addEntropy:function(e,l,a){a=a||"user";var b,f,g,j=(new Date()).valueOf(),c=this._robins[a],k=this.isReady(),d=0,h;b=this._collectorIds[a];if(b===undefined){b=this._collectorIds[a]=this._collectorIdNext++}if(c===undefined){c=this._robins[a]=0}this._robins[a]=(this._robins[a]+1)%this._pools.length;switch(typeof(e)){case"number":if(l===undefined){l=1}this._pools[c].update([b,this._eventId++,1,l,j,1,e|0]);break;case"object":h=Object.prototype.toString.call(e);if(h==="[object Uint32Array]"){g=[];for(f=0;f<e.length;f++){g.push(e[f])}e=g}else{if(h!=="[object Array]"){d=1}for(f=0;f<e.length&&!d;f++){if(typeof(e[f])!=="number"){d=1}}}if(!d){if(l===undefined){l=0;for(f=0;f<e.length;f++){g=e[f];while(g>0){l++;g=g>>>1}}}this._pools[c].update([b,this._eventId++,2,l,j,e.length].concat(e))}break;case"string":if(l===undefined){l=e.length}this._pools[c].update([b,this._eventId++,3,l,j,e.length]);this._pools[c].update(e);break;default:d=1}if(d){throw new sjcl.exception.bug("random: addEntropy only supports number, array of numbers or string")}this._poolEntropy[c]+=l;this._poolStrength+=l;if(k===this._NOT_READY){if(this.isReady()!==this._NOT_READY){this._fireEvent("seeded",Math.max(this._strength,this._poolStrength))}this._fireEvent("progress",this.getProgress())}},isReady:function(b){var a=this._PARANOIA_LEVELS[(b!==undefined)?b:this._defaultParanoia];if(this._strength&&this._strength>=a){return(this._poolEntropy[0]>this._BITS_PER_RESEED&&(new Date()).valueOf()>this._nextReseed)?this._REQUIRES_RESEED|this._READY:this._READY}else{return(this._poolStrength>=a)?this._REQUIRES_RESEED|this._NOT_READY:this._NOT_READY}},getProgress:function(b){var a=this._PARANOIA_LEVELS[b?b:this._defaultParanoia];if(this._strength>=a){return 1}else{return(this._poolStrength>a)?1:this._poolStrength/a}},startCollectors:function(){if(this._collectorsStarted){return}this._eventListener={loadTimeCollector:this._bind(this._loadTimeCollector),mouseCollector:this._bind(this._mouseCollector),keyboardCollector:this._bind(this._keyboardCollector),accelerometerCollector:this._bind(this._accelerometerCollector),touchCollector:this._bind(this._touchCollector)};if(window.addEventListener){window.addEventListener("load",this._eventListener.loadTimeCollector,false);window.addEventListener("mousemove",this._eventListener.mouseCollector,false);window.addEventListener("keypress",this._eventListener.keyboardCollector,false);window.addEventListener("devicemotion",this._eventListener.accelerometerCollector,false);window.addEventListener("touchmove",this._eventListener.touchCollector,false)}else{if(document.attachEvent){document.attachEvent("onload",this._eventListener.loadTimeCollector);document.attachEvent("onmousemove",this._eventListener.mouseCollector);document.attachEvent("keypress",this._eventListener.keyboardCollector)}else{throw new sjcl.exception.bug("can't attach event")}}this._collectorsStarted=true},stopCollectors:function(){if(!this._collectorsStarted){return}if(window.removeEventListener){window.removeEventListener("load",this._eventListener.loadTimeCollector,false);window.removeEventListener("mousemove",this._eventListener.mouseCollector,false);window.removeEventListener("keypress",this._eventListener.keyboardCollector,false);window.removeEventListener("devicemotion",this._eventListener.accelerometerCollector,false);window.removeEventListener("touchmove",this._eventListener.touchCollector,false)}else{if(document.detachEvent){document.detachEvent("onload",this._eventListener.loadTimeCollector);document.detachEvent("onmousemove",this._eventListener.mouseCollector);document.detachEvent("keypress",this._eventListener.keyboardCollector)}}this._collectorsStarted=false},addEventListener:function(a,b){this._callbacks[a][this._callbackI++]=b},removeEventListener:function(e,a){var f,d,c=this._callbacks[e],b=[];for(d in c){if(c.hasOwnProperty(d)&&c[d]===a){b.push(d)}}for(f=0;f<b.length;f++){d=b[f];delete c[d]}},_bind:function(b){var a=this;return function(){b.apply(a,arguments)}},_gen4words:function(){for(var a=0;a<4;a++){this._counter[a]=this._counter[a]+1|0;if(this._counter[a]){break}}return this._cipher.encrypt(this._counter)},_gate:function(){this._key=this._gen4words().concat(this._gen4words());this._cipher=new sjcl.cipher.aes(this._key)},_reseed:function(b){this._key=sjcl.hash.sha256.hash(this._key.concat(b));this._cipher=new sjcl.cipher.aes(this._key);for(var a=0;a<4;a++){this._counter[a]=this._counter[a]+1|0;if(this._counter[a]){break}}},_reseedFromPools:function(c){var a=[],d=0,b;this._nextReseed=a[0]=(new Date()).valueOf()+this._MILLISECONDS_PER_RESEED;for(b=0;b<16;b++){a.push(Math.random()*0x100000000|0)}for(b=0;b<this._pools.length;b++){a=a.concat(this._pools[b].finalize());d+=this._poolEntropy[b];this._poolEntropy[b]=0;if(!c&&(this._reseedCount&(1<<b))){break}}if(this._reseedCount>=1<<this._pools.length){this._pools.push(new sjcl.hash.sha256());this._poolEntropy.push(0)}this._poolStrength-=d;if(d>this._strength){this._strength=d}this._reseedCount++;this._reseed(a)},_keyboardCollector:function(){this._addCurrentTimeToEntropy(1)},_mouseCollector:function(c){var a,d;try{a=c.x||c.clientX||c.offsetX||0;d=c.y||c.clientY||c.offsetY||0}catch(b){a=0;d=0}if(a!=0&&d!=0){sjcl.random.addEntropy([a,d],2,"mouse")}this._addCurrentTimeToEntropy(0)},_touchCollector:function(b){var d=b.touches[0]||b.changedTouches[0];var a=d.pageX||d.clientX,c=d.pageY||d.clientY;sjcl.random.addEntropy([a,c],1,"touch");this._addCurrentTimeToEntropy(0)},_loadTimeCollector:function(){this._addCurrentTimeToEntropy(2)},_addCurrentTimeToEntropy:function(a){if(typeof window!=="undefined"&&window.performance&&typeof window.performance.now==="function"){sjcl.random.addEntropy(window.performance.now(),a,"loadtime")}else{sjcl.random.addEntropy((new Date()).valueOf(),a,"loadtime")}},_accelerometerCollector:function(b){var a=b.accelerationIncludingGravity.x||b.accelerationIncludingGravity.y||b.accelerationIncludingGravity.z;if(window.orientation){var c=window.orientation;if(typeof c==="number"){sjcl.random.addEntropy(c,1,"accelerometer")}}if(a){sjcl.random.addEntropy(a,2,"accelerometer")}this._addCurrentTimeToEntropy(0)},_fireEvent:function(d,a){var c,b=sjcl.random._callbacks[d],e=[];for(c in b){if(b.hasOwnProperty(c)){e.push(b[c])}}for(c=0;c<e.length;c++){e[c](a)}}};sjcl.random=new sjcl.prng(6);(function(){try{var a,d,c;if(typeof Uint32Array!=="undefined"){if(typeof window!=="undefined"){c=new Uint32Array(32);if(window.crypto&&window.crypto.getRandomValues){window.crypto.getRandomValues(c)}else{if(window.msCrypto&&window.msCrypto.getRandomValues){window.msCrypto.getRandomValues(c)}else{return}}sjcl.random.addEntropy(c,1024,"crypto.getRandomValues")}else{try{var b=require("crypto");a=b.randomBytes(1024/8);a=new Uint32Array(new Uint8Array(a).buffer);sjcl.random.addEntropy(a,1024,"crypto.randomBytes")}catch(f){}}}}catch(f){if(typeof window!=="undefined"&&window.console){console.log("There was an error collecting entropy from the browser:");console.log(f)}}}());sjcl.bn=function(a){this.initWith(a)};sjcl.bn.prototype={radix:24,maxMul:8,_class:sjcl.bn,copy:function(){return new this._class(this)},initWith:function(c){var b=0,a;switch(typeof c){case"object":this.limbs=c.limbs.slice(0);break;case"number":this.limbs=[c];this.normalize();break;case"string":c=c.replace(/^0x/,"");this.limbs=[];a=this.radix/4;for(b=0;b<c.length;b+=a){this.limbs.push(parseInt(c.substring(Math.max(c.length-b-a,0),c.length-b),16))}break;default:this.limbs=[0]}return this},equals:function(b){if(typeof b==="number"){b=new this._class(b)}var c=0,a;this.fullReduce();b.fullReduce();for(a=0;a<this.limbs.length||a<b.limbs.length;a++){c|=this.getLimb(a)^b.getLimb(a)}return(c===0)},getLimb:function(a){return(a>=this.limbs.length)?0:this.limbs[a]},greaterEquals:function(g){if(typeof g==="number"){g=new this._class(g)}var e=0,h=0,f,d,c;f=Math.max(this.limbs.length,g.limbs.length)-1;for(;f>=0;f--){d=this.getLimb(f);c=g.getLimb(f);h|=(c-d)&~e;e|=(d-c)&~h}return(h|~e)>>>31},toString:function(){this.fullReduce();var b="",c,d,a=this.limbs;for(c=0;c<this.limbs.length;c++){d=a[c].toString(16);while(c<this.limbs.length-1&&d.length<6){d="0"+d}b=d+b}return"0x"+b},addM:function(c){if(typeof(c)!=="object"){c=new this._class(c)}var b,a=this.limbs,d=c.limbs;for(b=a.length;b<d.length;b++){a[b]=0}for(b=0;b<d.length;b++){a[b]+=d[b]}return this},doubleM:function(){var d,f=0,c,e=this.radix,a=this.radixMask,b=this.limbs;for(d=0;d<b.length;d++){c=b[d];c=c+c+f;b[d]=c&a;f=c>>e}if(f){b.push(f)}return this},halveM:function(){var c,e=0,b,d=this.radix,a=this.limbs;for(c=a.length-1;c>=0;c--){b=a[c];a[c]=(b+e)>>1;e=(b&1)<<d}if(!a[a.length-1]){a.pop()}return this},subM:function(c){if(typeof(c)!=="object"){c=new this._class(c)}var b,a=this.limbs,d=c.limbs;for(b=a.length;b<d.length;b++){a[b]=0}for(b=0;b<d.length;b++){a[b]-=d[b]}return this},mod:function(c){var d=!this.greaterEquals(new sjcl.bn(0));c=new sjcl.bn(c).normalize();var a=new sjcl.bn(this).normalize(),b=0;if(d){a=(new sjcl.bn(0)).subM(a).normalize()}for(;a.greaterEquals(c);b++){c.doubleM()}if(d){a=c.sub(a).normalize()}for(;b>0;b--){c.halveM();if(a.greaterEquals(c)){a.subM(c).normalize()}}return a.trim()},inverseMod:function(h){var e=new sjcl.bn(1),d=new sjcl.bn(0),c=new sjcl.bn(this),k=new sjcl.bn(h),g,f,j=1;if(!(h.limbs[0]&1)){throw (new sjcl.exception.invalid("inverseMod: p must be odd"))}do{if(c.limbs[0]&1){if(!c.greaterEquals(k)){g=c;c=k;k=g;g=e;e=d;d=g}c.subM(k);c.normalize();if(!e.greaterEquals(d)){e.addM(h)}e.subM(d)}c.halveM();if(e.limbs[0]&1){e.addM(h)}e.normalize();e.halveM();for(f=j=0;f<c.limbs.length;f++){j|=c.limbs[f]}}while(j);if(!k.equals(1)){throw (new sjcl.exception.invalid("inverseMod: p and x must be relatively prime"))}return d},add:function(a){return this.copy().addM(a)},sub:function(a){return this.copy().subM(a)},mul:function(k){if(typeof(k)==="number"){k=new this._class(k)}var g,e,o=this.limbs,n=k.limbs,h=o.length,d=n.length,f=new this._class(),m=f.limbs,l,p=this.maxMul;for(g=0;g<this.limbs.length+k.limbs.length+1;g++){m[g]=0}for(g=0;g<h;g++){l=o[g];for(e=0;e<d;e++){m[g+e]+=l*n[e]}if(!--p){p=this.maxMul;f.cnormalize()}}return f.cnormalize().reduce()},square:function(){return this.mul(this)},power:function(a){a=new sjcl.bn(a).normalize().trim().limbs;var d,c,b=new this._class(1),e=this;for(d=0;d<a.length;d++){for(c=0;c<this.radix;c++){if(a[d]&(1<<c)){b=b.mul(e)}if(d==(a.length-1)&&a[d]>>(c+1)==0){break}e=e.square()}}return b},mulmod:function(a,b){return this.mod(b).mul(a.mod(b)).mod(b)},powermod:function(a,h){a=new sjcl.bn(a);h=new sjcl.bn(h);if((h.limbs[0]&1)==1){var f=this.montpowermod(a,h);if(f!=false){return f}}var e,d,b=a.normalize().trim().limbs,c=new this._class(1),g=this;for(e=0;e<b.length;e++){for(d=0;d<this.radix;d++){if(b[e]&(1<<d)){c=c.mulmod(g,h)}if(e==(b.length-1)&&b[e]>>(d+1)==0){break}g=g.mulmod(g,h)}}return c},montpowermod:function(p,m){p=new sjcl.bn(p).normalize().trim();m=new sjcl.bn(m);var v,u,k=this.radix,w=new this._class(1),e=this.copy();var f,q,b,t=p.bitLength();f=new sjcl.bn({limbs:m.copy().normalize().trim().limbs.map(function(){return 0})});for(q=this.radix;q>0;q--){if(((m.limbs[m.limbs.length-1]>>q)&1)==1){f.limbs[f.limbs.length-1]=1<<q;break}}if(t==0){return this}else{if(t<18){b=1}else{if(t<48){b=3}else{if(t<144){b=4}else{if(t<768){b=5}else{b=6}}}}}var c=f.copy(),B=m.copy(),d=new sjcl.bn(1),z=new sjcl.bn(0),a=f.copy();while(a.greaterEquals(1)){a.halveM();if((d.limbs[0]&1)==0){d.halveM();z.halveM()}else{d.addM(B);d.halveM();z.halveM();z.addM(c)}}d=d.normalize();z=z.normalize();c.doubleM();var A=c.mulmod(c,m);if(!c.mul(d).sub(m.mul(z)).equals(1)){return false}var C=function(h){return n(h,A)},n=function(j,h){var l,H,G,x,s,i=(1<<(q+1))-1;G=j.mul(h);x=G.mul(z);x.limbs=x.limbs.slice(0,f.limbs.length);if(x.limbs.length==f.limbs.length){x.limbs[f.limbs.length-1]&=i}x=x.mul(m);s=G.add(x).normalize().trim();s.limbs=s.limbs.slice(f.limbs.length-1);for(l=0;l<s.limbs.length;l++){if(l>0){s.limbs[l-1]|=(s.limbs[l]&i)<<(k-q-1)}s.limbs[l]=s.limbs[l]>>(q+1)}if(s.greaterEquals(m)){s.subM(m)}return s},g=function(h){return n(h,1)};e=C(e);w=C(w);var y,F={},o=(1<<(b-1))-1;F[1]=e.copy();F[2]=n(e,e);for(y=1;y<=o;y++){F[(2*y)+1]=n(F[(2*y)-1],F[2])}var E=function(l,h){var j=h%l.radix;return(l.limbs[Math.floor(h/l.radix)]&(1<<j))>>j};for(v=p.bitLength()-1;v>=0;){if(E(p,v)==0){w=n(w,w);v=v-1}else{var r=v-b+1;while(E(p,r)==0){r++}var D=0;for(u=r;u<=v;u++){D+=E(p,u)<<(u-r);w=n(w,w)}w=n(w,F[D]);v=r-1}}return g(w)},trim:function(){var a=this.limbs,b;do{b=a.pop()}while(a.length&&b===0);a.push(b);return this},reduce:function(){return this},fullReduce:function(){return this.normalize()},normalize:function(){var h=0,c,g=this.placeVal,e=this.ipv,b,a,f=this.limbs,d=f.length,j=this.radixMask;for(c=0;c<d||(h!==0&&h!==-1);c++){b=(f[c]||0)+h;a=f[c]=b&j;h=(b-a)*e}if(h===-1){f[c-1]-=g}return this},cnormalize:function(){var g=0,e,d=this.ipv,c,a,h=this.limbs,f=h.length,b=this.radixMask;for(e=0;e<f-1;e++){c=h[e]+g;a=h[e]=c&b;g=(c-a)*d}h[e]+=g;return this},toBits:function(a){this.fullReduce();a=a||this.exponent||this.bitLength();var d=Math.floor((a-1)/24),b=sjcl.bitArray,f=(a+7&-8)%this.radix||this.radix,c=[b.partial(f,this.getLimb(d))];for(d--;d>=0;d--){c=b.concat(c,[b.partial(Math.min(this.radix,a),this.getLimb(d))]);a-=this.radix}return c},bitLength:function(){this.fullReduce();var c=this.radix*(this.limbs.length-1),a=this.limbs[this.limbs.length-1];for(;a;a>>>=1){c++}return c+7&-8}};sjcl.bn.fromBits=function(g){var c=this,d=new c(),i=[],b=sjcl.bitArray,f=this.prototype,a=Math.min(this.bitLength||0x100000000,b.bitLength(g)),h=a%f.radix||f.radix;i[0]=b.extract(g,0,h);for(;h<a;h+=f.radix){i.unshift(b.extract(g,h,f.radix))}d.limbs=i;return d};sjcl.bn.prototype.ipv=1/(sjcl.bn.prototype.placeVal=Math.pow(2,sjcl.bn.prototype.radix));sjcl.bn.prototype.radixMask=(1<<sjcl.bn.prototype.radix)-1;sjcl.bn.pseudoMersennePrime=function(f,b){function g(h){this.initWith(h)}var a=g.prototype=new sjcl.bn(),d,c,e;e=a.modOffset=Math.ceil(c=f/a.radix);a.exponent=f;a.offset=[];a.factor=[];a.minOffset=e;a.fullMask=0;a.fullOffset=[];a.fullFactor=[];a.modulus=g.modulus=new sjcl.bn(Math.pow(2,f));a.fullMask=0|-Math.pow(2,f%a.radix);for(d=0;d<b.length;d++){a.offset[d]=Math.floor(b[d][0]/a.radix-c);a.fullOffset[d]=Math.ceil(b[d][0]/a.radix-c);a.factor[d]=b[d][1]*Math.pow(1/2,f-b[d][0]+a.offset[d]*a.radix);a.fullFactor[d]=b[d][1]*Math.pow(1/2,f-b[d][0]+a.fullOffset[d]*a.radix);a.modulus.addM(new sjcl.bn(Math.pow(2,b[d][0])*b[d][1]));a.minOffset=Math.min(a.minOffset,-a.offset[d])}a._class=g;a.modulus.cnormalize();a.reduce=function(){var p,o,n,m=this.modOffset,s=this.limbs,j=this.offset,q=this.offset.length,h=this.factor,r;p=this.minOffset;while(s.length>m){n=s.pop();r=s.length;for(o=0;o<q;o++){s[r+j[o]]-=h[o]*n}p--;if(!p){s.push(0);this.cnormalize();p=this.minOffset}}this.cnormalize();return this};a._strongReduce=(a.fullMask===-1)?a.reduce:function(){var n=this.limbs,m=n.length-1,j,h;this.reduce();if(m===this.modOffset-1){h=n[m]&this.fullMask;n[m]-=h;for(j=0;j<this.fullOffset.length;j++){n[m+this.fullOffset[j]]-=this.fullFactor[j]*h}this.normalize()}};a.fullReduce=function(){var j,h;this._strongReduce();this.addM(this.modulus);this.addM(this.modulus);this.normalize();this._strongReduce();for(h=this.limbs.length;h<this.modOffset;h++){this.limbs[h]=0}j=this.greaterEquals(this.modulus);for(h=0;h<this.limbs.length;h++){this.limbs[h]-=this.modulus.limbs[h]*j}this.cnormalize();return this};a.inverse=function(){return(this.power(this.modulus.sub(2)))};g.fromBits=sjcl.bn.fromBits;return g};var sbp=sjcl.bn.pseudoMersennePrime;sjcl.bn.prime={p127:sbp(127,[[0,-1]]),p25519:sbp(255,[[0,-19]]),p192k:sbp(192,[[32,-1],[12,-1],[8,-1],[7,-1],[6,-1],[3,-1],[0,-1]]),p224k:sbp(224,[[32,-1],[12,-1],[11,-1],[9,-1],[7,-1],[4,-1],[1,-1],[0,-1]]),p256k:sbp(0x100,[[32,-1],[9,-1],[8,-1],[7,-1],[6,-1],[4,-1],[0,-1]]),p192:sbp(192,[[0,-1],[64,-1]]),p224:sbp(224,[[0,1],[96,-1]]),p256:sbp(0x100,[[0,-1],[96,1],[192,1],[224,-1]]),p384:sbp(384,[[0,-1],[32,1],[96,-1],[128,-1]]),p521:sbp(521,[[0,-1]])};sjcl.bn.random=function(c,f){if(typeof c!=="object"){c=new sjcl.bn(c)}var g,e,b=c.limbs.length,a=c.limbs[b-1]+1,d=new sjcl.bn();while(true){do{g=sjcl.random.randomWords(b,f);if(g[b-1]<0){g[b-1]+=0x100000000}}while(Math.floor(g[b-1]/a)===Math.floor(0x100000000/a));g[b-1]%=a;for(e=0;e<b-1;e++){g[e]&=c.radixMask}d.limbs=g;if(!d.greaterEquals(c)){return d}}};sjcl.ecc={};sjcl.ecc.point=function(b,a,c){if(a===undefined){this.isIdentity=true}else{if(a instanceof sjcl.bn){a=new b.field(a)}if(c instanceof sjcl.bn){c=new b.field(c)}this.x=a;this.y=c;this.isIdentity=false}this.curve=b};sjcl.ecc.point.prototype={toJac:function(){return new sjcl.ecc.pointJac(this.curve,this.x,this.y,new this.curve.field(1))},mult:function(a){return this.toJac().mult(a,this).toAffine()},mult2:function(a,c,b){return this.toJac().mult2(a,this,c,b).toAffine()},multiples:function(){var a,c,b;if(this._multiples===undefined){b=this.toJac().doubl();a=this._multiples=[new sjcl.ecc.point(this.curve),this,b.toAffine()];for(c=3;c<16;c++){b=b.add(this);a.push(b.toAffine())}}return this._multiples},negate:function(){var a=new this.curve.field(0).sub(this.y).normalize().reduce();return new sjcl.ecc.point(this.curve,this.x,a)},isValid:function(){return this.y.square().equals(this.curve.b.add(this.x.mul(this.curve.a.add(this.x.square()))))},toBits:function(){return sjcl.bitArray.concat(this.x.toBits(),this.y.toBits())}};sjcl.ecc.pointJac=function(c,a,d,b){if(a===undefined){this.isIdentity=true}else{this.x=a;this.y=d;this.z=b;this.isIdentity=false}this.curve=c};sjcl.ecc.pointJac.prototype={add:function(e){var g=this,f,k,i,h,b,a,o,n,m,l,j;if(g.curve!==e.curve){throw ("sjcl.ecc.add(): Points must be on the same curve to add them!")}if(g.isIdentity){return e.toJac()}else{if(e.isIdentity){return g}}f=g.z.square();k=e.x.mul(f).subM(g.x);if(k.equals(0)){if(g.y.equals(e.y.mul(f.mul(g.z)))){return g.doubl()}else{return new sjcl.ecc.pointJac(g.curve)}}i=e.y.mul(f.mul(g.z)).subM(g.y);h=k.square();b=i.square();a=k.square().mul(k).addM(g.x.add(g.x).mul(h));o=b.subM(a);n=g.x.mul(h).subM(o).mul(i);m=g.y.mul(k.square().mul(k));l=n.subM(m);j=g.z.mul(k);return new sjcl.ecc.pointJac(this.curve,o,l,j)},doubl:function(){if(this.isIdentity){return this}var g=this.y.square(),f=g.mul(this.x.mul(4)),e=g.square().mul(8),h=this.z.square(),k=this.curve.a.toString()==(new sjcl.bn(-3)).toString()?this.x.sub(h).mul(3).mul(this.x.add(h)):this.x.square().mul(3).add(h.square().mul(this.curve.a)),d=k.square().subM(f).subM(f),j=f.sub(d).mul(k).subM(e),i=this.y.add(this.y).mul(this.z);return new sjcl.ecc.pointJac(this.curve,d,j,i)},toAffine:function(){if(this.isIdentity||this.z.equals(0)){return new sjcl.ecc.point(this.curve)}var b=this.z.inverse(),a=b.square();return new sjcl.ecc.point(this.curve,this.x.mul(a).fullReduce(),this.y.mul(a.mul(b)).fullReduce())},mult:function(a,e){if(typeof(a)==="number"){a=[a]}else{if(a.limbs!==undefined){a=a.normalize().limbs}}var d,c,b=new sjcl.ecc.point(this.curve).toJac(),f=e.multiples();for(d=a.length-1;d>=0;d--){for(c=sjcl.bn.prototype.radix-4;c>=0;c-=4){b=b.doubl().doubl().doubl().doubl().add(f[a[d]>>c&15])}}return b},mult2:function(k,g,h,b){if(typeof(k)==="number"){k=[k]}else{if(k.limbs!==undefined){k=k.normalize().limbs}}if(typeof(h)==="number"){h=[h]}else{if(h.limbs!==undefined){h=h.normalize().limbs}}var f,d,e=new sjcl.ecc.point(this.curve).toJac(),m=g.multiples(),l=b.multiples(),c,a;for(f=Math.max(k.length,h.length)-1;f>=0;f--){c=k[f]|0;a=h[f]|0;for(d=sjcl.bn.prototype.radix-4;d>=0;d-=4){e=e.doubl().doubl().doubl().doubl().add(m[c>>d&15]).add(l[a>>d&15])}}return e},negate:function(){return this.toAffine().negate().toJac()},isValid:function(){var c=this.z.square(),b=c.square(),a=b.mul(c);return this.y.square().equals(this.curve.b.mul(a).add(this.x.mul(this.curve.a.mul(b).add(this.x.square()))))}};sjcl.ecc.curve=function(f,g,e,d,c,h){this.field=f;this.r=new sjcl.bn(g);this.a=new f(e);this.b=new f(d);this.G=new sjcl.ecc.point(this,new f(c),new f(h))};sjcl.ecc.curve.prototype.fromBits=function(c){var b=sjcl.bitArray,a=this.field.prototype.exponent+7&-8,d=new sjcl.ecc.point(this,this.field.fromBits(b.bitSlice(c,0,a)),this.field.fromBits(b.bitSlice(c,a,2*a)));if(!d.isValid()){throw new sjcl.exception.corrupt("not on the curve!")}return d};sjcl.ecc.curves={c192:new sjcl.ecc.curve(sjcl.bn.prime.p192,"0xffffffffffffffffffffffff99def836146bc9b1b4d22831",-3,"0x64210519e59c80e70fa7e9ab72243049feb8deecc146b9b1","0x188da80eb03090f67cbf20eb43a18800f4ff0afd82ff1012","0x07192b95ffc8da78631011ed6b24cdd573f977a11e794811"),c224:new sjcl.ecc.curve(sjcl.bn.prime.p224,"0xffffffffffffffffffffffffffff16a2e0b8f03e13dd29455c5c2a3d",-3,"0xb4050a850c04b3abf54132565044b0b7d7bfd8ba270b39432355ffb4","0xb70e0cbd6bb4bf7f321390b94a03c1d356c21122343280d6115c1d21","0xbd376388b5f723fb4c22dfe6cd4375a05a07476444d5819985007e34"),c256:new sjcl.ecc.curve(sjcl.bn.prime.p256,"0xffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc632551",-3,"0x5ac635d8aa3a93e7b3ebbd55769886bc651d06b0cc53b0f63bce3c3e27d2604b","0x6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296","0x4fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"),c384:new sjcl.ecc.curve(sjcl.bn.prime.p384,"0xffffffffffffffffffffffffffffffffffffffffffffffffc7634d81f4372ddf581a0db248b0a77aecec196accc52973",-3,"0xb3312fa7e23ee7e4988e056be3f82d19181d9c6efe8141120314088f5013875ac656398d8a2ed19d2a85c8edd3ec2aef","0xaa87ca22be8b05378eb1c71ef320ad746e1d3b628ba79b9859f741e082542a385502f25dbf55296c3a545e3872760ab7","0x3617de4a96262c6f5d9e98bf9292dc29f8f41dbd289a147ce9da3113b5f0b8c00a60b1ce1d7e819d7a431d7c90ea0e5f"),c521:new sjcl.ecc.curve(sjcl.bn.prime.p521,"0x1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA51868783BF2F966B7FCC0148F709A5D03BB5C9B8899C47AEBB6FB71E91386409",-3,"0x051953EB9618E1C9A1F929A21A0B68540EEA2DA725B99B315F3B8B489918EF109E156193951EC7E937B1652C0BD3BB1BF073573DF883D2C34F1EF451FD46B503F00","0xC6858E06B70404E9CD9E3ECB662395B4429C648139053FB521F828AF606B4D3DBAA14B5E77EFE75928FE1DC127A2FFA8DE3348B3C1856A429BF97E7E31C2E5BD66","0x11839296A789A3BC0045C8A5FB42C7D1BD998F54449579B446817AFBD17273E662C97EE72995EF42640C550B9013FAD0761353C7086A272C24088BE94769FD16650"),k192:new sjcl.ecc.curve(sjcl.bn.prime.p192k,"0xfffffffffffffffffffffffe26f2fc170f69466a74defd8d",0,3,"0xdb4ff10ec057e9ae26b07d0280b7f4341da5d1b1eae06c7d","0x9b2f2f6d9c5628a7844163d015be86344082aa88d95e2f9d"),k224:new sjcl.ecc.curve(sjcl.bn.prime.p224k,"0x010000000000000000000000000001dce8d2ec6184caf0a971769fb1f7",0,5,"0xa1455b334df099df30fc28a169a467e9e47075a90f7e650eb6b7a45c","0x7e089fed7fba344282cafbd6f7e319f7c0b0bd59e2ca4bdb556d61a5"),k256:new sjcl.ecc.curve(sjcl.bn.prime.p256k,"0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141",0,7,"0x79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798","0x483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8")};sjcl.ecc.basicKey={publicKey:function(b,a){this._curve=b;this._curveBitLength=b.r.bitLength();if(a instanceof Array){this._point=b.fromBits(a)}else{this._point=a}this.get=function(){var e=this._point.toBits();var d=sjcl.bitArray.bitLength(e);var c=sjcl.bitArray.bitSlice(e,0,d/2);var f=sjcl.bitArray.bitSlice(e,d/2);return{x:c,y:f}}},secretKey:function(b,a){this._curve=b;this._curveBitLength=b.r.bitLength();this._exponent=a;this.get=function(){return this._exponent.toBits()}}};sjcl.ecc.basicKey.generateKeys=function(b){return function a(f,e,c){f=f||0x100;if(typeof f==="number"){f=sjcl.ecc.curves["c"+f];if(f===undefined){throw new sjcl.exception.invalid("no such curve")}}c=c||sjcl.bn.random(f.r,e);var d=f.G.mult(c);return{pub:new sjcl.ecc[b].publicKey(f,d),sec:new sjcl.ecc[b].secretKey(f,c)}}};sjcl.ecc.elGamal={generateKeys:sjcl.ecc.basicKey.generateKeys("elGamal"),publicKey:function(b,a){sjcl.ecc.basicKey.publicKey.apply(this,arguments)},secretKey:function(b,a){sjcl.ecc.basicKey.secretKey.apply(this,arguments)}};sjcl.ecc.elGamal.publicKey.prototype={kem:function(d){var c=sjcl.bn.random(this._curve.r,d),a=this._curve.G.mult(c).toBits(),b=sjcl.hash.sha256.hash(this._point.mult(c).toBits());return{key:b,tag:a}}};sjcl.ecc.elGamal.secretKey.prototype={unkem:function(a){return sjcl.hash.sha256.hash(this._curve.fromBits(a).mult(this._exponent).toBits())},dh:function(a){return sjcl.hash.sha256.hash(a._point.mult(this._exponent).toBits())},dhJavaEc:function(a){return a._point.mult(this._exponent).x.toBits()}};sjcl.ecc.ecdsa={generateKeys:sjcl.ecc.basicKey.generateKeys("ecdsa")};sjcl.ecc.ecdsa.publicKey=function(b,a){sjcl.ecc.basicKey.publicKey.apply(this,arguments)};sjcl.ecc.ecdsa.publicKey.prototype={verify:function(f,e,b){if(sjcl.bitArray.bitLength(f)>this._curveBitLength){f=sjcl.bitArray.clamp(f,this._curveBitLength)}var i=sjcl.bitArray,g=this._curve.r,d=this._curveBitLength,a=sjcl.bn.fromBits(i.bitSlice(e,0,d)),m=sjcl.bn.fromBits(i.bitSlice(e,d,2*d)),k=b?m:m.inverseMod(g),h=sjcl.bn.fromBits(f).mul(k).mod(g),j=a.mul(k).mod(g),c=this._curve.G.mult2(h,j,this._point).x;if(a.equals(0)||m.equals(0)||a.greaterEquals(g)||m.greaterEquals(g)||!c.equals(a)){if(b===undefined){return this.verify(f,e,true)}else{throw (new sjcl.exception.corrupt("signature didn't check out"))}}return true}};sjcl.ecc.ecdsa.secretKey=function(b,a){sjcl.ecc.basicKey.secretKey.apply(this,arguments)};sjcl.ecc.ecdsa.secretKey.prototype={sign:function(f,h,b,c){if(sjcl.bitArray.bitLength(f)>this._curveBitLength){f=sjcl.bitArray.clamp(f,this._curveBitLength)}var g=this._curve.r,d=g.bitLength(),e=c||sjcl.bn.random(g.sub(1),h).add(1),a=this._curve.G.mult(e).x.mod(g),j=sjcl.bn.fromBits(f).add(a.mul(this._exponent)),i=b?j.inverseMod(g).mul(e).mod(g):j.mul(e.inverseMod(g)).mod(g);return sjcl.bitArray.concat(a.toBits(d),i.toBits(d))}};
+},{"crypto":"crypto"}],15:[function(require,module,exports){
 /**
  * Promise polyfill v1.0.10
  * requires setImmediate
@@ -28462,5 +28741,927 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
 
 }(this));
 
-},{"timers":8}]},{},[1])(1)
+},{"timers":8}],16:[function(require,module,exports){
+(function (Buffer){
+// prototype class for hash functions
+function Hash (blockSize, finalSize) {
+  this._block = new Buffer(blockSize)
+  this._finalSize = finalSize
+  this._blockSize = blockSize
+  this._len = 0
+  this._s = 0
+}
+
+Hash.prototype.update = function (data, enc) {
+  if (typeof data === 'string') {
+    enc = enc || 'utf8'
+    data = new Buffer(data, enc)
+  }
+
+  var l = this._len += data.length
+  var s = this._s || 0
+  var f = 0
+  var buffer = this._block
+
+  while (s < l) {
+    var t = Math.min(data.length, f + this._blockSize - (s % this._blockSize))
+    var ch = (t - f)
+
+    for (var i = 0; i < ch; i++) {
+      buffer[(s % this._blockSize) + i] = data[i + f]
+    }
+
+    s += ch
+    f += ch
+
+    if ((s % this._blockSize) === 0) {
+      this._update(buffer)
+    }
+  }
+  this._s = s
+
+  return this
+}
+
+Hash.prototype.digest = function (enc) {
+  // Suppose the length of the message M, in bits, is l
+  var l = this._len * 8
+
+  // Append the bit 1 to the end of the message
+  this._block[this._len % this._blockSize] = 0x80
+
+  // and then k zero bits, where k is the smallest non-negative solution to the equation (l + 1 + k) === finalSize mod blockSize
+  this._block.fill(0, this._len % this._blockSize + 1)
+
+  if (l % (this._blockSize * 8) >= this._finalSize * 8) {
+    this._update(this._block)
+    this._block.fill(0)
+  }
+
+  // to this append the block which is equal to the number l written in binary
+  // TODO: handle case where l is > Math.pow(2, 29)
+  this._block.writeInt32BE(l, this._blockSize - 4)
+
+  var hash = this._update(this._block) || this._hash()
+
+  return enc ? hash.toString(enc) : hash
+}
+
+Hash.prototype._update = function () {
+  throw new Error('_update must be implemented by subclass')
+}
+
+module.exports = Hash
+
+}).call(this,require("buffer").Buffer)
+},{"buffer":2}],17:[function(require,module,exports){
+var exports = module.exports = function SHA (algorithm) {
+  algorithm = algorithm.toLowerCase()
+
+  var Algorithm = exports[algorithm]
+  if (!Algorithm) throw new Error(algorithm + ' is not supported (we accept pull requests)')
+
+  return new Algorithm()
+}
+
+exports.sha = require('./sha')
+exports.sha1 = require('./sha1')
+exports.sha224 = require('./sha224')
+exports.sha256 = require('./sha256')
+exports.sha384 = require('./sha384')
+exports.sha512 = require('./sha512')
+
+},{"./sha":19,"./sha1":20,"./sha224":21,"./sha256":22,"./sha384":23,"./sha512":24}],18:[function(require,module,exports){
+if (typeof Object.create === 'function') {
+  // implementation from standard node.js 'util' module
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    ctor.prototype = Object.create(superCtor.prototype, {
+      constructor: {
+        value: ctor,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+  };
+} else {
+  // old school shim for old browsers
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    var TempCtor = function () {}
+    TempCtor.prototype = superCtor.prototype
+    ctor.prototype = new TempCtor()
+    ctor.prototype.constructor = ctor
+  }
+}
+
+},{}],19:[function(require,module,exports){
+(function (Buffer){
+/*
+ * A JavaScript implementation of the Secure Hash Algorithm, SHA-0, as defined
+ * in FIPS PUB 180-1
+ * This source code is derived from sha1.js of the same repository.
+ * The difference between SHA-0 and SHA-1 is just a bitwise rotate left
+ * operation was added.
+ */
+
+var inherits = require('inherits')
+var Hash = require('./hash')
+
+var W = new Array(80)
+
+function Sha () {
+  this.init()
+  this._w = W
+
+  Hash.call(this, 64, 56)
+}
+
+inherits(Sha, Hash)
+
+Sha.prototype.init = function () {
+  this._a = 0x67452301 | 0
+  this._b = 0xefcdab89 | 0
+  this._c = 0x98badcfe | 0
+  this._d = 0x10325476 | 0
+  this._e = 0xc3d2e1f0 | 0
+
+  return this
+}
+
+/*
+ * Bitwise rotate a 32-bit number to the left.
+ */
+function rol (num, cnt) {
+  return (num << cnt) | (num >>> (32 - cnt))
+}
+
+Sha.prototype._update = function (M) {
+  var W = this._w
+
+  var a = this._a
+  var b = this._b
+  var c = this._c
+  var d = this._d
+  var e = this._e
+
+  var j = 0, k
+
+  /*
+   * SHA-1 has a bitwise rotate left operation. But, SHA is not
+   * function calcW() { return rol(W[j - 3] ^ W[j -  8] ^ W[j - 14] ^ W[j - 16], 1) }
+   */
+  function calcW () { return W[j - 3] ^ W[j - 8] ^ W[j - 14] ^ W[j - 16] }
+  function loop (w, f) {
+    W[j] = w
+
+    var t = rol(a, 5) + f + e + w + k
+
+    e = d
+    d = c
+    c = rol(b, 30)
+    b = a
+    a = t
+    j++
+  }
+
+  k = 1518500249
+  while (j < 16) loop(M.readInt32BE(j * 4), (b & c) | ((~b) & d))
+  while (j < 20) loop(calcW(), (b & c) | ((~b) & d))
+  k = 1859775393
+  while (j < 40) loop(calcW(), b ^ c ^ d)
+  k = -1894007588
+  while (j < 60) loop(calcW(), (b & c) | (b & d) | (c & d))
+  k = -899497514
+  while (j < 80) loop(calcW(), b ^ c ^ d)
+
+  this._a = (a + this._a) | 0
+  this._b = (b + this._b) | 0
+  this._c = (c + this._c) | 0
+  this._d = (d + this._d) | 0
+  this._e = (e + this._e) | 0
+}
+
+Sha.prototype._hash = function () {
+  var H = new Buffer(20)
+
+  H.writeInt32BE(this._a | 0, 0)
+  H.writeInt32BE(this._b | 0, 4)
+  H.writeInt32BE(this._c | 0, 8)
+  H.writeInt32BE(this._d | 0, 12)
+  H.writeInt32BE(this._e | 0, 16)
+
+  return H
+}
+
+module.exports = Sha
+
+
+}).call(this,require("buffer").Buffer)
+},{"./hash":16,"buffer":2,"inherits":18}],20:[function(require,module,exports){
+(function (Buffer){
+/*
+ * A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined
+ * in FIPS PUB 180-1
+ * Version 2.1a Copyright Paul Johnston 2000 - 2002.
+ * Other contributors: Greg Holt, Andrew Kepert, Ydnar, Lostinet
+ * Distributed under the BSD License
+ * See http://pajhome.org.uk/crypt/md5 for details.
+ */
+
+var inherits = require('inherits')
+var Hash = require('./hash')
+
+var W = new Array(80)
+
+function Sha1 () {
+  this.init()
+  this._w = W
+
+  Hash.call(this, 64, 56)
+}
+
+inherits(Sha1, Hash)
+
+Sha1.prototype.init = function () {
+  this._a = 0x67452301 | 0
+  this._b = 0xefcdab89 | 0
+  this._c = 0x98badcfe | 0
+  this._d = 0x10325476 | 0
+  this._e = 0xc3d2e1f0 | 0
+
+  return this
+}
+
+/*
+ * Bitwise rotate a 32-bit number to the left.
+ */
+function rol (num, cnt) {
+  return (num << cnt) | (num >>> (32 - cnt))
+}
+
+Sha1.prototype._update = function (M) {
+  var W = this._w
+
+  var a = this._a
+  var b = this._b
+  var c = this._c
+  var d = this._d
+  var e = this._e
+
+  var j = 0, k
+
+  function calcW () { return rol(W[j - 3] ^ W[j - 8] ^ W[j - 14] ^ W[j - 16], 1) }
+  function loop (w, f) {
+    W[j] = w
+
+    var t = rol(a, 5) + f + e + w + k
+
+    e = d
+    d = c
+    c = rol(b, 30)
+    b = a
+    a = t
+    j++
+  }
+
+  k = 1518500249
+  while (j < 16) loop(M.readInt32BE(j * 4), (b & c) | ((~b) & d))
+  while (j < 20) loop(calcW(), (b & c) | ((~b) & d))
+  k = 1859775393
+  while (j < 40) loop(calcW(), b ^ c ^ d)
+  k = -1894007588
+  while (j < 60) loop(calcW(), (b & c) | (b & d) | (c & d))
+  k = -899497514
+  while (j < 80) loop(calcW(), b ^ c ^ d)
+
+  this._a = (a + this._a) | 0
+  this._b = (b + this._b) | 0
+  this._c = (c + this._c) | 0
+  this._d = (d + this._d) | 0
+  this._e = (e + this._e) | 0
+}
+
+Sha1.prototype._hash = function () {
+  var H = new Buffer(20)
+
+  H.writeInt32BE(this._a | 0, 0)
+  H.writeInt32BE(this._b | 0, 4)
+  H.writeInt32BE(this._c | 0, 8)
+  H.writeInt32BE(this._d | 0, 12)
+  H.writeInt32BE(this._e | 0, 16)
+
+  return H
+}
+
+module.exports = Sha1
+
+}).call(this,require("buffer").Buffer)
+},{"./hash":16,"buffer":2,"inherits":18}],21:[function(require,module,exports){
+(function (Buffer){
+/**
+ * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
+ * in FIPS 180-2
+ * Version 2.2-beta Copyright Angel Marin, Paul Johnston 2000 - 2009.
+ * Other contributors: Greg Holt, Andrew Kepert, Ydnar, Lostinet
+ *
+ */
+
+var inherits = require('inherits')
+var Sha256 = require('./sha256')
+var Hash = require('./hash')
+
+var W = new Array(64)
+
+function Sha224 () {
+  this.init()
+
+  this._w = W // new Array(64)
+
+  Hash.call(this, 64, 56)
+}
+
+inherits(Sha224, Sha256)
+
+Sha224.prototype.init = function () {
+  this._a = 0xc1059ed8 | 0
+  this._b = 0x367cd507 | 0
+  this._c = 0x3070dd17 | 0
+  this._d = 0xf70e5939 | 0
+  this._e = 0xffc00b31 | 0
+  this._f = 0x68581511 | 0
+  this._g = 0x64f98fa7 | 0
+  this._h = 0xbefa4fa4 | 0
+
+  return this
+}
+
+Sha224.prototype._hash = function () {
+  var H = new Buffer(28)
+
+  H.writeInt32BE(this._a, 0)
+  H.writeInt32BE(this._b, 4)
+  H.writeInt32BE(this._c, 8)
+  H.writeInt32BE(this._d, 12)
+  H.writeInt32BE(this._e, 16)
+  H.writeInt32BE(this._f, 20)
+  H.writeInt32BE(this._g, 24)
+
+  return H
+}
+
+module.exports = Sha224
+
+}).call(this,require("buffer").Buffer)
+},{"./hash":16,"./sha256":22,"buffer":2,"inherits":18}],22:[function(require,module,exports){
+(function (Buffer){
+/**
+ * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
+ * in FIPS 180-2
+ * Version 2.2-beta Copyright Angel Marin, Paul Johnston 2000 - 2009.
+ * Other contributors: Greg Holt, Andrew Kepert, Ydnar, Lostinet
+ *
+ */
+
+var inherits = require('inherits')
+var Hash = require('./hash')
+
+var K = [
+  0x428A2F98, 0x71374491, 0xB5C0FBCF, 0xE9B5DBA5,
+  0x3956C25B, 0x59F111F1, 0x923F82A4, 0xAB1C5ED5,
+  0xD807AA98, 0x12835B01, 0x243185BE, 0x550C7DC3,
+  0x72BE5D74, 0x80DEB1FE, 0x9BDC06A7, 0xC19BF174,
+  0xE49B69C1, 0xEFBE4786, 0x0FC19DC6, 0x240CA1CC,
+  0x2DE92C6F, 0x4A7484AA, 0x5CB0A9DC, 0x76F988DA,
+  0x983E5152, 0xA831C66D, 0xB00327C8, 0xBF597FC7,
+  0xC6E00BF3, 0xD5A79147, 0x06CA6351, 0x14292967,
+  0x27B70A85, 0x2E1B2138, 0x4D2C6DFC, 0x53380D13,
+  0x650A7354, 0x766A0ABB, 0x81C2C92E, 0x92722C85,
+  0xA2BFE8A1, 0xA81A664B, 0xC24B8B70, 0xC76C51A3,
+  0xD192E819, 0xD6990624, 0xF40E3585, 0x106AA070,
+  0x19A4C116, 0x1E376C08, 0x2748774C, 0x34B0BCB5,
+  0x391C0CB3, 0x4ED8AA4A, 0x5B9CCA4F, 0x682E6FF3,
+  0x748F82EE, 0x78A5636F, 0x84C87814, 0x8CC70208,
+  0x90BEFFFA, 0xA4506CEB, 0xBEF9A3F7, 0xC67178F2
+]
+
+var W = new Array(64)
+
+function Sha256 () {
+  this.init()
+
+  this._w = W // new Array(64)
+
+  Hash.call(this, 64, 56)
+}
+
+inherits(Sha256, Hash)
+
+Sha256.prototype.init = function () {
+  this._a = 0x6a09e667 | 0
+  this._b = 0xbb67ae85 | 0
+  this._c = 0x3c6ef372 | 0
+  this._d = 0xa54ff53a | 0
+  this._e = 0x510e527f | 0
+  this._f = 0x9b05688c | 0
+  this._g = 0x1f83d9ab | 0
+  this._h = 0x5be0cd19 | 0
+
+  return this
+}
+
+function S (X, n) {
+  return (X >>> n) | (X << (32 - n))
+}
+
+function R (X, n) {
+  return (X >>> n)
+}
+
+function Ch (x, y, z) {
+  return ((x & y) ^ ((~x) & z))
+}
+
+function Maj (x, y, z) {
+  return ((x & y) ^ (x & z) ^ (y & z))
+}
+
+function Sigma0256 (x) {
+  return (S(x, 2) ^ S(x, 13) ^ S(x, 22))
+}
+
+function Sigma1256 (x) {
+  return (S(x, 6) ^ S(x, 11) ^ S(x, 25))
+}
+
+function Gamma0256 (x) {
+  return (S(x, 7) ^ S(x, 18) ^ R(x, 3))
+}
+
+function Gamma1256 (x) {
+  return (S(x, 17) ^ S(x, 19) ^ R(x, 10))
+}
+
+Sha256.prototype._update = function (M) {
+  var W = this._w
+
+  var a = this._a | 0
+  var b = this._b | 0
+  var c = this._c | 0
+  var d = this._d | 0
+  var e = this._e | 0
+  var f = this._f | 0
+  var g = this._g | 0
+  var h = this._h | 0
+
+  var j = 0
+
+  function calcW () { return Gamma1256(W[j - 2]) + W[j - 7] + Gamma0256(W[j - 15]) + W[j - 16] }
+  function loop (w) {
+    W[j] = w
+
+    var T1 = h + Sigma1256(e) + Ch(e, f, g) + K[j] + w
+    var T2 = Sigma0256(a) + Maj(a, b, c)
+
+    h = g
+    g = f
+    f = e
+    e = d + T1
+    d = c
+    c = b
+    b = a
+    a = T1 + T2
+
+    j++
+  }
+
+  while (j < 16) loop(M.readInt32BE(j * 4))
+  while (j < 64) loop(calcW())
+
+  this._a = (a + this._a) | 0
+  this._b = (b + this._b) | 0
+  this._c = (c + this._c) | 0
+  this._d = (d + this._d) | 0
+  this._e = (e + this._e) | 0
+  this._f = (f + this._f) | 0
+  this._g = (g + this._g) | 0
+  this._h = (h + this._h) | 0
+}
+
+Sha256.prototype._hash = function () {
+  var H = new Buffer(32)
+
+  H.writeInt32BE(this._a, 0)
+  H.writeInt32BE(this._b, 4)
+  H.writeInt32BE(this._c, 8)
+  H.writeInt32BE(this._d, 12)
+  H.writeInt32BE(this._e, 16)
+  H.writeInt32BE(this._f, 20)
+  H.writeInt32BE(this._g, 24)
+  H.writeInt32BE(this._h, 28)
+
+  return H
+}
+
+module.exports = Sha256
+
+}).call(this,require("buffer").Buffer)
+},{"./hash":16,"buffer":2,"inherits":18}],23:[function(require,module,exports){
+(function (Buffer){
+var inherits = require('inherits')
+var SHA512 = require('./sha512')
+var Hash = require('./hash')
+
+var W = new Array(160)
+
+function Sha384 () {
+  this.init()
+  this._w = W
+
+  Hash.call(this, 128, 112)
+}
+
+inherits(Sha384, SHA512)
+
+Sha384.prototype.init = function () {
+  this._a = 0xcbbb9d5d | 0
+  this._b = 0x629a292a | 0
+  this._c = 0x9159015a | 0
+  this._d = 0x152fecd8 | 0
+  this._e = 0x67332667 | 0
+  this._f = 0x8eb44a87 | 0
+  this._g = 0xdb0c2e0d | 0
+  this._h = 0x47b5481d | 0
+
+  this._al = 0xc1059ed8 | 0
+  this._bl = 0x367cd507 | 0
+  this._cl = 0x3070dd17 | 0
+  this._dl = 0xf70e5939 | 0
+  this._el = 0xffc00b31 | 0
+  this._fl = 0x68581511 | 0
+  this._gl = 0x64f98fa7 | 0
+  this._hl = 0xbefa4fa4 | 0
+
+  return this
+}
+
+Sha384.prototype._hash = function () {
+  var H = new Buffer(48)
+
+  function writeInt64BE (h, l, offset) {
+    H.writeInt32BE(h, offset)
+    H.writeInt32BE(l, offset + 4)
+  }
+
+  writeInt64BE(this._a, this._al, 0)
+  writeInt64BE(this._b, this._bl, 8)
+  writeInt64BE(this._c, this._cl, 16)
+  writeInt64BE(this._d, this._dl, 24)
+  writeInt64BE(this._e, this._el, 32)
+  writeInt64BE(this._f, this._fl, 40)
+
+  return H
+}
+
+module.exports = Sha384
+
+}).call(this,require("buffer").Buffer)
+},{"./hash":16,"./sha512":24,"buffer":2,"inherits":18}],24:[function(require,module,exports){
+(function (Buffer){
+var inherits = require('inherits')
+var Hash = require('./hash')
+
+var K = [
+  0x428a2f98, 0xd728ae22, 0x71374491, 0x23ef65cd,
+  0xb5c0fbcf, 0xec4d3b2f, 0xe9b5dba5, 0x8189dbbc,
+  0x3956c25b, 0xf348b538, 0x59f111f1, 0xb605d019,
+  0x923f82a4, 0xaf194f9b, 0xab1c5ed5, 0xda6d8118,
+  0xd807aa98, 0xa3030242, 0x12835b01, 0x45706fbe,
+  0x243185be, 0x4ee4b28c, 0x550c7dc3, 0xd5ffb4e2,
+  0x72be5d74, 0xf27b896f, 0x80deb1fe, 0x3b1696b1,
+  0x9bdc06a7, 0x25c71235, 0xc19bf174, 0xcf692694,
+  0xe49b69c1, 0x9ef14ad2, 0xefbe4786, 0x384f25e3,
+  0x0fc19dc6, 0x8b8cd5b5, 0x240ca1cc, 0x77ac9c65,
+  0x2de92c6f, 0x592b0275, 0x4a7484aa, 0x6ea6e483,
+  0x5cb0a9dc, 0xbd41fbd4, 0x76f988da, 0x831153b5,
+  0x983e5152, 0xee66dfab, 0xa831c66d, 0x2db43210,
+  0xb00327c8, 0x98fb213f, 0xbf597fc7, 0xbeef0ee4,
+  0xc6e00bf3, 0x3da88fc2, 0xd5a79147, 0x930aa725,
+  0x06ca6351, 0xe003826f, 0x14292967, 0x0a0e6e70,
+  0x27b70a85, 0x46d22ffc, 0x2e1b2138, 0x5c26c926,
+  0x4d2c6dfc, 0x5ac42aed, 0x53380d13, 0x9d95b3df,
+  0x650a7354, 0x8baf63de, 0x766a0abb, 0x3c77b2a8,
+  0x81c2c92e, 0x47edaee6, 0x92722c85, 0x1482353b,
+  0xa2bfe8a1, 0x4cf10364, 0xa81a664b, 0xbc423001,
+  0xc24b8b70, 0xd0f89791, 0xc76c51a3, 0x0654be30,
+  0xd192e819, 0xd6ef5218, 0xd6990624, 0x5565a910,
+  0xf40e3585, 0x5771202a, 0x106aa070, 0x32bbd1b8,
+  0x19a4c116, 0xb8d2d0c8, 0x1e376c08, 0x5141ab53,
+  0x2748774c, 0xdf8eeb99, 0x34b0bcb5, 0xe19b48a8,
+  0x391c0cb3, 0xc5c95a63, 0x4ed8aa4a, 0xe3418acb,
+  0x5b9cca4f, 0x7763e373, 0x682e6ff3, 0xd6b2b8a3,
+  0x748f82ee, 0x5defb2fc, 0x78a5636f, 0x43172f60,
+  0x84c87814, 0xa1f0ab72, 0x8cc70208, 0x1a6439ec,
+  0x90befffa, 0x23631e28, 0xa4506ceb, 0xde82bde9,
+  0xbef9a3f7, 0xb2c67915, 0xc67178f2, 0xe372532b,
+  0xca273ece, 0xea26619c, 0xd186b8c7, 0x21c0c207,
+  0xeada7dd6, 0xcde0eb1e, 0xf57d4f7f, 0xee6ed178,
+  0x06f067aa, 0x72176fba, 0x0a637dc5, 0xa2c898a6,
+  0x113f9804, 0xbef90dae, 0x1b710b35, 0x131c471b,
+  0x28db77f5, 0x23047d84, 0x32caab7b, 0x40c72493,
+  0x3c9ebe0a, 0x15c9bebc, 0x431d67c4, 0x9c100d4c,
+  0x4cc5d4be, 0xcb3e42b6, 0x597f299c, 0xfc657e2a,
+  0x5fcb6fab, 0x3ad6faec, 0x6c44198c, 0x4a475817
+]
+
+var W = new Array(160)
+
+function Sha512 () {
+  this.init()
+  this._w = W
+
+  Hash.call(this, 128, 112)
+}
+
+inherits(Sha512, Hash)
+
+Sha512.prototype.init = function () {
+  this._a = 0x6a09e667 | 0
+  this._b = 0xbb67ae85 | 0
+  this._c = 0x3c6ef372 | 0
+  this._d = 0xa54ff53a | 0
+  this._e = 0x510e527f | 0
+  this._f = 0x9b05688c | 0
+  this._g = 0x1f83d9ab | 0
+  this._h = 0x5be0cd19 | 0
+
+  this._al = 0xf3bcc908 | 0
+  this._bl = 0x84caa73b | 0
+  this._cl = 0xfe94f82b | 0
+  this._dl = 0x5f1d36f1 | 0
+  this._el = 0xade682d1 | 0
+  this._fl = 0x2b3e6c1f | 0
+  this._gl = 0xfb41bd6b | 0
+  this._hl = 0x137e2179 | 0
+
+  return this
+}
+
+function S (X, Xl, n) {
+  return (X >>> n) | (Xl << (32 - n))
+}
+
+function Ch (x, y, z) {
+  return ((x & y) ^ ((~x) & z))
+}
+
+function Maj (x, y, z) {
+  return ((x & y) ^ (x & z) ^ (y & z))
+}
+
+Sha512.prototype._update = function (M) {
+  var W = this._w
+
+  var a = this._a | 0
+  var b = this._b | 0
+  var c = this._c | 0
+  var d = this._d | 0
+  var e = this._e | 0
+  var f = this._f | 0
+  var g = this._g | 0
+  var h = this._h | 0
+
+  var al = this._al | 0
+  var bl = this._bl | 0
+  var cl = this._cl | 0
+  var dl = this._dl | 0
+  var el = this._el | 0
+  var fl = this._fl | 0
+  var gl = this._gl | 0
+  var hl = this._hl | 0
+
+  var i = 0, j = 0
+  var Wi, Wil
+  function calcW () {
+    var x = W[j - 15 * 2]
+    var xl = W[j - 15 * 2 + 1]
+    var gamma0 = S(x, xl, 1) ^ S(x, xl, 8) ^ (x >>> 7)
+    var gamma0l = S(xl, x, 1) ^ S(xl, x, 8) ^ S(xl, x, 7)
+
+    x = W[j - 2 * 2]
+    xl = W[j - 2 * 2 + 1]
+    var gamma1 = S(x, xl, 19) ^ S(xl, x, 29) ^ (x >>> 6)
+    var gamma1l = S(xl, x, 19) ^ S(x, xl, 29) ^ S(xl, x, 6)
+
+    // W[i] = gamma0 + W[i - 7] + gamma1 + W[i - 16]
+    var Wi7 = W[j - 7 * 2]
+    var Wi7l = W[j - 7 * 2 + 1]
+
+    var Wi16 = W[j - 16 * 2]
+    var Wi16l = W[j - 16 * 2 + 1]
+
+    Wil = gamma0l + Wi7l
+    Wi = gamma0 + Wi7 + ((Wil >>> 0) < (gamma0l >>> 0) ? 1 : 0)
+    Wil = Wil + gamma1l
+    Wi = Wi + gamma1 + ((Wil >>> 0) < (gamma1l >>> 0) ? 1 : 0)
+    Wil = Wil + Wi16l
+    Wi = Wi + Wi16 + ((Wil >>> 0) < (Wi16l >>> 0) ? 1 : 0)
+  }
+
+  function loop () {
+    W[j] = Wi
+    W[j + 1] = Wil
+
+    var maj = Maj(a, b, c)
+    var majl = Maj(al, bl, cl)
+
+    var sigma0h = S(a, al, 28) ^ S(al, a, 2) ^ S(al, a, 7)
+    var sigma0l = S(al, a, 28) ^ S(a, al, 2) ^ S(a, al, 7)
+    var sigma1h = S(e, el, 14) ^ S(e, el, 18) ^ S(el, e, 9)
+    var sigma1l = S(el, e, 14) ^ S(el, e, 18) ^ S(e, el, 9)
+
+    // t1 = h + sigma1 + ch + K[i] + W[i]
+    var Ki = K[j]
+    var Kil = K[j + 1]
+
+    var ch = Ch(e, f, g)
+    var chl = Ch(el, fl, gl)
+
+    var t1l = hl + sigma1l
+    var t1 = h + sigma1h + ((t1l >>> 0) < (hl >>> 0) ? 1 : 0)
+    t1l = t1l + chl
+    t1 = t1 + ch + ((t1l >>> 0) < (chl >>> 0) ? 1 : 0)
+    t1l = t1l + Kil
+    t1 = t1 + Ki + ((t1l >>> 0) < (Kil >>> 0) ? 1 : 0)
+    t1l = t1l + Wil
+    t1 = t1 + Wi + ((t1l >>> 0) < (Wil >>> 0) ? 1 : 0)
+
+    // t2 = sigma0 + maj
+    var t2l = sigma0l + majl
+    var t2 = sigma0h + maj + ((t2l >>> 0) < (sigma0l >>> 0) ? 1 : 0)
+
+    h = g
+    hl = gl
+    g = f
+    gl = fl
+    f = e
+    fl = el
+    el = (dl + t1l) | 0
+    e = (d + t1 + ((el >>> 0) < (dl >>> 0) ? 1 : 0)) | 0
+    d = c
+    dl = cl
+    c = b
+    cl = bl
+    b = a
+    bl = al
+    al = (t1l + t2l) | 0
+    a = (t1 + t2 + ((al >>> 0) < (t1l >>> 0) ? 1 : 0)) | 0
+
+    i++
+    j += 2
+  }
+
+  while (i < 16) {
+    Wi = M.readInt32BE(j * 4)
+    Wil = M.readInt32BE(j * 4 + 4)
+
+    loop()
+  }
+
+  while (i < 80) {
+    calcW()
+    loop()
+  }
+
+  this._al = (this._al + al) | 0
+  this._bl = (this._bl + bl) | 0
+  this._cl = (this._cl + cl) | 0
+  this._dl = (this._dl + dl) | 0
+  this._el = (this._el + el) | 0
+  this._fl = (this._fl + fl) | 0
+  this._gl = (this._gl + gl) | 0
+  this._hl = (this._hl + hl) | 0
+
+  this._a = (this._a + a + ((this._al >>> 0) < (al >>> 0) ? 1 : 0)) | 0
+  this._b = (this._b + b + ((this._bl >>> 0) < (bl >>> 0) ? 1 : 0)) | 0
+  this._c = (this._c + c + ((this._cl >>> 0) < (cl >>> 0) ? 1 : 0)) | 0
+  this._d = (this._d + d + ((this._dl >>> 0) < (dl >>> 0) ? 1 : 0)) | 0
+  this._e = (this._e + e + ((this._el >>> 0) < (el >>> 0) ? 1 : 0)) | 0
+  this._f = (this._f + f + ((this._fl >>> 0) < (fl >>> 0) ? 1 : 0)) | 0
+  this._g = (this._g + g + ((this._gl >>> 0) < (gl >>> 0) ? 1 : 0)) | 0
+  this._h = (this._h + h + ((this._hl >>> 0) < (hl >>> 0) ? 1 : 0)) | 0
+}
+
+Sha512.prototype._hash = function () {
+  var H = new Buffer(64)
+
+  function writeInt64BE (h, l, offset) {
+    H.writeInt32BE(h, offset)
+    H.writeInt32BE(l, offset + 4)
+  }
+
+  writeInt64BE(this._a, this._al, 0)
+  writeInt64BE(this._b, this._bl, 8)
+  writeInt64BE(this._c, this._cl, 16)
+  writeInt64BE(this._d, this._dl, 24)
+  writeInt64BE(this._e, this._el, 32)
+  writeInt64BE(this._f, this._fl, 40)
+  writeInt64BE(this._g, this._gl, 48)
+  writeInt64BE(this._h, this._hl, 56)
+
+  return H
+}
+
+module.exports = Sha512
+
+}).call(this,require("buffer").Buffer)
+},{"./hash":16,"buffer":2,"inherits":18}],"crypto":[function(require,module,exports){
+(function (Buffer){
+var sjcl = require('dhcurve/vendor/sjcl');
+
+module.exports = {
+  randomBytes: function() {
+    var buf = new Buffer(4);
+    buf.writeUInt32BE(sjcl.random.randomWords(1, 0)[0]);
+    return buf;
+  },
+  createHash: require('sha.js')
+};
+
+}).call(this,require("buffer").Buffer)
+},{"buffer":2,"dhcurve/vendor/sjcl":14,"sha.js":17}],"dhcurve":[function(require,module,exports){
+(function (Buffer){
+var common = require('./common.js'),
+    sjcl = require('../vendor/sjcl.js'),
+    _ = require('goal');
+
+var NamedCurve = {
+  'prime256v1': 256
+};
+
+function urlSafe(message) {
+  return _.replaceAll(_.replaceAll(_.replaceAll(message.toString('base64'), '+', '-'), '/', '_'), '=', '');
+}
+
+function bnToBuf(bn) {
+  return new Buffer(sjcl.codec.bytes.fromBits(bn));
+}
+
+function bufToBn(buf) {
+  return sjcl.bn.fromBits(sjcl.codec.bytes.toBits(buf));
+}
+
+function PrivateKey(curve, d) {
+  this.curve = curve;
+  this.d = d;
+}
+
+PrivateKey.prototype.getSharedSecret = function(publicKey) {
+  if(!(publicKey instanceof common.Point))
+  throw new Error('publicKey must be a Point');
+
+  var curve = sjcl.ecc.curves['c' + (NamedCurve[publicKey.curve] || publicKey.curve)];
+
+  var x = bufToBn(publicKey.x);
+  var y = bufToBn(publicKey.y);
+
+  var point = new sjcl.ecc.point(curve, x, y);
+  var exponent = bufToBn(this.d);
+
+  var secret = new Buffer(sjcl.codec.bytes.fromBits(point.mult(exponent).x.toBits()));
+  return secret;
+};
+
+PrivateKey.prototype.getPublicKey = function() {
+  var exponent = bufToBn(this.d);
+  var curve = sjcl.ecc.curves['c' + (NamedCurve[this.curve] || this.curve)];
+
+  var publicKey = curve.G.mult(exponent);
+
+  var x = bnToBuf(publicKey.x.toBits());
+  var y = bnToBuf(publicKey.y.toBits());
+
+  return new common.Point(this.curve, x, y);
+};
+
+function generateKeyPair(curve) {
+  var keys = sjcl.ecc.basicKey.generateKeys('basicKey')(NamedCurve[curve] || curve, 0);
+
+  var pub = keys.pub.get();
+  var sec = keys.sec.get();
+
+  return {
+    publicKey: new common.Point(curve, bnToBuf(pub.x), bnToBuf(pub.y)),
+    privateKey: new PrivateKey(curve, bnToBuf(sec))
+  };
+}
+
+module.exports = _.mixin({
+  PrivateKey: PrivateKey,
+  generateKeyPair: generateKeyPair
+}, common);
+
+}).call(this,require("buffer").Buffer)
+},{"../vendor/sjcl.js":14,"./common.js":9,"buffer":2,"goal":10}]},{},[1])("dhcurve")
 });
