@@ -58,7 +58,7 @@ class DSLinkBuilder extends Builder {
     file.createSync();
 
     if(target == PatcherTarget.BROWSER)
-      output = 'global.global = global;global.require = require;require("dhcurve");require("crypto");' + output;
+      output = 'global.global = global;global.Buffer = Buffer;global.require = require;require("dhcurve");require("crypto");' + output;
     file.writeAsStringSync(output);
     
     if(target == PatcherTarget.BROWSER) {
