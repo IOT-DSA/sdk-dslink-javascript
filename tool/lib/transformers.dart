@@ -17,6 +17,7 @@ class StreamTransformer extends TypeTransformer {
     // aiming for a node-like Stream API, but without the weight
     // isn't really for data, but for just values elapsed over time
     function Stream(dartStream) {
+      EventEmitter.call(this);
       dartStream.${c.key.getMangledName("listen")}({
         // onData
         ${compiler.isMinified ? "\$1" : "call\$1"}: function(data) {
@@ -36,7 +37,7 @@ class StreamTransformer extends TypeTransformer {
       });
     }
 
-    Stream.prototype = new EventEmitter();
+    Stream.prototype = Object.create(EventEmitter.prototype);
 
     module.exports.Stream = Stream;
     """);
