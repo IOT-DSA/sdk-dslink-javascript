@@ -11,7 +11,7 @@ class StreamTransformer extends TypeTransformer {
   @override
   transformFromDart(Compiler compiler, StringBuffer output) {
     var c = compiler.classes["dslink.utils.CachedStreamWrapper"];
-    var ss = compiler.classes["dart.async.StreamSubscription"];
+    var ss = compiler.classes["dart.async._BroadcastSubscriptionWrapper"];
     compiler.globals.add("""
     var EventEmitter = require('events').EventEmitter;
 
