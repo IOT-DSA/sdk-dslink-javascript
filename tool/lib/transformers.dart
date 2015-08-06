@@ -11,6 +11,7 @@ class StreamTransformer extends TypeTransformer {
   @override
   transformFromDart(Compiler compiler, StringBuffer output) {
     var c = compiler.classes["dslink.utils.CachedStreamWrapper"];
+    var ss = compiler.classes["dart.async.StreamSubscription"];
     compiler.globals.add("""
     var EventEmitter = require('events').EventEmitter;
 
@@ -18,7 +19,7 @@ class StreamTransformer extends TypeTransformer {
     // isn't really for data, but for just values elapsed over time
     function Stream(dartStream) {
       EventEmitter.call(this);
-      dartStream.${c.key.getMangledName("listen")}({
+      this._listener = dartStream.${c.key.getMangledName("listen")}({
         // onData
         ${compiler.isMinified ? "\$1" : "call\$1"}: function(data) {
           this.emit('data', dynamicFrom(data));
@@ -38,6 +39,10 @@ class StreamTransformer extends TypeTransformer {
     }
 
     Stream.prototype = Object.create(EventEmitter.prototype);
+
+    Stream.prototype.close = function() {
+      this._listener.${ss.key.getMangledName("cancel")}();
+    };
 
     module.exports.Stream = Stream;
     """);
