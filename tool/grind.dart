@@ -58,14 +58,14 @@ class DSLinkBuilder extends Builder {
     file.createSync();
 
     if(target == PatcherTarget.BROWSER)
-      output = 'global.global = global;global.Buffer = Buffer;global.require = require;require("dhcurve");require("crypto");' + output;
+      output = 'global.__iot_dsa__ = {global: global, Buffer: Buffer, require: require};require("dhcurve");require("crypto");' + output;
     file.writeAsStringSync(output);
-    
+
     if(target == PatcherTarget.BROWSER) {
       var browserify = npmBin("browserify", "browserify $filename --standalone DS");
       file.writeAsStringSync(browserify);
     }
-    
+
     if(isMinified)
       file.writeAsStringSync(await npmBinAsync("uglify-js", "uglifyjs $filename"));
 
