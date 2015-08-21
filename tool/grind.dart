@@ -19,11 +19,14 @@ part "lib/patch_deps.dart";
 part "lib/util.dart";
 
 const String BROWSER_PREFIX = """
-  var self = Object.create(global);
-  self.global = global;
-  self.Buffer = Buffer;
-  self.require = require;
-
+  if(!self)
+    var self = global;
+  self.__iot_dsa__ = {
+    global: global,
+    require: require,
+    Buffer: Buffer
+  };
+  
   require('dhcurve');
   require('crypto');
 """;
