@@ -18,6 +18,16 @@ part "lib/transformers.dart";
 part "lib/patch_deps.dart";
 part "lib/util.dart";
 
+const String BROWSER_PREFIX = """
+  var self = Object.create(global);
+  self.global = global;
+  self.Buffer = Buffer;
+  self.require = require;
+
+  require('dhcurve');
+  require('crypto');
+""";
+
 class DSLinkBuilder extends Builder {
   final PatcherTarget target;
 
@@ -58,7 +68,7 @@ class DSLinkBuilder extends Builder {
     file.createSync();
 
     if(target == PatcherTarget.BROWSER)
-      output = 'global.__iot_dsa__ = {global: global, Buffer: Buffer, require: require};require("dhcurve");require("crypto");' + output;
+      output = BROWSER_PREFIX + output;
     file.writeAsStringSync(output);
 
     if(target == PatcherTarget.BROWSER) {
