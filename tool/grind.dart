@@ -27,17 +27,17 @@ const String BROWSER_PREFIX = """
     Buffer: Buffer
   };
 
-  self.setTimeout = setTimeout;
-  self.setInterval = setInterval;
-  self.clearTimeout = clearTimeout;
-  self.clearInterval = clearInterval;
+  self.setTimeout = setTimeout.bind(window);
+  self.setInterval = setInterval.bind(window);
+  self.clearTimeout = clearTimeout.bind(window);
+  self.clearInterval = clearInterval.bind(window);
 
   // TODO: Look into Browserify setImmediate polyfill instead of setTimeout
   self.scheduleImmediate = function(cb) {
     if(self.setImmediate) {
       self.setImmediate(cb);
     } else {
-      setTimeout(cb, 0);
+      self.setTimeout(cb, 0);
     }
   };
 
