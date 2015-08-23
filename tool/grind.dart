@@ -26,7 +26,21 @@ const String BROWSER_PREFIX = """
     require: require,
     Buffer: Buffer
   };
-  
+
+  self.setTimeout = setTimeout;
+  self.setInterval = setInterval;
+  self.clearTimeout = clearTimeout;
+  self.clearInterval = clearInterval;
+
+  // TODO: Look into Browserify setImmediate polyfill instead of setTimeout
+  self.scheduleImmediate = function(cb) {
+    if(self.setImmediate) {
+      self.setImmediate(cb);
+    } else {
+      setTimeout(cb, 0);
+    }
+  };
+
   require('dhcurve');
   require('crypto');
 """;
