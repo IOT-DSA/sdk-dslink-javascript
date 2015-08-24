@@ -3,11 +3,7 @@ version: 1.0.0
 description: DSLink SDK for Dart
 dependencies:
   yaml: "^2.1.2"
+  calzone: any
+  grinder: any
   dslink:
     path: ./temp/sdk-dslink-dart
-  calzone:
-    git: https://github.com/dglogik/calzone.dart.git
-    # path: ../calzone.dart
-  ansicolor: '>=0.0.9 <0.1.0'
-  grinder:
-    git: https://github.com/google/grinder.dart.git
