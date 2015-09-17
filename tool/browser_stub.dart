@@ -30,7 +30,7 @@ import "dart:typed_data";
   "dart.convert.JSON",
   "dart.collection.LinkedHashMap",
   "dart.typed_data.ByteData",
-  "dslink.stub.NodeStub"
+  "dslink.stub.NodeStub",
   "dslink.storage.web"
 ])
 import "dart:mirrors";
