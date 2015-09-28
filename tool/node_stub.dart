@@ -1,6 +1,7 @@
 library dslink.stub;
 
 import "package:dslink/dslink.dart";
+import "package:dslink/src/storage/simple_storage.dart";
 import "package:dslink/src/crypto/node/pk.dart";
 import "package:dslink/src/crypto/pk.dart";
 
@@ -25,7 +26,8 @@ import "dart:typed_data";
     "dart.async.Future",
     "dart.collection.LinkedHashMap",
     "dart.typed_data.ByteData",
-    "dslink.stub.NodeStub"
+    "dslink.stub.NodeStub",
+    "dslink.storage.simple"
   ],
   override: '*'
 )

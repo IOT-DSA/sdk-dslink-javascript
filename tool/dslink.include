@@ -13,6 +13,7 @@ dslink.pk.PrivateKey
 
 # node.js
 dslink.client
+dslink.storage.simple
 # browser
 dslink.browser_client
 dslink.storage.web
