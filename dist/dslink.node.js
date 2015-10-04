@@ -623,7 +623,7 @@
       "^": "Object;",
       $eq: [function(receiver, other) {
         return receiver === other;
-      }, null, "get$==", 2, 0, 154, 64, [], "=="],
+      }, null, "get$==", 2, 0, 154, 65, [], "=="],
       get$hashCode: [function(receiver) {
         return H.Primitives_objectHashCode(receiver);
       }, null, null, 1, 0, 27, "hashCode"],
@@ -632,7 +632,7 @@
       }, "call$0", "get$toString", 0, 0, 16, "toString"],
       noSuchMethod$1: ["super$Interceptor$noSuchMethod", function(receiver, invocation) {
         throw H.wrapException(P.NoSuchMethodError$(receiver, invocation.get$memberName(), invocation.get$positionalArguments(), invocation.get$namedArguments(), null));
-      }, "call$1", "get$noSuchMethod", 2, 0, 142, 71, [], "noSuchMethod"],
+      }, "call$1", "get$noSuchMethod", 2, 0, 142, 67, [], "noSuchMethod"],
       get$runtimeType: function(receiver) {
         return new H.TypeImpl(H.getRuntimeTypeString(receiver), null);
       },
@@ -667,7 +667,7 @@
       },
       noSuchMethod$1: [function(receiver, invocation) {
         return this.super$Interceptor$noSuchMethod(receiver, invocation);
-      }, null, "get$noSuchMethod", 2, 0, null, 71, []]
+      }, null, "get$noSuchMethod", 2, 0, null, 67, []]
     },
     JavaScriptObject: {
       "^": "Interceptor;",
@@ -753,6 +753,9 @@
         for (i = 0; i < receiver.length; ++i)
           list[i] = H.S(receiver[i]);
         return list.join(separator);
+      },
+      skip$1: function(receiver, n) {
+        return H.SubListIterable$(receiver, n, null, H.getTypeArgumentByIndex(receiver, 0));
       },
       fold$2: function(receiver, initialValue, combine) {
         var $length, value, i;
@@ -2992,7 +2995,7 @@
         return H._callInIsolate(isolate, new H.invokeClosure_closure3(closure, arg1, arg2, arg3, arg4));
       else
         throw H.wrapException(P.Exception_Exception("Unsupported number of arguments for wrapped closure"));
-    }, null, null, 14, 0, null, 148, [], 161, [], 162, [], 107, [], 86, [], 197, [], 211, []],
+    }, null, null, 14, 0, null, 148, [], 161, [], 162, [], 97, [], 87, [], 197, [], 211, []],
     convertDartClosureToJS: function(closure, arity) {
       var $function;
       if (closure == null)
@@ -4761,7 +4764,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:0;_captured_this_0",
       call$1: [function(each) {
         return this._captured_this_0.$index(0, each);
-      }, null, null, 2, 0, null, 81, [], "call"]
+      }, null, null, 2, 0, null, 82, [], "call"]
     },
     JsLinkedHashMap_addAll_closure: {
       "^": "Closure;_captured_this_0",
@@ -6976,9 +6979,6 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       get$_prettyName: function() {
         return "LibraryMirror";
       },
-      get$uri: function() {
-        return this._uri;
-      },
       get$qualifiedName: function() {
         return this.simpleName;
       },
@@ -8548,7 +8548,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       } finally {
         $.Zone__current = old;
       }
-    }, "call$5", "async___rootRunUnary$closure", 10, 0, 245, 16, [], 18, [], 20, [], 32, [], 49, []],
+    }, "call$5", "async___rootRunUnary$closure", 10, 0, 245, 16, [], 18, [], 20, [], 32, [], 50, []],
     _rootRunBinary: [function($self, $parent, zone, f, arg1, arg2) {
       var old, t1;
       if (J.$eq$($.Zone__current, zone))
@@ -8560,7 +8560,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       } finally {
         $.Zone__current = old;
       }
-    }, "call$6", "async___rootRunBinary$closure", 12, 0, 246, 16, [], 18, [], 20, [], 32, [], 107, [], 86, []],
+    }, "call$6", "async___rootRunBinary$closure", 12, 0, 246, 16, [], 18, [], 20, [], 32, [], 97, [], 87, []],
     _rootRegisterCallback: [function($self, $parent, zone, f) {
       return f;
     }, "call$4", "async___rootRegisterCallback$closure", 8, 0, 247, 16, [], 18, [], 20, [], 32, []],
@@ -8583,10 +8583,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, "call$4", "async___rootScheduleMicrotask$closure", 8, 0, 251, 16, [], 18, [], 20, [], 32, []],
     _rootCreateTimer: [function($self, $parent, zone, duration, callback) {
       return P.Timer__createTimer(duration, C.C__RootZone !== zone ? zone.bindCallback$1(callback) : callback);
-    }, "call$5", "async___rootCreateTimer$closure", 10, 0, 252, 16, [], 18, [], 20, [], 45, [], 8, []],
+    }, "call$5", "async___rootCreateTimer$closure", 10, 0, 252, 16, [], 18, [], 20, [], 44, [], 8, []],
     _rootCreatePeriodicTimer: [function($self, $parent, zone, duration, callback) {
       return P.Timer__createPeriodicTimer(duration, C.C__RootZone !== zone ? zone.bindUnaryCallback$1(callback) : callback);
-    }, "call$5", "async___rootCreatePeriodicTimer$closure", 10, 0, 253, 16, [], 18, [], 20, [], 45, [], 8, []],
+    }, "call$5", "async___rootCreatePeriodicTimer$closure", 10, 0, 253, 16, [], 18, [], 20, [], 44, [], 8, []],
     _rootPrint: [function($self, $parent, zone, line) {
       H.printString(H.S(line));
     }, "call$4", "async___rootPrint$closure", 8, 0, 254, 16, [], 18, [], 20, [], 246, []],
@@ -9060,7 +9060,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           return H.computeSignature(function(T) {
             return {func: 1, ret: [P.Future, T], args: [{func: 1}]};
           }, this.$receiver, "Future");
-        }, 65, [], "new Future"], Future_Future$microtask: [function(computation, $T) {
+        }, 64, [], "new Future"], Future_Future$microtask: [function(computation, $T) {
           var result = new P._Future(0, $.Zone__current, null);
           result.$builtinTypeInfo = [$T];
           P.scheduleMicrotask(new P.Future_Future$microtask_closure(computation, result));
@@ -9069,7 +9069,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           return H.computeSignature(function(T) {
             return {func: 1, ret: [P.Future, T], args: [{func: 1}]};
           }, this.$receiver, "Future");
-        }, 65, [], "new Future$microtask"], Future_Future$sync: [function(computation, $T) {
+        }, 64, [], "new Future$microtask"], Future_Future$sync: [function(computation, $T) {
           var result, error, stackTrace, t1, exception, replacement;
           try {
             result = computation.call$0();
@@ -9102,7 +9102,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           return H.computeSignature(function(T) {
             return {func: 1, ret: [P.Future, T], args: [{func: 1}]};
           }, this.$receiver, "Future");
-        }, 65, [], "new Future$sync"], Future_Future$value: [function(value, $T) {
+        }, 64, [], "new Future$sync"], Future_Future$value: [function(value, $T) {
           var t1 = new P._Future(0, $.Zone__current, null);
           t1.$builtinTypeInfo = [$T];
           t1._asyncComplete$1(value);
@@ -9140,7 +9140,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           return H.computeSignature(function(T) {
             return {func: 1, ret: [P.Future, T], args: [P.Duration], opt: [{func: 1, ret: T}]};
           }, this.$receiver, "Future");
-        }, 0, 45, [], 65, [], "new Future$delayed"], Future_wait: [function(futures, cleanUp, eagerError) {
+        }, 0, 44, [], 64, [], "new Future$delayed"], Future_wait: [function(futures, cleanUp, eagerError) {
           var t1, result, t2, t3, values;
           t1 = {};
           result = new P._Future(0, $.Zone__current, null);
@@ -9167,7 +9167,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           return P.Future_wait(futures, null, false);
         }, "call$3$cleanUp$eagerError", "call$1", "async_Future_wait$closure", 2, 5, 240, 42, 0, 221, [], 229, [], 241, [], "wait"], Future_forEach: [function(input, f) {
           return P.Future_doWhile(new P.Future_forEach_closure(f, J.get$iterator$ax(input)));
-        }, "call$2", "async_Future_forEach$closure", 4, 0, 241, 56, [], 32, [], "forEach"], Future_doWhile: [function(f) {
+        }, "call$2", "async_Future_forEach$closure", 4, 0, 241, 57, [], 32, [], "forEach"], Future_doWhile: [function(f) {
           var t1, doneSignal, nextIteration;
           t1 = {};
           doneSignal = new P._Future(0, $.Zone__current, null);
@@ -9465,7 +9465,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return H.computeSignature(function(T) {
           return {func: 1, ret: P.Future, args: [{func: 1, args: [T]}], named: {onError: P.Function}};
         }, this.$receiver, "_Future");
-      }, 0, 32, [], 112, [], "then"],
+      }, 0, 32, [], 113, [], "then"],
       catchError$2$test: [function(onError, test) {
         var t1, result;
         t1 = $.Zone__current;
@@ -9480,7 +9480,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return result;
       }, function(onError) {
         return this.catchError$2$test(onError, null);
-      }, "catchError$1", "call$2$test", "call$1", "get$catchError", 2, 3, 461, 0, 112, [], 190, [], "catchError"],
+      }, "catchError$1", "call$2$test", "call$1", "get$catchError", 2, 3, 461, 0, 113, [], 190, [], "catchError"],
       whenComplete$1: [function(action) {
         var t1, result;
         t1 = $.Zone__current;
@@ -9937,7 +9937,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           t1._captured_timer_1.cancel$0();
           this._captured_result_7._completeError$2(e, s);
         }
-      }, null, null, 4, 0, null, 36, [], 116, [], "call"]
+      }, null, null, 4, 0, null, 36, [], 66, [], "call"]
     },
     _AsyncCallbackEntry: {
       "^": "Object;callback<,zone<,next@",
@@ -10464,7 +10464,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t1._captured_timer_3.cancel$0();
         t1._captured_controller_1.add$1(0, $event);
         t1._captured_timer_3 = t1._captured_zone_4.createTimer$2(this._captured_timeLimit_2, t1._captured_timeout_5);
-      }, null, null, 2, 0, null, 115, [], "call"],
+      }, null, null, 2, 0, null, 116, [], "call"],
       $signature: function() {
         return H.computeSignature(function(T) {
           return {func: 1, void: true, args: [T]};
@@ -12028,13 +12028,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:0;_async$_captured_this_0,_captured_registered_1",
       call$1: [function(arg) {
         return this._async$_captured_this_0.runUnaryGuarded$2(this._captured_registered_1, arg);
-      }, null, null, 2, 0, null, 49, [], "call"]
+      }, null, null, 2, 0, null, 50, [], "call"]
     },
     _CustomZone_bindUnaryCallback_closure0: {
       "^": "Closure:0;_captured_this_2,_captured_registered_3",
       call$1: [function(arg) {
         return this._captured_this_2.runUnary$2(this._captured_registered_3, arg);
-      }, null, null, 2, 0, null, 49, [], "call"]
+      }, null, null, 2, 0, null, 50, [], "call"]
     },
     _rootHandleUncaughtError_closure: {
       "^": "Closure:1;_async$_captured_error_0,_captured_stackTrace_1",
@@ -12234,13 +12234,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:0;_async$_captured_this_0,_captured_f_1",
       call$1: [function(arg) {
         return this._async$_captured_this_0.runUnaryGuarded$2(this._captured_f_1, arg);
-      }, null, null, 2, 0, null, 49, [], "call"]
+      }, null, null, 2, 0, null, 50, [], "call"]
     },
     _RootZone_bindUnaryCallback_closure0: {
       "^": "Closure:0;_captured_this_2,_captured_f_3",
       call$1: [function(arg) {
         return this._captured_this_2.runUnary$2(this._captured_f_3, arg);
-      }, null, null, 2, 0, null, 49, [], "call"]
+      }, null, null, 2, 0, null, 50, [], "call"]
     }
   }], ["dart.collection", "dart:collection",, P, {
     "^": "",
@@ -12693,7 +12693,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:0;_collection$_captured_this_0",
       call$1: [function(each) {
         return this._collection$_captured_this_0.$index(0, each);
-      }, null, null, 2, 0, null, 81, [], "call"]
+      }, null, null, 2, 0, null, 82, [], "call"]
     },
     _HashMap_addAll_closure: {
       "^": "Closure;_collection$_captured_this_0",
@@ -13358,7 +13358,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:5;_collection$_captured_result_0",
       call$2: [function(k, v) {
         this._collection$_captured_result_0.$indexSet(0, k, v);
-      }, null, null, 4, 0, null, 50, [], 33, [], "call"]
+      }, null, null, 4, 0, null, 51, [], 33, [], "call"]
     },
     _HashSetBase: {
       "^": "SetBase;"
@@ -13369,7 +13369,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     LinkedHashMap: {
       "^": "Object;",
       $isMap: 1,
-      "<>": [111, 103],
+      "<>": [112, 103],
       static: {LinkedHashMap_LinkedHashMap$_empty: function($K, $V) {
           var t1 = new H.JsLinkedHashMap(0, null, null, null, null, null, 0);
           t1.$builtinTypeInfo = [$K, $V];
@@ -13423,7 +13423,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           return H.computeSignature(function(K, V) {
             return {func: 1, ret: [P.LinkedHashMap, K, V], args: [P.Map]};
           }, this.$receiver, "LinkedHashMap");
-        }, 64, [], "new LinkedHashMap$from"], LinkedHashMap_LinkedHashMap$fromIterable: [function(iterable, key, value, $K, $V) {
+        }, 65, [], "new LinkedHashMap$from"], LinkedHashMap_LinkedHashMap$fromIterable: [function(iterable, key, value, $K, $V) {
           var map = P.LinkedHashMap_LinkedHashMap(null, null, null, $K, $V);
           P.Maps__fillMapWithMappedIterable(map, iterable, key, value);
           return map;
@@ -13439,14 +13439,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           return H.computeSignature(function(K, V) {
             return {func: 1, ret: [P.LinkedHashMap, K, V], args: [[P.Iterable, K], [P.Iterable, V]]};
           }, this.$receiver, "LinkedHashMap");
-        }, 132, [], 82, [], "new LinkedHashMap$fromIterables"]}
+        }, 132, [], 78, [], "new LinkedHashMap$fromIterables"]}
     },
     "+LinkedHashMap": [3, 355],
     LinkedHashMap_LinkedHashMap$from_closure: {
       "^": "Closure:5;_collection$_captured_result_0",
       call$2: [function(k, v) {
         this._collection$_captured_result_0.$indexSet(0, k, v);
-      }, null, null, 4, 0, 5, 50, [], 33, [], "call"]
+      }, null, null, 4, 0, 5, 51, [], 33, [], "call"]
     },
     LinkedList: {
       "^": "Iterable;_modificationCount,_collection$_length,_collection$_next@,_collection$_previous@",
@@ -14530,7 +14530,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:0;_convert$_captured_this_0",
       call$1: [function(each) {
         return this._convert$_captured_this_0.$index(0, each);
-      }, null, null, 2, 0, null, 81, [], "call"]
+      }, null, null, 2, 0, null, 82, [], "call"]
     },
     _JsonMap_addAll_closure: {
       "^": "Closure:5;_convert$_captured_this_0",
@@ -16035,7 +16035,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": ";",
       $eq: [function(_, other) {
         return this === other;
-      }, null, "get$==", 2, 0, 154, 64, [], "=="],
+      }, null, "get$==", 2, 0, 154, 65, [], "=="],
       get$hashCode: [function(_) {
         return H.Primitives_objectHashCode(this);
       }, null, null, 1, 0, 27, "hashCode"],
@@ -16044,7 +16044,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, "call$0", "get$toString", 0, 0, 16, "toString"],
       noSuchMethod$1: [function(_, invocation) {
         throw H.wrapException(P.NoSuchMethodError$(this, invocation.get$memberName(), invocation.get$positionalArguments(), invocation.get$namedArguments(), null));
-      }, "call$1", "get$noSuchMethod", 2, 0, 142, 71, [], "noSuchMethod"],
+      }, "call$1", "get$noSuchMethod", 2, 0, 142, 67, [], "noSuchMethod"],
       get$runtimeType: [function(_) {
         return new H.TypeImpl(H.getRuntimeTypeString(this), null);
       }, null, null, 1, 0, 146, "runtimeType"]
@@ -16489,13 +16489,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             t1 = false;
           if (t1)
             host = "";
-          t1 = path.length;
+          t1 = path == null ? 0 : path.length;
           return new P.Uri(host, port, P.Uri__makePath(path, 0, t1, pathSegments, host != null, isFile), scheme, userInfo, query, fragment, null, null);
         }, Uri__checkNonWindowsPathReservedCharacters: function(segments, argumentError) {
           segments.forEach$1(segments, new P.Uri__checkNonWindowsPathReservedCharacters_closure(argumentError));
         }, Uri__checkWindowsPathReservedCharacters: function(segments, argumentError, firstSegment) {
           var t1, t2;
-          t1 = segments.skip$1(segments, firstSegment);
+          t1 = J.skip$1$ax(segments, firstSegment);
           t2 = new H.ListIterator(t1, t1.get$length(t1), 0, null);
           t2.$builtinTypeInfo = [H.getRuntimeTypeArgument(t1, "ListIterable", 0)];
           for (; t2.moveNext$0();)
@@ -16516,6 +16516,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             throw H.wrapException(P.ArgumentError$("Illegal drive letter " + P.String_String$fromCharCode(charCode)));
           else
             throw H.wrapException(new P.UnsupportedError("Illegal drive letter " + P.String_String$fromCharCode(charCode)));
+        }, Uri__makeFileUri: function(path, slashTerminated) {
+          var segments = path.split("/");
+          if (slashTerminated && segments.length !== 0 && J.get$isNotEmpty$asx(C.JSArray_methods.get$last(segments)))
+            segments.push("");
+          if (C.JSString_methods.startsWith$1(path, "/"))
+            return P.Uri_Uri(null, null, null, segments, null, null, null, "file", "");
+          else
+            return P.Uri_Uri(null, null, null, segments, null, null, null, "", "");
         }, Uri__makePort: function(port, scheme) {
           if (port != null && port === P.Uri__defaultPort(scheme))
             return;
@@ -16643,12 +16651,19 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         }, Uri__makePath: function(path, start, end, pathSegments, ensureLeadingSlash, isFile) {
           var t1, result;
           t1 = path == null;
-          if (t1 && true)
+          if (t1 && pathSegments == null)
             return isFile ? "/" : "";
           t1 = !t1;
+          if (t1 && pathSegments != null)
+            throw H.wrapException(P.ArgumentError$("Both path and pathSegments specified"));
           if (t1)
-            ;
-          result = t1 ? P.Uri__normalize(path, start, end, C.List_qg4) : C.JSNull_methods.map$1(pathSegments, new P.Uri__makePath_closure()).join$1(0, "/");
+            result = P.Uri__normalize(path, start, end, C.List_qg4);
+          else {
+            pathSegments.toString;
+            t1 = new H.MappedListIterable(pathSegments, new P.Uri__makePath_closure());
+            t1.$builtinTypeInfo = [null, null];
+            result = t1.join$1(0, "/");
+          }
           if (result.length === 0) {
             if (isFile)
               return "/";
@@ -17012,9 +17027,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     },
     Uri__makePath_closure: {
       "^": "Closure:0;",
-      call$1: function(s) {
+      call$1: [function(s) {
         return P.Uri__uriEncode(C.List_qg40, s, C.Utf8Codec_false, false);
-      }
+      }, null, null, 2, 0, null, 66, [], "call"]
     },
     Uri__makeQuery_closure: {
       "^": "Closure:5;_core$_box_0,_core$_captured_result_1",
@@ -18458,7 +18473,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:5;_html$_captured_this_0",
       call$2: [function(k, v) {
         this._html$_captured_this_0.$indexSet(0, k, v);
-      }, null, null, 4, 0, null, 50, [], 33, [], "call"]
+      }, null, null, 4, 0, null, 51, [], 33, [], "call"]
     },
     _ElementAttributeMap: {
       "^": "_AttributeMap;_html$_element",
@@ -19089,7 +19104,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       if (!!t1.$isFunction)
         return P._getJsProxy(o, "$dart_jsFunction", new P._convertToJS_closure());
       return P._getJsProxy(o, "_$dart_jsObject", new P._convertToJS_closure0($.$get$_dartProxyCtor()));
-    }, "call$1", "js___convertToJS$closure", 2, 0, 0, 70, []],
+    }, "call$1", "js___convertToJS$closure", 2, 0, 0, 69, []],
     _getJsProxy: function(o, propertyName, createProxy) {
       var jsProxy = P._getOwnProperty(o, propertyName);
       if (jsProxy == null) {
@@ -19117,7 +19132,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         else
           return P._wrapToDart(o);
       }
-    }, "call$1", "js___convertToDart$closure", 2, 0, 131, 70, []],
+    }, "call$1", "js___convertToDart$closure", 2, 0, 131, 69, []],
     _wrapToDart: function(o) {
       if (typeof o == "function")
         return P._getDartProxy(o, $.$get$_DART_CLOSURE_PROPERTY_NAME(), new P._wrapToDart_closure());
@@ -19226,7 +19241,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           return convertedList;
         } else
           return P._convertToJS(o);
-      }, null, null, 2, 0, null, 70, [], "call"]
+      }, null, null, 2, 0, null, 69, [], "call"]
     },
     JsFunction: {
       "^": "JsObject;_js$_jsObject",
@@ -19477,9 +19492,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       $isTypedData: 1,
       static: {ByteData_ByteData: [function($length) {
           return new DataView(new ArrayBuffer(H._checkLength($length)));
-        }, null, null, 2, 0, 261, 114, [], "new ByteData"], ByteData_ByteData$view: [function(buffer, offsetInBytes, $length) {
+        }, null, null, 2, 0, 261, 115, [], "new ByteData"], ByteData_ByteData$view: [function(buffer, offsetInBytes, $length) {
           return J.asByteData$2$x(buffer, offsetInBytes, $length);
-        }, null, null, 2, 4, 262, 44, 0, 151, [], 157, [], 114, [], "new ByteData$view"]}
+        }, null, null, 2, 4, 262, 45, 0, 151, [], 157, [], 115, [], "new ByteData$view"]}
     },
     "+ByteData": [3, 356],
     Uint8List: {
@@ -20190,7 +20205,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             t2._sendData$1(new Z.BrokerDiscoverRequest(t1, packet));
           }
         }
-      }, null, null, 2, 0, null, 115, [], "call"]
+      }, null, null, 2, 0, null, 116, [], "call"]
     },
     BrokerDiscoverRequest: {
       "^": "Object;client,packet"
@@ -20473,7 +20488,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return t1;
       }, function(path) {
         return this.onValueChange$2$cacheLevel(path, 1);
-      }, "onValueChange$1", "call$2$cacheLevel", "call$1", "get$onValueChange", 2, 3, 394, 96, 2, [], 228, [], "onValueChange"],
+      }, "onValueChange$1", "call$2$cacheLevel", "call$1", "get$onValueChange", 2, 3, 394, 86, 2, [], 228, [], "onValueChange"],
       syncValue$1: [function(path) {
         var n = J.$index$asx(this.provider, path);
         n.updateValue$2$force(J.get$value$x(n.get$lastValueUpdate()), true);
@@ -20739,14 +20754,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           if (autoInitialize === true)
             t1.init$0();
           return t1;
-        }, null, null, 4, 41, 263, 42, 120, 31, 0, 0, 0, 0, 31, 42, 31, 42, 31, 31, 167, 31, 0, 0, 0, 0, 0, 169, [], 110, [], 104, [], 173, [], 109, [], 175, [], 119, [], 83, [], 48, [], 180, [], 181, [], 183, [], 184, [], 185, [], 186, [], 188, [], 189, [], 106, [], 105, [], 102, [], 77, [], 98, [], "new LinkProvider"]}
+        }, null, null, 4, 41, 263, 42, 120, 31, 0, 0, 0, 0, 31, 42, 31, 42, 31, 31, 167, 31, 0, 0, 0, 0, 0, 169, [], 111, [], 104, [], 173, [], 110, [], 175, [], 109, [], 84, [], 48, [], 180, [], 181, [], 183, [], 184, [], 185, [], 186, [], 188, [], 189, [], 119, [], 106, [], 105, [], 79, [], 102, [], "new LinkProvider"]}
     },
     "+LinkProvider": [3],
     LinkProvider_configure_closure: {
       "^": "Closure:0;",
       call$1: [function(it) {
         return J.toLowerCase$0$s(J.get$name$x(it));
-      }, null, null, 2, 0, 0, 94, [], "call"]
+      }, null, null, 2, 0, 0, 96, [], "call"]
     },
     LinkProvider_configure_closure0: {
       "^": "Closure:0;_captured_out_1",
@@ -20945,7 +20960,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         J.$indexSet$ax(this.salts, saltId, salt);
       }, function(salt) {
         return this.updateSalt$2(salt, 0);
-      }, "updateSalt$1", "call$2", "call$1", "get$updateSalt", 2, 2, 446, 44, 51, [], 122, [], "updateSalt"],
+      }, "updateSalt$1", "call$2", "call$1", "get$updateSalt", 2, 2, 446, 45, 52, [], 122, [], "updateSalt"],
       connect$0: [function() {
         var $async$goto = 0, $async$completer = new P.Completer_Completer(), $async$returnValue, $async$handler = 2, $async$currentError, $async$next = [], $async$self = this, client, connUri, request, requestJson, response, merged, rslt, serverConfig, tempKey, t1, connUrl, t2, t3, t4, t5, targetScheme, targetUserInfo, targetHost, targetPort, targetPath, targetQuery, t6, fragment, exception, $async$exception, $async$temp1, $async$temp2, $async$temp3, $async$temp4;
         function $async$connect$0($async$errorCode, $async$result) {
@@ -21767,7 +21782,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             else if (nodeProvider != null)
               t1.responder = T.Responder$(nodeProvider, null);
           return t1;
-        }, null, null, 6, 15, 264, 0, 31, 31, 0, 0, 0, 0, 204, [], 207, [], 209, [], 77, [], 104, [], 109, [], 105, [], 102, [], 106, [], 98, [], "new HttpClientLink"]}
+        }, null, null, 6, 15, 264, 0, 31, 31, 0, 0, 0, 0, 204, [], 207, [], 209, [], 79, [], 104, [], 110, [], 106, [], 105, [], 119, [], 102, [], "new HttpClientLink"]}
     },
     "+HttpClientLink": [3, 374],
     HttpClientLink_connect_closure: {
@@ -21826,7 +21841,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
               break;
           } while (true);
         }
-      }, "call$1", "get$ack", 2, 0, 47, 73, [], "ack"],
+      }, "call$1", "get$ack", 2, 0, 47, 72, [], "ack"],
       onDisconnected$0: function() {
         return this.get$onDisconnected().call$0();
       },
@@ -21839,7 +21854,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Object;messages@-66,processors@-49",
       static: {ProcessorResult$: [function(messages, processors) {
           return new O.ProcessorResult(messages, processors);
-        }, null, null, 4, 0, 267, 128, [], 93, [], "new ProcessorResult"]}
+        }, null, null, 4, 0, 267, 128, [], 94, [], "new ProcessorResult"]}
     },
     "+ProcessorResult": [3],
     ConnectionAckGroup: {
@@ -21851,7 +21866,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, "call$2", "get$ackAll", 4, 0, 22, 158, [], 159, [], "ackAll"],
       static: {ConnectionAckGroup$: [function(ackId, startTime, processors) {
           return new O.ConnectionAckGroup(ackId, startTime, null, processors);
-        }, null, null, 6, 0, 268, 73, [], 52, [], 93, [], "new ConnectionAckGroup"]}
+        }, null, null, 6, 0, 268, 72, [], 53, [], 94, [], "new ConnectionAckGroup"]}
     },
     "+ConnectionAckGroup": [3],
     ConnectionChannel: {
@@ -22143,7 +22158,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         else
           throw H.wrapException(P.Exception_Exception("Invalid Input"));
         return;
-      }, "call$1", "get$removeChild", 2, 0, 92, 56, [], "removeChild"],
+      }, "call$1", "get$removeChild", 2, 0, 92, 57, [], "removeChild"],
       getChild$1: [function($name) {
         var t1;
         if (this.children.containsKey$1($name) === true)
@@ -22327,7 +22342,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           }
       }, function(base) {
         return this.mergeBasePath$2(base, false);
-      }, "mergeBasePath$1", "call$2", "call$1", "get$mergeBasePath", 2, 2, 429, 42, 168, [], 97, [], "mergeBasePath"],
+      }, "mergeBasePath$1", "call$2", "call$1", "get$mergeBasePath", 2, 2, 429, 42, 168, [], 107, [], "mergeBasePath"],
       static: {"^": "Path_invalidChar<-155,Path_invalidNameChar<-155", Path_getValidPath: [function(path, basePath) {
           var p;
           if (typeof path === "string") {
@@ -22460,7 +22475,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, "call$0", "get$getData", 0, 0, 21, "getData"],
       static: {TableColumn$: [function($name, type, defaultValue) {
           return new O.TableColumn(type, $name, defaultValue);
-        }, null, null, 4, 2, 283, 0, 3, [], 59, [], 92, [], "new TableColumn"], TableColumn_serializeColumns: [function(list) {
+        }, null, null, 4, 2, 283, 0, 3, [], 59, [], 93, [], "new TableColumn"], TableColumn_serializeColumns: [function(list) {
           var rslts, t1, m, t2, rslt;
           rslts = [];
           for (t1 = J.get$iterator$ax(list); t1.moveNext$0();) {
@@ -22477,7 +22492,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             }
           }
           return rslts;
-        }, "call$1", "common_TableColumn_serializeColumns$closure", 2, 0, 284, 63, [], "serializeColumns"], TableColumn_parseColumns: [function(list) {
+        }, "call$1", "common_TableColumn_serializeColumns$closure", 2, 0, 284, 62, [], "serializeColumns"], TableColumn_parseColumns: [function(list) {
           var rslt, t1, m, t2, t3, type;
           rslt = [];
           rslt.$builtinTypeInfo = [O.TableColumn];
@@ -22499,14 +22514,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
               return;
           }
           return rslt;
-        }, "call$1", "common_TableColumn_parseColumns$closure", 2, 0, 285, 63, [], "parseColumns"]}
+        }, "call$1", "common_TableColumn_parseColumns$closure", 2, 0, 285, 62, [], "parseColumns"]}
     },
     "+TableColumn": [3],
     Table: {
       "^": "Object;columns@-71,rows*-156,meta@-14",
       static: {Table$: [function(columns, rows, meta) {
           return new O.Table(columns, rows, meta);
-        }, null, null, 4, 3, 286, 0, 22, [], 75, [], 21, [], "new Table"]}
+        }, null, null, 4, 3, 286, 0, 22, [], 76, [], 21, [], "new Table"]}
     },
     "+Table": [3],
     TableColumns: {
@@ -22548,7 +22563,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           this.min = t1.get$min(newUpdate);
         if (J.get$isNaN$n(this.max) || J.$gt$n(t1.get$max(newUpdate), this.max))
           this.max = t1.get$max(newUpdate);
-      }, "call$1", "get$mergeAdd", 2, 0, 45, 89, [], "mergeAdd"],
+      }, "call$1", "get$mergeAdd", 2, 0, 45, 92, [], "mergeAdd"],
       equals$1: [function(other) {
         var t1, t2;
         t1 = this.value;
@@ -22571,7 +22586,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         } else
           t1 = false;
         return t1;
-      }, "call$1", "get$equals", 2, 0, 181, 64, [], "equals"],
+      }, "call$1", "get$equals", 2, 0, 181, 65, [], "equals"],
       toMap$0: [function() {
         var m = P.LinkedHashMap__makeLiteral(["ts", this.ts, "value", this.value]);
         if (J.$eq$(this.count, 0))
@@ -22633,7 +22648,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           var t1 = new O.ValueUpdate(-1, value, ts, $status, count, sum, min, max, null, null);
           t1.ValueUpdate$8$count$max$meta$min$status$sum$ts(value, count, max, meta, min, $status, sum, ts);
           return t1;
-        }, null, null, 2, 15, 288, 0, 0, 0, 96, 76, 76, 76, 1, [], 150, [], 21, [], 53, [], 152, [], 153, [], 154, [], 155, [], "new ValueUpdate"], ValueUpdate$merge: [function(oldUpdate, newUpdate) {
+        }, null, null, 2, 15, 288, 0, 0, 0, 86, 77, 77, 77, 1, [], 150, [], 21, [], 47, [], 152, [], 153, [], 154, [], 155, [], "new ValueUpdate"], ValueUpdate$merge: [function(oldUpdate, newUpdate) {
           var t1, t2, t3, t4;
           t1 = new O.ValueUpdate(-1, null, null, null, null, 0, null, null, null, null);
           t2 = J.getInterceptor$x(newUpdate);
@@ -22658,7 +22673,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           if (J.get$isNaN$n(t3) || J.$gt$n(t2.get$max(newUpdate), t3))
             t1.max = t2.get$max(newUpdate);
           return t1;
-        }, null, null, 4, 0, 289, 156, [], 89, [], "new ValueUpdate$merge"]}
+        }, null, null, 4, 0, 289, 156, [], 92, [], "new ValueUpdate$merge"]}
     },
     "+ValueUpdate": [3],
     closure0: {
@@ -23000,7 +23015,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Object;",
       verifySalt$2: [function(salt, hash) {
         return this.hashSalt$1(salt) === hash;
-      }, "call$2", "get$verifySalt", 4, 0, 51, 51, [], 90, [], "verifySalt"],
+      }, "call$2", "get$verifySalt", 4, 0, 51, 52, [], 90, [], "verifySalt"],
       static: {ECDH$: [function() {
           return new K.ECDH();
         }, null, null, 0, 0, 174, "new ECDH"], ECDH_assign: [function(publicKeyRemote, old) {
@@ -23029,14 +23044,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
               }
           }
           return H.asyncHelper(null, $async$ECDH_assign, $async$completer, null);
-        }, "call$2", "pk_ECDH_assign$closure", 4, 0, 292, 79, [], 88, [], "assign"]}
+        }, "call$2", "pk_ECDH_assign$closure", 4, 0, 292, 83, [], 88, [], "assign"]}
     },
     "+ECDH": [3],
     PublicKey: {
       "^": "Object;",
       getDsId$1: [function(prefix) {
         return H.S(prefix) + H.S(this.get$qHash64());
-      }, "call$1", "get$getDsId", 2, 0, 38, 110, [], "getDsId"],
+      }, "call$1", "get$getDsId", 2, 0, 38, 111, [], "getDsId"],
       verifyDsId$1: [function(dsId) {
         var t1 = J.getInterceptor$asx(dsId);
         return J.$ge$n(t1.get$length(dsId), 43) && t1.substring$1(dsId, J.$sub$n(t1.get$length(dsId), 43)) === this.get$qHash64();
@@ -23045,7 +23060,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           return new K.PublicKey();
         }, null, null, 0, 0, 1, "new PublicKey"], PublicKey_PublicKey$fromBytes: [function(bytes) {
           return $.$get$_CRYPTO_PROVIDER().getKeyFromBytes$1(bytes);
-        }, null, null, 2, 0, 100, 84, [], "new PublicKey$fromBytes"]}
+        }, null, null, 2, 0, 100, 85, [], "new PublicKey$fromBytes"]}
     },
     "+PublicKey": [3],
     PrivateKey: {
@@ -23102,10 +23117,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Object;encodedPublicKey<-4",
       hashSalt$1: [function(salt) {
         return "";
-      }, "call$1", "get$hashSalt", 2, 0, 38, 51, [], "hashSalt"],
+      }, "call$1", "get$hashSalt", 2, 0, 38, 52, [], "hashSalt"],
       verifySalt$2: [function(salt, hash) {
         return true;
-      }, "call$2", "get$verifySalt", 4, 0, 51, 51, [], 90, [], "verifySalt"],
+      }, "call$2", "get$verifySalt", 4, 0, 51, 52, [], 90, [], "verifySalt"],
       static: {DummyECDH$: [function() {
           return new K.DummyECDH("");
         }, null, null, 0, 0, 1, "new DummyECDH"]}
@@ -23243,7 +23258,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             }
         }
         return H.asyncHelper(null, $async$assign$2, $async$completer, null);
-      }, "call$2", "get$assign", 4, 0, 210, 79, [], 88, [], "assign"],
+      }, "call$2", "get$assign", 4, 0, 210, 83, [], 88, [], "assign"],
       getSecret$1: [function(publicKeyRemote) {
         var $async$goto = 0, $async$completer = new P.Completer_Completer(), $async$returnValue, $async$handler = 2, $async$currentError, $async$self = this, $async$temp1, $async$temp2;
         function $async$getSecret$1($async$errorCode, $async$result) {
@@ -23272,7 +23287,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             }
         }
         return H.asyncHelper(null, $async$getSecret$1, $async$completer, null);
-      }, "call$1", "get$getSecret", 2, 0, 217, 79, [], "getSecret"],
+      }, "call$1", "get$getSecret", 2, 0, 217, 83, [], "getSecret"],
       generate$0: [function() {
         var $async$goto = 0, $async$completer = new P.Completer_Completer(), $async$returnValue, $async$handler = 2, $async$currentError, $async$self = this, $async$temp1;
         function $async$generate$0($async$errorCode, $async$result) {
@@ -23315,7 +23330,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       getKeyFromBytes$1: [function(bytes) {
         var buf = M.listToBuf0(bytes);
         return M.PublicKeyImpl$(M._toObj(J.$index$asx($.$get$_curve(), "Point").callMethod$2("fromEncoded", ["prime256v1", buf])));
-      }, "call$1", "get$getKeyFromBytes", 2, 0, 100, 84, [], "getKeyFromBytes"]
+      }, "call$1", "get$getKeyFromBytes", 2, 0, 100, 85, [], "getKeyFromBytes"]
     },
     ECDHImpl: {
       "^": "ECDH;publicKey@,privateKey@,_node$_buffer",
@@ -23331,7 +23346,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         saltBuffer.callMethod$2("copy", [newBuffer, 0]);
         t2.callMethod$2("copy", [newBuffer, t1.$index(saltBuffer, "length")]);
         return M._hash(newBuffer);
-      }, "call$1", "get$hashSalt", 2, 0, 38, 51, [], "hashSalt"]
+      }, "call$1", "get$hashSalt", 2, 0, 38, 52, [], "hashSalt"]
     },
     PublicKeyImpl: {
       "^": "PublicKey;_point<,qBase64@-,qHash64@-",
@@ -23449,7 +23464,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         J.forEach$1$ax(m, new L.__closure(node));
         node.listed = true;
         this._captured_rslt_0.$indexSet(0, k, node);
-      }, null, null, 4, 0, 73, 50, [], 5, [], "call"]
+      }, null, null, 4, 0, 73, 51, [], 5, [], "call"]
     },
     __closure: {
       "^": "Closure:28;_captured_node_1",
@@ -23473,7 +23488,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:5;_captured_rslt_0",
       call$2: [function(k, node) {
         this._captured_rslt_0.$indexSet(0, node.get$remotePath(), node);
-      }, null, null, 4, 0, 5, 50, [], 9, [], "call"]
+      }, null, null, 4, 0, 5, 51, [], 9, [], "call"]
     },
     RemoteNodeCache: {
       "^": "Object;_nodes@-398",
@@ -23709,7 +23724,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, "call$0", "get$close", 0, 0, 2, "close"],
       static: {Request$: [function(requester, rid, updater, data) {
           return new L.Request(requester, rid, data, updater, false, "initialize");
-        }, null, null, 8, 0, 295, 17, [], 35, [], 68, [], 30, [], "new Request"]}
+        }, null, null, 8, 0, 295, 17, [], 35, [], 71, [], 30, [], "new Request"]}
     },
     "+Request": [3],
     RequesterInvokeUpdate: {
@@ -24053,7 +24068,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, null, null, 1, 0, 104, "future"],
       onUpdate$5: [function($status, updates, columns, meta, error) {
         J.complete$1$x(this.completer, new L.RequesterUpdate($status));
-      }, "call$5", "get$onUpdate", 10, 0, 44, 53, [], 26, [], 22, [], 21, [], 4, [], "onUpdate"],
+      }, "call$5", "get$onUpdate", 10, 0, 44, 47, [], 26, [], 22, [], 21, [], 4, [], "onUpdate"],
       onDisconnect$0: [function(_) {
       }, "call$0", "get$onDisconnect", 0, 0, 2, "onDisconnect"],
       onReconnect$0: [function() {
@@ -24076,7 +24091,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, null, null, 1, 0, 104, "future"],
       onUpdate$5: [function($status, updates, columns, meta, error) {
         J.complete$1$x(this.completer, new L.RequesterUpdate($status));
-      }, "call$5", "get$onUpdate", 10, 0, 44, 53, [], 26, [], 22, [], 21, [], 4, [], "onUpdate"],
+      }, "call$5", "get$onUpdate", 10, 0, 44, 47, [], 26, [], 22, [], 21, [], 4, [], "onUpdate"],
       onDisconnect$0: [function(_) {
       }, "call$0", "get$onDisconnect", 0, 0, 2, "onDisconnect"],
       onReconnect$0: [function() {
@@ -24149,7 +24164,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       onReconnect$0: [function() {
       }, "call$0", "get$onReconnect", 0, 0, 2, "onReconnect"],
       onUpdate$5: [function($status, updates, columns, meta, error) {
-      }, "call$5", "get$onUpdate", 10, 0, 44, 53, [], 26, [], 22, [], 21, [], 4, [], "onUpdate"],
+      }, "call$5", "get$onUpdate", 10, 0, 44, 47, [], 26, [], 22, [], 21, [], 4, [], "onUpdate"],
       static: {SubscribeController$: [function() {
           return new L.SubscribeController(null);
         }, null, null, 0, 0, 1, "new SubscribeController"]}
@@ -24288,7 +24303,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           this._sendingAfterAck = false;
           this.prepareSending$0();
         }
-      }, "call$3", "get$ackReceived", 6, 0, 70, 62, [], 52, [], 23, [], "ackReceived"],
+      }, "call$3", "get$ackReceived", 6, 0, 70, 63, [], 53, [], 23, [], "ackReceived"],
       prepareSending$0: [function() {
         if (this._sendingAfterAck === true)
           return;
@@ -24433,7 +24448,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
               J.$index$asx(this._requests, t2.$index(resp, "rid"))._update$1(resp);
           }
         }
-      }, "call$1", "get$onData", 2, 0, 79, 63, [], "onData"],
+      }, "call$1", "get$onData", 2, 0, 79, 62, [], "onData"],
       _onReceiveUpdate$1: [function(m) {
         var t1, t2;
         t1 = J.getInterceptor$asx(m);
@@ -24451,7 +24466,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, "call$2", "get$getSendingData", 4, 0, 81, 23, [], 34, [], "getSendingData"],
       sendRequest$2: [function(m, updater) {
         return this._sendRequest$2(m, updater);
-      }, "call$2", "get$sendRequest", 4, 0, 107, 5, [], 68, [], "sendRequest"],
+      }, "call$2", "get$sendRequest", 4, 0, 107, 5, [], 71, [], "sendRequest"],
       _sendRequest$2: [function(m, updater) {
         var t1, req;
         J.$indexSet$ax(m, "rid", this.nextRid);
@@ -24464,7 +24479,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         this.addToSendList$1(m);
         this.nextRid = J.$add$ns(this.nextRid, 1);
         return req;
-      }, "call$2", "get$_sendRequest", 4, 0, 107, 5, [], 68, [], "_sendRequest"],
+      }, "call$2", "get$_sendRequest", 4, 0, 107, 5, [], 71, [], "_sendRequest"],
       isNodeCached$1: [function(path) {
         return this.nodeCache.isNodeCached$1(path);
       }, "call$1", "get$isNodeCached", 2, 0, 48, 2, [], "isNodeCached"],
@@ -24473,7 +24488,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new L.ReqSubscribeListener(callback, this, path);
       }, function(path, callback) {
         return this.subscribe$3(path, callback, 0);
-      }, "subscribe$2", "call$3", "call$2", "get$subscribe", 4, 2, 395, 44, 2, [], 8, [], 24, [], "subscribe"],
+      }, "subscribe$2", "call$3", "call$2", "get$subscribe", 4, 2, 395, 45, 2, [], 8, [], 24, [], "subscribe"],
       onValueChange$2: [function(path, qos) {
         var t1, controller;
         t1 = {};
@@ -24487,7 +24502,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return t1;
       }, function(path) {
         return this.onValueChange$2(path, 0);
-      }, "onValueChange$1", "call$2", "call$1", "get$onValueChange", 2, 2, 399, 44, 2, [], 24, [], "onValueChange"],
+      }, "onValueChange$1", "call$2", "call$1", "get$onValueChange", 2, 2, 399, 45, 2, [], 24, [], "onValueChange"],
       getNodeValue$1: [function(path) {
         var t1, t2, c;
         t1 = {};
@@ -24646,7 +24661,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:5;_captured_c_2",
       call$2: [function(e, stack) {
         this._captured_c_2.completeError$2(e, stack);
-      }, null, null, 4, 0, 5, 36, [], 47, [], "call"]
+      }, null, null, 4, 0, 5, 36, [], 49, [], "call"]
     },
     Requester_onDisconnected_closure: {
       "^": "Closure:5;_requester$_captured_this_0,_captured_newRequests_1",
@@ -24657,14 +24672,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           this._captured_newRequests_1.$indexSet(0, req.get$rid(), req);
           J.onDisconnect$0$x(req.get$updater());
         }
-      }, null, null, 4, 0, 5, 61, [], 85, [], "call"]
+      }, null, null, 4, 0, 5, 61, [], 98, [], "call"]
     },
     Requester_onReconnected_closure: {
       "^": "Closure:5;",
       call$2: [function(n, req) {
         req.get$updater().onReconnect$0();
         req.resend$0();
-      }, null, null, 4, 0, 5, 61, [], 85, [], "call"]
+      }, null, null, 4, 0, 5, 61, [], 98, [], "call"]
     }
   }], ["dslink.responder", "package:dslink/responder.dart",, T, {
     "^": "",
@@ -24688,7 +24703,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, "call$2", "get$removeConfig", 4, 0, 426, 9, [], 7, [], "removeConfig"],
       static: {ConfigSetting$: [function($name, type, defaultValue) {
           return new T.ConfigSetting($name, type, defaultValue);
-        }, null, null, 4, 3, 308, 0, 3, [], 59, [], 92, [], "new ConfigSetting"], ConfigSetting$fromMap: [function($name, m) {
+        }, null, null, 4, 3, 308, 0, 3, [], 59, [], 93, [], "new ConfigSetting"], ConfigSetting$fromMap: [function($name, m) {
           var t1 = m.containsKey$1("type") === true ? J.$index$asx(m, "type") : "string";
           return new T.ConfigSetting($name, t1, m.containsKey$1("default") === true ? J.$index$asx(m, "default") : null);
         }, null, null, 4, 0, 73, 3, [], 5, [], "new ConfigSetting$fromMap"]}
@@ -24741,7 +24756,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         }
       }, function(params, responder, response, parentNode) {
         return this.invoke$5(params, responder, response, parentNode, 4);
-      }, "invoke$4", "call$5", "call$4", "get$invoke", 8, 2, 108, 25, 38, [], 7, [], 6, [], 57, [], 29, [], "invoke"],
+      }, "invoke$4", "call$5", "call$4", "get$invoke", 8, 2, 108, 25, 38, [], 7, [], 6, [], 55, [], 29, [], "invoke"],
       _invokeCallback$4: function(arg0, arg1, arg2, arg3) {
         return this._invokeCallback.call$4(arg0, arg1, arg2, arg3);
       },
@@ -24880,7 +24895,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Object;",
       getPermission$2: [function(path, resp) {
         return 4;
-      }, "call$2", "get$getPermission", 4, 0, 441, 2, [], 69, [], "getPermission"],
+      }, "call$2", "get$getPermission", 4, 0, 441, 2, [], 70, [], "getPermission"],
       static: {DummyPermissionManager$: [function() {
           return new T.DummyPermissionManager();
         }, null, null, 0, 0, 314, "new DummyPermissionManager"]}
@@ -24923,7 +24938,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, null, null, 1, 0, 447, "rowData"],
       static: {ResponseTrace$: [function(path, type, rid, change, action) {
           return new T.ResponseTrace(path, type, change, action, rid);
-        }, null, null, 6, 4, 319, 208, 0, 2, [], 59, [], 35, [], 55, [], 37, [], "new ResponseTrace"]}
+        }, null, null, 6, 4, 319, 208, 0, 2, [], 59, [], 35, [], 56, [], 37, [], "new ResponseTrace"]}
     },
     "+ResponseTrace": [3],
     LocalNode: {
@@ -24948,7 +24963,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new T.RespSubscribeListener(callback, this);
       }, function(callback) {
         return this.subscribe$2(callback, 0);
-      }, "subscribe$1", "call$2", "call$1", "get$subscribe", 2, 2, 180, 44, 8, [], 24, [], "subscribe"],
+      }, "subscribe$1", "call$2", "call$1", "get$subscribe", 2, 2, 180, 45, 8, [], 24, [], "subscribe"],
       unsubscribe$1: ["super$LocalNode$unsubscribe", function(callback) {
         if (this.callbacks.containsKey$1(callback) === true)
           J.remove$1$ax(this.callbacks, callback);
@@ -24985,7 +25000,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         }
       }, function(update) {
         return this.updateValue$2$force(update, false);
-      }, "updateValue$1", "call$2$force", "call$1", "get$updateValue", 2, 3, 183, 42, 39, [], 97, [], "updateValue"],
+      }, "updateValue$1", "call$2$force", "call$1", "get$updateValue", 2, 3, 183, 42, 39, [], 107, [], "updateValue"],
       get$exists: [function() {
         return true;
       }, null, null, 1, 0, 8, "exists"],
@@ -25009,7 +25024,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return response;
       }, function(params, responder, response, parentNode) {
         return this.invoke$5(params, responder, response, parentNode, 4);
-      }, "invoke$4", "call$5", "call$4", "get$invoke", 8, 2, 184, 25, 38, [], 7, [], 6, [], 57, [], 29, [], "invoke"],
+      }, "invoke$4", "call$5", "call$4", "get$invoke", 8, 2, 184, 25, 38, [], 7, [], 6, [], 55, [], 29, [], "invoke"],
       setAttribute$4: [function(_, $name, value, responder, response) {
         if (response != null) {
           J.close$0$x(response);
@@ -25123,7 +25138,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
             if (J.get$isNotEmpty$asx(values))
               controller.resetCache$1(values);
           }
-      }, "call$2", "get$initStorage", 4, 0, 185, 116, [], 119, [], "initStorage"],
+      }, "call$2", "get$initStorage", 4, 0, 185, 66, [], 109, [], "initStorage"],
       updateGroups$1: [function(vals) {
         var t1 = this.reqId;
         if (t1 != null && J.$lt$n(J.get$length$asx(t1), 43) && J.contains$1$asx(vals, this.reqId) !== true) {
@@ -25161,7 +25176,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           if (!!J.getInterceptor(resp).$isMap)
             this._onReceiveRequest$1(resp);
         }
-      }, "call$1", "get$onData", 2, 0, 79, 63, [], "onData"],
+      }, "call$1", "get$onData", 2, 0, 79, 62, [], "onData"],
       _onReceiveRequest$1: [function(m) {
         var t1, t2;
         t1 = J.getInterceptor$asx(m);
@@ -25471,12 +25486,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           this._traceCallbacks = t1;
         }
         J.add$1$ax(t1, _traceCallback);
-      }, "call$1", "get$addTraceCallback", 2, 0, 76, 80, [], "addTraceCallback"],
+      }, "call$1", "get$addTraceCallback", 2, 0, 76, 68, [], "addTraceCallback"],
       removeTraceCallback$1: [function(_traceCallback) {
         J.remove$1$ax(this._traceCallbacks, _traceCallback);
         if (J.get$isEmpty$asx(this._traceCallbacks) === true)
           this._traceCallbacks = null;
-      }, "call$1", "get$removeTraceCallback", 2, 0, 76, 80, [], "removeTraceCallback"],
+      }, "call$1", "get$removeTraceCallback", 2, 0, 76, 68, [], "removeTraceCallback"],
       Responder$2: function(nodeProvider, reqId) {
         var t1 = new T.SubscribeResponse(P.LinkedHashMap_LinkedHashMap(null, null, null, P.String, T.RespSubscribeController), P.LinkedHashMap_LinkedHashMap(null, null, null, P.$int, T.RespSubscribeController), P.LinkedHashSet_LinkedHashSet(null, null, null, T.RespSubscribeController), 0, -1, false, this, 0, "initialize", false);
         this._responder$_subscription = t1;
@@ -25493,14 +25508,14 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           t1 = new T.Responder(reqId, 1024, null, [], t1, null, nodeProvider, null, null, null, null, t2, [], false);
           t1.Responder$2(nodeProvider, reqId);
           return t1;
-        }, null, null, 2, 2, 321, 0, 77, [], 210, [], "new Responder"]}
+        }, null, null, 2, 2, 321, 0, 79, [], 210, [], "new Responder"]}
     },
     "+Responder": [87],
     Responder_onDisconnected_closure: {
       "^": "Closure:5;",
       call$2: [function(id, resp) {
         resp._responder$_close$0();
-      }, null, null, 4, 0, 5, 219, [], 69, [], "call"]
+      }, null, null, 4, 0, 5, 219, [], 70, [], "call"]
     },
     Responder_addTraceCallback_closure: {
       "^": "Closure:115;_captured__traceCallback_0",
@@ -25515,7 +25530,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         this.responder._closeResponse$3$error$response(this.rid, err, this);
       }, function($receiver) {
         return this.close$1($receiver, null);
-      }, "close$0", "call$1", "call$0", "get$close", 0, 2, 67, 0, 78, [], "close"],
+      }, "close$0", "call$1", "call$0", "get$close", 0, 2, 67, 0, 81, [], "close"],
       _responder$_close$0: [function() {
       }, "call$0", "get$_responder$_close", 0, 0, 2, "_responder$_close"],
       prepareSending$0: [function() {
@@ -25528,12 +25543,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         this._pendingSending = false;
       }, "call$2", "get$startSendingData", 4, 0, 22, 23, [], 34, [], "startSendingData"],
       ackReceived$3: [function(receiveAckId, startTime, currentTime) {
-      }, "call$3", "get$ackReceived", 6, 0, 70, 62, [], 52, [], 23, [], "ackReceived"],
+      }, "call$3", "get$ackReceived", 6, 0, 70, 63, [], 53, [], 23, [], "ackReceived"],
       getTraceData$1: [function(change) {
         return;
       }, function() {
         return this.getTraceData$1("+");
-      }, "getTraceData$0", "call$1", "call$0", "get$getTraceData", 0, 2, 75, 72, 55, [], "getTraceData"],
+      }, "getTraceData$0", "call$1", "call$0", "get$getTraceData", 0, 2, 75, 80, 56, [], "getTraceData"],
       static: {Response$: [function(responder, rid) {
           return new T.Response(responder, rid, "initialize", false);
         }, null, null, 4, 0, 135, 7, [], 35, [], "new Response"]}
@@ -25543,7 +25558,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Object;status*-4,columns@-26,updates@-26,meta@-14",
       static: {_InvokeResponseUpdate$: [function($status, updates, columns, meta) {
           return new T._InvokeResponseUpdate($status, columns, updates, meta);
-        }, null, null, 8, 0, 323, 53, [], 26, [], 22, [], 21, [], "new _InvokeResponseUpdate"]}
+        }, null, null, 8, 0, 323, 47, [], 26, [], 22, [], 21, [], "new _InvokeResponseUpdate"]}
     },
     "+_InvokeResponseUpdate": [3],
     InvokeResponse: {
@@ -25599,7 +25614,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         }
       }, function($receiver) {
         return this.close$1($receiver, null);
-      }, "close$0", "call$1", "call$0", "get$close", 0, 2, 67, 0, 78, [], "close"],
+      }, "close$0", "call$1", "call$0", "get$close", 0, 2, 67, 0, 81, [], "close"],
       _responder$_close$0: [function() {
         this._responder$_closed = true;
         if (this.onClose != null)
@@ -25609,7 +25624,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new T.ResponseTrace(J.get$path$x(this.parentNode), "invoke", change, this.name, this.rid);
       }, function() {
         return this.getTraceData$1("+");
-      }, "getTraceData$0", "call$1", "call$0", "get$getTraceData", 0, 2, 75, 72, 55, [], "getTraceData"],
+      }, "getTraceData$0", "call$1", "call$0", "get$getTraceData", 0, 2, 75, 80, 56, [], "getTraceData"],
       onClose$1: function(arg0) {
         return this.onClose.call$1(arg0);
       },
@@ -25617,7 +25632,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           var t1 = [];
           t1.$builtinTypeInfo = [T._InvokeResponseUpdate];
           return new T.InvokeResponse(parentNode, node, $name, t1, null, false, null, responder, rid, "initialize", false);
-        }, null, null, 10, 0, 324, 7, [], 35, [], 57, [], 9, [], 3, [], "new InvokeResponse"]}
+        }, null, null, 10, 0, 324, 7, [], 35, [], 55, [], 9, [], 3, [], "new InvokeResponse"]}
     },
     "+InvokeResponse": [84],
     ListResponse: {
@@ -25700,7 +25715,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           this._responder$_sendingAfterAck = false;
           this.prepareSending$0();
         }
-      }, "call$3", "get$ackReceived", 6, 0, 70, 62, [], 52, [], 23, [], "ackReceived"],
+      }, "call$3", "get$ackReceived", 6, 0, 70, 63, [], 53, [], 23, [], "ackReceived"],
       prepareSending$0: [function() {
         if (this._responder$_sendingAfterAck === true)
           return;
@@ -25720,7 +25735,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return new T.ResponseTrace(J.get$path$x(this.node), "list", change, null, this.rid);
       }, function() {
         return this.getTraceData$1("+");
-      }, "getTraceData$0", "call$1", "call$0", "get$getTraceData", 0, 2, 75, 72, 55, [], "getTraceData"],
+      }, "getTraceData$0", "call$1", "call$0", "get$getTraceData", 0, 2, 75, 80, 56, [], "getTraceData"],
       static: {ListResponse$: [function(responder, rid, node) {
           var t1 = new T.ListResponse(node, null, null, P.LinkedHashSet_LinkedHashSet(null, null, null, P.String), true, false, 0, -1, false, responder, rid, "initialize", false);
           t1._permission = responder.get$nodeProvider().get$permissions().getPermission$2(J.get$path$x(node), responder);
@@ -25868,7 +25883,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           this._responder$_sendingAfterAck = false;
           this.prepareSending$0();
         }
-      }, "call$3", "get$ackReceived", 6, 0, 70, 62, [], 52, [], 23, [], "ackReceived"],
+      }, "call$3", "get$ackReceived", 6, 0, 70, 63, [], 53, [], 23, [], "ackReceived"],
       prepareSending$0: [function() {
         if (this._responder$_sendingAfterAck === true)
           return;
@@ -25905,7 +25920,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, "call$0", "get$_responder$_close", 0, 0, 2, "_responder$_close"],
       addTraceCallback$1: [function(_traceCallback) {
         J.forEach$1$ax(this.subsriptions, new T.SubscribeResponse_addTraceCallback_closure(_traceCallback));
-      }, "call$1", "get$addTraceCallback", 2, 0, 76, 80, [], "addTraceCallback"],
+      }, "call$1", "get$addTraceCallback", 2, 0, 76, 68, [], "addTraceCallback"],
       changed$1: function(arg0) {
         return this.changed.call$1(arg0);
       },
@@ -26135,7 +26150,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         }
         if (valueRemoved && this._storage != null)
           this._storage.valueRemoved$1(this.waitingValues);
-      }, "call$1", "get$onAck", 2, 0, 47, 73, [], "onAck"],
+      }, "call$1", "get$onAck", 2, 0, 47, 72, [], "onAck"],
       resetCache$1: [function(values) {
         var t1;
         if (this._caching === true) {
@@ -26157,7 +26172,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           }
         }
         this.lastValue = J.get$last$ax(values);
-      }, "call$1", "get$resetCache", 2, 0, 201, 82, [], "resetCache"],
+      }, "call$1", "get$resetCache", 2, 0, 201, 78, [], "resetCache"],
       destroy$0: [function() {
         if (this._storage != null) {
           this.response.get$responder().get$storage().destroyValue$1(J.get$path$x(this.node));
@@ -26181,7 +26196,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Object;columns@-26,rows*-26",
       static: {SimpleTableResult$: [function(rows, columns) {
           return new T.SimpleTableResult(columns, rows);
-        }, null, null, 0, 4, 328, 0, 0, 75, [], 22, [], "new SimpleTableResult"]}
+        }, null, null, 0, 4, 328, 0, 0, 76, [], 22, [], "new SimpleTableResult"]}
     },
     "+SimpleTableResult": [3],
     AsyncTableResult: {
@@ -26200,7 +26215,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return this.update$3(rows, null, null);
       }, "update$1", function(rows, stat) {
         return this.update$3(rows, stat, null);
-      }, "update$2", "call$3", "call$1", "call$2", "get$update", 2, 4, 202, 0, 0, 75, [], 223, [], 21, [], "update"],
+      }, "update$2", "call$3", "call$1", "call$2", "get$update", 2, 4, 202, 0, 0, 76, [], 223, [], 21, [], "update"],
       write$1: [function(resp) {
         var t1, t2, t3, t4;
         if (resp != null)
@@ -26223,7 +26238,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         }
       }, function() {
         return this.write$1(null);
-      }, "write$0", "call$1", "call$0", "get$write", 0, 2, 203, 0, 69, [], "write"],
+      }, "write$0", "call$1", "call$0", "get$write", 0, 2, 203, 0, 70, [], "write"],
       close$0: [function(_) {
         var t1 = this.response;
         if (t1 != null)
@@ -26324,7 +26339,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return this.init$2(null, null);
       }, "init$0", function(m) {
         return this.init$2(m, null);
-      }, "init$1", "call$2", "call$0", "call$1", "get$init", 0, 4, 206, 0, 0, 5, [], 83, [], "init", 19],
+      }, "init$1", "call$2", "call$0", "call$1", "get$init", 0, 4, 206, 0, 0, 5, [], 84, [], "init", 19],
       save$0: [function() {
         return this.root.save$0();
       }, "call$0", "get$save", 0, 0, 21, "save", 19],
@@ -26427,7 +26442,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           t1.$indexSet(0, t3.path, t2.sys);
           t2.init$2(m, profiles);
           return t2;
-        }, null, null, 0, 4, 332, 0, 0, 5, [], 83, [], "new SimpleNodeProvider"]}
+        }, null, null, 0, 4, 332, 0, 0, 5, [], 84, [], "new SimpleNodeProvider"]}
     },
     "+SimpleNodeProvider": [450, 451, 452],
     SimpleNodeProvider__registerProfiles_closure: {
@@ -26554,7 +26569,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return response;
       }, function(params, responder, response, parentNode) {
         return this.invoke$5(params, responder, response, parentNode, 4);
-      }, "invoke$4", "call$5", "call$4", "get$invoke", 8, 2, 108, 25, 38, [], 7, [], 6, [], 57, [], 29, [], "invoke"],
+      }, "invoke$4", "call$5", "call$4", "get$invoke", 8, 2, 108, 25, 38, [], 7, [], 6, [], 55, [], 29, [], "invoke"],
       onInvoke$1: [function(params) {
         return;
       }, "call$1", "get$onInvoke", 2, 0, 54, 38, [], "onInvoke"],
@@ -26589,7 +26604,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return this.super$LocalNode$subscribe(callback, qos);
       }, function(callback) {
         return this.subscribe$2(callback, 0);
-      }, "subscribe$1", "call$2", "call$1", "get$subscribe", 2, 2, 213, 44, 8, [], 24, [], "subscribe", 19],
+      }, "subscribe$1", "call$2", "call$1", "get$subscribe", 2, 2, 213, 45, 8, [], 24, [], "subscribe", 19],
       unsubscribe$1: [function(callback) {
         this.super$LocalNode$unsubscribe(callback);
       }, "call$1", "get$unsubscribe", 2, 0, 113, 8, [], "unsubscribe", 19],
@@ -26681,7 +26696,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           throw H.wrapException("Invalid Input");
       }, function(input) {
         return this.attach$2$name(input, null);
-      }, "attach$1", "call$2$name", "call$1", "get$attach", 2, 3, 216, 0, 56, [], 3, [], "attach"],
+      }, "attach$1", "call$2$name", "call$1", "get$attach", 2, 3, 216, 0, 57, [], 3, [], "attach"],
       addChild$2: [function($name, node) {
         this.super$Node$addChild($name, node);
         J.add$1$ax(this.get$listChangeController(), $name);
@@ -26691,7 +26706,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if ($name != null)
           J.add$1$ax(this.get$listChangeController(), $name);
         return $name;
-      }, "call$1", "get$removeChild", 2, 0, 92, 56, [], "removeChild"],
+      }, "call$1", "get$removeChild", 2, 0, 92, 57, [], "removeChild"],
       setAttribute$4: [function(_, $name, value, responder, response) {
         if (this.onSetAttribute$2($name, value) !== true)
           this.super$LocalNodeImpl$setAttribute(this, $name, value, responder, response);
@@ -26857,7 +26872,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           H.unwrapException(exception);
         }
         J.close$1$x(this._captured_response_5, error);
-      }, null, null, 4, 0, 5, 36, [], 47, [], "call"]
+      }, null, null, 4, 0, 5, 36, [], 49, [], "call"]
     },
     SimpleNode_invoke_closure5: {
       "^": "Closure:0;_responder$_box_1",
@@ -26911,7 +26926,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           H.unwrapException(exception);
         }
         J.close$1$x(this._captured_response_10, error);
-      }, null, null, 4, 0, 5, 36, [], 47, [], "call"]
+      }, null, null, 4, 0, 5, 36, [], 49, [], "call"]
     },
     SimpleNode_invoke_closure9: {
       "^": "Closure:0;_captured_r_11",
@@ -26997,7 +27012,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           H.unwrapException(exception);
         }
         J.close$1$x(this._captured_response_16, error);
-      }, null, null, 4, 0, 5, 36, [], 47, [], "call"]
+      }, null, null, 4, 0, 5, 36, [], 49, [], "call"]
     },
     SimpleNode_invoke__closure3: {
       "^": "Closure:0;",
@@ -27016,7 +27031,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           H.unwrapException(exception);
         }
         J.close$1$x(this._captured_response_17, error);
-      }, null, null, 4, 0, 5, 36, [], 47, [], "call"]
+      }, null, null, 4, 0, 5, 36, [], 49, [], "call"]
     },
     SimpleHiddenNode: {
       "^": "SimpleNode;provider-55,removed-6,serializable-6,_loaded-6,_listChangeController-43,_listReqListener-15,path-4,callbacks-29,_lastValueUpdate-25,_valueReady-6,profile-17,attributes-12,configs-12,children-18",
@@ -27081,13 +27096,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         responder = X.SimpleResponderStorage$(H.S(J.get$path$x(this.subDir)) + "/" + P.Uri__uriEncode(C.List_KIf, rpath, C.Utf8Codec_false, false), rpath);
         J.$indexSet$ax(this.rsponders, rpath, responder);
         return responder;
-      }, "call$1", "get$getOrCreateSubscriptionStorage", 2, 0, 218, 66, [], "getOrCreateSubscriptionStorage"],
+      }, "call$1", "get$getOrCreateSubscriptionStorage", 2, 0, 218, 73, [], "getOrCreateSubscriptionStorage"],
       destroySubscriptionStorage$1: [function(rpath) {
         if (this.rsponders.containsKey$1(rpath) === true) {
           J.$index$asx(this.rsponders, rpath).destroy$0();
           J.remove$1$ax(this.rsponders, rpath);
         }
-      }, "call$1", "get$destroySubscriptionStorage", 2, 0, 10, 66, [], "destroySubscriptionStorage"],
+      }, "call$1", "get$destroySubscriptionStorage", 2, 0, 10, 73, [], "destroySubscriptionStorage"],
       destroy$0: [function() {
         J.forEach$1$ax(this.rsponders, new X.SimpleStorageManager_destroy_closure());
         J.clear$0$ax(this.rsponders);
@@ -27223,13 +27238,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         store.SimpleValueStorageBucket$2(category, H.S(J.get$path$x(this.dir)) + "/" + P.Uri__uriEncode(C.List_KIf, category, C.Utf8Codec_false, false));
         J.$indexSet$ax(this.values, category, store);
         return store;
-      }, "call$1", "get$getOrCreateValueStorageBucket", 2, 0, 220, 67, [], "getOrCreateValueStorageBucket"],
+      }, "call$1", "get$getOrCreateValueStorageBucket", 2, 0, 220, 75, [], "getOrCreateValueStorageBucket"],
       destroyValueStorageBucket$1: [function(category) {
         if (this.values.containsKey$1(category) === true) {
           J.$index$asx(this.values, category).destroy$0();
           J.remove$1$ax(this.values, category);
         }
-      }, "call$1", "get$destroyValueStorageBucket", 2, 0, 10, 67, [], "destroyValueStorageBucket"],
+      }, "call$1", "get$destroyValueStorageBucket", 2, 0, 10, 75, [], "destroyValueStorageBucket"],
       SimpleStorageManager$1: function(path) {
         var t1 = new G.Directory(J.replaceAll$2$s(path, "//", "/"));
         this.dir = t1;
@@ -27251,7 +27266,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:123;",
       call$2: [function(rpath, responder) {
         responder.destroy$0();
-      }, null, null, 4, 0, 123, 66, [], 7, [], "call"]
+      }, null, null, 4, 0, 123, 73, [], 7, [], "call"]
     },
     SimpleStorageManager_destroy_closure0: {
       "^": "Closure:124;",
@@ -27663,7 +27678,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           var t1 = new X.SimpleValueStorageBucket(category, null);
           t1.SimpleValueStorageBucket$2(category, path);
           return t1;
-        }, null, null, 4, 0, 337, 67, [], 2, [], "new SimpleValueStorageBucket"]}
+        }, null, null, 4, 0, 337, 75, [], 2, [], "new SimpleValueStorageBucket"]}
     },
     "+SimpleValueStorageBucket": [3, 458],
     SimpleValueStorageBucket_load_closure: {
@@ -28069,7 +28084,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     }, "call$1", "utils__updateLogLevel$closure", 2, 0, 10, 3, [], "updateLogLevel"],
     buildEnumType: [function(values) {
       return "enum[" + H.S(J.join$1$ax(values, ",")) + "]";
-    }, "call$1", "utils__buildEnumType$closure", 2, 0, 350, 82, [], "buildEnumType"],
+    }, "call$1", "utils__buildEnumType$closure", 2, 0, 350, 78, [], "buildEnumType"],
     buildActionIO: [function(types) {
       return J.map$1$ax(types.get$keys(), new Q.buildActionIO_closure(types)).toList$0(0);
     }, "call$1", "utils__buildActionIO$closure", 2, 0, 351, 240, [], "buildActionIO"],
@@ -28253,7 +28268,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return H.computeSignature(function(T) {
           return {func: 1, void: true, args: [[P.StreamSubscription, T]]};
         }, this.$receiver, "BroadcastStreamController");
-      }, 87, []],
+      }, 89, []],
       _utils$_onCancel$1: [function(subscription) {
         this._listening = false;
         if (this._onAllCancel != null) {
@@ -28267,7 +28282,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return H.computeSignature(function(T) {
           return {func: 1, void: true, args: [[P.StreamSubscription, T]]};
         }, this.$receiver, "BroadcastStreamController");
-      }, 87, []],
+      }, 89, []],
       delayedCheckCancel$0: [function() {
         this._delayedCheckCanceling = false;
         if (!this._listening && this._listenState) {
@@ -28446,7 +28461,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, null, null, 1, 0, 27, "inMilliseconds"],
       static: {"^": "Interval_ONE_MILLISECOND<-11,Interval_TWO_MILLISECONDS<-11,Interval_FOUR_MILLISECONDS<-11,Interval_EIGHT_MILLISECONDS<-11,Interval_SIXTEEN_MILLISECONDS<-11,Interval_THIRTY_MILLISECONDS<-11,Interval_FIFTY_MILLISECONDS<-11,Interval_ONE_HUNDRED_MILLISECONDS<-11,Interval_TWO_HUNDRED_MILLISECONDS<-11,Interval_THREE_HUNDRED_MILLISECONDS<-11,Interval_QUARTER_SECOND<-11,Interval_HALF_SECOND<-11,Interval_ONE_SECOND<-11,Interval_TWO_SECONDS<-11,Interval_THREE_SECONDS<-11,Interval_FOUR_SECONDS<-11,Interval_FIVE_SECONDS<-11,Interval_ONE_MINUTE<-11", Interval$: [function(duration) {
           return new Q.Interval(duration);
-        }, null, null, 2, 0, 341, 45, [], "new Interval"], Interval$forMilliseconds: [function(ms) {
+        }, null, null, 2, 0, 341, 44, [], "new Interval"], Interval$forMilliseconds: [function(ms) {
           return new Q.Interval(P.Duration$(0, 0, 0, ms, 0, 0));
         }, null, null, 2, 0, 39, 234, [], "new Interval$forMilliseconds"], Interval$forSeconds: [function(seconds) {
           return new Q.Interval(P.Duration$(0, 0, 0, 0, 0, seconds));
@@ -28572,9 +28587,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           return P.Future_Future(action, null);
         }, "call$1", "utils_Scheduler_later$closure", 2, 0, 130, 37, [], "later"], Scheduler_after: [function(duration, action) {
           return P.Future_Future$delayed(duration, action, null);
-        }, "call$2", "utils_Scheduler_after$closure", 4, 0, 348, 45, [], 37, [], "after"], Scheduler_runAfter: [function(duration, action) {
+        }, "call$2", "utils_Scheduler_after$closure", 4, 0, 348, 44, [], 37, [], "after"], Scheduler_runAfter: [function(duration, action) {
           return P.Timer_Timer(duration, action);
-        }, "call$2", "utils_Scheduler_runAfter$closure", 4, 0, 349, 45, [], 37, [], "runAfter"]}
+        }, "call$2", "utils_Scheduler_runAfter$closure", 4, 0, 349, 44, [], 37, [], "runAfter"]}
     },
     "+Scheduler": [3],
     Scheduler_every_closure: {
@@ -28613,7 +28628,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:0;_captured_types_0",
       call$1: [function(it) {
         return P.LinkedHashMap__makeLiteral(["name", it, "type", J.$index$asx(this._captured_types_0, it)]);
-      }, null, null, 2, 0, 0, 94, [], "call"]
+      }, null, null, 2, 0, 0, 96, [], "call"]
     }
   }], ["html_common", "dart:html_common",, P, {
     "^": "",
@@ -29120,6 +29135,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       get$path: function(_) {
         return;
       },
+      get$uri: function() {
+        var t1 = this.get$path(this);
+        return P.Uri__makeFileUri(t1, false);
+      },
       delete$1$recursive: function(recursive) {
         return;
       },
@@ -29215,13 +29234,13 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       "^": "Closure:237;_captured_completer_0",
       call$2: [function(error, buf) {
         this._captured_completer_0.complete$1(0, K.bufToList(buf));
-      }, null, null, 4, 0, null, 4, [], 113, [], "call"]
+      }, null, null, 4, 0, null, 4, [], 114, [], "call"]
     },
     File_readAsString_closure: {
       "^": "Closure:0;_captured_encoding_0",
       call$1: [function(bytes) {
         return this._captured_encoding_0.decode$1(bytes);
-      }, null, null, 2, 0, null, 84, [], "call"]
+      }, null, null, 2, 0, null, 85, [], "call"]
     },
     File_writeAsBytes_closure: {
       "^": "Closure:0;_file$_captured_this_0,_captured_completer_1",
@@ -29245,7 +29264,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       return t1.charCodeAt(0) == 0 ? t1 : t1;
     },
     HttpException: {
-      "^": "Object;message>,uri<"
+      "^": "Object;message>,uri"
     },
     _HttpClient: {
       "^": "Object;",
@@ -29635,7 +29654,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }
     },
     _HttpClientRequest: {
-      "^": "Object;_http$_done,headers>,uri<,method,_http$_buffer,encoding,bufferOutput,followRedirects,persistentConnection,contentLength,maxRedirects",
+      "^": "Object;_http$_done,headers>,uri,method,_http$_buffer,encoding,bufferOutput,followRedirects,persistentConnection,contentLength,maxRedirects",
       close$0: function(_) {
         var t1, t2, _headers, path, t3, req, _i;
         t1 = this.headers;
@@ -29791,7 +29810,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if (t1._state >= 4)
           H.throwExpression(t1._badEventState$0());
         t1._async$_add$1(t2);
-      }, null, null, 2, 0, null, 113, [], "call"]
+      }, null, null, 2, 0, null, 114, [], "call"]
     },
     _HttpClientResponse_onEnd: {
       "^": "Closure:1;_http$_captured_this_1,_captured_onData_2",
@@ -29962,7 +29981,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         if (this._websocket0$_box_0._captured_hasOpened_0)
           return;
         this._captured_completer_3.completeError$1(new B.WebSocketException(err.callMethod$1("toString")));
-      }, null, null, 2, 0, null, 78, [], "call"]
+      }, null, null, 2, 0, null, 81, [], "call"]
     },
     WebSocketException: {
       "^": "Object;message>",
@@ -30353,6 +30372,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   J.setRange$4$ax = function(receiver, a0, a1, a2, a3) {
     return J.getInterceptor$ax(receiver).setRange$4(receiver, a0, a1, a2, a3);
   };
+  J.skip$1$ax = function(receiver, a0) {
+    return J.getInterceptor$ax(receiver).skip$1(receiver, a0);
+  };
   J.split$1$s = function(receiver, a0) {
     return J.getInterceptor$s(receiver).split$1(receiver, a0);
   };
@@ -30624,12 +30646,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   C.Symbol_dynamic = new H.Symbol("dynamic");
   C.Symbol_void = new H.Symbol("void");
   C.Type_mTw = H.createRuntimeType("LinkedHashMap");
-  C.TypeVariable_LxY = new H.TypeVariable(C.Type_mTw, "V", 3);
-  C.Type_JO4 = H.createRuntimeType("Future");
-  C.TypeVariable_eH2 = new H.TypeVariable(C.Type_JO4, "T", 3);
+  C.TypeVariable_kOG = new H.TypeVariable(C.Type_mTw, "K", 3);
   C.Type_CNi = H.createRuntimeType("Completer");
-  C.TypeVariable_eam = new H.TypeVariable(C.Type_CNi, "T", 3);
-  C.TypeVariable_izW = new H.TypeVariable(C.Type_mTw, "K", 3);
+  C.TypeVariable_kum = new H.TypeVariable(C.Type_CNi, "T", 3);
+  C.TypeVariable_na8 = new H.TypeVariable(C.Type_mTw, "V", 3);
+  C.Type_JO4 = H.createRuntimeType("Future");
+  C.TypeVariable_qMM = new H.TypeVariable(C.Type_JO4, "T", 3);
   C.Type_2bx0 = H.createRuntimeType("Uint32List");
   C.Type_2bx = H.createRuntimeType("Uint16List");
   C.Type_3bx = H.createRuntimeType("Function");
@@ -30973,8 +30995,8 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
   }]);
   Isolate = Isolate.$finishIsolateConstructor(Isolate);
   $ = new Isolate();
-  init.metadata = [null, "value", "path", "name", "error", "m", "response", "responder", "callback", "node", "byteOffset", "key", "stackTrace", C.Endianness_false, "endian", "val", "self", "requester", "parent", C.C__Override, "zone", "meta", "columns", "currentTime", "qos", 4, "updates", "str", "_", "maxPermission", "data", true, "f", "v", "waitingAckId", "rid", "e", "action", "params", "update", "controller", "streamStatus", false, "x", 0, "duration", "element", "stack", "provider", "arg", "k", "salt", "startTime", "status", "basePath", "change", "input", "parentNode", "sid", "type", "conn", "n", "receiveAckId", "list", "other", "computation", "rpath", "category", "updater", "resp", "o", "invocation", "+", "ackId", "obj", "rows", 0 / 0, "nodeProvider", "err", "publicKeyRemote", "_traceCallback", "each", "values", "profiles", "bytes", "req", "arg2", "subscription", "old", "newUpdate", "hash", "dsId", "defaultValue", "processors", "it", "object", 1, "force", "linkData", "record", "cache", "defName", "overrideResponder", C.TypeVariable_LxY, "isRequester", "overrideRequester", "home", "arg1", "storage", "isResponder", "prefix", C.TypeVariable_izW, "onError", "buf", "length", "event", "s", "interval", "times", "nodes", "link", "a", "saltId", "reconnect", "equals", "idx", "channel", "connection", "messages", "hashCode", "isValidKey", "iterable", "keys", C.TypeVariable_eam, "msg", "detail", "phase", "parameter", "connected", "nameOrPath", "entry", 5, "encodedComponent", "defaultVal", "byteString", "captureThis", "arguments", "index", "closure", "result", "ts", "buffer", "count", "sum", "min", "max", "oldUpdate", "offsetInBytes", "ackid", "time", "handler", "isolate", "numberOfArguments", "reflectee", "_a", "specification", "zoneValues", "INFO", "base", "args", "i", "t", "sender", "command", "theError", "defaultNodes", "theStackTrace", "remotePath", "keepGoing", C.TypeVariable_eH2, "enableHttp", "encodePrettyJson", "rawColumns", "autoInitialize", "strictOptions", "exitOnFailure", "loadNodesJson", "changes", "defaultLogLevel", "savePrivateKey", "test", "listUpdate", "futureValue", "handleData", "handleDone", "handleError", "resumeSignal", "arg3", "timeLimit", "level", "onTimeout", "ignored", "sub", "request", "_conn", "processor", "profile", "dsIdPrefix", "", "privateKey", "reqId", "arg4", "_permitted", "nodeprovider", "inputs", "withChildren", "argp", "vals", "optionsHandler", "id", "brokers", "futures", "open", "stat", "addToTree", "sessionId", "responderPath", "parentPath", "cacheLevel", "eagerError", "store", "removes", "newValue", "map", "ms", "seconds", "minutes", "hours", C.C_Unspecified, "st", "types", "cleanUp", "timer", "keyValuePairs", "res", "flags", "line"];
-  init.types = [{func: 1, args: [,]}, {func: 1}, {func: 1, void: true}, P.Object, P.String, {func: 1, args: [,,]}, P.bool, P.$int, {func: 1, ret: P.bool}, {func: 1, args: [P.String]}, {func: 1, void: true, args: [P.String]}, Q.Interval, [P.Map, P.String, P.Object], {func: 1, void: true, args: [P.Map]}, P.Map, P.StreamSubscription, {func: 1, ret: P.String}, O.Node0, [P.Map, P.String, O.Node0], L.Requester, O.DSError, {func: 1, ret: P.Map}, {func: 1, void: true, args: [P.$int, P.$int]}, {func: 1, ret: P.Future}, {func: 1, args: [P.String,,]}, O.ValueUpdate, P.List, {func: 1, ret: P.$int}, {func: 1, args: [P.String, P.Object]}, [P.Map, P.Function, P.$int], L.RequestUpdater, [P.List, P.String], T.Responder, {func: 1, void: true, args: [{func: 1, void: true}]}, T.LocalNode, {func: 1, void: true, args: [P.String, O.Node0]}, {func: 1, void: true, args: [P.$int, P.$int], opt: [P.Endianness]}, {func: 1, ret: P.$int, args: [P.$int], opt: [P.Endianness]}, {func: 1, ret: P.String, args: [P.String]}, {func: 1, args: [P.$int]}, {func: 1, ret: T.Response, args: [P.String, P.Object, T.Responder, T.Response]}, {func: 1, args: [O.ValueUpdate]}, L.RemoteNode, [Q.BroadcastStreamController, P.String], {func: 1, void: true, args: [P.String, P.List, P.List, P.Map, O.DSError]}, {func: 1, void: true, args: [O.ValueUpdate]}, L.Request, {func: 1, void: true, args: [P.$int]}, {func: 1, ret: P.bool, args: [P.String]}, [P.List, O.ConnectionProcessor], {func: 1, ret: O.ConnectionChannel}, {func: 1, ret: P.bool, args: [P.String, P.String]}, {func: 1, ret: T.Response, args: [P.String, T.Responder, T.Response]}, {func: 1, ret: T.LocalNode, args: [P.String]}, {func: 1, args: [P.Map]}, T.SimpleNodeProvider, T.ISubscriptionResponderStorage, T.NodeProvider, O.ConnectionChannel, {func: 1, void: true, args: [P.Object], opt: [P.StackTrace]}, {func: 1, void: true, args: [P.bool]}, {func: 1, args: [P.bool]}, {func: 1, ret: P.Object, args: [P.String]}, {func: 1, ret: O.Path, args: [P.Object], opt: [P.String]}, {func: 1, void: true, args: [P.Function]}, [P.Map, P.String, P.$int], [P.List, P.Map], {func: 1, void: true, opt: [O.DSError]}, {func: 1, args: [, P.StackTrace]}, G.Directory, {func: 1, void: true, args: [P.$int, P.$int, P.$int]}, [P.List, O.TableColumn], P.Function, {func: 1, args: [P.String, P.Map]}, P.num, {func: 1, ret: T.ResponseTrace, opt: [P.String]}, {func: 1, void: true, args: [{func: 1, args: [T.ResponseTrace], typedef: T.ResponseTraceCallback}]}, {func: 1, ret: T.Response, args: [P.Object, T.Responder, T.Response], opt: [P.$int]}, {func: 1, void: true, args: [P.String, P.Object]}, {func: 1, void: true, args: [P.List]}, {func: 1, ret: [P.Future, O.ConnectionChannel]}, {func: 1, ret: O.ProcessorResult, args: [P.$int, P.$int]}, {func: 1, ret: P.String, args: [P.$int]}, {func: 1, ret: P.$int, args: [P.$int]}, T.Response, T.SimpleNode, {func: 1, void: true, args: [, P.StackTrace]}, O.ConnectionHandler, {func: 1, ret: [P.Future, L.Requester]}, {func: 1, args: [, T.RespSubscribeController]}, {func: 1, void: true, args: [,], opt: [P.StackTrace]}, {func: 1, args: [,], opt: [,]}, {func: 1, ret: P.String, args: [,]}, {func: 1, void: true, args: [{func: 1, void: true, args: [P.String, P.Object]}]}, {func: 1, args: [P.String, O.Node0]}, {func: 1, ret: [P.Future, P.bool]}, {func: 1, void: true, args: [,]}, {func: 1, ret: [P.Future, K.PrivateKey]}, {func: 1, ret: K.PrivateKey}, {func: 1, ret: K.PrivateKey, args: [P.String]}, {func: 1, ret: K.PublicKey, args: [P.Uint8List]}, {func: 1, void: true, args: [L.RequesterListUpdate]}, {func: 1, args: [L.RequesterListUpdate]}, {func: 1, void: true, args: [{func: 1, args: [,]}]}, {func: 1, ret: [P.Future, L.RequesterUpdate]}, {func: 1, args: [P.String, L.ReqSubscribeController]}, {func: 1, args: [P.$int, L.ReqSubscribeController]}, {func: 1, ret: L.Request, args: [P.Map, L.RequestUpdater]}, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode], opt: [P.$int]}, {func: 1, ret: P.Zone, named: {specification: P.ZoneSpecification, zoneValues: P.Map}}, {func: 1, args: [{func: 1}]}, {func: 1, args: [{func: 1, args: [,]},,]}, {func: 1, void: true, args: [[P.Iterable, O.ValueUpdate]]}, {func: 1, void: true, args: [{func: 1, args: [O.ValueUpdate]}]}, {func: 1, args: [{func: 1, args: [,,]},,,]}, {func: 1, args: [P.$int, T.Response]}, {func: 1, ret: {func: 1}, args: [{func: 1}]}, {func: 1, args: [, T.LocalNode]}, {func: 1, args: [P.String, T.RespSubscribeController]}, {func: 1, void: true, opt: [,]}, {func: 1, ret: T.SimpleNode, args: [P.String]}, {func: 1, ret: {func: 1, args: [,]}, args: [{func: 1, args: [,]}]}, {func: 1, args: [, O.Node0]}, {func: 1, args: [P.String, X.SimpleResponderStorage]}, {func: 1, args: [P.String, X.SimpleValueStorageBucket]}, {func: 1, args: [P.String, X.SimpleNodeStorage]}, {func: 1, void: true, args: [P.String, P.String]}, {func: 1, ret: P.Future, args: [,]}, {func: 1, ret: P.$int, args: [,]}, {func: 1, ret: [P.Future, P.$int]}, {func: 1, ret: P.Future, args: [{func: 1}]}, {func: 1, ret: P.Object, args: [,]}, {func: 1, ret: {func: 1, args: [,,]}, args: [{func: 1, args: [,,]}]}, {func: 1, ret: K.DSRandom}, {func: 1, args: [L.RemoteNode, L.Requester]}, {func: 1, args: [T.Responder, P.$int]}, {func: 1, args: [P.String, T.SimpleNodeProvider]}, {func: 1, ret: P.AsyncError, args: [P.Object, P.StackTrace]}, K.PrivateKey, {func: 1, ret: P.Timer, args: [P.Duration, {func: 1, void: true}]}, G.File, {func: 1, ret: P.Timer, args: [P.Duration, {func: 1, void: true, args: [P.Timer]}]}, {func: 1, args: [P.Invocation]}, {func: 1, ret: P.$int, args: [P.String]}, P.Completer, K.ECDH, {func: 1, ret: P.Type}, T.SimpleHiddenNode, [P.ListQueue, O.ConnectionAckGroup], O.BaseLink, {func: 1, ret: P.num, args: [P.$int], opt: [P.Endianness]}, {func: 1, ret: [P.List, P.String], args: [[P.List, P.$int]]}, [P.Completer, O.ConnectionChannel], {func: 1, void: true, args: [P.$int, P.num], opt: [P.Endianness]}, {func: 1, ret: P.bool, args: [,]}, P.RegExp, [P.List, P.List], P.Duration, L.ListController, L.ReqSubscribeController, {func: 1, void: true, args: [,,]}, {func: 1, args: [P.Object]}, L.RequesterUpdate, [P.LinkedHashSet, P.String], [P.Completer, L.RequesterUpdate], L.SubscribeRequest, [P.Map, P.$int, L.ReqSubscribeController], O.ConnectionProcessor, {func: 1, ret: T.LocalNode}, T.LocalNodeImpl, T.IPermissionManager, {func: 1, args: [P.Symbol0,,]}, T.SubscribeResponse, {func: 1, void: true, args: [T.InvokeResponse], typedef: T.OnInvokeClosed}, {func: 1, ret: K.ECDH}, [P.List, O.ValueUpdate], T.ISubscriptionNodeStorage, Q.DsCodec, {func: 1, ret: T.SimpleNode, args: [P.String, P.Map, T.SimpleNodeProvider]}, {func: 1, ret: [P.Stream, P.String]}, {func: 1, ret: T.RespSubscribeListener, args: [{func: 1, args: [,]}], opt: [P.$int]}, {func: 1, ret: P.bool, args: [O.ValueUpdate]}, {func: 1, ret: O.ValueUpdate}, {func: 1, void: true, args: [P.Object], named: {force: P.bool}}, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, O.Node0], opt: [P.$int]}, {func: 1, void: true, args: [T.ISubscriptionResponderStorage, [P.List, T.ISubscriptionNodeStorage]]}, {func: 1, void: true, args: [[P.List, P.String]]}, {func: 1, ret: T.Response, args: [T.Response]}, {func: 1, void: true, args: [T.Response]}, {func: 1, void: true, args: [P.$int], named: {error: O.DSError, response: T.Response}}, {func: 1, void: true, args: [T.Response, P.List], named: {columns: [P.List, O.TableColumn], meta: P.Map, streamStatus: P.String}}, {func: 1, args: [O.ConnectionChannel]}, {func: 1, void: true, args: [P.Timer]}, {func: 1, ret: {func: 1}, args: [P.Zone, {func: 1}]}, {func: 1, void: true, args: [P.List], named: {columns: P.List, meta: P.Map, streamStatus: P.String}}, {func: 1, void: true, args: [O.ConnectionChannel]}, {func: 1, ret: T.RespSubscribeController, args: [P.String, T.LocalNode, P.$int, P.$int]}, {func: 1, void: true, args: [T.RespSubscribeController]}, {func: 1, ret: {func: 1, args: [,]}, args: [P.Zone, {func: 1, args: [,]}]}, {func: 1, ret: {func: 1, args: [,,]}, args: [P.Zone, {func: 1, args: [,,]}]}, {func: 1, ret: P.List, args: [P.$int]}, {func: 1, void: true, args: [[P.List, O.ValueUpdate]]}, {func: 1, void: true, args: [P.List], opt: [P.String, P.Map]}, {func: 1, void: true, opt: [T.InvokeResponse]}, {func: 1, ret: T.LocalNode, args: [P.String], opt: [P.bool]}, {func: 1, ret: P.AsyncError, args: [P.Zone, P.Object, P.StackTrace]}, {func: 1, void: true, opt: [P.Map, P.Map]}, {func: 1, void: true, args: [P.String, T.SimpleNode]}, {func: 1, ret: T.SimpleNode, args: [P.String, P.Map]}, {func: 1, ret: T.Responder, args: [P.String, P.String]}, {func: 1, ret: [P.Future, K.ECDH], args: [M.PublicKeyImpl, K.ECDH]}, {func: 1, ret: T.SimpleNode}, {func: 1, ret: P.bool, args: [P.Object]}, {func: 1, ret: T.RespSubscribeListener, args: [{func: 1, args: [O.ValueUpdate]}], opt: [P.$int]}, {func: 1, ret: [P.Stream, P.List]}, {func: 1, ret: T.SimpleNode, args: [P.String], opt: [P.Map]}, {func: 1, void: true, args: [,], named: {name: P.String}}, {func: 1, ret: [P.Future, K.ECDH], args: [M.PublicKeyImpl]}, {func: 1, ret: T.ISubscriptionResponderStorage, args: [P.String]}, {func: 1, ret: [P.Future, [P.List, [P.List, T.ISubscriptionNodeStorage]]]}, {func: 1, ret: T.IValueStorageBucket, args: [P.String]}, {func: 1, void: true, args: [{func: 1, void: true, args: [P.Object]}]}, {func: 1, void: true, args: [O.ConnectionProcessor]}, {func: 1, ret: T.ISubscriptionNodeStorage, args: [P.String]}, {func: 1, ret: [P.Future, [P.List, T.ISubscriptionNodeStorage]]}, {func: 1, args: [P.Zone,, P.StackTrace]}, {func: 1, void: true, args: [[P.Iterable, O.ValueUpdate], O.ValueUpdate]}, {func: 1, ret: [P.Future, T.ISubscriptionNodeStorage]}, {func: 1, ret: [P.List, O.ValueUpdate]}, {func: 1, ret: [P.Future, P.Map]}, {func: 1, void: true, args: [P.Object]}, {func: 1, ret: P.Future, args: [P.Duration], named: {onTimeout: {func: 1}}}, {func: 1, ret: [P.Stream, O.DSError]}, {func: 1, ret: [P.Future, K.ECDH], args: [P.String]}, {func: 1, void: true, args: [P.Zone, {func: 1}]}, {func: 1, args: [P.$int,,]}, {func: 1, ret: L.RemoteNode, args: [P.String]}, {func: 1, args: [, P.JsObject]}, {func: 1, args: [P.String, [P.List, P.String]]}, {func: 1, ret: P.InstanceMirror, args: [P.Object]}, {func: 1, ret: [P.Future, P.List], args: [[P.Iterable, P.Future]], named: {cleanUp: {func: 1, void: true, args: [,]}, eagerError: P.bool}}, {func: 1, ret: P.Future, args: [P.Iterable, {func: 1, args: [,]}]}, {func: 1, ret: O.Node0, args: [P.String, P.String]}, {func: 1, void: true, args: [P.Zone, P.ZoneDelegate, P.Zone,, P.StackTrace]}, {func: 1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1}]}, {func: 1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,]},,]}, {func: 1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,,]},,,]}, {func: 1, ret: {func: 1}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1}]}, {func: 1, ret: {func: 1, args: [,]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,]}]}, {func: 1, ret: {func: 1, args: [,,]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,,]}]}, {func: 1, ret: P.AsyncError, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Object, P.StackTrace]}, {func: 1, void: true, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1}]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, void: true}]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, void: true, args: [P.Timer]}]}, {func: 1, void: true, args: [P.Zone, P.ZoneDelegate, P.Zone, P.String]}, {func: 1, ret: P.Zone, args: [P.Zone, P.ZoneDelegate, P.Zone, P.ZoneSpecification, P.Map]}, {func: 1, ret: P.bool, args: [,,]}, {func: 1, ret: L.RemoteNode, args: [L.RemoteNode, P.String, P.Map]}, {func: 1, ret: P.$int, args: [P.Comparable, P.Comparable]}, {func: 1, ret: P.bool, args: [P.Object, P.Object]}, {func: 1, ret: P.$int, args: [P.Object]}, {func: 1, ret: P.ByteData, args: [P.$int]}, {func: 1, ret: P.ByteData, args: [P.ByteBuffer], opt: [P.$int, P.$int]}, {func: 1, args: [[P.List, P.String], P.String], named: {autoInitialize: P.bool, command: P.String, defaultLogLevel: P.String, defaultNodes: P.Map, enableHttp: P.bool, encodePrettyJson: P.bool, exitOnFailure: P.bool, home: P.String, isRequester: P.bool, isResponder: P.bool, linkData: P.Map, loadNodesJson: P.bool, nodeProvider: T.NodeProvider, nodes: P.Map, overrideRequester: L.Requester, overrideResponder: T.Responder, profiles: P.Map, provider: T.NodeProvider, savePrivateKey: P.bool, strictOptions: P.bool}}, {func: 1, args: [P.String, P.String, K.PrivateKey], named: {home: P.String, isRequester: P.bool, isResponder: P.bool, linkData: P.Map, nodeProvider: T.NodeProvider, overrideRequester: L.Requester, overrideResponder: T.Responder}}, {func: 1, ret: [P.Future, K.PrivateKey], args: [P.String]}, {func: 1, ret: O.Connection}, {func: 1, args: [[P.List, P.Map], [P.List, O.ConnectionProcessor]]}, {func: 1, args: [P.$int, P.$int, [P.List, O.ConnectionProcessor]]}, {func: 1, ret: O.BaseLink}, {func: 1, ret: O.ServerLink}, {func: 1, ret: O.ClientLink}, {func: 1, ret: O.ServerLinkManager}, {func: 1, ret: O.StreamStatus}, {func: 1, ret: O.ErrorPhase}, {func: 1, args: [P.String], named: {detail: P.String, msg: P.String, path: P.String, phase: P.String}}, {func: 1, args: [O.Connection], opt: [P.bool]}, {func: 1, ret: O.ConnectionProcessor}, {func: 1, ret: O.ConnectionHandler}, {func: 1, ret: [P.Stream, L.RequesterListUpdate], args: [L.Requester]}, {func: 1, ret: O.Permission}, {func: 1, ret: P.$int, args: [P.Object], opt: [P.$int]}, {func: 1, ret: O.PermissionList}, {func: 1, args: [P.String, P.String], opt: [P.Object]}, {func: 1, ret: P.List, args: [P.List]}, {func: 1, ret: [P.List, O.TableColumn], args: [P.List]}, {func: 1, args: [[P.List, O.TableColumn], [P.List, P.List]], named: {meta: P.Map}}, {func: 1, args: [[P.List, O.TableColumn]]}, {func: 1, args: [P.Object], named: {count: P.$int, max: P.num, meta: P.Map, min: P.num, status: P.String, sum: P.num, ts: P.String}}, {func: 1, args: [O.ValueUpdate, O.ValueUpdate]}, {func: 1, args: [K.CryptoProvider]}, {func: 1, ret: K.CryptoProvider}, {func: 1, ret: [P.Future, K.ECDH], args: [K.PublicKey, K.ECDH]}, {func: 1, ret: L.ListController, args: [L.Requester]}, {func: 1, ret: L.DefaultDefNodes}, {func: 1, args: [L.Requester, P.$int, L.RequestUpdater, P.Map]}, {func: 1, args: [P.List, P.List, [P.List, O.TableColumn], P.String], named: {error: O.DSError, meta: P.Map}}, {func: 1, ret: [P.List, O.TableColumn], args: [L.RemoteNode]}, {func: 1, args: [L.RemoteNode, L.Requester, P.Map], opt: [P.$int]}, {func: 1, args: [L.RemoteNode, [P.List, P.String], P.String]}, {func: 1, args: [L.RemoteNode, L.Requester, {func: 1, void: true, args: [,]}]}, {func: 1, void: true, args: [L.Requester, {func: 1, args: [O.ValueUpdate]}, P.$int]}, {func: 1, args: [L.Requester, P.String]}, {func: 1, args: [L.Requester, P.String, P.Object], opt: [P.$int]}, {func: 1, args: [L.Requester, P.String, P.Function]}, {func: 1, args: [L.Requester, P.$int]}, {func: 1, ret: L.RequestUpdater}, {func: 1, opt: [L.RemoteNodeCache]}, {func: 1, args: [P.String, P.String], named: {defaultValue: P.Object}}, {func: 1, void: true, args: [T.InvokeResponse]}, {func: 1, ret: T.ConfigSetting, args: [P.String, O.Node0]}, {func: 1, args: [P.String, T.NodeProvider]}, {func: 1, ret: T.NodeProviderImpl}, {func: 1, ret: T.IPermissionManager}, {func: 1, ret: T.DummyPermissionManager}, {func: 1, ret: T.IStorageManager}, {func: 1, ret: T.ISubscriptionResponderStorage}, {func: 1, args: [P.String, T.ISubscriptionResponderStorage]}, {func: 1, ret: T.IValueStorageBucket}, {func: 1, args: [P.String, P.String, P.$int], opt: [P.String, P.String]}, {func: 1, ret: T.NodeProvider}, {func: 1, args: [T.NodeProvider], opt: [P.String]}, {func: 1, void: true, args: [L.Requester, {func: 1, args: [O.ValueUpdate]}]}, {func: 1, args: [P.String, P.List, P.List, P.Map]}, {func: 1, args: [T.Responder, P.$int, T.LocalNode, T.LocalNode, P.String]}, {func: 1, args: [T.Responder, P.$int, T.LocalNode]}, {func: 1, args: [T.LocalNode, P.Function]}, {func: 1, args: [T.SubscribeResponse, T.LocalNode, P.$int, P.bool, P.$int]}, {func: 1, opt: [P.List, P.List]}, {func: 1, opt: [P.List]}, {func: 1, ret: T.SerializableNodeProvider}, {func: 1, ret: T.MutableNodeProvider}, {func: 1, opt: [P.Map, P.Map]}, {func: 1, args: [P.String], opt: [T.SimpleNodeProvider]}, {func: 1, ret: [P.Stream, L.RequesterInvokeUpdate], args: [P.Map, L.Requester], opt: [P.$int]}, {func: 1, args: [P.String], opt: [P.String]}, {func: 1, args: [P.String, P.String, X.SimpleResponderStorage]}, {func: 1, args: [P.String, P.String]}, {func: 1, args: [T.ResponseTrace]}, {func: 1, ret: Q.DSLinkJSON, args: [[P.Map, P.String,,]]}, {func: 1, ret: P.List, args: [P.List, P.List]}, {func: 1, args: [P.Duration]}, {func: 1, ret: Q.Scheduler}, {func: 1, ret: P.Timer}, {func: 1, ret: P.Timer, args: [, {func: 1}]}, {func: 1, ret: P.Future, args: [P.$int, {func: 1}]}, {func: 1, ret: P.Future, args: [P.$int, Q.Interval, {func: 1}]}, {func: 1, void: true, args: [{func: 1}]}, {func: 1, ret: P.Future, args: [P.Duration, {func: 1}]}, {func: 1, ret: P.Timer, args: [P.Duration, {func: 1}]}, {func: 1, ret: P.String, args: [[P.Iterable, P.String]]}, {func: 1, ret: [P.List, [P.Map, P.String,,]], args: [[P.Map, P.String, P.String]]}, {func: 1, void: true, args: [P.Map, L.RemoteNodeCache]}, H.TearOffClosure, P._Future, [P.HashMap, 111, 103], P.TypedData, X.HttpClientLink, {func: 1, args: [, P.String]}, {func: 1, ret: P.Timer, args: [P.Zone, P.Duration, {func: 1, void: true}]}, {func: 1, ret: [P.List, P.List]}, {func: 1, ret: O.Node0, args: [P.String]}, {func: 1, ret: P.Timer, args: [P.Zone, P.Duration, {func: 1, void: true, args: [P.Timer]}]}, {func: 1, void: true, args: [{func: 1, void: true, args: [P.String, O.Node0]}]}, {func: 1, ret: P.$int, args: [, P.$int]}, {func: 1, args: [{func: 1, void: true}]}, {func: 1, ret: [P.Stream, L.RequesterListUpdate]}, Z.IOSink, {func: 1, void: true, args: [O.ConnectionHandler]}, [P.Completer, L.Requester], {func: 1, ret: P.TypeMirror, args: [P.$int]}, T.WebSocketConnection, {func: 1, ret: P.Future, opt: [,]}, {func: 1, ret: P.$int, args: [,,]}, O.ClientLink, {func: 1, void: true, args: [{func: 1, void: true, args: [,]}]}, {func: 1, void: true, opt: [P.Future]}, {func: 1, void: true, args: [P.String], opt: [,]}, {func: 1, ret: P.$int, args: [P.$int, P.$int]}, {func: 1, void: true, args: [L.ReqSubscribeController, P.$int]}, {func: 1, void: true, args: [L.ReqSubscribeController]}, [P.StreamController, P.List], [P.List, P.Function], O.Connection, {func: 1, void: true, args: [P.Zone, P.String]}, {func: 1, args: [P.Zone, {func: 1}]}, {func: 1, ret: O.Path}, {func: 1, void: true, args: [{func: 1, args: [,]}, P.$int]}, {func: 1, ret: T.Configs}, {func: 1, args: [,]}, {func: 1, ret: P.bool, named: {argp: S.ArgParser, optionsHandler: {func: 1, void: true, args: [G.ArgResults], typedef: X.OptionResultsHandler}}}, {func: 1, ret: P.Zone, args: [P.Zone, P.ZoneSpecification, P.Map]}, {func: 1, ret: [P.Future, P.String], args: [[P.Stream, P.String]]}, {func: 1, ret: O.Path, args: [P.String]}, {func: 1, ret: [P.Stream, O.ValueUpdate], args: [P.String], named: {cacheLevel: P.$int}}, {func: 1, ret: L.ReqSubscribeListener, args: [P.String, {func: 1, args: [O.ValueUpdate]}], opt: [P.$int]}, O.Unspecified, K.CryptoProvider, [P.Map, P.String, L.RemoteNode], {func: 1, ret: [P.Stream, O.ValueUpdate], args: [P.String], opt: [P.$int]}, {func: 1, ret: [P.Future, O.ValueUpdate], args: [P.String]}, {func: 1, ret: [P.Future, L.RemoteNode], args: [P.String]}, {func: 1, ret: L.Requester}, {func: 1, void: true, args: [P.String, {func: 1, args: [O.ValueUpdate]}]}, {func: 1, ret: [P.Stream, L.RequesterListUpdate], args: [P.String]}, [P.StreamController, L.RequesterInvokeUpdate], [P.Stream, L.RequesterInvokeUpdate], {func: 1, args: [P.Symbol0, P.Mirror]}, [Q.BroadcastStreamController, L.RequesterListUpdate], {func: 1, ret: [P.Stream, L.RequesterInvokeUpdate], args: [P.String, P.Map], opt: [P.$int]}, L.ListDefListener, {func: 1, ret: [P.Future, L.RequesterUpdate], args: [P.String, P.Object], opt: [P.$int]}, {func: 1, ret: [P.Future, L.RequesterUpdate], args: [P.String]}, [P.Map, P.String, L.ReqSubscribeController], {func: 1, void: true, args: [L.Request]}, [P.HashSet, P.String], {func: 1, ret: O.DSError, args: [P.Object, T.LocalNodeImpl, T.Responder]}, {func: 1, ret: T.LocalNode, args: [P.String, P.Map]}, {func: 1, void: true, args: [P.String,,]}, [P.Map, P.$int, L.Request], L.RemoteNodeCache, [P.StreamController, O.DSError], [P.Map, P.String, T.ConfigSetting], T.Configs, T.ConfigSetting, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode], typedef: T.InvokeCallback}, {func: 1, ret: O.DSError, args: [T.LocalNodeImpl, T.Responder]}, {func: 1, void: true, args: [{func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode], typedef: T.InvokeCallback}]}, {func: 1, args: [P.String], opt: [,]}, {func: 1, void: true, args: [P.String], opt: [P.bool]}, {func: 1, ret: P.Map, args: [P.bool]}, [P.Map, P.$int, T.Response], {func: 1, args: [P.Zone, {func: 1, args: [,]},,]}, [P.List, {func: 1, args: [T.ResponseTrace], typedef: T.ResponseTraceCallback}], [P.List, T._InvokeResponseUpdate], {func: 1, ret: P.$int, args: [T.Responder]}, {func: 1, ret: P.Duration}, [P.Map, P.String, T.RespSubscribeController], [P.Map, P.$int, T.RespSubscribeController], [P.LinkedHashSet, T.RespSubscribeController], T.RespSubscribeListener, {func: 1, ret: P.$int, args: [P.String, T.Responder]}, [P.ListQueue, O.ValueUpdate], {func: 1, args: [P.Zone, {func: 1, args: [,,]},,,]}, T.InvokeResponse, [P.Map, P.String, T.LocalNode], {func: 1, args: [P.String], opt: [P.$int]}, {func: 1, ret: P.List}, [P.Map, P.String, {func: 1, ret: T.SimpleNode, args: [P.String], typedef: T._NodeFactory}], {func: 1, opt: [P.bool]}, T.NodeProviderImpl, T.MutableNodeProvider, T.SerializableNodeProvider, [P.Map, P.String, X.SimpleResponderStorage], {func: 1, ret: [Q.BroadcastStreamController, P.String]}, [P.Map, P.String, X.SimpleValueStorageBucket], T.IStorageManager, [P.Map, P.String, X.SimpleNodeStorage], T.IValueStorageBucket, [P.Map, P.String,,], [P.Map, P.String, [P.Map, P.String,,]], {func: 1, ret: P.Future, args: [P.Function], named: {test: {func: 1, ret: P.bool, args: [,]}}}, {func: 1, void: true, args: [G.ArgResults]}, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode]}, {func: 1, args: [[P.List, P.String]]}, {func: 1, args: [P.Function]}];
+  init.metadata = [null, "value", "path", "name", "error", "m", "response", "responder", "callback", "node", "byteOffset", "key", "stackTrace", C.Endianness_false, "endian", "val", "self", "requester", "parent", C.C__Override, "zone", "meta", "columns", "currentTime", "qos", 4, "updates", "str", "_", "maxPermission", "data", true, "f", "v", "waitingAckId", "rid", "e", "action", "params", "update", "controller", "streamStatus", false, "x", "duration", 0, "element", "status", "provider", "stack", "arg", "k", "salt", "startTime", "basePath", "parentNode", "change", "input", "sid", "type", "conn", "n", "list", "receiveAckId", "computation", "other", "s", "invocation", "_traceCallback", "o", "resp", "updater", "ackId", "rpath", "obj", "category", "rows", 0 / 0, "values", "nodeProvider", "+", "err", "each", "publicKeyRemote", "profiles", "bytes", 1, "arg2", "old", "subscription", "hash", "dsId", "newUpdate", "defaultValue", "processors", "object", "it", "arg1", "req", "record", "cache", "defName", "linkData", C.TypeVariable_na8, "isRequester", "overrideResponder", "overrideRequester", "force", "storage", "nodes", "isResponder", "prefix", C.TypeVariable_kOG, "onError", "buf", "length", "event", "interval", "times", "home", "link", "a", "saltId", "reconnect", "equals", "idx", "channel", "connection", "messages", "hashCode", "isValidKey", "iterable", "keys", C.TypeVariable_kum, "msg", "detail", "phase", "parameter", "connected", "nameOrPath", "entry", 5, "encodedComponent", "defaultVal", "byteString", "captureThis", "arguments", "index", "closure", "result", "ts", "buffer", "count", "sum", "min", "max", "oldUpdate", "offsetInBytes", "ackid", "time", "handler", "isolate", "numberOfArguments", "reflectee", "_a", "specification", "zoneValues", "INFO", "base", "args", "i", "t", "sender", "command", "theError", "defaultNodes", "theStackTrace", "remotePath", "keepGoing", C.TypeVariable_qMM, "enableHttp", "encodePrettyJson", "rawColumns", "autoInitialize", "strictOptions", "exitOnFailure", "loadNodesJson", "changes", "defaultLogLevel", "savePrivateKey", "test", "listUpdate", "futureValue", "handleData", "handleDone", "handleError", "resumeSignal", "arg3", "timeLimit", "level", "onTimeout", "ignored", "sub", "request", "_conn", "processor", "profile", "dsIdPrefix", "", "privateKey", "reqId", "arg4", "_permitted", "nodeprovider", "inputs", "withChildren", "argp", "vals", "optionsHandler", "id", "brokers", "futures", "open", "stat", "addToTree", "sessionId", "responderPath", "parentPath", "cacheLevel", "eagerError", "store", "removes", "newValue", "map", "ms", "seconds", "minutes", "hours", C.C_Unspecified, "st", "types", "cleanUp", "timer", "keyValuePairs", "res", "flags", "line"];
+  init.types = [{func: 1, args: [,]}, {func: 1}, {func: 1, void: true}, P.Object, P.String, {func: 1, args: [,,]}, P.bool, P.$int, {func: 1, ret: P.bool}, {func: 1, args: [P.String]}, {func: 1, void: true, args: [P.String]}, Q.Interval, [P.Map, P.String, P.Object], {func: 1, void: true, args: [P.Map]}, P.Map, P.StreamSubscription, {func: 1, ret: P.String}, O.Node0, [P.Map, P.String, O.Node0], L.Requester, O.DSError, {func: 1, ret: P.Map}, {func: 1, void: true, args: [P.$int, P.$int]}, {func: 1, ret: P.Future}, {func: 1, args: [P.String,,]}, O.ValueUpdate, P.List, {func: 1, ret: P.$int}, {func: 1, args: [P.String, P.Object]}, [P.Map, P.Function, P.$int], L.RequestUpdater, [P.List, P.String], T.Responder, {func: 1, void: true, args: [{func: 1, void: true}]}, T.LocalNode, {func: 1, void: true, args: [P.String, O.Node0]}, {func: 1, void: true, args: [P.$int, P.$int], opt: [P.Endianness]}, {func: 1, ret: P.$int, args: [P.$int], opt: [P.Endianness]}, {func: 1, ret: P.String, args: [P.String]}, {func: 1, args: [P.$int]}, {func: 1, ret: T.Response, args: [P.String, P.Object, T.Responder, T.Response]}, {func: 1, args: [O.ValueUpdate]}, L.RemoteNode, [Q.BroadcastStreamController, P.String], {func: 1, void: true, args: [P.String, P.List, P.List, P.Map, O.DSError]}, {func: 1, void: true, args: [O.ValueUpdate]}, L.Request, {func: 1, void: true, args: [P.$int]}, {func: 1, ret: P.bool, args: [P.String]}, [P.List, O.ConnectionProcessor], {func: 1, ret: O.ConnectionChannel}, {func: 1, ret: P.bool, args: [P.String, P.String]}, {func: 1, ret: T.Response, args: [P.String, T.Responder, T.Response]}, {func: 1, ret: T.LocalNode, args: [P.String]}, {func: 1, args: [P.Map]}, T.SimpleNodeProvider, T.ISubscriptionResponderStorage, T.NodeProvider, O.ConnectionChannel, {func: 1, void: true, args: [P.Object], opt: [P.StackTrace]}, {func: 1, void: true, args: [P.bool]}, {func: 1, args: [P.bool]}, {func: 1, ret: P.Object, args: [P.String]}, {func: 1, ret: O.Path, args: [P.Object], opt: [P.String]}, {func: 1, void: true, args: [P.Function]}, [P.Map, P.String, P.$int], [P.List, P.Map], {func: 1, void: true, opt: [O.DSError]}, {func: 1, args: [, P.StackTrace]}, G.Directory, {func: 1, void: true, args: [P.$int, P.$int, P.$int]}, [P.List, O.TableColumn], P.Function, {func: 1, args: [P.String, P.Map]}, P.num, {func: 1, ret: T.ResponseTrace, opt: [P.String]}, {func: 1, void: true, args: [{func: 1, args: [T.ResponseTrace], typedef: T.ResponseTraceCallback}]}, {func: 1, ret: T.Response, args: [P.Object, T.Responder, T.Response], opt: [P.$int]}, {func: 1, void: true, args: [P.String, P.Object]}, {func: 1, void: true, args: [P.List]}, {func: 1, ret: [P.Future, O.ConnectionChannel]}, {func: 1, ret: O.ProcessorResult, args: [P.$int, P.$int]}, {func: 1, ret: P.String, args: [P.$int]}, {func: 1, ret: P.$int, args: [P.$int]}, T.Response, T.SimpleNode, {func: 1, void: true, args: [, P.StackTrace]}, O.ConnectionHandler, {func: 1, ret: [P.Future, L.Requester]}, {func: 1, args: [, T.RespSubscribeController]}, {func: 1, void: true, args: [,], opt: [P.StackTrace]}, {func: 1, args: [,], opt: [,]}, {func: 1, ret: P.String, args: [,]}, {func: 1, void: true, args: [{func: 1, void: true, args: [P.String, P.Object]}]}, {func: 1, args: [P.String, O.Node0]}, {func: 1, ret: [P.Future, P.bool]}, {func: 1, void: true, args: [,]}, {func: 1, ret: [P.Future, K.PrivateKey]}, {func: 1, ret: K.PrivateKey}, {func: 1, ret: K.PrivateKey, args: [P.String]}, {func: 1, ret: K.PublicKey, args: [P.Uint8List]}, {func: 1, void: true, args: [L.RequesterListUpdate]}, {func: 1, args: [L.RequesterListUpdate]}, {func: 1, void: true, args: [{func: 1, args: [,]}]}, {func: 1, ret: [P.Future, L.RequesterUpdate]}, {func: 1, args: [P.String, L.ReqSubscribeController]}, {func: 1, args: [P.$int, L.ReqSubscribeController]}, {func: 1, ret: L.Request, args: [P.Map, L.RequestUpdater]}, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode], opt: [P.$int]}, {func: 1, ret: P.Zone, named: {specification: P.ZoneSpecification, zoneValues: P.Map}}, {func: 1, args: [{func: 1}]}, {func: 1, args: [{func: 1, args: [,]},,]}, {func: 1, void: true, args: [[P.Iterable, O.ValueUpdate]]}, {func: 1, void: true, args: [{func: 1, args: [O.ValueUpdate]}]}, {func: 1, args: [{func: 1, args: [,,]},,,]}, {func: 1, args: [P.$int, T.Response]}, {func: 1, ret: {func: 1}, args: [{func: 1}]}, {func: 1, args: [, T.LocalNode]}, {func: 1, args: [P.String, T.RespSubscribeController]}, {func: 1, void: true, opt: [,]}, {func: 1, ret: T.SimpleNode, args: [P.String]}, {func: 1, ret: {func: 1, args: [,]}, args: [{func: 1, args: [,]}]}, {func: 1, args: [, O.Node0]}, {func: 1, args: [P.String, X.SimpleResponderStorage]}, {func: 1, args: [P.String, X.SimpleValueStorageBucket]}, {func: 1, args: [P.String, X.SimpleNodeStorage]}, {func: 1, void: true, args: [P.String, P.String]}, {func: 1, ret: P.Future, args: [,]}, {func: 1, ret: P.$int, args: [,]}, {func: 1, ret: [P.Future, P.$int]}, {func: 1, ret: P.Future, args: [{func: 1}]}, {func: 1, ret: P.Object, args: [,]}, {func: 1, ret: {func: 1, args: [,,]}, args: [{func: 1, args: [,,]}]}, {func: 1, ret: K.DSRandom}, {func: 1, args: [L.RemoteNode, L.Requester]}, {func: 1, args: [T.Responder, P.$int]}, {func: 1, args: [P.String, T.SimpleNodeProvider]}, {func: 1, ret: P.AsyncError, args: [P.Object, P.StackTrace]}, K.PrivateKey, {func: 1, ret: P.Timer, args: [P.Duration, {func: 1, void: true}]}, G.File, {func: 1, ret: P.Timer, args: [P.Duration, {func: 1, void: true, args: [P.Timer]}]}, {func: 1, args: [P.Invocation]}, {func: 1, ret: P.$int, args: [P.String]}, P.Completer, K.ECDH, {func: 1, ret: P.Type}, T.SimpleHiddenNode, [P.ListQueue, O.ConnectionAckGroup], O.BaseLink, {func: 1, ret: P.num, args: [P.$int], opt: [P.Endianness]}, {func: 1, ret: [P.List, P.String], args: [[P.List, P.$int]]}, [P.Completer, O.ConnectionChannel], {func: 1, void: true, args: [P.$int, P.num], opt: [P.Endianness]}, {func: 1, ret: P.bool, args: [,]}, P.RegExp, [P.List, P.List], P.Duration, L.ListController, L.ReqSubscribeController, {func: 1, void: true, args: [,,]}, {func: 1, args: [P.Object]}, L.RequesterUpdate, [P.LinkedHashSet, P.String], [P.Completer, L.RequesterUpdate], L.SubscribeRequest, [P.Map, P.$int, L.ReqSubscribeController], O.ConnectionProcessor, {func: 1, ret: T.LocalNode}, T.LocalNodeImpl, T.IPermissionManager, {func: 1, args: [P.Symbol0,,]}, T.SubscribeResponse, {func: 1, void: true, args: [T.InvokeResponse], typedef: T.OnInvokeClosed}, {func: 1, ret: K.ECDH}, [P.List, O.ValueUpdate], T.ISubscriptionNodeStorage, Q.DsCodec, {func: 1, ret: T.SimpleNode, args: [P.String, P.Map, T.SimpleNodeProvider]}, {func: 1, ret: [P.Stream, P.String]}, {func: 1, ret: T.RespSubscribeListener, args: [{func: 1, args: [,]}], opt: [P.$int]}, {func: 1, ret: P.bool, args: [O.ValueUpdate]}, {func: 1, ret: O.ValueUpdate}, {func: 1, void: true, args: [P.Object], named: {force: P.bool}}, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, O.Node0], opt: [P.$int]}, {func: 1, void: true, args: [T.ISubscriptionResponderStorage, [P.List, T.ISubscriptionNodeStorage]]}, {func: 1, void: true, args: [[P.List, P.String]]}, {func: 1, ret: T.Response, args: [T.Response]}, {func: 1, void: true, args: [T.Response]}, {func: 1, void: true, args: [P.$int], named: {error: O.DSError, response: T.Response}}, {func: 1, void: true, args: [T.Response, P.List], named: {columns: [P.List, O.TableColumn], meta: P.Map, streamStatus: P.String}}, {func: 1, args: [O.ConnectionChannel]}, {func: 1, void: true, args: [P.Timer]}, {func: 1, ret: {func: 1}, args: [P.Zone, {func: 1}]}, {func: 1, void: true, args: [P.List], named: {columns: P.List, meta: P.Map, streamStatus: P.String}}, {func: 1, void: true, args: [O.ConnectionChannel]}, {func: 1, ret: T.RespSubscribeController, args: [P.String, T.LocalNode, P.$int, P.$int]}, {func: 1, void: true, args: [T.RespSubscribeController]}, {func: 1, ret: {func: 1, args: [,]}, args: [P.Zone, {func: 1, args: [,]}]}, {func: 1, ret: {func: 1, args: [,,]}, args: [P.Zone, {func: 1, args: [,,]}]}, {func: 1, ret: P.List, args: [P.$int]}, {func: 1, void: true, args: [[P.List, O.ValueUpdate]]}, {func: 1, void: true, args: [P.List], opt: [P.String, P.Map]}, {func: 1, void: true, opt: [T.InvokeResponse]}, {func: 1, ret: T.LocalNode, args: [P.String], opt: [P.bool]}, {func: 1, ret: P.AsyncError, args: [P.Zone, P.Object, P.StackTrace]}, {func: 1, void: true, opt: [P.Map, P.Map]}, {func: 1, void: true, args: [P.String, T.SimpleNode]}, {func: 1, ret: T.SimpleNode, args: [P.String, P.Map]}, {func: 1, ret: T.Responder, args: [P.String, P.String]}, {func: 1, ret: [P.Future, K.ECDH], args: [M.PublicKeyImpl, K.ECDH]}, {func: 1, ret: T.SimpleNode}, {func: 1, ret: P.bool, args: [P.Object]}, {func: 1, ret: T.RespSubscribeListener, args: [{func: 1, args: [O.ValueUpdate]}], opt: [P.$int]}, {func: 1, ret: [P.Stream, P.List]}, {func: 1, ret: T.SimpleNode, args: [P.String], opt: [P.Map]}, {func: 1, void: true, args: [,], named: {name: P.String}}, {func: 1, ret: [P.Future, K.ECDH], args: [M.PublicKeyImpl]}, {func: 1, ret: T.ISubscriptionResponderStorage, args: [P.String]}, {func: 1, ret: [P.Future, [P.List, [P.List, T.ISubscriptionNodeStorage]]]}, {func: 1, ret: T.IValueStorageBucket, args: [P.String]}, {func: 1, void: true, args: [{func: 1, void: true, args: [P.Object]}]}, {func: 1, void: true, args: [O.ConnectionProcessor]}, {func: 1, ret: T.ISubscriptionNodeStorage, args: [P.String]}, {func: 1, ret: [P.Future, [P.List, T.ISubscriptionNodeStorage]]}, {func: 1, args: [P.Zone,, P.StackTrace]}, {func: 1, void: true, args: [[P.Iterable, O.ValueUpdate], O.ValueUpdate]}, {func: 1, ret: [P.Future, T.ISubscriptionNodeStorage]}, {func: 1, ret: [P.List, O.ValueUpdate]}, {func: 1, ret: [P.Future, P.Map]}, {func: 1, void: true, args: [P.Object]}, {func: 1, ret: P.Future, args: [P.Duration], named: {onTimeout: {func: 1}}}, {func: 1, ret: [P.Stream, O.DSError]}, {func: 1, ret: [P.Future, K.ECDH], args: [P.String]}, {func: 1, void: true, args: [P.Zone, {func: 1}]}, {func: 1, args: [P.$int,,]}, {func: 1, ret: L.RemoteNode, args: [P.String]}, {func: 1, args: [, P.JsObject]}, {func: 1, args: [P.String, [P.List, P.String]]}, {func: 1, ret: P.InstanceMirror, args: [P.Object]}, {func: 1, ret: [P.Future, P.List], args: [[P.Iterable, P.Future]], named: {cleanUp: {func: 1, void: true, args: [,]}, eagerError: P.bool}}, {func: 1, ret: P.Future, args: [P.Iterable, {func: 1, args: [,]}]}, {func: 1, ret: O.Node0, args: [P.String, P.String]}, {func: 1, void: true, args: [P.Zone, P.ZoneDelegate, P.Zone,, P.StackTrace]}, {func: 1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1}]}, {func: 1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,]},,]}, {func: 1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,,]},,,]}, {func: 1, ret: {func: 1}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1}]}, {func: 1, ret: {func: 1, args: [,]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,]}]}, {func: 1, ret: {func: 1, args: [,,]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, args: [,,]}]}, {func: 1, ret: P.AsyncError, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Object, P.StackTrace]}, {func: 1, void: true, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1}]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, void: true}]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, void: true, args: [P.Timer]}]}, {func: 1, void: true, args: [P.Zone, P.ZoneDelegate, P.Zone, P.String]}, {func: 1, ret: P.Zone, args: [P.Zone, P.ZoneDelegate, P.Zone, P.ZoneSpecification, P.Map]}, {func: 1, ret: P.bool, args: [,,]}, {func: 1, ret: L.RemoteNode, args: [L.RemoteNode, P.String, P.Map]}, {func: 1, ret: P.$int, args: [P.Comparable, P.Comparable]}, {func: 1, ret: P.bool, args: [P.Object, P.Object]}, {func: 1, ret: P.$int, args: [P.Object]}, {func: 1, ret: P.ByteData, args: [P.$int]}, {func: 1, ret: P.ByteData, args: [P.ByteBuffer], opt: [P.$int, P.$int]}, {func: 1, args: [[P.List, P.String], P.String], named: {autoInitialize: P.bool, command: P.String, defaultLogLevel: P.String, defaultNodes: P.Map, enableHttp: P.bool, encodePrettyJson: P.bool, exitOnFailure: P.bool, home: P.String, isRequester: P.bool, isResponder: P.bool, linkData: P.Map, loadNodesJson: P.bool, nodeProvider: T.NodeProvider, nodes: P.Map, overrideRequester: L.Requester, overrideResponder: T.Responder, profiles: P.Map, provider: T.NodeProvider, savePrivateKey: P.bool, strictOptions: P.bool}}, {func: 1, args: [P.String, P.String, K.PrivateKey], named: {home: P.String, isRequester: P.bool, isResponder: P.bool, linkData: P.Map, nodeProvider: T.NodeProvider, overrideRequester: L.Requester, overrideResponder: T.Responder}}, {func: 1, ret: [P.Future, K.PrivateKey], args: [P.String]}, {func: 1, ret: O.Connection}, {func: 1, args: [[P.List, P.Map], [P.List, O.ConnectionProcessor]]}, {func: 1, args: [P.$int, P.$int, [P.List, O.ConnectionProcessor]]}, {func: 1, ret: O.BaseLink}, {func: 1, ret: O.ServerLink}, {func: 1, ret: O.ClientLink}, {func: 1, ret: O.ServerLinkManager}, {func: 1, ret: O.StreamStatus}, {func: 1, ret: O.ErrorPhase}, {func: 1, args: [P.String], named: {detail: P.String, msg: P.String, path: P.String, phase: P.String}}, {func: 1, args: [O.Connection], opt: [P.bool]}, {func: 1, ret: O.ConnectionProcessor}, {func: 1, ret: O.ConnectionHandler}, {func: 1, ret: [P.Stream, L.RequesterListUpdate], args: [L.Requester]}, {func: 1, ret: O.Permission}, {func: 1, ret: P.$int, args: [P.Object], opt: [P.$int]}, {func: 1, ret: O.PermissionList}, {func: 1, args: [P.String, P.String], opt: [P.Object]}, {func: 1, ret: P.List, args: [P.List]}, {func: 1, ret: [P.List, O.TableColumn], args: [P.List]}, {func: 1, args: [[P.List, O.TableColumn], [P.List, P.List]], named: {meta: P.Map}}, {func: 1, args: [[P.List, O.TableColumn]]}, {func: 1, args: [P.Object], named: {count: P.$int, max: P.num, meta: P.Map, min: P.num, status: P.String, sum: P.num, ts: P.String}}, {func: 1, args: [O.ValueUpdate, O.ValueUpdate]}, {func: 1, args: [K.CryptoProvider]}, {func: 1, ret: K.CryptoProvider}, {func: 1, ret: [P.Future, K.ECDH], args: [K.PublicKey, K.ECDH]}, {func: 1, ret: L.ListController, args: [L.Requester]}, {func: 1, ret: L.DefaultDefNodes}, {func: 1, args: [L.Requester, P.$int, L.RequestUpdater, P.Map]}, {func: 1, args: [P.List, P.List, [P.List, O.TableColumn], P.String], named: {error: O.DSError, meta: P.Map}}, {func: 1, ret: [P.List, O.TableColumn], args: [L.RemoteNode]}, {func: 1, args: [L.RemoteNode, L.Requester, P.Map], opt: [P.$int]}, {func: 1, args: [L.RemoteNode, [P.List, P.String], P.String]}, {func: 1, args: [L.RemoteNode, L.Requester, {func: 1, void: true, args: [,]}]}, {func: 1, void: true, args: [L.Requester, {func: 1, args: [O.ValueUpdate]}, P.$int]}, {func: 1, args: [L.Requester, P.String]}, {func: 1, args: [L.Requester, P.String, P.Object], opt: [P.$int]}, {func: 1, args: [L.Requester, P.String, P.Function]}, {func: 1, args: [L.Requester, P.$int]}, {func: 1, ret: L.RequestUpdater}, {func: 1, opt: [L.RemoteNodeCache]}, {func: 1, args: [P.String, P.String], named: {defaultValue: P.Object}}, {func: 1, void: true, args: [T.InvokeResponse]}, {func: 1, ret: T.ConfigSetting, args: [P.String, O.Node0]}, {func: 1, args: [P.String, T.NodeProvider]}, {func: 1, ret: T.NodeProviderImpl}, {func: 1, ret: T.IPermissionManager}, {func: 1, ret: T.DummyPermissionManager}, {func: 1, ret: T.IStorageManager}, {func: 1, ret: T.ISubscriptionResponderStorage}, {func: 1, args: [P.String, T.ISubscriptionResponderStorage]}, {func: 1, ret: T.IValueStorageBucket}, {func: 1, args: [P.String, P.String, P.$int], opt: [P.String, P.String]}, {func: 1, ret: T.NodeProvider}, {func: 1, args: [T.NodeProvider], opt: [P.String]}, {func: 1, void: true, args: [L.Requester, {func: 1, args: [O.ValueUpdate]}]}, {func: 1, args: [P.String, P.List, P.List, P.Map]}, {func: 1, args: [T.Responder, P.$int, T.LocalNode, T.LocalNode, P.String]}, {func: 1, args: [T.Responder, P.$int, T.LocalNode]}, {func: 1, args: [T.LocalNode, P.Function]}, {func: 1, args: [T.SubscribeResponse, T.LocalNode, P.$int, P.bool, P.$int]}, {func: 1, opt: [P.List, P.List]}, {func: 1, opt: [P.List]}, {func: 1, ret: T.SerializableNodeProvider}, {func: 1, ret: T.MutableNodeProvider}, {func: 1, opt: [P.Map, P.Map]}, {func: 1, args: [P.String], opt: [T.SimpleNodeProvider]}, {func: 1, ret: [P.Stream, L.RequesterInvokeUpdate], args: [P.Map, L.Requester], opt: [P.$int]}, {func: 1, args: [P.String], opt: [P.String]}, {func: 1, args: [P.String, P.String, X.SimpleResponderStorage]}, {func: 1, args: [P.String, P.String]}, {func: 1, args: [T.ResponseTrace]}, {func: 1, ret: Q.DSLinkJSON, args: [[P.Map, P.String,,]]}, {func: 1, ret: P.List, args: [P.List, P.List]}, {func: 1, args: [P.Duration]}, {func: 1, ret: Q.Scheduler}, {func: 1, ret: P.Timer}, {func: 1, ret: P.Timer, args: [, {func: 1}]}, {func: 1, ret: P.Future, args: [P.$int, {func: 1}]}, {func: 1, ret: P.Future, args: [P.$int, Q.Interval, {func: 1}]}, {func: 1, void: true, args: [{func: 1}]}, {func: 1, ret: P.Future, args: [P.Duration, {func: 1}]}, {func: 1, ret: P.Timer, args: [P.Duration, {func: 1}]}, {func: 1, ret: P.String, args: [[P.Iterable, P.String]]}, {func: 1, ret: [P.List, [P.Map, P.String,,]], args: [[P.Map, P.String, P.String]]}, {func: 1, void: true, args: [P.Map, L.RemoteNodeCache]}, H.TearOffClosure, P._Future, [P.HashMap, 112, 103], P.TypedData, X.HttpClientLink, {func: 1, args: [, P.String]}, {func: 1, ret: P.Timer, args: [P.Zone, P.Duration, {func: 1, void: true}]}, {func: 1, ret: [P.List, P.List]}, {func: 1, ret: O.Node0, args: [P.String]}, {func: 1, ret: P.Timer, args: [P.Zone, P.Duration, {func: 1, void: true, args: [P.Timer]}]}, {func: 1, void: true, args: [{func: 1, void: true, args: [P.String, O.Node0]}]}, {func: 1, ret: P.$int, args: [, P.$int]}, {func: 1, args: [{func: 1, void: true}]}, {func: 1, ret: [P.Stream, L.RequesterListUpdate]}, Z.IOSink, {func: 1, void: true, args: [O.ConnectionHandler]}, [P.Completer, L.Requester], {func: 1, ret: P.TypeMirror, args: [P.$int]}, T.WebSocketConnection, {func: 1, ret: P.Future, opt: [,]}, {func: 1, ret: P.$int, args: [,,]}, O.ClientLink, {func: 1, void: true, args: [{func: 1, void: true, args: [,]}]}, {func: 1, void: true, opt: [P.Future]}, {func: 1, void: true, args: [P.String], opt: [,]}, {func: 1, ret: P.$int, args: [P.$int, P.$int]}, {func: 1, void: true, args: [L.ReqSubscribeController, P.$int]}, {func: 1, void: true, args: [L.ReqSubscribeController]}, [P.StreamController, P.List], [P.List, P.Function], O.Connection, {func: 1, void: true, args: [P.Zone, P.String]}, {func: 1, args: [P.Zone, {func: 1}]}, {func: 1, ret: O.Path}, {func: 1, void: true, args: [{func: 1, args: [,]}, P.$int]}, {func: 1, ret: T.Configs}, {func: 1, args: [,]}, {func: 1, ret: P.bool, named: {argp: S.ArgParser, optionsHandler: {func: 1, void: true, args: [G.ArgResults], typedef: X.OptionResultsHandler}}}, {func: 1, ret: P.Zone, args: [P.Zone, P.ZoneSpecification, P.Map]}, {func: 1, ret: [P.Future, P.String], args: [[P.Stream, P.String]]}, {func: 1, ret: O.Path, args: [P.String]}, {func: 1, ret: [P.Stream, O.ValueUpdate], args: [P.String], named: {cacheLevel: P.$int}}, {func: 1, ret: L.ReqSubscribeListener, args: [P.String, {func: 1, args: [O.ValueUpdate]}], opt: [P.$int]}, O.Unspecified, K.CryptoProvider, [P.Map, P.String, L.RemoteNode], {func: 1, ret: [P.Stream, O.ValueUpdate], args: [P.String], opt: [P.$int]}, {func: 1, ret: [P.Future, O.ValueUpdate], args: [P.String]}, {func: 1, ret: [P.Future, L.RemoteNode], args: [P.String]}, {func: 1, ret: L.Requester}, {func: 1, void: true, args: [P.String, {func: 1, args: [O.ValueUpdate]}]}, {func: 1, ret: [P.Stream, L.RequesterListUpdate], args: [P.String]}, [P.StreamController, L.RequesterInvokeUpdate], [P.Stream, L.RequesterInvokeUpdate], {func: 1, args: [P.Symbol0, P.Mirror]}, [Q.BroadcastStreamController, L.RequesterListUpdate], {func: 1, ret: [P.Stream, L.RequesterInvokeUpdate], args: [P.String, P.Map], opt: [P.$int]}, L.ListDefListener, {func: 1, ret: [P.Future, L.RequesterUpdate], args: [P.String, P.Object], opt: [P.$int]}, {func: 1, ret: [P.Future, L.RequesterUpdate], args: [P.String]}, [P.Map, P.String, L.ReqSubscribeController], {func: 1, void: true, args: [L.Request]}, [P.HashSet, P.String], {func: 1, ret: O.DSError, args: [P.Object, T.LocalNodeImpl, T.Responder]}, {func: 1, ret: T.LocalNode, args: [P.String, P.Map]}, {func: 1, void: true, args: [P.String,,]}, [P.Map, P.$int, L.Request], L.RemoteNodeCache, [P.StreamController, O.DSError], [P.Map, P.String, T.ConfigSetting], T.Configs, T.ConfigSetting, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode], typedef: T.InvokeCallback}, {func: 1, ret: O.DSError, args: [T.LocalNodeImpl, T.Responder]}, {func: 1, void: true, args: [{func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode], typedef: T.InvokeCallback}]}, {func: 1, args: [P.String], opt: [,]}, {func: 1, void: true, args: [P.String], opt: [P.bool]}, {func: 1, ret: P.Map, args: [P.bool]}, [P.Map, P.$int, T.Response], {func: 1, args: [P.Zone, {func: 1, args: [,]},,]}, [P.List, {func: 1, args: [T.ResponseTrace], typedef: T.ResponseTraceCallback}], [P.List, T._InvokeResponseUpdate], {func: 1, ret: P.$int, args: [T.Responder]}, {func: 1, ret: P.Duration}, [P.Map, P.String, T.RespSubscribeController], [P.Map, P.$int, T.RespSubscribeController], [P.LinkedHashSet, T.RespSubscribeController], T.RespSubscribeListener, {func: 1, ret: P.$int, args: [P.String, T.Responder]}, [P.ListQueue, O.ValueUpdate], {func: 1, args: [P.Zone, {func: 1, args: [,,]},,,]}, T.InvokeResponse, [P.Map, P.String, T.LocalNode], {func: 1, args: [P.String], opt: [P.$int]}, {func: 1, ret: P.List}, [P.Map, P.String, {func: 1, ret: T.SimpleNode, args: [P.String], typedef: T._NodeFactory}], {func: 1, opt: [P.bool]}, T.NodeProviderImpl, T.MutableNodeProvider, T.SerializableNodeProvider, [P.Map, P.String, X.SimpleResponderStorage], {func: 1, ret: [Q.BroadcastStreamController, P.String]}, [P.Map, P.String, X.SimpleValueStorageBucket], T.IStorageManager, [P.Map, P.String, X.SimpleNodeStorage], T.IValueStorageBucket, [P.Map, P.String,,], [P.Map, P.String, [P.Map, P.String,,]], {func: 1, ret: P.Future, args: [P.Function], named: {test: {func: 1, ret: P.bool, args: [,]}}}, {func: 1, void: true, args: [G.ArgResults]}, {func: 1, ret: T.InvokeResponse, args: [P.Map, T.Responder, T.InvokeResponse, T.LocalNode]}, {func: 1, args: [[P.List, P.String]]}, {func: 1, args: [P.Function]}];
   function convertToFastObject(properties) {
     function MyClass() {
     }
