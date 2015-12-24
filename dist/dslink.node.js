@@ -26445,7 +26445,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         this.meta = meta;
         if (stat != null)
           this.status = stat;
-        this.write$0();
+        if (this.response == null)
+          P.Future_Future(this.get$write(), null);
+        else
+          this.write$0();
       }, function(rows) {
         return this.update$3(rows, null, null);
       }, "update$1", function(rows, stat) {
@@ -26485,7 +26488,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return this.onClose.call$1(arg0);
       },
       static: {AsyncTableResult$: [function(columns) {
-          return new T.AsyncTableResult(null, columns, null, "initialize", null, null);
+          return new T.AsyncTableResult(null, columns, null, "open", null, null);
         }, null, null, 0, 2, 345, 0, 16, [], "new AsyncTableResult"]}
     },
     "+AsyncTableResult": [3],
@@ -26912,7 +26915,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         } else if (!!t3.$isTable)
           response.updateStream$3$columns$streamStatus(t3.get$rows(t2), t2.get$columns(), "closed");
         else if (!!t3.$isStream) {
-          r = new T.AsyncTableResult(null, null, null, "initialize", null, null);
+          r = new T.AsyncTableResult(null, null, null, "open", null, null);
           response.set$onClose(new T.SimpleNode_invoke_closure0(r));
           if (J.$eq$(rtype, "stream")) {
             t1._captured_sub_2 = null;
@@ -26929,7 +26932,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
           r.write$1(response);
           return response;
         } else if (!!t3.$isFuture) {
-          t1._captured_r_4 = new T.AsyncTableResult(null, null, null, "initialize", null, null);
+          t1._captured_r_4 = new T.AsyncTableResult(null, null, null, "open", null, null);
           response.set$onClose(new T.SimpleNode_invoke_closure9(t1));
           t1._captured_rslt_1.then$1(new T.SimpleNode_invoke_closure10(t1, response)).catchError$1(new T.SimpleNode_invoke_closure11(response));
           t1._captured_r_4.write$1(response);
