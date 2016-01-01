@@ -4,6 +4,7 @@ description: DSLink SDK for Dart
 dependencies:
   yaml: "^2.1.2"
   calzone: any
+    # path: ../calzone.dart
   grinder: any
   dslink:
     path: ./temp/sdk-dslink-dart
