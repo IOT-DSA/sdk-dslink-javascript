@@ -28882,6 +28882,39 @@ SimpleActionNode.prototype.onInvoke = function(params) {
 
 module.exports.SimpleActionNode = SimpleActionNode;
 
+function UnserializableNode(path, provider) {
+  SimpleNode_super.call(this, path, provider);
+  this.serializable = false;
+}
+
+UnserializableNode.prototype = Object.create(SimpleNode_super.prototype);
+
+module.exports.UnserializableNode = UnserializableNode;
+
+var bannedChars = {
+  '%': '%25',
+  '.': '%2E',
+  '/': '%2F',
+  '\\': '%5C',
+  '?': '%3F',
+  '*': '%2A',
+  ':': '%3A',
+  '|': '%7C',
+  '<': '%3C',
+  '>': '%3E',
+  '$': '%24',
+  '@': '%40',
+  ',': '%2C'
+};
+
+module.exports.encodeNodeName = function(str) {
+  Object.keys(bannedChars).forEach(function(char) {
+    str = str.split(char).join(bannedChars[char]);
+  });
+
+  return str;
+};
+
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
 },{"buffer":2,"crypto":26,"dhcurve":9,"es6-promises":16,"events":6}],2:[function(require,module,exports){
 (function (global){
