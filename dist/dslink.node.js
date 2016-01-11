@@ -28686,7 +28686,17 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       return t1;
     },
     _getLogSetting: function(record, $name, defaultValue) {
-      H.throwExpression(new P.UnsupportedError("bool.fromEnvironment can only be used as a const constructor"));
+      var env, exception, t1;
+      try {
+        H.throwExpression(new P.UnsupportedError("bool.fromEnvironment can only be used as a const constructor"));
+        env = null;
+      } catch (exception) {
+        H.unwrapException(exception);
+      }
+      t1 = J.$index$asx(record.get$zone(), $name);
+      if (typeof t1 === "boolean")
+        return J.$index$asx(record.get$zone(), $name);
+      return defaultValue;
     },
     logger: function() {
       var t1 = $._logger;
