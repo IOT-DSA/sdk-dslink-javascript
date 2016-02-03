@@ -30,6 +30,12 @@ module.exports.createNode = function(opt) {
 var SimpleNode_super = module.exports.SimpleNode.class;
 
 function SimpleActionNode(path, provider, cb) {
+  if(typeof(provider) === 'function') {
+    var temp = provider;
+    cb = provider;
+    provider = temp;
+  }
+  
   SimpleNode_super.call(this, path, provider);
   this.cb = cb;
 }
@@ -37,7 +43,7 @@ function SimpleActionNode(path, provider, cb) {
 SimpleActionNode.prototype = Object.create(SimpleNode_super.prototype);
 
 SimpleActionNode.prototype.onInvoke = function(params) {
-  return this.cb(this, params);
+  return this.cb(params, this);
 };
 
 module.exports.SimpleActionNode = SimpleActionNode;
