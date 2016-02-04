@@ -31,7 +31,7 @@ var SimpleNode_super = module.exports.SimpleNode.class;
 
 function SimpleActionNode(path, provider, cb) {
   if(typeof(provider) === 'function') {
-    var temp = provider;
+    var temp = cb;
     cb = provider;
     provider = temp;
   }
