@@ -26663,12 +26663,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         return rslts;
       }, "call$1", "get$process", 2, 0, 216, 41, [], "process"],
       onAck$1: [function(ackId) {
-        var msg, matchUpdate, t1, update, valueRemoved, removed;
+        var matchUpdate, t1, update, valueRemoved, removed;
         if (J.get$isEmpty$asx(this.waitingValues) === true)
           return;
         if (J.get$isEmpty$asx(this.waitingValues) !== true && !J.$eq$(J.get$first$ax(this.waitingValues).get$waitingAck(), ackId)) {
-          msg = H.S(J.get$value$x(J.get$first$ax(this.waitingValues))) + " " + H.S(J.get$first$ax(this.waitingValues).get$waitingAck());
-          Q.logger().warning$1("invalid ack " + msg);
           t1 = J.get$iterator$ax(this.waitingValues);
           while (true) {
             if (!t1.moveNext$0()) {
