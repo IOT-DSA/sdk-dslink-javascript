@@ -1,15 +1,28 @@
 {
   "name": "dslink",
   "version": "1.0.0",
-  "description": "DSLink IoT platform SDK for node.js and the Web",
+  "description": "DSLink/DSA IoT platform SDK for node.js and the Web.",
   "main": "dist/dslink.node.min.js",
   "browser": {
     "crypto": "./tool/js/crypto.browser.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Tests for JS SDK coming soon, however individual parts (including Dart SDK, compiler) are tested.\" && exit 1"
   },
-  "author": "Michael Bullington",
+  "contributors": [
+    {
+      "name": "Michael Bullington",
+      "email": "m.bullington@dglogik.com"
+    },
+    {
+      "name": "Kenneth Endfinger",
+      "email": "k.endfinger@dglogik.com"
+    },
+    {
+      "name": "Rick Zhou",
+      "email": "z.zhou@dglogik.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "dhcurve": "^1.2.0",
