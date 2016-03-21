@@ -7967,6 +7967,12 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t1.constructor[cacheName] = cachedFunction;
         return cachedFunction;
       },
+      apply$2: function(positionalArguments, namedArguments) {
+        return H.reflect(H.Primitives_applyFunctionWithPositionalArguments(this.reflectee, positionalArguments));
+      },
+      apply$1: function(positionalArguments) {
+        return this.apply$2(positionalArguments, null);
+      },
       toString$0: function(_) {
         return "ClosureMirror on '" + H.S(P.Error_safeToString(this.reflectee)) + "'";
       },
@@ -21189,7 +21195,16 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       }, null, null, 2, 0, null, 94, [], "call"]
     },
     JsFunction: {
-      "^": "JsObject;_js$_jsObject"
+      "^": "JsObject;_js$_jsObject",
+      apply$2$thisArg: function(args, thisArg) {
+        var t1, t2;
+        t1 = P._convertToJS(thisArg);
+        t2 = P.List_List$from(H.setRuntimeTypeInfo(new H.MappedListIterable(args, P.js___convertToJS$closure()), [null, null]), true, null);
+        return P._convertToDart(this._js$_jsObject.apply(t1, t2));
+      },
+      apply$1: function(args) {
+        return this.apply$2$thisArg(args, null);
+      }
     },
     JsArray: {
       "^": "JsObject_ListMixin;_js$_jsObject",
@@ -33280,7 +33295,7 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
       addError$2: function(error, stackTrace) {
       },
       close$0: function(_) {
-        var t1, t2, _headers, path, t3, req, _i;
+        var t1, t2, _headers, path, t3, req, _i, data;
         t1 = this.headers;
         t2 = this.contentLength;
         t1._addAll$2(C.JSString_methods.toLowerCase$0("content-length"), t2);
@@ -33295,8 +33310,10 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
         t2 = t1.scheme === "https" ? $.$get$_https() : $.$get$_http();
         req = t2.callMethod$2("request", [P.JsObject_JsObject$jsify(P.LinkedHashMap__makeLiteral(["hostname", t1.get$host(t1), "port", t1.get$port(t1), "path", path, "method", this.method, "headers", _headers])), new Z._HttpClientRequest_close_closure0(this)]);
         req.callMethod$2("on", ["error", new Z._HttpClientRequest_close_closure1(this)]);
-        for (t1 = this._http$_buffer, t2 = t1.length, _i = 0; _i < t1.length; t1.length === t2 || (0, H.throwConcurrentModificationError)(t1), ++_i)
-          req.callMethod$2("write", [t1[_i], "utf8", new Z._HttpClientRequest_close_closure2(this)]);
+        for (t1 = this._http$_buffer, t2 = t1.length, _i = 0; _i < t1.length; t1.length === t2 || (0, H.throwConcurrentModificationError)(t1), ++_i) {
+          data = t1[_i];
+          $.$get$funcWrite().apply$1([req, data, "utf8", new Z._HttpClientRequest_close_closure2(this)]);
+        }
         req.callMethod$1("end");
         return this._done.future;
       },
@@ -35205,7 +35222,9 @@ var proto = Object.create(new H.RuntimeFunctionType(returnType, parameterTypes, 
     return K.require("http");
   }, "_http", "_https", "$get$_https", function() {
     return K.require("https");
-  }, "_https", "_ws", "$get$_ws", function() {
+  }, "_https", "funcWrite", "$get$funcWrite", function() {
+    return $.$get$context().callMethod$2("eval", ["  (function(req, data, encoding, cb) {\n    req.write(data, encoding, function() {\n      cb();\n    });\n  })\n"]);
+  }, "funcWrite", "_ws", "$get$_ws", function() {
     return K.require("ws");
   }, "_ws", "Option__invalidChars", "$get$Option__invalidChars", function() {
     return P.RegExp_RegExp("[ \\t\\r\\n\"'\\\\/]", true, false);
