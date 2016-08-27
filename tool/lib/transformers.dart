@@ -1,6 +1,9 @@
 part of dslink_js.build;
 
-class StreamTransformer extends TypeTransformer {
+class StreamTransformer extends TypeTransformer with NamedTypeTransformer {
+  final List<String> types = ["Stream"];
+  final String output = "Stream";
+  
   StreamTransformer();
 
   @override
@@ -46,6 +49,7 @@ class StreamTransformer extends TypeTransformer {
 
     module.exports.Stream = Stream;
     """);
+    
     output.write("if(obj.${c.key.getMangledName("listen")}) { return new module.exports.Stream(obj); }");
   }
 }

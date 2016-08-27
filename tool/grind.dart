@@ -6,6 +6,8 @@ import "package:calzone/compiler.dart";
 import "package:calzone/builder.dart";
 import "package:calzone/util.dart";
 
+import "package:calzone/visitor_typescript.dart";
+
 import "package:grinder/grinder.dart";
 
 import "package:yaml/yaml.dart";
@@ -45,10 +47,44 @@ const String BROWSER_PREFIX = """
   require('crypto');
 """;
 
+const String TS_PREFIX = """
+\tclass Stream implements NodeJS.EventEmitter {
+\t\t// event emitter
+\t\taddListener(event: string, listener: Function): this;
+\t\ton(event: string, listener: Function): this;
+\t\tonce(event: string, listener: Function): this;
+\t\tremoveListener(event: string, listener: Function): this;
+\t\tremoveAllListeners(event?: string): this;
+\t\tsetMaxListeners(n: number): this;
+\t\tgetMaxListeners(): number;
+\t\tlisteners(event: string): Function[];
+\t\temit(event: string, ...args: any[]): boolean;
+\t\tlistenerCount(type: string): number;
+      
+\t\tclose(): void;
+\t}
+
+\tclass SimpleActionNode extends SimpleNode {
+\t\tconstructor(path: string, provider: any, cb?: any);
+\t}
+
+\tclass UnserializableNode extends SimpleNode {
+\t\tconstructor(path: string, provider?: NodeProvider);
+\t}
+
+\tfunction createNode(opt: any): any;
+\tfunction encodeNodeName(str: string): string;
+""";
+
 class DSLinkBuilder extends Builder {
+  final TypeScriptCompilerVisitor tsVisitor;
   final PatcherTarget target;
 
-  DSLinkBuilder({PatcherTarget target: PatcherTarget.NODE, BuilderStage stage: BuilderStage.ALL, bool isMinified: false}):
+  DSLinkBuilder({PatcherTarget target: PatcherTarget.NODE,
+      BuilderStage stage: BuilderStage.ALL,
+      bool isMinified: false,
+      TypeScriptCompilerVisitor tsVisitor}):
+    this.tsVisitor = tsVisitor,
     this.target = target,
     super("tool/${target}_stub.dart", "tool/dslink.include",
       stage: stage,
@@ -58,11 +94,13 @@ class DSLinkBuilder extends Builder {
         new ClosureTransformer(),
         new BufferTransformer(),
         new StreamTransformer(),
-        new CollectionsTransformer(true)
+        new CollectionsTransformer()
+      ],
+      compilerVisitors: [
+        tsVisitor
       ],
       directory: isMinified ? "temp/min" : "temp/full",
       isMinified: isMinified);
-
 
   Future<String> onWrapperGenerated(String wrapper) async {
     var file = new File("$directory/wrapper.js");
@@ -87,6 +125,16 @@ class DSLinkBuilder extends Builder {
     if(target == PatcherTarget.BROWSER)
       output = BROWSER_PREFIX + output;
     file.writeAsStringSync(output);
+    
+    if (!isMinified) {
+      var tsFilename = "dist/dslink.${target}.d.ts";
+      var tsFile = new File(tsFilename);
+      tsFile.createSync();
+    
+      tsFile.writeAsStringSync("""
+${tsVisitor.output}
+""");
+    }
 
     if(target == PatcherTarget.BROWSER) {
       var browserify = npmBin("browserify", "browserify $filename --standalone DS");
@@ -135,8 +183,11 @@ fetchDeps() {
 @Depends(clean, cloneSdk, patchDeps, fetchDeps)
 @Task("Build for node.js")
 node() async {
-  var builder = new DSLinkBuilder(target: PatcherTarget.NODE);
-  var minified = new DSLinkBuilder(target: PatcherTarget.NODE, isMinified: true);
+  TypeScriptCompilerVisitor tsVisitor = new TypeScriptCompilerVisitor("dslink", mixinTypes: TS_PREFIX);
+  
+  var builder = new DSLinkBuilder(target: PatcherTarget.NODE, tsVisitor: tsVisitor);
+  var minified = new DSLinkBuilder(target: PatcherTarget.NODE, isMinified: true,
+      tsVisitor: tsVisitor);
 
   await builder.build();
   await minified.build();
@@ -145,8 +196,11 @@ node() async {
 @Depends(clean, cloneSdk, patchDeps, fetchDeps)
 @Task("Build for the browser")
 browser() async {
-  var builder = new DSLinkBuilder(target: PatcherTarget.BROWSER);
-  var minified = new DSLinkBuilder(target: PatcherTarget.BROWSER, isMinified: true);
+  TypeScriptCompilerVisitor tsVisitor = new TypeScriptCompilerVisitor("dslink", mixinTypes: TS_PREFIX);
+
+  var builder = new DSLinkBuilder(target: PatcherTarget.BROWSER, tsVisitor: tsVisitor);
+  var minified = new DSLinkBuilder(target: PatcherTarget.BROWSER, isMinified: true,
+      tsVisitor: tsVisitor);
 
   await builder.build();
   await minified.build();
@@ -154,10 +208,14 @@ browser() async {
 
 @Task("Dev build for node.js")
 nodeDev() async {
-  var builder = new DSLinkBuilder(target: PatcherTarget.NODE, stage: BuilderStage.WRAP);
+  TypeScriptCompilerVisitor tsVisitor = new TypeScriptCompilerVisitor("dslink", mixinTypes: TS_PREFIX);
+
+  var builder = new DSLinkBuilder(target: PatcherTarget.NODE, stage: BuilderStage.WRAP,
+      tsVisitor: tsVisitor);
   var minified = new DSLinkBuilder(target: PatcherTarget.NODE,
       isMinified: true,
-      stage: BuilderStage.WRAP);
+      stage: BuilderStage.WRAP,
+      tsVisitor: tsVisitor);
 
   await builder.build();
   await minified.build();
@@ -165,10 +223,14 @@ nodeDev() async {
 
 @Task("Dev build for the browser")
 browserDev() async {
-  var builder = new DSLinkBuilder(target: PatcherTarget.BROWSER, stage: BuilderStage.WRAP);
+  TypeScriptCompilerVisitor tsVisitor = new TypeScriptCompilerVisitor("dslink", mixinTypes: TS_PREFIX);
+
+  var builder = new DSLinkBuilder(target: PatcherTarget.BROWSER, stage: BuilderStage.WRAP,
+      tsVisitor: tsVisitor);
   var minified = new DSLinkBuilder(target: PatcherTarget.BROWSER,
       isMinified: true,
-      stage: BuilderStage.WRAP);
+      stage: BuilderStage.WRAP,
+      tsVisitor: tsVisitor);
 
   await builder.build();
   await minified.build();

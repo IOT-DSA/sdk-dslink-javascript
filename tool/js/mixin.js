@@ -15,7 +15,7 @@ function mixin(dest) {
 }
 
 module.exports.createNode = function(opt) {
-  var extend = exports.SimpleNode.class;
+  var extend = exports.SimpleNode;
 
   function Node(path, provider) {
     extend.call(this, path, provider);
@@ -27,7 +27,7 @@ module.exports.createNode = function(opt) {
   return Node;
 };
 
-var SimpleNode_super = module.exports.SimpleNode.class;
+var SimpleNode_super = module.exports.SimpleNode;
 
 function SimpleActionNode(path, provider, cb) {
   if(typeof(provider) === 'function') {
