@@ -1226,6 +1226,7 @@ declare namespace __dslink {
 		constructor(args: string[], prefix: string, _opt?: _LinkProvider_options);
 
 		addCommandLineOption(name: string, defaultValue?: string): any;
+		getCommandLineValue(name: string): string;
 		configure(_opt?: _LinkProvider_configure_options): boolean;
 		chooseBroker(brokers: Stream): Promise<any>;
 		onValueChange(path: string, _opt?: _LinkProvider_onValueChange_options): Stream;
