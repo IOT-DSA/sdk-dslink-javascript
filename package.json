@@ -1,6 +1,6 @@
 {
   "name": "dslink",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "DSLink/DSA IoT platform SDK for node.js and the Web.",
   "main": "dist/dslink.node.min.js",
   "browser": {
