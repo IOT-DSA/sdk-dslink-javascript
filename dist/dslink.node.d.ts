@@ -680,6 +680,9 @@ declare namespace __dslink {
 		configs: any;
 		children: any;
 
+		static initEncryption(key: string): any;
+		static encryptString(str: string): string;
+		static decryptString(str: string): string;
 		constructor(path: string, nodeprovider?: SimpleNodeProvider);
 
 		load(m: any): any;
@@ -1083,6 +1086,7 @@ declare namespace __dslink {
 		reqId: string;
 		maxCacheLength: number;
 		storage: ISubscriptionResponderStorage;
+		isReadOnly: boolean;
 		groups: string[];
 		nodeProvider: NodeProvider;
 		disabled: boolean;
@@ -1158,6 +1162,7 @@ declare namespace __dslink {
 	interface _LinkProvider_options {
 		autoInitialize?: boolean;
 		command?: string;
+		commandLineOptions?: any;
 		defaultLogLevel?: string;
 		defaultNodes?: any;
 		enableHttp?: boolean;
@@ -1211,6 +1216,7 @@ declare namespace __dslink {
 		token: string;
 		dslinkJson: any;
 		basePath: string;
+		parsedArguments: any;
 		remotePath: string;
 		requester: Requester;
 		onRequesterReady: Promise<any>;
@@ -1219,6 +1225,7 @@ declare namespace __dslink {
 
 		constructor(args: string[], prefix: string, _opt?: _LinkProvider_options);
 
+		addCommandLineOption(name: string, defaultValue?: string): any;
 		configure(_opt?: _LinkProvider_configure_options): boolean;
 		chooseBroker(brokers: Stream): Promise<any>;
 		onValueChange(path: string, _opt?: _LinkProvider_onValueChange_options): Stream;

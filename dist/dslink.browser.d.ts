@@ -699,6 +699,9 @@ declare namespace __dslink {
 		configs: any;
 		children: any;
 
+		static initEncryption(key: string): any;
+		static encryptString(str: string): string;
+		static decryptString(str: string): string;
 		constructor(path: string, nodeprovider?: SimpleNodeProvider);
 
 		load(m: any): any;
@@ -1102,6 +1105,7 @@ declare namespace __dslink {
 		reqId: string;
 		maxCacheLength: number;
 		storage: ISubscriptionResponderStorage;
+		isReadOnly: boolean;
 		groups: string[];
 		nodeProvider: NodeProvider;
 		disabled: boolean;
