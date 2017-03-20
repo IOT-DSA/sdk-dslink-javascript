@@ -9,6 +9,7 @@
   "scripts": {
     "test": "echo \"Tests for JS SDK coming soon, however individual parts (including Dart SDK, compiler) are tested.\" && exit 1"
   },
+  "types": "dist/dslink.node.d.ts",
   "contributors": [
     {
       "name": "Michael Bullington",
