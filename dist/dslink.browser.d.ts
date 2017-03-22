@@ -1,5 +1,5 @@
 declare namespace __dslink {
-	class Stream implements NodeJS.EventEmitter {
+	class Stream extends NodeJS.EventEmitter {
 		// event emitter
 		addListener(event: string, listener: Function): this;
 		on(event: string, listener: Function): this;
@@ -655,6 +655,7 @@ declare namespace __dslink {
 		onAllListCancel(): any;
 		updateValue(update: any, _opt?: _SimpleHiddenNode_updateValue_options): any;
 		clearValue(): any;
+		getDisconnectedListResponse(): any[];
 		getInvokePermission(): number;
 		getSetPermission(): number;
 		getOverideAttributes(attr: string): any;
@@ -737,6 +738,7 @@ declare namespace __dslink {
 		onAllListCancel(): any;
 		updateValue(update: any, _opt?: _SimpleNode_updateValue_options): any;
 		clearValue(): any;
+		getDisconnectedListResponse(): any[];
 		getInvokePermission(): number;
 		getSetPermission(): number;
 		getOverideAttributes(attr: string): any;
@@ -825,6 +827,7 @@ declare namespace __dslink {
 		onAllListCancel(): any;
 		updateValue(update: any, _opt?: _SysGetIconNode_updateValue_options): any;
 		clearValue(): any;
+		getDisconnectedListResponse(): any[];
 		getInvokePermission(): number;
 		getSetPermission(): number;
 		getOverideAttributes(attr: string): any;
@@ -938,6 +941,7 @@ declare namespace __dslink {
 		unsubscribe(ValueUpdateCallback: any): any;
 		updateValue(update: any, _opt?: _DefinitionNode_updateValue_options): any;
 		clearValue(): any;
+		getDisconnectedListResponse(): any[];
 		getInvokePermission(): number;
 		getSetPermission(): number;
 		get(name: string): any;
@@ -1105,7 +1109,7 @@ declare namespace __dslink {
 		reqId: string;
 		maxCacheLength: number;
 		storage: ISubscriptionResponderStorage;
-		isReadOnly: boolean;
+		maxPermission: number;
 		groups: string[];
 		nodeProvider: NodeProvider;
 		disabled: boolean;
