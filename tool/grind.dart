@@ -48,7 +48,7 @@ const String BROWSER_PREFIX = """
 """;
 
 const String TS_PREFIX = """
-\tclass Stream implements NodeJS.EventEmitter {
+\tclass Stream extends NodeJS.EventEmitter {
 \t\t// event emitter
 \t\taddListener(event: string, listener: Function): this;
 \t\ton(event: string, listener: Function): this;
