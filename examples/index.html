@@ -19,16 +19,17 @@
                 }
             });
 
-            this.link.init().then(function() {
+            this.link.init().then(() => {
               console.log("Hello #1");
+              return this.link.connect();
+            }).then(() => {
+              console.log("Hello #2");
+              return this.link.onRequesterReady;
+            }).then(() => {
+              console.log("Hello #3");
             });
 
-            this.link.connect().then(function() {
-              console.log("Hello #2");
-              this.link.onRequesterReady.then(function(requester) {
-                console.log("Hello #3");
-              });
-            });
+            console.log(this.link);
         }
     </script>
 </body>

@@ -14,6 +14,8 @@ _patchDependencies([String sdkDirectory = "temp/sdk-dslink-dart"]) {
       text = text.replaceAll("dart:io", "package:node_io/io.dart");
       text = text.replaceAll("import 'dart/pk.dart' show DartCryptoProvider;", "import 'node/pk.dart' show NodeCryptoProvider;");
       text = text.replaceAll(" DartCryptoProvider", " NodeCryptoProvider");
+      text = text.replaceAll('_crypto.callMethod("randomBytes", [1]).callMethod("readUInt8", [0])',
+          'new JsObject.fromBrowserObject(_crypto.callMethod("randomBytes", [1])).callMethod("readUInt8", [0])');
       entity.writeAsStringSync(text);
     }
   }
@@ -26,7 +28,7 @@ _patchDependencies([String sdkDirectory = "temp/sdk-dslink-dart"]) {
 
   pubspec["dependencies"] = {
     "node_io": {
-      // "path": "/home/michael/Projects/Work/node_io.dart"
+      // "path": "/Users/k2so/Projects/Work/node_io.dart"
       "git": "https://github.com/dglogik/node_io.dart.git"
     }
   }..addAll(pubspec["dependencies"]);

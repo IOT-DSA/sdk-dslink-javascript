@@ -29,4 +29,4 @@ time = Date.now();
 link.connect().then(function () {
     console.log("connect: " + (Date.now() - time));
     console.log("connected!");
-});
+}).catch(e => console.log(e));
