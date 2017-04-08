@@ -1,7 +1,7 @@
 {
   "name": "dslink",
   "version": "1.1.0",
-  "description": "DSLink/DSA IoT platform SDK for node.js and the Web.",
+  "description": "DSLink/DSA IoT platform SDK for node.js and the web.",
   "main": "dist/dslink.node.min.js",
   "browser": {
     "crypto": "./tool/js/crypto.browser.js"
