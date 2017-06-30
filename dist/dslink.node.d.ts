@@ -1016,6 +1016,7 @@ declare namespace __dslink {
 		lastValues: ValueUpdate[];
 		waitingValues: any;
 		lastValue: ValueUpdate;
+		cachingQueue: boolean;
 		permitted: boolean;
 		qosLevel: number;
 		caching: boolean;
@@ -1158,6 +1159,7 @@ declare namespace __dslink {
 		constructor(_conn: string, dsIdPrefix: string, privateKey: PrivateKey, _opt?: _HttpClientLink_options);
 
 		updateSalt(salt: string, saltId?: number): any;
+		connDelay(): any;
 		connect(): any;
 		initWebsocket(reconnect?: boolean): any;
 		close(): any;

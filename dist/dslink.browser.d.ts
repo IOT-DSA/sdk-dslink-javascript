@@ -1035,6 +1035,7 @@ declare namespace __dslink {
 		lastValues: ValueUpdate[];
 		waitingValues: any;
 		lastValue: ValueUpdate;
+		cachingQueue: boolean;
 		permitted: boolean;
 		qosLevel: number;
 		caching: boolean;
