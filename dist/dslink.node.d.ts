@@ -1,5 +1,5 @@
 declare namespace __dslink {
-	class Stream extends NodeJS.EventEmitter {
+	class Stream {
 		// event emitter
 		addListener(event: string, listener: Function): this;
 		on(event: string, listener: Function): this;
@@ -26,210 +26,296 @@ declare namespace __dslink {
 	function createNode(opt: any): any;
 	function encodeNodeName(str: string): string;
 
-	function buildActionIO(types: any): any[];
-	function buildEnumType(values: string[]): string;
 	function updateLogLevel(name: string): any;
+	function buildEnumType(values: string[]): string;
+	function buildActionIO(types: any): any[];
 	function getKeyFromFile(path: string): Promise<any>;
 
-	class PermissionList {
-		idMatchs: any;
-		groupMatchs: any;
-		defaultPermission: number;
+	class Requester extends ConnectionHandler {
+		lastRid: number;
+		nodeCache: RemoteNodeCache;
+		onError: Stream;
+		openRequestCount: number;
+		subscriptionCount: number;
 
-		constructor();
+		constructor(cache?: RemoteNodeCache);
 
-		updatePermissions(data: any[]): any;
-		getPermission(responder: Responder): number;
-	}
-
-	class Permission {
-		static parse(obj: any, defaultVal?: number): number;
-		constructor();
-	}
-
-	class ConnectionHandler {
-	}
-
-	class ConnectionProcessor {
-	}
-
-	class PassiveChannel {
-		onReceiveController: any;
-		conn: Connection;
-		handler: ConnectionHandler;
-		connected: boolean;
-		onDisconnectController: any;
-		onConnectController: any;
-		onReceive: Stream;
-		isReady: boolean;
-		onDisconnected: Promise<any>;
-		onConnected: Promise<any>;
-
-		constructor(conn: Connection, connected?: boolean);
-
-		sendWhenReady(handler: ConnectionHandler): any;
+		closeRequest(request: Request): any;
+		sendRequest(m: any, updater: RequestUpdater): Request;
+		getNodeValue(path: string): Promise<any>;
+		onReconnected(): any;
+		subscribe(path: string, callback: Function, qos?: number): ReqSubscribeListener;
+		getNextRid(): number;
+		remove(path: string): Promise<any>;
+		list(path: string): Stream;
+		onValueChange(path: string, qos?: number): Stream;
+		onData(list: any[]): any;
+		invoke(path: string, params?: any, maxPermission?: number, RequestConsumer?: any): Stream;
+		isNodeCached(path: string): boolean;
+		set(path: string, value: any, maxPermission?: number): Promise<any>;
+		getRemoteNode(path: string): Promise<any>;
+		unsubscribe(path: string, callback: Function): any;
+		onDisconnected(): any;
 		getSendingData(currentTime: number, waitingAckId: number): ProcessorResult;
-		updateConnect(): any;
 	}
 
-	interface _ValueUpdate_options {
-		count?: number;
-		max?: number;
-		meta?: any;
-		min?: number;
-		status?: string;
-		sum?: number;
-		ts?: string;
+	class DefaultDefNodes {
+		constructor();
 	}
 
-	class ValueUpdate {
-		waitingAck: number;
-		value: any;
-		ts: string;
-		status: string;
-		count: number;
-		sum: number;
-		min: number;
-		max: number;
-		created: Date;
-		storedData: any;
-		timestamp: Date;
-		latency: any;
+	class SubscribeController {
+		request: SubscribeRequest;
 
-		static getTs(): string;
-		constructor(value: any, _opt?: _ValueUpdate_options);
-		static merge(oldUpdate: ValueUpdate, newUpdate: ValueUpdate): any;
+		constructor();
 
-		mergeAdd(newUpdate: ValueUpdate): any;
-		equals(other: ValueUpdate): boolean;
-		toMap(): any;
-		cloneForAckQueue(): ValueUpdate;
+		onReconnect(): any;
+		onUpdate(status: string, updates: any[], columns: any[], meta: any, error: DSError): any;
+		onDisconnect(): any;
 	}
 
-	class TableMetadata {
-		meta: any;
+	class InvokeController {
+		node: RemoteNode;
+		mode: string;
+		lastStatus: string;
+		requester: Requester;
 
-		constructor(meta: any);
+		constructor(node: RemoteNode, requester: Requester, params: any, maxPermission?: number, RequestConsumer?: any);
+		static getNodeColumns(node: RemoteNode): TableColumn[];
+
+		onReconnect(): any;
+		onUpdate(streamStatus: string, updates: any[], columns: any[], meta: any, error: DSError): any;
+		onDisconnect(): any;
 	}
 
-	class TableColumns {
-		columns: TableColumn[];
-
-		constructor(columns: TableColumn[]);
-	}
-
-	interface _Table_options {
-		meta?: any;
-	}
-
-	class Table {
-		columns: TableColumn[];
-		rows: any[][];
-		meta: any;
-
-		constructor(columns: TableColumn[], rows: any[][], _opt?: _Table_options);
-	}
-
-	class TableColumn {
-		type: string;
-		name: string;
-		defaultValue: any;
-
-		constructor(name: string, type: string, defaultValue?: any);
-		static serializeColumns(list: any[]): any[];
-		static parseColumns(list: any[]): TableColumn[];
-
-		getData(): any;
-	}
-
-	class Path {
+	class RemoveController {
 		path: string;
-		parentPath: string;
-		name: string;
-		valid: boolean;
-		parent: Path;
-		isAbsolute: boolean;
-		isRoot: boolean;
-		isConfig: boolean;
-		isAttribute: boolean;
-		isNode: boolean;
+		completer: any;
+		requester: Requester;
+		future: Promise<any>;
 
-		static escapeName(str: string): string;
-		static getValidPath(path: any, basePath?: string): Path;
-		static getValidNodePath(path: any, basePath?: string): Path;
-		static getValidAttributePath(path: any, basePath?: string): Path;
-		static getValidConfigPath(path: any, basePath?: string): Path;
-		constructor(path: string);
+		constructor(requester: Requester, path: string);
 
-		child(name: string): Path;
-		mergeBasePath(base: string, force?: boolean): any;
+		onUpdate(status: string, updates: any[], columns: any[], meta: any, error: DSError): any;
+		onReconnect(): any;
+		onDisconnect(): any;
 	}
 
-	class Node {
-		profile: Node;
-		attributes: any;
+	class RequesterUpdate {
+		streamStatus: string;
+
+		constructor(streamStatus: string);
+	}
+
+	class ReqSubscribeListener {
+		callback: any;
+		requester: Requester;
+		path: string;
+		isPaused: boolean;
+
+		constructor(requester: Requester, path: string, ValueUpdateCallback: any);
+
+		onError(handleError: Function): any;
+		onDone(handleDone: Function): any;
+		cancel(): Promise<any>;
+		onData(handleData: Function): any;
+		pause(resumeSignal?: Promise<any>): any;
+		resume(): any;
+		asFuture(futureValue?: any): Promise<any>;
+	}
+
+	interface _RemoteNode_save_options {
+		includeValue?: boolean;
+	}
+
+	class RemoteNode extends Node {
+		name: string;
+		listed: boolean;
+		remotePath: string;
+		hasValueUpdate: boolean;
+		lastValueUpdate: ValueUpdate;
+		subscribeController: ReqSubscribeController;
+
+		constructor(remotePath: string);
+
+		save(_opt?: _RemoteNode_save_options): any;
+		createListController(requester: Requester): ListController;
+		isUpdated(): boolean;
+		isSelfUpdated(): boolean;
+		updateRemoteChildData(m: any, cache: RemoteNodeCache): any;
+		resetNodeCache(): any;
+	}
+
+	class RemoteNodeCache {
+		cachedNodePaths: string[];
+
+		constructor();
+
+		getDefNode(path: string, defName: string): Node;
+		clearCachedNode(path: string): any;
+		isNodeCached(path: string): boolean;
+		updateRemoteChildNode(parent: RemoteNode, name: string, m: any): RemoteNode;
+		clear(): any;
+		getRemoteNode(path: string): RemoteNode;
+	}
+
+	class RequestUpdater {
+	}
+
+	class ListDefListener {
+		requester: Requester;
+		ready: boolean;
+		node: RemoteNode;
+		listener: any;
+
+		constructor(node: RemoteNode, requester: Requester, callback: Function);
+
+		cancel(): any;
+	}
+
+	interface _RequesterInvokeUpdate_options {
+		error?: DSError;
+		meta?: any;
+	}
+
+	class RequesterInvokeUpdate extends RequesterUpdate {
+		columns: TableColumn[];
+		updates: any[];
+		meta: any;
+		rawColumns: any[];
+		error: DSError;
+		rows: any[][];
+
+		constructor(updates: any[], rawColumns: any[], columns: TableColumn[], streamStatus: string, _opt?: _RequesterInvokeUpdate_options);
+	}
+
+	class RemoteDefNode extends RemoteNode {
 		configs: any;
 		children: any;
+		profile: Node;
+		attributes: any;
 
-		static getDisplayName(nameOrPath: string): string;
-		constructor();
+		constructor(path: string);
 
-		getOverideAttributes(attr: string): any;
 		getAttribute(name: string): any;
-		getConfig(name: string): any;
-		addChild(name: string, node: Node): any;
+		forEachConfig(callback: Function): any;
+		forEachChild(callback: Function): any;
+		getOverideAttributes(attr: string): any;
+		getSimpleMap(): any;
+		forEachAttribute(callback: Function): any;
 		removeChild(input: any): string;
+		addChild(name: string, node: Node): any;
 		getChild(name: string): Node;
 		get(name: string): any;
-		forEachChild(callback: Function): any;
-		forEachConfig(callback: Function): any;
-		forEachAttribute(callback: Function): any;
-		getSimpleMap(): any;
+		getConfig(name: string): any;
 	}
 
-	class Unspecified {
-		constructor();
-	}
-
-	interface _DSError_options {
-		detail?: string;
-		msg?: string;
-		path?: string;
-		phase?: string;
-	}
-
-	class DSError {
-		type: string;
-		detail: string;
-		msg: string;
+	class SetController {
+		requester: Requester;
+		value: any;
+		completer: any;
 		path: string;
-		phase: string;
+		future: Promise<any>;
 
-		constructor(type: string, _opt?: _DSError_options);
-		static fromMap(m: any): any;
+		constructor(requester: Requester, path: string, value: any, maxPermission?: number);
 
-		getMessage(): string;
-		serialize(): any;
+		onReconnect(): any;
+		onDisconnect(): any;
+		onUpdate(status: string, updates: any[], columns: any[], meta: any, error: DSError): any;
 	}
 
-	class ErrorPhase {
-		constructor();
+	class ListController {
+		request: Request;
+		changes: any;
+		node: RemoteNode;
+		disconnectTs: string;
+		requester: Requester;
+		waitToSend: boolean;
+		stream: Stream;
+		initialized: boolean;
+
+		constructor(node: RemoteNode, requester: Requester);
+
+		onProfileUpdated(): any;
+		onReconnect(): any;
+		ackReceived(receiveAckId: number, startTime: number, currentTime: number): any;
+		onUpdate(streamStatus: string, updates: any[], columns: any[], meta: any, error: DSError): any;
+		onDisconnect(): any;
+		loadProfile(defName: string): any;
+		startSendingData(currentTime: number, waitingAckId: number): any;
+		onStartListen(): any;
 	}
 
-	class StreamStatus {
+	class ReqSubscribeController {
+		node: RemoteNode;
+		sid: number;
+		currentQos: number;
+		callbacks: any;
+		requester: Requester;
+
+		constructor(node: RemoteNode, requester: Requester);
+
+		unlisten(callback: Function): any;
+		addValue(update: ValueUpdate): any;
+		listen(callback: Function, qos: number): any;
+		updateQos(): boolean;
+	}
+
+	class RequesterListUpdate extends RequesterUpdate {
+		node: RemoteNode;
+		changes: string[];
+
+		constructor(node: RemoteNode, changes: string[], streamStatus: string);
+	}
+
+	class Request {
+		updater: RequestUpdater;
+		requester: Requester;
+		streamStatus: string;
+		data: any;
+		rid: number;
+		isClosed: boolean;
+
+		constructor(requester: Requester, rid: number, updater: RequestUpdater, data: any);
+
+		resend(): any;
+		close(): any;
+		addReqParams(m: any): any;
+	}
+
+	class SubscribeRequest extends Request {
+		lastSid: number;
+		toRemove: any;
+		subscriptions: any;
+		subscriptionIds: any;
+
+		constructor(requester: Requester, rid: number);
+
+		getNextSid(): number;
+		prepareSending(): any;
+		resend(): any;
+		removeSubscription(controller: ReqSubscribeController): any;
+		startSendingData(currentTime: number, waitingAckId: number): any;
+		addSubscription(controller: ReqSubscribeController, level: number): any;
+		ackReceived(receiveAckId: number, startTime: number, currentTime: number): any;
+	}
+
+	class PermissionList {
+		groupMatchs: any;
+		defaultPermission: number;
+		idMatchs: any;
+
 		constructor();
+
+		getPermission(responder: Responder): number;
+		updatePermissions(data: any[]): any;
 	}
 
 	class ServerLinkManager {
 	}
 
-	class ClientLink {
-	}
-
-	class ServerLink {
-	}
-
-	class BaseLink {
+	class Permission {
+		static parse(obj: any, defaultVal?: number): number;
+		constructor();
 	}
 
 	class ConnectionChannel {
@@ -246,296 +332,289 @@ declare namespace __dslink {
 		ackAll(ackid: number, time: number): any;
 	}
 
+	class StreamStatus {
+		constructor();
+	}
+
+	class ClientLink {
+	}
+
+	class Unspecified {
+		constructor();
+	}
+
+	class TableColumn {
+		defaultValue: any;
+		type: string;
+		name: string;
+
+		constructor(name: string, type: string, defaultValue?: any);
+		static parseColumns(list: any[]): TableColumn[];
+		static serializeColumns(list: any[]): any[];
+
+		getData(): any;
+	}
+
+	class TableMetadata {
+		meta: any;
+
+		constructor(meta: any);
+	}
+
 	class ProcessorResult {
-		messages: any[];
 		processors: ConnectionProcessor[];
+		messages: any[];
 
 		constructor(messages: any[], processors: ConnectionProcessor[]);
+	}
+
+	class ServerLink {
+	}
+
+	class TableColumns {
+		columns: TableColumn[];
+
+		constructor(columns: TableColumn[]);
+	}
+
+	interface _Table_options {
+		meta?: any;
+	}
+
+	class Table {
+		meta: any;
+		columns: TableColumn[];
+		rows: any[][];
+
+		constructor(columns: TableColumn[], rows: any[][], _opt?: _Table_options);
+	}
+
+	class BaseLink {
+	}
+
+	class Node {
+		configs: any;
+		children: any;
+		profile: Node;
+		attributes: any;
+
+		static getDisplayName(nameOrPath: string): string;
+		constructor();
+
+		getAttribute(name: string): any;
+		forEachConfig(callback: Function): any;
+		forEachChild(callback: Function): any;
+		getOverideAttributes(attr: string): any;
+		getSimpleMap(): any;
+		forEachAttribute(callback: Function): any;
+		removeChild(input: any): string;
+		addChild(name: string, node: Node): any;
+		getChild(name: string): Node;
+		get(name: string): any;
+		getConfig(name: string): any;
+	}
+
+	class ConnectionProcessor {
+	}
+
+	interface _DSError_options {
+		detail?: string;
+		msg?: string;
+		path?: string;
+		phase?: string;
+	}
+
+	class DSError {
+		detail: string;
+		type: string;
+		phase: string;
+		path: string;
+		msg: string;
+
+		constructor(type: string, _opt?: _DSError_options);
+		static fromMap(m: any): any;
+
+		serialize(): any;
+		getMessage(): string;
+	}
+
+	class ErrorPhase {
+		constructor();
+	}
+
+	class ConnectionHandler {
+	}
+
+	class PassiveChannel {
+		conn: Connection;
+		onConnectController: any;
+		onDisconnectController: any;
+		connected: boolean;
+		handler: ConnectionHandler;
+		onReceiveController: any;
+		isReady: boolean;
+		onReceive: Stream;
+		onDisconnected: Promise<any>;
+		onConnected: Promise<any>;
+
+		constructor(conn: Connection, connected?: boolean);
+
+		updateConnect(): any;
+		getSendingData(currentTime: number, waitingAckId: number): ProcessorResult;
+		sendWhenReady(handler: ConnectionHandler): any;
 	}
 
 	class Connection {
 	}
 
-	class DefaultDefNodes {
-		constructor();
-	}
-
-	class RemoveController {
-		completer: any;
-		requester: Requester;
-		path: string;
-		future: Promise<any>;
-
-		constructor(requester: Requester, path: string);
-
-		onUpdate(status: string, updates: any[], columns: any[], meta: any, error: DSError): any;
-		onDisconnect(): any;
-		onReconnect(): any;
-	}
-
-	class SetController {
-		completer: any;
-		requester: Requester;
-		path: string;
-		value: any;
-		future: Promise<any>;
-
-		constructor(requester: Requester, path: string, value: any, maxPermission?: number);
-
-		onUpdate(status: string, updates: any[], columns: any[], meta: any, error: DSError): any;
-		onDisconnect(): any;
-		onReconnect(): any;
-	}
-
-	class InvokeController {
-		node: RemoteNode;
-		requester: Requester;
-		mode: string;
-		lastStatus: string;
-
-		static getNodeColumns(node: RemoteNode): TableColumn[];
-		constructor(node: RemoteNode, requester: Requester, params: any, maxPermission?: number, RequestConsumer?: any);
-
-		onUpdate(streamStatus: string, updates: any[], columns: any[], meta: any, error: DSError): any;
-		onDisconnect(): any;
-		onReconnect(): any;
-	}
-
-	interface _RequesterInvokeUpdate_options {
-		error?: DSError;
+	interface _ValueUpdate_options {
+		count?: number;
+		max?: number;
 		meta?: any;
+		min?: number;
+		status?: string;
+		sum?: number;
+		ts?: string;
 	}
 
-	class RequesterInvokeUpdate extends RequesterUpdate {
-		rawColumns: any[];
-		columns: TableColumn[];
-		updates: any[];
-		error: DSError;
-		meta: any;
-		rows: any[][];
+	class ValueUpdate {
+		status: string;
+		value: any;
+		created: Date;
+		min: number;
+		ts: string;
+		waitingAck: number;
+		sum: number;
+		count: number;
+		max: number;
+		storedData: any;
+		latency: any;
+		timestamp: Date;
 
-		constructor(updates: any[], rawColumns: any[], columns: TableColumn[], streamStatus: string, _opt?: _RequesterInvokeUpdate_options);
+		static merge(oldUpdate: ValueUpdate, newUpdate: ValueUpdate): any;
+		constructor(value: any, _opt?: _ValueUpdate_options);
+		static getTs(): string;
+
+		equals(other: ValueUpdate): boolean;
+		mergeAdd(newUpdate: ValueUpdate): any;
+		toMap(): any;
+		cloneForAckQueue(): ValueUpdate;
 	}
 
-	class ReqSubscribeController {
-		node: RemoteNode;
-		requester: Requester;
-		callbacks: any;
-		currentQos: number;
-		sid: number;
-
-		constructor(node: RemoteNode, requester: Requester);
-
-		listen(callback: Function, qos: number): any;
-		unlisten(callback: Function): any;
-		updateQos(): boolean;
-		addValue(update: ValueUpdate): any;
-	}
-
-	class SubscribeRequest extends Request {
-		lastSid: number;
-		subscriptions: any;
-		subscriptionIds: any;
-		toRemove: any;
-
-		constructor(requester: Requester, rid: number);
-
-		getNextSid(): number;
-		resend(): any;
-		addSubscription(controller: ReqSubscribeController, level: number): any;
-		removeSubscription(controller: ReqSubscribeController): any;
-		startSendingData(currentTime: number, waitingAckId: number): any;
-		ackReceived(receiveAckId: number, startTime: number, currentTime: number): any;
-		prepareSending(): any;
-	}
-
-	class SubscribeController {
-		request: SubscribeRequest;
-
-		constructor();
-
-		onDisconnect(): any;
-		onReconnect(): any;
-		onUpdate(status: string, updates: any[], columns: any[], meta: any, error: DSError): any;
-	}
-
-	class ReqSubscribeListener {
-		callback: any;
-		requester: Requester;
+	class Path {
+		parentPath: string;
+		valid: boolean;
+		name: string;
 		path: string;
-		isPaused: boolean;
+		isRoot: boolean;
+		isAbsolute: boolean;
+		isAttribute: boolean;
+		isConfig: boolean;
+		parent: Path;
+		isNode: boolean;
 
-		constructor(requester: Requester, path: string, ValueUpdateCallback: any);
+		static getValidConfigPath(path: any, basePath?: string): Path;
+		static getValidPath(path: any, basePath?: string): Path;
+		constructor(path: string);
+		static escapeName(str: string): string;
+		static getValidAttributePath(path: any, basePath?: string): Path;
+		static getValidNodePath(path: any, basePath?: string): Path;
 
-		cancel(): Promise<any>;
-		asFuture(futureValue?: any): Promise<any>;
-		onData(handleData: Function): any;
-		onDone(handleDone: Function): any;
-		onError(handleError: Function): any;
-		pause(resumeSignal?: Promise<any>): any;
-		resume(): any;
+		mergeBasePath(base: string, force?: boolean): any;
+		child(name: string): Path;
 	}
 
-	class ListController {
-		node: RemoteNode;
-		requester: Requester;
-		request: Request;
-		disconnectTs: string;
-		changes: any;
-		waitToSend: boolean;
-		stream: Stream;
-		initialized: boolean;
+	class SimpleResponderStorage extends ISubscriptionResponderStorage {
+		values: any;
+		responderPath: string;
+		dir: any;
 
-		constructor(node: RemoteNode, requester: Requester);
+		constructor(path: string, responderPath?: string);
 
-		onDisconnect(): any;
-		onReconnect(): any;
-		onUpdate(streamStatus: string, updates: any[], columns: any[], meta: any, error: DSError): any;
-		loadProfile(defName: string): any;
-		onProfileUpdated(): any;
-		onStartListen(): any;
-		startSendingData(currentTime: number, waitingAckId: number): any;
-		ackReceived(receiveAckId: number, startTime: number, currentTime: number): any;
+		getOrCreateValue(path: string): ISubscriptionNodeStorage;
+		load(): Promise<any>;
+		destroyValue(path: string): any;
+		destroy(): any;
 	}
 
-	class ListDefListener {
-		node: RemoteNode;
-		requester: Requester;
-		listener: any;
-		ready: boolean;
+	class SimpleValueStorageBucket {
+		category: string;
+		dir: any;
 
-		constructor(node: RemoteNode, requester: Requester, callback: Function);
+		constructor(category: string, path: string);
 
-		cancel(): any;
+		getValueStorage(key: string): IValueStorage;
+		load(): Promise<any>;
+		destroy(): any;
 	}
 
-	class RequesterListUpdate extends RequesterUpdate {
-		changes: string[];
-		node: RemoteNode;
+	class SimpleNodeStorage extends ISubscriptionNodeStorage {
+		file: any;
+		filename: string;
 
-		constructor(node: RemoteNode, changes: string[], streamStatus: string);
+		constructor(path: string, filename: string, parentPath: string, storage: SimpleResponderStorage);
+
+		removeValue(value: ValueUpdate): any;
+		addValue(value: ValueUpdate): any;
+		getLoadedValues(): ValueUpdate[];
+		valueRemoved(updates: ValueUpdate[]): any;
+		destroy(): any;
+		load(): Promise<any>;
+		clear(qos: number): any;
+		setValue(removes: ValueUpdate[], newValue: ValueUpdate): any;
 	}
 
-	class RemoteDefNode extends RemoteNode {
-		profile: Node;
-		attributes: any;
-		configs: any;
-		children: any;
+	class SimpleValueStorage extends IValueStorage {
+		bucket: SimpleValueStorageBucket;
+		key: string;
+
+		constructor(bucket: SimpleValueStorageBucket, key: string);
+
+		getValueAsync(): any;
+		onSetDone(obj: any): any;
+		destroy(): any;
+		setValue(value: any): any;
+	}
+
+	class SimpleStorageManager {
+		values: any;
+		subDir: any;
+		dir: any;
+		rsponders: any;
 
 		constructor(path: string);
 
-		getOverideAttributes(attr: string): any;
-		getAttribute(name: string): any;
-		getConfig(name: string): any;
-		addChild(name: string, node: Node): any;
-		removeChild(input: any): string;
-		getChild(name: string): Node;
-		get(name: string): any;
-		forEachChild(callback: Function): any;
-		forEachConfig(callback: Function): any;
-		forEachAttribute(callback: Function): any;
-		getSimpleMap(): any;
+		destroy(): any;
+		loadSubscriptions(): Promise<any>;
+		getOrCreateValueStorageBucket(category: string): IValueStorageBucket;
+		getOrCreateSubscriptionStorage(rpath: string): ISubscriptionResponderStorage;
+		destroySubscriptionStorage(rpath: string): any;
+		destroyValueStorageBucket(category: string): any;
 	}
 
-	interface _RemoteNode_save_options {
-		includeValue?: boolean;
-	}
+	class Interval {
+		duration: any;
+		inMilliseconds: number;
 
-	class RemoteNode extends Node {
-		remotePath: string;
-		listed: boolean;
-		name: string;
-		subscribeController: ReqSubscribeController;
-		hasValueUpdate: boolean;
-		lastValueUpdate: ValueUpdate;
-
-		constructor(remotePath: string);
-
-		isUpdated(): boolean;
-		isSelfUpdated(): boolean;
-		createListController(requester: Requester): ListController;
-		updateRemoteChildData(m: any, cache: RemoteNodeCache): any;
-		resetNodeCache(): any;
-		save(_opt?: _RemoteNode_save_options): any;
-	}
-
-	class RemoteNodeCache {
-		cachedNodePaths: string[];
-
-		constructor();
-
-		getRemoteNode(path: string): RemoteNode;
-		isNodeCached(path: string): boolean;
-		clearCachedNode(path: string): any;
-		clear(): any;
-		getDefNode(path: string, defName: string): Node;
-		updateRemoteChildNode(parent: RemoteNode, name: string, m: any): RemoteNode;
-	}
-
-	class Request {
-		requester: Requester;
-		rid: number;
-		data: any;
-		updater: RequestUpdater;
-		streamStatus: string;
-		isClosed: boolean;
-
-		constructor(requester: Requester, rid: number, updater: RequestUpdater, data: any);
-
-		resend(): any;
-		addReqParams(m: any): any;
-		close(): any;
-	}
-
-	class Requester extends ConnectionHandler {
-		nodeCache: RemoteNodeCache;
-		lastRid: number;
-		subscriptionCount: number;
-		openRequestCount: number;
-		onError: Stream;
-
-		constructor(cache?: RemoteNodeCache);
-
-		onData(list: any[]): any;
-		getNextRid(): number;
-		getSendingData(currentTime: number, waitingAckId: number): ProcessorResult;
-		sendRequest(m: any, updater: RequestUpdater): Request;
-		isNodeCached(path: string): boolean;
-		subscribe(path: string, callback: Function, qos?: number): ReqSubscribeListener;
-		onValueChange(path: string, qos?: number): Stream;
-		getNodeValue(path: string): Promise<any>;
-		getRemoteNode(path: string): Promise<any>;
-		unsubscribe(path: string, callback: Function): any;
-		list(path: string): Stream;
-		invoke(path: string, params?: any, maxPermission?: number, RequestConsumer?: any): Stream;
-		set(path: string, value: any, maxPermission?: number): Promise<any>;
-		remove(path: string): Promise<any>;
-		closeRequest(request: Request): any;
-		onDisconnected(): any;
-		onReconnected(): any;
-	}
-
-	class RequesterUpdate {
-		streamStatus: string;
-
-		constructor(streamStatus: string);
-	}
-
-	class RequestUpdater {
+		constructor(duration: any);
+		static forHours(hours: number): any;
+		static forMilliseconds(ms: number): any;
+		static forMinutes(minutes: number): any;
+		static forSeconds(seconds: number): any;
 	}
 
 	class DSLinkJSON {
-		name: string;
-		version: string;
 		description: string;
-		main: string;
-		engines: any;
 		configs: any;
+		name: string;
+		engines: any;
+		main: string;
 		getDependencies: string[];
+		version: string;
 		json: any;
 
-		constructor();
 		static from(map: any): DSLinkJSON;
+		constructor();
 
 		verify(): any;
 		save(): any;
@@ -544,627 +623,24 @@ declare namespace __dslink {
 	class Scheduler {
 		currentTimer: any;
 
+		constructor();
+		static runLater(action: Function): any;
+		static repeat(times: number, action: Function): Promise<any>;
+		static after(duration: any, action: Function): Promise<any>;
+		static tick(times: number, interval: Interval, action: Function): Promise<any>;
 		static cancelCurrentTimer(): any;
+		static runAfter(duration: any, action: Function): any;
 		static every(interval: any, action: Function): any;
 		static safeEvery(interval: any, action: Function): any;
-		static repeat(times: number, action: Function): Promise<any>;
-		static tick(times: number, interval: Interval, action: Function): Promise<any>;
-		static runLater(action: Function): any;
 		static later(action: Function): Promise<any>;
-		static after(duration: any, action: Function): Promise<any>;
-		static runAfter(duration: any, action: Function): any;
-		constructor();
-	}
-
-	class Interval {
-		duration: any;
-		inMilliseconds: number;
-
-		constructor(duration: any);
-		static forMilliseconds(ms: number): any;
-		static forSeconds(seconds: number): any;
-		static forMinutes(minutes: number): any;
-		static forHours(hours: number): any;
-	}
-
-	class IValueStorage {
-	}
-
-	class IValueStorageBucket {
-	}
-
-	class ISubscriptionNodeStorage {
-	}
-
-	class ISubscriptionResponderStorage {
-	}
-
-	class IStorageManager {
-	}
-
-	class ResponseTrace {
-		path: string;
-		type: string;
-		change: string;
-		action: string;
-		rid: number;
-		rowData: any[];
-
-		constructor(path: string, type: string, rid: number, change?: string, action?: string);
-	}
-
-	class DummyPermissionManager {
-		constructor();
-
-		getPermission(path: string, resp: Responder): number;
-	}
-
-	class IPermissionManager {
-	}
-
-	interface _SimpleHiddenNode_updateValue_options {
-		force?: boolean;
-	}
-
-	class SimpleHiddenNode extends SimpleNode {
-		loaded: boolean;
-		path: string;
-		callbacks: any;
-		listChangeController: any;
-		listStream: Stream;
-		lastValueUpdate: ValueUpdate;
-		value: any;
-		valueReady: boolean;
-		exists: boolean;
-		listReady: boolean;
-		disconnected: string;
-		hasSubscriber: boolean;
-		profile: Node;
-		attributes: any;
-		configs: any;
-		children: any;
-
-		constructor(path: string, provider: SimpleNodeProvider);
-
-		getSimpleMap(): any;
-		serialize(withChildren: boolean): any;
-		updateList(name: string): any;
-		removeAttribute(name: string, responder: Responder, response: Response): Response;
-		removeConfig(name: string, responder: Responder, response: Response): Response;
-		overrideListChangeController(controller: any): any;
-		onStartListListen(): any;
-		onAllListCancel(): any;
-		updateValue(update: any, _opt?: _SimpleHiddenNode_updateValue_options): any;
-		clearValue(): any;
-		getDisconnectedListResponse(): any[];
-		getInvokePermission(): number;
-		getSetPermission(): number;
-		getOverideAttributes(attr: string): any;
-		getAttribute(name: string): any;
-		getConfig(name: string): any;
-		getChild(name: string): Node;
-		forEachChild(callback: Function): any;
-		forEachConfig(callback: Function): any;
-		forEachAttribute(callback: Function): any;
-	}
-
-	interface _SimpleNode_attach_options {
-		name?: string;
-	}
-	interface _SimpleNode_updateValue_options {
-		force?: boolean;
-	}
-
-	class SimpleNode extends LocalNodeImpl {
-		provider: SimpleNodeProvider;
-		removed: boolean;
-		serializable: boolean;
-		isStubNode: boolean;
-		parent: SimpleNode;
-		name: string;
-		displayName: string;
-		type: string;
-		writable: string;
-		path: string;
-		callbacks: any;
-		listChangeController: any;
-		listStream: Stream;
-		lastValueUpdate: ValueUpdate;
-		value: any;
-		valueReady: boolean;
-		exists: boolean;
-		listReady: boolean;
-		disconnected: string;
-		hasSubscriber: boolean;
-		profile: Node;
-		attributes: any;
-		configs: any;
-		children: any;
-
-		static initEncryption(key: string): any;
-		static encryptString(str: string): string;
-		static decryptString(str: string): string;
-		constructor(path: string, nodeprovider?: SimpleNodeProvider);
-
-		load(m: any): any;
-		save(): any;
-		invoke(params: any, responder: Responder, response: InvokeResponse, parentNode: Node, maxPermission?: number): InvokeResponse;
-		onInvoke(params: any): any;
-		onSetValue(val: any): boolean;
-		onSetConfig(name: string, value: string): boolean;
-		onSetAttribute(name: string, value: string): boolean;
-		onSubscribe(): any;
-		onUnsubscribe(): any;
-		onCreated(): any;
-		onRemoving(): any;
-		onChildRemoved(name: string, node: Node): any;
-		onChildAdded(name: string, node: Node): any;
-		subscribe(ValueUpdateCallback: any, qos?: number): RespSubscribeListener;
-		unsubscribe(ValueUpdateCallback: any): any;
-		onLoadChild(name: string, data: any, provider: SimpleNodeProvider): SimpleNode;
-		createChild(name: string, m?: any): SimpleNode;
-		hasConfig(name: string): boolean;
-		hasAttribute(name: string): boolean;
-		remove(): any;
-		attach(input: any, _opt?: _SimpleNode_attach_options): any;
-		addChild(name: string, node: Node): any;
-		removeChild(input: any): string;
-		setAttribute(name: string, value: any, responder: Responder, response: Response): Response;
-		setConfig(name: string, value: any, responder: Responder, response: Response): Response;
-		setValue(value: any, responder: Responder, response: Response, maxPermission?: number): Response;
-		get(name: string): any;
-		set(name: string, value: any): any;
-		overrideListChangeController(controller: any): any;
-		onStartListListen(): any;
-		onAllListCancel(): any;
-		updateValue(update: any, _opt?: _SimpleNode_updateValue_options): any;
-		clearValue(): any;
-		getDisconnectedListResponse(): any[];
-		getInvokePermission(): number;
-		getSetPermission(): number;
-		getOverideAttributes(attr: string): any;
-		getAttribute(name: string): any;
-		getConfig(name: string): any;
-		getChild(name: string): Node;
-		forEachChild(callback: Function): any;
-		forEachConfig(callback: Function): any;
-		forEachAttribute(callback: Function): any;
-		getSimpleMap(): any;
-	}
-
-	interface _SimpleNodeProvider_setNode_options {
-		registerChildren?: boolean;
-	}
-	interface _SimpleNodeProvider_removeNode_options {
-		recurse?: boolean;
-	}
-	interface _SimpleNodeProvider_toString_options {
-		showInstances?: boolean;
-	}
-
-	class SimpleNodeProvider extends NodeProviderImpl {
-		nodes: any;
-		root: SimpleNode;
-		defs: SimpleHiddenNode;
-		sys: SimpleHiddenNode;
-		permissions: IPermissionManager;
-		profileMap: any;
-
-		constructor(m?: any, profiles?: any);
-
-		getNode(path: string): LocalNode;
-		setIconResolver(IconResolver: any): any;
-		getOrCreateNode(path: string, addToTree?: boolean, init?: boolean): LocalNode;
-		hasNode(path: string): boolean;
-		registerResolver(SimpleNodeFactory: any): any;
-		unregisterResolver(SimpleNodeFactory: any): any;
-		addProfile(name: string, NodeFactory: any): any;
-		setPersistFunction(ExecutableFunction: any): any;
-		persist(now?: boolean): any;
-		createNode(path: string, init?: boolean): SimpleNode;
-		init(m?: any, profiles?: any): any;
-		save(): any;
-		updateValue(path: string, value: any): any;
-		setNode(path: string, node: SimpleNode, _opt?: _SimpleNodeProvider_setNode_options): any;
-		addNode(path: string, m: any): SimpleNode;
-		removeNode(path: string, _opt?: _SimpleNodeProvider_removeNode_options): any;
-		createResponder(dsId: string, sessionId: string): Responder;
-		toString(_opt?: _SimpleNodeProvider_toString_options): string;
-		get(path: string): LocalNode;
-		bitwiseNegate(): LocalNode;
-	}
-
-	interface _SysGetIconNode_updateValue_options {
-		force?: boolean;
-	}
-
-	class SysGetIconNode extends SimpleNode {
-		loaded: boolean;
-		path: string;
-		callbacks: any;
-		listChangeController: any;
-		listStream: Stream;
-		lastValueUpdate: ValueUpdate;
-		value: any;
-		valueReady: boolean;
-		exists: boolean;
-		listReady: boolean;
-		disconnected: string;
-		hasSubscriber: boolean;
-		profile: Node;
-		attributes: any;
-		configs: any;
-		children: any;
-
-		constructor(path: string, provider?: SimpleNodeProvider);
-
-		onInvoke(params: any): any;
-		serialize(withChildren: boolean): any;
-		updateList(name: string): any;
-		removeAttribute(name: string, responder: Responder, response: Response): Response;
-		removeConfig(name: string, responder: Responder, response: Response): Response;
-		overrideListChangeController(controller: any): any;
-		onStartListListen(): any;
-		onAllListCancel(): any;
-		updateValue(update: any, _opt?: _SysGetIconNode_updateValue_options): any;
-		clearValue(): any;
-		getDisconnectedListResponse(): any[];
-		getInvokePermission(): number;
-		getSetPermission(): number;
-		getOverideAttributes(attr: string): any;
-		getAttribute(name: string): any;
-		getConfig(name: string): any;
-		getChild(name: string): Node;
-		forEachChild(callback: Function): any;
-		forEachConfig(callback: Function): any;
-		forEachAttribute(callback: Function): any;
-		getSimpleMap(): any;
-	}
-
-	class MutableNodeProvider {
-	}
-
-	class SerializableNodeProvider {
-	}
-
-	class LiveTableRow {
-		table: LiveTable;
-		values: any[];
-		index: number;
-
-		constructor(table: LiveTable, values: any[]);
-
-		setValue(idx: number, value: any): any;
-		delete(): any;
-	}
-
-	interface _LiveTable_createRow_options {
-		ready?: boolean;
-	}
-
-	class LiveTable {
-		columns: TableColumn[];
-		rows: LiveTableRow[];
-		autoStartSend: boolean;
-		response: InvokeResponse;
-
-		static create(columns: TableColumn[], rows: LiveTableRow[]): any;
-		constructor(columns?: TableColumn[]);
-
-		onRowUpdate(row: LiveTableRow): any;
-		doOnClose(f: Function): any;
-		createRow(values: any[], _opt?: _LiveTable_createRow_options): LiveTableRow;
-		clear(): any;
-		refresh(idx?: number): any;
-		reindex(): any;
-		override(): any;
-		resend(): any;
-		sendTo(resp: InvokeResponse): any;
-		close(isFromRequester?: boolean): any;
-		getCurrentState(from?: number): any[];
-	}
-
-	class AsyncTableResult {
-		response: InvokeResponse;
-		columns: any[];
-		rows: any[];
-		status: string;
-		meta: any;
-		onClose: any;
-
-		constructor(columns?: any[]);
-
-		update(rows: any[], stat?: string, meta?: any): any;
-		write(resp?: InvokeResponse): any;
-		close(): any;
-	}
-
-	class WaitForMe {
-	}
-
-	class SimpleTableResult {
-		columns: any[];
-		rows: any[];
-
-		constructor(rows?: any[], columns?: any[]);
-	}
-
-	interface _DefinitionNode_updateValue_options {
-		force?: boolean;
-	}
-
-	class DefinitionNode extends LocalNodeImpl {
-		provider: NodeProvider;
-		path: string;
-		callbacks: any;
-		listChangeController: any;
-		listStream: Stream;
-		lastValueUpdate: ValueUpdate;
-		value: any;
-		valueReady: boolean;
-		exists: boolean;
-		listReady: boolean;
-		disconnected: string;
-		hasSubscriber: boolean;
-		profile: Node;
-		attributes: any;
-		configs: any;
-		children: any;
-
-		constructor(path: string, provider: NodeProvider);
-
-		setInvokeCallback(InvokeCallback: any): any;
-		invoke(params: any, responder: Responder, response: InvokeResponse, parentNode: Node, maxPermission?: number): InvokeResponse;
-		overrideListChangeController(controller: any): any;
-		onStartListListen(): any;
-		onAllListCancel(): any;
-		subscribe(callback: Function, qos?: number): RespSubscribeListener;
-		unsubscribe(ValueUpdateCallback: any): any;
-		updateValue(update: any, _opt?: _DefinitionNode_updateValue_options): any;
-		clearValue(): any;
-		getDisconnectedListResponse(): any[];
-		getInvokePermission(): number;
-		getSetPermission(): number;
-		get(name: string): any;
-		set(name: string, value: any): any;
-		getOverideAttributes(attr: string): any;
-		getAttribute(name: string): any;
-		getConfig(name: string): any;
-		addChild(name: string, node: Node): any;
-		removeChild(input: any): string;
-		getChild(name: string): Node;
-		forEachChild(callback: Function): any;
-		forEachConfig(callback: Function): any;
-		forEachAttribute(callback: Function): any;
-		getSimpleMap(): any;
-	}
-
-	class Configs {
-		configs: any;
-
-		static getConfig(name: string, profile: Node): ConfigSetting;
-		constructor();
-
-		load(inputs: any): any;
-	}
-
-	interface _ConfigSetting_options {
-		defaultValue?: any;
-	}
-
-	class ConfigSetting {
-		name: string;
-		type: string;
-		defaultValue: any;
-
-		constructor(name: string, type: string, _opt?: _ConfigSetting_options);
-		static fromMap(name: string, m: any): any;
-
-		setConfig(value: any, node: LocalNodeImpl, responder: Responder): DSError;
-		removeConfig(node: LocalNodeImpl, responder: Responder): DSError;
-	}
-
-	class LocalNodeImpl {
-	}
-
-	class NodeProviderImpl {
-	}
-
-	interface _InvokeResponse_updateStream_options {
-		autoSendColumns?: boolean;
-		columns?: any[];
-		meta?: any;
-		streamStatus?: string;
-	}
-
-	class InvokeResponse extends Response {
-		parentNode: LocalNode;
-		node: LocalNode;
-		name: string;
-		pendingData: any[];
-		onReqParams: any;
-		onClose: any;
-		onSendUpdate: any;
-
-		constructor(responder: Responder, rid: number, parentNode: LocalNode, node: LocalNode, name: string);
-
-		updateStream(updates: any[], _opt?: _InvokeResponse_updateStream_options): any;
-		updateReqParams(m: any): any;
-		startSendingData(currentTime: number, waitingAckId: number): any;
-		close(err?: DSError): any;
-		getTraceData(change?: string): ResponseTrace;
-	}
-
-	class ListResponse extends Response {
-		node: LocalNode;
-		changes: any;
-		initialResponse: boolean;
-
-		constructor(responder: Responder, rid: number, node: LocalNode);
-
-		changed(key: string): any;
-		startSendingData(currentTime: number, waitingAckId: number): any;
-		ackReceived(receiveAckId: number, startTime: number, currentTime: number): any;
-		prepareSending(): any;
-		getTraceData(change?: string): ResponseTrace;
-	}
-
-	class RespSubscribeController {
-		node: LocalNode;
-		response: SubscribeResponse;
-		sid: number;
-		lastValues: ValueUpdate[];
-		waitingValues: any;
-		lastValue: ValueUpdate;
-		cachingQueue: boolean;
-		permitted: boolean;
-		qosLevel: number;
-		caching: boolean;
-		persist: boolean;
-
-		constructor(response: SubscribeResponse, node: LocalNode, sid: number, _permitted: boolean, qos: number);
-
-		addValue(val: ValueUpdate): any;
-		process(waitingAckId: number): any[];
-		onAck(ackId: number): any;
-		resetCache(values: ValueUpdate[]): any;
-		destroy(): any;
-	}
-
-	class SubscribeResponse extends Response {
-		subscriptions: any;
-		subsriptionids: any;
-		changed: any;
-
-		constructor(responder: Responder, rid: number);
-
-		add(path: string, node: LocalNode, sid: number, qos: number): RespSubscribeController;
-		remove(sid: number): any;
-		subscriptionChanged(controller: RespSubscribeController): any;
-		startSendingData(currentTime: number, waitingAckId: number): any;
-		ackReceived(receiveAckId: number, startTime: number, currentTime: number): any;
-		prepareSending(): any;
-		addTraceCallback(ResponseTraceCallback: any): any;
-	}
-
-	class RespSubscribeListener {
-		callback: any;
-		node: LocalNode;
-
-		constructor(node: LocalNode, ValueUpdateCallback: any);
-
-		cancel(): any;
-	}
-
-	class NodeProvider {
-	}
-
-	class LocalNode {
-	}
-
-	class Response {
-		responder: Responder;
-		rid: number;
-		sentStreamStatus: string;
-
-		constructor(responder: Responder, rid: number);
-
-		close(err?: DSError): any;
-		prepareSending(): any;
-		startSendingData(currentTime: number, waitingAckId: number): any;
-		ackReceived(receiveAckId: number, startTime: number, currentTime: number): any;
-		getTraceData(change?: string): ResponseTrace;
-	}
-
-	interface _Responder_closeResponse_options {
-		error?: DSError;
-		response?: Response;
-	}
-	interface _Responder_updateResponse_options {
-		columns?: any[];
-		handleMap?: Function;
-		meta?: any;
-		streamStatus?: string;
-	}
-
-	class Responder extends ConnectionHandler {
-		reqId: string;
-		maxCacheLength: number;
-		storage: ISubscriptionResponderStorage;
-		maxPermission: number;
-		groups: string[];
-		nodeProvider: NodeProvider;
-		disabled: boolean;
-		openResponseCount: number;
-		subscriptionCount: number;
-
-		constructor(nodeProvider: NodeProvider, reqId?: string);
-
-		initStorage(s: ISubscriptionResponderStorage, nodes: ISubscriptionNodeStorage[]): any;
-		updateGroups(vals: string[], ignoreId?: boolean): any;
-		addResponse(response: Response): Response;
-		traceResponseRemoved(response: Response): any;
-		onData(list: any[]): any;
-		closeResponse(rid: number, _opt?: _Responder_closeResponse_options): any;
-		updateResponse(response: Response, updates: any[], _opt?: _Responder_updateResponse_options): any;
-		list(m: any): any;
-		subscribe(m: any): any;
-		unsubscribe(m: any): any;
-		invoke(m: any): any;
-		updateInvoke(m: any): any;
-		set(m: any): any;
-		remove(m: any): any;
-		close(m: any): any;
-		onDisconnected(): any;
-		onReconnected(): any;
-		addTraceCallback(ResponseTraceCallback: any): any;
-		removeTraceCallback(ResponseTraceCallback: any): any;
 	}
 
 	class PrivateKey {
 	}
 
-	interface _HttpClientLink_options {
-		formats?: any[];
-		home?: string;
-		isRequester?: boolean;
-		isResponder?: boolean;
-		linkData?: any;
-		nodeProvider?: NodeProvider;
-		overrideRequester?: Requester;
-		overrideResponder?: Responder;
-		token?: string;
+	interface _LinkProvider_onValueChange_options {
+		cacheLevel?: number;
 	}
-
-	class HttpClientLink extends ClientLink {
-		remotePath: string;
-		dsId: string;
-		home: string;
-		token: string;
-		privateKey: PrivateKey;
-		tokenHash: string;
-		requester: Requester;
-		responder: Responder;
-		useStandardWebSocket: boolean;
-		logName: string;
-		salts: string[];
-		enableAck: boolean;
-		linkData: any;
-		formats: any[];
-		format: string;
-		onRequesterReady: Promise<any>;
-		onConnected: Promise<any>;
-		nonce: any;
-
-		constructor(_conn: string, dsIdPrefix: string, privateKey: PrivateKey, _opt?: _HttpClientLink_options);
-
-		updateSalt(salt: string, saltId?: number): any;
-		connDelay(): any;
-		connect(): any;
-		initWebsocket(reconnect?: boolean): any;
-		close(): any;
-	}
-
 	interface _LinkProvider_options {
 		autoInitialize?: boolean;
 		command?: string;
@@ -1191,139 +667,663 @@ declare namespace __dslink {
 		argp?: any;
 		optionsHandler?: any;
 	}
-	interface _LinkProvider_onValueChange_options {
-		cacheLevel?: number;
-	}
 
 	class LinkProvider {
-		link: HttpClientLink;
-		provider: NodeProvider;
-		privateKey: PrivateKey;
-		brokerUrl: string;
-		prefix: string;
-		args: string[];
-		isRequester: boolean;
-		command: string;
+		loadNodesJson: boolean;
+		home: string;
+		overrideResponder: Responder;
+		overrideRequester: Requester;
 		isResponder: boolean;
 		defaultNodes: any;
-		profiles: any;
+		isRequester: boolean;
+		exitOnFailure: boolean;
+		dslinkJson: any;
+		savePrivateKey: boolean;
+		prefix: string;
+		args: string[];
+		token: string;
 		enableHttp: boolean;
 		encodePrettyJson: boolean;
-		strictOptions: boolean;
-		exitOnFailure: boolean;
-		loadNodesJson: boolean;
-		defaultLogLevel: string;
-		logTag: string;
-		savePrivateKey: boolean;
-		overrideRequester: Requester;
-		overrideResponder: Responder;
 		linkData: any;
-		home: string;
-		token: string;
-		dslinkJson: any;
-		basePath: string;
-		parsedArguments: any;
-		remotePath: string;
-		requester: Requester;
+		strictOptions: boolean;
+		defaultLogLevel: string;
+		command: string;
+		logTag: string;
+		brokerUrl: string;
+		profiles: any;
+		privateKey: PrivateKey;
+		link: HttpClientLink;
+		provider: NodeProvider;
 		onRequesterReady: Promise<any>;
-		didInitializationFail: boolean;
-		isInitialized: boolean;
+		parsedArguments: any;
 		valuePersistenceEnabled: boolean;
+		isInitialized: boolean;
+		requester: Requester;
 		qosPersistenceEnabled: boolean;
+		didInitializationFail: boolean;
+		remotePath: string;
+		basePath: string;
 
 		constructor(args: string[], prefix: string, _opt?: _LinkProvider_options);
 
-		addCommandLineOption(name: string, defaultValue?: string): any;
-		getCommandLineValue(name: string): string;
-		configure(_opt?: _LinkProvider_configure_options): boolean;
 		chooseBroker(brokers: Stream): Promise<any>;
-		onValueChange(path: string, _opt?: _LinkProvider_onValueChange_options): Stream;
 		syncValue(path: string): any;
-		init(): any;
-		createHttpLink(): HttpClientLink;
-		loadNodesFile(): any;
-		getConfig(key: string): any;
-		onNodesDeserialized(json: any): any;
-		connect(): Promise<any>;
-		close(): any;
-		stop(): any;
-		save(): any;
-		saveAsync(): Promise<any>;
-		getNode(path: string): LocalNode;
-		addNode(path: string, m: any): LocalNode;
 		removeNode(path: string): any;
-		updateValue(path: string, value: any): any;
-		get(path: string): LocalNode;
-		bitwiseNegate(): LocalNode;
 		val(path: string, value?: any): any;
+		onValueChange(path: string, _opt?: _LinkProvider_onValueChange_options): Stream;
+		stop(): any;
+		init(): any;
+		getCommandLineValue(name: string): string;
+		close(): any;
+		getNode(path: string): LocalNode;
+		getConfig(key: string): any;
+		saveAsync(): Promise<any>;
+		loadNodesFile(): any;
+		onNodesDeserialized(json: any): any;
+		updateValue(path: string, value: any): any;
+		addCommandLineOption(name: string, defaultValue?: string): any;
+		get(path: string): LocalNode;
+		save(): any;
+		createHttpLink(): HttpClientLink;
+		configure(_opt?: _LinkProvider_configure_options): boolean;
+		bitwiseNegate(): LocalNode;
+		addNode(path: string, m: any): LocalNode;
+		connect(): Promise<any>;
 	}
 
-	class SimpleValueStorage extends IValueStorage {
-		key: string;
-		bucket: SimpleValueStorageBucket;
-
-		constructor(bucket: SimpleValueStorageBucket, key: string);
-
-		setValue(value: any): any;
-		onSetDone(obj: any): any;
-		destroy(): any;
-		getValueAsync(): any;
+	interface _HttpClientLink_options {
+		formats?: any[];
+		home?: string;
+		isRequester?: boolean;
+		isResponder?: boolean;
+		linkData?: any;
+		nodeProvider?: NodeProvider;
+		overrideRequester?: Requester;
+		overrideResponder?: Responder;
+		token?: string;
 	}
 
-	class SimpleValueStorageBucket {
-		category: string;
-		dir: any;
+	class HttpClientLink extends ClientLink {
+		format: string;
+		tokenHash: string;
+		linkData: any;
+		remotePath: string;
+		token: string;
+		enableAck: boolean;
+		useStandardWebSocket: boolean;
+		dsId: string;
+		salts: string[];
+		home: string;
+		logName: string;
+		responder: Responder;
+		privateKey: PrivateKey;
+		formats: any[];
+		requester: Requester;
+		onRequesterReady: Promise<any>;
+		nonce: any;
+		onConnected: Promise<any>;
 
-		constructor(category: string, path: string);
+		constructor(_conn: string, dsIdPrefix: string, privateKey: PrivateKey, _opt?: _HttpClientLink_options);
 
-		getValueStorage(key: string): IValueStorage;
-		destroy(): any;
-		load(): Promise<any>;
+		connect(): any;
+		initWebsocket(reconnect?: boolean): any;
+		close(): any;
+		connDelay(): any;
+		updateSalt(salt: string, saltId?: number): any;
 	}
 
-	class SimpleNodeStorage extends ISubscriptionNodeStorage {
-		file: any;
-		filename: string;
+	class SimpleTableResult {
+		rows: any[];
+		columns: any[];
 
-		constructor(path: string, filename: string, parentPath: string, storage: SimpleResponderStorage);
-
-		addValue(value: ValueUpdate): any;
-		setValue(removes: ValueUpdate[], newValue: ValueUpdate): any;
-		removeValue(value: ValueUpdate): any;
-		valueRemoved(updates: ValueUpdate[]): any;
-		clear(qos: number): any;
-		destroy(): any;
-		load(): Promise<any>;
-		getLoadedValues(): ValueUpdate[];
+		constructor(rows?: any[], columns?: any[]);
 	}
 
-	class SimpleResponderStorage extends ISubscriptionResponderStorage {
-		values: any;
-		dir: any;
-		responderPath: string;
-
-		constructor(path: string, responderPath?: string);
-
-		getOrCreateValue(path: string): ISubscriptionNodeStorage;
-		load(): Promise<any>;
-		destroyValue(path: string): any;
-		destroy(): any;
+	interface _ConfigSetting_options {
+		defaultValue?: any;
 	}
 
-	class SimpleStorageManager {
-		rsponders: any;
-		dir: any;
-		subDir: any;
-		values: any;
+	class ConfigSetting {
+		defaultValue: any;
+		name: string;
+		type: string;
 
-		constructor(path: string);
+		constructor(name: string, type: string, _opt?: _ConfigSetting_options);
+		static fromMap(name: string, m: any): any;
 
-		getOrCreateSubscriptionStorage(rpath: string): ISubscriptionResponderStorage;
-		destroySubscriptionStorage(rpath: string): any;
+		removeConfig(node: LocalNodeImpl, responder: Responder): DSError;
+		setConfig(value: any, node: LocalNodeImpl, responder: Responder): DSError;
+	}
+
+	class ListResponse extends Response {
+		initialResponse: boolean;
+		node: LocalNode;
+		changes: any;
+
+		constructor(responder: Responder, rid: number, node: LocalNode);
+
+		prepareSending(): any;
+		changed(key: string): any;
+		ackReceived(receiveAckId: number, startTime: number, currentTime: number): any;
+		getTraceData(change?: string): ResponseTrace;
+		startSendingData(currentTime: number, waitingAckId: number): any;
+	}
+
+	class LocalNodeImpl {
+	}
+
+	class NodeProvider {
+	}
+
+	class AsyncTableResult {
+		columns: any[];
+		response: InvokeResponse;
+		onClose: any;
+		meta: any;
+		status: string;
+		rows: any[];
+
+		constructor(columns?: any[]);
+
+		close(): any;
+		update(rows: any[], stat?: string, meta?: any): any;
+		write(resp?: InvokeResponse): any;
+	}
+
+	class SubscribeResponse extends Response {
+		subsriptionids: any;
+		changed: any;
+		subscriptions: any;
+
+		constructor(responder: Responder, rid: number);
+
+		ackReceived(receiveAckId: number, startTime: number, currentTime: number): any;
+		remove(sid: number): any;
+		subscriptionChanged(controller: RespSubscribeController): any;
+		add(path: string, node: LocalNode, sid: number, qos: number): RespSubscribeController;
+		addTraceCallback(ResponseTraceCallback: any): any;
+		prepareSending(): any;
+		startSendingData(currentTime: number, waitingAckId: number): any;
+	}
+
+	class IValueStorageBucket {
+	}
+
+	class ISubscriptionResponderStorage {
+	}
+
+	interface _SysGetIconNode_updateValue_options {
+		force?: boolean;
+	}
+
+	class SysGetIconNode extends SimpleNode {
+		loaded: boolean;
+		callbacks: any;
+		path: string;
+		listChangeController: any;
+		listReady: boolean;
+		exists: boolean;
+		lastValueUpdate: ValueUpdate;
+		valueReady: boolean;
+		hasSubscriber: boolean;
+		value: any;
+		disconnected: string;
+		listStream: Stream;
+		configs: any;
+		children: any;
+		profile: Node;
+		attributes: any;
+
+		constructor(path: string, provider?: SimpleNodeProvider);
+
+		onInvoke(params: any): any;
+		serialize(withChildren: boolean): any;
+		removeConfig(name: string, responder: Responder, response: Response): Response;
+		removeAttribute(name: string, responder: Responder, response: Response): Response;
+		updateList(name: string): any;
+		getDisconnectedListResponse(): any[];
+		overrideListChangeController(controller: any): any;
+		getSetPermission(): number;
+		updateValue(update: any, _opt?: _SysGetIconNode_updateValue_options): any;
+		clearValue(): any;
+		getInvokePermission(): number;
+		onStartListListen(): any;
+		onAllListCancel(): any;
+		getAttribute(name: string): any;
+		forEachConfig(callback: Function): any;
+		forEachChild(callback: Function): any;
+		getOverideAttributes(attr: string): any;
+		getSimpleMap(): any;
+		forEachAttribute(callback: Function): any;
+		getChild(name: string): Node;
+		getConfig(name: string): any;
+	}
+
+	interface _Responder_closeResponse_options {
+		error?: DSError;
+		response?: Response;
+	}
+	interface _Responder_updateResponse_options {
+		columns?: any[];
+		handleMap?: Function;
+		meta?: any;
+		streamStatus?: string;
+	}
+
+	class Responder extends ConnectionHandler {
+		maxCacheLength: number;
+		disabled: boolean;
+		storage: ISubscriptionResponderStorage;
+		maxPermission: number;
+		groups: string[];
+		nodeProvider: NodeProvider;
+		reqId: string;
+		openResponseCount: number;
+		subscriptionCount: number;
+
+		constructor(nodeProvider: NodeProvider, reqId?: string);
+
+		unsubscribe(m: any): any;
+		list(m: any): any;
+		removeTraceCallback(ResponseTraceCallback: any): any;
+		closeResponse(rid: number, _opt?: _Responder_closeResponse_options): any;
+		updateGroups(vals: string[], ignoreId?: boolean): any;
+		onReconnected(): any;
+		updateInvoke(m: any): any;
+		addTraceCallback(ResponseTraceCallback: any): any;
+		remove(m: any): any;
+		close(m: any): any;
+		traceResponseRemoved(response: Response): any;
+		addResponse(response: Response): Response;
+		subscribe(m: any): any;
+		set(m: any): any;
+		onData(list: any[]): any;
+		initStorage(s: ISubscriptionResponderStorage, nodes: ISubscriptionNodeStorage[]): any;
+		onDisconnected(): any;
+		invoke(m: any): any;
+		updateResponse(response: Response, updates: any[], _opt?: _Responder_updateResponse_options): any;
+	}
+
+	class DummyPermissionManager {
+		constructor();
+
+		getPermission(path: string, resp: Responder): number;
+	}
+
+	interface _InvokeResponse_updateStream_options {
+		autoSendColumns?: boolean;
+		columns?: any[];
+		meta?: any;
+		streamStatus?: string;
+	}
+
+	class InvokeResponse extends Response {
+		onSendUpdate: any;
+		parentNode: LocalNode;
+		name: string;
+		node: LocalNode;
+		onReqParams: any;
+		onClose: any;
+		pendingData: any[];
+
+		constructor(responder: Responder, rid: number, parentNode: LocalNode, node: LocalNode, name: string);
+
+		getTraceData(change?: string): ResponseTrace;
+		updateReqParams(m: any): any;
+		startSendingData(currentTime: number, waitingAckId: number): any;
+		close(err?: DSError): any;
+		updateStream(updates: any[], _opt?: _InvokeResponse_updateStream_options): any;
+	}
+
+	interface _SimpleNodeProvider_removeNode_options {
+		recurse?: boolean;
+	}
+	interface _SimpleNodeProvider_toString_options {
+		showInstances?: boolean;
+	}
+	interface _SimpleNodeProvider_setNode_options {
+		registerChildren?: boolean;
+	}
+
+	class SimpleNodeProvider extends NodeProviderImpl {
+		nodes: any;
+		root: SimpleNode;
+		defs: SimpleHiddenNode;
+		sys: SimpleHiddenNode;
+		permissions: IPermissionManager;
+		profileMap: any;
+
+		constructor(m?: any, profiles?: any);
+
+		removeNode(path: string, _opt?: _SimpleNodeProvider_removeNode_options): any;
+		createNode(path: string, init?: boolean): SimpleNode;
+		createResponder(dsId: string, sessionId: string): Responder;
+		toString(_opt?: _SimpleNodeProvider_toString_options): string;
+		addNode(path: string, m: any): SimpleNode;
+		registerResolver(SimpleNodeFactory: any): any;
+		setIconResolver(IconResolver: any): any;
+		init(m?: any, profiles?: any): any;
+		getNode(path: string): LocalNode;
+		save(): any;
+		updateValue(path: string, value: any): any;
+		persist(now?: boolean): any;
+		unregisterResolver(SimpleNodeFactory: any): any;
+		hasNode(path: string): boolean;
+		addProfile(name: string, NodeFactory: any): any;
+		setNode(path: string, node: SimpleNode, _opt?: _SimpleNodeProvider_setNode_options): any;
+		getOrCreateNode(path: string, addToTree?: boolean, init?: boolean): LocalNode;
+		setPersistFunction(ExecutableFunction: any): any;
+		bitwiseNegate(): LocalNode;
+		get(path: string): LocalNode;
+	}
+
+	class Configs {
+		configs: any;
+
+		static getConfig(name: string, profile: Node): ConfigSetting;
+		constructor();
+
+		load(inputs: any): any;
+	}
+
+	class IValueStorage {
+	}
+
+	class MutableNodeProvider {
+	}
+
+	class RespSubscribeController {
+		response: SubscribeResponse;
+		node: LocalNode;
+		waitingValues: any;
+		lastValue: ValueUpdate;
+		lastValues: ValueUpdate[];
+		sid: number;
+		cachingQueue: boolean;
+		persist: boolean;
+		permitted: boolean;
+		caching: boolean;
+		qosLevel: number;
+
+		constructor(response: SubscribeResponse, node: LocalNode, sid: number, _permitted: boolean, qos: number);
+
+		resetCache(values: ValueUpdate[]): any;
 		destroy(): any;
-		loadSubscriptions(): Promise<any>;
-		getOrCreateValueStorageBucket(category: string): IValueStorageBucket;
-		destroyValueStorageBucket(category: string): any;
+		addValue(val: ValueUpdate): any;
+		onAck(ackId: number): any;
+		process(waitingAckId: number): any[];
+	}
+
+	class LocalNode {
+	}
+
+	class LiveTableRow {
+		table: LiveTable;
+		index: number;
+		values: any[];
+
+		constructor(table: LiveTable, values: any[]);
+
+		delete(): any;
+		setValue(idx: number, value: any): any;
+	}
+
+	class IPermissionManager {
+	}
+
+	interface _LiveTable_createRow_options {
+		ready?: boolean;
+	}
+
+	class LiveTable {
+		columns: TableColumn[];
+		rows: LiveTableRow[];
+		autoStartSend: boolean;
+		response: InvokeResponse;
+
+		static create(columns: TableColumn[], rows: LiveTableRow[]): any;
+		constructor(columns?: TableColumn[]);
+
+		resend(): any;
+		reindex(): any;
+		sendTo(resp: InvokeResponse): any;
+		close(isFromRequester?: boolean): any;
+		onRowUpdate(row: LiveTableRow): any;
+		override(): any;
+		clear(): any;
+		doOnClose(f: Function): any;
+		refresh(idx?: number): any;
+		getCurrentState(from?: number): any[];
+		createRow(values: any[], _opt?: _LiveTable_createRow_options): LiveTableRow;
+	}
+
+	interface _SimpleNode_attach_options {
+		name?: string;
+	}
+	interface _SimpleNode_updateValue_options {
+		force?: boolean;
+	}
+
+	class SimpleNode extends LocalNodeImpl {
+		provider: SimpleNodeProvider;
+		serializable: boolean;
+		removed: boolean;
+		type: string;
+		parent: SimpleNode;
+		displayName: string;
+		isStubNode: boolean;
+		name: string;
+		writable: string;
+		callbacks: any;
+		path: string;
+		listChangeController: any;
+		listReady: boolean;
+		exists: boolean;
+		lastValueUpdate: ValueUpdate;
+		valueReady: boolean;
+		hasSubscriber: boolean;
+		value: any;
+		disconnected: string;
+		listStream: Stream;
+		configs: any;
+		children: any;
+		profile: Node;
+		attributes: any;
+
+		constructor(path: string, nodeprovider?: SimpleNodeProvider);
+		static decryptString(str: string): string;
+		static encryptString(str: string): string;
+		static initEncryption(key: string): any;
+
+		onCreated(): any;
+		createChild(name: string, m?: any): SimpleNode;
+		onChildRemoved(name: string, node: Node): any;
+		onInvoke(params: any): any;
+		load(m: any): any;
+		attach(input: any, _opt?: _SimpleNode_attach_options): any;
+		removeChild(input: any): string;
+		onSubscribe(): any;
+		onRemoving(): any;
+		save(): any;
+		onSetValue(val: any): boolean;
+		set(name: string, value: any): any;
+		setValue(value: any, responder: Responder, response: Response, maxPermission?: number): Response;
+		unsubscribe(ValueUpdateCallback: any): any;
+		hasConfig(name: string): boolean;
+		onUnsubscribe(): any;
+		onSetAttribute(name: string, value: string): boolean;
+		get(name: string): any;
+		hasAttribute(name: string): boolean;
+		onChildAdded(name: string, node: Node): any;
+		addChild(name: string, node: Node): any;
+		setAttribute(name: string, value: any, responder: Responder, response: Response): Response;
+		subscribe(ValueUpdateCallback: any, qos?: number): RespSubscribeListener;
+		onSetConfig(name: string, value: string): boolean;
+		invoke(params: any, responder: Responder, response: InvokeResponse, parentNode: Node, maxPermission?: number): InvokeResponse;
+		setConfig(name: string, value: any, responder: Responder, response: Response): Response;
+		onLoadChild(name: string, data: any, provider: SimpleNodeProvider): SimpleNode;
+		remove(): any;
+		getDisconnectedListResponse(): any[];
+		overrideListChangeController(controller: any): any;
+		getSetPermission(): number;
+		updateValue(update: any, _opt?: _SimpleNode_updateValue_options): any;
+		clearValue(): any;
+		getInvokePermission(): number;
+		onStartListListen(): any;
+		onAllListCancel(): any;
+		getAttribute(name: string): any;
+		forEachConfig(callback: Function): any;
+		forEachChild(callback: Function): any;
+		getOverideAttributes(attr: string): any;
+		getSimpleMap(): any;
+		forEachAttribute(callback: Function): any;
+		getChild(name: string): Node;
+		getConfig(name: string): any;
+	}
+
+	class RespSubscribeListener {
+		node: LocalNode;
+		callback: any;
+
+		constructor(node: LocalNode, ValueUpdateCallback: any);
+
+		cancel(): any;
+	}
+
+	interface _DefinitionNode_updateValue_options {
+		force?: boolean;
+	}
+
+	class DefinitionNode extends LocalNodeImpl {
+		provider: NodeProvider;
+		callbacks: any;
+		path: string;
+		listChangeController: any;
+		listReady: boolean;
+		exists: boolean;
+		lastValueUpdate: ValueUpdate;
+		valueReady: boolean;
+		hasSubscriber: boolean;
+		value: any;
+		disconnected: string;
+		listStream: Stream;
+		configs: any;
+		children: any;
+		profile: Node;
+		attributes: any;
+
+		constructor(path: string, provider: NodeProvider);
+
+		invoke(params: any, responder: Responder, response: InvokeResponse, parentNode: Node, maxPermission?: number): InvokeResponse;
+		setInvokeCallback(InvokeCallback: any): any;
+		unsubscribe(ValueUpdateCallback: any): any;
+		getDisconnectedListResponse(): any[];
+		set(name: string, value: any): any;
+		overrideListChangeController(controller: any): any;
+		getSetPermission(): number;
+		updateValue(update: any, _opt?: _DefinitionNode_updateValue_options): any;
+		clearValue(): any;
+		getInvokePermission(): number;
+		onStartListListen(): any;
+		subscribe(callback: Function, qos?: number): RespSubscribeListener;
+		get(name: string): any;
+		onAllListCancel(): any;
+		getAttribute(name: string): any;
+		forEachConfig(callback: Function): any;
+		forEachChild(callback: Function): any;
+		getOverideAttributes(attr: string): any;
+		getSimpleMap(): any;
+		forEachAttribute(callback: Function): any;
+		removeChild(input: any): string;
+		addChild(name: string, node: Node): any;
+		getChild(name: string): Node;
+		getConfig(name: string): any;
+	}
+
+	interface _SimpleHiddenNode_updateValue_options {
+		force?: boolean;
+	}
+
+	class SimpleHiddenNode extends SimpleNode {
+		loaded: boolean;
+		callbacks: any;
+		path: string;
+		listChangeController: any;
+		listReady: boolean;
+		exists: boolean;
+		lastValueUpdate: ValueUpdate;
+		valueReady: boolean;
+		hasSubscriber: boolean;
+		value: any;
+		disconnected: string;
+		listStream: Stream;
+		configs: any;
+		children: any;
+		profile: Node;
+		attributes: any;
+
+		constructor(path: string, provider: SimpleNodeProvider);
+
+		getSimpleMap(): any;
+		serialize(withChildren: boolean): any;
+		removeConfig(name: string, responder: Responder, response: Response): Response;
+		removeAttribute(name: string, responder: Responder, response: Response): Response;
+		updateList(name: string): any;
+		getDisconnectedListResponse(): any[];
+		overrideListChangeController(controller: any): any;
+		getSetPermission(): number;
+		updateValue(update: any, _opt?: _SimpleHiddenNode_updateValue_options): any;
+		clearValue(): any;
+		getInvokePermission(): number;
+		onStartListListen(): any;
+		onAllListCancel(): any;
+		getAttribute(name: string): any;
+		forEachConfig(callback: Function): any;
+		forEachChild(callback: Function): any;
+		getOverideAttributes(attr: string): any;
+		forEachAttribute(callback: Function): any;
+		getChild(name: string): Node;
+		getConfig(name: string): any;
+	}
+
+	class ResponseTrace {
+		change: string;
+		type: string;
+		path: string;
+		action: string;
+		rid: number;
+		rowData: any[];
+
+		constructor(path: string, type: string, rid: number, change?: string, action?: string);
+	}
+
+	class WaitForMe {
+	}
+
+	class Response {
+		rid: number;
+		responder: Responder;
+		sentStreamStatus: string;
+
+		constructor(responder: Responder, rid: number);
+
+		ackReceived(receiveAckId: number, startTime: number, currentTime: number): any;
+		prepareSending(): any;
+		getTraceData(change?: string): ResponseTrace;
+		close(err?: DSError): any;
+		startSendingData(currentTime: number, waitingAckId: number): any;
+	}
+
+	class NodeProviderImpl {
+	}
+
+	class ISubscriptionNodeStorage {
+	}
+
+	class SerializableNodeProvider {
+	}
+
+	class IStorageManager {
 	}
 }
       
