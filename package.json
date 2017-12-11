@@ -1,6 +1,6 @@
 {
   "name": "dslink",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "DSLink/DSA IoT platform SDK for node.js and the web.",
   "main": "dist/dslink.node.min.js",
   "browser": {
@@ -26,11 +26,10 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "dhcurve": "^1.2.0",
+    "dhcurve": "^1.3.0",
     "es6-promises": "^1.0.10",
     "spawn-sync": "^1.0.11",
-    "ws": "^0.7.2",
-    "sha.js": "~2.4.2"
+    "ws": "^0.7.2"
   },
   "devDependencies": {
     "browserify": "^10.2.3",

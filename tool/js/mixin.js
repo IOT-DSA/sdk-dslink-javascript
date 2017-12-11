@@ -1,4 +1,4 @@
-function mixin(dest) {
+var mixin = Object.assign || function mixin(dest) {
   var count = 1;
   var length = arguments.length;
 
@@ -12,7 +12,7 @@ function mixin(dest) {
     }
   }
   return dest;
-}
+};
 
 module.exports.createNode = function(opt) {
   var extend = exports.SimpleNode;

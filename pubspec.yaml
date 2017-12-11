@@ -3,7 +3,7 @@ version: 1.0.0
 description: DSLink SDK for Dart
 dependencies:
   yaml: "^2.1.2"
-  calzone: ">=0.3.0"
+  calzone: ">=0.4.0"
     # path: ../calzone.dart
   grinder: any
   dslink:

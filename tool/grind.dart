@@ -48,7 +48,7 @@ const String BROWSER_PREFIX = """
 """;
 
 const String TS_PREFIX = """
-\tclass Stream extends NodeJS.EventEmitter {
+\tclass Stream {
 \t\t// event emitter
 \t\taddListener(event: string, listener: Function): this;
 \t\ton(event: string, listener: Function): this;
@@ -108,7 +108,7 @@ class DSLinkBuilder extends Builder {
     file.createSync();
     file.writeAsStringSync(wrapper);
 
-    return await npmBinAsync("uglify-js", "uglifyjs --screw-ie8 -c sequences,properties,dead_code,unsafe,join_vars,cascade -m", input: wrapper);
+    return await npmBinAsync("uglifyjs --screw-ie8 -c sequences,properties,dead_code,unsafe,join_vars,cascade -m", input: wrapper);
   }
 
   Future<String> build() async {
@@ -137,12 +137,13 @@ ${tsVisitor.output}
     }
 
     if(target == PatcherTarget.BROWSER) {
-      var browserify = npmBin("browserify", "browserify $filename --standalone DS");
+      var browserify = npmBin("browserify $filename --standalone DS --full-paths");
       file.writeAsStringSync(browserify);
     }
 
-    if(isMinified)
-      file.writeAsStringSync(await npmBinAsync("uglify-js", "uglifyjs $filename"));
+    if(isMinified) {
+      file.writeAsStringSync(await npmBinAsync("uglifyjs $filename"));
+    }
 
     return null;
   }
@@ -176,7 +177,7 @@ fetchDeps() {
   Pub.upgrade();
   Pub.get();
 
-  exec("npm install");
+  exec("node tool/yarn-0.27.5.js");
 }
 
 @DefaultTask()
