@@ -177,7 +177,7 @@ fetchDeps() {
   Pub.upgrade();
   Pub.get();
 
-  exec("node tool/yarn-0.27.5.js");
+  exec("npm install");
 }
 
 @DefaultTask()
